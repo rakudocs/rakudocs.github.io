@@ -653,6 +653,8 @@ $(function(){
 ,
 { category: "class", value: "X::Syntax::Missing", url: "/type/X::Syntax::Missing" }
 ,
+{ category: "class", value: "X::Syntax::Perl5Var", url: "/type/X::Syntax::Perl5Var" }
+,
 { category: "class", value: "X::Augment::NoSuchType", url: "/type/X::Augment::NoSuchType" }
 ,
 { category: "class", value: "X::Signature::NameClash", url: "/type/X::Signature::NameClash" }
@@ -2941,35 +2943,35 @@ $(function(){
 ,
 { category: "Routine", value: "write", url: "/routine/write" }
 ,
-{ category: "method", value: "write-bits", url: "/routine/write-bits" }
+{ category: "Routine", value: "write-bits", url: "/routine/write-bits" }
 ,
-{ category: "method", value: "write-int128", url: "/routine/write-int128" }
+{ category: "Routine", value: "write-int128", url: "/routine/write-int128" }
 ,
-{ category: "method", value: "write-int16", url: "/routine/write-int16" }
+{ category: "Routine", value: "write-int16", url: "/routine/write-int16" }
 ,
-{ category: "method", value: "write-int32", url: "/routine/write-int32" }
+{ category: "Routine", value: "write-int32", url: "/routine/write-int32" }
 ,
-{ category: "method", value: "write-int64", url: "/routine/write-int64" }
+{ category: "Routine", value: "write-int64", url: "/routine/write-int64" }
 ,
-{ category: "method", value: "write-int8", url: "/routine/write-int8" }
+{ category: "Routine", value: "write-int8", url: "/routine/write-int8" }
 ,
-{ category: "method", value: "write-num32", url: "/routine/write-num32" }
+{ category: "Routine", value: "write-num32", url: "/routine/write-num32" }
 ,
-{ category: "method", value: "write-num64", url: "/routine/write-num64" }
+{ category: "Routine", value: "write-num64", url: "/routine/write-num64" }
 ,
 { category: "method", value: "write-to", url: "/routine/write-to" }
 ,
-{ category: "method", value: "write-ubits", url: "/routine/write-ubits" }
+{ category: "Routine", value: "write-ubits", url: "/routine/write-ubits" }
 ,
-{ category: "method", value: "write-uint128", url: "/routine/write-uint128" }
+{ category: "Routine", value: "write-uint128", url: "/routine/write-uint128" }
 ,
-{ category: "method", value: "write-uint16", url: "/routine/write-uint16" }
+{ category: "Routine", value: "write-uint16", url: "/routine/write-uint16" }
 ,
-{ category: "method", value: "write-uint32", url: "/routine/write-uint32" }
+{ category: "Routine", value: "write-uint32", url: "/routine/write-uint32" }
 ,
-{ category: "method", value: "write-uint64", url: "/routine/write-uint64" }
+{ category: "Routine", value: "write-uint64", url: "/routine/write-uint64" }
 ,
-{ category: "method", value: "write-uint8", url: "/routine/write-uint8" }
+{ category: "Routine", value: "write-uint8", url: "/routine/write-uint8" }
 ,
 { category: "Routine", value: "x", url: "/routine/x" }
 ,

@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -70,16 +70,14 @@
 <p>From <a href="/type/Match#method_orig">Match</a></p>
 <h2 id="(Match)_method_orig"><a href="/type/Match#method_orig">(Match) method orig</a></h2>
 <p>Returns the original input to the regex engine, which is usually a string, but doesn&#39;t need to be (could be anything that can be coerced to a string):</p>
-<pre class="pod-block-code">42 ~~ /.+/;
-say $/.orig;            # OUTPUT: «42»
-say $/.orig.^name;      # OUTPUT: «Int»</pre>
-<p>See <a href="#method_target">method target</a> for a close equivalent that always returns a string.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>42</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="keyword operator quantifiers regexp perl6fe"><span>.</span><span>+</span></span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$/</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>orig</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«42»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$/</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>orig</span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Int»</span></span></span></div></pre><p>See <a href="#method_target">method target</a> for a close equivalent that always returns a string.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

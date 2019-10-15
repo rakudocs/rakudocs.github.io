@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -70,17 +70,14 @@
 <p>From <a href="/language/regexes#Samecase">Regexes</a></p>
 <h2 id="(Regexes)_substitution_adverb_:samecase_:samecase"><a href="/language/regexes#Samecase">(Regexes) substitution adverb :samecase :samecase</a></h2>
 <p>The <code>:samecase</code> or <code>:ii</code> substitution adverb implies the <code>:ignorecase</code> adverb for the regex part of the substitution, and in addition carries the case information to the replacement string:</p>
-<pre class="pod-block-code">$_ = &#39;The cat chases the dog&#39;;
-s:global:samecase[the] = &#39;a&#39;;
-say $_;                 # OUTPUT: «A cat chases a dog»
-</pre>
-<p>Here you can see that the first replacement string <code>a</code> got capitalized, because the first string of the matched string was also a capital letter.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>The&nbsp;cat&nbsp;chases&nbsp;the&nbsp;dog</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="string regexp construct bracket perl6fe"><span>s</span></span><span class="entity name section adverb regexp bracket perl6fe"><span>:global:samecase</span></span><span class="punctuation definition regexp bracket perl6fe"><span>[</span></span><span class="string regexp bracket perl6fe"><span>the</span></span><span class="punctuation definition regexp bracket perl6fe"><span>]</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>a</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«A&nbsp;cat&nbsp;chases&nbsp;a&nbsp;dog»</span><span>&nbsp;</span></span></span></div></pre><p>Here you can see that the first replacement string <code>a</code> got capitalized, because the first string of the matched string was also a capital letter.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

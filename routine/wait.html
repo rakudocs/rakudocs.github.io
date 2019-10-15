@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -69,24 +69,14 @@
 <h1 id="class_Supply"><a class="u" href="#___top" title="go to top of document">class Supply</a></h1>
 <p>From <a href="/type/Supply#method_wait">Supply</a></p>
 <h2 id="(Supply)_method_wait"><a href="/type/Supply#method_wait">(Supply) method wait</a></h2>
-<pre class="pod-block-code">method wait(Supply:D:)</pre>
-<p>Taps the <code>Supply</code> it is called on, and blocks execution until the either the supply is <code>done</code> (in which case it evaluates to the final value that was emitted on the <code>Supply</code>, or <code>Nil</code> if not value was emitted) or <code>quit</code> (in which case it will throw the exception that was passed to <code>quit</code>).</p>
-<pre class="pod-block-code">my $s = Supplier.new;
-start {
-  sleep 1;
-  say &quot;One second: running.&quot;;
-  sleep 1;
-  $s.emit(42);
-  $s.done;
-}
-$s.Supply.wait;
-say &quot;Two seconds: done&quot;;</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>wait</span></span><span>(</span><span class="support type perl6fe"><span>Supply</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Taps the <code>Supply</code> it is called on, and blocks execution until the either the supply is <code>done</code> (in which case it evaluates to the final value that was emitted on the <code>Supply</code>, or <code>Nil</code> if not value was emitted) or <code>quit</code> (in which case it will throw the exception that was passed to <code>quit</code>).</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>s</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Supplier</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control flowcontrol perl6fe"><span>start</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;</span><span class="support function perl6fe"><span>sleep</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>One&nbsp;second:&nbsp;running.</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;</span><span class="support function perl6fe"><span>sleep</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>s</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>emit</span></span><span>(</span><span class="constant numeric perl6fe"><span>42</span></span><span>);</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>s</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>done</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>s</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>Supply</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>wait</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Two&nbsp;seconds:&nbsp;done</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

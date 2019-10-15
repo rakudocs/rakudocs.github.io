@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -100,15 +100,9 @@
 </li>
 </ul>
 <p>To generate the documentation into the <code>html/</code> folder, run:</p>
-<pre class="pod-block-code">documentable start -a -v --highlight
-</pre>
-<p>To host the documentation from a web server, have Perl&nbsp;5 and Mojolicious::Lite installed; if you have Perl, run</p>
-<pre class="pod-block-code">cpanm --installdeps .
-</pre>
-<p>and then run:</p>
-<pre class="pod-block-code">perl app.pl daemon
-</pre>
-<h1 id="Contributing"><a class="u" href="#___top" title="go to top of document">Contributing</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>documentable</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>start</span></span><span>&nbsp;-</span><span class="routine name perl6fe"><span>a</span></span><span>&nbsp;-</span><span class="routine name perl6fe"><span>v</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--</span></span><span class="routine name perl6fe"><span>highlight</span></span></span></div></pre><p>To host the documentation from a web server, have Perl&nbsp;5 and Mojolicious::Lite installed; if you have Perl, run</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>cpanm</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--</span></span><span class="routine name perl6fe"><span>installdeps</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span></span></div></pre><p>and then run:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>perl</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>app</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>pl</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>daemon</span></span></span></div></pre><h1 id="Contributing"><a class="u" href="#___top" title="go to top of document">Contributing</a></h1>
 <p>The documentation is written in Raku Pod.</p>
 <p>For a quick introduction to Raku Pod, see <a href="/language/pod">Raku Pod</a>.</p>
 <p>For full details about the Raku Pod specification, see <a href="https://design.perl6.org/S26.html">Synopsis 26, Documentation</a>.</p>
@@ -137,21 +131,7 @@
 <p>The documentable <var>My Definition</var> extends down to the <code>=head2 And now…</code>.</p>
 <p>Documentables may contain other documentables. Class documentables, for example, often contain the methods the class implements.</p>
 <p>Definitions must be in one of the following forms to be recognized as the start of a documentable named, say, þ. First the code in the document source:</p>
-<pre class="pod-block-code">=item X&lt;C&lt;How to use the þ infix&gt; | infix,þ&gt; (This a special case, which
-is always considered a definition)
-
-=item C&lt;The þ Infix&gt;
-
-=item B&lt;The C&lt;þ&gt; Infix&gt;
-
-=item C&lt;Infix þ&gt;
-
-=item B&lt;Infix C&lt;þ&gt;&gt;
-
-=item C&lt;trait is cached&gt; (A special case for the L&lt;trait|/language/functions#Traits&gt; documentables)
-
-</pre>
-<p>Then the results on the rendered page:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>item</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>X</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup raw code perl6fe"><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>C</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup raw code perl6fe"><span>How&nbsp;to&nbsp;use&nbsp;the&nbsp;þ&nbsp;infix</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span><span>&nbsp;|&nbsp;infix,þ</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span><span>&nbsp;(This&nbsp;a&nbsp;special&nbsp;case,&nbsp;which</span></span><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment block abbreviated perl6fe"><span>is&nbsp;always&nbsp;considered&nbsp;a&nbsp;definition)</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>item</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>C</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup raw code perl6fe"><span>The&nbsp;þ&nbsp;Infix</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span></span><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>item</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>B</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup bold perl6fe"><span>The&nbsp;</span><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>C</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup raw code perl6fe"><span>þ</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span><span>&nbsp;Infix</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span></span><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>item</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>C</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup raw code perl6fe"><span>Infix&nbsp;þ</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span></span><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>item</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>B</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup bold perl6fe"><span>Infix&nbsp;</span><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>C</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup raw code perl6fe"><span>þ</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span></span><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>item</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>C</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup raw code perl6fe"><span>trait&nbsp;is&nbsp;cached</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span><span>&nbsp;(A&nbsp;special&nbsp;case&nbsp;for&nbsp;the&nbsp;</span><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>L</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup raw code perl6fe"><span>trait|/language/functions#Traits</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span><span>&nbsp;documentables)</span></span><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div></pre><p>Then the results on the rendered page:</p>
 <ul><li><p><a name="index-entry-infix_þ-How_to_use_the_þ_infix"><span class="index-entry"><code>How to use the þ infix</code></span></a> (This is a special case, which is always considered a definition)</p>
 </li>
 <li><p><code>The þ Infix</code></p>
@@ -167,9 +147,7 @@ is always considered a definition)
 </ul>
 <p>These items should now be searchable by using the search field in the HTML docs.</p>
 <p>You can add emphasis with bold (<strong> B&lt;&gt; </strong>) or italicized (<strong> I&lt;&gt; </strong>), with or without code formatting (<strong> C&lt;&gt; </strong>). Due to current parser limitations, special steps have to be taken to use <strong> X&lt;&gt; </strong> with other formatting codes; for example:</p>
-<pre class="pod-block-code">=item X&lt;B&lt;foo&gt;|foo&gt; a fancy subroutine
-</pre>
-<p>renders like this</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>item</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>X</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup raw code perl6fe"><span class="meta pod c perl6fe"><span class="support function pod code perl6fe"><span>B</span></span><span class="punctuation section embedded pod code perl6fe"><span>&lt;</span></span><span class="markup bold perl6fe"><span>foo</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span><span>|foo</span></span><span class="punctuation section embedded pod code perl6fe"><span>&gt;</span></span></span><span>&nbsp;a&nbsp;fancy&nbsp;subroutine</span></span><span>&nbsp;</span></span></div></pre><p>renders like this</p>
 <ul><li><p><a name="index-entry-foo-foo"><span class="index-entry"><strong>foo</strong></span></a> a fancy subroutine</p>
 </li>
 </ul>
@@ -180,7 +158,8 @@ is always considered a definition)
     </div>
 <footer class="pretty-box yellow">
     <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/about.pod6">/language/about</a>.</p>
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

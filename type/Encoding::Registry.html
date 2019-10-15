@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -80,8 +80,7 @@
 </nav>
 
     <div class="pod-body">
-    <pre class="pod-block-code">class Encoding::Registry {}</pre>
-<p><code>Encoding::Registry</code> is initialized with a list of encoding that is available for any Raku application, namely:</p>
+    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Encoding::Registry</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p><code>Encoding::Registry</code> is initialized with a list of encoding that is available for any Raku application, namely:</p>
 <ul><li><p><code>utf8</code></p>
 </li>
 <li><p><code>utf8-c8</code></p>
@@ -107,12 +106,10 @@
 </ul>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_name"><a class="u" href="#___top" title="go to top of document">method name</a></h2>
-<pre class="pod-block-code">method register(Encoding $enc --&gt; Nil)</pre>
-<p>Register a new <a href="/type/Encoding">Encoding</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>register</span></span><span>(</span><span class="routine name perl6fe"><span>Encoding</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>enc</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Nil</span></span><span>)</span></span></div></pre><p>Register a new <a href="/type/Encoding">Encoding</a>.</p>
 <p><a name="index-entry-Encoding::Encoder"></a> <a name="index-entry-Encoding::Decoder"></a></p>
 <h2 id="method_find"><a class="u" href="#___top" title="go to top of document">method find</a></h2>
-<pre class="pod-block-code">method find(Str() $name)</pre>
-<p>Finds an encoding by its name. Returns an <code>Encoding::Encoder</code> or <code>Encoding::Decoder</code>, depending on what had been registered.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>find</span></span><span>(</span><span class="support type perl6fe"><span>Str</span></span><span>()&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>name</span></span></span><span>)</span></span></div></pre><p>Finds an encoding by its name. Returns an <code>Encoding::Encoder</code> or <code>Encoding::Decoder</code>, depending on what had been registered.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Encoding::Registry</code></figcaption>
@@ -173,7 +170,8 @@
     </div>
 <footer class="pretty-box yellow">
     <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Encoding::Registry.pod6">/type/Encoding::Registry</a>.</p>
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

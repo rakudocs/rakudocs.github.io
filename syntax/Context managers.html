@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -71,37 +71,15 @@
 <h2 id="(Python_to_Raku_-_nutshell)_Python_Context_managers"><a href="/language/py-nutshell#Context_managers">(Python to Raku - nutshell) Python Context managers</a></h2>
 <p>Context managers in Python declare actions that happen when entering or exiting a scope.</p>
 <p>Here&#39;s a Python context manager that prints the strings &#39;hello&#39;, &#39;world&#39;, and &#39;bye&#39;.</p>
-<pre class="pod-block-code">class hello:
-    def __exit__(self, type, value, traceback):
-        print &#39;bye&#39;
-    def __enter__(self):
-        print &#39;hello&#39;
-
-with hello():
-    print &#39;world&#39;
-</pre>
-<p>For &quot;enter&quot; and &quot;exit&quot; events, passing a block as an argument would be one option:</p>
-<pre class="pod-block-code">sub hello(Block $b) {
-    say &#39;hello&#39;;
-    $b();
-    say &#39;bye&#39;;
-}
-
-hello {
-    say &#39;world&#39;;
-}</pre>
-<p>A related idea is &#39;<a href="/language/phasers">Phasers</a>&#39; which may be set up to run on entering or leaving a block.</p>
-<pre class="pod-block-code">{
-    LEAVE say &#39;bye&#39;;
-    ENTER say &#39;hello&#39;;
-    say &#39;world&#39;;
-}</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>hello</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>def</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>__exit__</span></span><span>(</span><span class="variable language perl6fe"><span>self</span></span><span>,&nbsp;</span><span class="routine name perl6fe"><span>type</span></span><span>,&nbsp;</span><span class="support function perl6fe"><span>value</span></span><span>,&nbsp;</span><span class="routine name perl6fe"><span>traceback</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>:</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>print</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>bye</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>def</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>__enter__</span></span><span>(</span><span class="variable language perl6fe"><span>self</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>:</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>print</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>hello</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>with</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>hello</span></span><span>()</span><span class="keyword operator generic perl6fe"><span>:</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>print</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>world</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span></span></div></pre><p>For &quot;enter&quot; and &quot;exit&quot; events, passing a block as an argument would be one option:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hello</span></span><span>(</span><span class="support type perl6fe"><span>Block</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>hello</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>();</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>bye</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>hello</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>world</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>A related idea is &#39;<a href="/language/phasers">Phasers</a>&#39; which may be set up to run on entering or leaving a block.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control closure trait perl6fe"><span>LEAVE</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>bye</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control closure trait perl6fe"><span>ENTER</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>hello</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>world</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

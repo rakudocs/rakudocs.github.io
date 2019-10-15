@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -72,26 +72,20 @@
 <p>From <a href="/type/Str#routine_lc">Str</a></p>
 <h2 id="(Str)_routine_lc"><a href="/type/Str#routine_lc">(Str) routine lc</a></h2>
 <p>Defined as:</p>
-<pre class="pod-block-code">multi sub    lc(Str:D  --&gt; Str:D)
-multi method lc(Str:D: --&gt; Str:D)</pre>
-<p>Returns a lower-case version of the string.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="entity name function perl6fe"><span>lc</span></span><span>(</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>lc</span></span><span>(</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a lower-case version of the string.</p>
 <p>Examples:</p>
-<pre class="pod-block-code">lc(&quot;A&quot;); # RESULT: «&quot;a&quot;»
-&quot;A&quot;.lc;  # RESULT: «&quot;a&quot;»</pre>
-<h1 id="class_Cool"><a class="u" href="#___top" title="go to top of document">class Cool</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>lc</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>A</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;RESULT:&nbsp;«&quot;a&quot;»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>A</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>lc</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;RESULT:&nbsp;«&quot;a&quot;»</span></span></span></div></pre><h1 id="class_Cool"><a class="u" href="#___top" title="go to top of document">class Cool</a></h1>
 <p>From <a href="/type/Cool#routine_lc">Cool</a></p>
 <h2 id="(Cool)_routine_lc"><a href="/type/Cool#routine_lc">(Cool) routine lc</a></h2>
 <p>Defined as:</p>
-<pre class="pod-block-code">sub lc(Str(Cool))
-method lc()</pre>
-<p>Coerces the invocant (or in sub form, its argument) to <a href="/type/Str">Str</a>, and returns it case-folded to lower case.</p>
-<pre class="pod-block-code">say &quot;ABC&quot;.lc;       # OUTPUT: «abc␤»</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>lc</span></span><span>(</span><span class="support type perl6fe"><span>Str</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>))</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>lc</span></span><span>()</span></span></div></pre><p>Coerces the invocant (or in sub form, its argument) to <a href="/type/Str">Str</a>, and returns it case-folded to lower case.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>ABC</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>lc</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«abc␤»</span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

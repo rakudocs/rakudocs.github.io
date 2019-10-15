@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -70,15 +70,14 @@
 <p>From <a href="/language/quoting#Word_quoting_with_quote_protection:_qww">Quoting constructs</a></p>
 <h2 id="(Quoting_constructs)_quote_qww_qww"><a href="/language/quoting#Word_quoting_with_quote_protection:_qww">(Quoting constructs) quote qww qww</a></h2>
 <p>The <code>qw</code> form of word quoting will treat quote characters literally, leaving them in the resulting words:</p>
-<pre class="pod-block-code">say qw{&quot;a b&quot; c}.perl; # OUTPUT: «(&quot;\&quot;a&quot;, &quot;b\&quot;&quot;, &quot;c&quot;)␤»</pre>
-<p>Thus, if you wish to preserve quoted sub-strings as single items in the resulting words you need to use the <code>qww</code> variant:</p>
-<pre class="pod-block-code">say qww{&quot;a b&quot; c}.perl; # OUTPUT: «(&quot;a b&quot;, &quot;c&quot;)␤»</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted q operator perl6fe"><span>qw</span></span><span class="punctuation definition string perl6fe"><span>{</span></span><span class="string quoted q brace quote perl6fe"><span>&quot;a&nbsp;b&quot;&nbsp;c</span></span><span class="punctuation definition string perl6fe"><span>}</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>perl</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(&quot;\&quot;a&quot;,&nbsp;&quot;b\&quot;&quot;,&nbsp;&quot;c&quot;)␤»</span></span></span></div></pre><p>Thus, if you wish to preserve quoted sub-strings as single items in the resulting words you need to use the <code>qww</code> variant:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted q operator perl6fe"><span>qww</span></span><span class="punctuation definition string perl6fe"><span>{</span></span><span class="string quoted q brace quote perl6fe"><span>&quot;a&nbsp;b&quot;&nbsp;c</span></span><span class="punctuation definition string perl6fe"><span>}</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>perl</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(&quot;a&nbsp;b&quot;,&nbsp;&quot;c&quot;)␤»</span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

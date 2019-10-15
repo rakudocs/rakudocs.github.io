@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -75,18 +75,13 @@
 <h1 id="class_CallFrame"><a class="u" href="#___top" title="go to top of document">class CallFrame</a></h1>
 <p>From <a href="/type/CallFrame#method_line">CallFrame</a></p>
 <h2 id="(CallFrame)_method_line"><a href="/type/CallFrame#method_line">(CallFrame) method line</a></h2>
-<pre class="pod-block-code">method line()</pre>
-<p>This is a shortcut for looking up the <code>line</code> annotation. For example, the following two calls are identical.</p>
-<pre class="pod-block-code">say callframe(1).line;
-say callframe(1).annotations&lt;line&gt;;</pre>
-<h1 id="class_Code"><a class="u" href="#___top" title="go to top of document">class Code</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>line</span></span><span>()</span></span></div></pre><p>This is a shortcut for looking up the <code>line</code> annotation. For example, the following two calls are identical.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>callframe</span></span><span>(</span><span class="constant numeric perl6fe"><span>1</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>line</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>callframe</span></span><span>(</span><span class="constant numeric perl6fe"><span>1</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>annotations</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>line</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;</span></span></div></pre><h1 id="class_Code"><a class="u" href="#___top" title="go to top of document">class Code</a></h1>
 <p>From <a href="/type/Code#method_line">Code</a></p>
 <h2 id="(Code)_method_line"><a href="/type/Code#method_line">(Code) method line</a></h2>
 <p>Defined as</p>
-<pre class="pod-block-code">method line(Code:D: --&gt; Int:D)</pre>
-<p>Returns the line number in which the code object was declared.</p>
-<pre class="pod-block-code">say &amp;infix:&lt;+&gt;.line;</pre>
-<h1 id="role_X::Comp"><a class="u" href="#___top" title="go to top of document">role X::Comp</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>line</span></span><span>(</span><span class="support type perl6fe"><span>Code</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the line number in which the code object was declared.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>infix</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>+</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>line</span></span><span>;</span></span></div></pre><h1 id="role_X::Comp"><a class="u" href="#___top" title="go to top of document">role X::Comp</a></h1>
 <p>From <a href="/type/X::Comp#method_line">X::Comp</a></p>
 <h2 id="(X::Comp)_method_line"><a href="/type/X::Comp#method_line">(X::Comp) method line</a></h2>
 <p>The line number in which the compilation error occurred.</p>
@@ -94,17 +89,14 @@ say callframe(1).annotations&lt;line&gt;;</pre>
 <p>From <a href="/type/Backtrace::Frame#method_line">Backtrace::Frame</a></p>
 <h2 id="(Backtrace::Frame)_method_line"><a href="/type/Backtrace::Frame#method_line">(Backtrace::Frame) method line</a></h2>
 <p>Defined as:</p>
-<pre class="pod-block-code">method line(Backtrace::Frame:D --&gt; Int)</pre>
-<p>Returns the line number (line numbers start counting from 1).</p>
-<pre class="pod-block-code">my $bt = Backtrace.new;
-my $btf = $bt[0];
-say $btf.line;</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>line</span></span><span>(</span><span class="support type exception perl6fe"><span>Backtrace::Frame</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>)</span></span></div></pre><p>Returns the line number (line numbers start counting from 1).</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>bt</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support type exception perl6fe"><span>Backtrace</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>btf</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>bt</span></span></span><span>[</span><span class="constant numeric perl6fe"><span>0</span></span><span>];</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>btf</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>line</span></span><span>;</span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

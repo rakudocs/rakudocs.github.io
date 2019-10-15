@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -69,22 +69,16 @@
 <h1 id="role_Metamodel::MethodContainer"><a class="u" href="#___top" title="go to top of document">role Metamodel::MethodContainer</a></h1>
 <p>From <a href="/type/Metamodel::MethodContainer#method_methods">Metamodel::MethodContainer</a></p>
 <h2 id="(Metamodel::MethodContainer)_method_methods"><a href="/type/Metamodel::MethodContainer#method_methods">(Metamodel::MethodContainer) method methods</a></h2>
-<pre class="pod-block-code">method methods(Metamodel::MethodContainer: $obj, :$all, :$local)</pre>
-<p>Returns a list of public methods available on the class (which includes methods from superclasses and roles). By default this stops at the classes <a href="/type/Cool">Cool</a>, <a href="/type/Any">Any</a> or <a href="/type/Mu">Mu</a>; to really get all methods, use the <code>:all</code> adverb. If <code>:local</code> is set, only methods declared directly in the class are returned.</p>
-<pre class="pod-block-code">class A {
-    method x() { };
-}
-
-say A.^methods();                   # x
-say A.^methods(:all);               # x infinite defined ...</pre>
-<p>The returned list contains objects of type <a href="/type/Method">Method</a>, which you can use to introspect their signatures and call them.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>methods</span></span><span>(</span><span class="support type perl6fe"><span>Metamodel</span></span><span>::</span><span class="routine name perl6fe"><span>MethodContainer</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>obj</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>all</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>local</span></span></span><span>)</span></span></div></pre><p>Returns a list of public methods available on the class (which includes methods from superclasses and roles). By default this stops at the classes <a href="/type/Cool">Cool</a>, <a href="/type/Any">Any</a> or <a href="/type/Mu">Mu</a>; to really get all methods, use the <code>:all</code> adverb. If <code>:local</code> is set, only methods declared directly in the class are returned.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>A</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>x</span></span><span>()&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>A</span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="routine name perl6fe"><span>methods</span></span><span>();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;x</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>A</span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="routine name perl6fe"><span>methods</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>all</span></span><span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;x&nbsp;infinite&nbsp;defined&nbsp;...</span></span></span></div></pre><p>The returned list contains objects of type <a href="/type/Method">Method</a>, which you can use to introspect their signatures and call them.</p>
 <p>Some introspection method-look-alikes like <a href="/language/mop#WHAT"><code>WHAT</code></a> will not show up, although they are present in any Raku object. They are handled at the grammar level and will likely remain so for bootstrap reasons.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

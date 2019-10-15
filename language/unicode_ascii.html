@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -87,19 +87,11 @@
 <p>Reference is made below to various properties of unicode codepoints. The definitive list can be found here: <a href="https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt">https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt</a>.</p>
 <h1 id="Alphabetic_characters"><a class="u" href="#___top" title="go to top of document">Alphabetic characters</a></h1>
 <p>Any codepoint that has the <code>Ll</code> (Letter, lowercase), <code>Lu</code> (Letter, uppercase), <code>Lt</code> (Letter, titlecase), <code>Lm</code> (Letter, modifier), or the <code>Lo</code> (Letter, other) property can be used just like any other alphabetic character from the ASCII range.</p>
-<pre class="pod-block-code">my $Δ = 1;
-$Δ++;
-say $Δ;
-</pre>
-<h1 id="Numeric_characters"><a class="u" href="#___top" title="go to top of document">Numeric characters</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>Δ</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>Δ</span></span></span><span class="keyword operator multi-symbol perl6fe"><span>++</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>Δ</span></span></span><span>;</span></span></div></pre><h1 id="Numeric_characters"><a class="u" href="#___top" title="go to top of document">Numeric characters</a></h1>
 <p>Any codepoint that has the <code>Nd</code> (Number, decimal digit) property, can be used as a digit in any number. For example:</p>
-<pre class="pod-block-code">my $var = １９; # U+FF11 U+FF19
-say $var + 2;  # OUTPUT: «21␤»</pre>
-<h1 id="Numeric_values"><a class="u" href="#___top" title="go to top of document">Numeric values</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>var</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>１９</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;U+FF11&nbsp;U+FF19</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>var</span></span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>+</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«21␤»</span></span></span></div></pre><h1 id="Numeric_values"><a class="u" href="#___top" title="go to top of document">Numeric values</a></h1>
 <p>Any codepoint that has the <code>No</code> (Number, other) or <code>Nl</code> (Number, letter) property can be used standalone as a numeric value, such as ½ and ⅓. (These aren&#39;t decimal digit characters, so can&#39;t be combined.) For example:</p>
-<pre class="pod-block-code">my $var = ⅒ + 2 + Ⅻ; # here ⅒ is No and Rat and Ⅻ is Nl and Int
-say $var;            # OUTPUT: «14.1␤»</pre>
-<h1 id="Whitespace_characters"><a class="u" href="#___top" title="go to top of document">Whitespace characters</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>var</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;⅒&nbsp;</span><span class="keyword operator generic perl6fe"><span>+</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>+</span></span><span>&nbsp;Ⅻ;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;here&nbsp;⅒&nbsp;is&nbsp;No&nbsp;and&nbsp;Rat&nbsp;and&nbsp;Ⅻ&nbsp;is&nbsp;Nl&nbsp;and&nbsp;Int</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>var</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«14.1␤»</span></span></span></div></pre><h1 id="Whitespace_characters"><a class="u" href="#___top" title="go to top of document">Whitespace characters</a></h1>
 <p>Besides spaces and tabs you can use any other unicode whitespace character that has the <code>Zs</code> (Separator, space), <code>Zl</code> (Separator, line), or <code>Zp</code> (Separator, paragraph) property.</p>
 <h1 id="Other_acceptable_single_codepoints"><a class="u" href="#___top" title="go to top of document">Other acceptable single codepoints</a></h1>
 <p>This list contains the single codepoints [and their ASCII equivalents] that have a special meaning in Raku.</p>
@@ -113,10 +105,7 @@ say $var;            # OUTPUT: «14.1␤»</pre>
 </tbody>
 </table><h2 id="Atomic_operators"><a class="u" href="#___top" title="go to top of document">Atomic operators</a></h2>
 <p>The atomic operators have <code>U+269B ⚛ ATOM SYMBOL</code> incorporated into them. Their ASCII equivalents are ordinary subroutines, not operators:</p>
-<pre class="pod-block-code">my atomicint $x = 42;
-$x⚛++;                # Unicode version
-atomic-fetch-inc($x); # ASCII version</pre>
-<p>The ASCII alternatives are as follows:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>atomicint</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>⚛</span><span class="keyword operator multi-symbol perl6fe"><span>++</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Unicode&nbsp;version</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>atomic-fetch-inc</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;ASCII&nbsp;version</span></span></span></div></pre><p>The ASCII alternatives are as follows:</p>
 <p><a name="index-entry-⚛="></a><a name="index-entry-⚛"></a><a name="index-entry-⚛+="></a><a name="index-entry-⚛-="></a><a name="index-entry-⚛−="></a><a name="index-entry-++⚛"></a><a name="index-entry-⚛++"></a><a name="index-entry---⚛"></a><a name="index-entry-⚛--"></a></p>
 <table class="pod-table">
 <thead><tr>
@@ -141,7 +130,8 @@ atomic-fetch-inc($x); # ASCII version</pre>
     </div>
 <footer class="pretty-box yellow">
     <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/unicode_ascii.pod6">/language/unicode_ascii</a>.</p>
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

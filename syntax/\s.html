@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -70,14 +70,13 @@
 <p>From <a href="/language/regexes#\s_and_\S">Regexes</a></p>
 <h2 id="(Regexes)_regex_\s_\s"><a href="/language/regexes#\s_and_\S">(Regexes) regex \s \s</a></h2>
 <p><code>\s</code> matches a single whitespace character. <code>\S</code> matches a single character that is not whitespace.</p>
-<pre class="pod-block-code">say $/.prematch if &#39;Match the first word.&#39; ~~ / \s+ /;
-# OUTPUT: «Match␤»</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$/</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>prematch</span></span><span>&nbsp;</span><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Match&nbsp;the&nbsp;first&nbsp;word.</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\s</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Match␤»</span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

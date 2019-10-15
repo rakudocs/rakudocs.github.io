@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -70,22 +70,13 @@
 <p>From <a href="/language/control#given_as_a_statement">Control flow</a></p>
 <h2 id="(Control_flow)_control_flow_given_statement_given_statement"><a href="/language/control#given_as_a_statement">(Control flow) control flow given statement given statement</a></h2>
 <p><code>given</code> can follow a statement to set the topic in the statement it follows.</p>
-<pre class="pod-block-code">.say given &quot;foo&quot;;
-# OUTPUT: «foo␤»
-
-printf &quot;%s %02i.%02i.%i&quot;,
-        &lt;Mo Tu We Th Fr Sa Su&gt;[.day-of-week - 1],
-        .day,
-        .month,
-        .year
-    given DateTime.now;
-# OUTPUT: «Sa 03.06.2016»</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword control repeat perl6fe"><span>given</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«foo␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>printf</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span>s</span></span><span>&nbsp;%02i.%02i.</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span>i</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>Mo&nbsp;Tu&nbsp;We&nbsp;Th&nbsp;Fr&nbsp;Sa&nbsp;Su</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>[</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>day-of-week</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>-</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>],</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>day</span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>month</span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>year</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control repeat perl6fe"><span>given</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>DateTime</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>now</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Sa&nbsp;03.06.2016»</span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

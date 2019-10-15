@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -70,16 +70,13 @@
 <p>From <a href="/language/regexes#Samemark">Regexes</a></p>
 <h2 id="(Regexes)_substitution_adverb_:samemark_:samemark"><a href="/language/regexes#Samemark">(Regexes) substitution adverb :samemark :samemark</a></h2>
 <p>The <code>:samemark</code> or <code>:mm</code> adverb implies <code>:ignoremark</code> for the regex, and in addition, copies the markings from the matched characters to the replacement string:</p>
-<pre class="pod-block-code">given &#39;äộñ&#39; {
-    say S:mm/ a .+ /uia/;           # OUTPUT: «üị̂ã»
-}
-</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>given</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>äộñ</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string regexp construct slash perl6fe"><span>S</span></span><span class="entity name section adverb regexp slash perl6fe"><span>:mm</span></span><span class="punctuation definition regexp slash perl6fe"><span>/</span></span><span class="string regexp slash perl6fe"><span>&nbsp;a&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>.</span><span>+</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp slash perl6fe"><span>/</span></span><span class="routine name perl6fe"><span>uia</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«üị̂ã»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

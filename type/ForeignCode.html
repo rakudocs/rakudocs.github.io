@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -87,33 +87,22 @@
 </nav>
 
     <div class="pod-body">
-    <pre class="pod-block-code">class ForeignCode does Callable {}</pre>
-<p><a href="#fn-1" id="fn-ref-1">[1]</a></p>
+    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>ForeignCode</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Callable</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p><a href="#fn-1" id="fn-ref-1">[1]</a></p>
 <p><code>ForeignCode</code> is a Raku wrapper around code that is not written originally in that language; its intention is to use these blocks of code in <code>Callable</code> contexts easily. For instance, subs have some anonymous functions that are actually <code>ForeignCode</code>.</p>
-<pre class="pod-block-code">sub does-nothing(){};
-say $_.name ~ &#39; → &#39; ~ $_.^name for &amp;does-nothing.^methods;
-# OUTPUT: «&lt;anon&gt; → ForeignCode␤&lt;anon&gt; → ForeignCode␤soft → Method␤…»
-</pre>
-<p>This script will map method names to their class, and it shows that routines, in particular, have several methods that are actually <code>ForeignCode</code> instead of <a href="/type/Method"><code>Method</code>s</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>does-nothing</span></span><span>()</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>name</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>~</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>&nbsp;→&nbsp;</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>~</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>does-nothing</span></span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="routine name perl6fe"><span>methods</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«&lt;anon&gt;&nbsp;→&nbsp;ForeignCode␤&lt;anon&gt;&nbsp;→&nbsp;ForeignCode␤soft&nbsp;→&nbsp;Method␤…»</span><span>&nbsp;</span></span></span></div></pre><p>This script will map method names to their class, and it shows that routines, in particular, have several methods that are actually <code>ForeignCode</code> instead of <a href="/type/Method"><code>Method</code>s</a>.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_arity"><a class="u" href="#___top" title="go to top of document">method arity</a></h2>
-<pre class="pod-block-code">method arity()</pre>
-<p>Returns the arity of the enclosed code.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>arity</span></span><span>()</span></span></div></pre><p>Returns the arity of the enclosed code.</p>
 <h2 id="method_count"><a class="u" href="#___top" title="go to top of document">method count</a></h2>
-<pre class="pod-block-code">method count()</pre>
-<p>Returns the number of arguments the enclosed code needs.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>count</span></span><span>()</span></span></div></pre><p>Returns the number of arguments the enclosed code needs.</p>
 <h2 id="method_signature"><a class="u" href="#___top" title="go to top of document">method signature</a></h2>
-<pre class="pod-block-code">method signature( ForeignCode:D: )</pre>
-<p>Returns the signature of the enclosed code.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>signature</span></span><span>(&nbsp;</span><span class="routine name perl6fe"><span>ForeignCode</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;)</span></span></div></pre><p>Returns the signature of the enclosed code.</p>
 <h2 id="method_name"><a class="u" href="#___top" title="go to top of document">method name</a></h2>
-<pre class="pod-block-code">method name()</pre>
-<p>Returns the name of the enclosed code, or <code>&lt;anon&gt;</code> if it has not received any.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>name</span></span><span>()</span></span></div></pre><p>Returns the name of the enclosed code, or <code>&lt;anon&gt;</code> if it has not received any.</p>
 <h2 id="method_gist"><a class="u" href="#___top" title="go to top of document">method gist</a></h2>
-<pre class="pod-block-code">method gist( ForeignCode:D: )</pre>
-<p>Returns the name of the code by calling <code>name</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>gist</span></span><span>(&nbsp;</span><span class="routine name perl6fe"><span>ForeignCode</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;)</span></span></div></pre><p>Returns the name of the code by calling <code>name</code>.</p>
 <h2 id="method_Str"><a class="u" href="#___top" title="go to top of document">method Str</a></h2>
-<pre class="pod-block-code">method Str( ForeignCode:D: )</pre>
-<p>Returns the name of the code by calling <code>name</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Str</span></span><span>(&nbsp;</span><span class="routine name perl6fe"><span>ForeignCode</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;)</span></span></div></pre><p>Returns the name of the code by calling <code>name</code>.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>ForeignCode</code></figcaption>
@@ -184,17 +173,10 @@ say $_.name ~ &#39; → &#39; ~ $_.^name for &amp;does-nothing.^methods;
 <h1 id="Routines_supplied_by_role_Callable"><a class="u" href="#___top" title="go to top of document">Routines supplied by role Callable</a></h1>
 <p>ForeignCode does role <a href="/type/Callable">Callable</a>, which provides the following routines:</p>
 <h2 id="(Callable)_method_CALL-ME"><a href="/type/Callable#method_CALL-ME">(Callable) method CALL-ME</a></h2>
-<pre class="pod-block-code">method CALL-ME(Callable:D $self: |arguments)</pre>
-<p>This method is required for postfix:«( )» and postfix:«.( )». It&#39;s what makes an object actually call-able and needs to be overloaded to let a given object act like a routine. If the object needs to be stored in a <code>&amp;</code>-sigiled container, is has to implement Callable.</p>
-<pre class="pod-block-code">class A does Callable {
-    submethod CALL-ME(|c){ &#39;called&#39; }
-}
-my &amp;a = A;
-say a(); # OUTPUT: «called␤»</pre>
-<h2 id="(Callable)_method_Capture"><a href="/type/Callable#method_Capture">(Callable) method Capture</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>CALL-ME</span></span><span>(</span><span class="support type perl6fe"><span>Callable</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>self</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>|</span></span><span class="routine name perl6fe"><span>arguments</span></span><span>)</span></span></div></pre><p>This method is required for postfix:«( )» and postfix:«.( )». It&#39;s what makes an object actually call-able and needs to be overloaded to let a given object act like a routine. If the object needs to be stored in a <code>&amp;</code>-sigiled container, is has to implement Callable.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>A</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Callable</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>submethod</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>CALL-ME</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>|</span></span><span class="routine name perl6fe"><span>c</span></span><span>)</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>called</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>A</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>a</span></span><span>();&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«called␤»</span></span></span></div></pre><h2 id="(Callable)_method_Capture"><a href="/type/Callable#method_Capture">(Callable) method Capture</a></h2>
 <p>Defined as:</p>
-<pre class="pod-block-code">method Capture()</pre>
-<p>Throws <code>X::Cannot::Capture</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Capture</span></span><span>()</span></span></div></pre><p>Throws <code>X::Cannot::Capture</code>.</p>
 
     </div>
     <aside><ol start="1">
@@ -204,7 +186,8 @@ say a(); # OUTPUT: «called␤»</pre>
     </div>
 <footer class="pretty-box yellow">
     <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/ForeignCode.pod6">/type/ForeignCode</a>.</p>
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

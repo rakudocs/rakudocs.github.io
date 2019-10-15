@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -70,21 +70,15 @@
 <p>From <a href="/language/regexes#\d_and_\D">Regexes</a></p>
 <h2 id="(Regexes)_regex_\d_\d"><a href="/language/regexes#\d_and_\D">(Regexes) regex \d \d</a></h2>
 <p><code>\d</code> matches a single digit (Unicode property <code>N</code>) and <code>\D</code> matches a single character that is not a digit.</p>
-<pre class="pod-block-code">&#39;ab42&#39; ~~ /\d/ and say ~$/;     # OUTPUT: «4␤»
-&#39;ab42&#39; ~~ /\D/ and say ~$/;     # OUTPUT: «a␤»</pre>
-<p>Note that not only the Arabic digits (commonly used in the Latin alphabet) match <code>\d</code>, but also digits from other scripts.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>ab42</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="constant character escape class regexp perl6fe"><span>\d</span></span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>and</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>~</span></span><span class="keyword other special-method perl6fe"><span>$/</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«4␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>ab42</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="constant character escape class regexp perl6fe"><span>\D</span></span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>and</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>~</span></span><span class="keyword other special-method perl6fe"><span>$/</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«a␤»</span></span></span></div></pre><p>Note that not only the Arabic digits (commonly used in the Latin alphabet) match <code>\d</code>, but also digits from other scripts.</p>
 <p>Examples of digits are:</p>
-<pre class="pod-block-code">U+0035 5 DIGIT FIVE
-U+0BEB ௫ TAMIL DIGIT FIVE
-U+0E53 ๓ THAI DIGIT THREE
-U+17E5 ៥ KHMER DIGIT FIVE
-</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>0035&nbsp;</span><span class="constant numeric perl6fe"><span>5</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>DIGIT</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>FIVE</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>0BEB&nbsp;</span><span class="constant numeric perl6fe"><span>௫</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>TAMIL</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>DIGIT</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>FIVE</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>0E53&nbsp;</span><span class="constant numeric perl6fe"><span>๓</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>THAI</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>DIGIT</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>THREE</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>17E5&nbsp;</span><span class="constant numeric perl6fe"><span>៥</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>KHMER</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>DIGIT</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>FIVE</span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

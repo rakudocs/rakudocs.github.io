@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -70,21 +70,14 @@
 <p>From <a href="/type/Label#method_last">Label</a></p>
 <h2 id="(Label)_method_last"><a href="/type/Label#method_last">(Label) method last</a></h2>
 <p>Defined as:</p>
-<pre class="pod-block-code">method last(Label:)</pre>
-<p>Terminate the execution of the loop associated with the label.</p>
-<pre class="pod-block-code">MY-LABEL:
-for 1..10 {
-    last MY-LABEL if $_ &gt; 5;
-    print &quot;$_ &quot;;
-}
-
-# OUTPUT: «1 2 3 4 5 »</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>last</span></span><span>(</span><span class="support type perl6fe"><span>Label</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Terminate the execution of the loop associated with the label.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>MY-LABEL</span></span><span class="keyword operator generic perl6fe"><span>:</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>last</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>MY-LABEL</span></span><span>&nbsp;</span><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>5</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>print</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span>_</span></span><span>&nbsp;</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«1&nbsp;2&nbsp;3&nbsp;4&nbsp;5&nbsp;»</span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
+    <p>This is a work in progress to document Raku (formerly known as Perl 6),
+        and known to be
         incomplete.</p>
      <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.</p>

@@ -126,7 +126,7 @@ A very simple Pod6 document
 <h1 id="Block_structure"><a class="u" href="#___top" title="go to top of document">Block structure</a></h1>
 <p>A Pod6 document may consist of multiple Pod6 blocks. There are four ways to define a block: delimited, paragraph, abbreviated, and declarator; the first three yield the same result but the fourth differs. You can use whichever form is most convenient for your particular documentation task.</p>
 <h2 id="Delimited_blocks"><a class="u" href="#___top" title="go to top of document">Delimited blocks</a></h2>
-<p>Delimited blocks are bounded by <code>=begin</code> and <code>=end</code> markers, both of which are followed by a valid Perl&nbsp;6 identifier, which is the <code>typename</code> of the block. Typenames that are entirely lowercase (for example: <code>=begin head1</code>) or entirely uppercase (for example: <code>=begin SYNOPSIS</code>) are reserved.</p>
+<p>Delimited blocks are bounded by <code>=begin</code> and <code>=end</code> markers, both of which are followed by a valid Raku identifier, which is the <code>typename</code> of the block. Typenames that are entirely lowercase (for example: <code>=begin head1</code>) or entirely uppercase (for example: <code>=begin SYNOPSIS</code>) are reserved.</p>
 <pre class="pod-block-code">=begin head1
 Top Level Heading
 =end head1
@@ -143,7 +143,7 @@ Top Level Heading
 </table><p>Where &#39;$e1, $e2, ...&#39; are list elements of type String, Int, Number, or Boolean. Lists may have mixed element types. Note that one-element lists are converted to the type of their element (String, Int, Number, or Boolean). Also note that &quot;bigints&quot; can be used if required.</p>
 <p>For hashes, &#39;$k1, $k2, ...&#39; are keys of type Str and &#39;$v1, $v2, ...&#39; are values of type String, Int, Number, or Boolean.</p>
 <p>Strings are delimited by single or double quotes. Whitespace is not significant outside of strings. Hash keys need not be quote-delimited unless they contain significant whitespace. Strings entered inside angle brackets become lists if any whitespace is used inside the angle brackets.</p>
-<p>All option keys and values must, of course, be constants since Pod6 is a specification language, not a programming language. Specifically, option values cannot be closures. See Synopsis 2 for details of the various Perl&nbsp;6 pair notations.</p>
+<p>All option keys and values must, of course, be constants since Pod6 is a specification language, not a programming language. Specifically, option values cannot be closures. See Synopsis 2 for details of the various Raku pair notations.</p>
 <p>The configuration section may be extended over subsequent lines by starting those lines with an <code>=</code> in the first (virtual) column followed by a whitespace character. <a href="#fn-1" id="fn-ref-1">[1]</a></p>
 <h2 id="Paragraph_blocks"><a class="u" href="#___top" title="go to top of document">Paragraph blocks</a></h2>
 <p>Paragraph blocks begin by a <code>=for</code> marker and end by the next Pod6 directive or the first blank line. The <code>=for</code> marker is followed by the <code>typename</code> of the block plus, optionally, any configuration data as in the delimited blocks described above.</p>
@@ -388,17 +388,17 @@ multi-line.
 <p>The following codes are available: <strong>B</strong>, <strong>C</strong>, <strong>E</strong>, <strong>I</strong>, <strong>K</strong>, <strong>L</strong>, <strong>N</strong>, <strong>P</strong>, <strong>R</strong>, <strong>T</strong>, <strong>U</strong>, <strong>V</strong>, <strong>X</strong>, and <strong>Z</strong>.</p>
 <h2 id="Bold"><a class="u" href="#___top" title="go to top of document">Bold</a></h2>
 <p>To format a text in bold enclose it in <code>B&lt; &gt;</code></p>
-<pre class="pod-block-code">Perl&nbsp;6 is B&lt;awesome&gt;
+<pre class="pod-block-code">Raku is B&lt;awesome&gt;
 </pre>
-<p>Perl&nbsp;6 is <strong>awesome</strong></p>
+<p>Raku is <strong>awesome</strong></p>
 <h2 id="Italic"><a class="u" href="#___top" title="go to top of document">Italic</a></h2>
 <p>To format a text in italic enclose it in <code>I&lt; &gt;</code></p>
-<pre class="pod-block-code">Perl&nbsp;6 is I&lt;awesome&gt;
+<pre class="pod-block-code">Raku is I&lt;awesome&gt;
 </pre>
-<p>Perl&nbsp;6 is <em>awesome</em></p>
+<p>Raku is <em>awesome</em></p>
 <h2 id="Underlined"><a class="u" href="#___top" title="go to top of document">Underlined</a></h2>
 <p>To underline a text enclose it in <code>U&lt; &gt;</code></p>
-<pre class="pod-block-code">Perl&nbsp;6 is U&lt;awesome&gt;
+<pre class="pod-block-code">Raku is U&lt;awesome&gt;
 </pre>
 <p></p>
 <h2 id="Code"><a class="u" href="#___top" title="go to top of document">Code</a></h2>
@@ -410,11 +410,11 @@ multi-line.
 <p>To create a link enclose it in <code>L&lt; &gt;</code></p>
 <p>A vertical bar (optional) separates label and target.</p>
 <p>The target location can be an URL (first example) or a local Pod6 document (second example). Local file names are relative to the base of the project, not the current document.</p>
-<pre class="pod-block-code">Perl&nbsp;6 homepage L&lt;https://perl6.org&gt;
-L&lt;Perl&nbsp;6 homepage|https://perl6.org&gt;
+<pre class="pod-block-code">Raku homepage L&lt;https://perl6.org&gt;
+L&lt;Raku homepage|https://perl6.org&gt;
 </pre>
-<p>Perl&nbsp;6 homepage <a href="https://perl6.org">https://perl6.org</a></p>
-<p><a href="https://perl6.org">Perl&nbsp;6 homepage</a></p>
+<p>Raku homepage <a href="https://perl6.org">https://perl6.org</a></p>
+<p><a href="https://perl6.org">Raku homepage</a></p>
 <pre class="pod-block-code">Structure L&lt;/language/about#Structure|/language/about#Structure&gt;
 L&lt;Structure|/language/about#Structure&gt;
 </pre>
@@ -457,13 +457,13 @@ P&lt;http://www.MegaGigaTeraPetaCorp.com/std/disclaimer.txt&gt;
 <h2 id="Comments"><a class="u" href="#___top" title="go to top of document">Comments</a></h2>
 <p>A comment is text that is never rendered.</p>
 <p>To create a comment enclose it in <code>Z&lt; &gt;</code></p>
-<pre class="pod-block-code">Perl&nbsp;6 is awesome Z&lt;Of course it is!&gt;
+<pre class="pod-block-code">Raku is awesome Z&lt;Of course it is!&gt;
 </pre>
-<p>Perl&nbsp;6 is awesome </p>
+<p>Raku is awesome </p>
 <h2 id="Notes"><a class="u" href="#___top" title="go to top of document">Notes</a></h2>
 <p>Notes are rendered as footnotes.</p>
 <p>To create a note enclose it in <code>N&lt; &gt;</code></p>
-<pre class="pod-block-code">Perl&nbsp;6 is multi-paradigmatic N&lt;Supporting Procedural, Object Oriented, and Functional programming&gt;
+<pre class="pod-block-code">Raku is multi-paradigmatic N&lt;Supporting Procedural, Object Oriented, and Functional programming&gt;
 </pre>
 <p></p>
 <h2 id="Keyboard_input"><a class="u" href="#___top" title="go to top of document">Keyboard input</a></h2>
@@ -489,20 +489,20 @@ P&lt;http://www.MegaGigaTeraPetaCorp.com/std/disclaimer.txt&gt;
 <p></p>
 <h2 id="Unicode"><a class="u" href="#___top" title="go to top of document">Unicode</a></h2>
 <p>To include Unicode code points or HTML5 character references in a Pod6 document, enclose them in <code>E&lt; &gt;</code></p>
-<p><code>E&lt; &gt;</code> can enclose a number, which is treated as the decimal Unicode value for the desired code point. It can also enclose explicit binary, octal, decimal, or hexadecimal numbers using the Perl&nbsp;6 notations for explicitly based numbers.</p>
-<pre class="pod-block-code">Perl&nbsp;6 makes considerable use of the E&lt;171&gt; and E&lt;187&gt; characters.
+<p><code>E&lt; &gt;</code> can enclose a number, which is treated as the decimal Unicode value for the desired code point. It can also enclose explicit binary, octal, decimal, or hexadecimal numbers using the Raku notations for explicitly based numbers.</p>
+<pre class="pod-block-code">Raku makes considerable use of the E&lt;171&gt; and E&lt;187&gt; characters.
 
-Perl&nbsp;6 makes considerable use of the E&lt;laquo&gt; and E&lt;raquo&gt; characters.
+Raku makes considerable use of the E&lt;laquo&gt; and E&lt;raquo&gt; characters.
 
-Perl&nbsp;6 makes considerable use of the E&lt;0b10101011&gt; and E&lt;0b10111011&gt; characters.
+Raku makes considerable use of the E&lt;0b10101011&gt; and E&lt;0b10111011&gt; characters.
 
-Perl&nbsp;6 makes considerable use of the E&lt;0o253&gt; and E&lt;0o273&gt; characters.
+Raku makes considerable use of the E&lt;0o253&gt; and E&lt;0o273&gt; characters.
 
-Perl&nbsp;6 makes considerable use of the E&lt;0d171&gt; and E&lt;0d187&gt; characters.
+Raku makes considerable use of the E&lt;0d171&gt; and E&lt;0d187&gt; characters.
 
-Perl&nbsp;6 makes considerable use of the E&lt;0xAB&gt; and E&lt;0xBB&gt; characters.
+Raku makes considerable use of the E&lt;0xAB&gt; and E&lt;0xBB&gt; characters.
 </pre>
-<p>Perl&nbsp;6 makes considerable use of the « and » characters.</p>
+<p>Raku makes considerable use of the « and » characters.</p>
 <h2 id="Verbatim_text"><a class="u" href="#___top" title="go to top of document">Verbatim text</a></h2>
 <p>This code is not implemented by <code>Pod::To::HTML</code>, but is implemented in <code>Pod::To::BigPage</code>.</p>
 <p>The <code>V&lt;&gt;</code> formatting code treats its entire contents as being <strong>verbatim</strong>, disregarding every apparent formatting code within it. For example:</p>
@@ -569,7 +569,7 @@ because you &quot;OR&quot; the &quot;cache&quot;.
 </pre>
 <p>Now <code>myprogram --man</code> will output your Pod6 rendered as a man page.</p>
 <h1 id="Accessing_Pod"><a class="u" href="#___top" title="go to top of document">Accessing Pod</a></h1>
-<p>In order to access Pod6 documentation from within a Perl&nbsp;6 program the special <code>=</code> twigil, as documented in the <a href="/language/variables#The_=_twigil">variables section</a>, must be used.</p>
+<p>In order to access Pod6 documentation from within a Raku program the special <code>=</code> twigil, as documented in the <a href="/language/variables#The_=_twigil">variables section</a>, must be used.</p>
 <p>The <code>=</code> twigil provides the introspection over the Pod6 structure, providing a <a href="/type/Pod::Block">Pod::Block</a> tree root from which it is possible to access the whole structure of the Pod6 document.</p>
 <p>As an example, the following piece of code introspects its own Pod6 documentation:</p>
 <pre class="pod-block-code">=begin pod

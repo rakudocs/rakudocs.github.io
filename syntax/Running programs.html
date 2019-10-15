@@ -69,10 +69,12 @@
 <h1 id="language_documentation_Inter-process_communication"><a class="u" href="#___top" title="go to top of document">language documentation Inter-process communication</a></h1>
 <p>From <a href="/language/ipc#Running_programs">Inter-process communication</a></p>
 <h2 id="(Inter-process_communication)_Running_programs"><a href="/language/ipc#Running_programs">(Inter-process communication)  Running programs</a></h2>
-<p>Many programs need to be able to run other programs, and we need to pass information to them and receive their output and exit status. Running a program in Perl&nbsp;6 is as easy as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>run</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>git</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>status</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div></pre><p>This line runs the program named &quot;git&quot; and passes &quot;git&quot; and &quot;status&quot; to its command-line. It will find the program using the <code>%*ENV&lt;PATH&gt; </code> setting.</p>
+<p>Many programs need to be able to run other programs, and we need to pass information to them and receive their output and exit status. Running a program in Raku is as easy as:</p>
+<pre class="pod-block-code">run &#39;git&#39;, &#39;status&#39;;</pre>
+<p>This line runs the program named &quot;git&quot; and passes &quot;git&quot; and &quot;status&quot; to its command-line. It will find the program using the <code>%*ENV&lt;PATH&gt; </code> setting.</p>
 <p>If you would like to run a program by sending a command-line to the shell, there&#39;s a tool for that as well. All shell metacharacters are interpreted by the shell, including pipes, redirects, environment variable substitutions and so on.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>shell</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>ls&nbsp;-lR&nbsp;|&nbsp;gzip&nbsp;-9&nbsp;&gt;&nbsp;ls-lR.gz</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div></pre><p>Caution should be taken when using <code>shell</code> with user input.</p>
+<pre class="pod-block-code">shell &#39;ls -lR | gzip -9 &gt; ls-lR.gz&#39;;</pre>
+<p>Caution should be taken when using <code>shell</code> with user input.</p>
 
     </div>
     

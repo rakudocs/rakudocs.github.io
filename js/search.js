@@ -783,15 +783,15 @@ $(function(){
 ,
 { category: "Language", value: "Core modules", url: "/language/modules-core" }
 ,
-{ category: "Language", value: "Perl 5 to Perl 6 guide - overview", url: "/language/5to6-overview" }
+{ category: "Language", value: "Perl 5 to Raku guide - overview", url: "/language/5to6-overview" }
 ,
 { category: "Language", value: "Opener graphemes", url: "/language/opener-chars" }
 ,
 { category: "Language", value: "Contexts and contextualizers", url: "/language/contexts" }
 ,
-{ category: "Language", value: "Perl 5 to Perl 6 guide - special variables", url: "/language/5to6-perlvar" }
+{ category: "Language", value: "Perl 5 to Raku guide - special variables", url: "/language/5to6-perlvar" }
 ,
-{ category: "Language", value: "Doing math with Perl 6", url: "/language/math" }
+{ category: "Language", value: "Doing math with Raku", url: "/language/math" }
 ,
 { category: "Language", value: "Subscripts", url: "/language/subscripts" }
 ,
@@ -811,23 +811,23 @@ $(function(){
 ,
 { category: "Language", value: "Date and time functions", url: "/language/temporal" }
 ,
-{ category: "Language", value: "Perl 5 to Perl 6 guide - operators", url: "/language/5to6-perlop" }
+{ category: "Language", value: "Perl 5 to Raku guide - operators", url: "/language/5to6-perlop" }
 ,
 { category: "Language", value: "Creating operators", url: "/language/optut" }
 ,
 { category: "Language", value: "Native calling interface", url: "/language/nativecall" }
 ,
-{ category: "Language", value: "Perl 5 to Perl 6 guide - in a nutshell", url: "/language/5to6-nutshell" }
+{ category: "Language", value: "Perl 5 to Raku guide - in a nutshell", url: "/language/5to6-nutshell" }
 ,
 { category: "Language", value: "Metaobject protocol (MOP)", url: "/language/mop" }
 ,
-{ category: "Language", value: "JavaScript (Node.js) to Perl 6 - nutshell", url: "/language/js-nutshell" }
+{ category: "Language", value: "JavaScript (Node.js) to Raku - nutshell", url: "/language/js-nutshell" }
 ,
 { category: "Language", value: "Operators", url: "/language/operators" }
 ,
 { category: "Language", value: "Object orientation", url: "/language/objects" }
 ,
-{ category: "Language", value: "Perl 6 native types", url: "/language/nativetypes" }
+{ category: "Language", value: "Raku native types", url: "/language/nativetypes" }
 ,
 { category: "Language", value: "Packages", url: "/language/packages" }
 ,
@@ -843,13 +843,13 @@ $(function(){
 ,
 { category: "Language", value: "Brief introduction", url: "/language/intro" }
 ,
-{ category: "Language", value: "Perl 5 to Perl 6 guide - functions", url: "/language/5to6-perlfunc" }
+{ category: "Language", value: "Perl 5 to Raku guide - functions", url: "/language/5to6-perlfunc" }
 ,
 { category: "Language", value: "Lists, sequences, and arrays", url: "/language/list" }
 ,
 { category: "Language", value: "Syntax", url: "/language/syntax" }
 ,
-{ category: "Language", value: "Perl 5 to Perl 6 guide - syntax", url: "/language/5to6-perlsyn" }
+{ category: "Language", value: "Perl 5 to Raku guide - syntax", url: "/language/5to6-perlsyn" }
 ,
 { category: "Language", value: "Pragmas", url: "/language/pragmas" }
 ,
@@ -869,15 +869,15 @@ $(function(){
 ,
 { category: "Language", value: "Quoting constructs", url: "/language/quoting" }
 ,
-{ category: "Language", value: "Newline handling in Perl 6", url: "/language/newline" }
+{ category: "Language", value: "Newline handling in Raku", url: "/language/newline" }
 ,
-{ category: "Language", value: "Ruby to Perl 6 - nutshell", url: "/language/rb-nutshell" }
+{ category: "Language", value: "Ruby to Raku - nutshell", url: "/language/rb-nutshell" }
 ,
 { category: "Language", value: "Iterating", url: "/language/iterating" }
 ,
-{ category: "Language", value: "Haskell to Perl 6 - nutshell", url: "/language/haskell-to-p6" }
+{ category: "Language", value: "Haskell to Raku - nutshell", url: "/language/haskell-to-p6" }
 ,
-{ category: "Language", value: "Python to Perl 6 - nutshell", url: "/language/py-nutshell" }
+{ category: "Language", value: "Python to Raku - nutshell", url: "/language/py-nutshell" }
 ,
 { category: "Language", value: "System interaction", url: "/language/system" }
 ,
@@ -889,7 +889,7 @@ $(function(){
 ,
 { category: "Language", value: "Performance", url: "/language/performance" }
 ,
-{ category: "Language", value: "Perl 6 by example P6-101", url: "/language/101-basics" }
+{ category: "Language", value: "Raku by example P6-101", url: "/language/101-basics" }
 ,
 { category: "Language", value: "Variables", url: "/language/variables" }
 ,
@@ -901,7 +901,7 @@ $(function(){
 ,
 { category: "programs", value: "Debugging", url: "/programs/01-debugging" }
 ,
-{ category: "programs", value: "Shell environment variables used by Perl 6", url: "/programs/03-environment-variables" }
+{ category: "programs", value: "Shell environment variables used by Raku", url: "/programs/03-environment-variables" }
 ,
 { category: "programs", value: "Reading the docs", url: "/programs/02-reading-docs" }
 ,
@@ -4575,7 +4575,7 @@ $(function(){
 ,
 { category: "Reference", value: "A.\"$m\"()", url: "/language/packages#index-entry-A.\"$m\"()" }
 ,
-{ category: "Reference", value: "Raku and Perl 6 (FAQ) (Rakudo)", url: "/language/faq#index-entry-Rakudo__Raku_and_Perl 6_(FAQ)" }
+{ category: "Reference", value: "Raku and Raku (FAQ) (Rakudo)", url: "/language/faq#index-entry-Rakudo__Raku_and_Raku_(FAQ)" }
 ,
 { category: "Reference", value: "v6.d (FAQ)", url: "/language/faq#index-entry-v6.d_(FAQ)" }
 ,
@@ -4631,11 +4631,11 @@ $(function(){
 ,
 { category: "Reference", value: "Coroutine (FAQ)", url: "/language/faq#index-entry-Coroutine_(FAQ)" }
 ,
-{ category: "Reference", value: "Perl 6 Implementation (FAQ)", url: "/language/faq#index-entry-Perl 6_Implementation_(FAQ)" }
+{ category: "Reference", value: "Raku Implementation (FAQ)", url: "/language/faq#index-entry-Raku_Implementation_(FAQ)" }
 ,
 { category: "Reference", value: "NQP (FAQ)", url: "/language/faq#index-entry-NQP_(FAQ)" }
 ,
-{ category: "Reference", value: "Perl 6 Distribution (FAQ)", url: "/language/faq#index-entry-Perl 6_Distribution_(FAQ)" }
+{ category: "Reference", value: "Raku Distribution (FAQ)", url: "/language/faq#index-entry-Raku_Distribution_(FAQ)" }
 ,
 { category: "Reference", value: "Rakudo Star release cycle (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_release_cycle_(FAQ)" }
 ,

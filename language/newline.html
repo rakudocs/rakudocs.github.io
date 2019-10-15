@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Newline handling in Perl&nbsp;6</title>
+        <title>Newline handling in Raku</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -66,11 +66,11 @@
         </button>
       </div>
 
-    <h1 class='title'>Newline handling in Perl&nbsp;6</h1>
+    <h1 class='title'>Newline handling in Raku</h1>
     <p class='subtitle'>How the different newline characters are handled, and how to change the behavior</p>
     
     <div class="pod-body no-toc">
-    <p>Different operating systems use different characters, or combinations of them, to represent the transition to a new line. Every language has its own set of rules to handle this. Perl&nbsp;6 has the following ones:</p>
+    <p>Different operating systems use different characters, or combinations of them, to represent the transition to a new line. Every language has its own set of rules to handle this. Raku has the following ones:</p>
 <ul><li><p><code>\n</code> in a string literal means Unicode codepoint 10.</p>
 </li>
 <li><p>The default <a href="/routine/nl-out">nl-out</a> that is appended to a string by say is also <code>\n</code>.</p>
@@ -89,7 +89,10 @@
 </li>
 </ul>
 <p><a name="index-entry-:nl-out"></a> You can change the default behavior for a particular handle by setting the <code>:nl-out</code> attribute when you create that handle.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>crlf-out</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>open</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Special</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>&lt;STDOUT&gt;</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>),&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>nl-out</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span class="constant character escape perl6fe"><span>\\</span><span>\n</span><span>\r</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>));</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>OUT</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>OUTPUT:&nbsp;«1␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>crlf-out</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>OUTPUT:&nbsp;«1\␤␍»</span></span></span></div></pre><p>In this example, where we are replicating standard output to a new handle by using <a href="/type/IO::Special">IO::Special</a>, we are appending a <code>\</code> to the end of the string, followed by a newline <code>␤</code> and a carriage return <code>␍</code>; everything we print to that handle will get those characters at the end of the line, as shown.</p>
+<pre class="pod-block-code">my $crlf-out = open(IO::Special.new(&#39;&lt;STDOUT&gt;&#39;), :nl-out(&quot;\\\n\r&quot;));
+$*OUT.say: 1;     #OUTPUT: «1␤»
+$crlf-out.say: 1; #OUTPUT: «1\␤␍»</pre>
+<p>In this example, where we are replicating standard output to a new handle by using <a href="/type/IO::Special">IO::Special</a>, we are appending a <code>\</code> to the end of the string, followed by a newline <code>␤</code> and a carriage return <code>␍</code>; everything we print to that handle will get those characters at the end of the line, as shown.</p>
 <p>In regular expressions, <a href="/language/regexes#index-entry-regex_\n-regex_\N-\n_and_\N"><code>\n</code></a> is defined in terms of the <a href="https://unicode.org/reports/tr18/#Line_Boundaries">Unicode definition of logical newline</a>. It will match <code>.</code> and also <code>\v</code>, as well as any class that includes whitespace.</p>
 
     </div>

@@ -67,7 +67,7 @@
       </div>
 
     <h1 class='title'>Sets, bags, and mixes</h1>
-    <p class='subtitle'>Unordered collections of unique and weighted objects in Perl&nbsp;6</p>
+    <p class='subtitle'>Unordered collections of unique and weighted objects in Raku</p>
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
@@ -106,7 +106,7 @@
 <p>In a nutshell, these classes hold, in general, unordered collections of objects, much like an <a href="/type/Hash#index-entry-object_hash">object hash</a>. The <a href="/type/QuantHash">QuantHash</a> role is the role that is implemented by all of these classes: therefore they are also referenced as <code>QuantHash</code>es.</p>
 <p><code>Set</code> and <code>SetHash</code> also implement the <a href="/type/Setty">Setty</a> role, <code>Bag</code> and <code>BagHash</code> implement the <a href="/type/Baggy">Baggy</a> role, <code>Mix</code> and <code>MixHash</code> implement the <a href="/type/Mixy">Mixy</a> role (which itself implements the <code>Baggy</code> role).</p>
 <p>Sets only consider if objects in the collection are present or not, bags can hold several objects of the same kind, and mixes also allow fractional (and negative) weights. The regular versions are immutable, the <em>Hash</em> versions are mutable.</p>
-<p>Let&#39;s elaborate on that. If you want to collect objects in a container but you do not care about the order of these objects, Perl&nbsp;6 provides these <em>unordered</em> collection types. Being unordered, these containers can be more efficient than <a href="/type/List">Lists</a> or <a href="/type/Array">Arrays</a> for looking up elements or dealing with repeated items.</p>
+<p>Let&#39;s elaborate on that. If you want to collect objects in a container but you do not care about the order of these objects, Raku provides these <em>unordered</em> collection types. Being unordered, these containers can be more efficient than <a href="/type/List">Lists</a> or <a href="/type/Array">Arrays</a> for looking up elements or dealing with repeated items.</p>
 <p>On the other hand, if you want to get the contained objects (elements) <strong>without duplicates</strong> and you only care <em>whether</em> an element is in the collection or not, you can use a <a href="/type/Set">Set</a> or <a href="/type/SetHash">SetHash</a>.</p>
 <p>If you want to get rid of duplicates but still preserve order, take a look at the <a href="/routine/unique">unique</a> routine for <a href="/type/List">List</a>.</p>
 <p>If you want to keep track of the <strong>number of times each object appeared</strong>, you can use a <a href="/type/Bag">Bag</a> or <a href="/type/BagHash">BagHash</a>. In these <code>Baggy</code> containers each element has a weight (an unsigned integer) indicating the number of times the same object has been included in the collection.</p>

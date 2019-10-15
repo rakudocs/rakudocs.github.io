@@ -78,7 +78,8 @@
 </nav>
 
     <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Telemetry::Instrument::Usage</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><strong>Note: </strong> This class is a Rakudo-specific feature and not standard Perl&nbsp;6.</p>
+    <pre class="pod-block-code">class Telemetry::Instrument::Usage { }</pre>
+<p><strong>Note: </strong> This class is a Rakudo-specific feature and not standard Raku.</p>
 <p>Objects of this class are generally not created by themselves, but rather through making a <a href="/type/Telemetry">snap</a>shot.</p>
 <h2 id="Useful_readings"><a class="u" href="#___top" title="go to top of document">Useful readings</a></h2>
 <p>This class provides the following generally usable readings (in alphabetical order):</p>
@@ -114,7 +115,24 @@
 <p>Less useful readings</p>
 </section>
 <p>The following readings may or may not contain sensible information, mostly depending on hardware and OS being used. Please check your local <code>getrusage</code> documentation for their exact meaning:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>name</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>getrusage</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>struct</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>name</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator multi-symbol perl6fe"><span>===</span></span><span>=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>max-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_maxrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>ix-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_ixress</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>id-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_idrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>is-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_isrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>minf</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_minflt</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>majf</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_majflt</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>nswp</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nswap</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>inb</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_inblock</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>outb</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_oublock</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>msnd</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_msgsnd</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>mrcv</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_msgrcv</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>nsig</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nsignals</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>volcsw</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nvcsw</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>invcsw</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nivcsw</span></span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
+<pre class="pod-block-code">name        getrusage struct name
+====        =====================
+max-rss     ru_maxrss
+ix-rss      ru_ixress
+id-rss      ru_idrss
+is-rss      ru_isrss
+minf        ru_minflt
+majf        ru_majflt
+nswp        ru_nswap
+inb         ru_inblock
+outb        ru_oublock
+msnd        ru_msgsnd
+mrcv        ru_msgrcv
+nsig        ru_nsignals
+volcsw      ru_nvcsw
+invcsw      ru_nivcsw
+</pre>
+<h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Telemetry::Instrument::Usage</code></figcaption>
   <svg width="261pt" height="188pt"

@@ -76,7 +76,9 @@
 <p>From <a href="/type/Complex#postfix_i">Complex</a></p>
 <h2 id="(Complex)_postfix_i"><a href="/type/Complex#postfix_i">(Complex) postfix i</a></h2>
 <p>Adding a trailing <code>i</code> to a number literal makes it a Complex, for example:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>i;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;same&nbsp;as&nbsp;Complex.new(0,&nbsp;2);</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>-2e3i;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;same&nbsp;as&nbsp;Complex.new(1,&nbsp;-2e3);</span></span></span></div></pre>
+<pre class="pod-block-code">say 2i;     # same as Complex.new(0, 2);
+say 1-2e3i; # same as Complex.new(1, -2e3);</pre>
+
     </div>
     
     </div>

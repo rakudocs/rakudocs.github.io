@@ -79,12 +79,16 @@
 </nav>
 
     <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Cancellation</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p>A low level part of the Perl&nbsp;6 <a href="/language/concurrency#Schedulers">concurrency</a> system. Some <a href="/type/Scheduler">Scheduler</a> objects return a <code>Cancellation</code> with the <a href="/type/Scheduler#method_cue">.cue</a> method which can be used to cancel the scheduled execution before normal completion. <code>Cancellation.cancelled</code> is a boolean that is true after <a href="#cancel">cancel</a> is called.</p>
+    <pre class="pod-block-code">my class Cancellation {}</pre>
+<p>A low level part of the Raku <a href="/language/concurrency#Schedulers">concurrency</a> system. Some <a href="/type/Scheduler">Scheduler</a> objects return a <code>Cancellation</code> with the <a href="/type/Scheduler#method_cue">.cue</a> method which can be used to cancel the scheduled execution before normal completion. <code>Cancellation.cancelled</code> is a boolean that is true after <a href="#cancel">cancel</a> is called.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_cancel"><a class="u" href="#___top" title="go to top of document">method cancel</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>cancel</span></span><span>()</span></span></div></pre><p>Usage:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>Cancellation</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>cancel</span></span></span></div></pre><p>Cancels the scheduled execution of a task before normal completion.</p>
+<pre class="pod-block-code">method cancel()</pre>
+<p>Usage:</p>
+<pre class="pod-block-code">Cancellation.cancel
+</pre>
+<p>Cancels the scheduled execution of a task before normal completion.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Cancellation</code></figcaption>

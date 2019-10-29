@@ -71,7 +71,8 @@
 <h2 id="(Regexes)_regex_quantifier_+_+"><a href="/language/regexes#One_or_more:_+">(Regexes) regex quantifier + +</a></h2>
 <p>The <code>+</code> quantifier makes the preceding atom match one or more times, with no upper limit.</p>
 <p>For example, to match strings of the form <code>key=value</code>, you can write a regex like this:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\w</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span><span class="string literal perl6fe"><span>&#39;</span><span>=</span><span>&#39;</span></span><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\w</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span></span></div></pre>
+<pre class="pod-block-code">/ \w+ &#39;=&#39; \w+ /</pre>
+
     </div>
     
     </div>

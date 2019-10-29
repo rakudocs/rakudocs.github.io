@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>syntax \w</title>
+        <title>syntax %?RESOURCES</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -53,30 +53,47 @@
 <div id="content" class="pretty-box yellow content_fragment">
   
 
-    <h1 class='title'>syntax \w</h1>
+    <h1 class='title'>syntax %?RESOURCES</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Regexes">language documentation Regexes</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Regexes)_regex_\w_\w">(Regexes) regex \w \w</a></td></tr>
-               
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Variables">language documentation Variables</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Variables)_%?RESOURCES">(Variables)  %?RESOURCES</a></td></tr>
+                                                  
 </table>
 </nav>
 
     <div class="pod-body">
-    <p>Documentation for syntax <code>\w</code> assembled from the following types:</p>
-<h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
-<p>From <a href="/language/regexes#\w_and_\W">Regexes</a></p>
-<h2 id="(Regexes)_regex_\w_\w"><a href="/language/regexes#\w_and_\W">(Regexes) regex \w \w</a></h2>
-<p><code>\w</code> matches a single word character, i.e. a letter (Unicode category L), a digit or an underscore. <code>\W</code> matches a single character that is not a word character.</p>
-<p>Examples of word characters:</p>
-<pre class="pod-block-code">0041 A LATIN CAPITAL LETTER A
-0031 1 DIGIT ONE
-03B4 δ GREEK SMALL LETTER DELTA
-03F3 ϳ GREEK LETTER YOT
-0409 Љ CYRILLIC CAPITAL LETTER LJE
+    <p>Documentation for syntax <code>%?RESOURCES</code> assembled from the following types:</p>
+<h1 id="language_documentation_Variables"><a class="u" href="#___top" title="go to top of document">language documentation Variables</a></h1>
+<p>From <a href="/language/variables#%?RESOURCES">Variables</a></p>
+<h2 id="(Variables)_%?RESOURCES"><a href="/language/variables#%?RESOURCES">(Variables)  %?RESOURCES</a></h2>
+<p>A compile-time variable available within code of a <a name="index-entry-Distribution"><span class="index-entry">Distribution</span></a>.</p>
+<p>It contains a hash that provides compile and runtime access to files associated with the Distribution of the current compilation unit. It is used to access a special storage for Distribution-wide static files (for example, examples of configuration files, templates etc).</p>
+<p>To add a file to a distribution, it is placed under <code>resources</code> directory:</p>
+<pre class="pod-block-code">Module-Foo/
+├── lib
+│   └── Module
+│       └── Foo.pm6
+├── META6.json
+├── README.md
+└── resources
+    └── images
+        └── foo.jpg
 </pre>
+<p>Then a relative path (starting from root directory of a distribution) to a file is specified under <code>&quot;resources&quot;</code> field in META6.json file:</p>
+<pre class="pod-block-code">&quot;resources&quot;: [
+    &quot;images/foo.jpg&quot;
+]
+</pre>
+<p>Every resource file is added to an installed Distribution and is accessible using a Hash-like access to <code>%?RESOURCES</code>:</p>
+<pre class="pod-block-code">my $foo-IO = %?RESOURCE&lt;images/foo.jpg&gt;;          # gets an object you can slurp
+my $foo-IO = %?RESOURCE&lt;images/foo.jpg&gt;.absolute; # gets an absolute path to a file
+my $foo-IO = %?RESOURCE&lt;images/foo.jpg&gt;.open;     # gets an opened IO::Handle to work with
+</pre>
+<p>Note that paths and names of resource files can be mangled in an installed distribution, so do not rely on their values in any other case besides using them as keys for <code>%?RESOURCES</code> variable.</p>
+<p><code>%?RESOURCES</code> variable is not implemented as a plain Hash, but an instance of <code>Distribution::Resources</code> type, so do not expect to see all available resource files in a distribution by printing or other ways to inspect its value. Instead, use the API described above to access particular files.</p>
 
     </div>
     

@@ -3075,6 +3075,8 @@ $(function(){
 ,
 { category: "syntax", value: "%", url: "/syntax/$PERCENT_SIGN" }
 ,
+{ category: "syntax", value: "%?RESOURCES", url: "/syntax/$PERCENT_SIGN%3FRESOURCES" }
+,
 { category: "regex", value: "&", url: "/syntax/&" }
 ,
 { category: "regex", value: "&&", url: "/syntax/&&" }
@@ -5780,6 +5782,10 @@ $(function(){
 { category: "Reference", value: "::?CLASS", url: "/language/variables#index-entry-::%3FCLASS" }
 ,
 { category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
+,
+{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
+,
+{ category: "Reference", value: "Distribution", url: "/language/variables#index-entry-Distribution" }
 ,
 { category: "Reference", value: "$?PACKAGE", url: "/language/variables#index-entry-$%3FPACKAGE" }
 ,

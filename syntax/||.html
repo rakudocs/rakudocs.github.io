@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -71,31 +73,23 @@
 <h2 id="(Regexes)_regex_||_||"><a href="/language/regexes#Alternation:_||">(Regexes) regex || ||</a></h2>
 <p>To match one of several possible alternatives, separate them by <code>||</code>; the first matching alternative wins.</p>
 <p>For example, <code>ini</code> files have the following form:</p>
-<pre class="pod-block-code">[section]
-key = value
-</pre>
-<p>Hence, if you parse a single line of an <code>ini</code> file, it can be either a section or a key-value pair and the regex would be (to a first approximation):</p>
-<pre class="pod-block-code">/ &#39;[&#39; \w+ &#39;]&#39; || \S+ \s* &#39;=&#39; \s* \S* /</pre>
-<p>That is, either a word surrounded by square brackets, or a string of non-whitespace characters, followed by zero or more spaces, followed by the equals sign <code>=</code>, followed again by optional whitespace, followed by another string of non-whitespace characters.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span>[</span><span class="routine name perl6fe"><span>section</span></span><span>]</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>key</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>value</span></span></span></div></pre><p>Hence, if you parse a single line of an <code>ini</code> file, it can be either a section or a key-value pair and the regex would be (to a first approximation):</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="string literal perl6fe"><span>&#39;</span><span>[</span><span>&#39;</span></span><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\w</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span><span class="string literal perl6fe"><span>&#39;</span><span>]</span><span>&#39;</span></span><span>&nbsp;</span><span class="support function alternation regexp perl6fe"><span>||</span></span><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\S</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\s</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>*</span></span><span>&nbsp;</span><span class="string literal perl6fe"><span>&#39;</span><span>=</span><span>&#39;</span></span><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\s</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>*</span></span><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\S</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>*</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span></span></div></pre><p>That is, either a word surrounded by square brackets, or a string of non-whitespace characters, followed by zero or more spaces, followed by the equals sign <code>=</code>, followed again by optional whitespace, followed by another string of non-whitespace characters.</p>
 <p>An empty string as the first branch is ignored, to allow you to format branches consistently. You could have written the previous example as</p>
-<pre class="pod-block-code">/
-|| &#39;[&#39; \w+ &#39;]&#39;
-|| \S+ \s* &#39;=&#39; \s* \S*
-/</pre>
-<p>Even in non-backtracking contexts, the alternation operator <code>||</code> tries all the branches in order until the first one matches.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>/</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator multi-symbol perl6fe"><span>||</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>[</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>w</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>]</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator multi-symbol perl6fe"><span>||</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>S</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>s</span></span><span class="keyword operator generic perl6fe"><span>*</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>=</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>s</span></span><span class="keyword operator generic perl6fe"><span>*</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>S</span></span><span class="keyword operator generic perl6fe"><span>*</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>/</span></span></span></div></pre><p>Even in non-backtracking contexts, the alternation operator <code>||</code> tries all the branches in order until the first one matches.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -106,5 +100,12 @@ key = value
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

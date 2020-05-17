@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -71,10 +73,7 @@
 <h2 id="(Regexes)_regex_[_]_[_]"><a href="/language/regexes#Non-capturing_grouping">(Regexes) regex [ ] [ ]</a></h2>
 <p>The parentheses in regexes perform a double role: they group the regex elements inside and they capture what is matched by the sub-regex inside.</p>
 <p>To get only the grouping behavior, you can use square brackets <code>[ ... ]</code> which, by default, don&#39;t capture.</p>
-<pre class="pod-block-code">if &#39;abc&#39; ~~ / [a||b] (c) / {
-    say ~$0;                # OUTPUT: «c␤»
-}</pre>
-<p>If you do not need the captures, using non-capturing <code>[ ... ]</code> groups provides the following benefits:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abc</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;[a</span><span class="support function alternation regexp perl6fe"><span>||</span></span><span>b]&nbsp;(c)&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>~</span></span><span class="keyword other special-method perl6fe"><span>$0</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«c␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>If you do not need the captures, using non-capturing <code>[ ... ]</code> groups provides the following benefits:</p>
 <ul><li><p>they more cleanly communicate the regex intent,</p>
 </li>
 <li><p>they make it easier to count the capturing groups that do mean and</p>
@@ -87,14 +86,14 @@
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -105,5 +104,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

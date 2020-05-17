@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -71,23 +73,19 @@
 <h2 id="(Raku_by_example_P6-101)_hash"><a href="/language/101-basics#hash">(Raku by example P6-101)  hash</a></h2>
 <p>These two lines of code declare two hashes. The <code>%</code> sigil marks each variable as a <code>Hash</code>. A <code>Hash</code> is an unordered collection of key-value pairs. Other programming languages call that a <em>hash table</em>, <em>dictionary</em>, or <em>map</em>. You can query a hash table for the value that corresponds to a certain <code>$key</code> with <code>%hash{$key}</code>.</p>
 <p>In the score counting program, <code>%matches</code> stores the number of matches each player has won. <code>%sets</code> stores the number of sets each player has won. Both of these hashes are indexed by the player&#39;s name.</p>
-<pre class="pod-block-code">for $file.lines -&gt; $line {
-    ...
-}
-</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>lines</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>line</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -98,5 +96,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

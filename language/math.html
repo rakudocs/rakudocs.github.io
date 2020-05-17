@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content__language_math">
   
       <div align="right">
@@ -134,7 +136,7 @@
 <h1 id="Mathematical_constants"><a class="u" href="#___top" title="go to top of document">Mathematical constants</a></h1>
 <p>Raku includes a set of mathematical constants:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>π</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3.141592653589793»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>τ</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Equivalent&nbsp;to&nbsp;2π;&nbsp;OUTPUT:&nbsp;«6.283185307179586»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;𝑒;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2.718281828459045␤»</span></span></span></div></pre><p>These constants are also available through <a href="/language/unicode_ascii">ASCII equivalents</a>: <code>e</code>, <code>pi</code> and <code>tau</code>.</p>
-<p>The <a href="https://github.com/JJ/p6-math-constants/pulls">Math::Constants</a> module includes an additional series of physical and mathematical constants such as the previously mentioned golden ratio φ or the Planck&#39;s constant ℎ.</p>
+<p>The <a href="https://github.com/JJ/p6-math-constants">Math::Constants</a> module includes an additional series of physical and mathematical constants such as the previously mentioned golden ratio φ or the Planck&#39;s constant ℎ.</p>
 <p>Since Raku allows for definition of variables that use Unicode graphemes, and also variable and constant names without any kind of sigil, it is considered a good practice to use the actual mathematical name of concepts to denominate them wherever possible.</p>
 <h1 id="Numerical_integration_of_ordinary_differential_equations"><a class="u" href="#___top" title="go to top of document">Numerical integration of ordinary differential equations</a></h1>
 <p>Raku is an amazing programming language, and of course, you can do a lot of cool math with it. A great amount of work during an applied mathematician&#39;s work is to simulate the models they create. For this reason, in every coding language, a numerical integrator is a must-have. Learning how to do this in Raku can be very useful.</p>
@@ -194,15 +196,15 @@
     
     </div>
 <footer class="pretty-box yellow">
-    <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/math.pod6">/language/math</a>.</p>
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/math.pod6">/language/math</a>.</p>
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -213,6 +215,13 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
 
     </body>
 </html>

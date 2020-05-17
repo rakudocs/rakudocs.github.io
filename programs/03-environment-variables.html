@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item selected darker-green" href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item selected darker-green" href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content__programs_03_environment_variables">
   
       <div align="right">
@@ -73,10 +75,10 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
           <tr class="toc-level-2"><td class="toc-number">0.1</td><td class="toc-text"><a href="#Module_loading">Module loading</a></td></tr>
                <tr class="toc-level-2"><td class="toc-number">0.2</td><td class="toc-text"><a href="#Error_message_verbosity_and_strictness">Error message verbosity and strictness</a></td></tr>
-                                <tr class="toc-level-2"><td class="toc-number">0.3</td><td class="toc-text"><a href="#Affecting_precompilation">Affecting precompilation</a></td></tr>
+                                  <tr class="toc-level-2"><td class="toc-number">0.3</td><td class="toc-text"><a href="#Affecting_precompilation">Affecting precompilation</a></td></tr>
                  <tr class="toc-level-2"><td class="toc-number">0.4</td><td class="toc-text"><a href="#Line_editor">Line editor</a></td></tr>
-                <tr class="toc-level-2"><td class="toc-number">0.5</td><td class="toc-text"><a href="#Other">Other</a></td></tr>
-                                                            <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#AUTHORS">AUTHORS</a></td></tr>
+                  <tr class="toc-level-2"><td class="toc-number">0.5</td><td class="toc-text"><a href="#Other">Other</a></td></tr>
+                                                              <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#AUTHORS">AUTHORS</a></td></tr>
       
 </table>
 </nav>
@@ -96,11 +98,11 @@
 </ul>
 <p>If true, causes the module loader to print debugging information to standard error.</p>
 <h2 id="Error_message_verbosity_and_strictness"><a class="u" href="#___top" title="go to top of document">Error message verbosity and strictness</a></h2>
-<p><a name="index-entry-PERL6__EXCEPTIONS__HANDLER"></a></p>
-<ul><li><p><code>PERL6_EXCEPTIONS_HANDLER</code></p>
+<p><a name="index-entry-RAKU__EXCEPTIONS__HANDLER"></a> <a name="index-entry-PERL6__EXCEPTIONS__HANDLER"></a></p>
+<ul><li><p><code>RAKU_EXCEPTIONS_HANDLER</code></p>
 </li>
 </ul>
-<p>If present, the <code>print_exception</code> routine will use a class of that name to process the exception for output. Rakudo currently ships with <code>Exceptions::JSON</code> (invoked by setting this variable to <code>JSON</code>), to override the default output. <strong>NOTE:</strong> this env var was added in version 6.d. Early implementation has been available in Rakudo compiler as of version 2018.08, and before that it was available as <code>RAKUDO_EXCEPTIONS_HANDLER</code>.</p>
+<p>If present, the <code>print_exception</code> routine will use a class of that name to process the exception for output. Rakudo currently ships with <code>Exceptions::JSON</code> (invoked by setting this variable to <code>JSON</code>), to override the default output. <strong>NOTE:</strong> this env var was added in version 6.e. Early implementation has been available in Rakudo compiler as of version 2019.12, and before that it was available as <code>PERL6_EXCEPTIONS_HANDLER</code>.</p>
 <p><a name="index-entry-RAKUDO__NO__DEPRECATIONS"></a></p>
 <ul><li><p><code>RAKUDO_NO_DEPRECATIONS</code></p>
 </li>
@@ -152,13 +154,13 @@
 <ul><li><p><code>RAKUDO_HIST</code></p>
 </li>
 </ul>
-<p>This specifies the location of the history file used by the line editor; the default is <code>~/.perl6/rakudo-history</code>.</p>
+<p>This specifies the location of the history file used by the line editor; the default is <code>~/.raku/rakudo-history</code>. Before Rakudo version 2020.02 the default was <code>~/.perl6/rakudo-history</code>.</p>
 <h2 id="Other"><a class="u" href="#___top" title="go to top of document">Other</a></h2>
 <p><a name="index-entry-RAKUDO__DEFAULT__READ__ELEMS"></a></p>
 <ul><li><p><code>RAKUDO_DEFAULT_READ_ELEMS</code></p>
 </li>
 </ul>
-<p>Is the default number of characters to read on an <code>IO::Handle</code>, defaults to 65536 (aka 64K).</p>
+<p>This specifies the default number of characters to read on an <a href="/type/IO::Handle"><code>IO::Handle</code></a> by setting the <a href="/language/variables#$*DEFAULT-READ-ELEMS"><code>$*DEFAULT-READ-ELEMS</code></a> dynamic variable.</p>
 <p><a name="index-entry-RAKUDO__ERROR__COLOR"></a></p>
 <ul><li><p><code>RAKUDO_ERROR_COLOR</code></p>
 </li>
@@ -193,15 +195,15 @@
     
     </div>
 <footer class="pretty-box yellow">
-    <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Programs/03-environment-variables.pod6">/programs/03-environment-variables</a>.</p>
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Programs/03-environment-variables.pod6">/programs/03-environment-variables</a>.</p>
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -212,6 +214,13 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
 
     </body>
 </html>

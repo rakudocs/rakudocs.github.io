@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>class Sequence</title>
+        <title>role Sequence</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content__type_Sequence">
   
       <div align="right">
@@ -66,21 +68,49 @@
         </button>
       </div>
 
-    <h1 class='title'>class Sequence</h1>
-    <p class='subtitle'>Operations for higher-level sequences</p>
+    <h1 class='title'>role Sequence</h1>
+    <p class='subtitle'>Common methods of sequences</p>
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-        <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
- 
+                 <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+ <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_Str">method Str</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_Stringy">method Stringy</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_Numeric">method Numeric</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_AT-POS">method AT-POS</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_EXISTS-POS">method EXISTS-POS</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_eager">method eager</a></td></tr>
+          <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_fmt">method fmt</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_gist">method gist</a></td></tr>
+       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_PositionalBindFailover">Routines supplied by role PositionalBindFailover</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(PositionalBindFailover)_method_cache">(PositionalBindFailover) method cache</a></td></tr>
+           <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(PositionalBindFailover)_method_list">(PositionalBindFailover) method list</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(PositionalBindFailover)_method_iterator">(PositionalBindFailover) method iterator</a></td></tr>
+      
 </table>
 </nav>
 
     <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Sequence</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>PositionalBindFailover</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>A <code>Sequence</code> implements a series of methods for converting hight-level <code>Seq</code>s into different types of objects, from positional to other.</p>
+    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Sequence</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>PositionalBindFailover</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>This role implements a series of methods for converting sequences and accessing their elements. These methods should work on all sequences: serial <a href="/type/Seq">Seq</a>, ordered parallel <a href="/type/HyperSeq">HyperSeq</a>, and unordered parallel <a href="/type/RaceSeq">RaceSeq</a>.</p>
+<p>These methods have in common that they all access the underlying iterator if the sequence has not been <a href="/type/PositionalBindFailover#method_cache">cached</a> yet. Therefore they will throw an error of type <a href="/type/X::Seq::Consumed">X::Seq::Consumed</a> if called on a <code>Seq</code> that was already consumed.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
-<p>TBD</p>
+<h2 id="method_Str"><a class="u" href="#___top" title="go to top of document">method Str</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Str</span></span><span>(::</span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="routine name perl6fe"><span>CLASS</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p><a href="/type/List#method_Str">Stringifies</a> the <a href="/type/PositionalBindFailover#method_cache">cached</a> sequence.</p>
+<h2 id="method_Stringy"><a class="u" href="#___top" title="go to top of document">method Stringy</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Stringy</span></span><span>(::</span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="routine name perl6fe"><span>CLASS</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Calls <code>.Stringy</code> on the <a href="/type/PositionalBindFailover#method_cache">cached</a> sequence.</p>
+<h2 id="method_Numeric"><a class="u" href="#___top" title="go to top of document">method Numeric</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Numeric</span></span><span>(::</span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="routine name perl6fe"><span>CLASS</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns the number of elements in the <a href="/type/PositionalBindFailover#method_cache">cached</a> sequence.</p>
+<h2 id="method_AT-POS"><a class="u" href="#___top" title="go to top of document">method AT-POS</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>AT-POS</span></span><span>(::</span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="routine name perl6fe"><span>CLASS</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>idx</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>AT-POS</span></span><span>(::</span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="routine name perl6fe"><span>CLASS</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>int</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>idx</span></span></span><span>)</span></span></div></pre><p>Returns the element at position <code>$idx</code> in the <a href="/type/PositionalBindFailover#method_cache">cached</a> sequence.</p>
+<h2 id="method_EXISTS-POS"><a class="u" href="#___top" title="go to top of document">method EXISTS-POS</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-POS</span></span><span>(::</span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="routine name perl6fe"><span>CLASS</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>idx</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-POS</span></span><span>(::</span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="routine name perl6fe"><span>CLASS</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>int</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>idx</span></span></span><span>)</span></span></div></pre><p>Returns a <code>Bool</code> indicating whether there is an element at position <code>$idx</code> in the <a href="/type/PositionalBindFailover#method_cache">cached</a> sequence.</p>
+<h2 id="method_eager"><a class="u" href="#___top" title="go to top of document">method eager</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>eager</span></span><span>(::</span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="routine name perl6fe"><span>CLASS</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>List</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns an eagerly evaluated <a href="/type/List">List</a> based on the invocant sequence, and marks it as consumed. If called on an already consumed <code>Seq</code>, throws an error of type <a href="/type/X::Seq::Consumed">X::Seq::Consumed</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>s</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>lazy</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>5</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>s</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>is-lazy</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>s</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>eager</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(1&nbsp;2&nbsp;3&nbsp;4&nbsp;5)␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>s</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>eager</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control closure trait perl6fe"><span>CATCH</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>when</span></span><span>&nbsp;</span><span class="support type exception perl6fe"><span>X::Seq::Consumed</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Throws&nbsp;exception&nbsp;if&nbsp;already&nbsp;consumed</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Throws&nbsp;exception&nbsp;if&nbsp;already&nbsp;consumed␤»</span></span></span></div></pre><h2 id="method_fmt"><a class="u" href="#___top" title="go to top of document">method fmt</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>fmt</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>format</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>%s</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>separator</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>&nbsp;</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p><a href="/type/List#method_fmt">Formats</a> the <a href="/type/PositionalBindFailover#method_cache">cached</a> sequence.</p>
+<h2 id="method_gist"><a class="u" href="#___top" title="go to top of document">method gist</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>gist</span></span><span>(::</span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="routine name perl6fe"><span>CLASS</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns the <a href="/type/List#method_gist">gist</a> of the <a href="/type/PositionalBindFailover#method_cache">cached</a> sequence.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Sequence</code></figcaption>
@@ -126,49 +156,49 @@
 </a>
 </g>
 </g>
-<!-- RaceSeq -->
-<g id="node5" class="node"><title>RaceSeq</title>
-<g id="a_node5"><a xlink:href="/type/RaceSeq" xlink:title="RaceSeq">
-<ellipse fill="none" stroke="#000000" cx="82.0456" cy="-18" rx="46.5926" ry="18"/>
-<text text-anchor="middle" x="82.0456" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">RaceSeq</text>
-</a>
-</g>
-</g>
-<!-- RaceSeq&#45;&gt;Sequence -->
-<g id="edge5" class="edge"><title>RaceSeq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M74.2993,-35.945C70.6045,-44.0274 66.1011,-53.8786 61.9823,-62.8883"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="58.695,-61.6611 57.7205,-72.211 65.0613,-64.5714 58.695,-61.6611"/>
-</g>
-<!-- RaceSeq&#45;&gt;Any -->
-<g id="edge2" class="edge"><title>RaceSeq&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M96.6574,-35.2354C105.115,-44.6332 115.88,-56.5936 125.107,-66.8463"/>
-<polygon fill="#000000" stroke="#000000" points="122.509,-69.1915 131.8,-74.283 127.712,-64.5087 122.509,-69.1915"/>
-</g>
-<!-- RaceSeq&#45;&gt;Iterable -->
-<g id="edge4" class="edge"><title>RaceSeq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M110.581,-32.4967C134.267,-43.6993 168.098,-59.7006 193.716,-71.817"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="192.557,-75.1408 203.094,-76.2525 195.55,-68.8129 192.557,-75.1408"/>
-</g>
 <!-- HyperSeq -->
-<g id="node6" class="node"><title>HyperSeq</title>
-<g id="a_node6"><a xlink:href="/type/HyperSeq" xlink:title="HyperSeq">
-<ellipse fill="none" stroke="#000000" cx="197.046" cy="-18" rx="50.0912" ry="18"/>
-<text text-anchor="middle" x="197.046" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">HyperSeq</text>
+<g id="node5" class="node"><title>HyperSeq</title>
+<g id="a_node5"><a xlink:href="/type/HyperSeq" xlink:title="HyperSeq">
+<ellipse fill="none" stroke="#000000" cx="82.0456" cy="-18" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="82.0456" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">HyperSeq</text>
 </a>
 </g>
 </g>
 <!-- HyperSeq&#45;&gt;Sequence -->
-<g id="edge7" class="edge"><title>HyperSeq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M168.003,-32.8297C145.151,-43.7115 113.116,-58.9666 88.196,-70.8331"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="86.5515,-67.7396 79.0277,-75.199 89.5611,-74.0596 86.5515,-67.7396"/>
+<g id="edge5" class="edge"><title>HyperSeq&#45;&gt;Sequence</title>
+<path fill="none" stroke="#6666ff" d="M74.2993,-35.945C70.6045,-44.0274 66.1011,-53.8786 61.9823,-62.8883"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="58.695,-61.6611 57.7205,-72.211 65.0613,-64.5714 58.695,-61.6611"/>
 </g>
 <!-- HyperSeq&#45;&gt;Any -->
-<g id="edge3" class="edge"><title>HyperSeq&#45;&gt;Any</title>
+<g id="edge2" class="edge"><title>HyperSeq&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M96.6574,-35.2354C105.115,-44.6332 115.88,-56.5936 125.107,-66.8463"/>
+<polygon fill="#000000" stroke="#000000" points="122.509,-69.1915 131.8,-74.283 127.712,-64.5087 122.509,-69.1915"/>
+</g>
+<!-- HyperSeq&#45;&gt;Iterable -->
+<g id="edge4" class="edge"><title>HyperSeq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M111.286,-32.8297C135.04,-44.0648 168.65,-59.9618 194.056,-71.978"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="192.817,-75.2637 203.354,-76.3755 195.81,-68.9358 192.817,-75.2637"/>
+</g>
+<!-- RaceSeq -->
+<g id="node6" class="node"><title>RaceSeq</title>
+<g id="a_node6"><a xlink:href="/type/RaceSeq" xlink:title="RaceSeq">
+<ellipse fill="none" stroke="#000000" cx="197.046" cy="-18" rx="46.5926" ry="18"/>
+<text text-anchor="middle" x="197.046" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">RaceSeq</text>
+</a>
+</g>
+</g>
+<!-- RaceSeq&#45;&gt;Sequence -->
+<g id="edge7" class="edge"><title>RaceSeq&#45;&gt;Sequence</title>
+<path fill="none" stroke="#6666ff" d="M168.702,-32.4967C145.843,-43.3823 113.468,-58.7987 88.3094,-70.7791"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="86.5789,-67.7265 79.0551,-75.1859 89.5885,-74.0465 86.5789,-67.7265"/>
+</g>
+<!-- RaceSeq&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>RaceSeq&#45;&gt;Any</title>
 <path fill="none" stroke="#000000" d="M184.722,-35.589C178.125,-44.4696 169.886,-55.5609 162.628,-65.3316"/>
 <polygon fill="#000000" stroke="#000000" points="159.722,-63.3746 156.568,-73.4892 165.341,-67.5489 159.722,-63.3746"/>
 </g>
-<!-- HyperSeq&#45;&gt;Iterable -->
-<g id="edge6" class="edge"><title>HyperSeq&#45;&gt;Iterable</title>
+<!-- RaceSeq&#45;&gt;Iterable -->
+<g id="edge6" class="edge"><title>RaceSeq&#45;&gt;Iterable</title>
 <path fill="none" stroke="#6666ff" d="M205.034,-35.945C208.844,-44.0274 213.488,-53.8786 217.736,-62.8883"/>
 <polygon fill="#6666ff" stroke="#6666ff" points="214.701,-64.6582 222.131,-72.211 221.032,-61.6732 214.701,-64.6582"/>
 </g>
@@ -184,20 +214,28 @@
     >
   </p>
 </figure>
+<h1 id="Routines_supplied_by_role_PositionalBindFailover"><a class="u" href="#___top" title="go to top of document">Routines supplied by role PositionalBindFailover</a></h1>
+<p>Sequence does role <a href="/type/PositionalBindFailover">PositionalBindFailover</a>, which provides the following routines:</p>
+<h2 id="(PositionalBindFailover)_method_cache"><a href="/type/PositionalBindFailover#method_cache">(PositionalBindFailover) method cache</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>cache</span></span><span>(</span><span class="support type perl6fe"><span>PositionalBindFailover</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>List</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a <a href="/type/List">List</a> based on the <code>iterator</code> method, and caches it. Subsequent calls to <code>cache</code> always return the same <code>List</code> object.</p>
+<h2 id="(PositionalBindFailover)_method_list"><a href="/type/PositionalBindFailover#method_list">(PositionalBindFailover) method list</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>list</span></span><span>(</span><span class="support type perl6fe"><span>PositionalBindFailover</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>List</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a <a href="/type/List">List</a> based on the <code>iterator</code> method without caching it.</p>
+<h2 id="(PositionalBindFailover)_method_iterator"><a href="/type/PositionalBindFailover#method_iterator">(PositionalBindFailover) method iterator</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="support type perl6fe"><span>PositionalBindFailover</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>This method stub ensure that a class implementing role <code>PositionalBindFailover</code> provides an <code>iterator</code> method.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Sequence.pod6">/type/Sequence</a>.</p>
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Sequence.pod6">/type/Sequence</a>.</p>
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -208,6 +246,13 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
 
     </body>
 </html>

@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -73,35 +75,30 @@
 <h1 id="class_Supply"><a class="u" href="#___top" title="go to top of document">class Supply</a></h1>
 <p>From <a href="/type/Supply#method_batch">Supply</a></p>
 <h2 id="(Supply)_method_batch"><a href="/type/Supply#method_batch">(Supply) method batch</a></h2>
-<pre class="pod-block-code">method batch(Supply:D: :$elems, :$seconds --&gt; Supply:D)</pre>
-<p>Creates a new supply that batches the values of the given supply by either the number of elements in the batch (using <code>:elems</code>) or the maximum number of seconds (using the <code>:seconds</code>) or both. Any remaining values are emitted in a final batch when the supply is done.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>batch</span></span><span>(</span><span class="support type perl6fe"><span>Supply</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>elems</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>seconds</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Supply</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Creates a new supply that batches the values of the given supply by either the number of elements in the batch (using <code>:elems</code>) or the maximum number of seconds (using the <code>:seconds</code>) or both. Any remaining values are emitted in a final batch when the supply is done.</p>
 <h1 id="class_Any"><a class="u" href="#___top" title="go to top of document">class Any</a></h1>
 <p>From <a href="/type/Any#method_batch">Any</a></p>
 <h2 id="(Any)_method_batch"><a href="/type/Any#method_batch">(Any) method batch</a></h2>
 <p>Defined as:</p>
-<pre class="pod-block-code">multi method batch(Int:D $batch)
-multi method batch(Int:D :$elems!)</pre>
-<p>Coerces the invocant to a <code>list</code> by applying its <a href="/routine/list"><code>.list</code></a> method and uses <a href="/type/List#method_batch"><code>List.batch</code></a> on it.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>batch</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>batch</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>batch</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>elems</span></span></span><span class="keyword operator generic perl6fe"><span>!</span></span><span>)</span></span></div></pre><p>Coerces the invocant to a <code>list</code> by applying its <a href="/routine/list"><code>.list</code></a> method and uses <a href="/type/List#method_batch"><code>List.batch</code></a> on it.</p>
 <h1 id="class_List"><a class="u" href="#___top" title="go to top of document">class List</a></h1>
 <p>From <a href="/type/List#method_batch">List</a></p>
 <h2 id="(List)_method_batch"><a href="/type/List#method_batch">(List) method batch</a></h2>
 <p>Defined As:</p>
-<pre class="pod-block-code">multi method batch(Int:D $batch --&gt; Seq)
-multi method batch(Int:D :$elems --&gt; Seq)</pre>
-<p>Returns a <code>Seq</code> of the elements in batches of <code>:$elems</code> or <code>$batch</code>, respectively. If the number of elements is not a multiple of <code>$batch</code>, the last batch may have less than <code>$batch</code> elements, similar to <code>.rotor($batch, :partial)</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>batch</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>batch</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Seq</span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>batch</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>elems</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Seq</span></span><span>)</span></span></div></pre><p>Returns a sequence of lists, wherein each list with the exception of the last one is guaranteed to comprise a number of elements equal to the batch size specified by <code>$batch</code> or <code>$elems</code>, respectively. If the invocant has a number of elements that is not an integer multiple of the batch size, the last list in the returned sequence will contain any remaining elements and thus have less than <code>$batch</code> or <code>$elems</code> elements. Accordingly, <code>.batch($batch)</code> is shorthand for <code>.rotor($batch, :partial)</code>.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -112,5 +109,12 @@ multi method batch(Int:D :$elems --&gt; Seq)</pre>
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

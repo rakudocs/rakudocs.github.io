@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -69,8 +71,7 @@
 <h1 id="language_documentation_Operators"><a class="u" href="#___top" title="go to top of document">language documentation Operators</a></h1>
 <p>From <a href="/language/operators#infix_ff">Operators</a></p>
 <h2 id="(Operators)_infix_ff"><a href="/language/operators#infix_ff">(Operators) infix ff</a></h2>
-<pre class="pod-block-code">sub infix:&lt;ff&gt;(Mu $a, Mu $b)</pre>
-<p>Also called the <em>flipflop operator</em>, compares both arguments to <code>$_</code> (that is, <code>$_ ~~ $a</code> and <code>$_ ~~ $b</code>). Evaluates to <code>False</code> until the left-hand smartmatch is <code>True</code>, at which point it evaluates to <code>True</code> until the right-hand smartmatch is <code>True</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>infix</span></span><span class="punctuation definition function adverb perl6fe"><span>:</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>ff</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>(</span><span class="support type perl6fe"><span>Mu</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Mu</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>)</span></span></div></pre><p>Also called the <em>flipflop operator</em>, compares both arguments to <code>$_</code> (that is, <code>$_ ~~ $a</code> and <code>$_ ~~ $b</code>). Evaluates to <code>False</code> until the left-hand smartmatch is <code>True</code>, at which point it evaluates to <code>True</code> until the right-hand smartmatch is <code>True</code>.</p>
 <p>In effect, the left-hand argument is the &quot;start&quot; condition and the right-hand is the &quot;stop&quot; condition. This construct is typically used to pick up only a certain section of lines. For example:</p>
 <pre class="pod-block-code">my $excerpt = q:to/END/;
 Here&#39;s some unimportant text.
@@ -89,28 +90,22 @@ my @codelines = gather for $excerpt.lines {
 say @codelines.join(&quot;\n&quot;);
 </pre>
 <p>After matching the start condition, the operator will then match the same <code>$_</code> to the stop condition and act accordingly if successful. In this example, only the first element is printed:</p>
-<pre class="pod-block-code">for &lt;AB C D B E F&gt; {
-    say $_ if /A/ ff /B/;  # OUTPUT: «AB␤»
-}</pre>
-<p>If you only want to test against a start condition and have no stop condition, <code>*</code> can be used as such.</p>
-<pre class="pod-block-code">for &lt;A B C D E&gt; {
-    say $_ if /C/ ff *;    # OUTPUT: «C␤D␤E␤»
-}</pre>
-<p>For the <code>sed</code>-like version, which does <em>not</em> try <code>$_</code> on the stop condition after succeeding on the start condition, see <a href="/routine/fff">fff</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>AB&nbsp;C&nbsp;D&nbsp;B&nbsp;E&nbsp;F</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="routine name perl6fe"><span>A</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>ff</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="routine name perl6fe"><span>B</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«AB␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>If you only want to test against a start condition and have no stop condition, <code>*</code> can be used as such.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>A&nbsp;B&nbsp;C&nbsp;D&nbsp;E</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="routine name perl6fe"><span>C</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>ff</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«C␤D␤E␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>For the <code>sed</code>-like version, which does <em>not</em> try <code>$_</code> on the stop condition after succeeding on the start condition, see <a href="/routine/fff">fff</a>.</p>
 <p>This operator cannot be overloaded, as it&#39;s handled specially by the compiler.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -121,5 +116,12 @@ say @codelines.join(&quot;\n&quot;);
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

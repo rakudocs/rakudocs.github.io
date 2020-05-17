@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content__language_performance">
   
       <div align="right">
@@ -115,7 +117,7 @@
 <p>If you want to profile the time and memory it takes to compile your code, use Rakudo&#39;s <code>--profile-compile</code> or <code>--profile-stage</code> options.</p>
 <h2 id="Create_or_view_benchmarks"><a class="u" href="#___top" title="go to top of document">Create or view benchmarks</a></h2>
 <p>Use <a href="https://github.com/japhb/perl6-bench">perl6-bench</a>.</p>
-<p>If you run perl6-bench for multiple compilers (typically, versions of Perl&nbsp;5, Raku, or NQP), results for each are visually overlaid on the same graphs, to provide for quick and easy comparison.</p>
+<p>If you run perl6-bench for multiple compilers (typically, versions of Perl, Raku, or NQP), results for each are visually overlaid on the same graphs, to provide for quick and easy comparison.</p>
 <h2 id="Share_problems"><a class="u" href="#___top" title="go to top of document">Share problems</a></h2>
 <p>Once you&#39;ve used the above techniques to identify the code to improve, you can then begin to address (and share) the problem with others:</p>
 <ul><li><p>For each problem, distill it down to a one-liner or the gist and either provide performance numbers or make the snippet small enough that it can be profiled using <code>prof-m: your code or gist URL goes here</code>.</p>
@@ -133,7 +135,7 @@
 <p>With multi-dispatch, you can drop in new variants of routines &quot;alongside&quot; existing ones:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;existing&nbsp;code&nbsp;generically&nbsp;matches&nbsp;a&nbsp;two&nbsp;arg&nbsp;foo&nbsp;call:</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>foo</span></span><span>(</span><span class="support type perl6fe"><span>Any</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Any</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;new&nbsp;variant&nbsp;takes&nbsp;over&nbsp;for&nbsp;a&nbsp;foo(&quot;quux&quot;,&nbsp;42)&nbsp;call:</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>foo</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>quux</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The call overhead of having multiple <code>foo</code> definitions is generally insignificant (though see discussion of <code>where</code> below), so if your new definition handles its particular case more efficiently than the previously existing set of definitions, then you probably just made your code that much more efficient for that case.</p>
 <h2 id="Speed_up_type-checks_and_call_resolution"><a class="u" href="#___top" title="go to top of document">Speed up type-checks and call resolution</a></h2>
-<p>Most <a href="/type/Signature#Type_constraints"><code>where</code> clauses</a> – and thus most <a href="https://design.perl6.org/S12.html#Types_and_Subtypes">subsets</a> – force dynamic (runtime) type checking and call resolution for any call it <em>might</em> match. This is slower, or at least later, than compile-time.</p>
+<p>Most <a href="/type/Signature#Type_constraints"><code>where</code> clauses</a> – and thus most <a href="https://design.raku.org/S12.html#Types_and_Subtypes">subsets</a> – force dynamic (runtime) type checking and call resolution for any call it <em>might</em> match. This is slower, or at least later, than compile-time.</p>
 <p>Method calls are generally resolved as late as possible (dynamically at runtime), whereas sub calls are generally resolved statically at compile-time.</p>
 <h2 id="Choose_better_algorithms"><a class="u" href="#___top" title="go to top of document">Choose better algorithms</a></h2>
 <p>One of the most reliable techniques for making large performance improvements, regardless of language or compiler, is to pick a more appropriate algorithm.</p>
@@ -144,8 +146,8 @@
 <p>See the slides for <a href="https://jnthn.net/papers/2015-yapcasia-concurrency.pdf#page=17">Parallelism, Concurrency, and Asynchrony in Raku</a> and/or <a href="https://www.youtube.com/watch?v=JpqnNCx7wVY&list=PLRuESFRW2Fa77XObvk7-BYVFwobZHdXdK&index=8">the matching video</a>.</p>
 <h2 id="Use_existing_high_performance_code"><a class="u" href="#___top" title="go to top of document">Use existing high performance code</a></h2>
 <p>There are plenty of high performance C libraries that you can use within Raku and <a href="/language/nativecall">NativeCall</a> makes it easy to create wrappers for them. There&#39;s experimental support for C++ libraries, too.</p>
-<p>If you want to <a href="https://stackoverflow.com/a/27206428/1077672">use Perl&nbsp;5 modules in Raku</a>, mix in Raku types and the <a href="/language/mop">Metaobject Protocol</a>.</p>
-<p>More generally, Raku is designed to smoothly interoperate with other languages and there are a number of <a href="https://modules.perl6.org/#q=inline">modules aimed at facilitating the use of libs from other langs</a>.</p>
+<p>If you want to <a href="https://stackoverflow.com/a/27206428/1077672">use Perl modules in Raku</a>, mix in Raku types and the <a href="/language/mop">Metaobject Protocol</a>.</p>
+<p>More generally, Raku is designed to smoothly interoperate with other languages and there are a number of <a href="https://modules.raku.org/#q=inline">modules aimed at facilitating the use of libs from other langs</a>.</p>
 <h2 id="Make_the_Rakudo_compiler_generate_faster_code"><a class="u" href="#___top" title="go to top of document">Make the Rakudo compiler generate faster code</a></h2>
 <p>To date, the focus for the compiler has been correctness, not how fast it generates code or how fast or lean the code it generates runs. But that&#39;s expected to change, eventually... You can talk to compiler devs on the freenode IRC channels #perl6 and #moarvm about what to expect. Better still, you can contribute yourself:</p>
 <ul><li><p>Rakudo is largely written in Raku. So if you can write Raku, then you can hack on the compiler, including optimizing any of the large body of existing high-level code that impacts the speed of your code (and everyone else&#39;s).</p>
@@ -168,15 +170,15 @@
     
     </div>
 <footer class="pretty-box yellow">
-    <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/performance.pod6">/language/performance</a>.</p>
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/performance.pod6">/language/performance</a>.</p>
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -187,6 +189,13 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
 
     </body>
 </html>

@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -70,29 +72,21 @@
 <p>From <a href="/language/variables#The_=_twigil">Variables</a></p>
 <h2 id="(Variables)_twigil_="><a href="/language/variables#The_=_twigil">(Variables) twigil =</a></h2>
 <p>The <code>=</code> twigil is used to access Pod variables. Every Pod block in the current file can be accessed via a Pod object, such as <code>$=data</code>, <code>$=SYNOPSIS</code> or <code>=UserBlock</code>. That is: a variable with the same name of the desired block and a <code>=</code> twigil.</p>
-<pre class="pod-block-code">  =begin code
-  =begin Foo
-  ...
-  =end Foo
-
-  #after that, $=Foo gives you all Foo-Pod-blocks
-  =end code
-</pre>
-<p>You may access the Pod tree which contains all Pod structures as a hierarchical data structure through <code>$=pod</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>begin</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>code</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;&nbsp;</span><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>begin</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>Foo</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;&nbsp;...</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;&nbsp;</span><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>end</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>Foo</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;&nbsp;#after&nbsp;that,&nbsp;$=Foo&nbsp;gives&nbsp;you&nbsp;all&nbsp;Foo-Pod-blocks</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>end</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>code</span></span></span></div></pre><p>You may access the Pod tree which contains all Pod structures as a hierarchical data structure through <code>$=pod</code>.</p>
 <p>Note that all those <code>$=someBlockName</code> support the <code>Positional</code> and the <code>Associative</code> roles.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -103,5 +97,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

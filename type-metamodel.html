@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Perl 6 metamodel Types</title>
+        <title>Raku metamodel Types</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -31,7 +31,7 @@
       id="logo"
       width="62"
       height="48"
-    />&nbsp;Perl 6 Documentation</a
+    />&nbsp;Raku Documentation</a
   >
   <div id="search" class="ui-widget">
     <div class="green">
@@ -47,32 +47,35 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
-    <h1 class='title'>Perl 6 metamodel Types</h1>
+    <h1 class='title'>Raku metamodel Types</h1>
     
     
     <div class="pod-body no-toc">
     <table class="pod-table">
 <tbody>
-<tr> <td>role</td> <td><a href="/type/Metamodel::AttributeContainer">Metamodel::AttributeContainer</a></td> <td><em>Metaobject that can hold attributes</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::C3MRO">Metamodel::C3MRO</a></td> <td><em>Metaobject that supports the C3 method resolution order</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a></td> <td>Metaobject representing a Raku class.</td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::ConcreteRoleHOW">Metamodel::ConcreteRoleHOW</a></td> <td>Provides an implementation of a concrete instance of a role</td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::CurriedRoleHOW">Metamodel::CurriedRoleHOW</a></td> <td>Support for parameterized roles that have not been instantiated</td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::EnumHOW">Metamodel::EnumHOW</a></td> <td>Metaobject representing a Raku enum.</td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Finalization">Metamodel::Finalization</a></td> <td><em>Metaobject supporting object finalization</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::MROBasedMethodDispatch">Metamodel::MROBasedMethodDispatch</a></td> <td><em>Metaobject that supports resolving inherited methods</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::MethodContainer">Metamodel::MethodContainer</a></td> <td><em>Metaobject that supports storing and introspecting methods</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::MultipleInheritance">Metamodel::MultipleInheritance</a></td> <td><em>Metaobject that supports multiple inheritance</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Naming">Metamodel::Naming</a></td> <td><em>Metaobject that supports named types</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::PackageHOW">Metamodel::PackageHOW</a></td> <td>Metaobject representing a Raku package.</td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::ParametricRoleGroupHOW">Metamodel::ParametricRoleGroupHOW</a></td> <td><em>Represents a group of roles with different parameterizations</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::ParametricRoleHOW">Metamodel::ParametricRoleHOW</a></td> <td><em>Represents a non-instantiated, parameterized, role.</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::Primitives">Metamodel::Primitives</a></td> <td>Metaobject that supports low-level type operations</td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::PrivateMethodContainer">Metamodel::PrivateMethodContainer</a></td> <td><em>Metaobject that supports private methods</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::RoleContainer">Metamodel::RoleContainer</a></td> <td><em>Metaobject that supports holding/containing roles</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::RolePunning">Metamodel::RolePunning</a></td> <td><em>Metaobject that supports punning of roles.</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Trusting">Metamodel::Trusting</a></td> <td><em>Metaobject that supports trust relations between types</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Versioning">Metamodel::Versioning</a></td> <td><em>Metaobjects that support versioning</em></td> </tr>
+<tr> <td>role</td> <td><a href="/type/Metamodel::AttributeContainer">Metamodel::AttributeContainer</a></td> <td><em>Metaobject that can hold attributes</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::C3MRO">Metamodel::C3MRO</a></td> <td><em>Metaobject that supports the C3 method resolution order</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a></td> <td>Metaobject representing a Raku class.</td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::ConcreteRoleHOW">Metamodel::ConcreteRoleHOW</a></td> <td>Provides an implementation of a concrete instance of a role</td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::CurriedRoleHOW">Metamodel::CurriedRoleHOW</a></td> <td>Support for parameterized roles that have not been instantiated</td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::DefiniteHOW">Metamodel::DefiniteHOW</a></td> <td>Metaobject for type definiteness</td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Documenting">Metamodel::Documenting</a></td> <td><em>Metarole for documenting types.</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::EnumHOW">Metamodel::EnumHOW</a></td> <td>Metaobject representing a Raku enum.</td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Finalization">Metamodel::Finalization</a></td> <td><em>Metaobject supporting object finalization</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::MROBasedMethodDispatch">Metamodel::MROBasedMethodDispatch</a></td> <td><em>Metaobject that supports resolving inherited methods</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::MethodContainer">Metamodel::MethodContainer</a></td> <td><em>Metaobject that supports storing and introspecting methods</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Mixins">Metamodel::Mixins</a></td> <td><em>Metaobject for generating mixins</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::MultipleInheritance">Metamodel::MultipleInheritance</a></td> <td><em>Metaobject that supports multiple inheritance</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Naming">Metamodel::Naming</a></td> <td><em>Metaobject that supports named types</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::PackageHOW">Metamodel::PackageHOW</a></td> <td>Metaobject representing a Raku package.</td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::ParametricRoleGroupHOW">Metamodel::ParametricRoleGroupHOW</a></td> <td><em>Represents a group of roles with different parameterizations</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::ParametricRoleHOW">Metamodel::ParametricRoleHOW</a></td> <td><em>Represents a non-instantiated, parameterized, role.</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Metamodel::Primitives">Metamodel::Primitives</a></td> <td>Metaobject that supports low-level type operations</td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::PrivateMethodContainer">Metamodel::PrivateMethodContainer</a></td> <td><em>Metaobject that supports private methods</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::RoleContainer">Metamodel::RoleContainer</a></td> <td><em>Metaobject that supports holding/containing roles</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::RolePunning">Metamodel::RolePunning</a></td> <td><em>Metaobject that supports punning of roles.</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Stashing">Metamodel::Stashing</a></td> <td><em>Metarole for type stashes</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Trusting">Metamodel::Trusting</a></td> <td><em>Metaobject that supports trust relations between types</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Metamodel::Versioning">Metamodel::Versioning</a></td> <td><em>Metaobjects that support versioning</em></td> </tr>
 </tbody>
 </table>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -83,5 +86,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

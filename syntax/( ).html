@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -70,34 +72,22 @@
 <p>From <a href="/language/regexes#Capturing">Regexes</a></p>
 <h2 id="(Regexes)_regex_(_)_(_)"><a href="/language/regexes#Capturing">(Regexes) regex ( ) ( )</a></h2>
 <p>The round parentheses don&#39;t just group, they also <em>capture</em>; that is, they make the string matched within the group available as a variable, and also as an element of the resulting <a href="/type/Match">Match</a> object:</p>
-<pre class="pod-block-code">my $str =  &#39;number 42&#39;;
-if $str ~~ /&#39;number &#39; (\d+) / {
-    say &quot;The number is $0&quot;;         # OUTPUT: The number is 42
-    # or
-    say &quot;The number is $/[0]&quot;;      # OUTPUT: The number is 42
-}</pre>
-<p>Pairs of parentheses are numbered left to right, starting from zero.</p>
-<pre class="pod-block-code">if &#39;abc&#39; ~~ /(a) b (c)/ {
-    say &quot;0: $0; 1: $1&quot;;             # OUTPUT: «0: a; 1: c␤»
-}</pre>
-<p>The <code>$0</code> and <code>$1</code> etc. syntax is shorthand. These captures are canonically available from the match object <code>$/</code> by using it as a list, so <code>$0</code> is actually syntactic sugar for <code>$/[0]</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>str</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>number&nbsp;42</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>str</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="string literal perl6fe"><span>&#39;</span><span>number&nbsp;</span><span>&#39;</span></span><span>&nbsp;(</span><span class="constant character escape class regexp perl6fe"><span>\d</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>)&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>The&nbsp;number&nbsp;is&nbsp;$0</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;The&nbsp;number&nbsp;is&nbsp;42</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation whitespace comment leading perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;or</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>The&nbsp;number&nbsp;is&nbsp;$/[0]</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;The&nbsp;number&nbsp;is&nbsp;42</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Pairs of parentheses are numbered left to right, starting from zero.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abc</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>(a)&nbsp;b&nbsp;(c)</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>0:&nbsp;$0;&nbsp;1:&nbsp;$1</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0:&nbsp;a;&nbsp;1:&nbsp;c␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The <code>$0</code> and <code>$1</code> etc. syntax is shorthand. These captures are canonically available from the match object <code>$/</code> by using it as a list, so <code>$0</code> is actually syntactic sugar for <code>$/[0]</code>.</p>
 <p>Coercing the match object to a list gives an easy way to programmatically access all elements:</p>
-<pre class="pod-block-code">if &#39;abc&#39; ~~ /(a) b (c)/ {
-    say $/.list.join: &#39;, &#39;  # OUTPUT: «a, c␤»
-}</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abc</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>(a)&nbsp;b&nbsp;(c)</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$/</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>join</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>,&nbsp;</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«a,&nbsp;c␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -108,5 +98,12 @@ if $str ~~ /&#39;number &#39; (\d+) / {
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

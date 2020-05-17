@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content__language_system">
   
       <div align="right">
@@ -93,21 +95,21 @@
 <p>The key class for running all external programs is <a href="/type/Proc::Async">Proc::Async</a>, which runs processes asynchronously and allows <a href="/language/concurrency#Proc::Async">concurrent</a> interaction with the running processes. In general, it is a good practice to interact with the system through these high-level, abstract interfaces. However, Raku provides with other ways of interacting with the system through a low-level interface.</p>
 <h1 id="Making_operating_system_calls_through_the_native_API"><a class="u" href="#___top" title="go to top of document">Making operating system calls through the native API</a></h1>
 <p>The <a href="/language/nativecall"><code>NativeCall</code></a> API can be used to interact with system libraries, as well as any other accessible library. This <a href="/language/nativecall#Short_tutorial_on_calling_a_C_function">short tutorial</a> explains, for instance, how to call system functions such as <code>getaddrinfo</code> using that interface; some other functions like <code>kill</code> can also be <a href="/language/5to6-perlfunc#kill">accessed that way, via declaration using the NativeCall interface</a>.</p>
-<p>Fortunately, you do not have to do that for all native functions. As part of her Butterfly project porting Perl&nbsp;5 functions to Raku as part of the ecosystem, <a href="https://github.com/lizmat">Elizabeth Mattijsen</a> is porting many system functions that were part of that language to modules such as <a href="https://github.com/lizmat/P5getprotobyname"><code>P5getprotobyname</code></a>, which includes functions such as <code>endprotoent</code>, <code>getprotoent</code>, <code>getprotobyname</code>, <code>getprotobynumber</code> and <code>setprotoent</code>. <a href="https://modules.perl6.org/search/?q=p5">Search and install <code>P5</code> modules</a> if you want to use those functions already in p6y form.</p>
+<p>Fortunately, you do not have to do that for all native functions. As part of her Butterfly project porting Perl functions to Raku as part of the ecosystem, <a href="https://github.com/lizmat">Elizabeth Mattijsen</a> is porting many system functions that were part of that language to modules such as <a href="https://github.com/lizmat/P5getprotobyname"><code>P5getprotobyname</code></a>, which includes functions such as <code>endprotoent</code>, <code>getprotoent</code>, <code>getprotobyname</code>, <code>getprotobynumber</code> and <code>setprotoent</code>. <a href="https://modules.raku.org/search/?q=p5">Search and install <code>P5</code> modules</a> if you want to use those functions already in Raku.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/system.pod6">/language/system</a>.</p>
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/system.pod6">/language/system</a>.</p>
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -118,6 +120,13 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
 
     </body>
 </html>

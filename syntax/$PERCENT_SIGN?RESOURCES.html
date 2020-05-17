@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -60,7 +62,7 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Variables">language documentation Variables</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Variables)_%?RESOURCES">(Variables)  %?RESOURCES</a></td></tr>
-                                                  
+                                                   
 </table>
 </nav>
 
@@ -72,41 +74,23 @@
 <p>A compile-time variable available within code of a <a name="index-entry-Distribution"><span class="index-entry">Distribution</span></a>.</p>
 <p>It contains a hash that provides compile and runtime access to files associated with the Distribution of the current compilation unit. It is used to access a special storage for Distribution-wide static files (for example, examples of configuration files, templates etc).</p>
 <p>To add a file to a distribution, it is placed under <code>resources</code> directory:</p>
-<pre class="pod-block-code">Module-Foo/
-├── lib
-│   └── Module
-│       └── Foo.pm6
-├── META6.json
-├── README.md
-└── resources
-    └── images
-        └── foo.jpg
-</pre>
-<p>Then a relative path (starting from root directory of a distribution) to a file is specified under <code>&quot;resources&quot;</code> field in META6.json file:</p>
-<pre class="pod-block-code">&quot;resources&quot;: [
-    &quot;images/foo.jpg&quot;
-]
-</pre>
-<p>Every resource file is added to an installed Distribution and is accessible using a Hash-like access to <code>%?RESOURCES</code>:</p>
-<pre class="pod-block-code">my $foo-IO = %?RESOURCE&lt;images/foo.jpg&gt;;          # gets an object you can slurp
-my $foo-IO = %?RESOURCE&lt;images/foo.jpg&gt;.absolute; # gets an absolute path to a file
-my $foo-IO = %?RESOURCE&lt;images/foo.jpg&gt;.open;     # gets an opened IO::Handle to work with
-</pre>
-<p>Note that paths and names of resource files can be mangled in an installed distribution, so do not rely on their values in any other case besides using them as keys for <code>%?RESOURCES</code> variable.</p>
-<p><code>%?RESOURCES</code> variable is not implemented as a plain Hash, but an instance of <code>Distribution::Resources</code> type, so do not expect to see all available resource files in a distribution by printing or other ways to inspect its value. Instead, use the API described above to access particular files.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>Module-Foo</span></span><span class="keyword operator generic perl6fe"><span>/</span></span></span></div><div class="line"><span class="source perl6fe"><span>├──&nbsp;</span><span class="constant language pragma perl6fe"><span>lib</span></span></span></div><div class="line"><span class="source perl6fe"><span>│&nbsp;&nbsp;&nbsp;└──&nbsp;</span><span class="routine name perl6fe"><span>Module</span></span></span></div><div class="line"><span class="source perl6fe"><span>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;</span><span class="routine name perl6fe"><span>Foo</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>pm6</span></span></span></div><div class="line"><span class="source perl6fe"><span>├──&nbsp;</span><span class="routine name perl6fe"><span>META6</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>json</span></span></span></div><div class="line"><span class="source perl6fe"><span>├──&nbsp;</span><span class="routine name perl6fe"><span>README</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>md</span></span></span></div><div class="line"><span class="source perl6fe"><span>└──&nbsp;</span><span class="routine name perl6fe"><span>resources</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;</span><span class="routine name perl6fe"><span>images</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──&nbsp;</span><span class="routine name perl6fe"><span>foo</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>jpg</span></span></span></div></pre><p>Then a relative path (starting from the root directory of a distribution) to a file is specified under <code>&quot;resources&quot;</code> field in META6.json file:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>resources</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;[</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>images/foo.jpg</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>]</span></span></div></pre><p>Every resource file is added to an installed Distribution and is accessible using a Hash-like access to <code>%?RESOURCES</code>:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>foo-IO</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="support class twigil perl6fe"><span>?</span></span><span class="variable other identifier perl6fe"><span>RESOURCES</span></span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>images/foo.jpg</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;gets&nbsp;an&nbsp;object&nbsp;you&nbsp;can&nbsp;slurp</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>foo-IO</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="support class twigil perl6fe"><span>?</span></span><span class="variable other identifier perl6fe"><span>RESOURCES</span></span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>images/foo.jpg</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>absolute</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;gets&nbsp;an&nbsp;absolute&nbsp;path&nbsp;to&nbsp;a&nbsp;file</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>foo-IO</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="support class twigil perl6fe"><span>?</span></span><span class="variable other identifier perl6fe"><span>RESOURCES</span></span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>images/foo.jpg</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;gets&nbsp;an&nbsp;opened&nbsp;IO::Handle&nbsp;to&nbsp;work&nbsp;with</span><span>&nbsp;</span></span></span></div></pre><p>Note that paths and names of resource files can be mangled in an installed distribution, so do not rely on their values in any other case besides using them as keys for the <code>%?RESOURCES</code> variable.</p>
+<p>The <code>%?RESOURCES</code> variable is not implemented as a plain Hash, but as an instance of the <code>Distribution::Resources</code> type, so do not expect to see all available resource files in a distribution by printing or other ways to inspect its value. Instead, use the API described above to access particular files.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -117,5 +101,12 @@ my $foo-IO = %?RESOURCE&lt;images/foo.jpg&gt;.open;     # gets an opened IO::Han
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

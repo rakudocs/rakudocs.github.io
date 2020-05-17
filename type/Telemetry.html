@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content__type_Telemetry">
   
       <div align="right">
@@ -113,7 +115,7 @@
 <h2 id="routine_snapper"><a class="u" href="#___top" title="go to top of document">routine snapper</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>snapper</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>sleep</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.1</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>stop</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>reset</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Nil</span></span><span>)</span></span></div></pre><p>The <code>snapper</code> routine starts a separate thread that will call <code>snap</code> repeatedly until the end of program. It is exported by default.</p>
 <p>By default, it will call <code>snap</code> every <strong>0.1</strong> second. The only positional parameter is taken to be the delay between <code>snap</code>s.</p>
-<p>Please see the <a href="/routine/snapper">snapper</a> module for externally starting a snapper without having to change the code. Simply adding <code>-Msnapper</code> as a command line parameter, will then start a snapper for you.</p>
+<p>Please see the <a href="#module_snapper">snapper module</a> for externally starting a snapper without having to change the code. Simply adding <code>-Msnapper</code> as a command line parameter, will then start a snapper for you.</p>
 <h2 id="routine_periods"><a class="u" href="#___top" title="go to top of document">routine periods</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>periods</span></span><span>(&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Seq</span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>periods</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>s</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Seq</span></span><span>)</span></span></div></pre><p>The <code>periods</code> subroutine processes an array of <code>Telemetry</code> objects and generates a <a href="/type/Seq">Seq</a> of <code>Telemetry::Period</code> objects out of that. It is exported by default.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>.</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>cpu&nbsp;wallclock</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>periods</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>t</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;====================</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;(164&nbsp;/&nbsp;160)</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;(23&nbsp;/&nbsp;21)</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;(17&nbsp;/&nbsp;17)</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;(15&nbsp;/&nbsp;16)</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;(29&nbsp;/&nbsp;28)</span><span>&nbsp;</span></span></span></div></pre><p>If no array is specified, it will use the internal array of <code>snap</code> without parameters <strong>and</strong> will reset that array upon completion (so that new <code>snap</code>s can be added again).</p>
@@ -140,79 +142,12 @@
 <p>The <code>RAKUDO_SNAPPER</code> environment variable can be set to indicate the time between snapshots. If not specified, it will default to <strong>0.1</strong> seconds.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>Telemetry</code></figcaption>
-  <svg width="236pt" height="260pt"
- viewBox="0.00 0.00 236.29 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
-<title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-256 232.291,-256 232.291,4 -4,4"/>
-<!-- Telemetry -->
-<g id="node1" class="node"><title>Telemetry</title>
-<g id="a_node1"><a xlink:href="/type/Telemetry" xlink:title="Telemetry">
-<ellipse fill="none" stroke="#000000" cx="50.0456" cy="-90" rx="50.0912" ry="18"/>
-<text text-anchor="middle" x="50.0456" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Telemetry</text>
-</a>
-</g>
-</g>
-<!-- Any -->
-<g id="node3" class="node"><title>Any</title>
-<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="50.0456" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="50.0456" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
-</a>
-</g>
-</g>
-<!-- Telemetry&#45;&gt;Any -->
-<g id="edge1" class="edge"><title>Telemetry&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M50.0456,-108.303C50.0456,-116.017 50.0456,-125.288 50.0456,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="46.5457,-133.896 50.0456,-143.896 53.5457,-133.896 46.5457,-133.896"/>
-</g>
-<!-- Mu -->
-<g id="node2" class="node"><title>Mu</title>
-<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="50.0456" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="50.0456" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
-</a>
-</g>
-</g>
-<!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M50.0456,-180.303C50.0456,-188.017 50.0456,-197.288 50.0456,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="46.5457,-205.896 50.0456,-215.896 53.5457,-205.896 46.5457,-205.896"/>
-</g>
-<!-- Associative -->
-<g id="node4" class="node"><title>Associative</title>
-<g id="a_node4"><a xlink:href="/type/Associative" xlink:title="Associative">
-<ellipse fill="none" stroke="#6666ff" cx="173.046" cy="-90" rx="55.4913" ry="18"/>
-<text text-anchor="middle" x="173.046" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
-</a>
-</g>
-</g>
-<!-- Telemetry::Period -->
-<g id="node5" class="node"><title>Telemetry::Period</title>
-<g id="a_node5"><a xlink:href="/type/Telemetry::Period" xlink:title="Telemetry::Period">
-<ellipse fill="none" stroke="#000000" cx="111.046" cy="-18" rx="80.6858" ry="18"/>
-<text text-anchor="middle" x="111.046" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Telemetry::Period</text>
-</a>
-</g>
-</g>
-<!-- Telemetry::Period&#45;&gt;Telemetry -->
-<g id="edge3" class="edge"><title>Telemetry::Period&#45;&gt;Telemetry</title>
-<path fill="none" stroke="#000000" d="M96.2792,-35.945C88.6762,-44.6697 79.2771,-55.4556 70.9431,-65.0192"/>
-<polygon fill="#000000" stroke="#000000" points="68.1871,-62.8544 64.2559,-72.693 73.4645,-67.4533 68.1871,-62.8544"/>
-</g>
-<!-- Telemetry::Period&#45;&gt;Associative -->
-<g id="edge4" class="edge"><title>Telemetry::Period&#45;&gt;Associative</title>
-<path fill="none" stroke="#6666ff" d="M126.054,-35.945C133.67,-44.5433 143.058,-55.1434 151.436,-64.6026"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="148.925,-67.0457 158.175,-72.211 154.165,-62.4045 148.925,-67.0457"/>
-</g>
-</g>
-</svg>
-
+  <figcaption>Type relations for <code>404</code></figcaption>
+  <svg></svg>
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-Telemetry.svg"
+      href="/images/type-graph-404.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >
@@ -223,15 +158,15 @@
     
     </div>
 <footer class="pretty-box yellow">
-    <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Telemetry.pod6">/type/Telemetry</a>.</p>
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Telemetry.pod6">/type/Telemetry</a>.</p>
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -242,6 +177,13 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
 
     </body>
 </html>

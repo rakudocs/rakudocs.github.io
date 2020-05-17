@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -75,41 +77,31 @@
 <h2 id="(Regexes)_regex_quantifier_?_?"><a href="/language/regexes#Zero_or_one:_?">(Regexes) regex quantifier ? ?</a></h2>
 <p>The <code>?</code> quantifier makes the preceding atom match zero or once.</p>
 <p>For example, to match <code>dog</code> or <code>dogs</code>, you can write:</p>
-<pre class="pod-block-code">/ dogs? /</pre>
-<h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;dogs</span><span class="keyword operator quantifiers regexp perl6fe"><span>?</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span></span></div></pre><h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
 <p>From <a href="/language/regexes#Greedy_versus_frugal_quantifiers:_?">Regexes</a></p>
 <h2 id="(Regexes)_regex_?_?"><a href="/language/regexes#Greedy_versus_frugal_quantifiers:_?">(Regexes) regex ? ?</a></h2>
 <p>By default, quantifiers request a greedy match:</p>
-<pre class="pod-block-code">&#39;abababa&#39; ~~ /a .* a/ &amp;&amp; say ~$/;   # OUTPUT: «abababa␤»
-</pre>
-<p>You can attach a <code>?</code> modifier to the quantifier to enable frugal matching:</p>
-<pre class="pod-block-code">&#39;abababa&#39; ~~ /a .*? a/ &amp;&amp; say ~$/;   # OUTPUT: «aba␤»
-</pre>
-<p>You can also enable frugal matching for general quantifiers:</p>
-<pre class="pod-block-code">say &#39;/foo/o/bar/&#39; ~~ /\/.**?{1..10}\//;  # OUTPUT: «｢/foo/｣␤»
-say &#39;/foo/o/bar/&#39; ~~ /\/.**!{1..10}\//;  # OUTPUT: «｢/foo/o/bar/｣␤»</pre>
-<p>Greedy matching can be explicitly requested with the <code>!</code> modifier.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abababa</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>a&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>.</span><span>*</span></span><span>&nbsp;a</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>&amp;&amp;</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>~</span></span><span class="keyword other special-method perl6fe"><span>$/</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«abababa␤»</span><span>&nbsp;</span></span></span></div></pre><p>You can attach a <code>?</code> modifier to the quantifier to enable frugal matching:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abababa</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>a&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>.</span><span>*</span><span>?</span></span><span>&nbsp;a</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>&amp;&amp;</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>~</span></span><span class="keyword other special-method perl6fe"><span>$/</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«aba␤»</span><span>&nbsp;</span></span></span></div></pre><p>You can also enable frugal matching for general quantifiers:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>/foo/o/bar/</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>\</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>\</span><span class="keyword operator multi-symbol perl6fe"><span>//</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢/foo/｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>/foo/o/bar/</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>\</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span class="keyword operator generic perl6fe"><span>!</span></span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>\</span><span class="keyword operator multi-symbol perl6fe"><span>//</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢/foo/o/bar/｣␤»</span></span></span></div></pre><p>Greedy matching can be explicitly requested with the <code>!</code> modifier.</p>
 <h1 id="language_documentation_Variables"><a class="u" href="#___top" title="go to top of document">language documentation Variables</a></h1>
 <p>From <a href="/language/variables#The_?_twigil">Variables</a></p>
 <h2 id="(Variables)_twigil_?"><a href="/language/variables#The_?_twigil">(Variables) twigil ?</a></h2>
 <p>Compile-time variables may be addressed via the <code>?</code> twigil. They are known to the compiler and may not be modified after being compiled in. A popular example for this is:</p>
-<pre class="pod-block-code">say &quot;$?FILE: $?LINE&quot;; # OUTPUT: &quot;hello.p6: 23&quot;
-                      # if this is the line 23 of a
-                      # file named &quot;hello.p6&quot;</pre>
-<p>For a list of these special variables, see <a href="/language/variables#Compile-time_variables">compile-time variables</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil interpolated perl6fe"><span>?</span></span><span>FILE</span></span><span>:&nbsp;</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil interpolated perl6fe"><span>?</span></span><span>LINE</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;&quot;hello.p6:&nbsp;23&quot;</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="punctuation whitespace comment leading perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;if&nbsp;this&nbsp;is&nbsp;the&nbsp;line&nbsp;23&nbsp;of&nbsp;a</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="punctuation whitespace comment leading perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;file&nbsp;named&nbsp;&quot;hello.p6&quot;</span></span></span></div></pre><p>For a list of these special variables, see <a href="/language/variables#Compile-time_variables">compile-time variables</a>.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -120,5 +112,12 @@ say &#39;/foo/o/bar/&#39; ~~ /\/.**!{1..10}\//;  # OUTPUT: «｢/foo/o/bar/｣�
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

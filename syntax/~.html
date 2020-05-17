@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -73,28 +75,23 @@
 <p><a name="index-entry-$~MAIN"></a><a name="index-entry-$~Quote"></a><a name="index-entry-$~Quasi"></a><a name="index-entry-$~Regex"></a><a name="index-entry-$~Trans"></a><a name="index-entry-$~P5Regex"></a></p>
 <table class="pod-table">
 <tbody>
-<tr> <td>$~MAIN</td> <td>the current main language (e.g. Perl statements)</td> </tr> <tr> <td>$~Quote</td> <td>the current root of quoting language</td> </tr> <tr> <td>$~Quasi</td> <td>the current root of quasiquoting language</td> </tr> <tr> <td>$~Regex</td> <td>the current root of regex language</td> </tr> <tr> <td>$~Trans</td> <td>the current root of transliteration language</td> </tr> <tr> <td>$~P5Regex</td> <td>the current root of the Perl&nbsp;5 regex language</td> </tr>
+<tr> <td>$~MAIN</td> <td>the current main language (e.g., Raku statements)</td> </tr> <tr> <td>$~Quote</td> <td>the current root of quoting language</td> </tr> <tr> <td>$~Quasi</td> <td>the current root of quasiquoting language</td> </tr> <tr> <td>$~Regex</td> <td>the current root of regex language</td> </tr> <tr> <td>$~Trans</td> <td>the current root of transliteration language</td> </tr> <tr> <td>$~P5Regex</td> <td>the current root of the Perl regex language</td> </tr>
 </tbody>
 </table><p>You <code>augment</code> these languages in your current lexical scope.</p>
-<pre class="pod-block-code">use MONKEY-TYPING;
-augment slang Regex {  # derive from $~Regex and then modify $~Regex
-    token backslash:std&lt;\Y&gt; { YY };
-}
-</pre>
-<p><a name="index-entry-supersede"></a></p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>use</span></span><span>&nbsp;</span><span class="constant language pragma perl6fe"><span>MONKEY-TYPING</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier type constraints perl6fe"><span>augment</span></span><span>&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>slang</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Regex</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;derive&nbsp;from&nbsp;$~Regex&nbsp;and&nbsp;then&nbsp;modify&nbsp;$~Regex</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named perl6fe"><span>backslash</span></span><span class="meta regexp named adverb perl6fe"><span class="punctuation definition regexp adverb perl6fe"><span>:</span></span><span class="support type class adverb perl6fe"><span>std</span></span></span><span>&lt;</span><span class="string array words perl6fe"><span>\Y</span></span><span>&gt;</span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;YY&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><a name="index-entry-supersede"></a></p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -105,5 +102,12 @@ augment slang Regex {  # derive from $~Regex and then modify $~Regex
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

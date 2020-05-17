@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
   
 
@@ -71,28 +73,22 @@
 <h2 id="(Regexes)_regex_adverb_:ratchet_:ratchet"><a href="/language/regexes#Ratchet">(Regexes) regex adverb :ratchet :ratchet</a></h2>
 <p>The <code>:ratchet</code> or <code>:r</code> adverb causes the regex engine to not backtrack (see <a href="/language/regexes#Backtracking">backtracking</a>). Mnemonic: a <a href="https://en.wikipedia.org/wiki/Ratchet_%28device%29">ratchet</a> only moves in one direction and can&#39;t backtrack.</p>
 <p>Without this adverb, parts of a regex will try different ways to match a string in order to make it possible for other parts of the regex to match. For example, in <code>&#39;abc&#39; ~~ /\w+ ./</code>, the <code>\w+</code> first eats up the whole string, <code>abc</code> but then the <code>.</code> fails. Thus <code>\w+</code> gives up a character, matching only <code>ab</code>, and the <code>.</code> can successfully match the string <code>c</code>. This process of giving up characters (or in the case of alternations, trying a different branch) is known as backtracking.</p>
-<pre class="pod-block-code">say so &#39;abc&#39; ~~ / \w+ . /;        # OUTPUT: «True␤»
-say so &#39;abc&#39; ~~ / :r \w+ . /;     # OUTPUT: «False␤»</pre>
-<p>Ratcheting can be an optimization, because backtracking is costly. But more importantly, it closely corresponds to how humans parse a text. If you have a regex <code>my regex identifier { \w+ }</code> and <code>my regex keyword { if | else | endif }</code>, you intuitively expect the <code>identifier</code> to gobble up a whole word and not have it give up its end to the next rule, if the next rule otherwise fails.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>so</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abc</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\w</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>.</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>so</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abc</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="entity name section adverb perl6fe"><span>:r</span></span><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\w</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>.</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span></span></span></div></pre><p>Ratcheting can be an optimization, because backtracking is costly. But more importantly, it closely corresponds to how humans parse a text. If you have a regex <code>my regex identifier { \w+ }</code> and <code>my regex keyword { if | else | endif }</code>, you intuitively expect the <code>identifier</code> to gobble up a whole word and not have it give up its end to the next rule, if the next rule otherwise fails.</p>
 <p>For example, you don&#39;t expect the word <code>motif</code> to be parsed as the identifier <code>mot</code> followed by the keyword <code>if</code>. Instead, you expect <code>motif</code> to be parsed as one identifier; and if the parser expects an <code>if</code> afterwards, best that it should fail than have it parse the input in a way you don&#39;t expect.</p>
 <p>Since ratcheting behavior is often desirable in parsers, there&#39;s a shortcut to declaring a ratcheting regex:</p>
-<pre class="pod-block-code">my token thing { ... };
-# short for
-my regex thing { :r ... };
-</pre>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named perl6fe"><span>thing</span></span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>..</span><span>.</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;short&nbsp;for</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>regex</span></span><span>&nbsp;</span><span class="entity name function regexp named perl6fe"><span>thing</span></span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;</span><span class="entity name section adverb perl6fe"><span>:r</span></span><span>&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>..</span><span>.</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span><span>;</span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -103,5 +99,12 @@ my regex thing { :r ... };
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

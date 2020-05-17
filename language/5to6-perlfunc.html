@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Perl&nbsp;5 to Raku guide - functions</title>
+        <title>Perl to Raku guide - functions</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -47,9 +47,11 @@
     </p>
   </div>
   <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content__language_5to6_perlfunc">
   
       <div align="right">
@@ -66,8 +68,8 @@
         </button>
       </div>
 
-    <h1 class='title'>Perl&nbsp;5 to Raku guide - functions</h1>
-    <p class='subtitle'>Builtin functions in Perl&nbsp;5 to Raku</p>
+    <h1 class='title'>Perl to Raku guide - functions</h1>
+    <p class='subtitle'>Builtin functions in Perl to Raku</p>
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
@@ -254,10 +256,10 @@
 
     <div class="pod-body">
     <h1 id="DESCRIPTION"><a class="u" href="#___top" title="go to top of document">DESCRIPTION</a></h1>
-<p>A (hopefully) comprehensive list of Perl&nbsp;5 builtin functions with their Raku equivalents with notes on variations between them where necessary.</p>
+<p>A (hopefully) comprehensive list of Perl builtin functions with their Raku equivalents with notes on variations between them where necessary.</p>
 <h1 id="NOTE"><a class="u" href="#___top" title="go to top of document">NOTE</a></h1>
-<p>This document is an attempt to guide you from the functions in Perl&nbsp;5&#39;s <code>perlfunc</code> document to their equivalents in Raku. For full documentation on the Raku functions, follow the links in this document to their respective documentation.</p>
-<p>One general comment: Raku takes its objects a lot more seriously than Perl&nbsp;5. In Raku, everything is an object, although the language is flexible enough to not force you to work in an object oriented manner if you do not wish to do so. What this does mean, however, is that a lot of things that are function calls of the form <code>function(@args)</code> are now also method calls of the form <code>@args.function</code> (In rare cases, there is <em>only</em> a method call). This should be obvious in the following text, but it probably behooves you to get into that frame of mind now.</p>
+<p>This document is an attempt to guide you from the functions in Perl&#39;s <code>perlfunc</code> document to their equivalents in Raku. For full documentation on the Raku functions, follow the links in this document to their respective documentation.</p>
+<p>One general comment: Raku takes its objects a lot more seriously than Perl. In Raku, everything is an object, although the language is flexible enough to not force you to work in an object oriented manner if you do not wish to do so. What this does mean, however, is that a lot of things that are function calls of the form <code>function(@args)</code> are now also method calls of the form <code>@args.function</code> (In rare cases, there is <em>only</em> a method call). This should be obvious in the following text, but it probably behooves you to get into that frame of mind now.</p>
 <p>Also, unless otherwise stated, the use of the term &quot;function&quot; here will mean a function in the style of <code>func(@args)</code>, while &quot;method&quot; will refer to a function in the style of <code>@args.func</code>.</p>
 <h1 id="Alphabetical_listing_of_Perl_functions"><a class="u" href="#___top" title="go to top of document">Alphabetical listing of Perl functions</a></h1>
 <p><a name="index-entry-filetests_-_perlfunc"></a></p>
@@ -273,25 +275,18 @@
 </ul>
 <p>Raku gives you a couple of options when it comes to file tests. You can do a smartmatch (<code>~~</code>) or you can call a method.</p>
 <p>In Raku, you don&#39;t need to actually open a filehandle in the traditional way (although you can) to do a filetest. You can simply append <code>.IO</code> to the filename. For instance, here is how to check if a file is readable using smartmatch:</p>
-<pre class="pod-block-code">&#39;/path/to/file&#39;.IO ~~ :r</pre>
-<p>You can, of course, use an already opened filehandle. Here, using the filehandle <code>$fh</code>, is an example, using the method syntax for the file test:</p>
-<pre class="pod-block-code">$fh.r
-</pre>
-<p>Most of the former filetests have colon equivalents for use with smartmatch:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>/path/to/file</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>r</span></span></span></div></pre><p>You can, of course, use an already opened filehandle. Here, using the filehandle <code>$fh</code>, is an example, using the method syntax for the file test:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>r</span></span></span></div></pre><p>Most of the former filetests have colon equivalents for use with smartmatch:</p>
 <table class="pod-table">
 <tbody>
 <tr> <td>:e Exists</td> </tr> <tr> <td>:d Directory</td> </tr> <tr> <td>:f File</td> </tr> <tr> <td>:l Symbolic link</td> </tr> <tr> <td>:r Readable</td> </tr> <tr> <td>:w Writable</td> </tr> <tr> <td>:x Executable</td> </tr> <tr> <td>:s Size</td> </tr> <tr> <td>:z Zero size</td> </tr>
 </tbody>
 </table><p>All of these tests can be used as methods (without the colon).</p>
 <p>Three tests, however, <em>only</em> have method equivalents:</p>
-<pre class="pod-block-code">$fh.modified; # -M $fh
-$fh.accessed; # -A $fh
-$fh.changed;  # -C $fh
-</pre>
-<p>The remaining filetests in Perl&nbsp;5 do not appear to be implemented in Raku.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>modified</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;-M&nbsp;$fh</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>accessed</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;-A&nbsp;$fh</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>changed</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;-C&nbsp;$fh</span><span>&nbsp;</span></span></span></div></pre><p>The remaining filetests in Perl do not appear to be implemented in Raku.</p>
 <p>The documentation for this can be found at <a href="/type/IO::Path#File_test_operators">File test operators</a>.</p>
 <p>There is more information on reading and writing files at <a href="/language/io">io</a>. Also, the section on <code>open()</code> below may be helpful.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5-X"><code>P5-X</code></a> which exports the behavior as much as possible in Raku.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5-X"><code>P5-X</code></a> which exports the behavior as much as possible in Raku.</p>
 <p><a name="index-entry-abs_-_perlfunc"></a></p>
 <h2 id="abs"><a class="u" href="#___top" title="go to top of document">abs</a></h2>
 <ul><li><p>abs VALUE</p>
@@ -299,7 +294,7 @@ $fh.changed;  # -C $fh
 </ul>
 <p>Works as a function (<code>abs($x)</code>), but also as a method. One gotcha, however - method calls bind more tightly than <code>-</code>, so, for example, <code>-15.abs</code> evaluates as <code>-(15.abs)</code> giving you <code>-15</code>. In this example, you would have to do something like <code>(-15).abs</code>.</p>
 <p><code>abs</code> also operates on <code>$_</code> in the absence of a value, but not as a function, and as a method you need to call it as <code>.abs</code> rather than simply <code>abs</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5math"><code>P5math</code></a> which exports an <code>abs</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5math"><code>P5math</code></a> which exports an <code>abs</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-accept_-_perlfunc"></a></p>
 <h2 id="accept"><a class="u" href="#___top" title="go to top of document">accept</a></h2>
 <ul><li><p>accept NEWSOCKET, GENERICSOCKET</p>
@@ -312,19 +307,14 @@ $fh.changed;  # -C $fh
 </li>
 </ul>
 <p><code>alarm()</code> is no more. But it is possible to have code execute after a certain time has elapsed, or at a given time:</p>
-<pre class="pod-block-code">Promise.in(5).then: { say &quot;five seconds have passed&quot; }
-
-Promise.at(now + 5).then: { say &quot;five seconds have passed&quot; }</pre>
-<p>In Raku, this does *not* involve any (dummy) signals.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support type perl6fe"><span>Promise</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>in</span></span><span>(</span><span class="constant numeric perl6fe"><span>5</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>then</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>five&nbsp;seconds&nbsp;have&nbsp;passed</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="support type perl6fe"><span>Promise</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>at</span></span><span>(</span><span class="routine name perl6fe"><span>now</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>+</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>5</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>then</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>five&nbsp;seconds&nbsp;have&nbsp;passed</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>In Raku, this does *not* involve any (dummy) signals.</p>
 <p><a name="index-entry-atan2_-_perlfunc"></a></p>
 <h2 id="atan2"><a class="u" href="#___top" title="go to top of document">atan2</a></h2>
 <ul><li><p>atan2 Y, X</p>
 </li>
 </ul>
 <p>Available as a function as well as being able to be used as a method. For instance, these are equivalent:</p>
-<pre class="pod-block-code">atan2(100);
-100.atan2;</pre>
-<p><a name="index-entry-bind_-_perlfunc"></a></p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>atan2</span></span><span>(</span><span class="constant numeric perl6fe"><span>100</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>100</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>atan2</span></span><span>;</span></span></div></pre><p><a name="index-entry-bind_-_perlfunc"></a></p>
 <h2 id="bind"><a class="u" href="#___top" title="go to top of document">bind</a></h2>
 <ul><li><p>bind SOCKET, NAME</p>
 </li>
@@ -341,7 +331,7 @@ Promise.at(now + 5).then: { say &quot;five seconds have passed&quot; }</pre>
 <ul><li><p>bless REF, CLASSNAME</p>
 </li>
 </ul>
-<p>With the changes in class creation in Raku, this may find less use than in Perl&nbsp;5, and is a method as well as a function. The Raku docs say &quot;Creates a new object of the same type as the invocant, uses the named arguments to initialize attributes, and returns the created object.&quot; If you&#39;re porting a module from Perl&nbsp;5 to Raku, it&#39;s quite possible you&#39;ll want to use <code>new</code> for creating objects rather than <code>bless</code>, although there may be some situations in which the latter may still be useful.</p>
+<p>With the changes in class creation in Raku, this may find less use than in Perl, and is a method as well as a function. The Raku docs say &quot;Creates a new object of the same type as the invocant, uses the named arguments to initialize attributes, and returns the created object.&quot; If you&#39;re porting a module from Perl to Raku, it&#39;s quite possible you&#39;ll want to use <code>new</code> for creating objects rather than <code>bless</code>, although there may be some situations in which the latter may still be useful.</p>
 <p><a name="index-entry-break_-_perlfunc"></a></p>
 <h2 id="break"><a class="u" href="#___top" title="go to top of document">break</a></h2>
 <ul><li><p>break</p>
@@ -354,40 +344,32 @@ Promise.at(now + 5).then: { say &quot;five seconds have passed&quot; }</pre>
 </li>
 </ul>
 <p>There are a couple different ways to get at caller information in Raku. The basic functionality is provided through <a href="/routine/callframe">callframe</a> now. However, Raku constructs call frames for regular blocks, not just for subroutines, so there are more frames to look through. The following will retrieve the basic information that <code>caller</code> can return:</p>
-<pre class="pod-block-code">my $frame   = callframe(0); # OR just callframe()
-my ($subroutine, $package);
-if $frame.code ~~ Routine {
-    $subroutine = $frame.code.name;
-    $package    = $frame.code.package;
-}
-my $file    = $frame.file;
-my $line    = $frame.line;</pre>
-<p>Many of the other details returned by <code>caller</code> are specific to Perl&nbsp;5 and have no meaning in Raku.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>frame</span></span></span><span>&nbsp;&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>callframe</span></span><span>(</span><span class="constant numeric perl6fe"><span>0</span></span><span>);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OR&nbsp;just&nbsp;callframe()</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>subroutine</span></span></span><span>,&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>package</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>frame</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>code</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Routine</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>subroutine</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>frame</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>code</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>name</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>package</span></span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>frame</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>code</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>package</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>frame</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>file</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>line</span></span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>frame</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>line</span></span><span>;</span></span></div></pre><p>Many of the other details returned by <code>caller</code> are specific to Perl and have no meaning in Raku.</p>
 <p>You can also get some of the information for the current frame or routine frame by using the dynamic variables <a href="/language/variables#Compile-time_variables"><code>&amp;?ROUTINE</code></a>, <a href="/language/variables#Compile-time_variables"><code>&amp;?BLOCK</code></a>, <a href="/language/variables#Compile-time_variables"><code>$?PACKAGE</code></a>, <a href="/language/variables#Compile-time_variables"><code>$?FILE</code></a>, and <a href="/language/variables#Compile-time_variables"><code>$?LINE</code></a>. For many purposes, <a href="/type/Backtrace">Backtrace</a> may provide an easier way to browse through the call stack.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5caller"><code>P5caller</code></a> which exports a <code>caller</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5caller"><code>P5caller</code></a> which exports a <code>caller</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-chdir_-_perlfunc"></a></p>
 <h2 id="chdir"><a class="u" href="#___top" title="go to top of document">chdir</a></h2>
 <ul><li><p>chdir EXPR</p>
 </li>
 </ul>
-<p>Works as it does in Perl&nbsp;5 but <strong>must</strong> take an argument. The behavior of <code>chdir()</code> (with regards to looking at HOME and LOGDIR) is not supported.</p>
+<p>Works as it does in Perl but <strong>must</strong> take an argument. The behavior of <code>chdir()</code> (with regards to looking at HOME and LOGDIR) is not supported.</p>
 <p>In Raku, <a href="/routine/chdir">chdir</a> only changes the <code>$*CWD</code> dynamic variable. It does <strong>not</strong> actually change the default directory from the OS&#39;s point of view; the special dynamic-variable routine <a href="/routine/&*chdir"><code>&amp;*chdir</code></a> can be used for that, if needed.</p>
 <p>This is done this way, because there is no concept of a &quot;default directory per OS thread&quot;. And since Raku does not fork, but only does threading, it was felt that the &quot;current directory&quot; concept should be in the <code>$*CWD</code> dynamic variable, which can be lexically scoped, and thus can be thread-safe.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5chdir"><code>P5chdir</code></a> which exports a <code>chdir</code> function that mimics the original Perl&nbsp;5 behavior as much as possible, including looking at HOME and LOGDIR.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5chdir"><code>P5chdir</code></a> which exports a <code>chdir</code> function that mimics the original Perl behavior as much as possible, including looking at HOME and LOGDIR.</p>
 <p><a name="index-entry-chmod_-_perlfunc"></a></p>
 <h2 id="chmod"><a class="u" href="#___top" title="go to top of document">chmod</a></h2>
 <ul><li><p>chmod LIST</p>
 </li>
 </ul>
-<p>Functions as under Perl&nbsp;5, with the difference that octal numbers are represented differently (<code>0o755</code> rather than <code>0755</code>). You may also use it as a method, e. g. <code>$fh.chmod(0o755)</code>.</p>
+<p>Functions as under Perl, with the difference that octal numbers are represented differently (<code>0o755</code> rather than <code>0755</code>). You may also use it as a method, e. g. <code>$fh.chmod(0o755)</code>.</p>
 <p><a name="index-entry-chomp_-_perlfunc"></a></p>
 <h2 id="chomp"><a class="u" href="#___top" title="go to top of document">chomp</a></h2>
 <ul><li><p>chomp VARIABLE</p>
 </li>
 </ul>
-<p>The behavior of <code>chomp</code> is different than in Perl&nbsp;5. It leaves the target unaffected and <em>returns</em> a copy of the target with a final logical newline removed, e.g. <code>$x = &quot;howdy\n&quot;;$y = chomp($x);</code> results in <code>$x</code> containing &quot;howdy\n&quot; and <code>$y</code> containing &quot;howdy&quot;. Also works as a method, e.g. <code>$y = $x.chomp</code>. As with many other methods, also works with assignment to modify the target in place, e.g. <code>$x.=chomp</code> results in <code>$x</code> containing &quot;howdy&quot;.</p>
+<p>The behavior of <code>chomp</code> is different than in Perl. It leaves the target unaffected and <em>returns</em> a copy of the target with a final logical newline removed, e.g. <code>$x = &quot;howdy\n&quot;;$y = chomp($x);</code> results in <code>$x</code> containing &quot;howdy\n&quot; and <code>$y</code> containing &quot;howdy&quot;. Also works as a method, e.g. <code>$y = $x.chomp</code>. As with many other methods, also works with assignment to modify the target in place, e.g. <code>$x.=chomp</code> results in <code>$x</code> containing &quot;howdy&quot;.</p>
 <p>Note that <code>chomp()</code> (without arguments) is not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5chomp"><code>P5chomp</code></a> which exports a <code>chomp</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5chomp"><code>P5chomp</code></a> which exports a <code>chomp</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-chop_-_perlfunc"></a></p>
 <h2 id="chop"><a class="u" href="#___top" title="go to top of document">chop</a></h2>
 <ul><li><p>chop VARIABLE</p>
@@ -395,7 +377,7 @@ my $line    = $frame.line;</pre>
 </ul>
 <p>As with <code>chomp</code>, in Raku, this returns the chopped string, rather than chopping in place. I. e. <code>$x = &quot;howdy&quot;;$y = chop($x);</code> results in <code>$x</code> being &quot;howdy&quot; and <code>$y</code> being &quot;howd&quot;. Also works as a method: <code>$y = $x.chop</code>.</p>
 <p>Note that <code>chop()</code> (without arguments) is not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5chomp"><code>P5chomp</code></a> which exports a <code>chop</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5chomp"><code>P5chomp</code></a> which exports a <code>chop</code> function that mimics the original Perl behavior as much as possible.</p>
 <p>.head2 chown</p>
 <ul><li><p>chown LIST</p>
 </li>
@@ -406,11 +388,9 @@ my $line    = $frame.line;</pre>
 <ul><li><p>chr NUMBER</p>
 </li>
 </ul>
-<p>Similar to the Perl&nbsp;5 version, coerces the target to an integer, and uses that as a Unicode code point to return the relevant character. Can be used as a function and a method:</p>
-<pre class="pod-block-code">chr(65); # &quot;A&quot;
-65.chr;  # &quot;A&quot;</pre>
-<p>Note that <code>chr()</code> (without arguments) is not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5chr"><code>P5chr</code></a> which exports a <code>chr</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>Similar to the Perl version, coerces the target to an integer, and uses that as a Unicode code point to return the relevant character. Can be used as a function and a method:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>chr</span></span><span>(</span><span class="constant numeric perl6fe"><span>65</span></span><span>);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;&quot;A&quot;</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>65</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chr</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;&quot;A&quot;</span></span></span></div></pre><p>Note that <code>chr()</code> (without arguments) is not supported in Raku.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5chr"><code>P5chr</code></a> which exports a <code>chr</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-chroot_-_perlfunc"></a></p>
 <h2 id="chroot"><a class="u" href="#___top" title="go to top of document">chroot</a></h2>
 <ul><li><p>chroot FILENAME</p>
@@ -422,7 +402,7 @@ my $line    = $frame.line;</pre>
 <ul><li><p>close FILEHANDLE</p>
 </li>
 </ul>
-<p>As in Perl&nbsp;5, closes a filehandle. Returns a boolean value. Both <code>close $fh</code> and <code>$fh.close</code> will work.</p>
+<p>As in Perl, closes a filehandle. Returns a boolean value. Both <code>close $fh</code> and <code>$fh.close</code> will work.</p>
 <p>Note that <code>close()</code> (without arguments) is not supported in Raku.</p>
 <p><a name="index-entry-closedir_-_perlfunc"></a></p>
 <h2 id="closedir"><a class="u" href="#___top" title="go to top of document">closedir</a></h2>
@@ -430,7 +410,7 @@ my $line    = $frame.line;</pre>
 </li>
 </ul>
 <p>Not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5opendir"><code>P5opendir</code></a> which exports a <code>closedir</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5opendir"><code>P5opendir</code></a> which exports a <code>closedir</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-connect_-_perlfunc"></a></p>
 <h2 id="connect"><a class="u" href="#___top" title="go to top of document">connect</a></h2>
 <ul><li><p>connect SOCKET, NAME</p>
@@ -444,22 +424,22 @@ my $line    = $frame.line;</pre>
 <li><p>continue</p>
 </li>
 </ul>
-<p>Instead of a <code>continue</code> block, you should use a <code>NEXT</code> block. The closest analog to a bare <code>continue;</code> in Perl&nbsp;5 appears to be <code>proceed</code>/<code>succeed</code>.</p>
+<p>Instead of a <code>continue</code> block, you should use a <code>NEXT</code> block. The closest analog to a bare <code>continue;</code> in Perl appears to be <code>proceed</code>/<code>succeed</code>.</p>
 <p><a name="index-entry-cos_-_perlfunc"></a></p>
 <h2 id="cos"><a class="u" href="#___top" title="go to top of document">cos</a></h2>
 <ul><li><p>cos EXPR</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5.</p>
+<p>Works as in Perl.</p>
 <p><code>cos</code> also operates on <code>$_</code> in the absence of a value, but not as a function, and as a method you need to call it as <code>.cos</code> rather than simply <code>cos</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5math"><code>P5math</code></a> which exports a <code>cos</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5math"><code>P5math</code></a> which exports a <code>cos</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-crypt_-_perlfunc"></a></p>
 <h2 id="crypt"><a class="u" href="#___top" title="go to top of document">crypt</a></h2>
 <ul><li><p>crypt PLAINTEXT, SALT</p>
 </li>
 </ul>
 <p>Not available in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5math"><code>P5math</code></a> which exports a <code>crypt</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5math"><code>P5math</code></a> which exports a <code>crypt</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-dbm_-_perlfunc"></a></p>
 <h2 id="dbm_functions"><a class="u" href="#___top" title="go to top of document">dbm functions</a></h2>
 <ul><li><p>dbmclose HASH</p>
@@ -467,15 +447,15 @@ my $line    = $frame.line;</pre>
 <li><p>dbmopen HASH, DBNAME, MASK</p>
 </li>
 </ul>
-<p>These functions have largely been superseded in Perl&nbsp;5, and are unlikely to ever turn up in Raku (although any assumptions about the Raku database implementation may be premature).</p>
+<p>These functions have largely been superseded in Perl, and are unlikely to ever turn up in Raku (although any assumptions about the Raku database implementation may be premature).</p>
 <p><a name="index-entry-defined_-_perlfunc"></a></p>
 <h2 id="defined"><a class="u" href="#___top" title="go to top of document">defined</a></h2>
 <ul><li><p>defined EXPR</p>
 </li>
 </ul>
-<p>Probably does what you expect, but technically it returns <code>False</code> on the type object, and <code>True</code> otherwise. This may make more sense when you realize that <code>$num.perl</code> is the type <code>Any</code> if you haven&#39;t assigned anything to it, and the assigned value if you have. Can, of course be used as a method: <code>$num.defined</code>. And any newly created class can have its own <code>.defined</code> method, thereby deciding how and when it should be considered undefined.</p>
+<p>Probably does what you expect, but technically it returns <code>False</code> on the type object, and <code>True</code> otherwise. This may make more sense when you realize that <code>$num.raku</code> is the type <code>Any</code> if you haven&#39;t assigned anything to it, and the assigned value if you have. Can, of course be used as a method: <code>$num.defined</code>. And any newly created class can have its own <code>.defined</code> method, thereby deciding how and when it should be considered undefined.</p>
 <p>Note that <code>defined()</code> (without arguments) is not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5defined"><code>P5defined</code></a> which exports a <code>defined</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5defined"><code>P5defined</code></a> which exports a <code>defined</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-delete_-_perlfunc"></a></p>
 <h2 id="delete"><a class="u" href="#___top" title="go to top of document">delete</a></h2>
 <ul><li><p>delete EXPR</p>
@@ -487,15 +467,13 @@ my $line    = $frame.line;</pre>
 <ul><li><p>die LIST</p>
 </li>
 </ul>
-<p>Works similarly to the Perl&nbsp;5 version, but Raku&#39;s Exception mechanism may give you more power and flexibility than is available in Perl&nbsp;5. See <a href="/language/exceptions">exceptions</a>. To omit the stacktrace and location, like Perl&nbsp;5&#39;s <code>die &quot;...\n&quot;</code>, use:</p>
-<pre class="pod-block-code">note &quot;...&quot;;
-exit 1;</pre>
-<p><a name="index-entry-do_-_perlfunc"></a></p>
+<p>Works similarly to the Perl version, but Raku&#39;s Exception mechanism may give you more power and flexibility than is available in Perl. See <a href="/language/exceptions">exceptions</a>. To omit the stacktrace and location, like Perl&#39;s <code>die &quot;...\n&quot;</code>, use:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>note</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>...</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control flowcontrol perl6fe"><span>exit</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>;</span></span></div></pre><p><a name="index-entry-do_-_perlfunc"></a></p>
 <h2 id="do"><a class="u" href="#___top" title="go to top of document">do</a></h2>
 <ul><li><p>do BLOCK</p>
 </li>
 </ul>
-<p>Similar to the Perl&nbsp;5 version. Note that there must be a space between the <code>do</code> and the block.</p>
+<p>Similar to the Perl version. Note that there must be a space between the <code>do</code> and the block.</p>
 <ul><li><p>do EXPR</p>
 </li>
 </ul>
@@ -512,8 +490,8 @@ exit 1;</pre>
 </li>
 </ul>
 <p>There is no exact equivalent, but you can use <code>%hash.kv</code> which returns a list of keys and values. For example: <code>for %hash.kv -&gt; $k, $v { say &quot;$k: $v&quot; } </code></p>
-<p>Incidentally, what we have there with the <code>-&gt; </code> is called a pointy block and, though there are a number of examples in the documentation, there doesn&#39;t seem to be a really clear explanation of how they work. <a href="https://design.perl6.org/S04.html#The_for_statement">https://design.perl6.org/S04.html#The_for_statement</a> may be of some help here, as well as the design document at <a href="https://design.perl6.org/S06.html#%22Pointy_blocks%22">https://design.perl6.org/S06.html#%22Pointy_blocks%22</a>. There is also some information at <a href="https://en.wikibooks.org/wiki/Perl_6_Programming/Blocks_and_Closures#Pointy_Blocks">https://en.wikibooks.org/wiki/Perl_6_Programming/Blocks_and_Closures#Pointy_Blocks</a></p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5each"><code>P5each</code></a> which exports an <code>each</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>Incidentally, what we have there with the <code>-&gt; </code> is called a pointy block and, though there are a number of examples in the documentation, there doesn&#39;t seem to be a really clear explanation of how they work. <a href="https://design.raku.org/S04.html#The_for_statement">https://design.raku.org/S04.html#The_for_statement</a> may be of some help here, as well as the design document at <a href="https://design.raku.org/S06.html#%22Pointy_blocks%22">https://design.raku.org/S06.html#%22Pointy_blocks%22</a>. There is also some information at <a href="https://en.wikibooks.org/wiki/Perl_6_Programming/Blocks_and_Closures#Pointy_Blocks">https://en.wikibooks.org/wiki/Perl_6_Programming/Blocks_and_Closures#Pointy_Blocks</a></p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5each"><code>P5each</code></a> which exports an <code>each</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-eof_-_perlfunc"></a></p>
 <h2 id="eof"><a class="u" href="#___top" title="go to top of document">eof</a></h2>
 <ul><li><p>eof FILEHANDLE</p>
@@ -539,39 +517,36 @@ exit 1;</pre>
 <ul><li><p>exec LIST</p>
 </li>
 </ul>
-<p>Nothing in Raku exactly replicates the Perl&nbsp;5 <code>exec</code>. <code>shell</code> and <code>run</code> are similar to Perl&nbsp;5&#39;s <code>system</code>, but <code>exec</code>&#39;s behavior of not returning after executing a system command would have to be emulated by something like <code>shell($command);exit();</code> or possibly <code>exit shell($command);</code>.</p>
+<p>Nothing in Raku exactly replicates the Perl <code>exec</code>. <code>shell</code> and <code>run</code> are similar to Perl&#39;s <code>system</code>, but <code>exec</code>&#39;s behavior of not returning after executing a system command would have to be emulated by something like <code>shell($command);exit();</code> or possibly <code>exit shell($command);</code>.</p>
 <p>Neither of these workarounds have the behavior (on Unix-like systems) of <em>replacing</em> your Perl program&#39;s process with the new program; notably, they will not work for the practice in some long-running daemons of periodically redoing exec on themselves to reset their state or force operating-system cleanup. Nor will they serve <code>exec</code>&#39;s function of returning stale resources to the operating system.</p>
-<p>If you want <code>exec</code> for these behaviors, you can use an <code>exec*</code> function via the <code>NativeCall</code> interface. Consult your operating system manual pages for <code>exec</code> (or other similarly-named calls such as <code>execl</code>, <code>execv</code>, <code>execvp</code>, or <code>execvpe</code>). (Beware: these calls are not generally portable between Unix-like operating system families.) Given those caveats, the Raku ecosystem <a href="https://modules.perl6.org/dist/Native::Exec"><code>Native::Exec</code></a> module exports an <code>exec</code> function for Unix-like systems.</p>
+<p>If you want <code>exec</code> for these behaviors, you can use an <code>exec*</code> function via the <code>NativeCall</code> interface. Consult your operating system manual pages for <code>exec</code> (or other similarly-named calls such as <code>execl</code>, <code>execv</code>, <code>execvp</code>, or <code>execvpe</code>). (Beware: these calls are not generally portable between Unix-like operating system families.) Given those caveats, the Raku ecosystem <a href="https://modules.raku.org/dist/Native::Exec"><code>Native::Exec</code></a> module exports an <code>exec</code> function for Unix-like systems.</p>
 <p><a name="index-entry-exists_-_perlfunc"></a></p>
 <h2 id="exists"><a class="u" href="#___top" title="go to top of document">exists</a></h2>
 <ul><li><p>exists EXPR</p>
 </li>
 </ul>
 <p>In Raku, this is not a function, but an adverb:</p>
-<pre class="pod-block-code">%hash{$key}:exists;
-@array[$i]:exists;
-</pre>
-<p><a name="index-entry-exit_-_perlfunc"></a></p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>hash</span></span></span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>key</span></span></span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="support function perl6fe"><span>exists</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>array</span></span></span><span>[</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>i</span></span></span><span>]</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="support function perl6fe"><span>exists</span></span><span>;</span></span></div></pre><p><a name="index-entry-exit_-_perlfunc"></a></p>
 <h2 id="exit"><a class="u" href="#___top" title="go to top of document">exit</a></h2>
 <ul><li><p>exit EXPR</p>
 </li>
 </ul>
-<p>Appears to do the same thing as in Perl&nbsp;5.</p>
+<p>Appears to do the same thing as in Perl.</p>
 <p><a name="index-entry-exp_-_perlfunc"></a></p>
 <h2 id="exp"><a class="u" href="#___top" title="go to top of document">exp</a></h2>
 <ul><li><p>exp EXPR</p>
 </li>
 </ul>
-<p>Same as in Perl&nbsp;5.</p>
+<p>Same as in Perl.</p>
 <p><code>exp</code> also operates on <code>$_</code> in the absence of a value, but not as a function, and as a method you need to call it as <code>.exp</code> rather than simply <code>exp</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5math"><code>P5math</code></a> which exports an <code>exp</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5math"><code>P5math</code></a> which exports an <code>exp</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-fc_-_perlfunc"></a></p>
 <h2 id="fc"><a class="u" href="#___top" title="go to top of document">fc</a></h2>
 <ul><li><p>fc EXPR</p>
 </li>
 </ul>
-<p>Looks like it does the same thing as in Perl&nbsp;5 except that calling it without arguments is not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5fc"><code>P5fc</code></a> which exports a <code>fc</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>Looks like it does the same thing as in Perl except that calling it without arguments is not supported in Raku.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5fc"><code>P5fc</code></a> which exports a <code>fc</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-fcntl_-_perlfunc"></a></p>
 <h2 id="fcntl"><a class="u" href="#___top" title="go to top of document">fcntl</a></h2>
 <ul><li><p>fcntl FILEHANDLE, FUNCTION, SCALAR</p>
@@ -583,15 +558,15 @@ exit 1;</pre>
 <ul><li><p>__FILE__</p>
 </li>
 </ul>
-<p>Replaced by <code>$?FILE</code> which is slightly different from <code>__FILE__</code> in that it is always an absolute path, rather than a relative one in the Perl&nbsp;5 case.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5__FILE__"><code>P5__FILE__</code></a> which exports a <code>__FILE__</code> term that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>Replaced by <code>$?FILE</code> which is slightly different from <code>__FILE__</code> in that it is always an absolute path, rather than a relative one in the Perl case.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5__FILE__"><code>P5__FILE__</code></a> which exports a <code>__FILE__</code> term that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-fileno_-_perlfunc"></a></p>
 <h2 id="fileno"><a class="u" href="#___top" title="go to top of document">fileno</a></h2>
 <ul><li><p>fileno FILEHANDLE</p>
 </li>
 </ul>
 <p>The <code>native-descriptor</code> method on <code>IO::Handle</code> returns the equivalent of <code>fileno</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5fileno"><code>P5fileno</code></a> which exports a <code>fileno</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5fileno"><code>P5fileno</code></a> which exports a <code>fileno</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-flock_-_perlfunc"></a></p>
 <h2 id="flock"><a class="u" href="#___top" title="go to top of document">flock</a></h2>
 <ul><li><p>flock FILEHANDLE, OPERATION</p>
@@ -618,8 +593,8 @@ exit 1;</pre>
 <ul><li><p>getc FILEHANDLE</p>
 </li>
 </ul>
-<p>Reads a single character from the input stream as in Perl&nbsp;5. May now also be used as a method: <code>$filehandle.getc</code></p>
-<p><a name="index-entry-getpeernmae_-_perlfunc"></a></p>
+<p>Reads a single character from the input stream as in Perl. May now also be used as a method: <code>$filehandle.getc</code></p>
+<p><a name="index-entry-getpeername_-_perlfunc"></a></p>
 <h2 id="getpeername"><a class="u" href="#___top" title="go to top of document">getpeername</a></h2>
 <ul><li><p>getpeername SOCKET</p>
 </li>
@@ -631,21 +606,21 @@ exit 1;</pre>
 </li>
 </ul>
 <p>Will not be implemented.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5getpriority"><code>P5getpriority</code></a> which exports a <code>getpgrp</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5getpriority"><code>P5getpriority</code></a> which exports a <code>getpgrp</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-getppid_-_perlfunc"></a></p>
 <h2 id="getppid"><a class="u" href="#___top" title="go to top of document">getppid</a></h2>
 <ul><li><p>getppid PID</p>
 </li>
 </ul>
 <p>Will not be implemented.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5getpriority"><code>P5getpriority</code></a> which exports a <code>getppid</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5getpriority"><code>P5getpriority</code></a> which exports a <code>getppid</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-getpriority_-_perlfunc"></a></p>
 <h2 id="getpriority"><a class="u" href="#___top" title="go to top of document">getpriority</a></h2>
 <ul><li><p>getpriority WHICH, WHO</p>
 </li>
 </ul>
 <p>Will not be implemented.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5getpriority"><code>P5getpriority</code></a> which exports a <code>getpriority</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5getpriority"><code>P5getpriority</code></a> which exports a <code>getpriority</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-get_and_set_-_perlfunc"></a></p>
 <h2 id="get_and_set_functions"><a class="u" href="#___top" title="go to top of document">get and set functions</a></h2>
 <ul><li><p>endpwent</p>
@@ -661,7 +636,7 @@ exit 1;</pre>
 <li><p>setpwent</p>
 </li>
 </ul>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5getpwnam"><code>P5getpwnam</code></a> which exports the <code>endpwent</code>, <code>getlogin</code>, <code>getpwent</code>, <code>getpwnam</code>, <code>getpwuid</code> and <code>setpwent</code> functions that mimic the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5getpwnam"><code>P5getpwnam</code></a> which exports the <code>endpwent</code>, <code>getlogin</code>, <code>getpwent</code>, <code>getpwnam</code>, <code>getpwuid</code> and <code>setpwent</code> functions that mimic the original Perl behavior as much as possible.</p>
 <ul><li><p>endgrent</p>
 </li>
 <li><p>getgrent</p>
@@ -673,7 +648,7 @@ exit 1;</pre>
 <li><p>setgrent</p>
 </li>
 </ul>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5getgrnam"><code>P5getgrnam</code></a> which exports the <code>endgrent</code>, <code>getgrent</code>, <code>getgrgid</code>, <code>getgrnam</code> and <code>setgrent</code> functions that mimic the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5getgrnam"><code>P5getgrnam</code></a> which exports the <code>endgrent</code>, <code>getgrent</code>, <code>getgrgid</code>, <code>getgrnam</code> and <code>setgrent</code> functions that mimic the original Perl behavior as much as possible.</p>
 <ul><li><p>endnetent</p>
 </li>
 <li><p>getnetbyaddr ADDR, ADDRTYPE</p>
@@ -685,7 +660,7 @@ exit 1;</pre>
 <li><p>setnetent STAYOPEN</p>
 </li>
 </ul>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5getnetbyname"><code>P5getnetbyname</code></a> which exports the <code>endnetent</code>, <code>getnetent</code>, <code>getnetbyaddr</code>, <code>getnetbyname</code> and <code>setnetent</code> functions that mimic the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5getnetbyname"><code>P5getnetbyname</code></a> which exports the <code>endnetent</code>, <code>getnetent</code>, <code>getnetbyaddr</code>, <code>getnetbyname</code> and <code>setnetent</code> functions that mimic the original Perl behavior as much as possible.</p>
 <ul><li><p>endservent</p>
 </li>
 <li><p>getservbyname NAME, PROTO</p>
@@ -697,7 +672,7 @@ exit 1;</pre>
 <li><p>setservent STAYOPEN</p>
 </li>
 </ul>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5getservbyname"><code>P5getservbyname</code></a> which exports the <code>endservent</code>, <code>getservent</code>, <code>getservbyname</code>, <code>getservbyport</code> and <code>setservent</code> functions that mimic the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5getservbyname"><code>P5getservbyname</code></a> which exports the <code>endservent</code>, <code>getservent</code>, <code>getservbyname</code>, <code>getservbyport</code> and <code>setservent</code> functions that mimic the original Perl behavior as much as possible.</p>
 <ul><li><p>endprotoent</p>
 </li>
 <li><p>getprotobyname NAME</p>
@@ -709,7 +684,7 @@ exit 1;</pre>
 <li><p>setprotoent STAYOPEN</p>
 </li>
 </ul>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5getprotobyname"><code>P5getprotobyname</code></a> which exports the <code>endprotoent</code>, <code>getprotoent</code>, <code>getprotobyname</code>, <code>getprotobynumber</code> and <code>setprotoent</code> functions that mimic the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5getprotobyname"><code>P5getprotobyname</code></a> which exports the <code>endprotoent</code>, <code>getprotoent</code>, <code>getprotobyname</code>, <code>getprotobynumber</code> and <code>setprotoent</code> functions that mimic the original Perl behavior as much as possible.</p>
 <ul><li><p>gethostbyname NAME</p>
 </li>
 <li><p>gethostbyaddr ADDR, ADDRTYPE</p>
@@ -722,7 +697,7 @@ exit 1;</pre>
 </li>
 </ul>
 <p>[NEEDS FURTHER RESEARCH] Apparently this range of functions are to be handled by roles like User, Group, etc.</p>
-<p><a name="index-entry-getshock_-_perlfunc"></a></p>
+<p><a name="index-entry-getsock_-_perlfunc"></a></p>
 <h2 id="getsock*"><a class="u" href="#___top" title="go to top of document">getsock*</a></h2>
 <ul><li><p>getsockname SOCKET</p>
 </li>
@@ -736,14 +711,14 @@ exit 1;</pre>
 </li>
 </ul>
 <p>Not available in core, although some of the functionality is offered by <a href="/routine/dir">dir</a> routine and its <code>test</code> argument.</p>
-<p>See <a href="https://modules.perl6.org/dist/IO::Glob"><code>IO::Glob</code> module in ecosystem</a></p>
+<p>See <a href="https://modules.raku.org/dist/IO::Glob"><code>IO::Glob</code> module in ecosystem</a></p>
 <p><a name="index-entry-gmtime_-_perlfunc"></a></p>
 <h2 id="gmtime"><a class="u" href="#___top" title="go to top of document">gmtime</a></h2>
 <ul><li><p>gmtime EXPR</p>
 </li>
 </ul>
 <p>Like the various parts of <code>localtime</code>, <code>gmtime</code>&#39;s functionality appears to in the <code>DateTime</code> object. To get a UTC version of a <code>DateTime</code> object for the current time, for instance, use <code>my $gmtime = DateTime.now.utc</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5localtime"><code>P5localtime</code></a> which exports a <code>gmtime</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5localtime"><code>P5localtime</code></a> which exports a <code>gmtime</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-goto_-_perlfunc"></a></p>
 <h2 id="goto"><a class="u" href="#___top" title="go to top of document">goto</a></h2>
 <ul><li><p>goto LABEL</p>
@@ -754,8 +729,7 @@ exit 1;</pre>
 </li>
 </ul>
 <p>The syntax for <code>goto LABEL</code> is already accepted, but the runtime part of <code>goto</code> is not yet implemented. So this will result in a runtime error:</p>
-<pre class="pod-block-code">FOO: goto FOO; # Label.goto() not yet implemented. Sorry.</pre>
-<p><a name="index-entry-grep_-_perlfunc"></a></p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>FOO</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>goto</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>FOO</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Label.goto()&nbsp;not&nbsp;yet&nbsp;implemented.&nbsp;Sorry.</span></span></span></div></pre><p><a name="index-entry-grep_-_perlfunc"></a></p>
 <h2 id="grep"><a class="u" href="#___top" title="go to top of document">grep</a></h2>
 <ul><li><p>grep BLOCK LIST</p>
 </li>
@@ -772,36 +746,29 @@ exit 1;</pre>
 <p>Replaced by the adverbial form <code>:16</code>. E. g. <code>:16(&quot;aF&quot;)</code> returns 175. This is Str-&gt;Int.</p>
 <p>The opposite result can be achieved (Int-&gt;Str) by using the <code>.base</code> method: <code>0xaF.base(10)</code></p>
 <p>It just so happens that <code>.Str</code> defaults to base 10, so if you just <code>say 0xaF</code>, that will also print 175, but that may not be immediately obvious, so may not be the best way to go for this.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5hex"><code>P5hex</code></a> which exports a <code>hex</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5hex"><code>P5hex</code></a> which exports a <code>hex</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-import_-_perlfunc"></a></p>
 <h2 id="import"><a class="u" href="#___top" title="go to top of document">import</a></h2>
 <ul><li><p>import LIST</p>
 </li>
 </ul>
-<p>Was never a builtin function in Perl&nbsp;5 in the first place. In Raku, typically, one declares functions as exportable or not, and all the exportable ones are exported. Nevertheless, selective importing is possible, but beyond the scope of this document. For details, see <a href="/language/5to6-nutshell#Importing_specific_functions_from_a_module">this section</a>.</p>
+<p>Was never a builtin function in Perl in the first place. In Raku, typically, one declares functions as exportable or not, and all the exportable ones are exported. Nevertheless, selective importing is possible, but beyond the scope of this document. For details, see <a href="/language/5to6-nutshell#Importing_specific_functions_from_a_module">this section</a>.</p>
 <p><a name="index-entry-index_-_perlfunc"></a></p>
 <h2 id="index"><a class="u" href="#___top" title="go to top of document">index</a></h2>
 <ul><li><p>index STR, SUBSTR, POSITION</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5. Can also now be used as a method: <code>&quot;howdy!&quot;.index(&quot;how&quot;); # 0</code>. Main difference with Perl&nbsp;5 is that <code>Nil</code> is returned instead of <code>-1</code> when the substring is not found. This is very useful in combination with the <code>with</code> command:</p>
-<pre class="pod-block-code">with index(&quot;foo&quot;,&quot;o&quot;) -&gt; $index {
-    say &quot;Found it at $index&quot;;
-}
-else {
-    say &quot;Not found&quot;
-}</pre>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5index"><code>P5index</code></a> which exports an <code>index</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>Works as in Perl. Can also now be used as a method: <code>&quot;howdy!&quot;.index(&quot;how&quot;); # 0</code>. Main difference with Perl is that <code>Nil</code> is returned instead of <code>-1</code> when the substring is not found. This is very useful in combination with the <code>with</code> command:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>with</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>index</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>o</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>)&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>index</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Found&nbsp;it&nbsp;at&nbsp;</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span>index</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>else</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Not&nbsp;found</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5index"><code>P5index</code></a> which exports an <code>index</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-int_-_perlfunc"></a></p>
 <h2 id="int"><a class="u" href="#___top" title="go to top of document">int</a></h2>
 <ul><li><p>int EXPR</p>
 </li>
 </ul>
-<p>There is a <code>truncate</code> function in Raku (also usable as a method) that does what Perl&nbsp;5&#39;s <code>int</code> does. You may want to use that as a direct translation of Perl&nbsp;5 code, but in Raku, you can just as easily call the <code>.Int</code> method on the number. <code>3.9.Int; # 3</code> and <code>3.9.truncate</code> are equivalent.</p>
+<p>There is a <code>truncate</code> function in Raku (also usable as a method) that does what Perl&#39;s <code>int</code> does. You may want to use that as a direct translation of Perl code, but in Raku, you can just as easily call the <code>.Int</code> method on the number. <code>3.9.Int; # 3</code> and <code>3.9.truncate</code> are equivalent.</p>
 <p>Please note that <code>int</code> <strong>does</strong> have a meaning in Raku. It is type that can be used to indicate a native integer:</p>
-<pre class="pod-block-code">my int $a = 42;   # a native integer, similar to Perl&nbsp;5&#39;s integer values</pre>
-<p><code>int</code> also operates on <code>$_</code> in the absence of a value, but not as a function, and as a method you need to call it as <code>.int</code> rather than simply <code>int</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5math"><code>P5math</code></a> which exports an <code>int</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>int</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;a&nbsp;native&nbsp;integer,&nbsp;similar&nbsp;to&nbsp;Perl&#39;s&nbsp;integer&nbsp;values</span></span></span></div></pre><p><code>int</code> also operates on <code>$_</code> in the absence of a value, but not as a function, and as a method you need to call it as <code>.int</code> rather than simply <code>int</code>.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5math"><code>P5math</code></a> which exports an <code>int</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-ioctl_-_perlfunc"></a></p>
 <h2 id="ioctl"><a class="u" href="#___top" title="go to top of document">ioctl</a></h2>
 <ul><li><p>ioctl FILEHANDLE, FUNCTION, SCALAR</p>
@@ -813,13 +780,13 @@ else {
 <ul><li><p>join EXPR, LIST</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5, and also works as a method: <code>@x.join(&quot;,&quot;)</code></p>
+<p>Works as in Perl, and also works as a method: <code>@x.join(&quot;,&quot;)</code></p>
 <p><a name="index-entry-keys_-_perlfunc"></a></p>
 <h2 id="keys"><a class="u" href="#___top" title="go to top of document">keys</a></h2>
 <ul><li><p>keys HASH</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5, and can also be used as a method: <code>%hash.keys</code></p>
+<p>Works as in Perl, and can also be used as a method: <code>%hash.keys</code></p>
 <p><a name="index-entry-kill_-_perlfunc"></a></p>
 <h2 id="kill"><a class="u" href="#___top" title="go to top of document">kill</a></h2>
 <ul><li><p>kill SIGNAL, LIST</p>
@@ -828,10 +795,7 @@ else {
 </li>
 </ul>
 <p>No pre-defined core alternative exists. A non-portable method can be to use <a href="/language/nativecall">NativeCall</a>:</p>
-<pre class="pod-block-code">use NativeCall;
-sub kill(int32, int32) is native {*};
-kill $*PID, 9; # OUTPUT: «Killed␤»</pre>
-<p>To kill processes that were started by creating a <a href="/type/Proc::Async">Proc::Async</a>, use <a href="/type/Proc::Async#method_kill"><code>Proc::Async.kill</code> method</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>use</span></span><span>&nbsp;</span><span class="constant language pragma perl6fe"><span>NativeCall</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>kill</span></span><span>(</span><span class="support type perl6fe"><span>int32</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>int32</span></span><span>)&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>native</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>kill</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>PID</span></span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>9</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Killed␤»</span></span></span></div></pre><p>To kill processes that were started by creating a <a href="/type/Proc::Async">Proc::Async</a>, use <a href="/type/Proc::Async#method_kill"><code>Proc::Async.kill</code> method</a>.</p>
 <p><a name="index-entry-last_-_perlfunc"></a></p>
 <h2 id="last"><a class="u" href="#___top" title="go to top of document">last</a></h2>
 <ul><li><p>last LABEL</p>
@@ -841,35 +805,35 @@ kill $*PID, 9; # OUTPUT: «Killed␤»</pre>
 <li><p>last</p>
 </li>
 </ul>
-<p>Same as in Perl&nbsp;5.</p>
+<p>Same as in Perl.</p>
 <p><a name="index-entry-lc_-_perlfunc"></a></p>
 <h2 id="lc"><a class="u" href="#___top" title="go to top of document">lc</a></h2>
 <ul><li><p>lc EXPR</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5, and also as a method: <code>&quot;UGH&quot;.lc</code>. In Raku an expression <strong>must</strong> be specified.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5lc"><code>P5lc</code></a> which exports an <code>lc</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>Works as in Perl, and also as a method: <code>&quot;UGH&quot;.lc</code>. In Raku an expression <strong>must</strong> be specified.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5lc"><code>P5lc</code></a> which exports an <code>lc</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-lcfirst_-_perlfunc"></a></p>
 <h2 id="lcfirst"><a class="u" href="#___top" title="go to top of document">lcfirst</a></h2>
 <ul><li><p>lcfirst EXPR</p>
 </li>
 </ul>
 <p>Does not exist in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5lcfirst"><code>P5lcfirst</code></a> which exports an <code>lcfirst</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5lcfirst"><code>P5lcfirst</code></a> which exports an <code>lcfirst</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-length_-_perlfunc"></a></p>
 <h2 id="length"><a class="u" href="#___top" title="go to top of document">length</a></h2>
 <ul><li><p>length EXPR</p>
 </li>
 </ul>
 <p>Replaced by <code>chars</code>, typically used as a method (<code>$string.chars</code>), but also works as a function.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5length"><code>P5length</code></a> which exports an <code>length</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5length"><code>P5length</code></a> which exports an <code>length</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-____LINE_____-_perlfunc"></a></p>
 <h2 id="__LINE__"><a class="u" href="#___top" title="go to top of document">__LINE__</a></h2>
 <ul><li><p>__LINE__</p>
 </li>
 </ul>
 <p>Replaced by <code>$?LINE</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5__FILE__"><code>P5__FILE__</code></a> which exports a <code>__LINE__</code> term that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5__FILE__"><code>P5__FILE__</code></a> which exports a <code>__LINE__</code> term that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-link_-_perlfunc"></a></p>
 <h2 id="link"><a class="u" href="#___top" title="go to top of document">link</a></h2>
 <ul><li><p>link OLDFILE, NEWFILE</p>
@@ -894,19 +858,9 @@ kill $*PID, 9; # OUTPUT: «Killed␤»</pre>
 </li>
 </ul>
 <p>Most of the functionality of <code>localtime</code> is found in <code>DateTime</code>. The specific parts of <code>localtime</code> can be found as follows:</p>
-<pre class="pod-block-code">my $d = DateTime.now;
-my $sec  = $d.second; # Potentially includes fractional seconds
-my $min  = $d.minute;
-my $hour = $d.hour;
-my $mday = $d.day-of-month; # or $d.day; 1..31
-my $mon  = $d.month; # 1..12
-my $year = $d.year;
-my $wday = $d.day-of-week; # 1 =&gt; Monday, 2 =&gt; Tuesday, etc.
-my $yday = $d.day-of-year; # 1..366
-</pre>
-<p>Please note that ranges are not 0-based in Raku, as shown in the comments in the example.</p>
-<p>There does not currently appear to be a way to get Perl&nbsp;5&#39;s <code>$isdst</code>. Also, the result of <code>scalar(localtime)</code> that Perl&nbsp;5 provides is not available. <code>$d.Str</code> will give something along the lines of &quot;2015-06-29T12:49:31-04:00&quot;.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5localtime"><code>P5localtime</code></a> which exports a <code>localtime</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>d</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>DateTime</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>now</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>sec</span></span></span><span>&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>d</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>second</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Potentially&nbsp;includes&nbsp;fractional&nbsp;seconds</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>min</span></span></span><span>&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>d</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>minute</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>hour</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>d</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>hour</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>mday</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>d</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>day-of-month</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;or&nbsp;$d.day;&nbsp;1..31</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>mon</span></span></span><span>&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>d</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>month</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;1..12</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>year</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>d</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>year</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>wday</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>d</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>day-of-week</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;1&nbsp;=&gt;&nbsp;Monday,&nbsp;2&nbsp;=&gt;&nbsp;Tuesday,&nbsp;etc.</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>yday</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>d</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>day-of-year</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;1..366</span><span>&nbsp;</span></span></span></div></pre><p>Please note that ranges are not 0-based in Raku, as shown in the comments in the example.</p>
+<p>There does not currently appear to be a way to get Perl&#39;s <code>$isdst</code>. Also, the result of <code>scalar(localtime)</code> that Perl provides is not available. <code>$d.Str</code> will give something along the lines of &quot;2015-06-29T12:49:31-04:00&quot;.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5localtime"><code>P5localtime</code></a> which exports a <code>localtime</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-lock_-_perlfunc"></a></p>
 <h2 id="lock"><a class="u" href="#___top" title="go to top of document">lock</a></h2>
 <ul><li><p>lock THING</p>
@@ -918,9 +872,9 @@ my $yday = $d.day-of-year; # 1..366
 <ul><li><p>log EXPR</p>
 </li>
 </ul>
-<p>Same as in Perl&nbsp;5.</p>
+<p>Same as in Perl.</p>
 <p><code>log</code> also operates on <code>$_</code> in the absence of a value, but not as a function, and as a method you need to call it as <code>.log</code> rather than simply <code>log</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5math"><code>P5math</code></a> which exports a <code>log</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5math"><code>P5math</code></a> which exports a <code>log</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-lstat_-_perlfunc"></a></p>
 <h2 id="lstat"><a class="u" href="#___top" title="go to top of document">lstat</a></h2>
 <ul><li><p>lstat FILEHANDLE</p>
@@ -938,7 +892,7 @@ my $yday = $d.day-of-year; # 1..366
 <ul><li><p>m//</p>
 </li>
 </ul>
-<p>Regular expression syntax is somewhat different in Raku, but the match operator still exists. If you&#39;re trying to rewrite some Perl&nbsp;5 code, the most important difference is that <code>=~</code> is replaced by the smartmatch operator, <code>~~</code>. Similarly, <code>!~</code> is replaced by <code>!~~</code>. Options for regex operators are adverbs and are complicated. For details, see <a href="/language/regexes#Adverbs">Adverbs</a></p>
+<p>Regular expression syntax is somewhat different in Raku, but the match operator still exists. If you&#39;re trying to rewrite some Perl code, the most important difference is that <code>=~</code> is replaced by the smartmatch operator, <code>~~</code>. Similarly, <code>!~</code> is replaced by <code>!~~</code>. Options for regex operators are adverbs and are complicated. For details, see <a href="/language/regexes#Adverbs">Adverbs</a></p>
 <p><a name="index-entry-map_-_perlfunc"></a></p>
 <h2 id="map"><a class="u" href="#___top" title="go to top of document">map</a></h2>
 <ul><li><p>map BLOCK LIST</p>
@@ -946,7 +900,7 @@ my $yday = $d.day-of-year; # 1..366
 <li><p>map EXPR, LIST</p>
 </li>
 </ul>
-<p>As a function, the only difference between Perl&nbsp;5 and Raku is that, if you&#39;re using a block, the block must be followed by a comma. Can also be used as a method: <code>@new = @old.map: { $_ * 2 }</code></p>
+<p>As a function, the only difference between Perl and Raku is that, if you&#39;re using a block, the block must be followed by a comma. Can also be used as a method: <code>@new = @old.map: { $_ * 2 }</code></p>
 <p><a name="index-entry-mkdir_-_perlfunc"></a></p>
 <h2 id="mkdir"><a class="u" href="#___top" title="go to top of document">mkdir</a></h2>
 <ul><li><p>mkdir FILENAME, MASK</p>
@@ -954,7 +908,7 @@ my $yday = $d.day-of-year; # 1..366
 <li><p>mkdir FILENAME</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5. When giving a multi-level directory specification, it will automatically create non-existing intermediate directories with the same MASK (similar to what &quot;make_path&quot; does of the File::Path module in Perl&nbsp;5).</p>
+<p>Works as in Perl. When giving a multi-level directory specification, it will automatically create non-existing intermediate directories with the same MASK (similar to what &quot;make_path&quot; does of the File::Path module in Perl).</p>
 <ul><li><p>mkdir</p>
 </li>
 </ul>
@@ -982,7 +936,7 @@ my $yday = $d.day-of-year; # 1..366
 <li><p>my TYPE VARLIST : ATTRS</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5.</p>
+<p>Works as in Perl.</p>
 <p><a name="index-entry-next_-_perlfunc"></a></p>
 <h2 id="next"><a class="u" href="#___top" title="go to top of document">next</a></h2>
 <ul><li><p>next LABEL</p>
@@ -1012,7 +966,7 @@ my $yday = $d.day-of-year; # 1..366
 </ul>
 <p>Replaced by the adverbial form <code>:8</code>. E. g. <code>:8(&quot;100&quot;)</code> returns 64.</p>
 <p>If you want to deal with strings that start in <code>0x</code>, <code>0o</code>, or <code>0b</code>, you can just use the <code>prefix:&lt;+&gt;</code> operator.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5hex"><code>P5hex</code></a> which exports an <code>oct</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5hex"><code>P5hex</code></a> which exports an <code>oct</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-open_-_perlfunc"></a></p>
 <h2 id="open"><a class="u" href="#___top" title="go to top of document">open</a></h2>
 <ul><li><p>open FILEHANDLE, EXPR</p>
@@ -1026,7 +980,7 @@ my $yday = $d.day-of-year; # 1..366
 <li><p>open FILEHANDLE</p>
 </li>
 </ul>
-<p>The most obvious change from Perl&nbsp;5 is the file mode syntax. To open a file for reading only, you would say <code>open(&quot;file&quot;, :r)</code>. For write- only, read-write, and append, you would use <code>:w</code>, <code>:rw</code>, and <code>:a</code> respectively. There are also options for encoding and how the filehandle deals with newlines. Details <a href="/routine/open">here</a>.</p>
+<p>The most obvious change from Perl is the file mode syntax. To open a file for reading only, you would say <code>open(&quot;file&quot;, :r)</code>. For write- only, read-write, and append, you would use <code>:w</code>, <code>:rw</code>, and <code>:a</code> respectively. There are also options for encoding and how the filehandle deals with newlines. Details <a href="/routine/open">here</a>.</p>
 <p>Another important change is that filehandles don&#39;t get automatically closed on scope exit. It&#39;s necessary to call <a href="/routine/close">close</a> explicitly.</p>
 <p><a name="index-entry-opendir_-_perlfunc"></a></p>
 <h2 id="opendir"><a class="u" href="#___top" title="go to top of document">opendir</a></h2>
@@ -1034,15 +988,15 @@ my $yday = $d.day-of-year; # 1..366
 </li>
 </ul>
 <p>No replacement. See <a href="/routine/dir"><code>&amp;dir</code>/<code>IO::Path.dir</code></a> for alternatives.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5opendir"><code>P5opendir</code></a> which exports an <code>opendir</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5opendir"><code>P5opendir</code></a> which exports an <code>opendir</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-ord_-_perlfunc"></a></p>
 <h2 id="ord"><a class="u" href="#___top" title="go to top of document">ord</a></h2>
 <ul><li><p>ord EXPR</p>
 </li>
 </ul>
-<p>Same as in Perl&nbsp;5. May be used as a method: <code>&quot;howdy!&quot;.ord; # 104</code></p>
+<p>Same as in Perl. May be used as a method: <code>&quot;howdy!&quot;.ord; # 104</code></p>
 <p>Note that <code>ord()</code> (without arguments) is not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5chr"><code>P5chr</code></a> which exports a <code>ord</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5chr"><code>P5chr</code></a> which exports a <code>ord</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-our_-_perlfunc"></a></p>
 <h2 id="our"><a class="u" href="#___top" title="go to top of document">our</a></h2>
 <ul><li><p>our VARLIST</p>
@@ -1060,8 +1014,8 @@ my $yday = $d.day-of-year; # 1..366
 <ul><li><p>pack TEMPLATE, LIST</p>
 </li>
 </ul>
-<p>Available in Raku when <code>use experimental :pack</code> has been specified in the scope where <code>pack</code> needs to be called. The template options are currently more restricted than they are in Perl&nbsp;5. The current documented list can be found at <a href="/routine/unpack">unpack</a>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5pack"><code>P5pack</code></a> which exports a <code>pack</code> function that mimics the original Perl&nbsp;5 behavior as much as possible and which has a bigger set of supported features than the experimental Raku version.</p>
+<p>Available in Raku when <code>use experimental :pack</code> has been specified in the scope where <code>pack</code> needs to be called. The template options are currently more restricted than they are in Perl. The current documented list can be found at <a href="/routine/unpack">unpack</a>.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5pack"><code>P5pack</code></a> which exports a <code>pack</code> function that mimics the original Perl behavior as much as possible and which has a bigger set of supported features than the experimental Raku version.</p>
 <p><a name="index-entry-package_-_perlfunc"></a></p>
 <h2 id="package"><a class="u" href="#___top" title="go to top of document">package</a></h2>
 <ul><li><p>package NAMESPACE</p>
@@ -1073,14 +1027,14 @@ my $yday = $d.day-of-year; # 1..366
 <li><p>package NAMESPACE VERSION BLOCK</p>
 </li>
 </ul>
-<p>S10 indicates that <code>package</code> can be used in Raku, but only with a block. I. e. <code>package Foo { ... }</code> means that the code within the block would be in package Foo. There is a special case where a declaration of the form <code>package Foo;</code> as the first statement in a file indicates that the rest of the file is Perl&nbsp;5 code, but the usefulness of this is unclear. In fact, as modules and classes are declared with distinct keywords (such as <code>class</code>), it&#39;s unlikely you will use <code>package</code> directly in Raku.</p>
+<p>S10 indicates that <code>package</code> can be used in Raku, but only with a block. I. e. <code>package Foo { ... }</code> means that the code within the block would be in package Foo. There is a special case where a declaration of the form <code>package Foo;</code> as the first statement in a file indicates that the rest of the file is Perl code, but the usefulness of this is unclear. In fact, as modules and classes are declared with distinct keywords (such as <code>class</code>), it&#39;s unlikely you will use <code>package</code> directly in Raku.</p>
 <p><a name="index-entry-____PACKAGE_____-_perlfunc"></a></p>
 <h2 id="__PACKAGE__"><a class="u" href="#___top" title="go to top of document">__PACKAGE__</a></h2>
 <ul><li><p>__PACKAGE__</p>
 </li>
 </ul>
 <p>Replaced by <code>$?PACKAGE</code> which is slightly different from <code>__PACKAGE__</code> in that it is the actual package object. You should call the <code>.^name</code> method on it to get a string.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5__FILE__"><code>P5__FILE__</code></a> which exports a <code>__PACKAGE__</code> term that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5__FILE__"><code>P5__FILE__</code></a> which exports a <code>__PACKAGE__</code> term that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-pipe_-_perlfunc"></a></p>
 <h2 id="pipe"><a class="u" href="#___top" title="go to top of document">pipe</a></h2>
 <ul><li><p>pipe READHANDLE, WRITEHANDLE</p>
@@ -1095,14 +1049,7 @@ my $yday = $d.day-of-year; # 1..366
 <p>Works in Raku, and can also be used as a method. I. e. <code>my $x = pop @a;</code> and <code>my $x = @a.pop;</code> are equivalent.</p>
 <p>The non-parameter version of <code>pop</code> does not exist. Also, if the array is empty, a Failure will be returned in Raku, which will throw if the value is actually used in a significant way.</p>
 <p>If you are using only defined values in your array, you can use the <code>with</code> function to handle this case:</p>
-<pre class="pod-block-code">with pop @array -&gt; $popped {
-    say &quot;popped &#39;$popped&#39; of the array&quot;;
-}
-else {
-    say &quot;there was nothing to pop&quot;;
-}
-</pre>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5push"><code>P5push</code></a> which exports a <code>pop</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>with</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>pop</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>array</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>popped</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>popped&nbsp;&#39;</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span>popped</span></span><span>&#39;&nbsp;of&nbsp;the&nbsp;array</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>else</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>there&nbsp;was&nbsp;nothing&nbsp;to&nbsp;pop</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5push"><code>P5push</code></a> which exports a <code>pop</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-pos_-_perlfunc"></a></p>
 <h2 id="pos"><a class="u" href="#___top" title="go to top of document">pos</a></h2>
 <ul><li><p>pos SCALAR</p>
@@ -1121,7 +1068,7 @@ else {
 </li>
 </ul>
 <p><code>print</code> can be used as a function in Raku, writing to standard out. To use <code>print</code> as a function with a filehandle <em>instead</em> of standard out, you can use a method call: <code>$fh.print(&quot;howdy!&quot;)</code></p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5print"><code>P5print</code></a> which exports a <code>print</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5print"><code>P5print</code></a> which exports a <code>print</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-printf_-_perlfunc"></a></p>
 <h2 id="printf"><a class="u" href="#___top" title="go to top of document">printf</a></h2>
 <ul><li><p>printf FORMAT, LIST</p>
@@ -1130,7 +1077,7 @@ else {
 </li>
 </ul>
 <p>Raku version is similar; see <a href="/type/Str#sub_sprintf">sprintf</a> for details on acceptable format directives. To print to a filehandle other than STDOUT, use the <a href="/routine/printf"><code>.printf</code></a> method on that filehandle.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5print"><code>P5print</code></a> which exports a <code>printf</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5print"><code>P5print</code></a> which exports a <code>printf</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-prototype_-_perlfunc"></a></p>
 <h2 id="prototype"><a class="u" href="#___top" title="go to top of document">prototype</a></h2>
 <ul><li><p>prototype FUNCTION</p>
@@ -1142,9 +1089,9 @@ else {
 <ul><li><p>push ARRAY, LIST</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5, as well as being available as a method: <code>@a.push(&quot;foo&quot;);</code>. <em>Note:</em> the flattening behavior is different in Raku: <code>@b.push: @a</code> will push <code>@a</code> into <code>@b</code> as a single element. See also the <a href="/type/Array#method_append">append method</a>.</p>
-<p>Also note that <code>push</code> in Raku returns the array to which was pushed, contrary to Perl&nbsp;5 where it returns the new number of elements.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5push"><code>P5push</code></a> which exports a <code>push</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>Works as in Perl, as well as being available as a method: <code>@a.push(&quot;foo&quot;);</code>. <em>Note:</em> the flattening behavior is different in Raku: <code>@b.push: @a</code> will push <code>@a</code> into <code>@b</code> as a single element. See also the <a href="/type/Array#method_append">append method</a>.</p>
+<p>Also note that <code>push</code> in Raku returns the array to which was pushed, contrary to Perl where it returns the new number of elements.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5push"><code>P5push</code></a> which exports a <code>push</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-quoting_-_perlfunc"></a></p>
 <h2 id="quoting"><a class="u" href="#___top" title="go to top of document">quoting</a></h2>
 <ul><li><p>q/STRING/</p>
@@ -1157,40 +1104,36 @@ else {
 </li>
 </ul>
 <p>These survive the transition to Raku. Some notes:</p>
-<pre class="pod-block-code">q/.../;  # is still equivalent to using single quotes.
-qq/.../; # is still equivalent to using double quotes.
-qw/.../; # is more commonly rendered as C&lt;&lt; &lt;...&gt; &gt;&gt; in Raku.
-</pre>
-<p>There are some added quoting constructs and equivalents, as explained at <a href="/language/quoting">quoting</a>.</p>
-<ul><li><p>qr/STRING/ <a name="index-entry-qr_(Perl 5)"></a></p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="string quoted q operator perl6fe"><span>q</span></span><span class="punctuation definition string perl6fe"><span>/</span></span><span class="string quoted q slash quote perl6fe"><span>...</span></span><span class="punctuation definition string perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;is&nbsp;still&nbsp;equivalent&nbsp;to&nbsp;using&nbsp;single&nbsp;quotes.</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="string quoted qq operator perl6fe"><span>qq</span></span><span class="punctuation definition string perl6fe"><span>/</span></span><span class="string quoted qq slash quote perl6fe"><span>...</span></span><span class="punctuation definition string perl6fe"><span>/</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;is&nbsp;still&nbsp;equivalent&nbsp;to&nbsp;using&nbsp;double&nbsp;quotes.</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="string quoted q operator perl6fe"><span>qw</span></span><span class="punctuation definition string perl6fe"><span>/</span></span><span class="string quoted q slash quote perl6fe"><span>...</span></span><span class="punctuation definition string perl6fe"><span>/</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;is&nbsp;more&nbsp;commonly&nbsp;rendered&nbsp;as&nbsp;C&lt;&lt;&nbsp;&lt;...&gt;&nbsp;&gt;&gt;&nbsp;in&nbsp;Raku.</span><span>&nbsp;</span></span></span></div></pre><p>There are some added quoting constructs and equivalents, as explained at <a href="/language/quoting">quoting</a>.</p>
+<ul><li><p>qr/STRING/ <a name="index-entry-qr_(Perl)"></a></p>
 </li>
 </ul>
 <p>Has been replaced by <code>rx/.../</code>.</p>
 <ul><li><p>quotemeta EXPR</p>
 </li>
 </ul>
-<p>No direct equivalent, i.e. nothing that just returns the string with all the ASCII non-word characters backslashed. In regexes, however, using <code>$foo</code> will treat <code>$foo</code> as a literal string, and using <code>&lt;$foo&gt; </code> will interpret the contents of <code>$foo</code> as regex code. Note that the angle brackets are doing something different here than they do outside a regex. For more information on this, see <a href="https://design.perl6.org/S05.html#Extensible_metasyntax_(%3C...%3E)">https://design.perl6.org/S05.html#Extensible_metasyntax_(%3C...%3E)</a></p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5quotemeta"><code>P5quotemeta</code></a> which exports a <code>quotemeta</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>No direct equivalent, i.e. nothing that just returns the string with all the ASCII non-word characters backslashed. In regexes, however, using <code>$foo</code> will treat <code>$foo</code> as a literal string, and using <code>&lt;$foo&gt; </code> will interpret the contents of <code>$foo</code> as regex code. Note that the angle brackets are doing something different here than they do outside a regex. For more information on this, see <a href="https://design.raku.org/S05.html#Extensible_metasyntax_(%3C...%3E)">https://design.raku.org/S05.html#Extensible_metasyntax_(%3C...%3E)</a></p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5quotemeta"><code>P5quotemeta</code></a> which exports a <code>quotemeta</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-rand_-_perlfunc"></a></p>
 <h2 id="rand"><a class="u" href="#___top" title="go to top of document">rand</a></h2>
 <ul><li><p>rand EXPR</p>
 </li>
 </ul>
-<p><code>rand</code> by itself works as it does in Perl&nbsp;5, but you can no longer give it an argument. You can, however, use it as a method on a number to get that behavior. I. e. the Perl&nbsp;5 <code>rand(100)</code> is equivalent to <code>100.rand</code> in Raku. Additionally, you can get a random integer by using something like <code>(^100).pick</code>. For <em>why</em> you are able to do that, see <a href="/language/operators#prefix_%5E">^ operator</a> and <a href="/routine/pick">pick</a>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5math"><code>P5math</code></a> which exports a <code>rand</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p><code>rand</code> by itself works as it does in Perl, but you can no longer give it an argument. You can, however, use it as a method on a number to get that behavior. I. e. the Perl <code>rand(100)</code> is equivalent to <code>100.rand</code> in Raku. Additionally, you can get a random integer by using something like <code>(^100).pick</code>. For <em>why</em> you are able to do that, see <a href="/language/operators#prefix_%5E">^ operator</a> and <a href="/routine/pick">pick</a>.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5math"><code>P5math</code></a> which exports a <code>rand</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-read_-_perlfunc"></a></p>
 <h2 id="read"><a class="u" href="#___top" title="go to top of document">read</a></h2>
 <ul><li><p>read FILEHANDLE, SCALAR, LENGTH, OFFSET</p>
 </li>
 </ul>
-<p><code>read</code> is found in <code>IO::Handle</code> and <code>IO::Socket</code> in Raku. It reads the specified number of bytes (rather than characters) from the relevant handle or socket. The use of an offset available in Perl&nbsp;5 is not documented to exist at this time.</p>
+<p><code>read</code> is found in <code>IO::Handle</code> and <code>IO::Socket</code> in Raku. It reads the specified number of bytes (rather than characters) from the relevant handle or socket. The use of an offset available in Perl is not documented to exist at this time.</p>
 <p><a name="index-entry-readdir_-_perlfunc"></a></p>
 <h2 id="readdir"><a class="u" href="#___top" title="go to top of document">readdir</a></h2>
 <ul><li><p>readdir DIRHANDLE</p>
 </li>
 </ul>
 <p>Not a builtin function. To iterate through the contents of a directory, take a look at <a href="/type/IO::Path#routine_dir">dir routine</a>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5opendir"><code>P5opendir</code></a> which exports a <code>readdir</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5opendir"><code>P5opendir</code></a> which exports a <code>readdir</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-readline_-_perlfunc"></a></p>
 <h2 id="readline"><a class="u" href="#___top" title="go to top of document">readline</a></h2>
 <ul><li><p>readline</p>
@@ -1203,7 +1146,7 @@ qw/.../; # is more commonly rendered as C&lt;&lt; &lt;...&gt; &gt;&gt; in Raku.
 </li>
 </ul>
 <p>Appears to be gone from Raku. There <strong>is</strong> a method <code>resolve</code> in <code>IO::Path</code> that will follow symlinks if the OS / Filesystem supports them.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5readlink"><code>P5readlink</code></a> which exports a <code>readlink</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5readlink"><code>P5readlink</code></a> which exports a <code>readlink</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-readpipe_-_perlfunc"></a></p>
 <h2 id="readpipe"><a class="u" href="#___top" title="go to top of document">readpipe</a></h2>
 <ul><li><p>readpipe EXPR</p>
@@ -1234,7 +1177,7 @@ qw/.../; # is more commonly rendered as C&lt;&lt; &lt;...&gt; &gt;&gt; in Raku.
 </li>
 </ul>
 <p>Gone. To quote S29, &quot;If you really want the type name, you can use <code>$var.WHAT.^name</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5ref"><code>P5ref</code></a> which exports a <code>ref</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5ref"><code>P5ref</code></a> which exports a <code>ref</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-rename_-_perlfunc"></a></p>
 <h2 id="rename"><a class="u" href="#___top" title="go to top of document">rename</a></h2>
 <ul><li><p>rename OLDNAME, NEWNAME</p>
@@ -1253,7 +1196,7 @@ qw/.../; # is more commonly rendered as C&lt;&lt; &lt;...&gt; &gt;&gt; in Raku.
 </li>
 </ul>
 <p>No equivalent.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5reset"><code>P5reset</code></a> which exports a <code>reset</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5reset"><code>P5reset</code></a> which exports a <code>reset</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-return_-_perlfunc"></a></p>
 <h2 id="return"><a class="u" href="#___top" title="go to top of document">return</a></h2>
 <ul><li><p>return EXPR</p>
@@ -1267,27 +1210,21 @@ qw/.../; # is more commonly rendered as C&lt;&lt; &lt;...&gt; &gt;&gt; in Raku.
 </ul>
 <p>In Raku, this only reverses the elements of a list. <code>reverse(@a)</code> or <code>@a.reverse</code>. To reverse the characters in a string, use the <code>.flip</code> method.</p>
 <p><code>reverse</code> without parameters is not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5reverse"><code>P5reverse</code></a> which exports a <code>reverse</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5reverse"><code>P5reverse</code></a> which exports a <code>reverse</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-rewinddir_-_perlfunc"></a></p>
 <h2 id="rewinddir"><a class="u" href="#___top" title="go to top of document">rewinddir</a></h2>
 <ul><li><p>rewinddir DIRHANDLE</p>
 </li>
 </ul>
 <p>Not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5rewinddir"><code>P5rewinddir</code></a> which exports a <code>rewinddir</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5rewinddir"><code>P5rewinddir</code></a> which exports a <code>rewinddir</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-rindex_-_perlfunc"></a></p>
 <h2 id="rindex"><a class="u" href="#___top" title="go to top of document">rindex</a></h2>
 <ul><li><p>rindex STR, SUBSTR, POSITION</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5, and may also be used as a method. E. g. <code>$x = &quot;babaganush&quot;;say $x.rindex(&quot;a&quot;); say $x.rindex(&quot;a&quot;, 3); # 5, 3</code>. Main difference with Perl&nbsp;5 is that <code>Nil</code> is returned instead of <code>-1</code> when the substring is not found. This is very useful in combination with the <code>with</code> command:</p>
-<pre class="pod-block-code">with index(&quot;foo&quot;,&quot;o&quot;) -&gt; $index {
-    say &quot;Found it at $index&quot;;
-}
-else {
-    say &quot;Not found&quot;
-}</pre>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5index"><code>P5index</code></a> which exports a <code>rindex</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>Works as in Perl, and may also be used as a method. E. g. <code>$x = &quot;babaganush&quot;;say $x.rindex(&quot;a&quot;); say $x.rindex(&quot;a&quot;, 3); # 5, 3</code>. Main difference with Perl is that <code>Nil</code> is returned instead of <code>-1</code> when the substring is not found. This is very useful in combination with the <code>with</code> command:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>with</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>index</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>o</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>)&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>index</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Found&nbsp;it&nbsp;at&nbsp;</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span>index</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>else</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Not&nbsp;found</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5index"><code>P5index</code></a> which exports a <code>rindex</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-rmdir_-_perlfunc"></a></p>
 <h2 id="rmdir"><a class="u" href="#___top" title="go to top of document">rmdir</a></h2>
 <ul><li><p>rmdir FILENAME</p>
@@ -1299,7 +1236,7 @@ else {
 <ul><li><p>s///</p>
 </li>
 </ul>
-<p>Regular expression syntax is somewhat different in Raku, but the substitution operator exists. If you&#39;re trying to rewrite some Perl&nbsp;5 code, the most important difference is that <code>=~</code> is replaced by the smartmatch operator, <code>~~</code>. Similarly, <code>!~</code> is <code>!~~</code>. Options for regex operators are adverbs and are complicated. For details, see <a href="/language/regexes#Adverbs">Adverbs page</a></p>
+<p>Regular expression syntax is somewhat different in Raku, but the substitution operator exists. If you&#39;re trying to rewrite some Perl code, the most important difference is that <code>=~</code> is replaced by the smartmatch operator, <code>~~</code>. Similarly, <code>!~</code> is <code>!~~</code>. Options for regex operators are adverbs and are complicated. For details, see <a href="/language/regexes#Adverbs">Adverbs page</a></p>
 <p><a name="index-entry-say_-_perlfunc"></a></p>
 <h2 id="say"><a class="u" href="#___top" title="go to top of document">say</a></h2>
 <ul><li><p>say FILEHANDLE</p>
@@ -1309,8 +1246,8 @@ else {
 <li><p>say</p>
 </li>
 </ul>
-<p><code>say</code> can be used as a function, defaulting to standard out. To use <code>say</code> as a function with a filehandle <em>instead</em> of standard out, you need to put a colon after the filehandle. I. e. <code>say $fh: &quot;Howdy!&quot;</code>. The use of the colon as an &quot;invocant marker&quot; here is discussed at <a href="https://design.perl6.org/S03.html#line_4019">https://design.perl6.org/S03.html#line_4019</a>. Alternately, you can use a method call: <code>$fh.say(&quot;howdy!&quot;)</code></p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5print"><code>P5print</code></a> which exports a <code>say</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p><code>say</code> can be used as a function, defaulting to standard out. To use <code>say</code> as a function with a filehandle <em>instead</em> of standard out, you need to put a colon after the filehandle. I. e. <code>say $fh: &quot;Howdy!&quot;</code>. The use of the colon as an &quot;invocant marker&quot; here is discussed at <a href="https://design.raku.org/S03.html#line_4019">https://design.raku.org/S03.html#line_4019</a>. Alternately, you can use a method call: <code>$fh.say(&quot;howdy!&quot;)</code></p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5print"><code>P5print</code></a> which exports a <code>say</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-scalar_-_perlfunc"></a></p>
 <h2 id="scalar"><a class="u" href="#___top" title="go to top of document">scalar</a></h2>
 <ul><li><p>scalar EXPR</p>
@@ -1324,14 +1261,14 @@ else {
 </li>
 </ul>
 <p>Not documented in any real way yet, but listed as a method of the <code>IO::Handle</code> class.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5seek"><code>P5seek</code></a> which exports a <code>seek</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5seek"><code>P5seek</code></a> which exports a <code>seek</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-seekdir_-_perlfunc"></a></p>
 <h2 id="seekdir"><a class="u" href="#___top" title="go to top of document">seekdir</a></h2>
 <ul><li><p>seekdir DIRHANDLE, POS</p>
 </li>
 </ul>
 <p>Not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5opendir"><code>P5opendir</code></a> which exports a <code>seekdir</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5opendir"><code>P5opendir</code></a> which exports a <code>seekdir</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-select_-_perlfunc"></a></p>
 <h2 id="select"><a class="u" href="#___top" title="go to top of document">select</a></h2>
 <ul><li><p>select FILEHANDLE</p>
@@ -1367,14 +1304,14 @@ else {
 </li>
 </ul>
 <p>Will not be implemented.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5getpriority"><code>P5getpriority</code></a> which exports a <code>setpgrp</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5getpriority"><code>P5getpriority</code></a> which exports a <code>setpgrp</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-setpriority_-_perlfunc"></a></p>
 <h2 id="setpriority"><a class="u" href="#___top" title="go to top of document">setpriority</a></h2>
 <ul><li><p>setpriority WHICH, WHO, PRIORITY</p>
 </li>
 </ul>
 <p>Will not be implemented.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5getpriority"><code>P5getpriority</code></a> which exports a <code>setpriority</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5getpriority"><code>P5getpriority</code></a> which exports a <code>setpriority</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-setsockopt_-_perlfunc"></a></p>
 <h2 id="setsockopt"><a class="u" href="#___top" title="go to top of document">setsockopt</a></h2>
 <ul><li><p>setsockopt SOCKET, LEVEL, OPTNAME, OPTVAL</p>
@@ -1393,14 +1330,7 @@ else {
 <p>Works in Raku, and can also be used as a method. I. e. <code>my $x = shift @a;</code> and <code>my $x = @a.shift;</code> are equivalent.</p>
 <p>The non-parameter version of <code>shift</code> does not exist. Also, if the array is empty, a Failure will be returned in Raku, which will throw if the value is actually used in a significant way.</p>
 <p>If you are using only defined values in your array, you can use the <code>with</code> function to handle this case:</p>
-<pre class="pod-block-code">with shift @array -&gt; $shifted {
-    say &quot;shifted &#39;$shifted&#39; of the array&quot;;
-}
-else {
-    say &quot;there was nothing to shift&quot;;
-}
-</pre>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5shift"><code>P5shift</code></a> which exports a <code>shift</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>with</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>shift</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>array</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>shifted</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>shifted&nbsp;&#39;</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span>shifted</span></span><span>&#39;&nbsp;of&nbsp;the&nbsp;array</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>else</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>there&nbsp;was&nbsp;nothing&nbsp;to&nbsp;shift</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5shift"><code>P5shift</code></a> which exports a <code>shift</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-shm*_-_perlfunc"></a></p>
 <h2 id="shm*"><a class="u" href="#___top" title="go to top of document">shm*</a></h2>
 <ul><li><p>shmctl ID, CMD, ARG</p>
@@ -1424,18 +1354,18 @@ else {
 <ul><li><p>sin EXPR</p>
 </li>
 </ul>
-<p>Same as in Perl&nbsp;5.</p>
+<p>Same as in Perl.</p>
 <p><code>sin</code> also operates on <code>$_</code> in the absence of a value, but not as a function, and as a method you need to call it as <code>.sin</code> rather than simply <code>sin</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5math"><code>P5math</code></a> which exports a <code>sin</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5math"><code>P5math</code></a> which exports a <code>sin</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-sleep_-_perlfunc"></a></p>
 <h2 id="sleep"><a class="u" href="#___top" title="go to top of document">sleep</a></h2>
 <ul><li><p>sleep EXPR</p>
 </li>
 </ul>
-<p>Still works as in Perl&nbsp;5, but is not limited to integer values for seconds. And it always returns Nil.</p>
+<p>Still works as in Perl, but is not limited to integer values for seconds. And it always returns Nil.</p>
 <p>If you&#39;re interested in the return values of <code>sleep</code> to ensure sleeping until a specified time, then you should use <code>sleep-until</code> in Raku (which takes an <code>Instant</code>).</p>
 <p>If you&#39;re interested in running some code every N seconds, and you don&#39;t care on which thread it runs, you should probably use <code>react</code> and <code>whenever</code> with a <code>Supply.interval</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5sleep"><code>P5sleep</code></a> which exports a <code>sleep</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5sleep"><code>P5sleep</code></a> which exports a <code>sleep</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-sockets_-_perlfunc"></a></p>
 <h2 id="sockets"><a class="u" href="#___top" title="go to top of document">sockets</a></h2>
 <ul><li><p>socket SOCKET, DOMAIN, TYPE, PROTOCOL</p>
@@ -1477,7 +1407,7 @@ else {
 <li><p>split /PATTERN/</p>
 </li>
 </ul>
-<p>Works mostly as in Perl&nbsp;5. There are some exceptions, though. To get the special behavior of using the empty string, you must actually use the empty string - the special case of the empty pattern <code>//</code> being treated as the empty string does not apply. If you use a regex for the split, it will use the regex, while a literal string will be treated literally. If you wish to have the delimiters included in the resulting list, you need to use the named parameter <code>:all</code>, like this: <code>split(&#39;;&#39;, &quot;a;b;c&quot;, :all) # a ; b ; c</code> Empty chunks are not removed from the result list as they are in Perl&nbsp;5. For that behavior, see <code>comb</code>. Details on <code>split</code> are <a href="/routine/split">here</a>. Unsurprisingly, <code>split</code> also now works as a method: <code>&quot;a;b;c&quot;.split(&#39;;&#39;)</code></p>
+<p>Works mostly as in Perl. There are some exceptions, though. To get the special behavior of using the empty string, you must actually use the empty string - the special case of the empty pattern <code>//</code> being treated as the empty string does not apply. If you use a regex for the split, it will use the regex, while a literal string will be treated literally. If you wish to have the delimiters included in the resulting list, you need to use the named parameter <code>:all</code>, like this: <code>split(&#39;;&#39;, &quot;a;b;c&quot;, :all) # a ; b ; c</code> Empty chunks are not removed from the result list as they are in Perl. For that behavior, see <code>comb</code>. Details on <code>split</code> are <a href="/routine/split">here</a>. Unsurprisingly, <code>split</code> also now works as a method: <code>&quot;a;b;c&quot;.split(&#39;;&#39;)</code></p>
 <ul><li><p>split</p>
 </li>
 </ul>
@@ -1487,7 +1417,7 @@ else {
 <ul><li><p>sprintf FORMAT, LIST</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5. The formats currently available are:</p>
+<p>Works as in Perl. The formats currently available are:</p>
 <table class="pod-table">
 <tbody>
 <tr> <td>%</td> <td>a literal percent sign</td> </tr> <tr> <td>c</td> <td>a character with the given codepoint</td> </tr> <tr> <td>s</td> <td>a string</td> </tr> <tr> <td>d</td> <td>a signed integer, in decimal</td> </tr> <tr> <td>u</td> <td>an unsigned integer, in decimal</td> </tr> <tr> <td>o</td> <td>an unsigned integer, in octal</td> </tr> <tr> <td>x</td> <td>an unsigned integer, in hexadecimal</td> </tr> <tr> <td>e</td> <td>a floating-point number, in scientific notation</td> </tr> <tr> <td>f</td> <td>a floating-point number, in fixed decimal notation</td> </tr> <tr> <td>g</td> <td>a floating-point number, in %e or %f notation</td> </tr> <tr> <td>X</td> <td>like x, but using uppercase letters</td> </tr> <tr> <td>E</td> <td>like e, but using an uppercase &quot;E&quot;</td> </tr> <tr> <td>G</td> <td>like g, but with an uppercase &quot;E&quot; (if applicable)</td> </tr>
@@ -1497,7 +1427,7 @@ else {
 <tbody>
 <tr> <td>i</td> <td>a synonym for %d</td> </tr> <tr> <td>D</td> <td>a synonym for %ld</td> </tr> <tr> <td>U</td> <td>a synonym for %lu</td> </tr> <tr> <td>O</td> <td>a synonym for %lo</td> </tr> <tr> <td>F</td> <td>a synonym for %f</td> </tr>
 </tbody>
-</table><p>Perl&nbsp;5 (non-)compatibility:</p>
+</table><p>Perl (non-)compatibility:</p>
 <table class="pod-table">
 <tbody>
 <tr> <td>n</td> <td>produces a runtime exception</td> </tr> <tr> <td>p</td> <td>produces a runtime exception</td> </tr>
@@ -1512,9 +1442,9 @@ else {
 <ul><li><p>sqrt EXPR</p>
 </li>
 </ul>
-<p>Same as in Perl&nbsp;5.</p>
+<p>Same as in Perl.</p>
 <p><code>sqrt</code> also operates on <code>$_</code> in the absence of a value, but not as a function, and as a method you need to call it as <code>.sqrt</code> rather than simply <code>sqrt</code>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5math"><code>P5math</code></a> which exports a <code>sqrt</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5math"><code>P5math</code></a> which exports a <code>sqrt</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-srand_-_perlfunc"></a></p>
 <h2 id="srand"><a class="u" href="#___top" title="go to top of document">srand</a></h2>
 <ul><li><p>srand EXPR</p>
@@ -1550,7 +1480,7 @@ else {
 </li>
 </ul>
 <p><code>study</code> is no more.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5study"><code>P5study</code></a> which exports a <code>study</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5study"><code>P5study</code></a> which exports a <code>study</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-sub_-_perlfunc"></a></p>
 <h2 id="sub"><a class="u" href="#___top" title="go to top of document">sub</a></h2>
 <ul><li><p>sub NAME BLOCK</p>
@@ -1562,14 +1492,14 @@ else {
 <li><p>sub NAME(PROTO) : ATTRS BLOCK</p>
 </li>
 </ul>
-<p>Unsurprisingly, we still have subroutines! You can have a signature in your subroutine which allows you to specify arguments. Nevertheless, in the absence of a signature (and only in the absence of a signature), <code>@_</code> still contains what is passed to the function. So, in theory, you don&#39;t need to change that aspect of a function if porting from Perl&nbsp;5 to Raku (although you should probably consider the option of using a signature). For all the gory details, see <a href="/language/functions">functions</a>.</p>
+<p>Unsurprisingly, we still have subroutines! You can have a signature in your subroutine which allows you to specify arguments. Nevertheless, in the absence of a signature (and only in the absence of a signature), <code>@_</code> still contains what is passed to the function. So, in theory, you don&#39;t need to change that aspect of a function if porting from Perl to Raku (although you should probably consider the option of using a signature). For all the gory details, see <a href="/language/functions">functions</a>.</p>
 <p><a name="index-entry-____SUB_____-_perlfunc"></a></p>
 <h2 id="__SUB__"><a class="u" href="#___top" title="go to top of document">__SUB__</a></h2>
 <ul><li><p>__SUB__</p>
 </li>
 </ul>
 <p>Replaced by <code>&amp;?ROUTINE</code> which is slightly different from <code>__SUB__</code> in that it is the actual <code>Sub</code> (or <code>Method</code>) object. You should call the <code>.name</code> method on it to get a string.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5__FILE__"><code>P5__FILE__</code></a> which exports a <code>__SUB__</code> term that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5__FILE__"><code>P5__FILE__</code></a> which exports a <code>__SUB__</code> term that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-substr_-_perlfunc"></a></p>
 <h2 id="substr"><a class="u" href="#___top" title="go to top of document">substr</a></h2>
 <ul><li><p>substr EXPR, OFFSET, LENGTH, REPLACEMENT</p>
@@ -1636,7 +1566,7 @@ else {
 </li>
 </ul>
 <p>Not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5opendir"><code>P5opendir</code></a> which exports a <code>telldir</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5opendir"><code>P5opendir</code></a> which exports a <code>telldir</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-tie_-_perlfunc"></a></p>
 <h2 id="tie"><a class="u" href="#___top" title="go to top of document">tie</a></h2>
 <ul><li><p>tie VARIABLE, CLASSNAME, LIST</p>
@@ -1645,35 +1575,29 @@ else {
 </li>
 </ul>
 <p>The Raku alternative to tying a scalar, is the <code>Proxy</code> container. For example:</p>
-<pre class="pod-block-code">sub lval() {
-  Proxy.new(
-    FETCH =&gt; method () { ...},
-    STORE =&gt; method ($new) { ... }
-  )
-}</pre>
-<p>This makes <code>lval</code> a left-value sub. Whenever the value is requested, the <code>FETCH</code> method is called. And whenever it is used in an assignment, the <code>STORE</code> method is called.</p>
-<p>For arrays and hashes (objects that do the <code>Positional</code> and/or <code>Associative</code> role), one only needs to provide the methods that these roles require to get the functionality that <code>tie</code> provides in Perl&nbsp;5. These are documented in the <code>Subscripts</code> section.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5tie"><code>P5tie</code></a> which exports <code>tie</code> / <code>tied</code> functions that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>lval</span></span><span>()&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;</span><span class="support type perl6fe"><span>Proxy</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string pair key perl6fe"><span>FETCH&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>method</span></span><span>&nbsp;()&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>,</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string pair key perl6fe"><span>STORE&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>method</span></span><span>&nbsp;(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>new</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;)</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>This makes <code>lval</code> a left-value sub. Whenever the value is requested, the <code>FETCH</code> method is called. And whenever it is used in an assignment, the <code>STORE</code> method is called.</p>
+<p>For arrays and hashes (objects that do the <code>Positional</code> and/or <code>Associative</code> role), one only needs to provide the methods that these roles require to get the functionality that <code>tie</code> provides in Perl. These are documented in the <code>Subscripts</code> section.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5tie"><code>P5tie</code></a> which exports <code>tie</code> / <code>tied</code> functions that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-time_-_perlfunc"></a></p>
 <h2 id="time"><a class="u" href="#___top" title="go to top of document">time</a></h2>
 <ul><li><p>time</p>
 </li>
 </ul>
-<p>Number of seconds since epoch (as an <code>Int</code>), same as in Perl&nbsp;5.</p>
+<p>Number of seconds since epoch (as an <code>Int</code>), same as in Perl.</p>
 <p><a name="index-entry-times_-_perlfunc"></a></p>
 <h2 id="times"><a class="u" href="#___top" title="go to top of document">times</a></h2>
 <ul><li><p>times</p>
 </li>
 </ul>
 <p>Not available in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5times"><code>P5times</code></a> which exports a <code>times</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5times"><code>P5times</code></a> which exports a <code>times</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-tr///_-_perlfunc"></a></p>
 <h2 id="tr///"><a class="u" href="#___top" title="go to top of document">tr///</a></h2>
 <ul><li><p>tr///</p>
 </li>
 </ul>
-<p>Works similarly to how it does in Perl&nbsp;5. The one caveat is that ranges are specified differently. Instead of using a range &quot;a-z&quot;, you would use &quot;a..z&quot;, i.e. with Perl&#39;s range operator. In Raku, <code>tr///</code> has a method version, called <a href="/routine/trans">trans</a>, which offers a few additional features.</p>
-<p>Perl&nbsp;5&#39;s <code>/r</code> flag is instead implemented as <code>TR///</code> operator. The <code>y///</code> equivalent does not exist.</p>
+<p>Works similarly to how it does in Perl. The one caveat is that ranges are specified differently. Instead of using a range &quot;a-z&quot;, you would use &quot;a..z&quot;, i.e. with Perl&#39;s range operator. In Raku, <code>tr///</code> has a method version, called <a href="/routine/trans">trans</a>, which offers a few additional features.</p>
+<p>Perl&#39;s <code>/r</code> flag is instead implemented as <code>TR///</code> operator. The <code>y///</code> equivalent does not exist.</p>
 <p><a name="index-entry-truncate_-_perlfunc"></a></p>
 <h2 id="truncate"><a class="u" href="#___top" title="go to top of document">truncate</a></h2>
 <ul><li><p>truncate FILEHANDLE, LENGTH</p>
@@ -1688,7 +1612,7 @@ else {
 </li>
 </ul>
 <p>Works as a function and a method. <code>uc(&quot;ha&quot;)</code> and <code>&quot;ha&quot;.uc</code> both return &quot;HA&quot;. There is no support for the parameterless version.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5lc"><code>P5lc</code></a> which exports a <code>uc</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5lc"><code>P5lc</code></a> which exports a <code>uc</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-ucfirst_-_perlfunc"></a></p>
 <h2 id="ucfirst"><a class="u" href="#___top" title="go to top of document">ucfirst</a></h2>
 <ul><li><p>ucfirst EXPR</p>
@@ -1697,7 +1621,7 @@ else {
 </li>
 </ul>
 <p>Raku has done away with <code>ucfirst</code>. The title case function <a href="/routine/tc"><code>tc</code></a> probably does what you need.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5lcfirst"><code>P5lcfirst</code></a> which exports a <code>ucfirst</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5lcfirst"><code>P5lcfirst</code></a> which exports a <code>ucfirst</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-undef_-_perlfunc"></a></p>
 <h2 id="undef"><a class="u" href="#___top" title="go to top of document">undef</a></h2>
 <ul><li><p>undef EXPR</p>
@@ -1705,7 +1629,7 @@ else {
 </ul>
 <p>There is no <code>undef</code> in Raku. You can&#39;t undefine a function, and the closest equivalent value is probably <code>Nil</code>, but you&#39;ll likely have no use for that.</p>
 <p>If you were using something like <code>(undef, $file, $line) = caller;</code>, you would just get the filename and line number directly in Raku instead of discarding the first result of <code>caller</code>. <code>caller</code> has been replaced by <code>callframe</code> in Raku, so the equivalent statement would be <code>($file, $line) = callframe.annotations&lt;file line&gt;;</code></p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5defined"><code>P5defined</code></a> which exports an <code>undef</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5defined"><code>P5defined</code></a> which exports an <code>undef</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-unlink_-_perlfunc"></a></p>
 <h2 id="unlink"><a class="u" href="#___top" title="go to top of document">unlink</a></h2>
 <ul><li><p>unlink LIST</p>
@@ -1723,8 +1647,8 @@ else {
 <li><p>unpack TEMPLATE</p>
 </li>
 </ul>
-<p>Available in Raku when <code>use experimental :pack</code> has been specified in the scope where <code>unpack</code> needs to be called. The template options are currently more restricted than they are in Perl&nbsp;5. The current documented list can be found at <a href="/routine/unpack">unpack</a>.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5pack"><code>P5pack</code></a> which exports an <code>unpack</code> function that mimics the original Perl&nbsp;5 behavior as much as possible and which has a bigger set of supported features than the experimental Raku version.</p>
+<p>Available in Raku when <code>use experimental :pack</code> has been specified in the scope where <code>unpack</code> needs to be called. The template options are currently more restricted than they are in Perl. The current documented list can be found at <a href="/routine/unpack">unpack</a>.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5pack"><code>P5pack</code></a> which exports an <code>unpack</code> function that mimics the original Perl behavior as much as possible and which has a bigger set of supported features than the experimental Raku version.</p>
 <p><a name="index-entry-unshift_-_perlfunc"></a></p>
 <h2 id="unshift"><a class="u" href="#___top" title="go to top of document">unshift</a></h2>
 <ul><li><p>unshift ARRAY, LIST</p>
@@ -1732,16 +1656,16 @@ else {
 <li><p>unshift EXPR, LIST</p>
 </li>
 </ul>
-<p>Works as in Perl&nbsp;5, as well as being available as a method: <code>@a.unshift(&quot;foo&quot;);</code>. <em>Note:</em> the flattening behavior is different in Raku: <code>@b.unshift: @a</code> will unshift <code>@a</code> into <code>@b</code> as a single element. See also the <a href="/type/Array#method_prepend">prepend method</a>.</p>
-<p>Also note that <code>unshift</code> in Raku returns the array to which was pushed, contrary to Perl&nbsp;5 where it returns the new number of elements.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5shift"><code>P5shift</code></a> which exports an <code>unshift</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>Works as in Perl, as well as being available as a method: <code>@a.unshift(&quot;foo&quot;);</code>. <em>Note:</em> the flattening behavior is different in Raku: <code>@b.unshift: @a</code> will unshift <code>@a</code> into <code>@b</code> as a single element. See also the <a href="/type/Array#method_prepend">prepend method</a>.</p>
+<p>Also note that <code>unshift</code> in Raku returns the array to which was pushed, contrary to Perl where it returns the new number of elements.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5shift"><code>P5shift</code></a> which exports an <code>unshift</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-untie_-_perlfunc"></a></p>
 <h2 id="untie"><a class="u" href="#___top" title="go to top of document">untie</a></h2>
 <ul><li><p>untie VARIABLE</p>
 </li>
 </ul>
 <p>Not supported in Raku, but see <a href="/language/5to6-perlfunc#tie">tie</a> for the whole story.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.perl6.org/dist/P5tie"><code>P5tie</code></a> which exports an <code>untie</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5tie"><code>P5tie</code></a> which exports an <code>untie</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-use_-_perlfunc"></a></p>
 <h2 id="use"><a class="u" href="#___top" title="go to top of document">use</a></h2>
 <ul><li><p>use Module VERSION LIST</p>
@@ -1755,7 +1679,7 @@ else {
 <li><p>use VERSION</p>
 </li>
 </ul>
-<p>In Perl&nbsp;5, this requires a minimum version of the perl executable in order to run. In Raku, this requires a version of the specification, (e.g. <code>6.c</code>), which can be implemented by various perl6 executables.</p>
+<p>In Perl, this requires a minimum version of the perl executable in order to run. In Raku, this requires a version of the specification, (e.g. <code>6.c</code>), which can be implemented by various Raku executables.</p>
 <p><a name="index-entry-utime_-_perlfunc"></a></p>
 <h2 id="utime"><a class="u" href="#___top" title="go to top of document">utime</a></h2>
 <ul><li><p>utime LIST</p>
@@ -1784,7 +1708,7 @@ else {
 <ul><li><p>wait</p>
 </li>
 </ul>
-<p>[NEEDS FURTHER RESEARCH] Unclear where this has gone. There&#39;s a <code>wait</code> method in <code>Supply</code>, and an <code>await</code> method in both <code>Channel</code> and <code>Promise</code>. Which, if any or all, of these is a direct equivalent of Perl&nbsp;5&#39;s <code>wait</code> is unclear.</p>
+<p>[NEEDS FURTHER RESEARCH] Unclear where this has gone. There&#39;s a <code>wait</code> method in <code>Supply</code>, and an <code>await</code> method in both <code>Channel</code> and <code>Promise</code>. Which, if any or all, of these is a direct equivalent of Perl&#39;s <code>wait</code> is unclear.</p>
 <p><a name="index-entry-waitpid_-_perlfunc"></a></p>
 <h2 id="waitpid"><a class="u" href="#___top" title="go to top of document">waitpid</a></h2>
 <ul><li><p>waitpid PID, FLAGS</p>
@@ -1798,47 +1722,11 @@ else {
 </ul>
 <p>There is no <code>wantarray</code> in Raku; however, there are very easy ways to cover many of the use cases which wantarray filled.</p>
 <p>First, since Raku does not need special reference syntax to contain a <code>List</code> or <code>Array</code> in a <code>Scalar</code>, simply returning a list may be all that is needed:</p>
-<pre class="pod-block-code">sub listofstuff {
-    return 1, 2, 3;
-}
-my $a = listofstuff();
-print $a;                      # prints &quot;123&quot;
-print join(&quot;&lt;&quot;, listofstuff()) # prints &quot;1&lt;2&lt;3&quot;</pre>
-<p>One of the most common use cases is to provide either an array of lines or elements, or a prettier string than would be produced by simply printing the array. One can mix in a custom <code>.Str</code> method for this purpose:</p>
-<pre class="pod-block-code">sub prettylist(*@origlist) {
-    @origlist but role {
-        method Str { self.join(&quot;&lt;&quot;) }
-    }
-}
-print prettylist(1, 2, 3);  # prints &quot;1&lt;2&lt;3&quot;
-print join(&quot;&gt;&quot;, prettylist(3, 2, 1)); # prints &quot;3&gt;2&gt;1&quot;</pre>
-<p>In the above example, the returned list may be lazy, and the <code>.Str</code> method is not called until stringification happens, so no extra work is done to generate something which is not asked for.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>listofstuff</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>return</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>listofstuff</span></span><span>();</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>print</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;prints&nbsp;&quot;123&quot;</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>print</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>join</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>&lt;</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="routine name perl6fe"><span>listofstuff</span></span><span>())&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;prints&nbsp;&quot;1&lt;2&lt;3&quot;</span></span></span></div></pre><p>One of the most common use cases is to provide either an array of lines or elements, or a prettier string than would be produced by simply printing the array. One can mix in a custom <code>.Str</code> method for this purpose:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>prettylist</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>origlist</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>origlist</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>but</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>role</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Str</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="variable language perl6fe"><span>self</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>join</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>&lt;</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>)&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>print</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>prettylist</span></span><span>(</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>);&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;prints&nbsp;&quot;1&lt;2&lt;3&quot;</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>print</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>join</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>&gt;</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="routine name perl6fe"><span>prettylist</span></span><span>(</span><span class="constant numeric perl6fe"><span>3</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>));&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;prints&nbsp;&quot;3&gt;2&gt;1&quot;</span></span></span></div></pre><p>In the above example, the returned list may be lazy, and the <code>.Str</code> method is not called until stringification happens, so no extra work is done to generate something which is not asked for.</p>
 <p>Another use case is to create methods which are mutators when called in void context but produce copies during assignment. It is generally considered better form in Raku not to do so, even more so because <em>void</em> context does not exist in Raku, with the closest equivalent being <em>sink</em> context, since users can quite easily turn any copy-producing method into a mutator using the <code>.=</code> operator:</p>
-<pre class="pod-block-code">my $a = &quot;foo\n&quot;;
-$a.ords.say; # says &quot;(102 111 111 10)&quot;
-$a .= chomp;
-$a.ords.say; # says &quot;(102 111 111)&quot;</pre>
-<p>However if you have your heart set on using the same function name for both operations, you can get most of the way there by mixing in a <code>.sink</code> method, which will be called when the result finds itself in sink context. There are some caveats however, so again, this is not advised:</p>
-<pre class="pod-block-code">multi sub increment($b is rw) {
-    ($b + 1) does role { method sink { $b++ } }
-}
-multi sub increment($b) {
-    $b + 1
-}
-my $a = 1;
-increment($a);
-say $a;                 # says &quot;2&quot;
-my $b = increment($a);
-say $a, $b;             # says &quot;2 3&quot;
-# ...users will just have to be aware that they should not accidentally
-# sink a stored value later, though this requires some effort to
-# actually do:
-sub identity($c is rw) { $c };
-$a = 1;
-$b = increment($a);
-identity($b);
-$a.say;                  # says &quot;2&quot;</pre>
-<p><a name="index-entry-warn_-_perlfunc"></a></p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>foo</span><span class="constant character escape perl6fe"><span>\n</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>ords</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;says&nbsp;&quot;(102&nbsp;111&nbsp;111&nbsp;10)&quot;</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>.=</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>chomp</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>ords</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;says&nbsp;&quot;(102&nbsp;111&nbsp;111)&quot;</span></span></span></div></pre><p>However if you have your heart set on using the same function name for both operations, you can get most of the way there by mixing in a <code>.sink</code> method, which will be called when the result finds itself in sink context. There are some caveats however, so again, this is not advised:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>increment</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>rw</span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>+</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>)&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>role</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>sink</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span class="keyword operator multi-symbol perl6fe"><span>++</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>increment</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>+</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>increment</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;says&nbsp;&quot;2&quot;</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>increment</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>,&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;says&nbsp;&quot;2&nbsp;3&quot;</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;...users&nbsp;will&nbsp;just&nbsp;have&nbsp;to&nbsp;be&nbsp;aware&nbsp;that&nbsp;they&nbsp;should&nbsp;not&nbsp;accidentally</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;sink&nbsp;a&nbsp;stored&nbsp;value&nbsp;later,&nbsp;though&nbsp;this&nbsp;requires&nbsp;some&nbsp;effort&nbsp;to</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;actually&nbsp;do:</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>identity</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>c</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>rw</span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>c</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>increment</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>identity</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;says&nbsp;&quot;2&quot;</span></span></span></div></pre><p><a name="index-entry-warn_-_perlfunc"></a></p>
 <h2 id="warn"><a class="u" href="#___top" title="go to top of document">warn</a></h2>
 <ul><li><p>warn LIST</p>
 </li>
@@ -1865,15 +1753,15 @@ $a.say;                  # says &quot;2&quot;</pre>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/5to6-perlfunc.pod6">/language/5to6-perlfunc</a>.</p>
-    <p>This is a work in progress to document Raku (formerly known as Perl 6),
-        and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/5to6-perlfunc.pod6">/language/5to6-perlfunc</a>.</p>
+  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
+      known to be incomplete.</p>
+
+  <p><a
+          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+
+  <p> This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
       <!-- CREDITS -->
@@ -1884,6 +1772,13 @@ $a.say;                  # says &quot;2&quot;</pre>
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
 
     </body>
 </html>

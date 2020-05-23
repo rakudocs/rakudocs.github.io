@@ -1657,7 +1657,7 @@ $(function(){
 ,
 { category: "method", value: "did-you-mean", url: "/routine/did-you-mean" }
 ,
-{ category: "sub", value: "die", url: "/routine/die" }
+{ category: "routine", value: "die", url: "/routine/die" }
 ,
 { category: "sub", value: "dies-ok", url: "/routine/dies-ok" }
 ,
@@ -2105,7 +2105,7 @@ $(function(){
 ,
 { category: "method", value: "made", url: "/routine/made" }
 ,
-{ category: "method", value: "make", url: "/routine/make" }
+{ category: "routine", value: "make", url: "/routine/make" }
 ,
 { category: "Routine", value: "map", url: "/routine/map" }
 ,
@@ -3278,10 +3278,6 @@ $(function(){
 { category: "syntax", value: "Running programs", url: "/syntax/Running programs" }
 ,
 { category: "syntax", value: "S\/\/\/", url: "/syntax/S$SOLIDUS$SOLIDUS$SOLIDUS" }
-,
-{ category: "syntax", value: "SAP", url: "/syntax/SAP" }
-,
-{ category: "syntax", value: "Semilist", url: "/syntax/Semilist" }
 ,
 { category: "syntax", value: "Single Argument Rule", url: "/syntax/Single Argument Rule" }
 ,
@@ -5569,6 +5565,8 @@ $(function(){
 ,
 { category: "Reference", value: "Backtracking", url: "/language/glossary#index-entry-Backtracking" }
 ,
+{ category: "Reference", value: "binder", url: "/language/glossary#index-entry-binder" }
+,
 { category: "Reference", value: "block", url: "/language/glossary#index-entry-block" }
 ,
 { category: "Reference", value: "bytecode", url: "/language/glossary#index-entry-bytecode" }
@@ -5581,6 +5579,8 @@ $(function(){
 ,
 { category: "Reference", value: "Community", url: "/language/glossary#index-entry-Community" }
 ,
+{ category: "Reference", value: "Damian Conway", url: "/language/glossary#index-entry-Damian_Conway" }
+,
 { category: "Reference", value: "decont", url: "/language/glossary#index-entry-decont" }
 ,
 { category: "Reference", value: "diffy", url: "/language/glossary#index-entry-diffy" }
@@ -5589,13 +5589,23 @@ $(function(){
 ,
 { category: "Reference", value: "fiddly", url: "/language/glossary#index-entry-fiddly" }
 ,
+{ category: "Reference", value: "Handle", url: "/language/glossary#index-entry-Handle" }
+,
+{ category: "Reference", value: "Huffmanize", url: "/language/glossary#index-entry-Huffmanize" }
+,
 { category: "Reference", value: "iffy", url: "/language/glossary#index-entry-iffy" }
+,
+{ category: "Reference", value: "import", url: "/language/glossary#index-entry-import" }
 ,
 { category: "Reference", value: "instance", url: "/language/glossary#index-entry-instance" }
 ,
 { category: "Reference", value: "Interface", url: "/language/glossary#index-entry-Interface" }
 ,
+{ category: "Reference", value: "Invocant", url: "/language/glossary#index-entry-Invocant" }
+,
 { category: "Reference", value: "IRC", url: "/language/glossary#index-entry-IRC" }
+,
+{ category: "Reference", value: "IRC lingo", url: "/language/glossary#index-entry-IRC_lingo" }
 ,
 { category: "Reference", value: "ALAP", url: "/language/glossary#index-entry-ALAP" }
 ,
@@ -5665,6 +5675,8 @@ $(function(){
 ,
 { category: "Reference", value: "WW", url: "/language/glossary#index-entry-WW" }
 ,
+{ category: "Reference", value: "Larry Wall", url: "/language/glossary#index-entry-Larry_Wall" }
+,
 { category: "Reference", value: "Lexing", url: "/language/glossary#index-entry-Lexing" }
 ,
 { category: "Reference", value: "Literal", url: "/language/glossary#index-entry-Literal" }
@@ -5684,6 +5696,10 @@ $(function(){
 { category: "Reference", value: "MMD", url: "/language/glossary#index-entry-MMD" }
 ,
 { category: "Reference", value: "multi-method", url: "/language/glossary#index-entry-multi-method" }
+,
+{ category: "Reference", value: "Née", url: "/language/glossary#index-entry-Née" }
+,
+{ category: "Reference", value: "NFG", url: "/language/glossary#index-entry-NFG" }
 ,
 { category: "Reference", value: "Niecza", url: "/language/glossary#index-entry-Niecza" }
 ,
@@ -5718,6 +5734,8 @@ $(function(){
 { category: "Reference", value: "Propspec", url: "/language/glossary#index-entry-Propspec" }
 ,
 { category: "Reference", value: "Pull request", url: "/language/glossary#index-entry-Pull_request" }
+,
+{ category: "Reference", value: "property", url: "/language/glossary#index-entry-property" }
 ,
 { category: "Reference", value: "pugs", url: "/language/glossary#index-entry-pugs" }
 ,
@@ -5763,6 +5781,12 @@ $(function(){
 ,
 { category: "Reference", value: "test suite", url: "/language/glossary#index-entry-test_suite" }
 ,
+{ category: "Reference", value: "TheDamian", url: "/language/glossary#index-entry-TheDamian" }
+,
+{ category: "Reference", value: "TimToady", url: "/language/glossary#index-entry-TimToady" }
+,
+{ category: "Reference", value: "Token", url: "/language/glossary#index-entry-Token" }
+,
 { category: "Reference", value: "Thunk", url: "/language/glossary#index-entry-Thunk" }
 ,
 { category: "Reference", value: "Loose", url: "/language/glossary#index-entry-Loose" }
@@ -5770,6 +5794,10 @@ $(function(){
 { category: "Reference", value: "Tight", url: "/language/glossary#index-entry-Tight" }
 ,
 { category: "Reference", value: "twine", url: "/language/glossary#index-entry-twine" }
+,
+{ category: "Reference", value: "Type Objects", url: "/language/glossary#index-entry-Type_Objects" }
+,
+{ category: "Reference", value: "Type Smiley", url: "/language/glossary#index-entry-Type_Smiley" }
 ,
 { category: "Reference", value: "value", url: "/language/glossary#index-entry-value" }
 ,

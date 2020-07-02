@@ -115,811 +115,811 @@ $(function(){
                   category: "Signature",
                   value: ";; (long name)",
                   url: "/type/Signature#index-entry-Long_Names"
-              }, { category: "class", value: "Int", url: "/type/Int" }
+              }, { category: "class", value: "Whatever", url: "/type/Whatever" }
+,
+{ category: "class", value: "atomicint", url: "/type/atomicint" }
+,
+{ category: "class", value: "HyperWhatever", url: "/type/HyperWhatever" }
+,
+{ category: "class", value: "Seq", url: "/type/Seq" }
+,
+{ category: "class", value: "PseudoStash", url: "/type/PseudoStash" }
+,
+{ category: "class", value: "Block", url: "/type/Block" }
+,
+{ category: "class", value: "RaceSeq", url: "/type/RaceSeq" }
+,
+{ category: "role", value: "Enumeration", url: "/type/Enumeration" }
+,
+{ category: "class", value: "Thread", url: "/type/Thread" }
+,
+{ category: "role", value: "Stringy", url: "/type/Stringy" }
+,
+{ category: "role", value: "Callable", url: "/type/Callable" }
+,
+{ category: "class", value: "Raku", url: "/type/Raku" }
+,
+{ category: "class", value: "FatRat", url: "/type/FatRat" }
+,
+{ category: "class", value: "Submethod", url: "/type/Submethod" }
+,
+{ category: "class", value: "Macro", url: "/type/Macro" }
+,
+{ category: "class", value: "Version", url: "/type/Version" }
+,
+{ category: "module", value: "Test", url: "/type/Test" }
+,
+{ category: "class", value: "Complex", url: "/type/Complex" }
 ,
 { category: "class", value: "Junction", url: "/type/Junction" }
 ,
 { category: "class", value: "Numeric", url: "/type/Numeric" }
 ,
-{ category: "class", value: "RatStr", url: "/type/RatStr" }
-,
-{ category: "class", value: "Supplier", url: "/type/Supplier" }
-,
-{ category: "class", value: "Code", url: "/type/Code" }
-,
-{ category: "role", value: "Scheduler", url: "/type/Scheduler" }
-,
-{ category: "class", value: "NFKC", url: "/type/NFKC" }
-,
-{ category: "class", value: "Submethod", url: "/type/Submethod" }
-,
-{ category: "class", value: "atomicint", url: "/type/atomicint" }
-,
-{ category: "role", value: "Baggy", url: "/type/Baggy" }
-,
-{ category: "class", value: "Variable", url: "/type/Variable" }
-,
-{ category: "class", value: "Mu", url: "/type/Mu" }
-,
-{ category: "role", value: "Setty", url: "/type/Setty" }
-,
-{ category: "class", value: "Channel", url: "/type/Channel" }
-,
-{ category: "class", value: "Backtrace", url: "/type/Backtrace" }
-,
-{ category: "class", value: "Perl", url: "/type/Perl" }
-,
-{ category: "class", value: "ComplexStr", url: "/type/ComplexStr" }
-,
-{ category: "class", value: "StrDistance", url: "/type/StrDistance" }
-,
-{ category: "role", value: "Positional", url: "/type/Positional" }
-,
-{ category: "class", value: "Num", url: "/type/Num" }
-,
-{ category: "class", value: "UInt", url: "/type/UInt" }
-,
-{ category: "class", value: "ThreadPoolScheduler", url: "/type/ThreadPoolScheduler" }
-,
-{ category: "class", value: "Parameter", url: "/type/Parameter" }
-,
-{ category: "class", value: "IntStr", url: "/type/IntStr" }
-,
-{ category: "class", value: "Range", url: "/type/Range" }
-,
-{ category: "class", value: "Bag", url: "/type/Bag" }
-,
-{ category: "class", value: "Rat", url: "/type/Rat" }
-,
-{ category: "class", value: "MixHash", url: "/type/MixHash" }
-,
-{ category: "role", value: "Stringy", url: "/type/Stringy" }
-,
-{ category: "class", value: "Nil", url: "/type/Nil" }
+{ category: "class", value: "Cancellation", url: "/type/Cancellation" }
 ,
 { category: "enum", value: "Bool", url: "/type/Bool" }
 ,
-{ category: "class", value: "Mix", url: "/type/Mix" }
-,
-{ category: "class", value: "Thread", url: "/type/Thread" }
-,
-{ category: "class", value: "Telemetry", url: "/type/Telemetry" }
-,
-{ category: "class", value: "CallFrame", url: "/type/CallFrame" }
-,
-{ category: "class", value: "ObjAt", url: "/type/ObjAt" }
-,
-{ category: "role", value: "Rational", url: "/type/Rational" }
-,
-{ category: "class", value: "Cool", url: "/type/Cool" }
-,
-{ category: "class", value: "Routine", url: "/type/Routine" }
-,
-{ category: "role", value: "Buf", url: "/type/Buf" }
-,
-{ category: "role", value: "Dateish", url: "/type/Dateish" }
-,
-{ category: "class", value: "Scalar", url: "/type/Scalar" }
-,
-{ category: "class", value: "VM", url: "/type/VM" }
-,
-{ category: "class", value: "Compiler", url: "/type/Compiler" }
-,
-{ category: "class", value: "Kernel", url: "/type/Kernel" }
-,
-{ category: "class", value: "HyperWhatever", url: "/type/HyperWhatever" }
-,
-{ category: "class", value: "Attribute", url: "/type/Attribute" }
-,
-{ category: "class", value: "Block", url: "/type/Block" }
-,
-{ category: "class", value: "Collation", url: "/type/Collation" }
-,
-{ category: "role", value: "Encoding", url: "/type/Encoding" }
-,
-{ category: "class", value: "Grammar", url: "/type/Grammar" }
-,
-{ category: "class", value: "Duration", url: "/type/Duration" }
-,
-{ category: "class", value: "Array", url: "/type/Array" }
-,
-{ category: "class", value: "Complex", url: "/type/Complex" }
-,
-{ category: "role", value: "Enumeration", url: "/type/Enumeration" }
-,
-{ category: "class", value: "RaceSeq", url: "/type/RaceSeq" }
-,
-{ category: "role", value: "Iterable", url: "/type/Iterable" }
-,
-{ category: "class", value: "Promise", url: "/type/Promise" }
-,
-{ category: "class", value: "ForeignCode", url: "/type/ForeignCode" }
-,
-{ category: "class", value: "CompUnit", url: "/type/CompUnit" }
-,
-{ category: "enum", value: "Endian", url: "/type/Endian" }
-,
-{ category: "class", value: "Distro", url: "/type/Distro" }
-,
-{ category: "class", value: "HyperSeq", url: "/type/HyperSeq" }
-,
-{ category: "class", value: "Version", url: "/type/Version" }
-,
-{ category: "class", value: "Lock", url: "/type/Lock" }
-,
-{ category: "class", value: "Date", url: "/type/Date" }
-,
-{ category: "class", value: "Supply", url: "/type/Supply" }
-,
-{ category: "role", value: "Mixy", url: "/type/Mixy" }
-,
-{ category: "role", value: "Systemic", url: "/type/Systemic" }
-,
-{ category: "class", value: "Stash", url: "/type/Stash" }
-,
-{ category: "role", value: "Distribution", url: "/type/Distribution" }
-,
-{ category: "class", value: "Any", url: "/type/Any" }
-,
-{ category: "class", value: "SetHash", url: "/type/SetHash" }
-,
-{ category: "class", value: "Macro", url: "/type/Macro" }
-,
-{ category: "class", value: "Map", url: "/type/Map" }
-,
-{ category: "role", value: "PredictiveIterator", url: "/type/PredictiveIterator" }
-,
-{ category: "class", value: "ValueObjAt", url: "/type/ValueObjAt" }
-,
-{ category: "class", value: "Label", url: "/type/Label" }
-,
-{ category: "class", value: "Pair", url: "/type/Pair" }
-,
-{ category: "class", value: "Hash", url: "/type/Hash" }
-,
-{ category: "class", value: "FatRat", url: "/type/FatRat" }
-,
-{ category: "role", value: "Iterator", url: "/type/Iterator" }
-,
-{ category: "class", value: "Instant", url: "/type/Instant" }
-,
-{ category: "role", value: "QuantHash", url: "/type/QuantHash" }
-,
-{ category: "class", value: "Raku", url: "/type/Raku" }
-,
-{ category: "role", value: "Sequence", url: "/type/Sequence" }
-,
-{ category: "class", value: "Method", url: "/type/Method" }
-,
-{ category: "class", value: "AST", url: "/type/AST" }
-,
-{ category: "class", value: "CurrentThreadScheduler", url: "/type/CurrentThreadScheduler" }
-,
-{ category: "class", value: "Semaphore", url: "/type/Semaphore" }
-,
-{ category: "class", value: "utf8", url: "/type/utf8" }
-,
-{ category: "class", value: "DateTime", url: "/type/DateTime" }
-,
-{ category: "class", value: "Capture", url: "/type/Capture" }
-,
-{ category: "class", value: "Seq", url: "/type/Seq" }
-,
-{ category: "class", value: "Proxy", url: "/type/Proxy" }
-,
-{ category: "class", value: "Sub", url: "/type/Sub" }
-,
-{ category: "class", value: "Failure", url: "/type/Failure" }
-,
-{ category: "class", value: "WhateverCode", url: "/type/WhateverCode" }
-,
-{ category: "class", value: "Str", url: "/type/Str" }
-,
-{ category: "module", value: "Test", url: "/type/Test" }
-,
-{ category: "role", value: "Callable", url: "/type/Callable" }
-,
-{ category: "class", value: "Signature", url: "/type/Signature" }
-,
-{ category: "class", value: "Proc", url: "/type/Proc" }
-,
-{ category: "class", value: "Cancellation", url: "/type/Cancellation" }
-,
-{ category: "class", value: "NFC", url: "/type/NFC" }
-,
-{ category: "class", value: "Uni", url: "/type/Uni" }
-,
-{ category: "class", value: "Whatever", url: "/type/Whatever" }
-,
-{ category: "class", value: "Tap", url: "/type/Tap" }
-,
 { category: "class", value: "Slip", url: "/type/Slip" }
-,
-{ category: "class", value: "NumStr", url: "/type/NumStr" }
-,
-{ category: "class", value: "PseudoStash", url: "/type/PseudoStash" }
-,
-{ category: "class", value: "NFD", url: "/type/NFD" }
-,
-{ category: "role", value: "PositionalBindFailover", url: "/type/PositionalBindFailover" }
-,
-{ category: "role", value: "IO", url: "/type/IO" }
-,
-{ category: "class", value: "Match", url: "/type/Match" }
-,
-{ category: "class", value: "Exception", url: "/type/Exception" }
-,
-{ category: "class", value: "Set", url: "/type/Set" }
-,
-{ category: "class", value: "NFKD", url: "/type/NFKD" }
-,
-{ category: "enum", value: "Order", url: "/type/Order" }
-,
-{ category: "class", value: "Regex", url: "/type/Regex" }
-,
-{ category: "class", value: "List", url: "/type/List" }
 ,
 { category: "role", value: "Associative", url: "/type/Associative" }
 ,
+{ category: "class", value: "RatStr", url: "/type/RatStr" }
+,
+{ category: "class", value: "utf8", url: "/type/utf8" }
+,
+{ category: "class", value: "Scalar", url: "/type/Scalar" }
+,
+{ category: "class", value: "Method", url: "/type/Method" }
+,
+{ category: "class", value: "UInt", url: "/type/UInt" }
+,
+{ category: "class", value: "StrDistance", url: "/type/StrDistance" }
+,
+{ category: "class", value: "Supplier", url: "/type/Supplier" }
+,
+{ category: "class", value: "Int", url: "/type/Int" }
+,
+{ category: "class", value: "Instant", url: "/type/Instant" }
+,
+{ category: "class", value: "NFKD", url: "/type/NFKD" }
+,
+{ category: "class", value: "Hash", url: "/type/Hash" }
+,
+{ category: "role", value: "PositionalBindFailover", url: "/type/PositionalBindFailover" }
+,
+{ category: "class", value: "Promise", url: "/type/Promise" }
+,
+{ category: "class", value: "Supply", url: "/type/Supply" }
+,
+{ category: "role", value: "Buf", url: "/type/Buf" }
+,
+{ category: "class", value: "Uni", url: "/type/Uni" }
+,
+{ category: "class", value: "Proc", url: "/type/Proc" }
+,
+{ category: "class", value: "Signature", url: "/type/Signature" }
+,
+{ category: "role", value: "Scheduler", url: "/type/Scheduler" }
+,
+{ category: "role", value: "Iterator", url: "/type/Iterator" }
+,
+{ category: "class", value: "MixHash", url: "/type/MixHash" }
+,
+{ category: "class", value: "Stash", url: "/type/Stash" }
+,
+{ category: "class", value: "AST", url: "/type/AST" }
+,
+{ category: "class", value: "SetHash", url: "/type/SetHash" }
+,
+{ category: "role", value: "IO", url: "/type/IO" }
+,
+{ category: "role", value: "Dateish", url: "/type/Dateish" }
+,
+{ category: "class", value: "NumStr", url: "/type/NumStr" }
+,
+{ category: "class", value: "Distro", url: "/type/Distro" }
+,
+{ category: "class", value: "Kernel", url: "/type/Kernel" }
+,
+{ category: "role", value: "Baggy", url: "/type/Baggy" }
+,
+{ category: "class", value: "Rat", url: "/type/Rat" }
+,
+{ category: "class", value: "Regex", url: "/type/Regex" }
+,
+{ category: "class", value: "Label", url: "/type/Label" }
+,
+{ category: "class", value: "Mix", url: "/type/Mix" }
+,
+{ category: "class", value: "DateTime", url: "/type/DateTime" }
+,
+{ category: "role", value: "Sequence", url: "/type/Sequence" }
+,
+{ category: "class", value: "Grammar", url: "/type/Grammar" }
+,
+{ category: "class", value: "NFD", url: "/type/NFD" }
+,
+{ category: "class", value: "Routine", url: "/type/Routine" }
+,
+{ category: "class", value: "ForeignCode", url: "/type/ForeignCode" }
+,
+{ category: "class", value: "Sub", url: "/type/Sub" }
+,
+{ category: "class", value: "Channel", url: "/type/Channel" }
+,
+{ category: "class", value: "Exception", url: "/type/Exception" }
+,
+{ category: "class", value: "CompUnit", url: "/type/CompUnit" }
+,
+{ category: "class", value: "Array", url: "/type/Array" }
+,
+{ category: "class", value: "Semaphore", url: "/type/Semaphore" }
+,
+{ category: "class", value: "List", url: "/type/List" }
+,
 { category: "class", value: "BagHash", url: "/type/BagHash" }
+,
+{ category: "class", value: "Variable", url: "/type/Variable" }
+,
+{ category: "role", value: "Setty", url: "/type/Setty" }
+,
+{ category: "class", value: "Tap", url: "/type/Tap" }
 ,
 { category: "role", value: "Blob", url: "/type/Blob" }
 ,
+{ category: "class", value: "Date", url: "/type/Date" }
+,
+{ category: "class", value: "Match", url: "/type/Match" }
+,
+{ category: "class", value: "Collation", url: "/type/Collation" }
+,
+{ category: "class", value: "NFKC", url: "/type/NFKC" }
+,
+{ category: "class", value: "Duration", url: "/type/Duration" }
+,
+{ category: "role", value: "Iterable", url: "/type/Iterable" }
+,
+{ category: "class", value: "CurrentThreadScheduler", url: "/type/CurrentThreadScheduler" }
+,
+{ category: "class", value: "Backtrace", url: "/type/Backtrace" }
+,
+{ category: "role", value: "Distribution", url: "/type/Distribution" }
+,
+{ category: "role", value: "Mixy", url: "/type/Mixy" }
+,
+{ category: "class", value: "Parameter", url: "/type/Parameter" }
+,
+{ category: "class", value: "Pair", url: "/type/Pair" }
+,
+{ category: "class", value: "Lock", url: "/type/Lock" }
+,
+{ category: "class", value: "Any", url: "/type/Any" }
+,
+{ category: "class", value: "Bag", url: "/type/Bag" }
+,
+{ category: "class", value: "WhateverCode", url: "/type/WhateverCode" }
+,
+{ category: "class", value: "Map", url: "/type/Map" }
+,
+{ category: "role", value: "Systemic", url: "/type/Systemic" }
+,
+{ category: "class", value: "HyperSeq", url: "/type/HyperSeq" }
+,
+{ category: "class", value: "ValueObjAt", url: "/type/ValueObjAt" }
+,
+{ category: "class", value: "Range", url: "/type/Range" }
+,
+{ category: "class", value: "Perl", url: "/type/Perl" }
+,
+{ category: "role", value: "Encoding", url: "/type/Encoding" }
+,
+{ category: "class", value: "Str", url: "/type/Str" }
+,
+{ category: "class", value: "Nil", url: "/type/Nil" }
+,
+{ category: "class", value: "Capture", url: "/type/Capture" }
+,
+{ category: "class", value: "VM", url: "/type/VM" }
+,
+{ category: "class", value: "Num", url: "/type/Num" }
+,
+{ category: "class", value: "Compiler", url: "/type/Compiler" }
+,
+{ category: "class", value: "Proxy", url: "/type/Proxy" }
+,
+{ category: "class", value: "IntStr", url: "/type/IntStr" }
+,
+{ category: "enum", value: "Endian", url: "/type/Endian" }
+,
+{ category: "role", value: "PredictiveIterator", url: "/type/PredictiveIterator" }
+,
+{ category: "class", value: "Failure", url: "/type/Failure" }
+,
+{ category: "enum", value: "Order", url: "/type/Order" }
+,
+{ category: "class", value: "Cool", url: "/type/Cool" }
+,
+{ category: "class", value: "CallFrame", url: "/type/CallFrame" }
+,
+{ category: "class", value: "Mu", url: "/type/Mu" }
+,
+{ category: "role", value: "Positional", url: "/type/Positional" }
+,
+{ category: "role", value: "Rational", url: "/type/Rational" }
+,
+{ category: "class", value: "Set", url: "/type/Set" }
+,
+{ category: "role", value: "QuantHash", url: "/type/QuantHash" }
+,
 { category: "role", value: "Real", url: "/type/Real" }
 ,
-{ category: "role", value: "CompUnit::Repository", url: "/type/CompUnit::Repository" }
+{ category: "class", value: "Code", url: "/type/Code" }
 ,
-{ category: "role", value: "CompUnit::PrecompilationRepository", url: "/type/CompUnit::PrecompilationRepository" }
+{ category: "class", value: "ThreadPoolScheduler", url: "/type/ThreadPoolScheduler" }
 ,
-{ category: "class", value: "Telemetry::Sampler", url: "/type/Telemetry::Sampler" }
+{ category: "class", value: "Telemetry", url: "/type/Telemetry" }
 ,
-{ category: "class", value: "Telemetry::Period", url: "/type/Telemetry::Period" }
+{ category: "class", value: "NFC", url: "/type/NFC" }
 ,
-{ category: "class", value: "Proc::Async", url: "/type/Proc::Async" }
+{ category: "class", value: "ComplexStr", url: "/type/ComplexStr" }
 ,
-{ category: "class", value: "Distribution::Locally", url: "/type/Distribution::Locally" }
+{ category: "class", value: "Attribute", url: "/type/Attribute" }
 ,
-{ category: "class", value: "Distribution::Hash", url: "/type/Distribution::Hash" }
-,
-{ category: "class", value: "Distribution::Path", url: "/type/Distribution::Path" }
-,
-{ category: "role", value: "Metamodel::ParametricRoleGroupHOW", url: "/type/Metamodel::ParametricRoleGroupHOW" }
-,
-{ category: "role", value: "Metamodel::ParametricRoleHOW", url: "/type/Metamodel::ParametricRoleHOW" }
-,
-{ category: "role", value: "Metamodel::Documenting", url: "/type/Metamodel::Documenting" }
-,
-{ category: "role", value: "Metamodel::Stashing", url: "/type/Metamodel::Stashing" }
-,
-{ category: "class", value: "Metamodel::EnumHOW", url: "/type/Metamodel::EnumHOW" }
-,
-{ category: "role", value: "Metamodel::PrivateMethodContainer", url: "/type/Metamodel::PrivateMethodContainer" }
-,
-{ category: "role", value: "Metamodel::RolePunning", url: "/type/Metamodel::RolePunning" }
-,
-{ category: "role", value: "Metamodel::MROBasedMethodDispatch", url: "/type/Metamodel::MROBasedMethodDispatch" }
-,
-{ category: "role", value: "Metamodel::Naming", url: "/type/Metamodel::Naming" }
-,
-{ category: "class", value: "Metamodel::DefiniteHOW", url: "/type/Metamodel::DefiniteHOW" }
-,
-{ category: "role", value: "Metamodel::Mixins", url: "/type/Metamodel::Mixins" }
-,
-{ category: "class", value: "Metamodel::Primitives", url: "/type/Metamodel::Primitives" }
-,
-{ category: "class", value: "Metamodel::ConcreteRoleHOW", url: "/type/Metamodel::ConcreteRoleHOW" }
-,
-{ category: "role", value: "Metamodel::Versioning", url: "/type/Metamodel::Versioning" }
-,
-{ category: "role", value: "Metamodel::MultipleInheritance", url: "/type/Metamodel::MultipleInheritance" }
-,
-{ category: "class", value: "Metamodel::PackageHOW", url: "/type/Metamodel::PackageHOW" }
-,
-{ category: "class", value: "Metamodel::ClassHOW", url: "/type/Metamodel::ClassHOW" }
-,
-{ category: "role", value: "Metamodel::Trusting", url: "/type/Metamodel::Trusting" }
+{ category: "class", value: "ObjAt", url: "/type/ObjAt" }
 ,
 { category: "class", value: "Metamodel::CurriedRoleHOW", url: "/type/Metamodel::CurriedRoleHOW" }
 ,
-{ category: "role", value: "Metamodel::MethodContainer", url: "/type/Metamodel::MethodContainer" }
+{ category: "role", value: "Metamodel::Naming", url: "/type/Metamodel::Naming" }
 ,
-{ category: "role", value: "Metamodel::RoleContainer", url: "/type/Metamodel::RoleContainer" }
-,
-{ category: "role", value: "Metamodel::Finalization", url: "/type/Metamodel::Finalization" }
+{ category: "role", value: "Metamodel::Mixins", url: "/type/Metamodel::Mixins" }
 ,
 { category: "role", value: "Metamodel::AttributeContainer", url: "/type/Metamodel::AttributeContainer" }
 ,
+{ category: "class", value: "Metamodel::ClassHOW", url: "/type/Metamodel::ClassHOW" }
+,
+{ category: "role", value: "Metamodel::ParametricRoleHOW", url: "/type/Metamodel::ParametricRoleHOW" }
+,
+{ category: "role", value: "Metamodel::PrivateMethodContainer", url: "/type/Metamodel::PrivateMethodContainer" }
+,
+{ category: "role", value: "Metamodel::Documenting", url: "/type/Metamodel::Documenting" }
+,
+{ category: "role", value: "Metamodel::Trusting", url: "/type/Metamodel::Trusting" }
+,
+{ category: "role", value: "Metamodel::ParametricRoleGroupHOW", url: "/type/Metamodel::ParametricRoleGroupHOW" }
+,
+{ category: "role", value: "Metamodel::MultipleInheritance", url: "/type/Metamodel::MultipleInheritance" }
+,
+{ category: "class", value: "Metamodel::Primitives", url: "/type/Metamodel::Primitives" }
+,
+{ category: "role", value: "Metamodel::Versioning", url: "/type/Metamodel::Versioning" }
+,
+{ category: "class", value: "Metamodel::EnumHOW", url: "/type/Metamodel::EnumHOW" }
+,
+{ category: "role", value: "Metamodel::MROBasedMethodDispatch", url: "/type/Metamodel::MROBasedMethodDispatch" }
+,
+{ category: "role", value: "Metamodel::Stashing", url: "/type/Metamodel::Stashing" }
+,
+{ category: "role", value: "Metamodel::MethodContainer", url: "/type/Metamodel::MethodContainer" }
+,
+{ category: "role", value: "Metamodel::RolePunning", url: "/type/Metamodel::RolePunning" }
+,
+{ category: "class", value: "Metamodel::PackageHOW", url: "/type/Metamodel::PackageHOW" }
+,
+{ category: "class", value: "Metamodel::DefiniteHOW", url: "/type/Metamodel::DefiniteHOW" }
+,
 { category: "role", value: "Metamodel::C3MRO", url: "/type/Metamodel::C3MRO" }
 ,
-{ category: "class", value: "Supplier::Preserving", url: "/type/Supplier::Preserving" }
+{ category: "class", value: "Metamodel::ConcreteRoleHOW", url: "/type/Metamodel::ConcreteRoleHOW" }
 ,
-{ category: "class", value: "IO::CatHandle", url: "/type/IO::CatHandle" }
+{ category: "role", value: "Metamodel::Finalization", url: "/type/Metamodel::Finalization" }
 ,
-{ category: "class", value: "IO::Pipe", url: "/type/IO::Pipe" }
+{ category: "role", value: "Metamodel::RoleContainer", url: "/type/Metamodel::RoleContainer" }
 ,
-{ category: "class", value: "IO::ArgFiles", url: "/type/IO::ArgFiles" }
-,
-{ category: "class", value: "IO::Notification", url: "/type/IO::Notification" }
-,
-{ category: "class", value: "IO::Spec", url: "/type/IO::Spec" }
-,
-{ category: "role", value: "IO::Socket", url: "/type/IO::Socket" }
-,
-{ category: "class", value: "IO::Special", url: "/type/IO::Special" }
-,
-{ category: "class", value: "IO::Path", url: "/type/IO::Path" }
-,
-{ category: "class", value: "IO::Handle", url: "/type/IO::Handle" }
-,
-{ category: "class", value: "Backtrace::Frame", url: "/type/Backtrace::Frame" }
-,
-{ category: "class", value: "Lock::Async", url: "/type/Lock::Async" }
-,
-{ category: "class", value: "X::TypeCheck", url: "/type/X::TypeCheck" }
-,
-{ category: "role", value: "X::Pod", url: "/type/X::Pod" }
-,
-{ category: "role", value: "X::Syntax", url: "/type/X::Syntax" }
-,
-{ category: "class", value: "X::Redeclaration", url: "/type/X::Redeclaration" }
-,
-{ category: "class", value: "X::AdHoc", url: "/type/X::AdHoc" }
-,
-{ category: "class", value: "X::Control", url: "/type/X::Control" }
-,
-{ category: "role", value: "X::OS", url: "/type/X::OS" }
-,
-{ category: "role", value: "X::Temporal", url: "/type/X::Temporal" }
-,
-{ category: "class", value: "X::Obsolete", url: "/type/X::Obsolete" }
-,
-{ category: "class", value: "X::ControlFlow", url: "/type/X::ControlFlow" }
-,
-{ category: "role", value: "X::Comp", url: "/type/X::Comp" }
-,
-{ category: "class", value: "X::OutOfRange", url: "/type/X::OutOfRange" }
-,
-{ category: "class", value: "X::StubCode", url: "/type/X::StubCode" }
-,
-{ category: "class", value: "X::Bind", url: "/type/X::Bind" }
-,
-{ category: "class", value: "X::NYI", url: "/type/X::NYI" }
-,
-{ category: "class", value: "X::NoDispatcher", url: "/type/X::NoDispatcher" }
-,
-{ category: "class", value: "X::Undeclared", url: "/type/X::Undeclared" }
-,
-{ category: "role", value: "X::IO", url: "/type/X::IO" }
+{ category: "class", value: "Proc::Async", url: "/type/Proc::Async" }
 ,
 { category: "class", value: "Encoding::Registry", url: "/type/Encoding::Registry" }
+,
+{ category: "class", value: "CX::Redo", url: "/type/CX::Redo" }
+,
+{ category: "class", value: "CX::Take", url: "/type/CX::Take" }
 ,
 { category: "class", value: "CX::Done", url: "/type/CX::Done" }
 ,
 { category: "class", value: "CX::Warn", url: "/type/CX::Warn" }
 ,
-{ category: "class", value: "CX::Take", url: "/type/CX::Take" }
-,
-{ category: "class", value: "CX::Redo", url: "/type/CX::Redo" }
-,
-{ category: "class", value: "CX::Next", url: "/type/CX::Next" }
-,
 { category: "class", value: "CX::Succeed", url: "/type/CX::Succeed" }
 ,
 { category: "class", value: "CX::Emit", url: "/type/CX::Emit" }
 ,
+{ category: "class", value: "CX::Return", url: "/type/CX::Return" }
+,
 { category: "class", value: "CX::Last", url: "/type/CX::Last" }
+,
+{ category: "class", value: "CX::Next", url: "/type/CX::Next" }
 ,
 { category: "class", value: "CX::Proceed", url: "/type/CX::Proceed" }
 ,
-{ category: "class", value: "CX::Return", url: "/type/CX::Return" }
+{ category: "class", value: "Backtrace::Frame", url: "/type/Backtrace::Frame" }
 ,
-{ category: "class", value: "Pod::Item", url: "/type/Pod::Item" }
+{ category: "class", value: "Telemetry::Sampler", url: "/type/Telemetry::Sampler" }
 ,
-{ category: "class", value: "Pod::Defn", url: "/type/Pod::Defn" }
+{ category: "class", value: "Telemetry::Period", url: "/type/Telemetry::Period" }
+,
+{ category: "class", value: "IO::Special", url: "/type/IO::Special" }
+,
+{ category: "class", value: "IO::ArgFiles", url: "/type/IO::ArgFiles" }
+,
+{ category: "class", value: "IO::Handle", url: "/type/IO::Handle" }
+,
+{ category: "class", value: "IO::Pipe", url: "/type/IO::Pipe" }
+,
+{ category: "class", value: "IO::Notification", url: "/type/IO::Notification" }
+,
+{ category: "class", value: "IO::Spec", url: "/type/IO::Spec" }
+,
+{ category: "class", value: "IO::Path", url: "/type/IO::Path" }
+,
+{ category: "role", value: "IO::Socket", url: "/type/IO::Socket" }
+,
+{ category: "class", value: "IO::CatHandle", url: "/type/IO::CatHandle" }
+,
+{ category: "class", value: "Distribution::Hash", url: "/type/Distribution::Hash" }
+,
+{ category: "class", value: "Distribution::Path", url: "/type/Distribution::Path" }
+,
+{ category: "class", value: "Distribution::Locally", url: "/type/Distribution::Locally" }
 ,
 { category: "class", value: "Pod::Block", url: "/type/Pod::Block" }
 ,
+{ category: "class", value: "Pod::Defn", url: "/type/Pod::Defn" }
+,
 { category: "class", value: "Pod::FormattingCode", url: "/type/Pod::FormattingCode" }
+,
+{ category: "class", value: "Pod::Item", url: "/type/Pod::Item" }
 ,
 { category: "class", value: "Pod::Heading", url: "/type/Pod::Heading" }
 ,
+{ category: "class", value: "Supplier::Preserving", url: "/type/Supplier::Preserving" }
+,
 { category: "class", value: "Routine::WrapHandle", url: "/type/Routine::WrapHandle" }
 ,
-{ category: "class", value: "CompUnit::Repository::Installation", url: "/type/CompUnit::Repository::Installation" }
+{ category: "class", value: "Lock::Async", url: "/type/Lock::Async" }
 ,
-{ category: "class", value: "CompUnit::Repository::FileSystem", url: "/type/CompUnit::Repository::FileSystem" }
+{ category: "role", value: "CompUnit::Repository", url: "/type/CompUnit::Repository" }
+,
+{ category: "role", value: "CompUnit::PrecompilationRepository", url: "/type/CompUnit::PrecompilationRepository" }
+,
+{ category: "role", value: "X::Pod", url: "/type/X::Pod" }
+,
+{ category: "role", value: "X::OS", url: "/type/X::OS" }
+,
+{ category: "class", value: "X::OutOfRange", url: "/type/X::OutOfRange" }
+,
+{ category: "class", value: "X::TypeCheck", url: "/type/X::TypeCheck" }
+,
+{ category: "role", value: "X::IO", url: "/type/X::IO" }
+,
+{ category: "class", value: "X::AdHoc", url: "/type/X::AdHoc" }
+,
+{ category: "class", value: "X::StubCode", url: "/type/X::StubCode" }
+,
+{ category: "role", value: "X::Comp", url: "/type/X::Comp" }
+,
+{ category: "class", value: "X::Redeclaration", url: "/type/X::Redeclaration" }
+,
+{ category: "class", value: "X::Bind", url: "/type/X::Bind" }
+,
+{ category: "class", value: "X::ControlFlow", url: "/type/X::ControlFlow" }
+,
+{ category: "class", value: "X::Control", url: "/type/X::Control" }
+,
+{ category: "role", value: "X::Syntax", url: "/type/X::Syntax" }
+,
+{ category: "class", value: "X::Undeclared", url: "/type/X::Undeclared" }
+,
+{ category: "class", value: "X::Obsolete", url: "/type/X::Obsolete" }
+,
+{ category: "class", value: "X::NYI", url: "/type/X::NYI" }
+,
+{ category: "role", value: "X::Temporal", url: "/type/X::Temporal" }
+,
+{ category: "class", value: "X::NoDispatcher", url: "/type/X::NoDispatcher" }
 ,
 { category: "class", value: "Telemetry::Instrument::Thread", url: "/type/Telemetry::Instrument::Thread" }
 ,
-{ category: "class", value: "Telemetry::Instrument::Usage", url: "/type/Telemetry::Instrument::Usage" }
-,
 { category: "class", value: "Telemetry::Instrument::ThreadPool", url: "/type/Telemetry::Instrument::ThreadPool" }
 ,
-{ category: "class", value: "IO::Path::QNX", url: "/type/IO::Path::QNX" }
-,
-{ category: "class", value: "IO::Path::Unix", url: "/type/IO::Path::Unix" }
-,
-{ category: "class", value: "IO::Path::Win32", url: "/type/IO::Path::Win32" }
-,
-{ category: "class", value: "IO::Path::Cygwin", url: "/type/IO::Path::Cygwin" }
+{ category: "class", value: "Telemetry::Instrument::Usage", url: "/type/Telemetry::Instrument::Usage" }
 ,
 { category: "class", value: "IO::Socket::INET", url: "/type/IO::Socket::INET" }
 ,
 { category: "class", value: "IO::Socket::Async", url: "/type/IO::Socket::Async" }
 ,
-{ category: "class", value: "IO::Spec::QNX", url: "/type/IO::Spec::QNX" }
+{ category: "class", value: "IO::Path::Win32", url: "/type/IO::Path::Win32" }
 ,
-{ category: "class", value: "IO::Spec::Unix", url: "/type/IO::Spec::Unix" }
+{ category: "class", value: "IO::Path::QNX", url: "/type/IO::Path::QNX" }
+,
+{ category: "class", value: "IO::Path::Cygwin", url: "/type/IO::Path::Cygwin" }
+,
+{ category: "class", value: "IO::Path::Unix", url: "/type/IO::Path::Unix" }
 ,
 { category: "class", value: "IO::Spec::Win32", url: "/type/IO::Spec::Win32" }
 ,
+{ category: "class", value: "IO::Spec::QNX", url: "/type/IO::Spec::QNX" }
+,
 { category: "class", value: "IO::Spec::Cygwin", url: "/type/IO::Spec::Cygwin" }
 ,
-{ category: "class", value: "X::Parameter::WrongOrder", url: "/type/X::Parameter::WrongOrder" }
+{ category: "class", value: "IO::Spec::Unix", url: "/type/IO::Spec::Unix" }
 ,
-{ category: "class", value: "X::Parameter::Placeholder", url: "/type/X::Parameter::Placeholder" }
-,
-{ category: "class", value: "X::Parameter::MultipleTypeConstraints", url: "/type/X::Parameter::MultipleTypeConstraints" }
-,
-{ category: "class", value: "X::Parameter::Twigil", url: "/type/X::Parameter::Twigil" }
-,
-{ category: "class", value: "X::Parameter::Default", url: "/type/X::Parameter::Default" }
-,
-{ category: "class", value: "X::Role::Initialization", url: "/type/X::Role::Initialization" }
-,
-{ category: "class", value: "X::ControlFlow::Return", url: "/type/X::ControlFlow::Return" }
-,
-{ category: "class", value: "X::Sequence::Deduction", url: "/type/X::Sequence::Deduction" }
-,
-{ category: "class", value: "X::Mixin::NotComposable", url: "/type/X::Mixin::NotComposable" }
-,
-{ category: "class", value: "X::Eval::NoSuchLang", url: "/type/X::Eval::NoSuchLang" }
-,
-{ category: "class", value: "X::Str::Numeric", url: "/type/X::Str::Numeric" }
-,
-{ category: "class", value: "X::Assignment::RO", url: "/type/X::Assignment::RO" }
-,
-{ category: "class", value: "X::Caller::NotDynamic", url: "/type/X::Caller::NotDynamic" }
-,
-{ category: "role", value: "X::Proc::Async", url: "/type/X::Proc::Async" }
-,
-{ category: "class", value: "X::Proc::Unsuccessful", url: "/type/X::Proc::Unsuccessful" }
-,
-{ category: "class", value: "X::Inheritance::NotComposed", url: "/type/X::Inheritance::NotComposed" }
-,
-{ category: "class", value: "X::Inheritance::Unsupported", url: "/type/X::Inheritance::Unsupported" }
-,
-{ category: "class", value: "X::DateTime::TimezoneClash", url: "/type/X::DateTime::TimezoneClash" }
-,
-{ category: "class", value: "X::Package::Stubbed", url: "/type/X::Package::Stubbed" }
-,
-{ category: "class", value: "X::Export::NameClash", url: "/type/X::Export::NameClash" }
-,
-{ category: "class", value: "X::Phaser::PrePost", url: "/type/X::Phaser::PrePost" }
-,
-{ category: "class", value: "X::Phaser::Multiple", url: "/type/X::Phaser::Multiple" }
-,
-{ category: "class", value: "X::Placeholder::Block", url: "/type/X::Placeholder::Block" }
-,
-{ category: "class", value: "X::Placeholder::Mainline", url: "/type/X::Placeholder::Mainline" }
-,
-{ category: "class", value: "X::IO::Symlink", url: "/type/X::IO::Symlink" }
-,
-{ category: "class", value: "X::IO::Copy", url: "/type/X::IO::Copy" }
-,
-{ category: "class", value: "X::IO::Dir", url: "/type/X::IO::Dir" }
-,
-{ category: "class", value: "X::IO::Rmdir", url: "/type/X::IO::Rmdir" }
-,
-{ category: "class", value: "X::IO::Link", url: "/type/X::IO::Link" }
-,
-{ category: "class", value: "X::IO::Rename", url: "/type/X::IO::Rename" }
-,
-{ category: "class", value: "X::IO::Cwd", url: "/type/X::IO::Cwd" }
-,
-{ category: "class", value: "X::IO::Mkdir", url: "/type/X::IO::Mkdir" }
-,
-{ category: "class", value: "X::IO::DoesNotExist", url: "/type/X::IO::DoesNotExist" }
-,
-{ category: "class", value: "X::IO::Move", url: "/type/X::IO::Move" }
-,
-{ category: "class", value: "X::IO::Unlink", url: "/type/X::IO::Unlink" }
-,
-{ category: "class", value: "X::IO::Chmod", url: "/type/X::IO::Chmod" }
-,
-{ category: "class", value: "X::IO::Chdir", url: "/type/X::IO::Chdir" }
-,
-{ category: "class", value: "X::Channel::SendOnClosed", url: "/type/X::Channel::SendOnClosed" }
-,
-{ category: "class", value: "X::Channel::ReceiveOnClosed", url: "/type/X::Channel::ReceiveOnClosed" }
-,
-{ category: "class", value: "X::Dynamic::NotFound", url: "/type/X::Dynamic::NotFound" }
-,
-{ category: "class", value: "X::Anon::Multi", url: "/type/X::Anon::Multi" }
-,
-{ category: "class", value: "X::Anon::Augment", url: "/type/X::Anon::Augment" }
-,
-{ category: "class", value: "X::Cannot::Lazy", url: "/type/X::Cannot::Lazy" }
-,
-{ category: "class", value: "X::Temporal::InvalidFormat", url: "/type/X::Temporal::InvalidFormat" }
-,
-{ category: "class", value: "X::Scheduler::CueInNaNSeconds", url: "/type/X::Scheduler::CueInNaNSeconds" }
-,
-{ category: "class", value: "X::Seq::Consumed", url: "/type/X::Seq::Consumed" }
-,
-{ category: "class", value: "X::Syntax::NegatedPair", url: "/type/X::Syntax::NegatedPair" }
-,
-{ category: "class", value: "X::Syntax::Missing", url: "/type/X::Syntax::Missing" }
-,
-{ category: "class", value: "X::Syntax::InfixInTermPosition", url: "/type/X::Syntax::InfixInTermPosition" }
-,
-{ category: "class", value: "X::Syntax::Perl5Var", url: "/type/X::Syntax::Perl5Var" }
-,
-{ category: "class", value: "X::Syntax::UnlessElse", url: "/type/X::Syntax::UnlessElse" }
-,
-{ category: "class", value: "X::Syntax::Reserved", url: "/type/X::Syntax::Reserved" }
-,
-{ category: "class", value: "X::Syntax::Malformed", url: "/type/X::Syntax::Malformed" }
-,
-{ category: "class", value: "X::Syntax::NoSelf", url: "/type/X::Syntax::NoSelf" }
-,
-{ category: "class", value: "X::Syntax::Confused", url: "/type/X::Syntax::Confused" }
-,
-{ category: "class", value: "X::Syntax::P5", url: "/type/X::Syntax::P5" }
-,
-{ category: "class", value: "X::Declaration::Scope", url: "/type/X::Declaration::Scope" }
-,
-{ category: "class", value: "X::Augment::NoSuchType", url: "/type/X::Augment::NoSuchType" }
-,
-{ category: "class", value: "X::Constructor::Positional", url: "/type/X::Constructor::Positional" }
-,
-{ category: "class", value: "X::Attribute::Package", url: "/type/X::Attribute::Package" }
-,
-{ category: "class", value: "X::Attribute::NoPackage", url: "/type/X::Attribute::NoPackage" }
-,
-{ category: "class", value: "X::Attribute::Undeclared", url: "/type/X::Attribute::Undeclared" }
-,
-{ category: "class", value: "X::Attribute::Required", url: "/type/X::Attribute::Required" }
-,
-{ category: "class", value: "X::Method::NotFound", url: "/type/X::Method::NotFound" }
-,
-{ category: "class", value: "X::Method::InvalidQualifier", url: "/type/X::Method::InvalidQualifier" }
-,
-{ category: "class", value: "X::Composition::NotComposable", url: "/type/X::Composition::NotComposable" }
-,
-{ category: "class", value: "X::Bind::NativeType", url: "/type/X::Bind::NativeType" }
-,
-{ category: "class", value: "X::Bind::Slice", url: "/type/X::Bind::Slice" }
-,
-{ category: "class", value: "X::Does::TypeObject", url: "/type/X::Does::TypeObject" }
-,
-{ category: "class", value: "X::Promise::CauseOnlyValidOnBroken", url: "/type/X::Promise::CauseOnlyValidOnBroken" }
-,
-{ category: "class", value: "X::Promise::Vowed", url: "/type/X::Promise::Vowed" }
-,
-{ category: "class", value: "X::TypeCheck::Assignment", url: "/type/X::TypeCheck::Assignment" }
-,
-{ category: "class", value: "X::TypeCheck::Binding", url: "/type/X::TypeCheck::Binding" }
-,
-{ category: "class", value: "X::TypeCheck::Splice", url: "/type/X::TypeCheck::Splice" }
-,
-{ category: "class", value: "X::TypeCheck::Return", url: "/type/X::TypeCheck::Return" }
-,
-{ category: "class", value: "X::Numeric::Real", url: "/type/X::Numeric::Real" }
-,
-{ category: "class", value: "X::Signature::Placeholder", url: "/type/X::Signature::Placeholder" }
-,
-{ category: "class", value: "X::Signature::NameClash", url: "/type/X::Signature::NameClash" }
-,
-{ category: "class", value: "Pod::Block::Code", url: "/type/Pod::Block::Code" }
+{ category: "class", value: "Pod::Block::Table", url: "/type/Pod::Block::Table" }
 ,
 { category: "class", value: "Pod::Block::Declarator", url: "/type/Pod::Block::Declarator" }
 ,
 { category: "class", value: "Pod::Block::Named", url: "/type/Pod::Block::Named" }
 ,
-{ category: "class", value: "Pod::Block::Table", url: "/type/Pod::Block::Table" }
+{ category: "class", value: "Pod::Block::Comment", url: "/type/Pod::Block::Comment" }
 ,
 { category: "class", value: "Pod::Block::Para", url: "/type/Pod::Block::Para" }
 ,
-{ category: "class", value: "Pod::Block::Comment", url: "/type/Pod::Block::Comment" }
+{ category: "class", value: "Pod::Block::Code", url: "/type/Pod::Block::Code" }
+,
+{ category: "class", value: "CompUnit::Repository::Installation", url: "/type/CompUnit::Repository::Installation" }
+,
+{ category: "class", value: "CompUnit::Repository::FileSystem", url: "/type/CompUnit::Repository::FileSystem" }
+,
+{ category: "class", value: "X::Cannot::Lazy", url: "/type/X::Cannot::Lazy" }
+,
+{ category: "class", value: "X::Signature::NameClash", url: "/type/X::Signature::NameClash" }
+,
+{ category: "class", value: "X::Signature::Placeholder", url: "/type/X::Signature::Placeholder" }
+,
+{ category: "class", value: "X::Attribute::NoPackage", url: "/type/X::Attribute::NoPackage" }
+,
+{ category: "class", value: "X::Attribute::Required", url: "/type/X::Attribute::Required" }
+,
+{ category: "class", value: "X::Attribute::Package", url: "/type/X::Attribute::Package" }
+,
+{ category: "class", value: "X::Attribute::Undeclared", url: "/type/X::Attribute::Undeclared" }
+,
+{ category: "class", value: "X::Constructor::Positional", url: "/type/X::Constructor::Positional" }
+,
+{ category: "class", value: "X::Composition::NotComposable", url: "/type/X::Composition::NotComposable" }
+,
+{ category: "class", value: "X::Augment::NoSuchType", url: "/type/X::Augment::NoSuchType" }
+,
+{ category: "class", value: "X::DateTime::TimezoneClash", url: "/type/X::DateTime::TimezoneClash" }
+,
+{ category: "class", value: "X::Parameter::Default", url: "/type/X::Parameter::Default" }
+,
+{ category: "class", value: "X::Parameter::MultipleTypeConstraints", url: "/type/X::Parameter::MultipleTypeConstraints" }
+,
+{ category: "class", value: "X::Parameter::Placeholder", url: "/type/X::Parameter::Placeholder" }
+,
+{ category: "class", value: "X::Parameter::WrongOrder", url: "/type/X::Parameter::WrongOrder" }
+,
+{ category: "class", value: "X::Parameter::Twigil", url: "/type/X::Parameter::Twigil" }
+,
+{ category: "class", value: "X::Package::Stubbed", url: "/type/X::Package::Stubbed" }
+,
+{ category: "class", value: "X::Export::NameClash", url: "/type/X::Export::NameClash" }
+,
+{ category: "class", value: "X::Does::TypeObject", url: "/type/X::Does::TypeObject" }
+,
+{ category: "class", value: "X::Anon::Multi", url: "/type/X::Anon::Multi" }
+,
+{ category: "class", value: "X::Anon::Augment", url: "/type/X::Anon::Augment" }
+,
+{ category: "class", value: "X::Eval::NoSuchLang", url: "/type/X::Eval::NoSuchLang" }
+,
+{ category: "class", value: "X::Proc::Unsuccessful", url: "/type/X::Proc::Unsuccessful" }
+,
+{ category: "role", value: "X::Proc::Async", url: "/type/X::Proc::Async" }
+,
+{ category: "class", value: "X::Scheduler::CueInNaNSeconds", url: "/type/X::Scheduler::CueInNaNSeconds" }
+,
+{ category: "class", value: "X::Str::Numeric", url: "/type/X::Str::Numeric" }
+,
+{ category: "class", value: "X::Dynamic::NotFound", url: "/type/X::Dynamic::NotFound" }
+,
+{ category: "class", value: "X::Inheritance::NotComposed", url: "/type/X::Inheritance::NotComposed" }
+,
+{ category: "class", value: "X::Inheritance::Unsupported", url: "/type/X::Inheritance::Unsupported" }
+,
+{ category: "class", value: "X::Bind::Slice", url: "/type/X::Bind::Slice" }
+,
+{ category: "class", value: "X::Bind::NativeType", url: "/type/X::Bind::NativeType" }
+,
+{ category: "class", value: "X::Sequence::Deduction", url: "/type/X::Sequence::Deduction" }
+,
+{ category: "class", value: "X::Phaser::Multiple", url: "/type/X::Phaser::Multiple" }
+,
+{ category: "class", value: "X::Phaser::PrePost", url: "/type/X::Phaser::PrePost" }
+,
+{ category: "class", value: "X::Method::InvalidQualifier", url: "/type/X::Method::InvalidQualifier" }
+,
+{ category: "class", value: "X::Method::NotFound", url: "/type/X::Method::NotFound" }
+,
+{ category: "class", value: "X::IO::Chdir", url: "/type/X::IO::Chdir" }
+,
+{ category: "class", value: "X::IO::Copy", url: "/type/X::IO::Copy" }
+,
+{ category: "class", value: "X::IO::Unlink", url: "/type/X::IO::Unlink" }
+,
+{ category: "class", value: "X::IO::DoesNotExist", url: "/type/X::IO::DoesNotExist" }
+,
+{ category: "class", value: "X::IO::Cwd", url: "/type/X::IO::Cwd" }
+,
+{ category: "class", value: "X::IO::Mkdir", url: "/type/X::IO::Mkdir" }
+,
+{ category: "class", value: "X::IO::Symlink", url: "/type/X::IO::Symlink" }
+,
+{ category: "class", value: "X::IO::Rename", url: "/type/X::IO::Rename" }
+,
+{ category: "class", value: "X::IO::Rmdir", url: "/type/X::IO::Rmdir" }
+,
+{ category: "class", value: "X::IO::Move", url: "/type/X::IO::Move" }
+,
+{ category: "class", value: "X::IO::Link", url: "/type/X::IO::Link" }
+,
+{ category: "class", value: "X::IO::Dir", url: "/type/X::IO::Dir" }
+,
+{ category: "class", value: "X::IO::Chmod", url: "/type/X::IO::Chmod" }
+,
+{ category: "class", value: "X::Syntax::NegatedPair", url: "/type/X::Syntax::NegatedPair" }
+,
+{ category: "class", value: "X::Syntax::Perl5Var", url: "/type/X::Syntax::Perl5Var" }
+,
+{ category: "class", value: "X::Syntax::UnlessElse", url: "/type/X::Syntax::UnlessElse" }
+,
+{ category: "class", value: "X::Syntax::Confused", url: "/type/X::Syntax::Confused" }
+,
+{ category: "class", value: "X::Syntax::NoSelf", url: "/type/X::Syntax::NoSelf" }
+,
+{ category: "class", value: "X::Syntax::InfixInTermPosition", url: "/type/X::Syntax::InfixInTermPosition" }
+,
+{ category: "class", value: "X::Syntax::Malformed", url: "/type/X::Syntax::Malformed" }
+,
+{ category: "class", value: "X::Syntax::Missing", url: "/type/X::Syntax::Missing" }
+,
+{ category: "class", value: "X::Syntax::Reserved", url: "/type/X::Syntax::Reserved" }
+,
+{ category: "class", value: "X::Syntax::P5", url: "/type/X::Syntax::P5" }
+,
+{ category: "class", value: "X::Caller::NotDynamic", url: "/type/X::Caller::NotDynamic" }
+,
+{ category: "class", value: "X::Role::Initialization", url: "/type/X::Role::Initialization" }
+,
+{ category: "class", value: "X::ControlFlow::Return", url: "/type/X::ControlFlow::Return" }
+,
+{ category: "class", value: "X::Assignment::RO", url: "/type/X::Assignment::RO" }
+,
+{ category: "class", value: "X::Temporal::InvalidFormat", url: "/type/X::Temporal::InvalidFormat" }
+,
+{ category: "class", value: "X::Mixin::NotComposable", url: "/type/X::Mixin::NotComposable" }
+,
+{ category: "class", value: "X::Placeholder::Block", url: "/type/X::Placeholder::Block" }
+,
+{ category: "class", value: "X::Placeholder::Mainline", url: "/type/X::Placeholder::Mainline" }
+,
+{ category: "class", value: "X::TypeCheck::Binding", url: "/type/X::TypeCheck::Binding" }
+,
+{ category: "class", value: "X::TypeCheck::Splice", url: "/type/X::TypeCheck::Splice" }
+,
+{ category: "class", value: "X::TypeCheck::Assignment", url: "/type/X::TypeCheck::Assignment" }
+,
+{ category: "class", value: "X::TypeCheck::Return", url: "/type/X::TypeCheck::Return" }
+,
+{ category: "class", value: "X::Declaration::Scope", url: "/type/X::Declaration::Scope" }
+,
+{ category: "class", value: "X::Numeric::Real", url: "/type/X::Numeric::Real" }
+,
+{ category: "class", value: "X::Channel::SendOnClosed", url: "/type/X::Channel::SendOnClosed" }
+,
+{ category: "class", value: "X::Channel::ReceiveOnClosed", url: "/type/X::Channel::ReceiveOnClosed" }
+,
+{ category: "class", value: "X::Promise::CauseOnlyValidOnBroken", url: "/type/X::Promise::CauseOnlyValidOnBroken" }
+,
+{ category: "class", value: "X::Promise::Vowed", url: "/type/X::Promise::Vowed" }
+,
+{ category: "class", value: "X::Seq::Consumed", url: "/type/X::Seq::Consumed" }
 ,
 { category: "class", value: "IO::Socket::Async::ListenSocket", url: "/type/IO::Socket::Async::ListenSocket" }
-,
-{ category: "class", value: "X::Proc::Async::OpenForWriting", url: "/type/X::Proc::Async::OpenForWriting" }
-,
-{ category: "class", value: "X::Proc::Async::CharsOrBytes", url: "/type/X::Proc::Async::CharsOrBytes" }
 ,
 { category: "class", value: "X::Proc::Async::TapBeforeSpawn", url: "/type/X::Proc::Async::TapBeforeSpawn" }
 ,
 { category: "class", value: "X::Proc::Async::AlreadyStarted", url: "/type/X::Proc::Async::AlreadyStarted" }
 ,
-{ category: "class", value: "X::Proc::Async::BindOrUse", url: "/type/X::Proc::Async::BindOrUse" }
-,
 { category: "class", value: "X::Proc::Async::MustBeStarted", url: "/type/X::Proc::Async::MustBeStarted" }
 ,
-{ category: "class", value: "X::Syntax::Comment::Embedded", url: "/type/X::Syntax::Comment::Embedded" }
+{ category: "class", value: "X::Proc::Async::OpenForWriting", url: "/type/X::Proc::Async::OpenForWriting" }
 ,
-{ category: "class", value: "X::Syntax::Number::RadixOutOfRange", url: "/type/X::Syntax::Number::RadixOutOfRange" }
+{ category: "class", value: "X::Proc::Async::CharsOrBytes", url: "/type/X::Proc::Async::CharsOrBytes" }
 ,
-{ category: "class", value: "X::Syntax::Variable::Numeric", url: "/type/X::Syntax::Variable::Numeric" }
-,
-{ category: "class", value: "X::Syntax::Variable::Twigil", url: "/type/X::Syntax::Variable::Twigil" }
-,
-{ category: "class", value: "X::Syntax::Variable::Match", url: "/type/X::Syntax::Variable::Match" }
-,
-{ category: "class", value: "X::Syntax::Augment::WithoutMonkeyTyping", url: "/type/X::Syntax::Augment::WithoutMonkeyTyping" }
-,
-{ category: "class", value: "X::Syntax::Term::MissingInitializer", url: "/type/X::Syntax::Term::MissingInitializer" }
-,
-{ category: "class", value: "X::Syntax::Regex::SolitaryQuantifier", url: "/type/X::Syntax::Regex::SolitaryQuantifier" }
-,
-{ category: "class", value: "X::Syntax::Regex::Adverb", url: "/type/X::Syntax::Regex::Adverb" }
-,
-{ category: "class", value: "X::Syntax::Self::WithoutObject", url: "/type/X::Syntax::Self::WithoutObject" }
-,
-{ category: "class", value: "X::Syntax::Signature::InvocantMarker", url: "/type/X::Syntax::Signature::InvocantMarker" }
-,
-{ category: "class", value: "X::Declaration::Scope::Multi", url: "/type/X::Declaration::Scope::Multi" }
-,
-{ category: "class", value: "X::Method::Private::Unqualified", url: "/type/X::Method::Private::Unqualified" }
+{ category: "class", value: "X::Proc::Async::BindOrUse", url: "/type/X::Proc::Async::BindOrUse" }
 ,
 { category: "class", value: "X::Method::Private::Permission", url: "/type/X::Method::Private::Permission" }
 ,
+{ category: "class", value: "X::Method::Private::Unqualified", url: "/type/X::Method::Private::Unqualified" }
+,
+{ category: "class", value: "X::Syntax::Signature::InvocantMarker", url: "/type/X::Syntax::Signature::InvocantMarker" }
+,
+{ category: "class", value: "X::Syntax::Augment::WithoutMonkeyTyping", url: "/type/X::Syntax::Augment::WithoutMonkeyTyping" }
+,
+{ category: "class", value: "X::Syntax::Self::WithoutObject", url: "/type/X::Syntax::Self::WithoutObject" }
+,
+{ category: "class", value: "X::Syntax::Comment::Embedded", url: "/type/X::Syntax::Comment::Embedded" }
+,
+{ category: "class", value: "X::Syntax::Variable::Numeric", url: "/type/X::Syntax::Variable::Numeric" }
+,
+{ category: "class", value: "X::Syntax::Variable::Match", url: "/type/X::Syntax::Variable::Match" }
+,
+{ category: "class", value: "X::Syntax::Variable::Twigil", url: "/type/X::Syntax::Variable::Twigil" }
+,
+{ category: "class", value: "X::Syntax::Term::MissingInitializer", url: "/type/X::Syntax::Term::MissingInitializer" }
+,
+{ category: "class", value: "X::Syntax::Regex::Adverb", url: "/type/X::Syntax::Regex::Adverb" }
+,
+{ category: "class", value: "X::Syntax::Regex::SolitaryQuantifier", url: "/type/X::Syntax::Regex::SolitaryQuantifier" }
+,
+{ category: "class", value: "X::Syntax::Number::RadixOutOfRange", url: "/type/X::Syntax::Number::RadixOutOfRange" }
+,
+{ category: "class", value: "X::Declaration::Scope::Multi", url: "/type/X::Declaration::Scope::Multi" }
+,
 { category: "class", value: "int", url: "/type/int" }
-,
-{ category: "Language", value: "Perl to Raku guide - in a nutshell", url: "/language/5to6-nutshell" }
-,
-{ category: "Language", value: "Syntax", url: "/language/syntax" }
-,
-{ category: "Language", value: "Operators", url: "/language/operators" }
-,
-{ category: "Language", value: "Module packages", url: "/language/module-packages" }
-,
-{ category: "Language", value: "System interaction", url: "/language/system" }
-,
-{ category: "Language", value: "Regexes", url: "/language/regexes" }
-,
-{ category: "Language", value: "Containers", url: "/language/containers" }
-,
-{ category: "Language", value: "Opener graphemes", url: "/language/opener-chars" }
-,
-{ category: "Language", value: "Type system", url: "/language/typesystem" }
-,
-{ category: "Language", value: "Brief introduction", url: "/language/intro" }
-,
-{ category: "Language", value: "Experimental features", url: "/language/experimental" }
 ,
 { category: "Language", value: "Concurrency", url: "/language/concurrency" }
 ,
-{ category: "Language", value: "Raku native types", url: "/language/nativetypes" }
-,
-{ category: "Language", value: "Functions", url: "/language/functions" }
-,
-{ category: "Language", value: "Contexts and contextualizers", url: "/language/contexts" }
-,
-{ category: "Language", value: "Inter-process communication", url: "/language/ipc" }
-,
-{ category: "Language", value: "Input/Output", url: "/language/io" }
-,
-{ category: "Language", value: "Traps to avoid", url: "/language/traps" }
-,
-{ category: "Language", value: "Raku by example P6-101", url: "/language/101-basics" }
-,
-{ category: "Language", value: "Variables", url: "/language/variables" }
-,
-{ category: "Language", value: "Community", url: "/language/community" }
-,
-{ category: "Language", value: "Subscripts", url: "/language/subscripts" }
-,
-{ category: "Language", value: "Enumeration", url: "/language/enumeration" }
-,
-{ category: "Language", value: "Unicode versus ASCII symbols", url: "/language/unicode_ascii" }
-,
-{ category: "Language", value: "Modules", url: "/language/modules" }
-,
-{ category: "Language", value: "Date and time functions", url: "/language/temporal" }
-,
-{ category: "Language", value: "Classes and objects", url: "/language/classtut" }
-,
-{ category: "Language", value: "Native calling interface", url: "/language/nativecall" }
-,
-{ category: "Language", value: "Traits", url: "/language/traits" }
-,
-{ category: "Language", value: "Newline handling in Raku", url: "/language/newline" }
-,
-{ category: "Language", value: "Iterating", url: "/language/iterating" }
-,
-{ category: "Language", value: "Terms", url: "/language/terms" }
-,
-{ category: "Language", value: "Statement prefixes", url: "/language/statement-prefixes" }
-,
-{ category: "Language", value: "Grammar tutorial", url: "/language/grammar_tutorial" }
-,
-{ category: "Language", value: "Doing math with Raku", url: "/language/math" }
-,
-{ category: "Language", value: "Perl to Raku guide - special variables", url: "/language/5to6-perlvar" }
-,
-{ category: "Language", value: "Perl to Raku guide - syntax", url: "/language/5to6-perlsyn" }
-,
-{ category: "Language", value: "Entering unicode characters", url: "/language/unicode_entry" }
-,
-{ category: "Language", value: "Exceptions", url: "/language/exceptions" }
-,
-{ category: "Language", value: "Perl to Raku guide - operators", url: "/language/5to6-perlop" }
-,
-{ category: "Language", value: "Sets, bags, and mixes", url: "/language/setbagmix" }
-,
-{ category: "Language", value: "Lists, sequences, and arrays", url: "/language/list" }
-,
-{ category: "Language", value: "CompUnits and where to find them", url: "/language/compilation" }
-,
-{ category: "Language", value: "Object orientation", url: "/language/objects" }
-,
-{ category: "Language", value: "Creating operators", url: "/language/optut" }
-,
-{ category: "Language", value: "Quoting constructs", url: "/language/quoting" }
-,
-{ category: "Language", value: "Control flow", url: "/language/control" }
-,
-{ category: "Language", value: "Module development utilities", url: "/language/modules-extra" }
-,
-{ category: "Language", value: "Grammars", url: "/language/grammars" }
-,
-{ category: "Language", value: "Perl to Raku guide - functions", url: "/language/5to6-perlfunc" }
-,
-{ category: "Language", value: "About the docs", url: "/language/about" }
-,
-{ category: "Language", value: "Packages", url: "/language/packages" }
-,
-{ category: "Language", value: "Core modules", url: "/language/modules-core" }
-,
-{ category: "Language", value: "Unicode", url: "/language/unicode" }
-,
-{ category: "Language", value: "Performance", url: "/language/performance" }
-,
-{ category: "Language", value: "Command line interface", url: "/language/create-cli" }
-,
 { category: "Language", value: "Glossary", url: "/language/glossary" }
-,
-{ category: "Language", value: "Regexes: best practices and gotchas", url: "/language/regexes-best-practices" }
-,
-{ category: "Language", value: "Python to Raku - nutshell", url: "/language/py-nutshell" }
-,
-{ category: "Language", value: "JavaScript (Node.js) to Raku - nutshell", url: "/language/js-nutshell" }
-,
-{ category: "Language", value: "Pod6", url: "/language/pod" }
-,
-{ category: "Language", value: "Phasers", url: "/language/phasers" }
-,
-{ category: "Language", value: "Pragmas", url: "/language/pragmas" }
-,
-{ category: "Language", value: "Haskell to Raku - nutshell", url: "/language/haskell-to-p6" }
-,
-{ category: "Language", value: "Testing", url: "/language/testing" }
 ,
 { category: "Language", value: "Data structures", url: "/language/structures" }
 ,
-{ category: "Language", value: "Input/Output the definitive guide", url: "/language/io-guide" }
+{ category: "Language", value: "Perl to Raku guide - special variables", url: "/language/5to6-perlvar" }
 ,
-{ category: "Language", value: "Numerics", url: "/language/numerics" }
-,
-{ category: "Language", value: "Metaobject protocol (MOP)", url: "/language/mop" }
-,
-{ category: "Language", value: "Pod6 tables", url: "/language/tables" }
-,
-{ category: "Language", value: "FAQ", url: "/language/faq" }
-,
-{ category: "Language", value: "Perl to Raku guide - overview", url: "/language/5to6-overview" }
+{ category: "Language", value: "JavaScript (Node.js) to Raku - nutshell", url: "/language/js-nutshell" }
 ,
 { category: "Language", value: "Ruby to Raku - nutshell", url: "/language/rb-nutshell" }
 ,
+{ category: "Language", value: "FAQ", url: "/language/faq" }
+,
+{ category: "Language", value: "System interaction", url: "/language/system" }
+,
+{ category: "Language", value: "Grammar tutorial", url: "/language/grammar_tutorial" }
+,
+{ category: "Language", value: "Sets, bags, and mixes", url: "/language/setbagmix" }
+,
+{ category: "Language", value: "Creating operators", url: "/language/optut" }
+,
+{ category: "Language", value: "Syntax", url: "/language/syntax" }
+,
+{ category: "Language", value: "Module packages", url: "/language/module-packages" }
+,
+{ category: "Language", value: "Community", url: "/language/community" }
+,
+{ category: "Language", value: "Haskell to Raku - nutshell", url: "/language/haskell-to-p6" }
+,
+{ category: "Language", value: "Classes and objects", url: "/language/classtut" }
+,
+{ category: "Language", value: "Perl to Raku guide - functions", url: "/language/5to6-perlfunc" }
+,
+{ category: "Language", value: "Containers", url: "/language/containers" }
+,
+{ category: "Language", value: "Raku native types", url: "/language/nativetypes" }
+,
+{ category: "Language", value: "Raku by example 101", url: "/language/101-basics" }
+,
+{ category: "Language", value: "Numerics", url: "/language/numerics" }
+,
+{ category: "Language", value: "Perl to Raku guide - operators", url: "/language/5to6-perlop" }
+,
+{ category: "Language", value: "Modules", url: "/language/modules" }
+,
+{ category: "Language", value: "Unicode", url: "/language/unicode" }
+,
+{ category: "Language", value: "Phasers", url: "/language/phasers" }
+,
+{ category: "Language", value: "CompUnits and where to find them", url: "/language/compilation" }
+,
+{ category: "Language", value: "Performance", url: "/language/performance" }
+,
+{ category: "Language", value: "Statement prefixes", url: "/language/statement-prefixes" }
+,
+{ category: "Language", value: "Quoting constructs", url: "/language/quoting" }
+,
+{ category: "Language", value: "Type system", url: "/language/typesystem" }
+,
 { category: "Language", value: "Hashes and maps", url: "/language/hashmap" }
+,
+{ category: "Language", value: "Pod6", url: "/language/pod" }
+,
+{ category: "Language", value: "Python to Raku - nutshell", url: "/language/py-nutshell" }
+,
+{ category: "Language", value: "Module development utilities", url: "/language/modules-extra" }
+,
+{ category: "Language", value: "Native calling interface", url: "/language/nativecall" }
+,
+{ category: "Language", value: "Traps to avoid", url: "/language/traps" }
+,
+{ category: "Language", value: "Regexes", url: "/language/regexes" }
+,
+{ category: "Language", value: "Variables", url: "/language/variables" }
+,
+{ category: "Language", value: "Grammars", url: "/language/grammars" }
+,
+{ category: "Language", value: "Lists, sequences, and arrays", url: "/language/list" }
+,
+{ category: "Language", value: "Core modules", url: "/language/modules-core" }
+,
+{ category: "Language", value: "Inter-process communication", url: "/language/ipc" }
+,
+{ category: "Language", value: "Experimental features", url: "/language/experimental" }
+,
+{ category: "Language", value: "Functions", url: "/language/functions" }
+,
+{ category: "Language", value: "Pragmas", url: "/language/pragmas" }
+,
+{ category: "Language", value: "Contexts and contextualizers", url: "/language/contexts" }
+,
+{ category: "Language", value: "Enumeration", url: "/language/enumeration" }
+,
+{ category: "Language", value: "Control flow", url: "/language/control" }
+,
+{ category: "Language", value: "Date and time functions", url: "/language/temporal" }
+,
+{ category: "Language", value: "Regexes: best practices and gotchas", url: "/language/regexes-best-practices" }
+,
+{ category: "Language", value: "Command line interface", url: "/language/create-cli" }
+,
+{ category: "Language", value: "Input/Output the definitive guide", url: "/language/io-guide" }
+,
+{ category: "Language", value: "Packages", url: "/language/packages" }
+,
+{ category: "Language", value: "Operators", url: "/language/operators" }
+,
+{ category: "Language", value: "Perl to Raku guide - in a nutshell", url: "/language/5to6-nutshell" }
+,
+{ category: "Language", value: "Entering unicode characters", url: "/language/unicode_entry" }
+,
+{ category: "Language", value: "Perl to Raku guide - syntax", url: "/language/5to6-perlsyn" }
+,
+{ category: "Language", value: "Object orientation", url: "/language/objects" }
+,
+{ category: "Language", value: "Perl to Raku guide - overview", url: "/language/5to6-overview" }
+,
+{ category: "Language", value: "Iterating", url: "/language/iterating" }
+,
+{ category: "Language", value: "Subscripts", url: "/language/subscripts" }
+,
+{ category: "Language", value: "Unicode versus ASCII symbols", url: "/language/unicode_ascii" }
+,
+{ category: "Language", value: "Exceptions", url: "/language/exceptions" }
+,
+{ category: "Language", value: "Traits", url: "/language/traits" }
+,
+{ category: "Language", value: "Metaobject protocol (MOP)", url: "/language/mop" }
+,
+{ category: "Language", value: "Newline handling in Raku", url: "/language/newline" }
+,
+{ category: "Language", value: "Pod6 tables", url: "/language/tables" }
+,
+{ category: "Language", value: "About the docs", url: "/language/about" }
+,
+{ category: "Language", value: "Doing math with Raku", url: "/language/math" }
+,
+{ category: "Language", value: "Brief introduction", url: "/language/intro" }
+,
+{ category: "Language", value: "Terms", url: "/language/terms" }
+,
+{ category: "Language", value: "Testing", url: "/language/testing" }
+,
+{ category: "Language", value: "Opener graphemes", url: "/language/opener-chars" }
+,
+{ category: "Language", value: "Input/Output", url: "/language/io" }
 ,
 { category: "Language", value: "Independent routines", url: "/language/independent-routines" }
 ,
-{ category: "programs", value: "Debugging", url: "/programs/01-debugging" }
-,
 { category: "programs", value: "Shell environment variables used by Raku", url: "/programs/03-environment-variables" }
+,
+{ category: "programs", value: "Debugging", url: "/programs/01-debugging" }
 ,
 { category: "programs", value: "Reading the docs", url: "/programs/02-reading-docs" }
 ,
@@ -1091,7 +1091,7 @@ $(function(){
 ,
 { category: "Routine", value: "Bool", url: "/routine/Bool" }
 ,
-{ category: "method", value: "Bridge", url: "/routine/Bridge" }
+{ category: "Routine", value: "Bridge", url: "/routine/Bridge" }
 ,
 { category: "Routine", value: "CALL-ME", url: "/routine/CALL-ME" }
 ,
@@ -1189,7 +1189,7 @@ $(function(){
 ,
 { category: "method", value: "Setty", url: "/routine/Setty" }
 ,
-{ category: "method", value: "Slip", url: "/routine/Slip" }
+{ category: "Routine", value: "Slip", url: "/routine/Slip" }
 ,
 { category: "Routine", value: "Str", url: "/routine/Str" }
 ,
@@ -1527,7 +1527,7 @@ $(function(){
 ,
 { category: "infix", value: "coll", url: "/routine/coll" }
 ,
-{ category: "method", value: "collate", url: "/routine/collate" }
+{ category: "Routine", value: "collate", url: "/routine/collate" }
 ,
 { category: "method", value: "column", url: "/routine/column" }
 ,
@@ -1624,6 +1624,8 @@ $(function(){
 { category: "method", value: "daycount", url: "/routine/daycount" }
 ,
 { category: "method", value: "days-in-month", url: "/routine/days-in-month" }
+,
+{ category: "method", value: "dd-mm-yyyy", url: "/routine/dd-mm-yyyy" }
 ,
 { category: "method", value: "declaration", url: "/routine/declaration" }
 ,
@@ -1783,6 +1785,8 @@ $(function(){
 ,
 { category: "Routine", value: "first", url: "/routine/first" }
 ,
+{ category: "method", value: "first-date-in-month", url: "/routine/first-date-in-month" }
+,
 { category: "Routine", value: "flat", url: "/routine/flat" }
 ,
 { category: "Routine", value: "flatmap", url: "/routine/flatmap" }
@@ -1909,7 +1913,7 @@ $(function(){
 ,
 { category: "sub", value: "infix:<\/>", url: "/routine/infix:<$SOLIDUS>" }
 ,
-{ category: "sub", value: "infix:<cmp>", url: "/routine/infix:<cmp>" }
+{ category: "Routine", value: "infix:<cmp>", url: "/routine/infix:<cmp>" }
 ,
 { category: "method", value: "infix:<eqv>", url: "/routine/infix:<eqv>" }
 ,
@@ -1926,8 +1930,6 @@ $(function(){
 { category: "sub", value: "infix:«>=»", url: "/routine/infix:«>=»" }
 ,
 { category: "sub", value: "infix:«>»", url: "/routine/infix:«>»" }
-,
-{ category: "sub", value: "infix:«cmp»", url: "/routine/infix:«cmp»" }
 ,
 { category: "method", value: "install", url: "/routine/install" }
 ,
@@ -1978,6 +1980,8 @@ $(function(){
 { category: "sub", value: "is-deeply", url: "/routine/is-deeply" }
 ,
 { category: "method", value: "is-hidden", url: "/routine/is-hidden" }
+,
+{ category: "method", value: "is-implementation-detail", url: "/routine/is-implementation-detail" }
 ,
 { category: "method", value: "is-initial-thread", url: "/routine/is-initial-thread" }
 ,
@@ -2042,6 +2046,8 @@ $(function(){
 { category: "method", value: "lang", url: "/routine/lang" }
 ,
 { category: "method", value: "last", url: "/routine/last" }
+,
+{ category: "method", value: "last-date-in-month", url: "/routine/last-date-in-month" }
 ,
 { category: "sub", value: "lastcall", url: "/routine/lastcall" }
 ,
@@ -2148,6 +2154,8 @@ $(function(){
 { category: "method", value: "mixin_attribute", url: "/routine/mixin_attribute" }
 ,
 { category: "Routine", value: "mkdir", url: "/routine/mkdir" }
+,
+{ category: "method", value: "mm-dd-yyyy", url: "/routine/mm-dd-yyyy" }
 ,
 { category: "infix", value: "mod", url: "/routine/mod" }
 ,
@@ -3145,8 +3153,6 @@ $(function(){
 ,
 { category: "regex quantifier", value: "+", url: "/syntax/+" }
 ,
-{ category: "syntax", value: "->", url: "/syntax/->" }
-,
 { category: "syntax", value: ".", url: "/syntax/." }
 ,
 { category: "quote", value: "\/ \/", url: "/syntax/$SOLIDUS $SOLIDUS" }
@@ -3233,6 +3239,8 @@ $(function(){
 ,
 { category: "syntax", value: "HOW", url: "/syntax/HOW" }
 ,
+{ category: "hash (Basics)", value: "Hashes", url: "/syntax/Hashes" }
+,
 { category: "Phasers", value: "INIT", url: "/syntax/INIT" }
 ,
 { category: "p6doc", value: "INTRODUCTION", url: "/syntax/INTRODUCTION" }
@@ -3279,17 +3287,29 @@ $(function(){
 ,
 { category: "syntax", value: "S\/\/\/", url: "/syntax/S$SOLIDUS$SOLIDUS$SOLIDUS" }
 ,
+{ category: "scalar (Basics)", value: "Scalar", url: "/syntax/Scalar" }
+,
 { category: "syntax", value: "Single Argument Rule", url: "/syntax/Single Argument Rule" }
+,
+{ category: "statement (Basics)", value: "Statements", url: "/syntax/Statements" }
+,
+{ category: "string literal (Basics)", value: "String literals", url: "/syntax/String literals" }
 ,
 { category: "TOP", value: "TOP", url: "/syntax/TOP" }
 ,
 { category: "syntax", value: "TR\/\/\/", url: "/syntax/TR$SOLIDUS$SOLIDUS$SOLIDUS" }
 ,
+{ category: "topic variable (Basics)", value: "Topic variable", url: "/syntax/Topic variable" }
+,
 { category: "syntax", value: "Trait is default", url: "/syntax/Trait is default" }
+,
+{ category: "Python", value: "Tuples", url: "/syntax/Tuples" }
 ,
 { category: "Phasers", value: "UNDO", url: "/syntax/UNDO" }
 ,
 { category: "syntax", value: "VAR", url: "/syntax/VAR" }
+,
+{ category: "variable interpolation (Basics)", value: "Variable interpolation", url: "/syntax/Variable interpolation" }
 ,
 { category: "syntax", value: "WHAT", url: "/syntax/WHAT" }
 ,
@@ -3300,8 +3320,6 @@ $(function(){
 { category: "syntax", value: "WHO", url: "/syntax/WHO" }
 ,
 { category: "syntax", value: "WHY", url: "/syntax/WHY" }
-,
-{ category: "Zen slice (Basics)", value: "Zen slice", url: "/syntax/Zen slice" }
 ,
 { category: "regex", value: "[ ]", url: "/syntax/[ ]" }
 ,
@@ -3337,8 +3355,6 @@ $(function(){
 ,
 { category: "regex", value: "before", url: "/syntax/before" }
 ,
-{ category: "block (Basics)", value: "block", url: "/syntax/block" }
-,
 { category: "control flow", value: "blocks", url: "/syntax/blocks" }
 ,
 { category: ":cached", value: "cached", url: "/syntax/cached" }
@@ -3365,8 +3381,6 @@ $(function(){
 ,
 { category: "declarator", value: "has", url: "/syntax/has" }
 ,
-{ category: "syntax", value: "hash", url: "/syntax/hash" }
-,
 { category: "quote", value: "heredocs :to", url: "/syntax/heredocs :to" }
 ,
 { category: "identifier", value: "identifiers", url: "/syntax/identifiers" }
@@ -3374,8 +3388,6 @@ $(function(){
 { category: "control flow", value: "if", url: "/syntax/if" }
 ,
 { category: "Python", value: "input", url: "/syntax/input" }
-,
-{ category: "syntax", value: "interpolation", url: "/syntax/interpolation" }
 ,
 { category: "classes", value: "is", url: "/syntax/is" }
 ,
@@ -3412,8 +3424,6 @@ $(function(){
 { category: "pack", value: "pack", url: "/syntax/pack" }
 ,
 { category: "regex", value: "positive lookaround assertion", url: "/syntax/positive lookaround assertion" }
-,
-{ category: "control flow", value: "proceed", url: "/syntax/proceed" }
 ,
 { category: "declarator", value: "proto", url: "/syntax/proto" }
 ,
@@ -3455,33 +3465,25 @@ $(function(){
 ,
 { category: "syntax", value: "s\/\/\/", url: "/syntax/s$SOLIDUS$SOLIDUS$SOLIDUS" }
 ,
-{ category: "syntax", value: "scalar", url: "/syntax/scalar" }
-,
 { category: "syntax", value: "self", url: "/syntax/self" }
 ,
 { category: "sink (statement prefix)", value: "sink", url: "/syntax/sink" }
-,
-{ category: "syntax", value: "stable sort", url: "/syntax/stable sort" }
 ,
 { category: "syntax", value: "start", url: "/syntax/start" }
 ,
 { category: "declarator", value: "state", url: "/syntax/state" }
 ,
-{ category: "statement (Basics)", value: "statement", url: "/syntax/statement" }
-,
 { category: "control flow", value: "statements", url: "/syntax/statements" }
 ,
-{ category: "syntax", value: "string literal", url: "/syntax/string literal" }
-,
 { category: "declarator", value: "sub", url: "/syntax/sub" }
-,
-{ category: "control flow", value: "succeed", url: "/syntax/succeed" }
 ,
 { category: "supply (statement prefix)", value: "supply", url: "/syntax/supply" }
 ,
 { category: "control flow", value: "supply emit", url: "/syntax/supply emit" }
 ,
 { category: "<sym>", value: "sym", url: "/syntax/sym" }
+,
+{ category: "->", value: "syntax", url: "/syntax/syntax" }
 ,
 { category: "regex", value: "tilde", url: "/syntax/tilde" }
 ,
@@ -3499,10 +3501,6 @@ $(function(){
 ,
 { category: "syntax", value: "use", url: "/syntax/use" }
 ,
-{ category: "v6 (Basics)", value: "v6", url: "/syntax/v6" }
-,
-{ category: "syntax", value: "variables, $_", url: "/syntax/variables, $_" }
-,
 { category: "control flow", value: "when", url: "/syntax/when" }
 ,
 { category: "control flow", value: "while until", url: "/syntax/while until" }
@@ -3515,7 +3513,365 @@ $(function(){
 ,
 { category: "twigil", value: "~", url: "/syntax/~" }
 ,
-{ category: "Reference", value: "PERL6LIB", url: "/language/5to6-nutshell#index-entry-PERL6LIB-PERL6LIB" }
+{ category: "Reference", value: "Futures", url: "/language/concurrency#index-entry-Futures" }
+,
+{ category: "Reference", value: "supply (on-demand)", url: "/language/concurrency#index-entry-supply_(on-demand)" }
+,
+{ category: "Reference", value: "whenever", url: "/language/concurrency#index-entry-whenever" }
+,
+{ category: "Reference", value: "react", url: "/language/concurrency#index-entry-react" }
+,
+{ category: "Reference", value: "Abstract Class", url: "/language/glossary#index-entry-Abstract_Class" }
+,
+{ category: "Reference", value: "Advent Calendar", url: "/language/glossary#index-entry-Advent_Calendar" }
+,
+{ category: "Reference", value: "Adverb", url: "/language/glossary#index-entry-Adverb" }
+,
+{ category: "Reference", value: "Adverbial Pair", url: "/language/glossary#index-entry-Adverbial_Pair" }
+,
+{ category: "Reference", value: "Allomorph", url: "/language/glossary#index-entry-Allomorph" }
+,
+{ category: "Reference", value: "Anonymous", url: "/language/glossary#index-entry-Anonymous" }
+,
+{ category: "Reference", value: "API", url: "/language/glossary#index-entry-API" }
+,
+{ category: "Reference", value: "Apocalypse", url: "/language/glossary#index-entry-Apocalypse" }
+,
+{ category: "Reference", value: "Arity", url: "/language/glossary#index-entry-Arity" }
+,
+{ category: "Reference", value: "ASCII operator", url: "/language/glossary#index-entry-ASCII_operator" }
+,
+{ category: "Reference", value: "Texas operator", url: "/language/glossary#index-entry-Texas_operator" }
+,
+{ category: "Reference", value: "Autothreading", url: "/language/glossary#index-entry-Autothreading" }
+,
+{ category: "Reference", value: "Backtracking", url: "/language/glossary#index-entry-Backtracking" }
+,
+{ category: "Reference", value: "binder", url: "/language/glossary#index-entry-binder" }
+,
+{ category: "Reference", value: "block", url: "/language/glossary#index-entry-block" }
+,
+{ category: "Reference", value: "bytecode", url: "/language/glossary#index-entry-bytecode" }
+,
+{ category: "Reference", value: "Camelia", url: "/language/glossary#index-entry-Camelia" }
+,
+{ category: "Reference", value: "Colon Pair", url: "/language/glossary#index-entry-Colon_Pair" }
+,
+{ category: "Reference", value: "Colon List", url: "/language/glossary#index-entry-Colon_List" }
+,
+{ category: "Reference", value: "Community", url: "/language/glossary#index-entry-Community" }
+,
+{ category: "Reference", value: "Damian Conway", url: "/language/glossary#index-entry-Damian_Conway" }
+,
+{ category: "Reference", value: "decont", url: "/language/glossary#index-entry-decont" }
+,
+{ category: "Reference", value: "diffy", url: "/language/glossary#index-entry-diffy" }
+,
+{ category: "Reference", value: "Exegesis", url: "/language/glossary#index-entry-Exegesis" }
+,
+{ category: "Reference", value: "fiddly", url: "/language/glossary#index-entry-fiddly" }
+,
+{ category: "Reference", value: "Handle", url: "/language/glossary#index-entry-Handle" }
+,
+{ category: "Reference", value: "Huffmanize", url: "/language/glossary#index-entry-Huffmanize" }
+,
+{ category: "Reference", value: "iffy", url: "/language/glossary#index-entry-iffy" }
+,
+{ category: "Reference", value: "import", url: "/language/glossary#index-entry-import" }
+,
+{ category: "Reference", value: "instance", url: "/language/glossary#index-entry-instance" }
+,
+{ category: "Reference", value: "Interface", url: "/language/glossary#index-entry-Interface" }
+,
+{ category: "Reference", value: "Invocant", url: "/language/glossary#index-entry-Invocant" }
+,
+{ category: "Reference", value: "IRC", url: "/language/glossary#index-entry-IRC" }
+,
+{ category: "Reference", value: "IRC lingo", url: "/language/glossary#index-entry-IRC_lingo" }
+,
+{ category: "Reference", value: "ALAP", url: "/language/glossary#index-entry-ALAP" }
+,
+{ category: "Reference", value: "autopun", url: "/language/glossary#index-entry-autopun" }
+,
+{ category: "Reference", value: "backlog", url: "/language/glossary#index-entry-backlog" }
+,
+{ category: "Reference", value: "Bot", url: "/language/glossary#index-entry-Bot" }
+,
+{ category: "Reference", value: "compunit (glossary)", url: "/language/glossary#index-entry-compunit_(glossary)" }
+,
+{ category: "Reference", value: "compilation unit", url: "/language/glossary#index-entry-compilation_unit" }
+,
+{ category: "Reference", value: "DWIM", url: "/language/glossary#index-entry-DWIM" }
+,
+{ category: "Reference", value: "flap", url: "/language/glossary#index-entry-flap" }
+,
+{ category: "Reference", value: "fossil", url: "/language/glossary#index-entry-fossil" }
+,
+{ category: "Reference", value: "FSVO", url: "/language/glossary#index-entry-FSVO" }
+,
+{ category: "Reference", value: "FTFY", url: "/language/glossary#index-entry-FTFY" }
+,
+{ category: "Reference", value: "gradual typing", url: "/language/glossary#index-entry-gradual_typing" }
+,
+{ category: "Reference", value: "IIRC", url: "/language/glossary#index-entry-IIRC" }
+,
+{ category: "Reference", value: "IMHO", url: "/language/glossary#index-entry-IMHO" }
+,
+{ category: "Reference", value: "IWBN", url: "/language/glossary#index-entry-IWBN" }
+,
+{ category: "Reference", value: "LHF", url: "/language/glossary#index-entry-LHF" }
+,
+{ category: "Reference", value: "LGTM", url: "/language/glossary#index-entry-LGTM" }
+,
+{ category: "Reference", value: "LTA", url: "/language/glossary#index-entry-LTA" }
+,
+{ category: "Reference", value: "NST", url: "/language/glossary#index-entry-NST" }
+,
+{ category: "Reference", value: "Opt", url: "/language/glossary#index-entry-Opt" }
+,
+{ category: "Reference", value: "PB", url: "/language/glossary#index-entry-PB" }
+,
+{ category: "Reference", value: "PR", url: "/language/glossary#index-entry-PR" }
+,
+{ category: "Reference", value: "P5", url: "/language/glossary#index-entry-P5" }
+,
+{ category: "Reference", value: "P6", url: "/language/glossary#index-entry-P6" }
+,
+{ category: "Reference", value: "RSN", url: "/language/glossary#index-entry-RSN" }
+,
+{ category: "Reference", value: "RT", url: "/language/glossary#index-entry-RT" }
+,
+{ category: "Reference", value: "TIMTOWTDI", url: "/language/glossary#index-entry-TIMTOWTDI" }
+,
+{ category: "Reference", value: "TMI", url: "/language/glossary#index-entry-TMI" }
+,
+{ category: "Reference", value: "TMTOWTDI", url: "/language/glossary#index-entry-TMTOWTDI" }
+,
+{ category: "Reference", value: "UGT", url: "/language/glossary#index-entry-UGT" }
+,
+{ category: "Reference", value: "WFM", url: "/language/glossary#index-entry-WFM" }
+,
+{ category: "Reference", value: "WIP", url: "/language/glossary#index-entry-WIP" }
+,
+{ category: "Reference", value: "WP", url: "/language/glossary#index-entry-WP" }
+,
+{ category: "Reference", value: "WW", url: "/language/glossary#index-entry-WW" }
+,
+{ category: "Reference", value: "Larry Wall", url: "/language/glossary#index-entry-Larry_Wall" }
+,
+{ category: "Reference", value: "Lexing", url: "/language/glossary#index-entry-Lexing" }
+,
+{ category: "Reference", value: "Literal", url: "/language/glossary#index-entry-Literal" }
+,
+{ category: "Reference", value: "LHS", url: "/language/glossary#index-entry-LHS" }
+,
+{ category: "Reference", value: "Value", url: "/language/glossary#index-entry-Value" }
+,
+{ category: "Reference", value: "Mainline", url: "/language/glossary#index-entry-Mainline" }
+,
+{ category: "Reference", value: "Mayspec", url: "/language/glossary#index-entry-Mayspec" }
+,
+{ category: "Reference", value: "MoarVM", url: "/language/glossary#index-entry-MoarVM" }
+,
+{ category: "Reference", value: "Multi-Dispatch", url: "/language/glossary#index-entry-Multi-Dispatch" }
+,
+{ category: "Reference", value: "MMD", url: "/language/glossary#index-entry-MMD" }
+,
+{ category: "Reference", value: "multi-method", url: "/language/glossary#index-entry-multi-method" }
+,
+{ category: "Reference", value: "Née", url: "/language/glossary#index-entry-Née" }
+,
+{ category: "Reference", value: "NFG", url: "/language/glossary#index-entry-NFG" }
+,
+{ category: "Reference", value: "Niecza", url: "/language/glossary#index-entry-Niecza" }
+,
+{ category: "Reference", value: "NQP", url: "/language/glossary#index-entry-NQP" }
+,
+{ category: "Reference", value: "Not Quite Perl", url: "/language/glossary#index-entry-Not_Quite_Perl" }
+,
+{ category: "Reference", value: "NYI", url: "/language/glossary#index-entry-NYI" }
+,
+{ category: "Reference", value: "opcode", url: "/language/glossary#index-entry-opcode" }
+,
+{ category: "Reference", value: "Operator", url: "/language/glossary#index-entry-Operator" }
+,
+{ category: "Reference", value: "Parse Tree", url: "/language/glossary#index-entry-Parse_Tree" }
+,
+{ category: "Reference", value: "Parameter", url: "/language/glossary#index-entry-Parameter" }
+,
+{ category: "Reference", value: "Parrot", url: "/language/glossary#index-entry-Parrot" }
+,
+{ category: "Reference", value: "PAST", url: "/language/glossary#index-entry-PAST" }
+,
+{ category: "Reference", value: "Perl", url: "/language/glossary#index-entry-Perl" }
+,
+{ category: "Reference", value: "Perl 6", url: "/language/glossary#index-entry-Perl 6" }
+,
+{ category: "Reference", value: "PERL", url: "/language/glossary#index-entry-PERL" }
+,
+{ category: "Reference", value: "POD", url: "/language/glossary#index-entry-POD" }
+,
+{ category: "Reference", value: "POV", url: "/language/glossary#index-entry-POV" }
+,
+{ category: "Reference", value: "Propspec", url: "/language/glossary#index-entry-Propspec" }
+,
+{ category: "Reference", value: "Pull request", url: "/language/glossary#index-entry-Pull_request" }
+,
+{ category: "Reference", value: "property", url: "/language/glossary#index-entry-property" }
+,
+{ category: "Reference", value: "pugs", url: "/language/glossary#index-entry-pugs" }
+,
+{ category: "Reference", value: "p6y", url: "/language/glossary#index-entry-p6y" }
+,
+{ category: "Reference", value: "QAST", url: "/language/glossary#index-entry-QAST" }
+,
+{ category: "Reference", value: "Rakudo", url: "/language/glossary#index-entry-Rakudo" }
+,
+{ category: "Reference", value: "Reify", url: "/language/glossary#index-entry-Reify" }
+,
+{ category: "Reference", value: "Repository", url: "/language/glossary#index-entry-Repository" }
+,
+{ category: "Reference", value: "RHS", url: "/language/glossary#index-entry-RHS" }
+,
+{ category: "Reference", value: "roast", url: "/language/glossary#index-entry-roast" }
+,
+{ category: "Reference", value: "role", url: "/language/glossary#index-entry-role" }
+,
+{ category: "Reference", value: "rule", url: "/language/glossary#index-entry-rule" }
+,
+{ category: "Reference", value: "rvalue", url: "/language/glossary#index-entry-rvalue" }
+,
+{ category: "Reference", value: "SAP", url: "/language/glossary#index-entry-SAP" }
+,
+{ category: "Reference", value: "Semilist", url: "/language/glossary#index-entry-Semilist" }
+,
+{ category: "Reference", value: "Sigil", url: "/language/glossary#index-entry-Sigil" }
+,
+{ category: "Reference", value: "Sigilless Variable", url: "/language/glossary#index-entry-Sigilless_Variable" }
+,
+{ category: "Reference", value: "Spesh", url: "/language/glossary#index-entry-Spesh" }
+,
+{ category: "Reference", value: "STD", url: "/language/glossary#index-entry-STD" }
+,
+{ category: "Reference", value: "Stub", url: "/language/glossary#index-entry-Stub" }
+,
+{ category: "Reference", value: "Symbol", url: "/language/glossary#index-entry-Symbol" }
+,
+{ category: "Reference", value: "Synopsis", url: "/language/glossary#index-entry-Synopsis" }
+,
+{ category: "Reference", value: "Syntax Analysis", url: "/language/glossary#index-entry-Syntax_Analysis" }
+,
+{ category: "Reference", value: "test suite", url: "/language/glossary#index-entry-test_suite" }
+,
+{ category: "Reference", value: "TheDamian", url: "/language/glossary#index-entry-TheDamian" }
+,
+{ category: "Reference", value: "TimToady", url: "/language/glossary#index-entry-TimToady" }
+,
+{ category: "Reference", value: "Token", url: "/language/glossary#index-entry-Token" }
+,
+{ category: "Reference", value: "Thunk", url: "/language/glossary#index-entry-Thunk" }
+,
+{ category: "Reference", value: "Loose", url: "/language/glossary#index-entry-Loose" }
+,
+{ category: "Reference", value: "Tight", url: "/language/glossary#index-entry-Tight" }
+,
+{ category: "Reference", value: "twine", url: "/language/glossary#index-entry-twine" }
+,
+{ category: "Reference", value: "Type Objects", url: "/language/glossary#index-entry-Type_Objects" }
+,
+{ category: "Reference", value: "Type Smiley", url: "/language/glossary#index-entry-Type_Smiley" }
+,
+{ category: "Reference", value: "value", url: "/language/glossary#index-entry-value" }
+,
+{ category: "Reference", value: "UB", url: "/language/glossary#index-entry-UB" }
+,
+{ category: "Reference", value: "Value type", url: "/language/glossary#index-entry-Value_type" }
+,
+{ category: "Reference", value: "Variable", url: "/language/glossary#index-entry-Variable" }
+,
+{ category: "Reference", value: "Variable Interpolation", url: "/language/glossary#index-entry-Variable_Interpolation" }
+,
+{ category: "Reference", value: "Virtual Machine", url: "/language/glossary#index-entry-Virtual_Machine" }
+,
+{ category: "Reference", value: "WAT", url: "/language/glossary#index-entry-WAT" }
+,
+{ category: "Reference", value: "whitespace", url: "/language/glossary#index-entry-whitespace" }
+,
+{ category: "Reference", value: "6model", url: "/language/glossary#index-entry-6model" }
+,
+{ category: "Reference", value: "Special Variables (Perl)", url: "/language/5to6-perlvar#index-entry-Special_Variables_(Perl)" }
+,
+{ category: "Reference", value: "$_ (Perl)", url: "/language/5to6-perlvar#index-entry-$___(Perl)" }
+,
+{ category: "Reference", value: "@_ (Perl)", url: "/language/5to6-perlvar#index-entry-@___(Perl)" }
+,
+{ category: "Reference", value: "$$ (Perl)", url: "/language/5to6-perlvar#index-entry-$$_(Perl)" }
+,
+{ category: "Reference", value: "$0 (Perl)", url: "/language/5to6-perlvar#index-entry-$0_(Perl)" }
+,
+{ category: "Reference", value: "@INC (Perl)", url: "/language/5to6-perlvar#index-entry-@INC_(Perl)" }
+,
+{ category: "Reference", value: "%INC (Perl)", url: "/language/5to6-perlvar#index-entry-$PERCENT_SIGNINC_(Perl)" }
+,
+{ category: "Reference", value: "Raku and Perl 6 (FAQ) (Rakudo)", url: "/language/faq#index-entry-Rakudo__Raku_and_Perl 6_(FAQ)" }
+,
+{ category: "Reference", value: "v6.d (FAQ)", url: "/language/faq#index-entry-v6.d_(FAQ)" }
+,
+{ category: "Reference", value: "Rakudo Star DMG binary installer (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_DMG_binary_installer_(FAQ)" }
+,
+{ category: "Reference", value: "Rakudo Star MSI binary installer (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_MSI_binary_installer_(FAQ)" }
+,
+{ category: "Reference", value: "Rakudo Star docker image (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_docker_image_(FAQ)" }
+,
+{ category: "Reference", value: "Rakudo Star for Linux (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_for_Linux_(FAQ)" }
+,
+{ category: "Reference", value: "Rakudo Star for Windows (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_for_Windows_(FAQ)" }
+,
+{ category: "Reference", value: "Rakudo Star for Mac (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_for_Mac_(FAQ)" }
+,
+{ category: "Reference", value: "rakudobrew (FAQ)", url: "/language/faq#index-entry-rakudobrew_(FAQ)" }
+,
+{ category: "Reference", value: "Books", url: "/language/faq#index-entry-Books" }
+,
+{ category: "Reference", value: "Specification (FAQ)", url: "/language/faq#index-entry-Specification_(FAQ)" }
+,
+{ category: "Reference", value: "Ruby Quickstart (FAQ)", url: "/language/faq#index-entry-Ruby_Quickstart_(FAQ)" }
+,
+{ category: "Reference", value: "CPAN (FAQ)", url: "/language/faq#index-entry-CPAN_(FAQ)" }
+,
+{ category: "Reference", value: "ecosystem", url: "/language/faq#index-entry-ecosystem" }
+,
+{ category: "Reference", value: "p6doc (FAQ)", url: "/language/faq#index-entry-p6doc_(FAQ)" }
+,
+{ category: "Reference", value: "perldoc (FAQ)", url: "/language/faq#index-entry-perldoc_(FAQ)" }
+,
+{ category: "Reference", value: "Perl modules (FAQ)", url: "/language/faq#index-entry-Perl_modules_(FAQ)" }
+,
+{ category: "Reference", value: "C and C++ (FAQ)", url: "/language/faq#index-entry-C_and_C++_(FAQ)" }
+,
+{ category: "Reference", value: "Core standard library (FAQ)", url: "/language/faq#index-entry-Core_standard_library_(FAQ)" }
+,
+{ category: "Reference", value: "Rakudo Star distribution and compiler-only release (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_distribution_and_compiler-only_release_(FAQ)" }
+,
+{ category: "Reference", value: "Precompile (FAQ)", url: "/language/faq#index-entry-Precompile_(FAQ)" }
+,
+{ category: "Reference", value: "Circular dependencies (FAQ)", url: "/language/faq#index-entry-Circular_dependencies_(FAQ)" }
+,
+{ category: "Reference", value: "Data::Dumper (FAQ)", url: "/language/faq#index-entry-Data::Dumper_(FAQ)" }
+,
+{ category: "Reference", value: "Junction (FAQ)", url: "/language/faq#index-entry-Junction_(FAQ)" }
+,
+{ category: "Reference", value: "Sigils (FAQ)", url: "/language/faq#index-entry-Sigils_(FAQ)" }
+,
+{ category: "Reference", value: "Coroutine (FAQ)", url: "/language/faq#index-entry-Coroutine_(FAQ)" }
+,
+{ category: "Reference", value: "Raku Implementation (FAQ)", url: "/language/faq#index-entry-Raku_Implementation_(FAQ)" }
+,
+{ category: "Reference", value: "NQP (FAQ)", url: "/language/faq#index-entry-NQP_(FAQ)" }
+,
+{ category: "Reference", value: "Raku Distribution (FAQ)", url: "/language/faq#index-entry-Raku_Distribution_(FAQ)" }
+,
+{ category: "Reference", value: "Rakudo Star release cycle (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_release_cycle_(FAQ)" }
 ,
 { category: "Reference", value: "\\ (syntax)", url: "/language/syntax#index-entry-syntax_%5c-Unspace" }
 ,
@@ -3549,1163 +3905,7 @@ $(function(){
 ,
 { category: "Reference", value: "package (declarator)", url: "/language/syntax#index-entry-declarator_unit-declarator_module-declarator_package-Package,_Module,_Class,_Role,_and_Grammar_declaration" }
 ,
-{ category: "Reference", value: "prefix operator", url: "/language/operators#index-entry-prefix_operator" }
-,
-{ category: "Reference", value: "infix operator", url: "/language/operators#index-entry-infix_operator" }
-,
-{ category: "Reference", value: "postfix operator", url: "/language/operators#index-entry-postfix_operator" }
-,
-{ category: "Reference", value: "circumfix operator", url: "/language/operators#index-entry-circumfix_operator" }
-,
-{ category: "Reference", value: "postcircumfix operator", url: "/language/operators#index-entry-postcircumfix_operator" }
-,
-{ category: "Reference", value: "method operators", url: "/language/operators#index-entry-method_operators" }
-,
-{ category: "Reference", value: "s\/\/\/", url: "/language/operators#index-entry-s$SOLIDUS$SOLIDUS$SOLIDUS_in-place_substitution" }
-,
-{ category: "Reference", value: "S\/\/\/", url: "/language/operators#index-entry-S$SOLIDUS$SOLIDUS$SOLIDUS_non-destructive_substitution" }
-,
-{ category: "Reference", value: "tr\/\/\/", url: "/language/operators#index-entry-tr$SOLIDUS$SOLIDUS$SOLIDUS_in-place_transliteration" }
-,
-{ category: "Reference", value: "TR\/\/\/", url: "/language/operators#index-entry-TR$SOLIDUS$SOLIDUS$SOLIDUS_non-destructive_transliteration" }
-,
-{ category: "Reference", value: "! (negation metaoperator)", url: "/language/operators#index-entry-!_(negation_metaoperator)" }
-,
-{ category: "Reference", value: "!==", url: "/language/operators#index-entry-!==" }
-,
-{ category: "Reference", value: "!eq", url: "/language/operators#index-entry-!eq" }
-,
-{ category: "Reference", value: "reverse metaoperator (R)", url: "/language/operators#index-entry-R_reverse_metaoperator" }
-,
-{ category: "Reference", value: "»=«", url: "/language/operators#index-entry-»=«" }
-,
-{ category: "Reference", value: "«=»", url: "/language/operators#index-entry-«=»" }
-,
-{ category: "Reference", value: "<< (hyper)", url: "/language/operators#index-entry-hyper_<<-hyper_>>-hyper_«-hyper_»-Hyper_operators" }
-,
-{ category: "Reference", value: ">> (hyper)", url: "/language/operators#index-entry-hyper_<<-hyper_>>-hyper_«-hyper_»-Hyper_operators" }
-,
-{ category: "Reference", value: "« (hyper)", url: "/language/operators#index-entry-hyper_<<-hyper_>>-hyper_«-hyper_»-Hyper_operators" }
-,
-{ category: "Reference", value: "» (hyper)", url: "/language/operators#index-entry-hyper_<<-hyper_>>-hyper_«-hyper_»-Hyper_operators" }
-,
-{ category: "Reference", value: "[] (reduction metaoperators)", url: "/language/operators#index-entry-[]_(reduction_metaoperators)" }
-,
-{ category: "Reference", value: "[+] (reduction metaoperators)", url: "/language/operators#index-entry-[+]_(reduction_metaoperators)" }
-,
-{ category: "Reference", value: "[\\] (triangular reduction metaoperators)", url: "/language/operators#index-entry-[%5c]_(triangular_reduction_metaoperators)" }
-,
-{ category: "Reference", value: "X (cross metaoperator)", url: "/language/operators#index-entry-X_(cross_metaoperator)" }
-,
-{ category: "Reference", value: "Z (zip metaoperator)", url: "/language/operators#index-entry-Z_(zip_metaoperator)" }
-,
-{ category: "Reference", value: "sequential metaoperator (S)", url: "/language/operators#index-entry-S_sequential_metaoperator" }
-,
-{ category: "Reference", value: "qw", url: "/language/operators#index-entry-qw-quote-words-quote-words" }
-,
-{ category: "Reference", value: "quote-words", url: "/language/operators#index-entry-qw-quote-words-quote-words" }
-,
-{ category: "Reference", value: "grouping operator", url: "/language/operators#index-entry-grouping_operator" }
-,
-{ category: "Reference", value: "block constructor", url: "/language/operators#index-entry-block_constructor-hash_constructor" }
-,
-{ category: "Reference", value: "hash constructor", url: "/language/operators#index-entry-block_constructor-hash_constructor" }
-,
-{ category: "Reference", value: "Array", url: "/language/operators#index-entry-Array_constructor" }
-,
-{ category: "Reference", value: "array indexing operator", url: "/language/operators#index-entry-array_indexing_operator-array_subscript_operator-array_indexing_operator" }
-,
-{ category: "Reference", value: "array subscript operator", url: "/language/operators#index-entry-array_indexing_operator-array_subscript_operator-array_indexing_operator" }
-,
-{ category: "Reference", value: "hash indexing operator", url: "/language/operators#index-entry-hash_indexing_operator-hash_subscript_operator-hash_indexing_operator" }
-,
-{ category: "Reference", value: "hash subscript operator", url: "/language/operators#index-entry-hash_indexing_operator-hash_subscript_operator-hash_indexing_operator" }
-,
-{ category: "Reference", value: "call operator", url: "/language/operators#index-entry-call_operator" }
-,
-{ category: "Reference", value: "method call", url: "/language/operators#index-entry-method_call" }
-,
-{ category: "Reference", value: "methodop .&", url: "/language/operators#index-entry-methodop_.&" }
-,
-{ category: "Reference", value: "mutating method call", url: "/language/operators#index-entry-mutating_method_call" }
-,
-{ category: "Reference", value: "methodop .^", url: "/language/operators#index-entry-methodop_.$CIRCUMFLEX_ACCENT" }
-,
-{ category: "Reference", value: "metamethod call", url: "/language/operators#index-entry-metamethod_call" }
-,
-{ category: "Reference", value: "methodop .?", url: "/language/operators#index-entry-methodop_.%3F" }
-,
-{ category: "Reference", value: "Safe call operator", url: "/language/operators#index-entry-Safe_call_operator" }
-,
-{ category: "Reference", value: "methodop .+", url: "/language/operators#index-entry-methodop_.+" }
-,
-{ category: "Reference", value: "methodop .*", url: "/language/operators#index-entry-methodop_.*" }
-,
-{ category: "Reference", value: "methodop ».", url: "/language/operators#index-entry-methodop_»." }
-,
-{ category: "Reference", value: "methodop >>.", url: "/language/operators#index-entry-methodop_>>." }
-,
-{ category: "Reference", value: "hyper method call operator", url: "/language/operators#index-entry-hyper_method_call_operator" }
-,
-{ category: "Reference", value: ".( )", url: "/language/operators#index-entry-.(_)" }
-,
-{ category: "Reference", value: ".[ ]", url: "/language/operators#index-entry-.[_]" }
-,
-{ category: "Reference", value: ".{ }", url: "/language/operators#index-entry-.{_}" }
-,
-{ category: "Reference", value: "postfix operator call", url: "/language/operators#index-entry-postfix_operator_call" }
-,
-{ category: "Reference", value: "class-qualified method call", url: "/language/operators#index-entry-class-qualified_method_call" }
-,
-{ category: "Reference", value: "prefix increment operator", url: "/language/operators#index-entry-prefix_increment_operator" }
-,
-{ category: "Reference", value: "prefix ++", url: "/language/operators#index-entry-prefix_++-++" }
-,
-{ category: "Reference", value: "prefix decrement operator", url: "/language/operators#index-entry-prefix_decrement_operator" }
-,
-{ category: "Reference", value: "prefix --", url: "/language/operators#index-entry-prefix_-----" }
-,
-{ category: "Reference", value: "postfix increment operator", url: "/language/operators#index-entry-postfix_increment_operator" }
-,
-{ category: "Reference", value: "postfix ++", url: "/language/operators#index-entry-postfix_++-++" }
-,
-{ category: "Reference", value: "postfix decrement operator", url: "/language/operators#index-entry-postfix_decrement_operator" }
-,
-{ category: "Reference", value: "postfix --", url: "/language/operators#index-entry-postfix_-----" }
-,
-{ category: "Reference", value: "exponentiation operator", url: "/language/operators#index-entry-exponentiation_operator" }
-,
-{ category: "Reference", value: "Boolean context operator", url: "/language/operators#index-entry-Boolean_context_operator" }
-,
-{ category: "Reference", value: "Negated boolean context operator", url: "/language/operators#index-entry-Negated_boolean_context_operator" }
-,
-{ category: "Reference", value: "Numeric context operator", url: "/language/operators#index-entry-Numeric_context_operator" }
-,
-{ category: "Reference", value: "Negative numeric context operator", url: "/language/operators#index-entry-Negative_numeric_context_operator" }
-,
-{ category: "Reference", value: "String context operator", url: "/language/operators#index-entry-String_context_operator" }
-,
-{ category: "Reference", value: "Integer bitwise negation operator", url: "/language/operators#index-entry-Integer_bitwise_negation_operator" }
-,
-{ category: "Reference", value: "Boolean bitwise negation operator", url: "/language/operators#index-entry-Boolean_bitwise_negation_operator" }
-,
-{ category: "Reference", value: "upto operator", url: "/language/operators#index-entry-upto_operator" }
-,
-{ category: "Reference", value: "Multiplication operator", url: "/language/operators#index-entry-Multiplication_operator" }
-,
-{ category: "Reference", value: "Division operator", url: "/language/operators#index-entry-Division_operator" }
-,
-{ category: "Reference", value: "Integer division operator", url: "/language/operators#index-entry-Integer_division_operator" }
-,
-{ category: "Reference", value: "Modulo operator", url: "/language/operators#index-entry-Modulo_operator" }
-,
-{ category: "Reference", value: "Divisibility operator", url: "/language/operators#index-entry-Divisibility_operator" }
-,
-{ category: "Reference", value: "Integer modulo operator", url: "/language/operators#index-entry-Integer_modulo_operator" }
-,
-{ category: "Reference", value: "Numeric bitwise AND operator", url: "/language/operators#index-entry-Numeric_bitwise_AND_operator" }
-,
-{ category: "Reference", value: "left (integer bit shift operator)", url: "/language/operators#index-entry-integer_bit_shift_operator_left" }
-,
-{ category: "Reference", value: "right (integer bit shift operator)", url: "/language/operators#index-entry-integer_bit_shift_operator_right" }
-,
-{ category: "Reference", value: "Boolean logical AND operator", url: "/language/operators#index-entry-Boolean_logical_AND_operator" }
-,
-{ category: "Reference", value: "greatest common divisor operator", url: "/language/operators#index-entry-greatest_common_divisor_operator" }
-,
-{ category: "Reference", value: "least common multiple operator", url: "/language/operators#index-entry-least_common_multiple_operator" }
-,
-{ category: "Reference", value: "Addition operator", url: "/language/operators#index-entry-Addition_operator" }
-,
-{ category: "Reference", value: "Subtraction operator", url: "/language/operators#index-entry-Subtraction_operator" }
-,
-{ category: "Reference", value: "Integer bitwise OR operator", url: "/language/operators#index-entry-Integer_bitwise_OR_operator" }
-,
-{ category: "Reference", value: "Integer bitwise XOR operator", url: "/language/operators#index-entry-Integer_bitwise_XOR_operator" }
-,
-{ category: "Reference", value: "Boolean logical XOR operator", url: "/language/operators#index-entry-Boolean_logical_XOR_operator" }
-,
-{ category: "Reference", value: "Boolean logical OR operator", url: "/language/operators#index-entry-Boolean_logical_OR_operator" }
-,
-{ category: "Reference", value: "String repetition operator", url: "/language/operators#index-entry-String_repetition_operator" }
-,
-{ category: "Reference", value: "List repetition operator", url: "/language/operators#index-entry-List_repetition_operator" }
-,
-{ category: "Reference", value: "string concatenation operator", url: "/language/operators#index-entry-string_concatenation_operator" }
-,
-{ category: "Reference", value: "function composition operator", url: "/language/operators#index-entry-function_composition_operator" }
-,
-{ category: "Reference", value: "All junction operator", url: "/language/operators#index-entry-All_junction_operator" }
-,
-{ category: "Reference", value: "Intersection operator", url: "/language/operators#index-entry-Intersection_operator" }
-,
-{ category: "Reference", value: "Baggy multiplication operator", url: "/language/operators#index-entry-Baggy_multiplication_operator" }
-,
-{ category: "Reference", value: "Any junction operator", url: "/language/operators#index-entry-Any_junction_operator" }
-,
-{ category: "Reference", value: "Union operator", url: "/language/operators#index-entry-Union_operator" }
-,
-{ category: "Reference", value: "Baggy addition operator", url: "/language/operators#index-entry-Baggy_addition_operator" }
-,
-{ category: "Reference", value: "Set difference operator", url: "/language/operators#index-entry-Set_difference_operator" }
-,
-{ category: "Reference", value: "One junction operator", url: "/language/operators#index-entry-One_junction_operator" }
-,
-{ category: "Reference", value: "Symmetric set difference operator", url: "/language/operators#index-entry-Symmetric_set_difference_operator" }
-,
-{ category: "Reference", value: "Generic, \"smart\" three-way comparator", url: "/language/operators#index-entry-Generic,_\"smart\"_three-way_comparator" }
-,
-{ category: "Reference", value: "String three-way comparator", url: "/language/operators#index-entry-String_three-way_comparator" }
-,
-{ category: "Reference", value: "Numeric three-way comparator", url: "/language/operators#index-entry-Numeric_three-way_comparator" }
-,
-{ category: "Reference", value: "spaceship operator", url: "/language/operators#index-entry-spaceship_operator" }
-,
-{ category: "Reference", value: "Range operator", url: "/language/operators#index-entry-Range_operator" }
-,
-{ category: "Reference", value: "Right-open range operator", url: "/language/operators#index-entry-Right-open_range_operator" }
-,
-{ category: "Reference", value: "Left-open range operator", url: "/language/operators#index-entry-Left-open_range_operator" }
-,
-{ category: "Reference", value: "Open range operator", url: "/language/operators#index-entry-Open_range_operator" }
-,
-{ category: "Reference", value: "Numeric equality operator", url: "/language/operators#index-entry-Numeric_equality_operator" }
-,
-{ category: "Reference", value: "Numeric inequality operator", url: "/language/operators#index-entry-Numeric_inequality_operator" }
-,
-{ category: "Reference", value: "Numeric less than operator", url: "/language/operators#index-entry-Numeric_less_than_operator" }
-,
-{ category: "Reference", value: "Numeric less than or equal to operator", url: "/language/operators#index-entry-Numeric_less_than_or_equal_to_operator" }
-,
-{ category: "Reference", value: "Numeric greater than operator", url: "/language/operators#index-entry-Numeric_greater_than_operator" }
-,
-{ category: "Reference", value: "Numeric greater than or equal to operator", url: "/language/operators#index-entry-Numeric_greater_than_or_equal_to_operator" }
-,
-{ category: "Reference", value: "String equality operator", url: "/language/operators#index-entry-String_equality_operator" }
-,
-{ category: "Reference", value: "String inequality operator", url: "/language/operators#index-entry-String_inequality_operator" }
-,
-{ category: "Reference", value: "String greater than operator", url: "/language/operators#index-entry-String_greater_than_operator" }
-,
-{ category: "Reference", value: "String greater than or equal to operator", url: "/language/operators#index-entry-String_greater_than_or_equal_to_operator" }
-,
-{ category: "Reference", value: "String less than operator", url: "/language/operators#index-entry-String_less_than_operator" }
-,
-{ category: "Reference", value: "String less than or equal to operator", url: "/language/operators#index-entry-String_less_than_or_equal_to_operator" }
-,
-{ category: "Reference", value: "equivalence operator", url: "/language/operators#index-entry-equivalence_operator" }
-,
-{ category: "Reference", value: "Value identity operator", url: "/language/operators#index-entry-Value_identity_operator" }
-,
-{ category: "Reference", value: "Container identity operator", url: "/language/operators#index-entry-Container_identity_operator" }
-,
-{ category: "Reference", value: "smartmatch operator", url: "/language/operators#index-entry-smartmatch_operator" }
-,
-{ category: "Reference", value: "≅ (infix)", url: "/language/operators#index-entry-infix__≅-≅" }
-,
-{ category: "Reference", value: "Membership operator", url: "/language/operators#index-entry-Membership_operator" }
-,
-{ category: "Reference", value: "Non-membership operator", url: "/language/operators#index-entry-Non-membership_operator" }
-,
-{ category: "Reference", value: "Membership operator", url: "/language/operators#index-entry-Membership_operator" }
-,
-{ category: "Reference", value: "Non-membership operator", url: "/language/operators#index-entry-Non-membership_operator" }
-,
-{ category: "Reference", value: "Subset of operator", url: "/language/operators#index-entry-Subset_of_operator" }
-,
-{ category: "Reference", value: "Not a subset of operator", url: "/language/operators#index-entry-Not_a_subset_of_operator" }
-,
-{ category: "Reference", value: "Subset of or equal to operator", url: "/language/operators#index-entry-Subset_of_or_equal_to_operator" }
-,
-{ category: "Reference", value: "Not a subset of nor equal to operator", url: "/language/operators#index-entry-Not_a_subset_of_nor_equal_to_operator" }
-,
-{ category: "Reference", value: "Superset of operator", url: "/language/operators#index-entry-Superset_of_operator" }
-,
-{ category: "Reference", value: "Not a superset of operator", url: "/language/operators#index-entry-Not_a_superset_of_operator" }
-,
-{ category: "Reference", value: "Superset of or equal to operator", url: "/language/operators#index-entry-Superset_of_or_equal_to_operator" }
-,
-{ category: "Reference", value: "Not a superset of nor equal to operator", url: "/language/operators#index-entry-Not_a_superset_of_nor_equal_to_operator" }
-,
-{ category: "Reference", value: "Short-circuit exclusive-or", url: "/language/operators#index-entry-Short-circuit_exclusive-or" }
-,
-{ category: "Reference", value: "defined-or operator", url: "/language/operators#index-entry-defined-or_operator-defined-or_operator" }
-,
-{ category: "Reference", value: "\/\/", url: "/language/operators#index-entry-$SOLIDUS$SOLIDUS-infix_$SOLIDUS$SOLIDUS" }
-,
-{ category: "Reference", value: "ternary (operator)", url: "/language/operators#index-entry-operator_ternary" }
-,
-{ category: "Reference", value: "conditional (operator)", url: "/language/operators#index-entry-operator_conditional" }
-,
-{ category: "Reference", value: "flipflop (operator)", url: "/language/operators#index-entry-operator_flipflop" }
-,
-{ category: "Reference", value: "item =", url: "/language/operators#index-entry-item_=" }
-,
-{ category: "Reference", value: "pair constructor", url: "/language/operators#index-entry-pair_constructor" }
-,
-{ category: "Reference", value: "Zip operator", url: "/language/operators#index-entry-Zip_operator" }
-,
-{ category: "Reference", value: "cross product operator", url: "/language/operators#index-entry-cross_product_operator" }
-,
-{ category: "Reference", value: "operators (X)", url: "/language/operators#index-entry-X_operators" }
-,
-{ category: "Reference", value: "operators (...)", url: "/language/operators#index-entry-..._operators" }
-,
-{ category: "Reference", value: "operators (...^)", url: "/language/operators#index-entry-...$CIRCUMFLEX_ACCENT_operators" }
-,
-{ category: "Reference", value: "operators (…)", url: "/language/operators#index-entry-…_operators" }
-,
-{ category: "Reference", value: "operators (…^)", url: "/language/operators#index-entry-…$CIRCUMFLEX_ACCENT_operators" }
-,
-{ category: "Reference", value: "… (lazy list)", url: "/language/operators#index-entry-lazy_list_…" }
-,
-{ category: "Reference", value: "sequence operator", url: "/language/operators#index-entry-sequence_operator" }
-,
-{ category: "Reference", value: "list =", url: "/language/operators#index-entry-list_=" }
-,
-{ category: "Reference", value: "List assignment operator", url: "/language/operators#index-entry-List_assignment_operator" }
-,
-{ category: "Reference", value: "Binding operator", url: "/language/operators#index-entry-Binding_operator" }
-,
-{ category: "Reference", value: "Read-only binding operator", url: "/language/operators#index-entry-Read-only_binding_operator" }
-,
-{ category: "Reference", value: "stub operator", url: "/language/operators#index-entry-stub_operator" }
-,
-{ category: "Reference", value: "Fatal stub operator", url: "/language/operators#index-entry-Fatal_stub_operator" }
-,
-{ category: "Reference", value: "Admonitory stub operator", url: "/language/operators#index-entry-Admonitory_stub_operator" }
-,
-{ category: "Reference", value: "and", url: "/language/operators#index-entry-and" }
-,
-{ category: "Reference", value: "andthen", url: "/language/operators#index-entry-andthen" }
-,
-{ category: "Reference", value: "notandthen", url: "/language/operators#index-entry-notandthen" }
-,
-{ category: "Reference", value: "orelse", url: "/language/operators#index-entry-orelse" }
-,
-{ category: "Reference", value: "feed", url: "/language/operators#index-entry-feed" }
-,
-{ category: "Reference", value: "leftward feed", url: "/language/operators#index-entry-leftward_feed" }
-,
 { category: "Reference", value: "import", url: "/language/module-packages#index-entry-import" }
-,
-{ category: "Reference", value: "Regular Expressions", url: "/language/regexes#index-entry-Regular_Expressions" }
-,
-{ category: "Reference", value: "\/ \/ (quote)", url: "/language/regexes#index-entry-quote_$SOLIDUS_$SOLIDUS-quote_rx-quote_m-Lexical_conventions" }
-,
-{ category: "Reference", value: "rx (quote)", url: "/language/regexes#index-entry-quote_$SOLIDUS_$SOLIDUS-quote_rx-quote_m-Lexical_conventions" }
-,
-{ category: "Reference", value: "m (quote)", url: "/language/regexes#index-entry-quote_$SOLIDUS_$SOLIDUS-quote_rx-quote_m-Lexical_conventions" }
-,
-{ category: "Reference", value: ". (regex)", url: "/language/regexes#index-entry-regex__.-Wildcards" }
-,
-{ category: "Reference", value: "\\n (regex)", url: "/language/regexes#index-entry-regex_%5cn-regex_%5cN-%5cn_and_%5cN" }
-,
-{ category: "Reference", value: "\\N (regex)", url: "/language/regexes#index-entry-regex_%5cn-regex_%5cN-%5cn_and_%5cN" }
-,
-{ category: "Reference", value: "\\t (regex)", url: "/language/regexes#index-entry-regex_%5ct-regex_%5cT-%5ct_and_%5cT" }
-,
-{ category: "Reference", value: "\\T (regex)", url: "/language/regexes#index-entry-regex_%5ct-regex_%5cT-%5ct_and_%5cT" }
-,
-{ category: "Reference", value: "\\h (regex)", url: "/language/regexes#index-entry-regex_%5ch-regex_%5cH-%5ch_and_%5cH" }
-,
-{ category: "Reference", value: "\\H (regex)", url: "/language/regexes#index-entry-regex_%5ch-regex_%5cH-%5ch_and_%5cH" }
-,
-{ category: "Reference", value: "\\v (regex)", url: "/language/regexes#index-entry-regex_%5cv-regex_%5cV-%5cv_and_%5cV" }
-,
-{ category: "Reference", value: "\\V (regex)", url: "/language/regexes#index-entry-regex_%5cv-regex_%5cV-%5cv_and_%5cV" }
-,
-{ category: "Reference", value: "\\s (regex)", url: "/language/regexes#index-entry-regex_%5cs-regex_%5cS-%5cs_and_%5cS" }
-,
-{ category: "Reference", value: "\\S (regex)", url: "/language/regexes#index-entry-regex_%5cs-regex_%5cS-%5cs_and_%5cS" }
-,
-{ category: "Reference", value: "\\d (regex)", url: "/language/regexes#index-entry-regex_%5cd-regex_%5cD-%5cd_and_%5cD" }
-,
-{ category: "Reference", value: "\\D (regex)", url: "/language/regexes#index-entry-regex_%5cd-regex_%5cD-%5cd_and_%5cD" }
-,
-{ category: "Reference", value: "\\w (regex)", url: "/language/regexes#index-entry-regex_%5cw-regex_%5cW-%5cw_and_%5cW" }
-,
-{ category: "Reference", value: "\\W (regex)", url: "/language/regexes#index-entry-regex_%5cw-regex_%5cW-%5cw_and_%5cW" }
-,
-{ category: "Reference", value: "\\c (regex)", url: "/language/regexes#index-entry-regex_%5cc-regex_%5cC-%5cc_and_%5cC" }
-,
-{ category: "Reference", value: "\\C (regex)", url: "/language/regexes#index-entry-regex_%5cc-regex_%5cC-%5cc_and_%5cC" }
-,
-{ category: "Reference", value: "\\x (regex)", url: "/language/regexes#index-entry-regex_%5cx-regex_%5cX-%5cx_and_%5cX" }
-,
-{ category: "Reference", value: "\\X (regex)", url: "/language/regexes#index-entry-regex_%5cx-regex_%5cX-%5cx_and_%5cX" }
-,
-{ category: "Reference", value: "<:property> (regex)", url: "/language/regexes#index-entry-regex_<:property>-Unicode_properties" }
-,
-{ category: "Reference", value: "<[ ]> (regex)", url: "/language/regexes#index-entry-regex_<[_]>-regex_<-[_]>-Enumerated_character_classes_and_ranges" }
-,
-{ category: "Reference", value: "<-[ ]> (regex)", url: "/language/regexes#index-entry-regex_<[_]>-regex_<-[_]>-Enumerated_character_classes_and_ranges" }
-,
-{ category: "Reference", value: "escaping characters", url: "/language/regexes#index-entry-escaping_characters" }
-,
-{ category: "Reference", value: "+ (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_+-One_or_more:_+" }
-,
-{ category: "Reference", value: "* (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_*-Zero_or_more:_*" }
-,
-{ category: "Reference", value: "? (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_%3F-Zero_or_one:_%3F" }
-,
-{ category: "Reference", value: "** (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_**-General_quantifier:_**_min..max" }
-,
-{ category: "Reference", value: "% (regex)", url: "/language/regexes#index-entry-regex_$PERCENT_SIGN-regex_$PERCENT_SIGN$PERCENT_SIGN-Modified_quantifier:_$PERCENT_SIGN,_$PERCENT_SIGN$PERCENT_SIGN" }
-,
-{ category: "Reference", value: "%% (regex)", url: "/language/regexes#index-entry-regex_$PERCENT_SIGN-regex_$PERCENT_SIGN$PERCENT_SIGN-Modified_quantifier:_$PERCENT_SIGN,_$PERCENT_SIGN$PERCENT_SIGN" }
-,
-{ category: "Reference", value: ": (regex)", url: "/language/regexes#index-entry-regex_:-Preventing_backtracking:_:" }
-,
-{ category: "Reference", value: "? (regex)", url: "/language/regexes#index-entry-regex_%3F-Greedy_versus_frugal_quantifiers:_%3F" }
-,
-{ category: "Reference", value: "|| (regex)", url: "/language/regexes#index-entry-regex_||-Alternation:_||" }
-,
-{ category: "Reference", value: "| (regex)", url: "/language/regexes#index-entry-regex_|-Longest_alternation:_|" }
-,
-{ category: "Reference", value: "&& (regex)", url: "/language/regexes#index-entry-regex_&&-Conjunction:_&&" }
-,
-{ category: "Reference", value: "& (regex)", url: "/language/regexes#index-entry-regex_&-Conjunction:_&" }
-,
-{ category: "Reference", value: "^ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT-regex_$-Start_of_string_and_end_of_string" }
-,
-{ category: "Reference", value: "$ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT-regex_$-Start_of_string_and_end_of_string" }
-,
-{ category: "Reference", value: "^^ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT$CIRCUMFLEX_ACCENT-regex_$$-Start_of_line_and_end_of_line" }
-,
-{ category: "Reference", value: "$$ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT$CIRCUMFLEX_ACCENT-regex_$$-Start_of_line_and_end_of_line" }
-,
-{ category: "Reference", value: "<|w> (regex)", url: "/language/regexes#index-entry-regex__<|w>-regex__<!|w>-Word_boundary" }
-,
-{ category: "Reference", value: "<!|w> (regex)", url: "/language/regexes#index-entry-regex__<|w>-regex__<!|w>-Word_boundary" }
-,
-{ category: "Reference", value: "\\b (regex deprecated)", url: "/language/regexes#index-entry-regex_deprecated_%5cb-%5cb" }
-,
-{ category: "Reference", value: "\\B (regex deprecated)", url: "/language/regexes#index-entry-regex_deprecated_%5cB-%5cB" }
-,
-{ category: "Reference", value: "<< (regex)", url: "/language/regexes#index-entry-regex__<<-_regex__>>-_regex__«-_regex__»" }
-,
-{ category: "Reference", value: ">> ( regex)", url: "/language/regexes#index-entry-regex__<<-_regex__>>-_regex__«-_regex__»" }
-,
-{ category: "Reference", value: "« ( regex)", url: "/language/regexes#index-entry-regex__<<-_regex__>>-_regex__«-_regex__»" }
-,
-{ category: "Reference", value: "» ( regex)", url: "/language/regexes#index-entry-regex__<<-_regex__>>-_regex__«-_regex__»" }
-,
-{ category: "Reference", value: "<?> (regex positive lookaround assertion)", url: "/language/regexes#index-entry-regex_positive_lookaround_assertion__<%3F>-regex_negative_lookaround_assertion__<!>-_regex_%3F[_-Lookaround_assertions" }
-,
-{ category: "Reference", value: "<!> (regex negative lookaround assertion)", url: "/language/regexes#index-entry-regex_positive_lookaround_assertion__<%3F>-regex_negative_lookaround_assertion__<!>-_regex_%3F[_-Lookaround_assertions" }
-,
-{ category: "Reference", value: "regex ?[", url: "/language/regexes#index-entry-regex_positive_lookaround_assertion__<%3F>-regex_negative_lookaround_assertion__<!>-_regex_%3F[_-Lookaround_assertions" }
-,
-{ category: "Reference", value: "before (regex)", url: "/language/regexes#index-entry-regex__before-regex__<%3Fbefore>-Lookahead_assertions" }
-,
-{ category: "Reference", value: "<?before> (regex)", url: "/language/regexes#index-entry-regex__before-regex__<%3Fbefore>-Lookahead_assertions" }
-,
-{ category: "Reference", value: "after (regex)", url: "/language/regexes#index-entry-regex__after-_regex__<%3Fafter>-Lookbehind_assertions" }
-,
-{ category: "Reference", value: "<?after> ( regex)", url: "/language/regexes#index-entry-regex__after-_regex__<%3Fafter>-Lookbehind_assertions" }
-,
-{ category: "Reference", value: "( ) (regex)", url: "/language/regexes#index-entry-regex_(_)-Capturing" }
-,
-{ category: "Reference", value: "[ ] (regex)", url: "/language/regexes#index-entry-regex_[_]-Non-capturing_grouping" }
-,
-{ category: "Reference", value: ":my", url: "/language/regexes#index-entry-:my" }
-,
-{ category: "Reference", value: ":our", url: "/language/regexes#index-entry-:our" }
-,
-{ category: "Reference", value: "Named captures (regex)", url: "/language/regexes#index-entry-regex__Named_captures-Named_captures" }
-,
-{ category: "Reference", value: "<( )> (regex)", url: "/language/regexes#index-entry-regex_<(_)>-Capture_markers:_<(_)>" }
-,
-{ category: "Reference", value: "\\K (regex deprecated)", url: "/language/regexes#index-entry-regex_deprecated_%5cK-%5cK" }
-,
-{ category: "Reference", value: "s\/ \/ \/ (quote)", url: "/language/regexes#index-entry-quote_s$SOLIDUS_$SOLIDUS_$SOLIDUS-Lexical_conventions" }
-,
-{ category: "Reference", value: "S\/\/\/", url: "/language/regexes#index-entry-S$SOLIDUS$SOLIDUS$SOLIDUS_non-destructive_substitution" }
-,
-{ category: "Reference", value: "tilde (regex)", url: "/language/regexes#index-entry-regex__tilde-_regex__~-Tilde_for_nesting_structures" }
-,
-{ category: "Reference", value: "~ ( regex)", url: "/language/regexes#index-entry-regex__tilde-_regex__~-Tilde_for_nesting_structures" }
-,
-{ category: "Reference", value: "SETGOAL", url: "/language/regexes#index-entry-SETGOAL" }
-,
-{ category: "Reference", value: "FAILGOAL", url: "/language/regexes#index-entry-FAILGOAL" }
-,
-{ category: "Reference", value: "regex (declarator)", url: "/language/regexes#index-entry-declarator_regex-Subrules" }
-,
-{ category: "Reference", value: "Regex Interpolation (regex)", url: "/language/regexes#index-entry-regex__Regex_Interpolation-Regex_interpolation" }
-,
-{ category: "Reference", value: "$variable (regex)", url: "/language/regexes#index-entry-regex__$variable" }
-,
-{ category: "Reference", value: "$(code) (regex)", url: "/language/regexes#index-entry-regex__$(code)" }
-,
-{ category: "Reference", value: "<$variable> (regex)", url: "/language/regexes#index-entry-regex__<$variable>" }
-,
-{ category: "Reference", value: "<{code}> (regex)", url: "/language/regexes#index-entry-regex__<{code}>" }
-,
-{ category: "Reference", value: "<?{}> (regex)", url: "/language/regexes#index-entry-regex__<%3F{}>-regex__<!{}>" }
-,
-{ category: "Reference", value: "<!{}> (regex)", url: "/language/regexes#index-entry-regex__<%3F{}>-regex__<!{}>" }
-,
-{ category: "Reference", value: "Regex adverbs (regex)", url: "/language/regexes#index-entry-regex__Regex_adverbs-Regex_adverbs" }
-,
-{ category: "Reference", value: ":ignorecase (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ignorecase-regex_adverb_:i-Ignorecase" }
-,
-{ category: "Reference", value: ":i (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ignorecase-regex_adverb_:i-Ignorecase" }
-,
-{ category: "Reference", value: ":ignoremark (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ignoremark-regex_adverb_:m-Ignoremark" }
-,
-{ category: "Reference", value: ":m (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ignoremark-regex_adverb_:m-Ignoremark" }
-,
-{ category: "Reference", value: ":ratchet (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ratchet-regex_adverb_:r-Ratchet" }
-,
-{ category: "Reference", value: ":r (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ratchet-regex_adverb_:r-Ratchet" }
-,
-{ category: "Reference", value: ":sigspace (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:sigspace-regex_adverb_:s-Sigspace" }
-,
-{ category: "Reference", value: ":s (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:sigspace-regex_adverb_:s-Sigspace" }
-,
-{ category: "Reference", value: ":1st (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:1st-matching_adverb_:2nd-matching_adverb_:3rd-matching_adverb_:nth-Positional_adverbs" }
-,
-{ category: "Reference", value: ":2nd (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:1st-matching_adverb_:2nd-matching_adverb_:3rd-matching_adverb_:nth-Positional_adverbs" }
-,
-{ category: "Reference", value: ":3rd (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:1st-matching_adverb_:2nd-matching_adverb_:3rd-matching_adverb_:nth-Positional_adverbs" }
-,
-{ category: "Reference", value: ":nth (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:1st-matching_adverb_:2nd-matching_adverb_:3rd-matching_adverb_:nth-Positional_adverbs" }
-,
-{ category: "Reference", value: ":continue (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:continue-matching_adverb_:c-Continue" }
-,
-{ category: "Reference", value: ":c (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:continue-matching_adverb_:c-Continue" }
-,
-{ category: "Reference", value: ":exhaustive (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:exhaustive-matching_adverb_:ex-Exhaustive" }
-,
-{ category: "Reference", value: ":ex (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:exhaustive-matching_adverb_:ex-Exhaustive" }
-,
-{ category: "Reference", value: ":global (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:global-matching_adverb_:g-Global" }
-,
-{ category: "Reference", value: ":g (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:global-matching_adverb_:g-Global" }
-,
-{ category: "Reference", value: ":pos (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:pos-matching_adverb_:p-Pos" }
-,
-{ category: "Reference", value: ":p (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:pos-matching_adverb_:p-Pos" }
-,
-{ category: "Reference", value: ":overlap (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:overlap-matching_adverb_:ov-Overlap" }
-,
-{ category: "Reference", value: ":ov (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:overlap-matching_adverb_:ov-Overlap" }
-,
-{ category: "Reference", value: ":samecase (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samecase-substitution_adverb_:ii-Samecase" }
-,
-{ category: "Reference", value: ":ii (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samecase-substitution_adverb_:ii-Samecase" }
-,
-{ category: "Reference", value: ":samemark (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samemark-substitution_adverb_:mm-Samemark" }
-,
-{ category: "Reference", value: ":mm (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samemark-substitution_adverb_:mm-Samemark" }
-,
-{ category: "Reference", value: ":samespace (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samespace-substitution_adverb_:ss-Samespace" }
-,
-{ category: "Reference", value: ":ss (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samespace-substitution_adverb_:ss-Samespace" }
-,
-{ category: "Reference", value: "\\ (container binding)", url: "/language/containers#index-entry-%5c_(container_binding)" }
-,
-{ category: "Reference", value: "... (forward declaration)", url: "/language/typesystem#index-entry-..._(forward_declaration)" }
-,
-{ category: "Reference", value: "Forward declarations", url: "/language/typesystem#index-entry-Forward_declarations" }
-,
-{ category: "Reference", value: "method (declarator)", url: "/language/typesystem#index-entry-method_(declarator)" }
-,
-{ category: "Reference", value: "only method", url: "/language/typesystem#index-entry-only_method" }
-,
-{ category: "Reference", value: "FALLBACK (method)", url: "/language/typesystem#index-entry-FALLBACK_(method)" }
-,
-{ category: "Reference", value: "WHAT (reserved method)", url: "/language/typesystem#index-entry-WHAT_(reserved_method)" }
-,
-{ category: "Reference", value: "WHO (reserved method)", url: "/language/typesystem#index-entry-WHO_(reserved_method)" }
-,
-{ category: "Reference", value: "HOW (reserved method)", url: "/language/typesystem#index-entry-HOW_(reserved_method)" }
-,
-{ category: "Reference", value: "VAR (reserved method)", url: "/language/typesystem#index-entry-VAR_(reserved_method)" }
-,
-{ category: "Reference", value: "handles trait", url: "/language/typesystem#index-entry-handles_trait-handles" }
-,
-{ category: "Reference", value: "FALLBACK (trait handles)", url: "/language/typesystem#index-entry-FALLBACK_(trait_handles)-FALLBACK" }
-,
-{ category: "Reference", value: "is (classes)", url: "/language/typesystem#index-entry-classes_is-trait_is" }
-,
-{ category: "Reference", value: "is rw (class)", url: "/language/typesystem#index-entry-is_rw_(class)-is_rw" }
-,
-{ category: "Reference", value: ":ver<> (class)", url: "/language/typesystem#index-entry-:ver<>_(class)-:ver<>" }
-,
-{ category: "Reference", value: ":auth<> (class)", url: "/language/typesystem#index-entry-:auth<>_(class)-:auth<>" }
-,
-{ category: "Reference", value: "role (typesystem) (declarator)", url: "/language/typesystem#index-entry-declarator_role_(typesystem)" }
-,
-{ category: "Reference", value: "Type Capture (role)", url: "/language/typesystem#index-entry-Type_Capture_(role)" }
-,
-{ category: "Reference", value: ":ver<> (role)", url: "/language/typesystem#index-entry-:ver<>_(role)-:ver<>" }
-,
-{ category: "Reference", value: ":auth<> (role)", url: "/language/typesystem#index-entry-:auth<>_(role)-:auth<>" }
-,
-{ category: "Reference", value: "Enumeration", url: "/language/typesystem#index-entry-Enumeration-_Enums-_enum" }
-,
-{ category: "Reference", value: "Enums", url: "/language/typesystem#index-entry-Enumeration-_Enums-_enum" }
-,
-{ category: "Reference", value: "enum", url: "/language/typesystem#index-entry-Enumeration-_Enums-_enum" }
-,
-{ category: "Reference", value: ":ver<> (grammar)", url: "/language/typesystem#index-entry-:ver<>_(grammar)-:ver<>" }
-,
-{ category: "Reference", value: ":auth<> (grammar)", url: "/language/typesystem#index-entry-:auth<>_(grammar)-:auth<>" }
-,
-{ category: "Reference", value: "subset", url: "/language/typesystem#index-entry-subset-subset" }
-,
-{ category: "Reference", value: "dynamic subset", url: "/language/typesystem#index-entry-dynamic_subset" }
-,
-{ category: "Reference", value: "pack", url: "/language/experimental#index-entry-pack-pack" }
-,
-{ category: "Reference", value: "macros", url: "/language/experimental#index-entry-macros-macros" }
-,
-{ category: "Reference", value: "quasi (macros)", url: "/language/experimental#index-entry-quasi_(macros)" }
-,
-{ category: "Reference", value: "unquoting (macros)", url: "/language/experimental#index-entry-unquoting_(macros)" }
-,
-{ category: "Reference", value: "{{{}}} (macros)", url: "/language/experimental#index-entry-{{{}}}_(macros)" }
-,
-{ category: "Reference", value: ":cached", url: "/language/experimental#index-entry-:cached-cached" }
-,
-{ category: "Reference", value: "Futures", url: "/language/concurrency#index-entry-Futures" }
-,
-{ category: "Reference", value: "supply (on-demand)", url: "/language/concurrency#index-entry-supply_(on-demand)" }
-,
-{ category: "Reference", value: "whenever", url: "/language/concurrency#index-entry-whenever" }
-,
-{ category: "Reference", value: "react", url: "/language/concurrency#index-entry-react" }
-,
-{ category: "Reference", value: "int", url: "/language/nativetypes#index-entry-int" }
-,
-{ category: "Reference", value: "uint", url: "/language/nativetypes#index-entry-uint" }
-,
-{ category: "Reference", value: "num", url: "/language/nativetypes#index-entry-num" }
-,
-{ category: "Reference", value: "str", url: "/language/nativetypes#index-entry-str" }
-,
-{ category: "Reference", value: "int @", url: "/language/nativetypes#index-entry-int_@" }
-,
-{ category: "Reference", value: "num @", url: "/language/nativetypes#index-entry-num_@" }
-,
-{ category: "Reference", value: "str @", url: "/language/nativetypes#index-entry-str_@" }
-,
-{ category: "Reference", value: "native array", url: "/language/nativetypes#index-entry-native_array" }
-,
-{ category: "Reference", value: "array", url: "/language/nativetypes#index-entry-array" }
-,
-{ category: "Reference", value: "int8", url: "/language/nativetypes#index-entry-int8" }
-,
-{ category: "Reference", value: "int16", url: "/language/nativetypes#index-entry-int16" }
-,
-{ category: "Reference", value: "int32", url: "/language/nativetypes#index-entry-int32" }
-,
-{ category: "Reference", value: "int64", url: "/language/nativetypes#index-entry-int64" }
-,
-{ category: "Reference", value: "uint8", url: "/language/nativetypes#index-entry-uint8" }
-,
-{ category: "Reference", value: "uint16", url: "/language/nativetypes#index-entry-uint16" }
-,
-{ category: "Reference", value: "uint32", url: "/language/nativetypes#index-entry-uint32" }
-,
-{ category: "Reference", value: "uint64", url: "/language/nativetypes#index-entry-uint64" }
-,
-{ category: "Reference", value: "num32", url: "/language/nativetypes#index-entry-num32" }
-,
-{ category: "Reference", value: "num64", url: "/language/nativetypes#index-entry-num64" }
-,
-{ category: "Reference", value: "byte", url: "/language/nativetypes#index-entry-byte" }
-,
-{ category: "Reference", value: "is nativesize", url: "/language/nativetypes#index-entry-is_nativesize" }
-,
-{ category: "Reference", value: "void type (NativeCall)", url: "/language/nativetypes#index-entry-void_type_(NativeCall)" }
-,
-{ category: "Reference", value: "sub (declarator)", url: "/language/functions#index-entry-declarator_sub-Subroutines" }
-,
-{ category: "Reference", value: "pointy blocks", url: "/language/functions#index-entry-pointy_blocks" }
-,
-{ category: "Reference", value: "-> (syntax)", url: "/language/functions#index-entry-syntax_->-Blocks_and_lambdas" }
-,
-{ category: "Reference", value: "@_", url: "/language/functions#index-entry-@__" }
-,
-{ category: "Reference", value: "%_", url: "/language/functions#index-entry-$PERCENT_SIGN__" }
-,
-{ category: "Reference", value: "Argument", url: "/language/functions#index-entry-Argument" }
-,
-{ category: "Reference", value: "multi (declarator)", url: "/language/functions#index-entry-declarator_multi-Multi-dispatch" }
-,
-{ category: "Reference", value: "declarator", url: "/language/functions#index-entry-declarator-proto" }
-,
-{ category: "Reference", value: "declarator", url: "/language/functions#index-entry-declarator-only" }
-,
-{ category: "Reference", value: "prefix &", url: "/language/functions#index-entry-prefix_&" }
-,
-{ category: "Reference", value: "closures", url: "/language/functions#index-entry-closures" }
-,
-{ category: "Reference", value: "use soft (pragma)", url: "/language/functions#index-entry-use_soft_(pragma)" }
-,
-{ category: "Reference", value: "is tighter", url: "/language/functions#index-entry-is_tighter" }
-,
-{ category: "Reference", value: "is equiv", url: "/language/functions#index-entry-is_equiv" }
-,
-{ category: "Reference", value: "is looser", url: "/language/functions#index-entry-is_looser" }
-,
-{ category: "Reference", value: "is assoc (trait)", url: "/language/functions#index-entry-is_assoc_(trait)" }
-,
-{ category: "Reference", value: "callsame (dispatch)", url: "/language/functions#index-entry-dispatch_callsame" }
-,
-{ category: "Reference", value: "callwith (dispatch)", url: "/language/functions#index-entry-dispatch_callwith" }
-,
-{ category: "Reference", value: "nextsame (dispatch)", url: "/language/functions#index-entry-dispatch_nextsame" }
-,
-{ category: "Reference", value: "nextwith (dispatch)", url: "/language/functions#index-entry-dispatch_nextwith" }
-,
-{ category: "Reference", value: "samewith (dispatch)", url: "/language/functions#index-entry-dispatch_samewith" }
-,
-{ category: "Reference", value: "nextcallee (dispatch)", url: "/language/functions#index-entry-dispatch_nextcallee" }
-,
-{ category: "Reference", value: "wrapped routines (dispatch)", url: "/language/functions#index-entry-dispatch_wrapped_routines" }
-,
-{ category: "Reference", value: "sink context", url: "/language/contexts#index-entry-sink_context" }
-,
-{ category: "Reference", value: "sinking", url: "/language/contexts#index-entry-sinking" }
-,
-{ category: "Reference", value: "number context", url: "/language/contexts#index-entry-number_context" }
-,
-{ category: "Reference", value: "string context", url: "/language/contexts#index-entry-string_context" }
-,
-{ category: "Reference", value: "Boolean context", url: "/language/contexts#index-entry-Boolean_context" }
-,
-{ category: "Reference", value: "list context", url: "/language/contexts#index-entry-list_context" }
-,
-{ category: "Reference", value: "IPC", url: "/language/ipc#index-entry-IPC" }
-,
-{ category: "Reference", value: "Running programs", url: "/language/ipc#index-entry-Running_programs" }
-,
-{ category: "Reference", value: "v6 (Basics)", url: "/language/101-basics#index-entry-v6_(Basics)-v6" }
-,
-{ category: "Reference", value: "statement (Basics)", url: "/language/101-basics#index-entry-statement_(Basics)-statement" }
-,
-{ category: "Reference", value: "lexical", url: "/language/101-basics#index-entry-lexical" }
-,
-{ category: "Reference", value: "block", url: "/language/101-basics#index-entry-block" }
-,
-{ category: "Reference", value: "sigil", url: "/language/101-basics#index-entry-sigil" }
-,
-{ category: "Reference", value: "identifier (Basics)", url: "/language/101-basics#index-entry-identifier_(Basics)-identifier" }
-,
-{ category: "Reference", value: "scalar", url: "/language/101-basics#index-entry-scalar" }
-,
-{ category: "Reference", value: "filehandle", url: "/language/101-basics#index-entry-filehandle" }
-,
-{ category: "Reference", value: "assignment", url: "/language/101-basics#index-entry-assignment" }
-,
-{ category: "Reference", value: "string literal", url: "/language/101-basics#index-entry-string_literal" }
-,
-{ category: "Reference", value: "array", url: "/language/101-basics#index-entry-array" }
-,
-{ category: "Reference", value: "method (Basics)", url: "/language/101-basics#index-entry-method_(Basics)-method" }
-,
-{ category: "Reference", value: "invocant (Basics)", url: "/language/101-basics#index-entry-invocant_(Basics)-invocant" }
-,
-{ category: "Reference", value: "hash", url: "/language/101-basics#index-entry-hash" }
-,
-{ category: "Reference", value: "for (Basics)", url: "/language/101-basics#index-entry-for_(Basics)-for" }
-,
-{ category: "Reference", value: "block", url: "/language/101-basics#index-entry-block" }
-,
-{ category: "Reference", value: "Any (Basics)", url: "/language/101-basics#index-entry-Any_(Basics)-Any" }
-,
-{ category: "Reference", value: "+=", url: "/language/101-basics#index-entry-+=" }
-,
-{ category: "Reference", value: "fat arrow", url: "/language/101-basics#index-entry-fat_arrow" }
-,
-{ category: "Reference", value: "pair", url: "/language/101-basics#index-entry-pair" }
-,
-{ category: "Reference", value: "autovivification", url: "/language/101-basics#index-entry-autovivification" }
-,
-{ category: "Reference", value: "postincrement", url: "/language/101-basics#index-entry-postincrement" }
-,
-{ category: "Reference", value: "preincrement", url: "/language/101-basics#index-entry-preincrement" }
-,
-{ category: "Reference", value: "variables, $_", url: "/language/101-basics#index-entry-variables,_$__" }
-,
-{ category: "Reference", value: "block (Basics)", url: "/language/101-basics#index-entry-block_(Basics)-block" }
-,
-{ category: "Reference", value: "stable sort", url: "/language/101-basics#index-entry-stable_sort" }
-,
-{ category: "Reference", value: "say (Basics)", url: "/language/101-basics#index-entry-say_(Basics)-say" }
-,
-{ category: "Reference", value: "say (Basics)", url: "/language/101-basics#index-entry-say_(Basics)-print" }
-,
-{ category: "Reference", value: "put (Basics)", url: "/language/101-basics#index-entry-put_(Basics)-put" }
-,
-{ category: "Reference", value: "interpolation", url: "/language/101-basics#index-entry-interpolation" }
-,
-{ category: "Reference", value: "double-quoted strings", url: "/language/101-basics#index-entry-double-quoted_strings" }
-,
-{ category: "Reference", value: "single-quoted strings", url: "/language/101-basics#index-entry-single-quoted_strings" }
-,
-{ category: "Reference", value: "Zen slice (Basics)", url: "/language/101-basics#index-entry-Zen_slice_(Basics)-Zen_slice" }
-,
-{ category: "Reference", value: "$ (sigil)", url: "/language/variables#index-entry-sigil_$" }
-,
-{ category: "Reference", value: "@ (sigil)", url: "/language/variables#index-entry-sigil_@" }
-,
-{ category: "Reference", value: "% (sigil)", url: "/language/variables#index-entry-sigil_$PERCENT_SIGN" }
-,
-{ category: "Reference", value: "& (sigil)", url: "/language/variables#index-entry-sigil_&" }
-,
-{ category: "Reference", value: "is (type of variable)", url: "/language/variables#index-entry-is_(type_of_variable)" }
-,
-{ category: "Reference", value: "\\ (sigilless variables)", url: "/language/variables#index-entry-%5c_(sigilless_variables)" }
-,
-{ category: "Reference", value: "Twigil", url: "/language/variables#index-entry-Twigil" }
-,
-{ category: "Reference", value: "$*", url: "/language/variables#index-entry-$*" }
-,
-{ category: "Reference", value: "Dynamically scoped variables", url: "/language/variables#index-entry-Dynamically_scoped_variables" }
-,
-{ category: "Reference", value: "$?", url: "/language/variables#index-entry-$%3F" }
-,
-{ category: "Reference", value: "$!", url: "/language/variables#index-entry-$!" }
-,
-{ category: "Reference", value: "$.", url: "/language/variables#index-entry-$." }
-,
-{ category: "Reference", value: "$^", url: "/language/variables#index-entry-$$CIRCUMFLEX_ACCENT" }
-,
-{ category: "Reference", value: "$:", url: "/language/variables#index-entry-$:" }
-,
-{ category: "Reference", value: "$=", url: "/language/variables#index-entry-$=" }
-,
-{ category: "Reference", value: "$~", url: "/language/variables#index-entry-$~" }
-,
-{ category: "Reference", value: "$~MAIN", url: "/language/variables#index-entry-$~MAIN" }
-,
-{ category: "Reference", value: "$~Quote", url: "/language/variables#index-entry-$~Quote" }
-,
-{ category: "Reference", value: "$~Quasi", url: "/language/variables#index-entry-$~Quasi" }
-,
-{ category: "Reference", value: "$~Regex", url: "/language/variables#index-entry-$~Regex" }
-,
-{ category: "Reference", value: "$~Trans", url: "/language/variables#index-entry-$~Trans" }
-,
-{ category: "Reference", value: "$~P5Regex", url: "/language/variables#index-entry-$~P5Regex" }
-,
-{ category: "Reference", value: "supersede", url: "/language/variables#index-entry-supersede" }
-,
-{ category: "Reference", value: "declaring a list of variables", url: "/language/variables#index-entry-declaring_a_list_of_variables" }
-,
-{ category: "Reference", value: "destructuring assignment", url: "/language/variables#index-entry-destructuring_assignment" }
-,
-{ category: "Reference", value: "anon state variables", url: "/language/variables#index-entry-anon_state_variables" }
-,
-{ category: "Reference", value: "nameless variables", url: "/language/variables#index-entry-nameless_variables" }
-,
-{ category: "Reference", value: "$ (variable)", url: "/language/variables#index-entry-$_(variable)" }
-,
-{ category: "Reference", value: "constant (Prefix)", url: "/language/variables#index-entry-constant_(Prefix)" }
-,
-{ category: "Reference", value: "constants (syntax)", url: "/language/variables#index-entry-constants_(syntax)" }
-,
-{ category: "Reference", value: "topic variable", url: "/language/variables#index-entry-topic_variable" }
-,
-{ category: "Reference", value: "match variable", url: "/language/variables#index-entry-match_variable" }
-,
-{ category: "Reference", value: "$0 (variable)", url: "/language/variables#index-entry-variable_$0-variable_$1-Positional_attributes" }
-,
-{ category: "Reference", value: "$1 (variable)", url: "/language/variables#index-entry-variable_$0-variable_$1-Positional_attributes" }
-,
-{ category: "Reference", value: "$<named> (variable)", url: "/language/variables#index-entry-variable_$<named>-Named_attributes" }
-,
-{ category: "Reference", value: "error variable", url: "/language/variables#index-entry-error_variable" }
-,
-{ category: "Reference", value: "$?FILE", url: "/language/variables#index-entry-$%3FFILE" }
-,
-{ category: "Reference", value: "$?LINE", url: "/language/variables#index-entry-$%3FLINE" }
-,
-{ category: "Reference", value: "::?CLASS", url: "/language/variables#index-entry-::%3FCLASS" }
-,
-{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
-,
-{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
-,
-{ category: "Reference", value: "Distribution", url: "/language/variables#index-entry-Distribution" }
-,
-{ category: "Reference", value: "$?PACKAGE", url: "/language/variables#index-entry-$%3FPACKAGE" }
-,
-{ category: "Reference", value: "$?MODULE", url: "/language/variables#index-entry-$%3FMODULE" }
-,
-{ category: "Reference", value: "$?CLASS", url: "/language/variables#index-entry-$%3FCLASS" }
-,
-{ category: "Reference", value: "$?ROLE", url: "/language/variables#index-entry-$%3FROLE" }
-,
-{ category: "Reference", value: "$?TABSTOP", url: "/language/variables#index-entry-$%3FTABSTOP" }
-,
-{ category: "Reference", value: "$?NL", url: "/language/variables#index-entry-$%3FNL" }
-,
-{ category: "Reference", value: "$?DISTRIBUTION", url: "/language/variables#index-entry-$%3FDISTRIBUTION" }
-,
-{ category: "Reference", value: "&?ROUTINE", url: "/language/variables#index-entry-&%3FROUTINE" }
-,
-{ category: "Reference", value: "&?BLOCK", url: "/language/variables#index-entry-&%3FBLOCK" }
-,
-{ category: "Reference", value: "$?DISTRIBUTION", url: "/language/variables#index-entry-$%3FDISTRIBUTION" }
-,
-{ category: "Reference", value: "$*ARGFILES", url: "/language/variables#index-entry-$*ARGFILES" }
-,
-{ category: "Reference", value: "@*ARGS", url: "/language/variables#index-entry-@*ARGS" }
-,
-{ category: "Reference", value: "&*ARGS-TO-CAPTURE", url: "/language/variables#index-entry-&*ARGS-TO-CAPTURE" }
-,
-{ category: "Reference", value: "&*GENERATE-USAGE", url: "/language/variables#index-entry-&*GENERATE-USAGE" }
-,
-{ category: "Reference", value: "$*IN", url: "/language/variables#index-entry-$*IN" }
-,
-{ category: "Reference", value: "$*OUT", url: "/language/variables#index-entry-$*OUT" }
-,
-{ category: "Reference", value: "$*ERR", url: "/language/variables#index-entry-$*ERR" }
-,
-{ category: "Reference", value: "%*ENV", url: "/language/variables#index-entry-$PERCENT_SIGN*ENV" }
-,
-{ category: "Reference", value: "$*REPO", url: "/language/variables#index-entry-$*REPO" }
-,
-{ category: "Reference", value: "$*INIT-INSTANT", url: "/language/variables#index-entry-$*INIT-INSTANT" }
-,
-{ category: "Reference", value: "$*TZ", url: "/language/variables#index-entry-$*TZ" }
-,
-{ category: "Reference", value: "$*CWD", url: "/language/variables#index-entry-$*CWD" }
-,
-{ category: "Reference", value: "$*KERNEL", url: "/language/variables#index-entry-$*KERNEL" }
-,
-{ category: "Reference", value: "$*DISTRO", url: "/language/variables#index-entry-$*DISTRO" }
-,
-{ category: "Reference", value: "$*VM", url: "/language/variables#index-entry-$*VM" }
-,
-{ category: "Reference", value: "$*RAKU", url: "/language/variables#index-entry-$*RAKU" }
-,
-{ category: "Reference", value: "$*PERL", url: "/language/variables#index-entry-$*PERL" }
-,
-{ category: "Reference", value: "$*PID", url: "/language/variables#index-entry-$*PID" }
-,
-{ category: "Reference", value: "$*PROGRAM-NAME", url: "/language/variables#index-entry-$*PROGRAM-NAME" }
-,
-{ category: "Reference", value: "$*PROGRAM", url: "/language/variables#index-entry-$*PROGRAM" }
-,
-{ category: "Reference", value: "&*EXIT", url: "/language/variables#index-entry-&*EXIT" }
-,
-{ category: "Reference", value: "$*EXECUTABLE", url: "/language/variables#index-entry-$*EXECUTABLE" }
-,
-{ category: "Reference", value: "$*EXECUTABLE-NAME", url: "/language/variables#index-entry-$*EXECUTABLE-NAME" }
-,
-{ category: "Reference", value: "$*USAGE", url: "/language/variables#index-entry-$*USAGE" }
-,
-{ category: "Reference", value: "$*USER", url: "/language/variables#index-entry-$*USER" }
-,
-{ category: "Reference", value: "$*GROUP", url: "/language/variables#index-entry-$*GROUP" }
-,
-{ category: "Reference", value: "$*HOMEDRIVE", url: "/language/variables#index-entry-$*HOMEDRIVE" }
-,
-{ category: "Reference", value: "$*HOMEPATH", url: "/language/variables#index-entry-$*HOMEPATH" }
-,
-{ category: "Reference", value: "$*HOME", url: "/language/variables#index-entry-$*HOME" }
-,
-{ category: "Reference", value: "$*SPEC", url: "/language/variables#index-entry-$*SPEC" }
-,
-{ category: "Reference", value: "$*TMPDIR", url: "/language/variables#index-entry-$*TMPDIR" }
-,
-{ category: "Reference", value: "$*THREAD", url: "/language/variables#index-entry-$*THREAD" }
-,
-{ category: "Reference", value: "$*SCHEDULER", url: "/language/variables#index-entry-$*SCHEDULER" }
-,
-{ category: "Reference", value: "$*SAMPLER", url: "/language/variables#index-entry-$*SAMPLER" }
-,
-{ category: "Reference", value: "$*USAGE", url: "/language/variables#index-entry-$*USAGE" }
-,
-{ category: "Reference", value: "$*COLLATION", url: "/language/variables#index-entry-$*COLLATION" }
-,
-{ category: "Reference", value: "$*TOLERANCE", url: "/language/variables#index-entry-$*TOLERANCE" }
-,
-{ category: "Reference", value: "$*DEFAULT-READ-ELEMS", url: "/language/variables#index-entry-$*DEFAULT-READ-ELEMS" }
-,
-{ category: "Reference", value: "Zen slices", url: "/language/subscripts#index-entry-Zen_slices" }
-,
-{ category: "Reference", value: "flattening", url: "/language/subscripts#index-entry-flattening_" }
-,
-{ category: "Reference", value: ":exists (subscript adverb)", url: "/language/subscripts#index-entry-:exists_(subscript_adverb)" }
-,
-{ category: "Reference", value: ":delete (subscript adverb)", url: "/language/subscripts#index-entry-:delete_(subscript_adverb)" }
-,
-{ category: "Reference", value: ":p (subscript adverb)", url: "/language/subscripts#index-entry-:p_(subscript_adverb)" }
-,
-{ category: "Reference", value: ":kv (subscript adverb)", url: "/language/subscripts#index-entry-:kv_(subscript_adverb)" }
-,
-{ category: "Reference", value: ":k (subscript adverb)", url: "/language/subscripts#index-entry-:k_(subscript_adverb)" }
-,
-{ category: "Reference", value: ":v (subscript adverb)", url: "/language/subscripts#index-entry-:v_(subscript_adverb)" }
-,
-{ category: "Reference", value: "«", url: "/language/unicode_ascii#index-entry-«" }
-,
-{ category: "Reference", value: "»", url: "/language/unicode_ascii#index-entry-»" }
-,
-{ category: "Reference", value: "×", url: "/language/unicode_ascii#index-entry-×" }
-,
-{ category: "Reference", value: "÷", url: "/language/unicode_ascii#index-entry-÷" }
-,
-{ category: "Reference", value: "≤", url: "/language/unicode_ascii#index-entry-≤" }
-,
-{ category: "Reference", value: "≥", url: "/language/unicode_ascii#index-entry-≥" }
-,
-{ category: "Reference", value: "≠", url: "/language/unicode_ascii#index-entry-≠" }
-,
-{ category: "Reference", value: "−", url: "/language/unicode_ascii#index-entry-−" }
-,
-{ category: "Reference", value: "∘", url: "/language/unicode_ascii#index-entry-∘" }
-,
-{ category: "Reference", value: "≅", url: "/language/unicode_ascii#index-entry-≅" }
-,
-{ category: "Reference", value: "π", url: "/language/unicode_ascii#index-entry-π" }
-,
-{ category: "Reference", value: "τ", url: "/language/unicode_ascii#index-entry-τ" }
-,
-{ category: "Reference", value: "𝑒", url: "/language/unicode_ascii#index-entry-𝑒" }
-,
-{ category: "Reference", value: "∞", url: "/language/unicode_ascii#index-entry-∞" }
-,
-{ category: "Reference", value: "…", url: "/language/unicode_ascii#index-entry-…" }
-,
-{ category: "Reference", value: "‘", url: "/language/unicode_ascii#index-entry-‘" }
-,
-{ category: "Reference", value: "’", url: "/language/unicode_ascii#index-entry-’" }
-,
-{ category: "Reference", value: "‚", url: "/language/unicode_ascii#index-entry-‚" }
-,
-{ category: "Reference", value: "“", url: "/language/unicode_ascii#index-entry-“" }
-,
-{ category: "Reference", value: "”", url: "/language/unicode_ascii#index-entry-”" }
-,
-{ category: "Reference", value: "„", url: "/language/unicode_ascii#index-entry-„" }
-,
-{ category: "Reference", value: "｢", url: "/language/unicode_ascii#index-entry-｢" }
-,
-{ category: "Reference", value: "｣", url: "/language/unicode_ascii#index-entry-｣" }
-,
-{ category: "Reference", value: "⁺", url: "/language/unicode_ascii#index-entry-⁺" }
-,
-{ category: "Reference", value: "⁻", url: "/language/unicode_ascii#index-entry-⁻" }
-,
-{ category: "Reference", value: "¯", url: "/language/unicode_ascii#index-entry-¯" }
-,
-{ category: "Reference", value: "⁰", url: "/language/unicode_ascii#index-entry-⁰" }
-,
-{ category: "Reference", value: "¹", url: "/language/unicode_ascii#index-entry-¹" }
-,
-{ category: "Reference", value: "²", url: "/language/unicode_ascii#index-entry-²" }
-,
-{ category: "Reference", value: "³", url: "/language/unicode_ascii#index-entry-³" }
-,
-{ category: "Reference", value: "⁴", url: "/language/unicode_ascii#index-entry-⁴" }
-,
-{ category: "Reference", value: "⁵", url: "/language/unicode_ascii#index-entry-⁵" }
-,
-{ category: "Reference", value: "⁶", url: "/language/unicode_ascii#index-entry-⁶" }
-,
-{ category: "Reference", value: "⁷", url: "/language/unicode_ascii#index-entry-⁷" }
-,
-{ category: "Reference", value: "⁸", url: "/language/unicode_ascii#index-entry-⁸" }
-,
-{ category: "Reference", value: "⁹", url: "/language/unicode_ascii#index-entry-⁹" }
-,
-{ category: "Reference", value: "∈", url: "/language/unicode_ascii#index-entry-∈" }
-,
-{ category: "Reference", value: "∉", url: "/language/unicode_ascii#index-entry-∉" }
-,
-{ category: "Reference", value: "∋", url: "/language/unicode_ascii#index-entry-∋" }
-,
-{ category: "Reference", value: "∌", url: "/language/unicode_ascii#index-entry-∌" }
-,
-{ category: "Reference", value: "⊆", url: "/language/unicode_ascii#index-entry-⊆" }
-,
-{ category: "Reference", value: "⊈", url: "/language/unicode_ascii#index-entry-⊈" }
-,
-{ category: "Reference", value: "⊂", url: "/language/unicode_ascii#index-entry-⊂" }
-,
-{ category: "Reference", value: "⊄", url: "/language/unicode_ascii#index-entry-⊄" }
-,
-{ category: "Reference", value: "⊇", url: "/language/unicode_ascii#index-entry-⊇" }
-,
-{ category: "Reference", value: "⊉", url: "/language/unicode_ascii#index-entry-⊉" }
-,
-{ category: "Reference", value: "⊃", url: "/language/unicode_ascii#index-entry-⊃" }
-,
-{ category: "Reference", value: "⊅", url: "/language/unicode_ascii#index-entry-⊅" }
-,
-{ category: "Reference", value: "≼", url: "/language/unicode_ascii#index-entry-≼" }
-,
-{ category: "Reference", value: "≽", url: "/language/unicode_ascii#index-entry-≽" }
-,
-{ category: "Reference", value: "∪", url: "/language/unicode_ascii#index-entry-∪" }
-,
-{ category: "Reference", value: "∩", url: "/language/unicode_ascii#index-entry-∩" }
-,
-{ category: "Reference", value: "∖", url: "/language/unicode_ascii#index-entry-∖" }
-,
-{ category: "Reference", value: "⊖", url: "/language/unicode_ascii#index-entry-⊖" }
-,
-{ category: "Reference", value: "⊍", url: "/language/unicode_ascii#index-entry-⊍" }
-,
-{ category: "Reference", value: "⊎", url: "/language/unicode_ascii#index-entry-⊎" }
-,
-{ category: "Reference", value: "⚛=", url: "/language/unicode_ascii#index-entry-⚛=" }
-,
-{ category: "Reference", value: "⚛", url: "/language/unicode_ascii#index-entry-⚛" }
-,
-{ category: "Reference", value: "⚛+=", url: "/language/unicode_ascii#index-entry-⚛+=" }
-,
-{ category: "Reference", value: "⚛-=", url: "/language/unicode_ascii#index-entry-⚛-=" }
-,
-{ category: "Reference", value: "⚛−=", url: "/language/unicode_ascii#index-entry-⚛−=" }
-,
-{ category: "Reference", value: "++⚛", url: "/language/unicode_ascii#index-entry-++⚛" }
-,
-{ category: "Reference", value: "⚛++", url: "/language/unicode_ascii#index-entry-⚛++" }
-,
-{ category: "Reference", value: "--⚛", url: "/language/unicode_ascii#index-entry---⚛" }
-,
-{ category: "Reference", value: "⚛--", url: "/language/unicode_ascii#index-entry-⚛--" }
-,
-{ category: "Reference", value: "»=»", url: "/language/unicode_ascii#index-entry-»=»" }
-,
-{ category: "Reference", value: "«=«", url: "/language/unicode_ascii#index-entry-«=«" }
-,
-{ category: "Reference", value: "«=»", url: "/language/unicode_ascii#index-entry-«=»" }
-,
-{ category: "Reference", value: "»=«", url: "/language/unicode_ascii#index-entry-»=«" }
-,
-{ category: "Reference", value: "compunit", url: "/language/modules#index-entry-compunit" }
-,
-{ category: "Reference", value: "need", url: "/language/modules#index-entry-need" }
-,
-{ category: "Reference", value: "use", url: "/language/modules#index-entry-use" }
-,
-{ category: "Reference", value: "require", url: "/language/modules#index-entry-require" }
-,
-{ category: "Reference", value: "sub EXPORT", url: "/language/modules#index-entry-sub_EXPORT" }
-,
-{ category: "Reference", value: "use lib", url: "/language/modules#index-entry-use_lib" }
-,
-{ category: "Reference", value: "Build.pm6", url: "/language/modules#index-entry-Build.pm6-Build.pm6" }
-,
-{ category: "Reference", value: "META6.json", url: "/language/modules#index-entry-META6.json-META6.json" }
-,
-{ category: "Reference", value: "zef", url: "/language/modules#index-entry-zef" }
-,
-{ category: "Reference", value: "Date and time functions", url: "/language/temporal#index-entry-Date_and_time_functions" }
-,
-{ category: "Reference", value: "Date ranges", url: "/language/temporal#index-entry-Date_ranges" }
 ,
 { category: "Reference", value: "OOP", url: "/language/classtut#index-entry-OOP" }
 ,
@@ -4786,332 +3986,6 @@ $(function(){
 { category: "Reference", value: "^methods", url: "/language/classtut#index-entry-$CIRCUMFLEX_ACCENTmethods" }
 ,
 { category: "Reference", value: "Overriding default gist method", url: "/language/classtut#index-entry-Overriding_default_gist_method" }
-,
-{ category: "Reference", value: "nativecall", url: "/language/nativecall#index-entry-nativecall" }
-,
-{ category: "Reference", value: "repr", url: "/language/nativecall#index-entry-repr" }
-,
-{ category: "Reference", value: "is repr", url: "/language/nativecall#index-entry-is_repr" }
-,
-{ category: "Reference", value: "CStruct (native representation)", url: "/language/nativecall#index-entry-CStruct_(native_representation)" }
-,
-{ category: "Reference", value: "CArray", url: "/language/nativecall#index-entry-CArray" }
-,
-{ category: "Reference", value: "CArray methods", url: "/language/nativecall#index-entry-CArray_methods" }
-,
-{ category: "Reference", value: "deref", url: "/language/nativecall#index-entry-deref-.deref" }
-,
-{ category: "Reference", value: "is (trait)", url: "/language/traits#index-entry-is_(trait)-is_trait" }
-,
-{ category: "Reference", value: "Uninstantiable representation trait", url: "/language/traits#index-entry-Uninstantiable_representation_trait" }
-,
-{ category: "Reference", value: "CStruct", url: "/language/traits#index-entry-CStruct" }
-,
-{ category: "Reference", value: "CPPStruct", url: "/language/traits#index-entry-CPPStruct" }
-,
-{ category: "Reference", value: "CPointer", url: "/language/traits#index-entry-CPointer" }
-,
-{ category: "Reference", value: "CUnion", url: "/language/traits#index-entry-CUnion" }
-,
-{ category: "Reference", value: "P6opaque", url: "/language/traits#index-entry-P6opaque" }
-,
-{ category: "Reference", value: ":$translate-nl", url: "/language/newline#index-entry-:$translate-nl" }
-,
-{ category: "Reference", value: ":nl-out", url: "/language/newline#index-entry-:nl-out" }
-,
-{ category: "Reference", value: "∅", url: "/language/terms#index-entry-∅" }
-,
-{ category: "Reference", value: "empty set", url: "/language/terms#index-entry-empty_set" }
-,
-{ category: "Reference", value: "constant (Terms)", url: "/language/terms#index-entry-constant_(Terms)" }
-,
-{ category: "Reference", value: "constants", url: "/language/terms#index-entry-constants" }
-,
-{ category: "Reference", value: "lazy (statement prefix)", url: "/language/statement-prefixes#index-entry-lazy_(statement_prefix)-lazy" }
-,
-{ category: "Reference", value: "eager (statement prefix)", url: "/language/statement-prefixes#index-entry-eager_(statement_prefix)-eager" }
-,
-{ category: "Reference", value: "hyper (statement prefix)", url: "/language/statement-prefixes#index-entry-hyper_(statement_prefix)-hyper" }
-,
-{ category: "Reference", value: "race (statement prefix)", url: "/language/statement-prefixes#index-entry-race_(statement_prefix)-race" }
-,
-{ category: "Reference", value: "quietly (statement prefix)", url: "/language/statement-prefixes#index-entry-quietly_(statement_prefix)-quietly" }
-,
-{ category: "Reference", value: "try (statement prefix)", url: "/language/statement-prefixes#index-entry-try_(statement_prefix)-try" }
-,
-{ category: "Reference", value: "do (statement prefix)", url: "/language/statement-prefixes#index-entry-do_(statement_prefix)-do" }
-,
-{ category: "Reference", value: "sink (statement prefix)", url: "/language/statement-prefixes#index-entry-sink_(statement_prefix)-sink" }
-,
-{ category: "Reference", value: "once (statement prefix)", url: "/language/statement-prefixes#index-entry-once_(statement_prefix)-once" }
-,
-{ category: "Reference", value: "gather (statement prefix)", url: "/language/statement-prefixes#index-entry-gather_(statement_prefix)-gather" }
-,
-{ category: "Reference", value: "start (statement prefix)", url: "/language/statement-prefixes#index-entry-start_(statement_prefix)-start" }
-,
-{ category: "Reference", value: "react (statement prefix)", url: "/language/statement-prefixes#index-entry-react_(statement_prefix)-react" }
-,
-{ category: "Reference", value: "supply (statement prefix)", url: "/language/statement-prefixes#index-entry-supply_(statement_prefix)-supply" }
-,
-{ category: "Reference", value: "Special Variables (Perl)", url: "/language/5to6-perlvar#index-entry-Special_Variables_(Perl)" }
-,
-{ category: "Reference", value: "$_ (Perl)", url: "/language/5to6-perlvar#index-entry-$___(Perl)" }
-,
-{ category: "Reference", value: "@_ (Perl)", url: "/language/5to6-perlvar#index-entry-@___(Perl)" }
-,
-{ category: "Reference", value: "$$ (Perl)", url: "/language/5to6-perlvar#index-entry-$$_(Perl)" }
-,
-{ category: "Reference", value: "$0 (Perl)", url: "/language/5to6-perlvar#index-entry-$0_(Perl)" }
-,
-{ category: "Reference", value: "@INC (Perl)", url: "/language/5to6-perlvar#index-entry-@INC_(Perl)" }
-,
-{ category: "Reference", value: "%INC (Perl)", url: "/language/5to6-perlvar#index-entry-$PERCENT_SIGNINC_(Perl)" }
-,
-{ category: "Reference", value: "XCompose", url: "/language/unicode_entry#index-entry-XCompose" }
-,
-{ category: "Reference", value: "ibus", url: "/language/unicode_entry#index-entry-ibus" }
-,
-{ category: "Reference", value: "WinCompose", url: "/language/unicode_entry#index-entry-WinCompose" }
-,
-{ category: "Reference", value: "Vim", url: "/language/unicode_entry#index-entry-Vim" }
-,
-{ category: "Reference", value: "Emacs", url: "/language/unicode_entry#index-entry-Emacs" }
-,
-{ category: "Reference", value: "CATCH", url: "/language/exceptions#index-entry-CATCH-CATCH" }
-,
-{ category: "Reference", value: "try blocks", url: "/language/exceptions#index-entry-try_blocks" }
-,
-{ category: "Reference", value: "resume (Exceptions)", url: "/language/exceptions#index-entry-resume_(Exceptions)" }
-,
-{ category: "Reference", value: "Single Argument Rule", url: "/language/list#index-entry-Single_Argument_Rule" }
-,
-{ category: "Reference", value: "laziness in Iterable objects", url: "/language/list#index-entry-laziness_in_Iterable_objects" }
-,
-{ category: "Reference", value: "typed array", url: "/language/list#index-entry-typed_array" }
-,
-{ category: "Reference", value: "[ ] (typed array)", url: "/language/list#index-entry-[_]_(typed_array)" }
-,
-{ category: "Reference", value: "Shaped arrays", url: "/language/list#index-entry-Shaped_arrays" }
-,
-{ category: "Reference", value: "Type objects", url: "/language/objects#index-entry-Type_objects" }
-,
-{ category: "Reference", value: "class (declarator)", url: "/language/objects#index-entry-declarator_class-Classes" }
-,
-{ category: "Reference", value: "Attribute", url: "/language/objects#index-entry-Attribute" }
-,
-{ category: "Reference", value: "Property", url: "/language/objects#index-entry-Property" }
-,
-{ category: "Reference", value: "Member", url: "/language/objects#index-entry-Member" }
-,
-{ category: "Reference", value: "Slot", url: "/language/objects#index-entry-Slot" }
-,
-{ category: "Reference", value: "indirect invocant syntax", url: "/language/objects#index-entry-indirect_invocant_syntax" }
-,
-{ category: "Reference", value: "self", url: "/language/objects#index-entry-self" }
-,
-{ category: "Reference", value: "Private methods", url: "/language/objects#index-entry-Private_methods" }
-,
-{ category: "Reference", value: "Submethods", url: "/language/objects#index-entry-Submethods" }
-,
-{ category: "Reference", value: "MRO", url: "/language/objects#index-entry-MRO" }
-,
-{ category: "Reference", value: "delegation (trait handles)", url: "/language/objects#index-entry-delegation_(trait_handles)" }
-,
-{ category: "Reference", value: "new (method)", url: "/language/objects#index-entry-new_(method)" }
-,
-{ category: "Reference", value: "TWEAK", url: "/language/objects#index-entry-TWEAK" }
-,
-{ category: "Reference", value: "role (declarator)", url: "/language/objects#index-entry-declarator_role-Roles" }
-,
-{ category: "Reference", value: "does", url: "/language/objects#index-entry-does" }
-,
-{ category: "Reference", value: "Parameterized Roles", url: "/language/objects#index-entry-Parameterized_Roles" }
-,
-{ category: "Reference", value: "but", url: "/language/objects#index-entry-but" }
-,
-{ category: "Reference", value: "Mixins", url: "/language/objects#index-entry-Mixins" }
-,
-{ category: "Reference", value: "Q (quote)", url: "/language/quoting#index-entry-quote_Q-quote_｢_｣-Literal_strings:_Q" }
-,
-{ category: "Reference", value: "｢ ｣ (quote)", url: "/language/quoting#index-entry-quote_Q-quote_｢_｣-Literal_strings:_Q" }
-,
-{ category: "Reference", value: ":x (quoting adverb)", url: "/language/quoting#index-entry-:x_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":exec (quoting adverb)", url: "/language/quoting#index-entry-:exec_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":w (quoting adverb)", url: "/language/quoting#index-entry-:w_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":words (quoting adverb)", url: "/language/quoting#index-entry-:words_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":ww (quoting adverb)", url: "/language/quoting#index-entry-:ww_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":quotewords (quoting adverb)", url: "/language/quoting#index-entry-:quotewords_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":q (quoting adverb)", url: "/language/quoting#index-entry-:q_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":single (quoting adverb)", url: "/language/quoting#index-entry-:single_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":qq (quoting adverb)", url: "/language/quoting#index-entry-:qq_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":double (quoting adverb)", url: "/language/quoting#index-entry-:double_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":s (quoting adverb)", url: "/language/quoting#index-entry-:s_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":scalar (quoting adverb)", url: "/language/quoting#index-entry-:scalar_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":a (quoting adverb)", url: "/language/quoting#index-entry-:a_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":array (quoting adverb)", url: "/language/quoting#index-entry-:array_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":h (quoting adverb)", url: "/language/quoting#index-entry-:h_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":hash (quoting adverb)", url: "/language/quoting#index-entry-:hash_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":f (quoting adverb)", url: "/language/quoting#index-entry-:f_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":function (quoting adverb)", url: "/language/quoting#index-entry-:function_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":c (quoting adverb)", url: "/language/quoting#index-entry-:c_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":closure (quoting adverb)", url: "/language/quoting#index-entry-:closure_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":b (quoting adverb)", url: "/language/quoting#index-entry-:b_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":backslash (quoting adverb)", url: "/language/quoting#index-entry-:backslash_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":to (quoting adverb)", url: "/language/quoting#index-entry-:to_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":heredoc (quoting adverb)", url: "/language/quoting#index-entry-:heredoc_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":v (quoting adverb)", url: "/language/quoting#index-entry-:v_(quoting_adverb)" }
-,
-{ category: "Reference", value: ":val (quoting adverb)", url: "/language/quoting#index-entry-:val_(quoting_adverb)" }
-,
-{ category: "Reference", value: "escaping quote", url: "/language/quoting#index-entry-escaping_quote" }
-,
-{ category: "Reference", value: "q (quote)", url: "/language/quoting#index-entry-quote_q-quote_'_'-Escaping:_q" }
-,
-{ category: "Reference", value: "' ' (quote)", url: "/language/quoting#index-entry-quote_q-quote_'_'-Escaping:_q" }
-,
-{ category: "Reference", value: "qq (quote)", url: "/language/quoting#index-entry-quote_qq-quote_\"_\"-Interpolation:_qq" }
-,
-{ category: "Reference", value: "\" \" (quote)", url: "/language/quoting#index-entry-quote_qq-quote_\"_\"-Interpolation:_qq" }
-,
-{ category: "Reference", value: "\\ (quoting)", url: "/language/quoting#index-entry-%5c_(quoting)" }
-,
-{ category: "Reference", value: "& (interpolation)", url: "/language/quoting#index-entry-&_(interpolation)" }
-,
-{ category: "Reference", value: "qw word quote", url: "/language/quoting#index-entry-qw_word_quote" }
-,
-{ category: "Reference", value: "< > word quote", url: "/language/quoting#index-entry-<_>_word_quote" }
-,
-{ category: "Reference", value: "qww (quote)", url: "/language/quoting#index-entry-quote_qww-Word_quoting_with_quote_protection:_qww" }
-,
-{ category: "Reference", value: "qqw (quote)", url: "/language/quoting#index-entry-quote_qqw-Word_quoting_with_interpolation:_qqw" }
-,
-{ category: "Reference", value: "qqww (quote)", url: "/language/quoting#index-entry-quote_qqww-Word_quoting_with_interpolation_and_quote_protection:_qqww" }
-,
-{ category: "Reference", value: "<< >> (quote)", url: "/language/quoting#index-entry-quote_<<_>>-quote_«_»-Word_quoting_with_interpolation_and_quote_protection:_«_»" }
-,
-{ category: "Reference", value: "« » (quote)", url: "/language/quoting#index-entry-quote_<<_>>-quote_«_»-Word_quoting_with_interpolation_and_quote_protection:_«_»" }
-,
-{ category: "Reference", value: "qx (quote)", url: "/language/quoting#index-entry-quote_qx-Shell_quoting:_qx" }
-,
-{ category: "Reference", value: "qqx (quote)", url: "/language/quoting#index-entry-quote_qqx-Shell_quoting_with_interpolation:_qqx" }
-,
-{ category: "Reference", value: "heredocs :to (quote)", url: "/language/quoting#index-entry-quote_heredocs_:to-Heredocs:_:to" }
-,
-{ category: "Reference", value: "statements (control flow)", url: "/language/control#index-entry-control_flow__statements-statements" }
-,
-{ category: "Reference", value: "blocks (control flow)", url: "/language/control#index-entry-control_flow__blocks-Blocks" }
-,
-{ category: "Reference", value: "Phasers (control flow)", url: "/language/control#index-entry-control_flow_Phasers-Phasers" }
-,
-{ category: "Reference", value: "do (control flow)", url: "/language/control#index-entry-control_flow_do-do" }
-,
-{ category: "Reference", value: "start (control flow)", url: "/language/control#index-entry-control_flow_start-start" }
-,
-{ category: "Reference", value: "if (control flow)", url: "/language/control#index-entry-control_flow_if-if" }
-,
-{ category: "Reference", value: "else elsif (control flow)", url: "/language/control#index-entry-control_flow_else_elsif-else$SOLIDUSelsif" }
-,
-{ category: "Reference", value: "unless (control flow)", url: "/language/control#index-entry-control_flow__unless-unless" }
-,
-{ category: "Reference", value: "with (control flow)", url: "/language/control#index-entry-control_flow_with" }
-,
-{ category: "Reference", value: "orwith (control flow)", url: "/language/control#index-entry-control_flow_orwith" }
-,
-{ category: "Reference", value: "without (control flow)", url: "/language/control#index-entry-control_flow_without" }
-,
-{ category: "Reference", value: "with orwith without", url: "/language/control#index-entry-with_orwith_without-with_orwith_without" }
-,
-{ category: "Reference", value: "when (control flow)", url: "/language/control#index-entry-control_flow__when-when" }
-,
-{ category: "Reference", value: "for (control flow)", url: "/language/control#index-entry-control_flow__for-for" }
-,
-{ category: "Reference", value: "gather take (control flow)", url: "/language/control#index-entry-control_flow_gather_take-gather$SOLIDUStake" }
-,
-{ category: "Reference", value: "gather (lazy list)", url: "/language/control#index-entry-lazy_list_gather" }
-,
-{ category: "Reference", value: "take (lazy list)", url: "/language/control#index-entry-lazy_list_take" }
-,
-{ category: "Reference", value: "supply emit (control flow)", url: "/language/control#index-entry-control_flow_supply_emit-supply$SOLIDUSemit" }
-,
-{ category: "Reference", value: "given (control flow)", url: "/language/control#index-entry-control_flow__given-given" }
-,
-{ category: "Reference", value: "switch (given)", url: "/language/control#index-entry-switch_(given)" }
-,
-{ category: "Reference", value: "default when (control flow)", url: "/language/control#index-entry-control_flow_default_when-default_and_when" }
-,
-{ category: "Reference", value: "proceed (control flow)", url: "/language/control#index-entry-control_flow__proceed-proceed" }
-,
-{ category: "Reference", value: "succeed (control flow)", url: "/language/control#index-entry-control_flow__succeed-succeed" }
-,
-{ category: "Reference", value: "given statement (control flow)", url: "/language/control#index-entry-control_flow_given_statement-given_as_a_statement" }
-,
-{ category: "Reference", value: "loop (control flow)", url: "/language/control#index-entry-control_flow__loop-loop" }
-,
-{ category: "Reference", value: "while until (control flow)", url: "/language/control#index-entry-control_flow_while_until-while,_until" }
-,
-{ category: "Reference", value: "repeat (control flow)", url: "/language/control#index-entry-control_flow_repeat-repeat$SOLIDUSwhile,_repeat$SOLIDUSuntil" }
-,
-{ category: "Reference", value: "return (control flow)", url: "/language/control#index-entry-control_flow_return-return" }
-,
-{ category: "Reference", value: "return-rw (control flow)", url: "/language/control#index-entry-control_flow__return-rw-return-rw" }
-,
-{ category: "Reference", value: "fail (control flow)", url: "/language/control#index-entry-control_flow__fail-fail" }
-,
-{ category: "Reference", value: "once (control flow)", url: "/language/control#index-entry-control_flow__once-once" }
-,
-{ category: "Reference", value: "quietly (control flow)", url: "/language/control#index-entry-control_flow__quietly-quietly" }
-,
-{ category: "Reference", value: "next (control flow)", url: "/language/control#index-entry-control_flow__next-next" }
-,
-{ category: "Reference", value: "last (control flow)", url: "/language/control#index-entry-control_flow__last-last" }
-,
-{ category: "Reference", value: "redo (control flow)", url: "/language/control#index-entry-control_flow__redo-redo" }
-,
-{ category: "Reference", value: "token (declarator)", url: "/language/grammars#index-entry-declarator_token-Named_Regexes" }
-,
-{ category: "Reference", value: "rule (declarator)", url: "/language/grammars#index-entry-declarator_rule-Rules" }
-,
-{ category: "Reference", value: "Creating grammars", url: "/language/grammars#index-entry-Creating_grammars" }
-,
-{ category: "Reference", value: ":sym<>", url: "/language/grammars#index-entry-:sym<>-_proto_regex-_declarator_grammar-Proto_regexes" }
-,
-{ category: "Reference", value: "proto regex", url: "/language/grammars#index-entry-:sym<>-_proto_regex-_declarator_grammar-Proto_regexes" }
-,
-{ category: "Reference", value: "grammar ( declarator)", url: "/language/grammars#index-entry-:sym<>-_proto_regex-_declarator_grammar-Proto_regexes" }
-,
-{ category: "Reference", value: "TOP", url: "/language/grammars#index-entry-TOP-TOP" }
-,
-{ category: "Reference", value: "ws", url: "/language/grammars#index-entry-ws" }
-,
-{ category: "Reference", value: "<sym>", url: "/language/grammars#index-entry-<sym>-sym" }
-,
-{ category: "Reference", value: "<?>", url: "/language/grammars#index-entry-<%3F>" }
-,
-{ category: "Reference", value: "Actions", url: "/language/grammars#index-entry-Actions" }
 ,
 { category: "Reference", value: "filetests - perlfunc", url: "/language/5to6-perlfunc#index-entry-filetests_-_perlfunc" }
 ,
@@ -5459,53 +4333,123 @@ $(function(){
 ,
 { category: "Reference", value: "y\/\/\/ - perlfunc", url: "/language/5to6-perlfunc#index-entry-y$SOLIDUS$SOLIDUS$SOLIDUS_-_perlfunc" }
 ,
-{ category: "Reference", value: "þ (infix)", url: "/language/about#index-entry-infix_þ-How_to_use_the_þ_infix" }
+{ category: "Reference", value: "\\ (container binding)", url: "/language/containers#index-entry-%5c_(container_binding)" }
 ,
-{ category: "Reference", value: "foo", url: "/language/about#index-entry-foo-foo" }
+{ category: "Reference", value: "int", url: "/language/nativetypes#index-entry-int" }
 ,
-{ category: "Reference", value: "package (::)", url: "/language/packages#index-entry-::_package" }
+{ category: "Reference", value: "uint", url: "/language/nativetypes#index-entry-uint" }
 ,
-{ category: "Reference", value: "MY (package)", url: "/language/packages#index-entry-MY_(package)" }
+{ category: "Reference", value: "num", url: "/language/nativetypes#index-entry-num" }
 ,
-{ category: "Reference", value: "OUR (package)", url: "/language/packages#index-entry-OUR_(package)" }
+{ category: "Reference", value: "str", url: "/language/nativetypes#index-entry-str" }
 ,
-{ category: "Reference", value: "CORE (package)", url: "/language/packages#index-entry-CORE_(package)" }
+{ category: "Reference", value: "int @", url: "/language/nativetypes#index-entry-int_@" }
 ,
-{ category: "Reference", value: "GLOBAL (package)", url: "/language/packages#index-entry-GLOBAL_(package)" }
+{ category: "Reference", value: "num @", url: "/language/nativetypes#index-entry-num_@" }
 ,
-{ category: "Reference", value: "PROCESS (package)", url: "/language/packages#index-entry-PROCESS_(package)" }
+{ category: "Reference", value: "str @", url: "/language/nativetypes#index-entry-str_@" }
 ,
-{ category: "Reference", value: "COMPILING(package)", url: "/language/packages#index-entry-COMPILING(package)" }
+{ category: "Reference", value: "native array", url: "/language/nativetypes#index-entry-native_array" }
 ,
-{ category: "Reference", value: "CALLER (package)", url: "/language/packages#index-entry-CALLER_(package)" }
+{ category: "Reference", value: "array", url: "/language/nativetypes#index-entry-array" }
 ,
-{ category: "Reference", value: "CALLERS (package)", url: "/language/packages#index-entry-CALLERS_(package)" }
+{ category: "Reference", value: "int8", url: "/language/nativetypes#index-entry-int8" }
 ,
-{ category: "Reference", value: "DYNAMIC (package)", url: "/language/packages#index-entry-DYNAMIC_(package)" }
+{ category: "Reference", value: "int16", url: "/language/nativetypes#index-entry-int16" }
 ,
-{ category: "Reference", value: "OUTER (package)", url: "/language/packages#index-entry-OUTER_(package)" }
+{ category: "Reference", value: "int32", url: "/language/nativetypes#index-entry-int32" }
 ,
-{ category: "Reference", value: "OUTERS (package)", url: "/language/packages#index-entry-OUTERS_(package)" }
+{ category: "Reference", value: "int64", url: "/language/nativetypes#index-entry-int64" }
 ,
-{ category: "Reference", value: "LEXICAL (package)", url: "/language/packages#index-entry-LEXICAL_(package)" }
+{ category: "Reference", value: "uint8", url: "/language/nativetypes#index-entry-uint8" }
 ,
-{ category: "Reference", value: "UNIT (package)", url: "/language/packages#index-entry-UNIT_(package)" }
+{ category: "Reference", value: "uint16", url: "/language/nativetypes#index-entry-uint16" }
 ,
-{ category: "Reference", value: "SETTING (package)", url: "/language/packages#index-entry-SETTING_(package)" }
+{ category: "Reference", value: "uint32", url: "/language/nativetypes#index-entry-uint32" }
 ,
-{ category: "Reference", value: "PARENT (package)", url: "/language/packages#index-entry-PARENT_(package)" }
+{ category: "Reference", value: "uint64", url: "/language/nativetypes#index-entry-uint64" }
 ,
-{ category: "Reference", value: "CLIENT (package)", url: "/language/packages#index-entry-CLIENT_(package)" }
+{ category: "Reference", value: "num32", url: "/language/nativetypes#index-entry-num32" }
 ,
-{ category: "Reference", value: "interpolating into names", url: "/language/packages#index-entry-interpolating_into_names" }
+{ category: "Reference", value: "num64", url: "/language/nativetypes#index-entry-num64" }
 ,
-{ category: "Reference", value: "::()", url: "/language/packages#index-entry-::()" }
+{ category: "Reference", value: "byte", url: "/language/nativetypes#index-entry-byte" }
 ,
-{ category: "Reference", value: "::($c).m", url: "/language/packages#index-entry-::($c).m" }
+{ category: "Reference", value: "is nativesize", url: "/language/nativetypes#index-entry-is_nativesize" }
 ,
-{ category: "Reference", value: "A.\"$m\"()", url: "/language/packages#index-entry-A.\"$m\"()" }
+{ category: "Reference", value: "void type (NativeCall)", url: "/language/nativetypes#index-entry-void_type_(NativeCall)" }
 ,
-{ category: "Reference", value: "CompUnit (Rakudo classes)", url: "/language/modules-core#index-entry-CompUnit_(Rakudo_classes)" }
+{ category: "Reference", value: "v6 (Basics)", url: "/language/101-basics#index-entry-v6_(Basics)-v6" }
+,
+{ category: "Reference", value: "statement (Basics)", url: "/language/101-basics#index-entry-statement_(Basics)-Statements" }
+,
+{ category: "Reference", value: "my (Basics)", url: "/language/101-basics#index-entry-my_(Basics)-Lexical_scope" }
+,
+{ category: "Reference", value: "block", url: "/language/101-basics#index-entry-block" }
+,
+{ category: "Reference", value: "sigils (Basics)", url: "/language/101-basics#index-entry-sigils_(Basics)-Sigils" }
+,
+{ category: "Reference", value: "identifiers (Basics)", url: "/language/101-basics#index-entry-identifiers_(Basics)-identifiers" }
+,
+{ category: "Reference", value: "scalar (Basics)", url: "/language/101-basics#index-entry-scalar_(Basics)-Scalar" }
+,
+{ category: "Reference", value: "filehandle (Basics)", url: "/language/101-basics#index-entry-filehandle_(Basics)-Filehandle" }
+,
+{ category: "Reference", value: "assignment (Basics)", url: "/language/101-basics#index-entry-assignment_(Basics)-assignment" }
+,
+{ category: "Reference", value: "string literal (Basics)", url: "/language/101-basics#index-entry-string_literal_(Basics)-String_literals" }
+,
+{ category: "Reference", value: "array (Basics)", url: "/language/101-basics#index-entry-array_(Basics)-Arrays" }
+,
+{ category: "Reference", value: "method (Basics)", url: "/language/101-basics#index-entry-method_(Basics)-methods" }
+,
+{ category: "Reference", value: "invocant (Basics)", url: "/language/101-basics#index-entry-invocant_(Basics)-invocants" }
+,
+{ category: "Reference", value: "hash (Basics)", url: "/language/101-basics#index-entry-hash_(Basics)-Hashes" }
+,
+{ category: "Reference", value: "for (Basics)", url: "/language/101-basics#index-entry-for_(Basics)-for" }
+,
+{ category: "Reference", value: "block (Basics)", url: "/language/101-basics#index-entry-block_(Basics)-blocks" }
+,
+{ category: "Reference", value: "Any (Basics)", url: "/language/101-basics#index-entry-Any_(Basics)-Any" }
+,
+{ category: "Reference", value: "+= (Basics)", url: "/language/101-basics#index-entry-+=_(Basics)-+=" }
+,
+{ category: "Reference", value: "fat arrow (Basics)", url: "/language/101-basics#index-entry-fat_arrow_(Basics)-Fat_arrow" }
+,
+{ category: "Reference", value: "pair (Basics)", url: "/language/101-basics#index-entry-pair_(Basics)-pairs" }
+,
+{ category: "Reference", value: "autovivification (Basics)", url: "/language/101-basics#index-entry-autovivification_(Basics)-autovivification" }
+,
+{ category: "Reference", value: "postincrement (Basics)", url: "/language/101-basics#index-entry-postincrement_(Basics)-Postincrement" }
+,
+{ category: "Reference", value: "preincrement (Basics)", url: "/language/101-basics#index-entry-preincrement_(Basics)-preincrement" }
+,
+{ category: "Reference", value: "topic variable (Basics)", url: "/language/101-basics#index-entry-topic_variable_(Basics)-Topic_variable" }
+,
+{ category: "Reference", value: "variable interpolation (Basics)", url: "/language/101-basics#index-entry-variable_interpolation_(Basics)-Variable_interpolation" }
+,
+{ category: "Reference", value: "double-quoted strings (Basics)", url: "/language/101-basics#index-entry-double-quoted_strings_(Basics)-Double-quoted_strings" }
+,
+{ category: "Reference", value: "single-quoted strings (Basics)", url: "/language/101-basics#index-entry-single-quoted_strings_(Basics)-single-quoted_strings" }
+,
+{ category: "Reference", value: "compunit", url: "/language/modules#index-entry-compunit" }
+,
+{ category: "Reference", value: "need", url: "/language/modules#index-entry-need" }
+,
+{ category: "Reference", value: "use", url: "/language/modules#index-entry-use" }
+,
+{ category: "Reference", value: "require", url: "/language/modules#index-entry-require" }
+,
+{ category: "Reference", value: "sub EXPORT", url: "/language/modules#index-entry-sub_EXPORT" }
+,
+{ category: "Reference", value: "use lib", url: "/language/modules#index-entry-use_lib" }
+,
+{ category: "Reference", value: "Build.pm6", url: "/language/modules#index-entry-Build.pm6-Build.pm6" }
+,
+{ category: "Reference", value: "META6.json", url: "/language/modules#index-entry-META6.json-META6.json" }
+,
+{ category: "Reference", value: "zef", url: "/language/modules#index-entry-zef" }
 ,
 { category: "Reference", value: "Normalization", url: "/language/unicode#index-entry-Normalization" }
 ,
@@ -5516,324 +4460,6 @@ $(function(){
 { category: "Reference", value: "UTF-8 Clean-8", url: "/language/unicode#index-entry-UTF-8_Clean-8" }
 ,
 { category: "Reference", value: "\\c[] unicode name", url: "/language/unicode#index-entry-%5cc[]_unicode_name" }
-,
-{ category: "Reference", value: "command line arguments", url: "/language/create-cli#index-entry-command_line_arguments" }
-,
-{ category: "Reference", value: "MAIN", url: "/language/create-cli#index-entry-MAIN" }
-,
-{ category: "Reference", value: "%*SUB-MAIN-OPTS", url: "/language/create-cli#index-entry-$PERCENT_SIGN*SUB-MAIN-OPTS" }
-,
-{ category: "Reference", value: "named-anywhere", url: "/language/create-cli#index-entry-named-anywhere" }
-,
-{ category: "Reference", value: "hidden-from-USAGE", url: "/language/create-cli#index-entry-hidden-from-USAGE" }
-,
-{ category: "Reference", value: "unit (MAIN) (declarator)", url: "/language/create-cli#index-entry-declarator_unit_(MAIN)" }
-,
-{ category: "Reference", value: "USAGE", url: "/language/create-cli#index-entry-USAGE" }
-,
-{ category: "Reference", value: "$*USAGE", url: "/language/create-cli#index-entry-$*USAGE" }
-,
-{ category: "Reference", value: "ARGS-TO-CAPTURE", url: "/language/create-cli#index-entry-ARGS-TO-CAPTURE" }
-,
-{ category: "Reference", value: "RUN-MAIN", url: "/language/create-cli#index-entry-RUN-MAIN" }
-,
-{ category: "Reference", value: "GENERATE-USAGE", url: "/language/create-cli#index-entry-GENERATE-USAGE" }
-,
-{ category: "Reference", value: "Abstract Class", url: "/language/glossary#index-entry-Abstract_Class" }
-,
-{ category: "Reference", value: "Advent Calendar", url: "/language/glossary#index-entry-Advent_Calendar" }
-,
-{ category: "Reference", value: "Adverb", url: "/language/glossary#index-entry-Adverb" }
-,
-{ category: "Reference", value: "Adverbial Pair", url: "/language/glossary#index-entry-Adverbial_Pair" }
-,
-{ category: "Reference", value: "Allomorph", url: "/language/glossary#index-entry-Allomorph" }
-,
-{ category: "Reference", value: "Anonymous", url: "/language/glossary#index-entry-Anonymous" }
-,
-{ category: "Reference", value: "API", url: "/language/glossary#index-entry-API" }
-,
-{ category: "Reference", value: "Apocalypse", url: "/language/glossary#index-entry-Apocalypse" }
-,
-{ category: "Reference", value: "Arity", url: "/language/glossary#index-entry-Arity" }
-,
-{ category: "Reference", value: "ASCII operator", url: "/language/glossary#index-entry-ASCII_operator" }
-,
-{ category: "Reference", value: "Texas operator", url: "/language/glossary#index-entry-Texas_operator" }
-,
-{ category: "Reference", value: "Autothreading", url: "/language/glossary#index-entry-Autothreading" }
-,
-{ category: "Reference", value: "Backtracking", url: "/language/glossary#index-entry-Backtracking" }
-,
-{ category: "Reference", value: "binder", url: "/language/glossary#index-entry-binder" }
-,
-{ category: "Reference", value: "block", url: "/language/glossary#index-entry-block" }
-,
-{ category: "Reference", value: "bytecode", url: "/language/glossary#index-entry-bytecode" }
-,
-{ category: "Reference", value: "Camelia", url: "/language/glossary#index-entry-Camelia" }
-,
-{ category: "Reference", value: "Colon Pair", url: "/language/glossary#index-entry-Colon_Pair" }
-,
-{ category: "Reference", value: "Colon List", url: "/language/glossary#index-entry-Colon_List" }
-,
-{ category: "Reference", value: "Community", url: "/language/glossary#index-entry-Community" }
-,
-{ category: "Reference", value: "Damian Conway", url: "/language/glossary#index-entry-Damian_Conway" }
-,
-{ category: "Reference", value: "decont", url: "/language/glossary#index-entry-decont" }
-,
-{ category: "Reference", value: "diffy", url: "/language/glossary#index-entry-diffy" }
-,
-{ category: "Reference", value: "Exegesis", url: "/language/glossary#index-entry-Exegesis" }
-,
-{ category: "Reference", value: "fiddly", url: "/language/glossary#index-entry-fiddly" }
-,
-{ category: "Reference", value: "Handle", url: "/language/glossary#index-entry-Handle" }
-,
-{ category: "Reference", value: "Huffmanize", url: "/language/glossary#index-entry-Huffmanize" }
-,
-{ category: "Reference", value: "iffy", url: "/language/glossary#index-entry-iffy" }
-,
-{ category: "Reference", value: "import", url: "/language/glossary#index-entry-import" }
-,
-{ category: "Reference", value: "instance", url: "/language/glossary#index-entry-instance" }
-,
-{ category: "Reference", value: "Interface", url: "/language/glossary#index-entry-Interface" }
-,
-{ category: "Reference", value: "Invocant", url: "/language/glossary#index-entry-Invocant" }
-,
-{ category: "Reference", value: "IRC", url: "/language/glossary#index-entry-IRC" }
-,
-{ category: "Reference", value: "IRC lingo", url: "/language/glossary#index-entry-IRC_lingo" }
-,
-{ category: "Reference", value: "ALAP", url: "/language/glossary#index-entry-ALAP" }
-,
-{ category: "Reference", value: "autopun", url: "/language/glossary#index-entry-autopun" }
-,
-{ category: "Reference", value: "backlog", url: "/language/glossary#index-entry-backlog" }
-,
-{ category: "Reference", value: "Bot", url: "/language/glossary#index-entry-Bot" }
-,
-{ category: "Reference", value: "compunit (glossary)", url: "/language/glossary#index-entry-compunit_(glossary)" }
-,
-{ category: "Reference", value: "compilation unit", url: "/language/glossary#index-entry-compilation_unit" }
-,
-{ category: "Reference", value: "DWIM", url: "/language/glossary#index-entry-DWIM" }
-,
-{ category: "Reference", value: "flap", url: "/language/glossary#index-entry-flap" }
-,
-{ category: "Reference", value: "fossil", url: "/language/glossary#index-entry-fossil" }
-,
-{ category: "Reference", value: "FSVO", url: "/language/glossary#index-entry-FSVO" }
-,
-{ category: "Reference", value: "FTFY", url: "/language/glossary#index-entry-FTFY" }
-,
-{ category: "Reference", value: "gradual typing", url: "/language/glossary#index-entry-gradual_typing" }
-,
-{ category: "Reference", value: "IIRC", url: "/language/glossary#index-entry-IIRC" }
-,
-{ category: "Reference", value: "IMHO", url: "/language/glossary#index-entry-IMHO" }
-,
-{ category: "Reference", value: "IWBN", url: "/language/glossary#index-entry-IWBN" }
-,
-{ category: "Reference", value: "LHF", url: "/language/glossary#index-entry-LHF" }
-,
-{ category: "Reference", value: "LGTM", url: "/language/glossary#index-entry-LGTM" }
-,
-{ category: "Reference", value: "LTA", url: "/language/glossary#index-entry-LTA" }
-,
-{ category: "Reference", value: "NST", url: "/language/glossary#index-entry-NST" }
-,
-{ category: "Reference", value: "Opt", url: "/language/glossary#index-entry-Opt" }
-,
-{ category: "Reference", value: "PB", url: "/language/glossary#index-entry-PB" }
-,
-{ category: "Reference", value: "PR", url: "/language/glossary#index-entry-PR" }
-,
-{ category: "Reference", value: "P5", url: "/language/glossary#index-entry-P5" }
-,
-{ category: "Reference", value: "P6", url: "/language/glossary#index-entry-P6" }
-,
-{ category: "Reference", value: "RSN", url: "/language/glossary#index-entry-RSN" }
-,
-{ category: "Reference", value: "RT", url: "/language/glossary#index-entry-RT" }
-,
-{ category: "Reference", value: "TIMTOWTDI", url: "/language/glossary#index-entry-TIMTOWTDI" }
-,
-{ category: "Reference", value: "TMI", url: "/language/glossary#index-entry-TMI" }
-,
-{ category: "Reference", value: "TMTOWTDI", url: "/language/glossary#index-entry-TMTOWTDI" }
-,
-{ category: "Reference", value: "UGT", url: "/language/glossary#index-entry-UGT" }
-,
-{ category: "Reference", value: "WFM", url: "/language/glossary#index-entry-WFM" }
-,
-{ category: "Reference", value: "WIP", url: "/language/glossary#index-entry-WIP" }
-,
-{ category: "Reference", value: "WP", url: "/language/glossary#index-entry-WP" }
-,
-{ category: "Reference", value: "WW", url: "/language/glossary#index-entry-WW" }
-,
-{ category: "Reference", value: "Larry Wall", url: "/language/glossary#index-entry-Larry_Wall" }
-,
-{ category: "Reference", value: "Lexing", url: "/language/glossary#index-entry-Lexing" }
-,
-{ category: "Reference", value: "Literal", url: "/language/glossary#index-entry-Literal" }
-,
-{ category: "Reference", value: "LHS", url: "/language/glossary#index-entry-LHS" }
-,
-{ category: "Reference", value: "Value", url: "/language/glossary#index-entry-Value" }
-,
-{ category: "Reference", value: "Mainline", url: "/language/glossary#index-entry-Mainline" }
-,
-{ category: "Reference", value: "Mayspec", url: "/language/glossary#index-entry-Mayspec" }
-,
-{ category: "Reference", value: "MoarVM", url: "/language/glossary#index-entry-MoarVM" }
-,
-{ category: "Reference", value: "Multi-Dispatch", url: "/language/glossary#index-entry-Multi-Dispatch" }
-,
-{ category: "Reference", value: "MMD", url: "/language/glossary#index-entry-MMD" }
-,
-{ category: "Reference", value: "multi-method", url: "/language/glossary#index-entry-multi-method" }
-,
-{ category: "Reference", value: "Née", url: "/language/glossary#index-entry-Née" }
-,
-{ category: "Reference", value: "NFG", url: "/language/glossary#index-entry-NFG" }
-,
-{ category: "Reference", value: "Niecza", url: "/language/glossary#index-entry-Niecza" }
-,
-{ category: "Reference", value: "NQP", url: "/language/glossary#index-entry-NQP" }
-,
-{ category: "Reference", value: "Not Quite Perl", url: "/language/glossary#index-entry-Not_Quite_Perl" }
-,
-{ category: "Reference", value: "NYI", url: "/language/glossary#index-entry-NYI" }
-,
-{ category: "Reference", value: "opcode", url: "/language/glossary#index-entry-opcode" }
-,
-{ category: "Reference", value: "Operator", url: "/language/glossary#index-entry-Operator" }
-,
-{ category: "Reference", value: "Parse Tree", url: "/language/glossary#index-entry-Parse_Tree" }
-,
-{ category: "Reference", value: "Parameter", url: "/language/glossary#index-entry-Parameter" }
-,
-{ category: "Reference", value: "Parrot", url: "/language/glossary#index-entry-Parrot" }
-,
-{ category: "Reference", value: "PAST", url: "/language/glossary#index-entry-PAST" }
-,
-{ category: "Reference", value: "Perl", url: "/language/glossary#index-entry-Perl" }
-,
-{ category: "Reference", value: "Perl 6", url: "/language/glossary#index-entry-Perl 6" }
-,
-{ category: "Reference", value: "PERL", url: "/language/glossary#index-entry-PERL" }
-,
-{ category: "Reference", value: "POD", url: "/language/glossary#index-entry-POD" }
-,
-{ category: "Reference", value: "POV", url: "/language/glossary#index-entry-POV" }
-,
-{ category: "Reference", value: "Propspec", url: "/language/glossary#index-entry-Propspec" }
-,
-{ category: "Reference", value: "Pull request", url: "/language/glossary#index-entry-Pull_request" }
-,
-{ category: "Reference", value: "property", url: "/language/glossary#index-entry-property" }
-,
-{ category: "Reference", value: "pugs", url: "/language/glossary#index-entry-pugs" }
-,
-{ category: "Reference", value: "p6y", url: "/language/glossary#index-entry-p6y" }
-,
-{ category: "Reference", value: "QAST", url: "/language/glossary#index-entry-QAST" }
-,
-{ category: "Reference", value: "Rakudo", url: "/language/glossary#index-entry-Rakudo" }
-,
-{ category: "Reference", value: "Reify", url: "/language/glossary#index-entry-Reify" }
-,
-{ category: "Reference", value: "Repository", url: "/language/glossary#index-entry-Repository" }
-,
-{ category: "Reference", value: "RHS", url: "/language/glossary#index-entry-RHS" }
-,
-{ category: "Reference", value: "roast", url: "/language/glossary#index-entry-roast" }
-,
-{ category: "Reference", value: "role", url: "/language/glossary#index-entry-role" }
-,
-{ category: "Reference", value: "rule", url: "/language/glossary#index-entry-rule" }
-,
-{ category: "Reference", value: "rvalue", url: "/language/glossary#index-entry-rvalue" }
-,
-{ category: "Reference", value: "SAP", url: "/language/glossary#index-entry-SAP" }
-,
-{ category: "Reference", value: "Semilist", url: "/language/glossary#index-entry-Semilist" }
-,
-{ category: "Reference", value: "Sigil", url: "/language/glossary#index-entry-Sigil" }
-,
-{ category: "Reference", value: "Sigilless Variable", url: "/language/glossary#index-entry-Sigilless_Variable" }
-,
-{ category: "Reference", value: "Spesh", url: "/language/glossary#index-entry-Spesh" }
-,
-{ category: "Reference", value: "STD", url: "/language/glossary#index-entry-STD" }
-,
-{ category: "Reference", value: "Stub", url: "/language/glossary#index-entry-Stub" }
-,
-{ category: "Reference", value: "Symbol", url: "/language/glossary#index-entry-Symbol" }
-,
-{ category: "Reference", value: "Synopsis", url: "/language/glossary#index-entry-Synopsis" }
-,
-{ category: "Reference", value: "Syntax Analysis", url: "/language/glossary#index-entry-Syntax_Analysis" }
-,
-{ category: "Reference", value: "test suite", url: "/language/glossary#index-entry-test_suite" }
-,
-{ category: "Reference", value: "TheDamian", url: "/language/glossary#index-entry-TheDamian" }
-,
-{ category: "Reference", value: "TimToady", url: "/language/glossary#index-entry-TimToady" }
-,
-{ category: "Reference", value: "Token", url: "/language/glossary#index-entry-Token" }
-,
-{ category: "Reference", value: "Thunk", url: "/language/glossary#index-entry-Thunk" }
-,
-{ category: "Reference", value: "Loose", url: "/language/glossary#index-entry-Loose" }
-,
-{ category: "Reference", value: "Tight", url: "/language/glossary#index-entry-Tight" }
-,
-{ category: "Reference", value: "twine", url: "/language/glossary#index-entry-twine" }
-,
-{ category: "Reference", value: "Type Objects", url: "/language/glossary#index-entry-Type_Objects" }
-,
-{ category: "Reference", value: "Type Smiley", url: "/language/glossary#index-entry-Type_Smiley" }
-,
-{ category: "Reference", value: "value", url: "/language/glossary#index-entry-value" }
-,
-{ category: "Reference", value: "UB", url: "/language/glossary#index-entry-UB" }
-,
-{ category: "Reference", value: "Value type", url: "/language/glossary#index-entry-Value_type" }
-,
-{ category: "Reference", value: "Variable", url: "/language/glossary#index-entry-Variable" }
-,
-{ category: "Reference", value: "Variable Interpolation", url: "/language/glossary#index-entry-Variable_Interpolation" }
-,
-{ category: "Reference", value: "Virtual Machine", url: "/language/glossary#index-entry-Virtual_Machine" }
-,
-{ category: "Reference", value: "WAT", url: "/language/glossary#index-entry-WAT" }
-,
-{ category: "Reference", value: "whitespace", url: "/language/glossary#index-entry-whitespace" }
-,
-{ category: "Reference", value: "6model", url: "/language/glossary#index-entry-6model" }
-,
-{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Control_flow" }
-,
-{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Lambdas,_functions_and_subroutines" }
-,
-{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-List_comprehensions" }
-,
-{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Classes_and_objects" }
-,
-{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Decorators" }
-,
-{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Context_managers" }
-,
-{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-input" }
-,
-{ category: "Reference", value: "#| (declarator blocks)", url: "/language/pod#index-entry-declarator_blocks_#|" }
-,
-{ category: "Reference", value: "#= (declarator blocks)", url: "/language/pod#index-entry-declarator_blocks_#=" }
 ,
 { category: "Reference", value: "will trait (Phasers)", url: "/language/phasers#index-entry-Phasers__will_trait" }
 ,
@@ -5876,6 +4502,702 @@ $(function(){
 { category: "Reference", value: "CLOSE (Asynchronous Phasers)", url: "/language/phasers#index-entry-Asynchronous_Phasers__CLOSE-CLOSE" }
 ,
 { category: "Reference", value: "DOC (Asynchronous Phasers)", url: "/language/phasers#index-entry-Asynchronous_Phasers__DOC-DOC" }
+,
+{ category: "Reference", value: "lazy (statement prefix)", url: "/language/statement-prefixes#index-entry-lazy_(statement_prefix)-lazy" }
+,
+{ category: "Reference", value: "eager (statement prefix)", url: "/language/statement-prefixes#index-entry-eager_(statement_prefix)-eager" }
+,
+{ category: "Reference", value: "hyper (statement prefix)", url: "/language/statement-prefixes#index-entry-hyper_(statement_prefix)-hyper" }
+,
+{ category: "Reference", value: "race (statement prefix)", url: "/language/statement-prefixes#index-entry-race_(statement_prefix)-race" }
+,
+{ category: "Reference", value: "quietly (statement prefix)", url: "/language/statement-prefixes#index-entry-quietly_(statement_prefix)-quietly" }
+,
+{ category: "Reference", value: "try (statement prefix)", url: "/language/statement-prefixes#index-entry-try_(statement_prefix)-try" }
+,
+{ category: "Reference", value: "do (statement prefix)", url: "/language/statement-prefixes#index-entry-do_(statement_prefix)-do" }
+,
+{ category: "Reference", value: "sink (statement prefix)", url: "/language/statement-prefixes#index-entry-sink_(statement_prefix)-sink" }
+,
+{ category: "Reference", value: "once (statement prefix)", url: "/language/statement-prefixes#index-entry-once_(statement_prefix)-once" }
+,
+{ category: "Reference", value: "gather (statement prefix)", url: "/language/statement-prefixes#index-entry-gather_(statement_prefix)-gather" }
+,
+{ category: "Reference", value: "start (statement prefix)", url: "/language/statement-prefixes#index-entry-start_(statement_prefix)-start" }
+,
+{ category: "Reference", value: "react (statement prefix)", url: "/language/statement-prefixes#index-entry-react_(statement_prefix)-react" }
+,
+{ category: "Reference", value: "supply (statement prefix)", url: "/language/statement-prefixes#index-entry-supply_(statement_prefix)-supply" }
+,
+{ category: "Reference", value: "Q (quote)", url: "/language/quoting#index-entry-quote_Q-quote_｢_｣-Literal_strings:_Q" }
+,
+{ category: "Reference", value: "｢ ｣ (quote)", url: "/language/quoting#index-entry-quote_Q-quote_｢_｣-Literal_strings:_Q" }
+,
+{ category: "Reference", value: ":x (quoting adverb)", url: "/language/quoting#index-entry-:x_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":exec (quoting adverb)", url: "/language/quoting#index-entry-:exec_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":w (quoting adverb)", url: "/language/quoting#index-entry-:w_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":words (quoting adverb)", url: "/language/quoting#index-entry-:words_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":ww (quoting adverb)", url: "/language/quoting#index-entry-:ww_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":quotewords (quoting adverb)", url: "/language/quoting#index-entry-:quotewords_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":q (quoting adverb)", url: "/language/quoting#index-entry-:q_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":single (quoting adverb)", url: "/language/quoting#index-entry-:single_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":qq (quoting adverb)", url: "/language/quoting#index-entry-:qq_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":double (quoting adverb)", url: "/language/quoting#index-entry-:double_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":s (quoting adverb)", url: "/language/quoting#index-entry-:s_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":scalar (quoting adverb)", url: "/language/quoting#index-entry-:scalar_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":a (quoting adverb)", url: "/language/quoting#index-entry-:a_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":array (quoting adverb)", url: "/language/quoting#index-entry-:array_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":h (quoting adverb)", url: "/language/quoting#index-entry-:h_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":hash (quoting adverb)", url: "/language/quoting#index-entry-:hash_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":f (quoting adverb)", url: "/language/quoting#index-entry-:f_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":function (quoting adverb)", url: "/language/quoting#index-entry-:function_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":c (quoting adverb)", url: "/language/quoting#index-entry-:c_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":closure (quoting adverb)", url: "/language/quoting#index-entry-:closure_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":b (quoting adverb)", url: "/language/quoting#index-entry-:b_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":backslash (quoting adverb)", url: "/language/quoting#index-entry-:backslash_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":to (quoting adverb)", url: "/language/quoting#index-entry-:to_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":heredoc (quoting adverb)", url: "/language/quoting#index-entry-:heredoc_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":v (quoting adverb)", url: "/language/quoting#index-entry-:v_(quoting_adverb)" }
+,
+{ category: "Reference", value: ":val (quoting adverb)", url: "/language/quoting#index-entry-:val_(quoting_adverb)" }
+,
+{ category: "Reference", value: "escaping quote", url: "/language/quoting#index-entry-escaping_quote" }
+,
+{ category: "Reference", value: "q (quote)", url: "/language/quoting#index-entry-quote_q-quote_'_'-Escaping:_q" }
+,
+{ category: "Reference", value: "' ' (quote)", url: "/language/quoting#index-entry-quote_q-quote_'_'-Escaping:_q" }
+,
+{ category: "Reference", value: "qq (quote)", url: "/language/quoting#index-entry-quote_qq-quote_\"_\"-Interpolation:_qq" }
+,
+{ category: "Reference", value: "\" \" (quote)", url: "/language/quoting#index-entry-quote_qq-quote_\"_\"-Interpolation:_qq" }
+,
+{ category: "Reference", value: "\\ (quoting)", url: "/language/quoting#index-entry-%5c_(quoting)" }
+,
+{ category: "Reference", value: "& (interpolation)", url: "/language/quoting#index-entry-&_(interpolation)" }
+,
+{ category: "Reference", value: "qw word quote", url: "/language/quoting#index-entry-qw_word_quote" }
+,
+{ category: "Reference", value: "< > word quote", url: "/language/quoting#index-entry-<_>_word_quote" }
+,
+{ category: "Reference", value: "qww (quote)", url: "/language/quoting#index-entry-quote_qww-Word_quoting_with_quote_protection:_qww" }
+,
+{ category: "Reference", value: "qqw (quote)", url: "/language/quoting#index-entry-quote_qqw-Word_quoting_with_interpolation:_qqw" }
+,
+{ category: "Reference", value: "qqww (quote)", url: "/language/quoting#index-entry-quote_qqww-Word_quoting_with_interpolation_and_quote_protection:_qqww" }
+,
+{ category: "Reference", value: "<< >> (quote)", url: "/language/quoting#index-entry-quote_<<_>>-quote_«_»-Word_quoting_with_interpolation_and_quote_protection:_«_»" }
+,
+{ category: "Reference", value: "« » (quote)", url: "/language/quoting#index-entry-quote_<<_>>-quote_«_»-Word_quoting_with_interpolation_and_quote_protection:_«_»" }
+,
+{ category: "Reference", value: "qx (quote)", url: "/language/quoting#index-entry-quote_qx-Shell_quoting:_qx" }
+,
+{ category: "Reference", value: "qqx (quote)", url: "/language/quoting#index-entry-quote_qqx-Shell_quoting_with_interpolation:_qqx" }
+,
+{ category: "Reference", value: "heredocs :to (quote)", url: "/language/quoting#index-entry-quote_heredocs_:to-Heredocs:_:to" }
+,
+{ category: "Reference", value: "... (forward declaration)", url: "/language/typesystem#index-entry-..._(forward_declaration)" }
+,
+{ category: "Reference", value: "Forward declarations", url: "/language/typesystem#index-entry-Forward_declarations" }
+,
+{ category: "Reference", value: "method (declarator)", url: "/language/typesystem#index-entry-method_(declarator)" }
+,
+{ category: "Reference", value: "only method", url: "/language/typesystem#index-entry-only_method" }
+,
+{ category: "Reference", value: "FALLBACK (method)", url: "/language/typesystem#index-entry-FALLBACK_(method)" }
+,
+{ category: "Reference", value: "WHAT (reserved method)", url: "/language/typesystem#index-entry-WHAT_(reserved_method)" }
+,
+{ category: "Reference", value: "WHO (reserved method)", url: "/language/typesystem#index-entry-WHO_(reserved_method)" }
+,
+{ category: "Reference", value: "HOW (reserved method)", url: "/language/typesystem#index-entry-HOW_(reserved_method)" }
+,
+{ category: "Reference", value: "VAR (reserved method)", url: "/language/typesystem#index-entry-VAR_(reserved_method)" }
+,
+{ category: "Reference", value: "handles trait", url: "/language/typesystem#index-entry-handles_trait-handles" }
+,
+{ category: "Reference", value: "FALLBACK (trait handles)", url: "/language/typesystem#index-entry-FALLBACK_(trait_handles)-FALLBACK" }
+,
+{ category: "Reference", value: "is (classes)", url: "/language/typesystem#index-entry-classes_is-trait_is" }
+,
+{ category: "Reference", value: "is rw (class)", url: "/language/typesystem#index-entry-is_rw_(class)-is_rw" }
+,
+{ category: "Reference", value: "role (typesystem) (declarator)", url: "/language/typesystem#index-entry-declarator_role_(typesystem)" }
+,
+{ category: "Reference", value: "Type Capture (role)", url: "/language/typesystem#index-entry-Type_Capture_(role)" }
+,
+{ category: "Reference", value: "Enumeration", url: "/language/typesystem#index-entry-Enumeration-_Enums-_enum" }
+,
+{ category: "Reference", value: "Enums", url: "/language/typesystem#index-entry-Enumeration-_Enums-_enum" }
+,
+{ category: "Reference", value: "enum", url: "/language/typesystem#index-entry-Enumeration-_Enums-_enum" }
+,
+{ category: "Reference", value: "subset", url: "/language/typesystem#index-entry-subset-subset" }
+,
+{ category: "Reference", value: "dynamic subset", url: "/language/typesystem#index-entry-dynamic_subset" }
+,
+{ category: "Reference", value: ":ver<>", url: "/language/typesystem#index-entry-:ver<>" }
+,
+{ category: "Reference", value: ":auth<>", url: "/language/typesystem#index-entry-:auth<>" }
+,
+{ category: "Reference", value: ":api<>", url: "/language/typesystem#index-entry-:api<>" }
+,
+{ category: "Reference", value: "non-string keys", url: "/language/hashmap#index-entry-non-string_keys" }
+,
+{ category: "Reference", value: "object hash", url: "/language/hashmap#index-entry-object_hash" }
+,
+{ category: "Reference", value: ":{}", url: "/language/hashmap#index-entry-:{}" }
+,
+{ category: "Reference", value: "#| (declarator blocks)", url: "/language/pod#index-entry-declarator_blocks_#|" }
+,
+{ category: "Reference", value: "#= (declarator blocks)", url: "/language/pod#index-entry-declarator_blocks_#=" }
+,
+{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Control_flow" }
+,
+{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Lambdas,_functions_and_subroutines" }
+,
+{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-List_comprehensions" }
+,
+{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Classes_and_objects" }
+,
+{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Decorators" }
+,
+{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Context_managers" }
+,
+{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-input" }
+,
+{ category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-Tuples" }
+,
+{ category: "Reference", value: "nativecall", url: "/language/nativecall#index-entry-nativecall" }
+,
+{ category: "Reference", value: "repr", url: "/language/nativecall#index-entry-repr" }
+,
+{ category: "Reference", value: "is repr", url: "/language/nativecall#index-entry-is_repr" }
+,
+{ category: "Reference", value: "CStruct (native representation)", url: "/language/nativecall#index-entry-CStruct_(native_representation)" }
+,
+{ category: "Reference", value: "CArray", url: "/language/nativecall#index-entry-CArray" }
+,
+{ category: "Reference", value: "CArray methods", url: "/language/nativecall#index-entry-CArray_methods" }
+,
+{ category: "Reference", value: "declarator (HAS)", url: "/language/nativecall#index-entry-HAS__declarator-HAS" }
+,
+{ category: "Reference", value: "deref", url: "/language/nativecall#index-entry-deref-.deref" }
+,
+{ category: "Reference", value: "Regular Expressions", url: "/language/regexes#index-entry-Regular_Expressions" }
+,
+{ category: "Reference", value: "\/ \/ (quote)", url: "/language/regexes#index-entry-quote_$SOLIDUS_$SOLIDUS-quote_rx-quote_m-Lexical_conventions" }
+,
+{ category: "Reference", value: "rx (quote)", url: "/language/regexes#index-entry-quote_$SOLIDUS_$SOLIDUS-quote_rx-quote_m-Lexical_conventions" }
+,
+{ category: "Reference", value: "m (quote)", url: "/language/regexes#index-entry-quote_$SOLIDUS_$SOLIDUS-quote_rx-quote_m-Lexical_conventions" }
+,
+{ category: "Reference", value: ". (regex)", url: "/language/regexes#index-entry-regex__.-Wildcards" }
+,
+{ category: "Reference", value: "\\n (regex)", url: "/language/regexes#index-entry-regex_%5cn-regex_%5cN-%5cn_and_%5cN" }
+,
+{ category: "Reference", value: "\\N (regex)", url: "/language/regexes#index-entry-regex_%5cn-regex_%5cN-%5cn_and_%5cN" }
+,
+{ category: "Reference", value: "\\t (regex)", url: "/language/regexes#index-entry-regex_%5ct-regex_%5cT-%5ct_and_%5cT" }
+,
+{ category: "Reference", value: "\\T (regex)", url: "/language/regexes#index-entry-regex_%5ct-regex_%5cT-%5ct_and_%5cT" }
+,
+{ category: "Reference", value: "\\h (regex)", url: "/language/regexes#index-entry-regex_%5ch-regex_%5cH-%5ch_and_%5cH" }
+,
+{ category: "Reference", value: "\\H (regex)", url: "/language/regexes#index-entry-regex_%5ch-regex_%5cH-%5ch_and_%5cH" }
+,
+{ category: "Reference", value: "\\v (regex)", url: "/language/regexes#index-entry-regex_%5cv-regex_%5cV-%5cv_and_%5cV" }
+,
+{ category: "Reference", value: "\\V (regex)", url: "/language/regexes#index-entry-regex_%5cv-regex_%5cV-%5cv_and_%5cV" }
+,
+{ category: "Reference", value: "\\s (regex)", url: "/language/regexes#index-entry-regex_%5cs-regex_%5cS-%5cs_and_%5cS" }
+,
+{ category: "Reference", value: "\\S (regex)", url: "/language/regexes#index-entry-regex_%5cs-regex_%5cS-%5cs_and_%5cS" }
+,
+{ category: "Reference", value: "\\d (regex)", url: "/language/regexes#index-entry-regex_%5cd-regex_%5cD-%5cd_and_%5cD" }
+,
+{ category: "Reference", value: "\\D (regex)", url: "/language/regexes#index-entry-regex_%5cd-regex_%5cD-%5cd_and_%5cD" }
+,
+{ category: "Reference", value: "\\w (regex)", url: "/language/regexes#index-entry-regex_%5cw-regex_%5cW-%5cw_and_%5cW" }
+,
+{ category: "Reference", value: "\\W (regex)", url: "/language/regexes#index-entry-regex_%5cw-regex_%5cW-%5cw_and_%5cW" }
+,
+{ category: "Reference", value: "\\c (regex)", url: "/language/regexes#index-entry-regex_%5cc-regex_%5cC-%5cc_and_%5cC" }
+,
+{ category: "Reference", value: "\\C (regex)", url: "/language/regexes#index-entry-regex_%5cc-regex_%5cC-%5cc_and_%5cC" }
+,
+{ category: "Reference", value: "\\x (regex)", url: "/language/regexes#index-entry-regex_%5cx-regex_%5cX-%5cx_and_%5cX" }
+,
+{ category: "Reference", value: "\\X (regex)", url: "/language/regexes#index-entry-regex_%5cx-regex_%5cX-%5cx_and_%5cX" }
+,
+{ category: "Reference", value: "<:property> (regex)", url: "/language/regexes#index-entry-regex_<:property>-Unicode_properties" }
+,
+{ category: "Reference", value: "<[ ]> (regex)", url: "/language/regexes#index-entry-regex_<[_]>-regex_<-[_]>-Enumerated_character_classes_and_ranges" }
+,
+{ category: "Reference", value: "<-[ ]> (regex)", url: "/language/regexes#index-entry-regex_<[_]>-regex_<-[_]>-Enumerated_character_classes_and_ranges" }
+,
+{ category: "Reference", value: "escaping characters", url: "/language/regexes#index-entry-escaping_characters" }
+,
+{ category: "Reference", value: "+ (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_+-One_or_more:_+" }
+,
+{ category: "Reference", value: "* (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_*-Zero_or_more:_*" }
+,
+{ category: "Reference", value: "? (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_%3F-Zero_or_one:_%3F" }
+,
+{ category: "Reference", value: "** (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_**-General_quantifier:_**_min..max" }
+,
+{ category: "Reference", value: "% (regex)", url: "/language/regexes#index-entry-regex_$PERCENT_SIGN-regex_$PERCENT_SIGN$PERCENT_SIGN-Modified_quantifier:_$PERCENT_SIGN,_$PERCENT_SIGN$PERCENT_SIGN" }
+,
+{ category: "Reference", value: "%% (regex)", url: "/language/regexes#index-entry-regex_$PERCENT_SIGN-regex_$PERCENT_SIGN$PERCENT_SIGN-Modified_quantifier:_$PERCENT_SIGN,_$PERCENT_SIGN$PERCENT_SIGN" }
+,
+{ category: "Reference", value: ": (regex)", url: "/language/regexes#index-entry-regex_:-Preventing_backtracking:_:" }
+,
+{ category: "Reference", value: "? (regex)", url: "/language/regexes#index-entry-regex_%3F-Greedy_versus_frugal_quantifiers:_%3F" }
+,
+{ category: "Reference", value: "|| (regex)", url: "/language/regexes#index-entry-regex_||-Alternation:_||" }
+,
+{ category: "Reference", value: "| (regex)", url: "/language/regexes#index-entry-regex_|-Longest_alternation:_|" }
+,
+{ category: "Reference", value: "&& (regex)", url: "/language/regexes#index-entry-regex_&&-Conjunction:_&&" }
+,
+{ category: "Reference", value: "& (regex)", url: "/language/regexes#index-entry-regex_&-Conjunction:_&" }
+,
+{ category: "Reference", value: "^ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT-regex_$-Start_of_string_and_end_of_string" }
+,
+{ category: "Reference", value: "$ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT-regex_$-Start_of_string_and_end_of_string" }
+,
+{ category: "Reference", value: "^^ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT$CIRCUMFLEX_ACCENT-regex_$$-Start_of_line_and_end_of_line" }
+,
+{ category: "Reference", value: "$$ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT$CIRCUMFLEX_ACCENT-regex_$$-Start_of_line_and_end_of_line" }
+,
+{ category: "Reference", value: "<|w> (regex)", url: "/language/regexes#index-entry-regex__<|w>-regex__<!|w>-Word_boundary" }
+,
+{ category: "Reference", value: "<!|w> (regex)", url: "/language/regexes#index-entry-regex__<|w>-regex__<!|w>-Word_boundary" }
+,
+{ category: "Reference", value: "\\b (regex deprecated)", url: "/language/regexes#index-entry-regex_deprecated_%5cb-%5cb" }
+,
+{ category: "Reference", value: "\\B (regex deprecated)", url: "/language/regexes#index-entry-regex_deprecated_%5cB-%5cB" }
+,
+{ category: "Reference", value: "<< (regex)", url: "/language/regexes#index-entry-regex__<<-_regex__>>-_regex__«-_regex__»" }
+,
+{ category: "Reference", value: ">> ( regex)", url: "/language/regexes#index-entry-regex__<<-_regex__>>-_regex__«-_regex__»" }
+,
+{ category: "Reference", value: "« ( regex)", url: "/language/regexes#index-entry-regex__<<-_regex__>>-_regex__«-_regex__»" }
+,
+{ category: "Reference", value: "» ( regex)", url: "/language/regexes#index-entry-regex__<<-_regex__>>-_regex__«-_regex__»" }
+,
+{ category: "Reference", value: "<?> (regex positive lookaround assertion)", url: "/language/regexes#index-entry-regex_positive_lookaround_assertion__<%3F>-regex_negative_lookaround_assertion__<!>-_regex_%3F[_-Lookaround_assertions" }
+,
+{ category: "Reference", value: "<!> (regex negative lookaround assertion)", url: "/language/regexes#index-entry-regex_positive_lookaround_assertion__<%3F>-regex_negative_lookaround_assertion__<!>-_regex_%3F[_-Lookaround_assertions" }
+,
+{ category: "Reference", value: "regex ?[", url: "/language/regexes#index-entry-regex_positive_lookaround_assertion__<%3F>-regex_negative_lookaround_assertion__<!>-_regex_%3F[_-Lookaround_assertions" }
+,
+{ category: "Reference", value: "before (regex)", url: "/language/regexes#index-entry-regex__before-regex__<%3Fbefore>-Lookahead_assertions" }
+,
+{ category: "Reference", value: "<?before> (regex)", url: "/language/regexes#index-entry-regex__before-regex__<%3Fbefore>-Lookahead_assertions" }
+,
+{ category: "Reference", value: "after (regex)", url: "/language/regexes#index-entry-regex__after-_regex__<%3Fafter>-Lookbehind_assertions" }
+,
+{ category: "Reference", value: "<?after> ( regex)", url: "/language/regexes#index-entry-regex__after-_regex__<%3Fafter>-Lookbehind_assertions" }
+,
+{ category: "Reference", value: "( ) (regex)", url: "/language/regexes#index-entry-regex_(_)-Capturing" }
+,
+{ category: "Reference", value: "[ ] (regex)", url: "/language/regexes#index-entry-regex_[_]-Non-capturing_grouping" }
+,
+{ category: "Reference", value: ":my", url: "/language/regexes#index-entry-:my" }
+,
+{ category: "Reference", value: ":our", url: "/language/regexes#index-entry-:our" }
+,
+{ category: "Reference", value: "Named captures (regex)", url: "/language/regexes#index-entry-regex__Named_captures-Named_captures" }
+,
+{ category: "Reference", value: "<( )> (regex)", url: "/language/regexes#index-entry-regex_<(_)>-Capture_markers:_<(_)>" }
+,
+{ category: "Reference", value: "\\K (regex deprecated)", url: "/language/regexes#index-entry-regex_deprecated_%5cK-%5cK" }
+,
+{ category: "Reference", value: "s\/ \/ \/ (quote)", url: "/language/regexes#index-entry-quote_s$SOLIDUS_$SOLIDUS_$SOLIDUS-Lexical_conventions" }
+,
+{ category: "Reference", value: "S\/\/\/", url: "/language/regexes#index-entry-S$SOLIDUS$SOLIDUS$SOLIDUS_non-destructive_substitution" }
+,
+{ category: "Reference", value: "tilde (regex)", url: "/language/regexes#index-entry-regex__tilde-_regex__~-Tilde_for_nesting_structures" }
+,
+{ category: "Reference", value: "~ ( regex)", url: "/language/regexes#index-entry-regex__tilde-_regex__~-Tilde_for_nesting_structures" }
+,
+{ category: "Reference", value: "SETGOAL", url: "/language/regexes#index-entry-SETGOAL" }
+,
+{ category: "Reference", value: "FAILGOAL", url: "/language/regexes#index-entry-FAILGOAL" }
+,
+{ category: "Reference", value: "regex (declarator)", url: "/language/regexes#index-entry-declarator_regex-Subrules" }
+,
+{ category: "Reference", value: "Regex Interpolation (regex)", url: "/language/regexes#index-entry-regex__Regex_Interpolation-Regex_interpolation" }
+,
+{ category: "Reference", value: "$variable (regex)", url: "/language/regexes#index-entry-regex__$variable" }
+,
+{ category: "Reference", value: "$(code) (regex)", url: "/language/regexes#index-entry-regex__$(code)" }
+,
+{ category: "Reference", value: "<$variable> (regex)", url: "/language/regexes#index-entry-regex__<$variable>" }
+,
+{ category: "Reference", value: "<{code}> (regex)", url: "/language/regexes#index-entry-regex__<{code}>" }
+,
+{ category: "Reference", value: "<?{}> (regex)", url: "/language/regexes#index-entry-regex__<%3F{}>-regex__<!{}>" }
+,
+{ category: "Reference", value: "<!{}> (regex)", url: "/language/regexes#index-entry-regex__<%3F{}>-regex__<!{}>" }
+,
+{ category: "Reference", value: "Regex adverbs (regex)", url: "/language/regexes#index-entry-regex__Regex_adverbs-Regex_adverbs" }
+,
+{ category: "Reference", value: ":ignorecase (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ignorecase-regex_adverb_:i-Ignorecase" }
+,
+{ category: "Reference", value: ":i (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ignorecase-regex_adverb_:i-Ignorecase" }
+,
+{ category: "Reference", value: ":ignoremark (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ignoremark-regex_adverb_:m-Ignoremark" }
+,
+{ category: "Reference", value: ":m (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ignoremark-regex_adverb_:m-Ignoremark" }
+,
+{ category: "Reference", value: ":ratchet (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ratchet-regex_adverb_:r-Ratchet" }
+,
+{ category: "Reference", value: ":r (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:ratchet-regex_adverb_:r-Ratchet" }
+,
+{ category: "Reference", value: ":sigspace (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:sigspace-regex_adverb_:s-Sigspace" }
+,
+{ category: "Reference", value: ":s (regex adverb)", url: "/language/regexes#index-entry-regex_adverb_:sigspace-regex_adverb_:s-Sigspace" }
+,
+{ category: "Reference", value: ":1st (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:1st-matching_adverb_:2nd-matching_adverb_:3rd-matching_adverb_:nth-Positional_adverbs" }
+,
+{ category: "Reference", value: ":2nd (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:1st-matching_adverb_:2nd-matching_adverb_:3rd-matching_adverb_:nth-Positional_adverbs" }
+,
+{ category: "Reference", value: ":3rd (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:1st-matching_adverb_:2nd-matching_adverb_:3rd-matching_adverb_:nth-Positional_adverbs" }
+,
+{ category: "Reference", value: ":nth (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:1st-matching_adverb_:2nd-matching_adverb_:3rd-matching_adverb_:nth-Positional_adverbs" }
+,
+{ category: "Reference", value: ":continue (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:continue-matching_adverb_:c-Continue" }
+,
+{ category: "Reference", value: ":c (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:continue-matching_adverb_:c-Continue" }
+,
+{ category: "Reference", value: ":exhaustive (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:exhaustive-matching_adverb_:ex-Exhaustive" }
+,
+{ category: "Reference", value: ":ex (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:exhaustive-matching_adverb_:ex-Exhaustive" }
+,
+{ category: "Reference", value: ":global (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:global-matching_adverb_:g-Global" }
+,
+{ category: "Reference", value: ":g (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:global-matching_adverb_:g-Global" }
+,
+{ category: "Reference", value: ":pos (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:pos-matching_adverb_:p-Pos" }
+,
+{ category: "Reference", value: ":p (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:pos-matching_adverb_:p-Pos" }
+,
+{ category: "Reference", value: ":overlap (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:overlap-matching_adverb_:ov-Overlap" }
+,
+{ category: "Reference", value: ":ov (matching adverb)", url: "/language/regexes#index-entry-matching_adverb_:overlap-matching_adverb_:ov-Overlap" }
+,
+{ category: "Reference", value: ":samecase (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samecase-substitution_adverb_:ii-Samecase" }
+,
+{ category: "Reference", value: ":ii (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samecase-substitution_adverb_:ii-Samecase" }
+,
+{ category: "Reference", value: ":samemark (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samemark-substitution_adverb_:mm-Samemark" }
+,
+{ category: "Reference", value: ":mm (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samemark-substitution_adverb_:mm-Samemark" }
+,
+{ category: "Reference", value: ":samespace (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samespace-substitution_adverb_:ss-Samespace" }
+,
+{ category: "Reference", value: ":ss (substitution adverb)", url: "/language/regexes#index-entry-substitution_adverb_:samespace-substitution_adverb_:ss-Samespace" }
+,
+{ category: "Reference", value: "$ (sigil)", url: "/language/variables#index-entry-sigil_$" }
+,
+{ category: "Reference", value: "@ (sigil)", url: "/language/variables#index-entry-sigil_@" }
+,
+{ category: "Reference", value: "% (sigil)", url: "/language/variables#index-entry-sigil_$PERCENT_SIGN" }
+,
+{ category: "Reference", value: "& (sigil)", url: "/language/variables#index-entry-sigil_&" }
+,
+{ category: "Reference", value: "is (type of variable)", url: "/language/variables#index-entry-is_(type_of_variable)" }
+,
+{ category: "Reference", value: "\\ (sigilless variables)", url: "/language/variables#index-entry-%5c_(sigilless_variables)" }
+,
+{ category: "Reference", value: "Twigil", url: "/language/variables#index-entry-Twigil" }
+,
+{ category: "Reference", value: "$*", url: "/language/variables#index-entry-$*" }
+,
+{ category: "Reference", value: "Dynamically scoped variables", url: "/language/variables#index-entry-Dynamically_scoped_variables" }
+,
+{ category: "Reference", value: "$?", url: "/language/variables#index-entry-$%3F" }
+,
+{ category: "Reference", value: "$!", url: "/language/variables#index-entry-$!" }
+,
+{ category: "Reference", value: "$.", url: "/language/variables#index-entry-$." }
+,
+{ category: "Reference", value: "$^", url: "/language/variables#index-entry-$$CIRCUMFLEX_ACCENT" }
+,
+{ category: "Reference", value: "$:", url: "/language/variables#index-entry-$:" }
+,
+{ category: "Reference", value: "$=", url: "/language/variables#index-entry-$=" }
+,
+{ category: "Reference", value: "$~", url: "/language/variables#index-entry-$~" }
+,
+{ category: "Reference", value: "$~MAIN", url: "/language/variables#index-entry-$~MAIN" }
+,
+{ category: "Reference", value: "$~Quote", url: "/language/variables#index-entry-$~Quote" }
+,
+{ category: "Reference", value: "$~Quasi", url: "/language/variables#index-entry-$~Quasi" }
+,
+{ category: "Reference", value: "$~Regex", url: "/language/variables#index-entry-$~Regex" }
+,
+{ category: "Reference", value: "$~Trans", url: "/language/variables#index-entry-$~Trans" }
+,
+{ category: "Reference", value: "$~P5Regex", url: "/language/variables#index-entry-$~P5Regex" }
+,
+{ category: "Reference", value: "supersede", url: "/language/variables#index-entry-supersede" }
+,
+{ category: "Reference", value: "declaring a list of variables", url: "/language/variables#index-entry-declaring_a_list_of_variables" }
+,
+{ category: "Reference", value: "destructuring assignment", url: "/language/variables#index-entry-destructuring_assignment" }
+,
+{ category: "Reference", value: "anon state variables", url: "/language/variables#index-entry-anon_state_variables" }
+,
+{ category: "Reference", value: "nameless variables", url: "/language/variables#index-entry-nameless_variables" }
+,
+{ category: "Reference", value: "$ (variable)", url: "/language/variables#index-entry-$_(variable)" }
+,
+{ category: "Reference", value: "constant (Prefix)", url: "/language/variables#index-entry-constant_(Prefix)" }
+,
+{ category: "Reference", value: "constants (syntax)", url: "/language/variables#index-entry-constants_(syntax)" }
+,
+{ category: "Reference", value: "topic variable", url: "/language/variables#index-entry-topic_variable" }
+,
+{ category: "Reference", value: "match variable", url: "/language/variables#index-entry-match_variable" }
+,
+{ category: "Reference", value: "$0 (variable)", url: "/language/variables#index-entry-variable_$0-variable_$1-Positional_attributes" }
+,
+{ category: "Reference", value: "$1 (variable)", url: "/language/variables#index-entry-variable_$0-variable_$1-Positional_attributes" }
+,
+{ category: "Reference", value: "$<named> (variable)", url: "/language/variables#index-entry-variable_$<named>-Named_attributes" }
+,
+{ category: "Reference", value: "error variable", url: "/language/variables#index-entry-error_variable" }
+,
+{ category: "Reference", value: "$?FILE", url: "/language/variables#index-entry-$%3FFILE" }
+,
+{ category: "Reference", value: "$?LINE", url: "/language/variables#index-entry-$%3FLINE" }
+,
+{ category: "Reference", value: "::?CLASS", url: "/language/variables#index-entry-::%3FCLASS" }
+,
+{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
+,
+{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
+,
+{ category: "Reference", value: "Distribution", url: "/language/variables#index-entry-Distribution" }
+,
+{ category: "Reference", value: "$?PACKAGE", url: "/language/variables#index-entry-$%3FPACKAGE" }
+,
+{ category: "Reference", value: "$?MODULE", url: "/language/variables#index-entry-$%3FMODULE" }
+,
+{ category: "Reference", value: "$?CLASS", url: "/language/variables#index-entry-$%3FCLASS" }
+,
+{ category: "Reference", value: "$?ROLE", url: "/language/variables#index-entry-$%3FROLE" }
+,
+{ category: "Reference", value: "$?TABSTOP", url: "/language/variables#index-entry-$%3FTABSTOP" }
+,
+{ category: "Reference", value: "$?NL", url: "/language/variables#index-entry-$%3FNL" }
+,
+{ category: "Reference", value: "$?DISTRIBUTION", url: "/language/variables#index-entry-$%3FDISTRIBUTION" }
+,
+{ category: "Reference", value: "&?ROUTINE", url: "/language/variables#index-entry-&%3FROUTINE" }
+,
+{ category: "Reference", value: "&?BLOCK", url: "/language/variables#index-entry-&%3FBLOCK" }
+,
+{ category: "Reference", value: "$?DISTRIBUTION", url: "/language/variables#index-entry-$%3FDISTRIBUTION" }
+,
+{ category: "Reference", value: "$*ARGFILES", url: "/language/variables#index-entry-$*ARGFILES" }
+,
+{ category: "Reference", value: "@*ARGS", url: "/language/variables#index-entry-@*ARGS" }
+,
+{ category: "Reference", value: "&*ARGS-TO-CAPTURE", url: "/language/variables#index-entry-&*ARGS-TO-CAPTURE" }
+,
+{ category: "Reference", value: "&*GENERATE-USAGE", url: "/language/variables#index-entry-&*GENERATE-USAGE" }
+,
+{ category: "Reference", value: "$*IN", url: "/language/variables#index-entry-$*IN" }
+,
+{ category: "Reference", value: "$*OUT", url: "/language/variables#index-entry-$*OUT" }
+,
+{ category: "Reference", value: "$*ERR", url: "/language/variables#index-entry-$*ERR" }
+,
+{ category: "Reference", value: "%*ENV", url: "/language/variables#index-entry-$PERCENT_SIGN*ENV" }
+,
+{ category: "Reference", value: "$*REPO", url: "/language/variables#index-entry-$*REPO" }
+,
+{ category: "Reference", value: "$*INIT-INSTANT", url: "/language/variables#index-entry-$*INIT-INSTANT" }
+,
+{ category: "Reference", value: "$*TZ", url: "/language/variables#index-entry-$*TZ" }
+,
+{ category: "Reference", value: "$*CWD", url: "/language/variables#index-entry-$*CWD" }
+,
+{ category: "Reference", value: "$*KERNEL", url: "/language/variables#index-entry-$*KERNEL" }
+,
+{ category: "Reference", value: "$*DISTRO", url: "/language/variables#index-entry-$*DISTRO" }
+,
+{ category: "Reference", value: "$*VM", url: "/language/variables#index-entry-$*VM" }
+,
+{ category: "Reference", value: "$*RAKU", url: "/language/variables#index-entry-$*RAKU" }
+,
+{ category: "Reference", value: "$*PERL", url: "/language/variables#index-entry-$*PERL" }
+,
+{ category: "Reference", value: "$*PID", url: "/language/variables#index-entry-$*PID" }
+,
+{ category: "Reference", value: "$*PROGRAM-NAME", url: "/language/variables#index-entry-$*PROGRAM-NAME" }
+,
+{ category: "Reference", value: "$*PROGRAM", url: "/language/variables#index-entry-$*PROGRAM" }
+,
+{ category: "Reference", value: "&*EXIT", url: "/language/variables#index-entry-&*EXIT" }
+,
+{ category: "Reference", value: "$*EXECUTABLE", url: "/language/variables#index-entry-$*EXECUTABLE" }
+,
+{ category: "Reference", value: "$*EXECUTABLE-NAME", url: "/language/variables#index-entry-$*EXECUTABLE-NAME" }
+,
+{ category: "Reference", value: "$*USAGE", url: "/language/variables#index-entry-$*USAGE" }
+,
+{ category: "Reference", value: "$*USER", url: "/language/variables#index-entry-$*USER" }
+,
+{ category: "Reference", value: "$*GROUP", url: "/language/variables#index-entry-$*GROUP" }
+,
+{ category: "Reference", value: "$*HOMEDRIVE", url: "/language/variables#index-entry-$*HOMEDRIVE" }
+,
+{ category: "Reference", value: "$*HOMEPATH", url: "/language/variables#index-entry-$*HOMEPATH" }
+,
+{ category: "Reference", value: "$*HOME", url: "/language/variables#index-entry-$*HOME" }
+,
+{ category: "Reference", value: "$*SPEC", url: "/language/variables#index-entry-$*SPEC" }
+,
+{ category: "Reference", value: "$*TMPDIR", url: "/language/variables#index-entry-$*TMPDIR" }
+,
+{ category: "Reference", value: "$*THREAD", url: "/language/variables#index-entry-$*THREAD" }
+,
+{ category: "Reference", value: "$*SCHEDULER", url: "/language/variables#index-entry-$*SCHEDULER" }
+,
+{ category: "Reference", value: "$*SAMPLER", url: "/language/variables#index-entry-$*SAMPLER" }
+,
+{ category: "Reference", value: "$*USAGE", url: "/language/variables#index-entry-$*USAGE" }
+,
+{ category: "Reference", value: "$*COLLATION", url: "/language/variables#index-entry-$*COLLATION" }
+,
+{ category: "Reference", value: "$*TOLERANCE", url: "/language/variables#index-entry-$*TOLERANCE" }
+,
+{ category: "Reference", value: "$*DEFAULT-READ-ELEMS", url: "/language/variables#index-entry-$*DEFAULT-READ-ELEMS" }
+,
+{ category: "Reference", value: "token (declarator)", url: "/language/grammars#index-entry-declarator_token-Named_Regexes" }
+,
+{ category: "Reference", value: "rule (declarator)", url: "/language/grammars#index-entry-declarator_rule-Rules" }
+,
+{ category: "Reference", value: "Creating grammars", url: "/language/grammars#index-entry-Creating_grammars" }
+,
+{ category: "Reference", value: ":sym<>", url: "/language/grammars#index-entry-:sym<>-_proto_regex-_declarator_grammar-Proto_regexes" }
+,
+{ category: "Reference", value: "proto regex", url: "/language/grammars#index-entry-:sym<>-_proto_regex-_declarator_grammar-Proto_regexes" }
+,
+{ category: "Reference", value: "grammar ( declarator)", url: "/language/grammars#index-entry-:sym<>-_proto_regex-_declarator_grammar-Proto_regexes" }
+,
+{ category: "Reference", value: "TOP", url: "/language/grammars#index-entry-TOP-TOP" }
+,
+{ category: "Reference", value: "ws", url: "/language/grammars#index-entry-ws" }
+,
+{ category: "Reference", value: "<sym>", url: "/language/grammars#index-entry-<sym>-sym" }
+,
+{ category: "Reference", value: "<?>", url: "/language/grammars#index-entry-<%3F>" }
+,
+{ category: "Reference", value: "Actions", url: "/language/grammars#index-entry-Actions" }
+,
+{ category: "Reference", value: "Single Argument Rule", url: "/language/list#index-entry-Single_Argument_Rule" }
+,
+{ category: "Reference", value: "laziness in Iterable objects", url: "/language/list#index-entry-laziness_in_Iterable_objects" }
+,
+{ category: "Reference", value: "typed array", url: "/language/list#index-entry-typed_array" }
+,
+{ category: "Reference", value: "[ ] (typed array)", url: "/language/list#index-entry-[_]_(typed_array)" }
+,
+{ category: "Reference", value: "Shaped arrays", url: "/language/list#index-entry-Shaped_arrays" }
+,
+{ category: "Reference", value: "CompUnit (Rakudo classes)", url: "/language/modules-core#index-entry-CompUnit_(Rakudo_classes)" }
+,
+{ category: "Reference", value: "IPC", url: "/language/ipc#index-entry-IPC" }
+,
+{ category: "Reference", value: "Running programs", url: "/language/ipc#index-entry-Running_programs" }
+,
+{ category: "Reference", value: "pack", url: "/language/experimental#index-entry-pack-pack" }
+,
+{ category: "Reference", value: "macros", url: "/language/experimental#index-entry-macros-macros" }
+,
+{ category: "Reference", value: "quasi (macros)", url: "/language/experimental#index-entry-quasi_(macros)" }
+,
+{ category: "Reference", value: "unquoting (macros)", url: "/language/experimental#index-entry-unquoting_(macros)" }
+,
+{ category: "Reference", value: "{{{}}} (macros)", url: "/language/experimental#index-entry-{{{}}}_(macros)" }
+,
+{ category: "Reference", value: ":cached", url: "/language/experimental#index-entry-:cached-cached" }
+,
+{ category: "Reference", value: "sub (declarator)", url: "/language/functions#index-entry-declarator_sub-Subroutines" }
+,
+{ category: "Reference", value: "pointy blocks", url: "/language/functions#index-entry-pointy_blocks" }
+,
+{ category: "Reference", value: "syntax (->)", url: "/language/functions#index-entry-->_syntax-Blocks_and_lambdas" }
+,
+{ category: "Reference", value: "@_", url: "/language/functions#index-entry-@__" }
+,
+{ category: "Reference", value: "%_", url: "/language/functions#index-entry-$PERCENT_SIGN__" }
+,
+{ category: "Reference", value: "Argument", url: "/language/functions#index-entry-Argument" }
+,
+{ category: "Reference", value: "multi (declarator)", url: "/language/functions#index-entry-declarator_multi-Multi-dispatch" }
+,
+{ category: "Reference", value: "declarator", url: "/language/functions#index-entry-declarator-proto" }
+,
+{ category: "Reference", value: "declarator", url: "/language/functions#index-entry-declarator-only" }
+,
+{ category: "Reference", value: "prefix &", url: "/language/functions#index-entry-prefix_&" }
+,
+{ category: "Reference", value: "closures", url: "/language/functions#index-entry-closures" }
+,
+{ category: "Reference", value: "use soft (pragma)", url: "/language/functions#index-entry-use_soft_(pragma)" }
+,
+{ category: "Reference", value: "is tighter", url: "/language/functions#index-entry-is_tighter" }
+,
+{ category: "Reference", value: "is equiv", url: "/language/functions#index-entry-is_equiv" }
+,
+{ category: "Reference", value: "is looser", url: "/language/functions#index-entry-is_looser" }
+,
+{ category: "Reference", value: "is assoc (trait)", url: "/language/functions#index-entry-is_assoc_(trait)" }
+,
+{ category: "Reference", value: "callsame (dispatch)", url: "/language/functions#index-entry-dispatch_callsame" }
+,
+{ category: "Reference", value: "callwith (dispatch)", url: "/language/functions#index-entry-dispatch_callwith" }
+,
+{ category: "Reference", value: "nextsame (dispatch)", url: "/language/functions#index-entry-dispatch_nextsame" }
+,
+{ category: "Reference", value: "nextwith (dispatch)", url: "/language/functions#index-entry-dispatch_nextwith" }
+,
+{ category: "Reference", value: "samewith (dispatch)", url: "/language/functions#index-entry-dispatch_samewith" }
+,
+{ category: "Reference", value: "nextcallee (dispatch)", url: "/language/functions#index-entry-dispatch_nextcallee" }
+,
+{ category: "Reference", value: "wrapped routines (dispatch)", url: "/language/functions#index-entry-dispatch_wrapped_routines" }
 ,
 { category: "Reference", value: "pragma (v6.x)", url: "/language/pragmas#index-entry-v6.x__pragma" }
 ,
@@ -5921,7 +5243,723 @@ $(function(){
 ,
 { category: "Reference", value: "pragma (worries)", url: "/language/pragmas#index-entry-worries__pragma" }
 ,
-{ category: "Reference", value: "does-ok", url: "/language/testing#index-entry-does-ok-does-ok($variable,_$role,_$description%3F)" }
+{ category: "Reference", value: "sink context", url: "/language/contexts#index-entry-sink_context" }
+,
+{ category: "Reference", value: "sinking", url: "/language/contexts#index-entry-sinking" }
+,
+{ category: "Reference", value: "number context", url: "/language/contexts#index-entry-number_context" }
+,
+{ category: "Reference", value: "string context", url: "/language/contexts#index-entry-string_context" }
+,
+{ category: "Reference", value: "Boolean context", url: "/language/contexts#index-entry-Boolean_context" }
+,
+{ category: "Reference", value: "list context", url: "/language/contexts#index-entry-list_context" }
+,
+{ category: "Reference", value: "statements (control flow)", url: "/language/control#index-entry-control_flow__statements-statements" }
+,
+{ category: "Reference", value: "blocks (control flow)", url: "/language/control#index-entry-control_flow__blocks-Blocks" }
+,
+{ category: "Reference", value: "Phasers (control flow)", url: "/language/control#index-entry-control_flow_Phasers-Phasers" }
+,
+{ category: "Reference", value: "do (control flow)", url: "/language/control#index-entry-control_flow_do-do" }
+,
+{ category: "Reference", value: "start (control flow)", url: "/language/control#index-entry-control_flow_start-start" }
+,
+{ category: "Reference", value: "if (control flow)", url: "/language/control#index-entry-control_flow_if-if" }
+,
+{ category: "Reference", value: "else elsif (control flow)", url: "/language/control#index-entry-control_flow_else_elsif-else$SOLIDUSelsif" }
+,
+{ category: "Reference", value: "unless (control flow)", url: "/language/control#index-entry-control_flow__unless-unless" }
+,
+{ category: "Reference", value: "with (control flow)", url: "/language/control#index-entry-control_flow_with" }
+,
+{ category: "Reference", value: "orwith (control flow)", url: "/language/control#index-entry-control_flow_orwith" }
+,
+{ category: "Reference", value: "without (control flow)", url: "/language/control#index-entry-control_flow_without" }
+,
+{ category: "Reference", value: "with orwith without", url: "/language/control#index-entry-with_orwith_without-with_orwith_without" }
+,
+{ category: "Reference", value: "when (control flow)", url: "/language/control#index-entry-control_flow__when-when" }
+,
+{ category: "Reference", value: "for (control flow)", url: "/language/control#index-entry-control_flow__for-for" }
+,
+{ category: "Reference", value: "gather take (control flow)", url: "/language/control#index-entry-control_flow_gather_take-gather$SOLIDUStake" }
+,
+{ category: "Reference", value: "gather (lazy list)", url: "/language/control#index-entry-lazy_list_gather" }
+,
+{ category: "Reference", value: "take (lazy list)", url: "/language/control#index-entry-lazy_list_take" }
+,
+{ category: "Reference", value: "supply emit (control flow)", url: "/language/control#index-entry-control_flow_supply_emit-supply$SOLIDUSemit" }
+,
+{ category: "Reference", value: "given (control flow)", url: "/language/control#index-entry-control_flow__given-given" }
+,
+{ category: "Reference", value: "switch (given)", url: "/language/control#index-entry-switch_(given)" }
+,
+{ category: "Reference", value: "case statements (given)", url: "/language/control#index-entry-case_statements_(given)" }
+,
+{ category: "Reference", value: "default when (control flow)", url: "/language/control#index-entry-control_flow_default_when-default_and_when" }
+,
+{ category: "Reference", value: "proceed (control flow)", url: "/language/control#index-entry-control_flow__proceed-proceed" }
+,
+{ category: "Reference", value: "succeed (control flow)", url: "/language/control#index-entry-control_flow__succeed-succeed" }
+,
+{ category: "Reference", value: "given statement (control flow)", url: "/language/control#index-entry-control_flow_given_statement-given_as_a_statement" }
+,
+{ category: "Reference", value: "loop (control flow)", url: "/language/control#index-entry-control_flow__loop-loop" }
+,
+{ category: "Reference", value: "while until (control flow)", url: "/language/control#index-entry-control_flow_while_until-while,_until" }
+,
+{ category: "Reference", value: "repeat (control flow)", url: "/language/control#index-entry-control_flow_repeat-repeat$SOLIDUSwhile,_repeat$SOLIDUSuntil" }
+,
+{ category: "Reference", value: "return (control flow)", url: "/language/control#index-entry-control_flow_return-return" }
+,
+{ category: "Reference", value: "return-rw (control flow)", url: "/language/control#index-entry-control_flow__return-rw-return-rw" }
+,
+{ category: "Reference", value: "fail (control flow)", url: "/language/control#index-entry-control_flow__fail-fail" }
+,
+{ category: "Reference", value: "once (control flow)", url: "/language/control#index-entry-control_flow__once-once" }
+,
+{ category: "Reference", value: "quietly (control flow)", url: "/language/control#index-entry-control_flow__quietly-quietly" }
+,
+{ category: "Reference", value: "next (control flow)", url: "/language/control#index-entry-control_flow__next-next" }
+,
+{ category: "Reference", value: "last (control flow)", url: "/language/control#index-entry-control_flow__last-last" }
+,
+{ category: "Reference", value: "redo (control flow)", url: "/language/control#index-entry-control_flow__redo-redo" }
+,
+{ category: "Reference", value: "Date and time functions", url: "/language/temporal#index-entry-Date_and_time_functions" }
+,
+{ category: "Reference", value: "Date ranges", url: "/language/temporal#index-entry-Date_ranges" }
+,
+{ category: "Reference", value: "command line arguments", url: "/language/create-cli#index-entry-command_line_arguments" }
+,
+{ category: "Reference", value: "MAIN", url: "/language/create-cli#index-entry-MAIN" }
+,
+{ category: "Reference", value: "%*SUB-MAIN-OPTS", url: "/language/create-cli#index-entry-$PERCENT_SIGN*SUB-MAIN-OPTS" }
+,
+{ category: "Reference", value: "named-anywhere", url: "/language/create-cli#index-entry-named-anywhere" }
+,
+{ category: "Reference", value: "hidden-from-USAGE", url: "/language/create-cli#index-entry-hidden-from-USAGE" }
+,
+{ category: "Reference", value: "unit (MAIN) (declarator)", url: "/language/create-cli#index-entry-declarator_unit_(MAIN)" }
+,
+{ category: "Reference", value: "USAGE", url: "/language/create-cli#index-entry-USAGE" }
+,
+{ category: "Reference", value: "$*USAGE", url: "/language/create-cli#index-entry-$*USAGE" }
+,
+{ category: "Reference", value: "ARGS-TO-CAPTURE", url: "/language/create-cli#index-entry-ARGS-TO-CAPTURE" }
+,
+{ category: "Reference", value: "RUN-MAIN", url: "/language/create-cli#index-entry-RUN-MAIN" }
+,
+{ category: "Reference", value: "GENERATE-USAGE", url: "/language/create-cli#index-entry-GENERATE-USAGE" }
+,
+{ category: "Reference", value: "package (::)", url: "/language/packages#index-entry-::_package" }
+,
+{ category: "Reference", value: "MY (package)", url: "/language/packages#index-entry-MY_(package)" }
+,
+{ category: "Reference", value: "OUR (package)", url: "/language/packages#index-entry-OUR_(package)" }
+,
+{ category: "Reference", value: "CORE (package)", url: "/language/packages#index-entry-CORE_(package)" }
+,
+{ category: "Reference", value: "GLOBAL (package)", url: "/language/packages#index-entry-GLOBAL_(package)" }
+,
+{ category: "Reference", value: "PROCESS (package)", url: "/language/packages#index-entry-PROCESS_(package)" }
+,
+{ category: "Reference", value: "COMPILING(package)", url: "/language/packages#index-entry-COMPILING(package)" }
+,
+{ category: "Reference", value: "CALLER (package)", url: "/language/packages#index-entry-CALLER_(package)" }
+,
+{ category: "Reference", value: "CALLERS (package)", url: "/language/packages#index-entry-CALLERS_(package)" }
+,
+{ category: "Reference", value: "DYNAMIC (package)", url: "/language/packages#index-entry-DYNAMIC_(package)" }
+,
+{ category: "Reference", value: "OUTER (package)", url: "/language/packages#index-entry-OUTER_(package)" }
+,
+{ category: "Reference", value: "OUTERS (package)", url: "/language/packages#index-entry-OUTERS_(package)" }
+,
+{ category: "Reference", value: "LEXICAL (package)", url: "/language/packages#index-entry-LEXICAL_(package)" }
+,
+{ category: "Reference", value: "UNIT (package)", url: "/language/packages#index-entry-UNIT_(package)" }
+,
+{ category: "Reference", value: "SETTING (package)", url: "/language/packages#index-entry-SETTING_(package)" }
+,
+{ category: "Reference", value: "PARENT (package)", url: "/language/packages#index-entry-PARENT_(package)" }
+,
+{ category: "Reference", value: "CLIENT (package)", url: "/language/packages#index-entry-CLIENT_(package)" }
+,
+{ category: "Reference", value: "interpolating into names", url: "/language/packages#index-entry-interpolating_into_names" }
+,
+{ category: "Reference", value: "::()", url: "/language/packages#index-entry-::()" }
+,
+{ category: "Reference", value: "::($c).m", url: "/language/packages#index-entry-::($c).m" }
+,
+{ category: "Reference", value: "A.\"$m\"()", url: "/language/packages#index-entry-A.\"$m\"()" }
+,
+{ category: "Reference", value: "prefix operator", url: "/language/operators#index-entry-prefix_operator" }
+,
+{ category: "Reference", value: "infix operator", url: "/language/operators#index-entry-infix_operator" }
+,
+{ category: "Reference", value: "postfix operator", url: "/language/operators#index-entry-postfix_operator" }
+,
+{ category: "Reference", value: "circumfix operator", url: "/language/operators#index-entry-circumfix_operator" }
+,
+{ category: "Reference", value: "postcircumfix operator", url: "/language/operators#index-entry-postcircumfix_operator" }
+,
+{ category: "Reference", value: "method operators", url: "/language/operators#index-entry-method_operators" }
+,
+{ category: "Reference", value: "s\/\/\/", url: "/language/operators#index-entry-s$SOLIDUS$SOLIDUS$SOLIDUS_in-place_substitution" }
+,
+{ category: "Reference", value: "S\/\/\/", url: "/language/operators#index-entry-S$SOLIDUS$SOLIDUS$SOLIDUS_non-destructive_substitution" }
+,
+{ category: "Reference", value: "tr\/\/\/", url: "/language/operators#index-entry-tr$SOLIDUS$SOLIDUS$SOLIDUS_in-place_transliteration" }
+,
+{ category: "Reference", value: "TR\/\/\/", url: "/language/operators#index-entry-TR$SOLIDUS$SOLIDUS$SOLIDUS_non-destructive_transliteration" }
+,
+{ category: "Reference", value: "! (negation metaoperator)", url: "/language/operators#index-entry-!_(negation_metaoperator)" }
+,
+{ category: "Reference", value: "!==", url: "/language/operators#index-entry-!==" }
+,
+{ category: "Reference", value: "!eq", url: "/language/operators#index-entry-!eq" }
+,
+{ category: "Reference", value: "reverse metaoperator (R)", url: "/language/operators#index-entry-R_reverse_metaoperator" }
+,
+{ category: "Reference", value: "»=«", url: "/language/operators#index-entry-»=«" }
+,
+{ category: "Reference", value: "«=»", url: "/language/operators#index-entry-«=»" }
+,
+{ category: "Reference", value: "<< (hyper)", url: "/language/operators#index-entry-hyper_<<-hyper_>>-hyper_«-hyper_»-Hyper_operators" }
+,
+{ category: "Reference", value: ">> (hyper)", url: "/language/operators#index-entry-hyper_<<-hyper_>>-hyper_«-hyper_»-Hyper_operators" }
+,
+{ category: "Reference", value: "« (hyper)", url: "/language/operators#index-entry-hyper_<<-hyper_>>-hyper_«-hyper_»-Hyper_operators" }
+,
+{ category: "Reference", value: "» (hyper)", url: "/language/operators#index-entry-hyper_<<-hyper_>>-hyper_«-hyper_»-Hyper_operators" }
+,
+{ category: "Reference", value: "[] (reduction metaoperators)", url: "/language/operators#index-entry-[]_(reduction_metaoperators)" }
+,
+{ category: "Reference", value: "[+] (reduction metaoperators)", url: "/language/operators#index-entry-[+]_(reduction_metaoperators)" }
+,
+{ category: "Reference", value: "[\\] (triangular reduction metaoperators)", url: "/language/operators#index-entry-[%5c]_(triangular_reduction_metaoperators)" }
+,
+{ category: "Reference", value: "X (cross metaoperator)", url: "/language/operators#index-entry-X_(cross_metaoperator)" }
+,
+{ category: "Reference", value: "Z (zip metaoperator)", url: "/language/operators#index-entry-Z_(zip_metaoperator)" }
+,
+{ category: "Reference", value: "sequential metaoperator (S)", url: "/language/operators#index-entry-S_sequential_metaoperator" }
+,
+{ category: "Reference", value: "qw", url: "/language/operators#index-entry-qw-quote-words-quote-words" }
+,
+{ category: "Reference", value: "quote-words", url: "/language/operators#index-entry-qw-quote-words-quote-words" }
+,
+{ category: "Reference", value: "grouping operator", url: "/language/operators#index-entry-grouping_operator" }
+,
+{ category: "Reference", value: "block constructor", url: "/language/operators#index-entry-block_constructor-hash_constructor" }
+,
+{ category: "Reference", value: "hash constructor", url: "/language/operators#index-entry-block_constructor-hash_constructor" }
+,
+{ category: "Reference", value: "Array", url: "/language/operators#index-entry-Array_constructor" }
+,
+{ category: "Reference", value: "array indexing operator", url: "/language/operators#index-entry-array_indexing_operator-array_subscript_operator-array_indexing_operator" }
+,
+{ category: "Reference", value: "array subscript operator", url: "/language/operators#index-entry-array_indexing_operator-array_subscript_operator-array_indexing_operator" }
+,
+{ category: "Reference", value: "hash indexing operator", url: "/language/operators#index-entry-hash_indexing_operator-hash_subscript_operator-hash_indexing_operator" }
+,
+{ category: "Reference", value: "hash subscript operator", url: "/language/operators#index-entry-hash_indexing_operator-hash_subscript_operator-hash_indexing_operator" }
+,
+{ category: "Reference", value: "call operator", url: "/language/operators#index-entry-call_operator" }
+,
+{ category: "Reference", value: "method call", url: "/language/operators#index-entry-method_call" }
+,
+{ category: "Reference", value: "methodop .&", url: "/language/operators#index-entry-methodop_.&" }
+,
+{ category: "Reference", value: "mutating method call", url: "/language/operators#index-entry-mutating_method_call" }
+,
+{ category: "Reference", value: "methodop .^", url: "/language/operators#index-entry-methodop_.$CIRCUMFLEX_ACCENT" }
+,
+{ category: "Reference", value: "metamethod call", url: "/language/operators#index-entry-metamethod_call" }
+,
+{ category: "Reference", value: "methodop .?", url: "/language/operators#index-entry-methodop_.%3F" }
+,
+{ category: "Reference", value: "Safe call operator", url: "/language/operators#index-entry-Safe_call_operator" }
+,
+{ category: "Reference", value: "methodop .+", url: "/language/operators#index-entry-methodop_.+" }
+,
+{ category: "Reference", value: "methodop .*", url: "/language/operators#index-entry-methodop_.*" }
+,
+{ category: "Reference", value: "methodop ».", url: "/language/operators#index-entry-methodop_»." }
+,
+{ category: "Reference", value: "methodop >>.", url: "/language/operators#index-entry-methodop_>>." }
+,
+{ category: "Reference", value: "hyper method call operator", url: "/language/operators#index-entry-hyper_method_call_operator" }
+,
+{ category: "Reference", value: ".( )", url: "/language/operators#index-entry-.(_)" }
+,
+{ category: "Reference", value: ".[ ]", url: "/language/operators#index-entry-.[_]" }
+,
+{ category: "Reference", value: ".{ }", url: "/language/operators#index-entry-.{_}" }
+,
+{ category: "Reference", value: "postfix operator call", url: "/language/operators#index-entry-postfix_operator_call" }
+,
+{ category: "Reference", value: "class-qualified method call", url: "/language/operators#index-entry-class-qualified_method_call" }
+,
+{ category: "Reference", value: "prefix increment operator", url: "/language/operators#index-entry-prefix_increment_operator" }
+,
+{ category: "Reference", value: "prefix ++", url: "/language/operators#index-entry-prefix_++-++" }
+,
+{ category: "Reference", value: "prefix decrement operator", url: "/language/operators#index-entry-prefix_decrement_operator" }
+,
+{ category: "Reference", value: "prefix --", url: "/language/operators#index-entry-prefix_-----" }
+,
+{ category: "Reference", value: "postfix increment operator", url: "/language/operators#index-entry-postfix_increment_operator" }
+,
+{ category: "Reference", value: "postfix ++", url: "/language/operators#index-entry-postfix_++-++" }
+,
+{ category: "Reference", value: "postfix decrement operator", url: "/language/operators#index-entry-postfix_decrement_operator" }
+,
+{ category: "Reference", value: "postfix --", url: "/language/operators#index-entry-postfix_-----" }
+,
+{ category: "Reference", value: "exponentiation operator", url: "/language/operators#index-entry-exponentiation_operator" }
+,
+{ category: "Reference", value: "Boolean context operator", url: "/language/operators#index-entry-Boolean_context_operator" }
+,
+{ category: "Reference", value: "Negated boolean context operator", url: "/language/operators#index-entry-Negated_boolean_context_operator" }
+,
+{ category: "Reference", value: "Numeric context operator", url: "/language/operators#index-entry-Numeric_context_operator" }
+,
+{ category: "Reference", value: "Negative numeric context operator", url: "/language/operators#index-entry-Negative_numeric_context_operator" }
+,
+{ category: "Reference", value: "String context operator", url: "/language/operators#index-entry-String_context_operator" }
+,
+{ category: "Reference", value: "Integer bitwise negation operator", url: "/language/operators#index-entry-Integer_bitwise_negation_operator" }
+,
+{ category: "Reference", value: "Boolean bitwise negation operator", url: "/language/operators#index-entry-Boolean_bitwise_negation_operator" }
+,
+{ category: "Reference", value: "upto operator", url: "/language/operators#index-entry-upto_operator" }
+,
+{ category: "Reference", value: "Multiplication operator", url: "/language/operators#index-entry-Multiplication_operator" }
+,
+{ category: "Reference", value: "Division operator", url: "/language/operators#index-entry-Division_operator" }
+,
+{ category: "Reference", value: "Integer division operator", url: "/language/operators#index-entry-Integer_division_operator" }
+,
+{ category: "Reference", value: "Modulo operator", url: "/language/operators#index-entry-Modulo_operator" }
+,
+{ category: "Reference", value: "Divisibility operator", url: "/language/operators#index-entry-Divisibility_operator" }
+,
+{ category: "Reference", value: "Integer modulo operator", url: "/language/operators#index-entry-Integer_modulo_operator" }
+,
+{ category: "Reference", value: "Numeric bitwise AND operator", url: "/language/operators#index-entry-Numeric_bitwise_AND_operator" }
+,
+{ category: "Reference", value: "left (integer bit shift operator)", url: "/language/operators#index-entry-integer_bit_shift_operator_left" }
+,
+{ category: "Reference", value: "right (integer bit shift operator)", url: "/language/operators#index-entry-integer_bit_shift_operator_right" }
+,
+{ category: "Reference", value: "Boolean logical AND operator", url: "/language/operators#index-entry-Boolean_logical_AND_operator" }
+,
+{ category: "Reference", value: "greatest common divisor operator", url: "/language/operators#index-entry-greatest_common_divisor_operator" }
+,
+{ category: "Reference", value: "least common multiple operator", url: "/language/operators#index-entry-least_common_multiple_operator" }
+,
+{ category: "Reference", value: "Addition operator", url: "/language/operators#index-entry-Addition_operator" }
+,
+{ category: "Reference", value: "Subtraction operator", url: "/language/operators#index-entry-Subtraction_operator" }
+,
+{ category: "Reference", value: "Integer bitwise OR operator", url: "/language/operators#index-entry-Integer_bitwise_OR_operator" }
+,
+{ category: "Reference", value: "Integer bitwise XOR operator", url: "/language/operators#index-entry-Integer_bitwise_XOR_operator" }
+,
+{ category: "Reference", value: "Boolean logical XOR operator", url: "/language/operators#index-entry-Boolean_logical_XOR_operator" }
+,
+{ category: "Reference", value: "Boolean logical OR operator", url: "/language/operators#index-entry-Boolean_logical_OR_operator" }
+,
+{ category: "Reference", value: "String repetition operator", url: "/language/operators#index-entry-String_repetition_operator" }
+,
+{ category: "Reference", value: "List repetition operator", url: "/language/operators#index-entry-List_repetition_operator" }
+,
+{ category: "Reference", value: "string concatenation operator", url: "/language/operators#index-entry-string_concatenation_operator" }
+,
+{ category: "Reference", value: "operators (o)", url: "/language/operators#index-entry-o__operators" }
+,
+{ category: "Reference", value: "function composition operator", url: "/language/operators#index-entry-function_composition_operator" }
+,
+{ category: "Reference", value: "All junction operator", url: "/language/operators#index-entry-All_junction_operator" }
+,
+{ category: "Reference", value: "Intersection operator", url: "/language/operators#index-entry-Intersection_operator" }
+,
+{ category: "Reference", value: "Baggy multiplication operator", url: "/language/operators#index-entry-Baggy_multiplication_operator" }
+,
+{ category: "Reference", value: "Any junction operator", url: "/language/operators#index-entry-Any_junction_operator" }
+,
+{ category: "Reference", value: "Union operator", url: "/language/operators#index-entry-Union_operator" }
+,
+{ category: "Reference", value: "Baggy addition operator", url: "/language/operators#index-entry-Baggy_addition_operator" }
+,
+{ category: "Reference", value: "Set difference operator", url: "/language/operators#index-entry-Set_difference_operator" }
+,
+{ category: "Reference", value: "One junction operator", url: "/language/operators#index-entry-One_junction_operator" }
+,
+{ category: "Reference", value: "Symmetric set difference operator", url: "/language/operators#index-entry-Symmetric_set_difference_operator" }
+,
+{ category: "Reference", value: "Generic, \"smart\" three-way comparator", url: "/language/operators#index-entry-Generic,_\"smart\"_three-way_comparator" }
+,
+{ category: "Reference", value: "String three-way comparator", url: "/language/operators#index-entry-String_three-way_comparator" }
+,
+{ category: "Reference", value: "Numeric three-way comparator", url: "/language/operators#index-entry-Numeric_three-way_comparator" }
+,
+{ category: "Reference", value: "spaceship operator", url: "/language/operators#index-entry-spaceship_operator" }
+,
+{ category: "Reference", value: "Range operator", url: "/language/operators#index-entry-Range_operator" }
+,
+{ category: "Reference", value: "Right-open range operator", url: "/language/operators#index-entry-Right-open_range_operator" }
+,
+{ category: "Reference", value: "Left-open range operator", url: "/language/operators#index-entry-Left-open_range_operator" }
+,
+{ category: "Reference", value: "Open range operator", url: "/language/operators#index-entry-Open_range_operator" }
+,
+{ category: "Reference", value: "Numeric equality operator", url: "/language/operators#index-entry-Numeric_equality_operator" }
+,
+{ category: "Reference", value: "Numeric inequality operator", url: "/language/operators#index-entry-Numeric_inequality_operator" }
+,
+{ category: "Reference", value: "Numeric less than operator", url: "/language/operators#index-entry-Numeric_less_than_operator" }
+,
+{ category: "Reference", value: "Numeric less than or equal to operator", url: "/language/operators#index-entry-Numeric_less_than_or_equal_to_operator" }
+,
+{ category: "Reference", value: "Numeric greater than operator", url: "/language/operators#index-entry-Numeric_greater_than_operator" }
+,
+{ category: "Reference", value: "Numeric greater than or equal to operator", url: "/language/operators#index-entry-Numeric_greater_than_or_equal_to_operator" }
+,
+{ category: "Reference", value: "String equality operator", url: "/language/operators#index-entry-String_equality_operator" }
+,
+{ category: "Reference", value: "String inequality operator", url: "/language/operators#index-entry-String_inequality_operator" }
+,
+{ category: "Reference", value: "String greater than operator", url: "/language/operators#index-entry-String_greater_than_operator" }
+,
+{ category: "Reference", value: "String greater than or equal to operator", url: "/language/operators#index-entry-String_greater_than_or_equal_to_operator" }
+,
+{ category: "Reference", value: "String less than operator", url: "/language/operators#index-entry-String_less_than_operator" }
+,
+{ category: "Reference", value: "String less than or equal to operator", url: "/language/operators#index-entry-String_less_than_or_equal_to_operator" }
+,
+{ category: "Reference", value: "equivalence operator", url: "/language/operators#index-entry-equivalence_operator" }
+,
+{ category: "Reference", value: "Value identity operator", url: "/language/operators#index-entry-Value_identity_operator" }
+,
+{ category: "Reference", value: "Container identity operator", url: "/language/operators#index-entry-Container_identity_operator" }
+,
+{ category: "Reference", value: "smartmatch operator", url: "/language/operators#index-entry-smartmatch_operator" }
+,
+{ category: "Reference", value: "≅ (infix)", url: "/language/operators#index-entry-infix__≅-≅" }
+,
+{ category: "Reference", value: "Membership operator", url: "/language/operators#index-entry-Membership_operator" }
+,
+{ category: "Reference", value: "Non-membership operator", url: "/language/operators#index-entry-Non-membership_operator" }
+,
+{ category: "Reference", value: "Membership operator", url: "/language/operators#index-entry-Membership_operator" }
+,
+{ category: "Reference", value: "Non-membership operator", url: "/language/operators#index-entry-Non-membership_operator" }
+,
+{ category: "Reference", value: "Subset of operator", url: "/language/operators#index-entry-Subset_of_operator" }
+,
+{ category: "Reference", value: "Not a subset of operator", url: "/language/operators#index-entry-Not_a_subset_of_operator" }
+,
+{ category: "Reference", value: "Subset of or equal to operator", url: "/language/operators#index-entry-Subset_of_or_equal_to_operator" }
+,
+{ category: "Reference", value: "Not a subset of nor equal to operator", url: "/language/operators#index-entry-Not_a_subset_of_nor_equal_to_operator" }
+,
+{ category: "Reference", value: "Superset of operator", url: "/language/operators#index-entry-Superset_of_operator" }
+,
+{ category: "Reference", value: "Not a superset of operator", url: "/language/operators#index-entry-Not_a_superset_of_operator" }
+,
+{ category: "Reference", value: "Superset of or equal to operator", url: "/language/operators#index-entry-Superset_of_or_equal_to_operator" }
+,
+{ category: "Reference", value: "Not a superset of nor equal to operator", url: "/language/operators#index-entry-Not_a_superset_of_nor_equal_to_operator" }
+,
+{ category: "Reference", value: "Short-circuit exclusive-or", url: "/language/operators#index-entry-Short-circuit_exclusive-or" }
+,
+{ category: "Reference", value: "defined-or operator", url: "/language/operators#index-entry-defined-or_operator-defined-or_operator" }
+,
+{ category: "Reference", value: "\/\/", url: "/language/operators#index-entry-$SOLIDUS$SOLIDUS-infix_$SOLIDUS$SOLIDUS" }
+,
+{ category: "Reference", value: "ternary (operator)", url: "/language/operators#index-entry-operator_ternary" }
+,
+{ category: "Reference", value: "conditional (operator)", url: "/language/operators#index-entry-operator_conditional" }
+,
+{ category: "Reference", value: "flipflop (operator)", url: "/language/operators#index-entry-operator_flipflop" }
+,
+{ category: "Reference", value: "item =", url: "/language/operators#index-entry-item_=" }
+,
+{ category: "Reference", value: "pair constructor", url: "/language/operators#index-entry-pair_constructor" }
+,
+{ category: "Reference", value: "Zip operator", url: "/language/operators#index-entry-Zip_operator" }
+,
+{ category: "Reference", value: "cross product operator", url: "/language/operators#index-entry-cross_product_operator" }
+,
+{ category: "Reference", value: "operators (X)", url: "/language/operators#index-entry-X_operators" }
+,
+{ category: "Reference", value: "operators (...)", url: "/language/operators#index-entry-..._operators" }
+,
+{ category: "Reference", value: "operators (...^)", url: "/language/operators#index-entry-...$CIRCUMFLEX_ACCENT_operators" }
+,
+{ category: "Reference", value: "operators (…)", url: "/language/operators#index-entry-…_operators" }
+,
+{ category: "Reference", value: "operators (…^)", url: "/language/operators#index-entry-…$CIRCUMFLEX_ACCENT_operators" }
+,
+{ category: "Reference", value: "… (lazy list)", url: "/language/operators#index-entry-lazy_list_…" }
+,
+{ category: "Reference", value: "sequence operator", url: "/language/operators#index-entry-sequence_operator" }
+,
+{ category: "Reference", value: "list =", url: "/language/operators#index-entry-list_=" }
+,
+{ category: "Reference", value: "List assignment operator", url: "/language/operators#index-entry-List_assignment_operator" }
+,
+{ category: "Reference", value: "Binding operator", url: "/language/operators#index-entry-Binding_operator" }
+,
+{ category: "Reference", value: "Read-only binding operator", url: "/language/operators#index-entry-Read-only_binding_operator" }
+,
+{ category: "Reference", value: "stub operator", url: "/language/operators#index-entry-stub_operator" }
+,
+{ category: "Reference", value: "Fatal stub operator", url: "/language/operators#index-entry-Fatal_stub_operator" }
+,
+{ category: "Reference", value: "Admonitory stub operator", url: "/language/operators#index-entry-Admonitory_stub_operator" }
+,
+{ category: "Reference", value: "and", url: "/language/operators#index-entry-and" }
+,
+{ category: "Reference", value: "andthen", url: "/language/operators#index-entry-andthen" }
+,
+{ category: "Reference", value: "notandthen", url: "/language/operators#index-entry-notandthen" }
+,
+{ category: "Reference", value: "orelse", url: "/language/operators#index-entry-orelse" }
+,
+{ category: "Reference", value: "feed", url: "/language/operators#index-entry-feed" }
+,
+{ category: "Reference", value: "leftward feed", url: "/language/operators#index-entry-leftward_feed" }
+,
+{ category: "Reference", value: "PERL6LIB", url: "/language/5to6-nutshell#index-entry-PERL6LIB-PERL6LIB" }
+,
+{ category: "Reference", value: "XCompose", url: "/language/unicode_entry#index-entry-XCompose" }
+,
+{ category: "Reference", value: "ibus", url: "/language/unicode_entry#index-entry-ibus" }
+,
+{ category: "Reference", value: "WinCompose", url: "/language/unicode_entry#index-entry-WinCompose" }
+,
+{ category: "Reference", value: "Vim", url: "/language/unicode_entry#index-entry-Vim" }
+,
+{ category: "Reference", value: "Emacs", url: "/language/unicode_entry#index-entry-Emacs" }
+,
+{ category: "Reference", value: "Type objects", url: "/language/objects#index-entry-Type_objects" }
+,
+{ category: "Reference", value: "class (declarator)", url: "/language/objects#index-entry-declarator_class-Classes" }
+,
+{ category: "Reference", value: "Attribute", url: "/language/objects#index-entry-Attribute" }
+,
+{ category: "Reference", value: "Property", url: "/language/objects#index-entry-Property" }
+,
+{ category: "Reference", value: "Member", url: "/language/objects#index-entry-Member" }
+,
+{ category: "Reference", value: "Slot", url: "/language/objects#index-entry-Slot" }
+,
+{ category: "Reference", value: "indirect invocant syntax", url: "/language/objects#index-entry-indirect_invocant_syntax" }
+,
+{ category: "Reference", value: "self", url: "/language/objects#index-entry-self" }
+,
+{ category: "Reference", value: "Private methods", url: "/language/objects#index-entry-Private_methods" }
+,
+{ category: "Reference", value: "Submethods", url: "/language/objects#index-entry-Submethods" }
+,
+{ category: "Reference", value: "MRO", url: "/language/objects#index-entry-MRO" }
+,
+{ category: "Reference", value: "delegation (trait handles)", url: "/language/objects#index-entry-delegation_(trait_handles)" }
+,
+{ category: "Reference", value: "new (method)", url: "/language/objects#index-entry-new_(method)" }
+,
+{ category: "Reference", value: "TWEAK", url: "/language/objects#index-entry-TWEAK" }
+,
+{ category: "Reference", value: "role (declarator)", url: "/language/objects#index-entry-declarator_role-Roles" }
+,
+{ category: "Reference", value: "does", url: "/language/objects#index-entry-does" }
+,
+{ category: "Reference", value: "Parameterized Roles", url: "/language/objects#index-entry-Parameterized_Roles" }
+,
+{ category: "Reference", value: "but", url: "/language/objects#index-entry-but" }
+,
+{ category: "Reference", value: "Mixins", url: "/language/objects#index-entry-Mixins" }
+,
+{ category: "Reference", value: "Zen slices", url: "/language/subscripts#index-entry-Zen_slices" }
+,
+{ category: "Reference", value: "flattening", url: "/language/subscripts#index-entry-flattening_" }
+,
+{ category: "Reference", value: ":exists (subscript adverb)", url: "/language/subscripts#index-entry-:exists_(subscript_adverb)" }
+,
+{ category: "Reference", value: ":delete (subscript adverb)", url: "/language/subscripts#index-entry-:delete_(subscript_adverb)" }
+,
+{ category: "Reference", value: ":p (subscript adverb)", url: "/language/subscripts#index-entry-:p_(subscript_adverb)" }
+,
+{ category: "Reference", value: ":kv (subscript adverb)", url: "/language/subscripts#index-entry-:kv_(subscript_adverb)" }
+,
+{ category: "Reference", value: ":k (subscript adverb)", url: "/language/subscripts#index-entry-:k_(subscript_adverb)" }
+,
+{ category: "Reference", value: ":v (subscript adverb)", url: "/language/subscripts#index-entry-:v_(subscript_adverb)" }
+,
+{ category: "Reference", value: "«", url: "/language/unicode_ascii#index-entry-«" }
+,
+{ category: "Reference", value: "»", url: "/language/unicode_ascii#index-entry-»" }
+,
+{ category: "Reference", value: "×", url: "/language/unicode_ascii#index-entry-×" }
+,
+{ category: "Reference", value: "÷", url: "/language/unicode_ascii#index-entry-÷" }
+,
+{ category: "Reference", value: "≤", url: "/language/unicode_ascii#index-entry-≤" }
+,
+{ category: "Reference", value: "≥", url: "/language/unicode_ascii#index-entry-≥" }
+,
+{ category: "Reference", value: "≠", url: "/language/unicode_ascii#index-entry-≠" }
+,
+{ category: "Reference", value: "−", url: "/language/unicode_ascii#index-entry-−" }
+,
+{ category: "Reference", value: "∘", url: "/language/unicode_ascii#index-entry-∘" }
+,
+{ category: "Reference", value: "≅", url: "/language/unicode_ascii#index-entry-≅" }
+,
+{ category: "Reference", value: "π", url: "/language/unicode_ascii#index-entry-π" }
+,
+{ category: "Reference", value: "τ", url: "/language/unicode_ascii#index-entry-τ" }
+,
+{ category: "Reference", value: "𝑒", url: "/language/unicode_ascii#index-entry-𝑒" }
+,
+{ category: "Reference", value: "∞", url: "/language/unicode_ascii#index-entry-∞" }
+,
+{ category: "Reference", value: "…", url: "/language/unicode_ascii#index-entry-…" }
+,
+{ category: "Reference", value: "‘", url: "/language/unicode_ascii#index-entry-‘" }
+,
+{ category: "Reference", value: "’", url: "/language/unicode_ascii#index-entry-’" }
+,
+{ category: "Reference", value: "‚", url: "/language/unicode_ascii#index-entry-‚" }
+,
+{ category: "Reference", value: "“", url: "/language/unicode_ascii#index-entry-“" }
+,
+{ category: "Reference", value: "”", url: "/language/unicode_ascii#index-entry-”" }
+,
+{ category: "Reference", value: "„", url: "/language/unicode_ascii#index-entry-„" }
+,
+{ category: "Reference", value: "｢", url: "/language/unicode_ascii#index-entry-｢" }
+,
+{ category: "Reference", value: "｣", url: "/language/unicode_ascii#index-entry-｣" }
+,
+{ category: "Reference", value: "⁺", url: "/language/unicode_ascii#index-entry-⁺" }
+,
+{ category: "Reference", value: "⁻", url: "/language/unicode_ascii#index-entry-⁻" }
+,
+{ category: "Reference", value: "¯", url: "/language/unicode_ascii#index-entry-¯" }
+,
+{ category: "Reference", value: "⁰", url: "/language/unicode_ascii#index-entry-⁰" }
+,
+{ category: "Reference", value: "¹", url: "/language/unicode_ascii#index-entry-¹" }
+,
+{ category: "Reference", value: "²", url: "/language/unicode_ascii#index-entry-²" }
+,
+{ category: "Reference", value: "³", url: "/language/unicode_ascii#index-entry-³" }
+,
+{ category: "Reference", value: "⁴", url: "/language/unicode_ascii#index-entry-⁴" }
+,
+{ category: "Reference", value: "⁵", url: "/language/unicode_ascii#index-entry-⁵" }
+,
+{ category: "Reference", value: "⁶", url: "/language/unicode_ascii#index-entry-⁶" }
+,
+{ category: "Reference", value: "⁷", url: "/language/unicode_ascii#index-entry-⁷" }
+,
+{ category: "Reference", value: "⁸", url: "/language/unicode_ascii#index-entry-⁸" }
+,
+{ category: "Reference", value: "⁹", url: "/language/unicode_ascii#index-entry-⁹" }
+,
+{ category: "Reference", value: "∈", url: "/language/unicode_ascii#index-entry-∈" }
+,
+{ category: "Reference", value: "∉", url: "/language/unicode_ascii#index-entry-∉" }
+,
+{ category: "Reference", value: "∋", url: "/language/unicode_ascii#index-entry-∋" }
+,
+{ category: "Reference", value: "∌", url: "/language/unicode_ascii#index-entry-∌" }
+,
+{ category: "Reference", value: "⊆", url: "/language/unicode_ascii#index-entry-⊆" }
+,
+{ category: "Reference", value: "⊈", url: "/language/unicode_ascii#index-entry-⊈" }
+,
+{ category: "Reference", value: "⊂", url: "/language/unicode_ascii#index-entry-⊂" }
+,
+{ category: "Reference", value: "⊄", url: "/language/unicode_ascii#index-entry-⊄" }
+,
+{ category: "Reference", value: "⊇", url: "/language/unicode_ascii#index-entry-⊇" }
+,
+{ category: "Reference", value: "⊉", url: "/language/unicode_ascii#index-entry-⊉" }
+,
+{ category: "Reference", value: "⊃", url: "/language/unicode_ascii#index-entry-⊃" }
+,
+{ category: "Reference", value: "⊅", url: "/language/unicode_ascii#index-entry-⊅" }
+,
+{ category: "Reference", value: "≼", url: "/language/unicode_ascii#index-entry-≼" }
+,
+{ category: "Reference", value: "≽", url: "/language/unicode_ascii#index-entry-≽" }
+,
+{ category: "Reference", value: "∪", url: "/language/unicode_ascii#index-entry-∪" }
+,
+{ category: "Reference", value: "∩", url: "/language/unicode_ascii#index-entry-∩" }
+,
+{ category: "Reference", value: "∖", url: "/language/unicode_ascii#index-entry-∖" }
+,
+{ category: "Reference", value: "⊖", url: "/language/unicode_ascii#index-entry-⊖" }
+,
+{ category: "Reference", value: "⊍", url: "/language/unicode_ascii#index-entry-⊍" }
+,
+{ category: "Reference", value: "⊎", url: "/language/unicode_ascii#index-entry-⊎" }
+,
+{ category: "Reference", value: "⚛=", url: "/language/unicode_ascii#index-entry-⚛=" }
+,
+{ category: "Reference", value: "⚛", url: "/language/unicode_ascii#index-entry-⚛" }
+,
+{ category: "Reference", value: "⚛+=", url: "/language/unicode_ascii#index-entry-⚛+=" }
+,
+{ category: "Reference", value: "⚛-=", url: "/language/unicode_ascii#index-entry-⚛-=" }
+,
+{ category: "Reference", value: "⚛−=", url: "/language/unicode_ascii#index-entry-⚛−=" }
+,
+{ category: "Reference", value: "++⚛", url: "/language/unicode_ascii#index-entry-++⚛" }
+,
+{ category: "Reference", value: "⚛++", url: "/language/unicode_ascii#index-entry-⚛++" }
+,
+{ category: "Reference", value: "--⚛", url: "/language/unicode_ascii#index-entry---⚛" }
+,
+{ category: "Reference", value: "⚛--", url: "/language/unicode_ascii#index-entry-⚛--" }
+,
+{ category: "Reference", value: "»=»", url: "/language/unicode_ascii#index-entry-»=»" }
+,
+{ category: "Reference", value: "«=«", url: "/language/unicode_ascii#index-entry-«=«" }
+,
+{ category: "Reference", value: "«=»", url: "/language/unicode_ascii#index-entry-«=»" }
+,
+{ category: "Reference", value: "»=«", url: "/language/unicode_ascii#index-entry-»=«" }
+,
+{ category: "Reference", value: "CATCH", url: "/language/exceptions#index-entry-CATCH-CATCH" }
+,
+{ category: "Reference", value: "try blocks", url: "/language/exceptions#index-entry-try_blocks" }
+,
+{ category: "Reference", value: "resume (Exceptions)", url: "/language/exceptions#index-entry-resume_(Exceptions)" }
+,
+{ category: "Reference", value: "is (trait)", url: "/language/traits#index-entry-is_(trait)-is_trait" }
+,
+{ category: "Reference", value: "Uninstantiable representation trait", url: "/language/traits#index-entry-Uninstantiable_representation_trait" }
+,
+{ category: "Reference", value: "CStruct", url: "/language/traits#index-entry-CStruct" }
+,
+{ category: "Reference", value: "CPPStruct", url: "/language/traits#index-entry-CPPStruct" }
+,
+{ category: "Reference", value: "CPointer", url: "/language/traits#index-entry-CPointer" }
+,
+{ category: "Reference", value: "CUnion", url: "/language/traits#index-entry-CUnion" }
+,
+{ category: "Reference", value: "P6opaque", url: "/language/traits#index-entry-P6opaque" }
+,
+{ category: "Reference", value: "traits (is implementation-detail)", url: "/language/traits#index-entry-is_implementation-detail__traits-is_implementation-detail" }
 ,
 { category: "Reference", value: "MOP", url: "/language/mop#index-entry-MOP" }
 ,
@@ -5945,85 +5983,29 @@ $(function(){
 ,
 { category: "Reference", value: "is itemized?", url: "/language/mop#index-entry-is_itemized%3F" }
 ,
-{ category: "Reference", value: "Raku and Perl 6 (FAQ) (Rakudo)", url: "/language/faq#index-entry-Rakudo__Raku_and_Perl 6_(FAQ)" }
+{ category: "Reference", value: ":$translate-nl", url: "/language/newline#index-entry-:$translate-nl" }
 ,
-{ category: "Reference", value: "v6.d (FAQ)", url: "/language/faq#index-entry-v6.d_(FAQ)" }
+{ category: "Reference", value: ":nl-out", url: "/language/newline#index-entry-:nl-out" }
 ,
-{ category: "Reference", value: "Rakudo Star DMG binary installer (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_DMG_binary_installer_(FAQ)" }
+{ category: "Reference", value: "þ (infix)", url: "/language/about#index-entry-infix_þ-How_to_use_the_þ_infix" }
 ,
-{ category: "Reference", value: "Rakudo Star MSI binary installer (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_MSI_binary_installer_(FAQ)" }
+{ category: "Reference", value: "foo", url: "/language/about#index-entry-foo-foo" }
 ,
-{ category: "Reference", value: "Rakudo Star docker image (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_docker_image_(FAQ)" }
+{ category: "Reference", value: "∅", url: "/language/terms#index-entry-∅" }
 ,
-{ category: "Reference", value: "Rakudo Star for Linux (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_for_Linux_(FAQ)" }
+{ category: "Reference", value: "empty set", url: "/language/terms#index-entry-empty_set" }
 ,
-{ category: "Reference", value: "Rakudo Star for Windows (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_for_Windows_(FAQ)" }
+{ category: "Reference", value: "constant (Terms)", url: "/language/terms#index-entry-constant_(Terms)" }
 ,
-{ category: "Reference", value: "Rakudo Star for Mac (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_for_Mac_(FAQ)" }
+{ category: "Reference", value: "constants", url: "/language/terms#index-entry-constants" }
 ,
-{ category: "Reference", value: "rakudobrew (FAQ)", url: "/language/faq#index-entry-rakudobrew_(FAQ)" }
+{ category: "Reference", value: "does-ok", url: "/language/testing#index-entry-does-ok-does-ok($variable,_$role,_$description%3F)" }
 ,
-{ category: "Reference", value: "Books", url: "/language/faq#index-entry-Books" }
+{ category: "Reference", value: "<->", url: "/type/Block#index-entry-<->" }
 ,
-{ category: "Reference", value: "Specification (FAQ)", url: "/language/faq#index-entry-Specification_(FAQ)" }
+{ category: "Reference", value: "v (version)", url: "/type/Version#index-entry-v_(version)" }
 ,
-{ category: "Reference", value: "Ruby Quickstart (FAQ)", url: "/language/faq#index-entry-Ruby_Quickstart_(FAQ)" }
-,
-{ category: "Reference", value: "CPAN (FAQ)", url: "/language/faq#index-entry-CPAN_(FAQ)" }
-,
-{ category: "Reference", value: "ecosystem", url: "/language/faq#index-entry-ecosystem" }
-,
-{ category: "Reference", value: "p6doc (FAQ)", url: "/language/faq#index-entry-p6doc_(FAQ)" }
-,
-{ category: "Reference", value: "perldoc (FAQ)", url: "/language/faq#index-entry-perldoc_(FAQ)" }
-,
-{ category: "Reference", value: "Perl modules (FAQ)", url: "/language/faq#index-entry-Perl_modules_(FAQ)" }
-,
-{ category: "Reference", value: "C and C++ (FAQ)", url: "/language/faq#index-entry-C_and_C++_(FAQ)" }
-,
-{ category: "Reference", value: "Core standard library (FAQ)", url: "/language/faq#index-entry-Core_standard_library_(FAQ)" }
-,
-{ category: "Reference", value: "Rakudo Star distribution and compiler-only release (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_distribution_and_compiler-only_release_(FAQ)" }
-,
-{ category: "Reference", value: "Precompile (FAQ)", url: "/language/faq#index-entry-Precompile_(FAQ)" }
-,
-{ category: "Reference", value: "Circular dependencies (FAQ)", url: "/language/faq#index-entry-Circular_dependencies_(FAQ)" }
-,
-{ category: "Reference", value: "Data::Dumper (FAQ)", url: "/language/faq#index-entry-Data::Dumper_(FAQ)" }
-,
-{ category: "Reference", value: "Junction (FAQ)", url: "/language/faq#index-entry-Junction_(FAQ)" }
-,
-{ category: "Reference", value: "Sigils (FAQ)", url: "/language/faq#index-entry-Sigils_(FAQ)" }
-,
-{ category: "Reference", value: "Coroutine (FAQ)", url: "/language/faq#index-entry-Coroutine_(FAQ)" }
-,
-{ category: "Reference", value: "Raku Implementation (FAQ)", url: "/language/faq#index-entry-Raku_Implementation_(FAQ)" }
-,
-{ category: "Reference", value: "NQP (FAQ)", url: "/language/faq#index-entry-NQP_(FAQ)" }
-,
-{ category: "Reference", value: "Raku Distribution (FAQ)", url: "/language/faq#index-entry-Raku_Distribution_(FAQ)" }
-,
-{ category: "Reference", value: "Rakudo Star release cycle (FAQ)", url: "/language/faq#index-entry-Rakudo_Star_release_cycle_(FAQ)" }
-,
-{ category: "Reference", value: "non-string keys", url: "/language/hashmap#index-entry-non-string_keys" }
-,
-{ category: "Reference", value: "object hash", url: "/language/hashmap#index-entry-object_hash" }
-,
-{ category: "Reference", value: ":{}", url: "/language/hashmap#index-entry-:{}" }
-,
-{ category: "Reference", value: "is default (Variable)", url: "/type/Variable#index-entry-is_default_(Variable)-trait_is_default" }
-,
-{ category: "Reference", value: "defined (method)", url: "/type/Mu#index-entry-method_defined" }
-,
-{ category: "Reference", value: "Inf (definition)", url: "/type/Num#index-entry-Inf_(definition)" }
-,
-{ category: "Reference", value: "∞ (definition)", url: "/type/Num#index-entry-∞_(definition)" }
-,
-{ category: "Reference", value: "NaN (definition)", url: "/type/Num#index-entry-NaN_(definition)-NaN" }
-,
-{ category: "Reference", value: "in-range", url: "/type/Range#index-entry-in-range" }
-,
-{ category: "Reference", value: "Nil assignment", url: "/type/Nil#index-entry-Nil_assignment" }
+{ category: "Reference", value: "exponentiation operator", url: "/type/Complex#index-entry-exponentiation_operator" }
 ,
 { category: "Reference", value: "True", url: "/type/Bool#index-entry-True" }
 ,
@@ -6031,11 +6013,11 @@ $(function(){
 ,
 { category: "Reference", value: "Boolean", url: "/type/Bool#index-entry-Boolean" }
 ,
-{ category: "Reference", value: "Grapheme", url: "/type/Cool#index-entry-Grapheme" }
+{ category: "Reference", value: "\\ (sigilless scalar)", url: "/type/Scalar#index-entry-%5c_(sigilless_scalar)" }
 ,
-{ category: "Reference", value: "return-rw", url: "/type/Routine#index-entry-return-rw-return-rw" }
+{ category: "Reference", value: "extra named arguments", url: "/type/Method#index-entry-extra_named_arguments" }
 ,
-{ category: "Reference", value: "is default (Routine)", url: "/type/Routine#index-entry-is_default_(Routine)" }
+{ category: "Reference", value: "Signal", url: "/type/Supply#index-entry-Signal" }
 ,
 { category: "Reference", value: "buf8", url: "/type/Buf#index-entry-buf8" }
 ,
@@ -6044,74 +6026,6 @@ $(function(){
 { category: "Reference", value: "buf32", url: "/type/Buf#index-entry-buf32" }
 ,
 { category: "Reference", value: "buf64", url: "/type/Buf#index-entry-buf64" }
-,
-{ category: "Reference", value: "\\ (sigilless scalar)", url: "/type/Scalar#index-entry-%5c_(sigilless_scalar)" }
-,
-{ category: "Reference", value: "is default (Attribute)", url: "/type/Attribute#index-entry-is_default_(Attribute)" }
-,
-{ category: "Reference", value: "Trait is default", url: "/type/Attribute#index-entry-Trait_is_default" }
-,
-{ category: "Reference", value: "is required (Attribute) (trait)", url: "/type/Attribute#index-entry-trait_is_required_(Attribute)-Trait_is_required" }
-,
-{ category: "Reference", value: "is DEPRECATED (Attribute) (trait)", url: "/type/Attribute#index-entry-trait_is_DEPRECATED_(Attribute)-trait_is_DEPRECATED" }
-,
-{ category: "Reference", value: "is rw (Attribute) (trait)", url: "/type/Attribute#index-entry-trait_is_rw_(Attribute)-trait_is_rw" }
-,
-{ category: "Reference", value: "is built (Attribute) (trait)", url: "/type/Attribute#index-entry-trait_is_built_(Attribute)-trait_is_built" }
-,
-{ category: "Reference", value: "<->", url: "/type/Block#index-entry-<->" }
-,
-{ category: "Reference", value: "exponentiation operator", url: "/type/Complex#index-entry-exponentiation_operator" }
-,
-{ category: "Reference", value: "NativeEndian", url: "/type/Endian#index-entry-NativeEndian" }
-,
-{ category: "Reference", value: "LittleEndian", url: "/type/Endian#index-entry-LittleEndian" }
-,
-{ category: "Reference", value: "BigEndian", url: "/type/Endian#index-entry-BigEndian" }
-,
-{ category: "Reference", value: "Endian", url: "/type/Endian#index-entry-Endian" }
-,
-{ category: "Reference", value: "v (version)", url: "/type/Version#index-entry-v_(version)" }
-,
-{ category: "Reference", value: "Signal", url: "/type/Supply#index-entry-Signal" }
-,
-{ category: "Reference", value: "@ list contextualizer", url: "/type/Any#index-entry-@_list_contextualizer" }
-,
-{ category: "Reference", value: "$ (item contextualizer)", url: "/type/Any#index-entry-$_(item_contextualizer)" }
-,
-{ category: "Reference", value: "$*COLLATION", url: "/type/Any#index-entry-$*COLLATION-$*COLLATION" }
-,
-{ category: "Reference", value: "collation levels", url: "/type/Any#index-entry-collation_levels" }
-,
-{ category: "Reference", value: "colon pair (Pair)", url: "/type/Pair#index-entry-colon_pair_(Pair)" }
-,
-{ category: "Reference", value: ":", url: "/type/Pair#index-entry-:" }
-,
-{ category: "Reference", value: "=>", url: "/type/Pair#index-entry-=>_" }
-,
-{ category: "Reference", value: ":!", url: "/type/Pair#index-entry-:!" }
-,
-{ category: "Reference", value: ":$", url: "/type/Pair#index-entry-:$" }
-,
-{ category: "Reference", value: "colon list (Pair)", url: "/type/Pair#index-entry-colon_list_(Pair)" }
-,
-{ category: "Reference", value: "Pair", url: "/type/Pair#index-entry-Pair" }
-,
-{ category: "Reference", value: ":exists", url: "/type/Pair#index-entry-:exists" }
-,
-{ category: "Reference", value: "IterationEnd", url: "/type/Iterator#index-entry-IterationEnd" }
-,
-{ category: "Reference", value: "extra named arguments", url: "/type/Method#index-entry-extra_named_arguments" }
-,
-{ category: "Reference", value: "capture literal (Capture)", url: "/type/Capture#index-entry-capture_literal_(Capture)" }
-,
-{ category: "Reference", value: "\\() (Capture)", url: "/type/Capture#index-entry-%5c()_(Capture)" }
-,
-{ category: "Reference", value: "my (Sub)", url: "/type/Sub#index-entry-my_(Sub)" }
-,
-{ category: "Reference", value: "our (Sub)", url: "/type/Sub#index-entry-our_(Sub)" }
-,
-{ category: "Reference", value: "trait_mod (declarator)", url: "/type/Sub#index-entry-trait__mod_(declarator)" }
 ,
 { category: "Reference", value: "signature literal", url: "/type/Signature#index-entry-signature_literal" }
 ,
@@ -6177,19 +6091,23 @@ $(function(){
 ,
 { category: "Reference", value: "is readonly (trait)", url: "/type/Signature#index-entry-trait_is_readonly" }
 ,
-{ category: "Reference", value: "$¢", url: "/type/Match#index-entry-$¢" }
-,
-{ category: "Reference", value: "Cursor", url: "/type/Match#index-entry-Cursor-Cursor" }
-,
-{ category: "Reference", value: "Less", url: "/type/Order#index-entry-Less" }
-,
-{ category: "Reference", value: "Same", url: "/type/Order#index-entry-Same" }
-,
-{ category: "Reference", value: "More", url: "/type/Order#index-entry-More" }
+{ category: "Reference", value: "IterationEnd", url: "/type/Iterator#index-entry-IterationEnd" }
 ,
 { category: "Reference", value: "named regex", url: "/type/Regex#index-entry-named_regex" }
 ,
+{ category: "Reference", value: "return-rw", url: "/type/Routine#index-entry-return-rw-return-rw" }
+,
+{ category: "Reference", value: "is default (Routine)", url: "/type/Routine#index-entry-is_default_(Routine)" }
+,
+{ category: "Reference", value: "my (Sub)", url: "/type/Sub#index-entry-my_(Sub)" }
+,
+{ category: "Reference", value: "our (Sub)", url: "/type/Sub#index-entry-our_(Sub)" }
+,
+{ category: "Reference", value: "trait_mod (declarator)", url: "/type/Sub#index-entry-trait__mod_(declarator)" }
+,
 { category: "Reference", value: "empty list (())", url: "/type/List#index-entry-()_empty_list" }
+,
+{ category: "Reference", value: "is default (Variable)", url: "/type/Variable#index-entry-is_default_(Variable)-trait_is_default" }
 ,
 { category: "Reference", value: "blob8", url: "/type/Blob#index-entry-blob8" }
 ,
@@ -6199,23 +6117,83 @@ $(function(){
 ,
 { category: "Reference", value: "blob64", url: "/type/Blob#index-entry-blob64" }
 ,
+{ category: "Reference", value: "$¢", url: "/type/Match#index-entry-$¢" }
+,
+{ category: "Reference", value: "Cursor", url: "/type/Match#index-entry-Cursor-Cursor" }
+,
+{ category: "Reference", value: "colon pair (Pair)", url: "/type/Pair#index-entry-colon_pair_(Pair)" }
+,
+{ category: "Reference", value: ":", url: "/type/Pair#index-entry-:" }
+,
+{ category: "Reference", value: "=>", url: "/type/Pair#index-entry-=>_" }
+,
+{ category: "Reference", value: ":!", url: "/type/Pair#index-entry-:!" }
+,
+{ category: "Reference", value: ":$", url: "/type/Pair#index-entry-:$" }
+,
+{ category: "Reference", value: "colon list (Pair)", url: "/type/Pair#index-entry-colon_list_(Pair)" }
+,
+{ category: "Reference", value: "Pair", url: "/type/Pair#index-entry-Pair" }
+,
+{ category: "Reference", value: ":exists", url: "/type/Pair#index-entry-:exists" }
+,
+{ category: "Reference", value: "@ list contextualizer", url: "/type/Any#index-entry-@_list_contextualizer" }
+,
+{ category: "Reference", value: "$ (item contextualizer)", url: "/type/Any#index-entry-$_(item_contextualizer)" }
+,
+{ category: "Reference", value: "$*COLLATION", url: "/type/Any#index-entry-$*COLLATION-$*COLLATION" }
+,
+{ category: "Reference", value: "collation levels", url: "/type/Any#index-entry-collation_levels" }
+,
+{ category: "Reference", value: "in-range", url: "/type/Range#index-entry-in-range" }
+,
+{ category: "Reference", value: "Nil assignment", url: "/type/Nil#index-entry-Nil_assignment" }
+,
+{ category: "Reference", value: "capture literal (Capture)", url: "/type/Capture#index-entry-capture_literal_(Capture)" }
+,
+{ category: "Reference", value: "\\() (Capture)", url: "/type/Capture#index-entry-%5c()_(Capture)" }
+,
+{ category: "Reference", value: "Inf (definition)", url: "/type/Num#index-entry-Inf_(definition)" }
+,
+{ category: "Reference", value: "∞ (definition)", url: "/type/Num#index-entry-∞_(definition)" }
+,
+{ category: "Reference", value: "NaN (definition)", url: "/type/Num#index-entry-NaN_(definition)-NaN" }
+,
+{ category: "Reference", value: "NativeEndian", url: "/type/Endian#index-entry-NativeEndian" }
+,
+{ category: "Reference", value: "LittleEndian", url: "/type/Endian#index-entry-LittleEndian" }
+,
+{ category: "Reference", value: "BigEndian", url: "/type/Endian#index-entry-BigEndian" }
+,
+{ category: "Reference", value: "Endian", url: "/type/Endian#index-entry-Endian" }
+,
+{ category: "Reference", value: "Less", url: "/type/Order#index-entry-Less" }
+,
+{ category: "Reference", value: "Same", url: "/type/Order#index-entry-Same" }
+,
+{ category: "Reference", value: "More", url: "/type/Order#index-entry-More" }
+,
+{ category: "Reference", value: "Grapheme", url: "/type/Cool#index-entry-Grapheme" }
+,
+{ category: "Reference", value: "defined (method)", url: "/type/Mu#index-entry-method_defined" }
+,
+{ category: "Reference", value: "is default (Attribute)", url: "/type/Attribute#index-entry-is_default_(Attribute)" }
+,
+{ category: "Reference", value: "Trait is default", url: "/type/Attribute#index-entry-Trait_is_default" }
+,
+{ category: "Reference", value: "is required (Attribute) (trait)", url: "/type/Attribute#index-entry-trait_is_required_(Attribute)-Trait_is_required" }
+,
+{ category: "Reference", value: "is DEPRECATED (Attribute) (trait)", url: "/type/Attribute#index-entry-trait_is_DEPRECATED_(Attribute)-trait_is_DEPRECATED" }
+,
+{ category: "Reference", value: "is rw (Attribute) (trait)", url: "/type/Attribute#index-entry-trait_is_rw_(Attribute)-trait_is_rw" }
+,
+{ category: "Reference", value: "is built (Attribute) (trait)", url: "/type/Attribute#index-entry-trait_is_built_(Attribute)-trait_is_built" }
+,
 { category: "Reference", value: "DESTROY metamodel", url: "/type/Metamodel::Finalization#index-entry-DESTROY_metamodel" }
 ,
-{ category: "Reference", value: "IO::Notification::Change", url: "/type/IO::Notification#index-entry-IO::Notification::Change" }
+{ category: "Reference", value: "Encoding::Encoder", url: "/type/Encoding::Registry#index-entry-Encoding::Encoder" }
 ,
-{ category: "Reference", value: "FileChangeEvent (enum)", url: "/type/IO::Notification#index-entry-FileChangeEvent_(enum)" }
-,
-{ category: "Reference", value: "FileChanged (FileChangeEvent)", url: "/type/IO::Notification#index-entry-FileChanged_(FileChangeEvent)" }
-,
-{ category: "Reference", value: "FileRenamed (FileChangeEvent)", url: "/type/IO::Notification#index-entry-FileRenamed_(FileChangeEvent)" }
-,
-{ category: "Reference", value: "symlink (sub)", url: "/type/IO::Path#index-entry-symlink_(sub)" }
-,
-{ category: "Reference", value: "symlink (method)", url: "/type/IO::Path#index-entry-symlink_(method)" }
-,
-{ category: "Reference", value: "link (sub)", url: "/type/IO::Path#index-entry-link_(sub)" }
-,
-{ category: "Reference", value: "link (method)", url: "/type/IO::Path#index-entry-link_(method)" }
+{ category: "Reference", value: "Encoding::Decoder", url: "/type/Encoding::Registry#index-entry-Encoding::Decoder" }
 ,
 { category: "Reference", value: "windows-1252", url: "/type/IO::Handle#index-entry-windows-1252" }
 ,
@@ -6249,19 +6227,27 @@ $(function(){
 ,
 { category: "Reference", value: "tty", url: "/type/IO::Handle#index-entry-tty" }
 ,
+{ category: "Reference", value: "IO::Notification::Change", url: "/type/IO::Notification#index-entry-IO::Notification::Change" }
+,
+{ category: "Reference", value: "FileChangeEvent (enum)", url: "/type/IO::Notification#index-entry-FileChangeEvent_(enum)" }
+,
+{ category: "Reference", value: "FileChanged (FileChangeEvent)", url: "/type/IO::Notification#index-entry-FileChanged_(FileChangeEvent)" }
+,
+{ category: "Reference", value: "FileRenamed (FileChangeEvent)", url: "/type/IO::Notification#index-entry-FileRenamed_(FileChangeEvent)" }
+,
+{ category: "Reference", value: "symlink (sub)", url: "/type/IO::Path#index-entry-symlink_(sub)" }
+,
+{ category: "Reference", value: "symlink (method)", url: "/type/IO::Path#index-entry-symlink_(method)" }
+,
+{ category: "Reference", value: "link (sub)", url: "/type/IO::Path#index-entry-link_(sub)" }
+,
+{ category: "Reference", value: "link (method)", url: "/type/IO::Path#index-entry-link_(method)" }
+,
 { category: "Reference", value: "SlurpySentry", url: "/type/X::AdHoc#index-entry-SlurpySentry" }
-,
-{ category: "Reference", value: "Encoding::Encoder", url: "/type/Encoding::Registry#index-entry-Encoding::Encoder" }
-,
-{ category: "Reference", value: "Encoding::Decoder", url: "/type/Encoding::Registry#index-entry-Encoding::Decoder" }
 ,
 { category: "Reference", value: "::Bind::Slice", url: "/type/X::Bind::Slice#index-entry-::Bind::Slice" }
 ,
 { category: "Reference", value: "X::Proc::Async::OpenForWriting", url: "/type/X::Proc::Async::OpenForWriting#index-entry-X::Proc::Async::OpenForWriting" }
-,
-{ category: "Reference", value: "dd", url: "/programs/01-debugging#index-entry-dd" }
-,
-{ category: "Reference", value: "dumper", url: "/programs/01-debugging#index-entry-dumper" }
 ,
 { category: "Reference", value: "RAKUDOLIB", url: "/programs/03-environment-variables#index-entry-RAKUDOLIB" }
 ,
@@ -6312,6 +6298,10 @@ $(function(){
 { category: "Reference", value: "PATH", url: "/programs/03-environment-variables#index-entry-PATH" }
 ,
 { category: "Reference", value: "RAKUDO_SNAPPER", url: "/programs/03-environment-variables#index-entry-RAKUDO__SNAPPER" }
+,
+{ category: "Reference", value: "dd", url: "/programs/01-debugging#index-entry-dd" }
+,
+{ category: "Reference", value: "dumper", url: "/programs/01-debugging#index-entry-dumper" }
 ,
 { category: "Reference", value: "p6doc", url: "/programs/02-reading-docs#index-entry-p6doc-INTRODUCTION" }
  ];

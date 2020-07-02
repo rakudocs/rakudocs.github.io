@@ -93,7 +93,8 @@
            <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Contexts_(let-in_/_where)">Contexts (let-in / where)</a></td></tr>
           <tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#Parsers">Parsers</a></td></tr>
  <tr class="toc-level-2"><td class="toc-number">6.1</td><td class="toc-text"><a href="#Parser_combinators_vs_grammars">Parser combinators vs grammars</a></td></tr>
-  
+  <tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#Tail_Call_Optimization_or_Tail_Call_Elimination">Tail Call Optimization or Tail Call Elimination</a></td></tr>
+    
 </table>
 </nav>
 
@@ -189,6 +190,10 @@
 <h1 id="Parsers"><a class="u" href="#___top" title="go to top of document">Parsers</a></h1>
 <h2 id="Parser_combinators_vs_grammars"><a class="u" href="#___top" title="go to top of document">Parser combinators vs grammars</a></h2>
 <p>TODO</p>
+<h1 id="Tail_Call_Optimization_or_Tail_Call_Elimination"><a class="u" href="#___top" title="go to top of document">Tail Call Optimization or Tail Call Elimination</a></h1>
+<p>Haskell and many other functional programming languages use tail call optimization, also sometimes called tail tall elimination, to remove the stack overhead of some types of recursive function calls.</p>
+<p>There is nothing in the Raku language specification forbidding the implementation of this class of optimization, but no current implementation has it.</p>
+<p>Please note that many Haskell looping constructs use recursive function calls. Haskell programs would encounter stack overflow errors more often without tail call optimization. The standard Raku looping constructs are not built on recursive function calls, which makes the feature less important.</p>
 
     </div>
     

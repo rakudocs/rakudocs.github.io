@@ -80,7 +80,7 @@
   <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#WHERE">WHERE</a></td></tr>
     <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#HOW">HOW</a></td></tr>
                  <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#WHY">WHY</a></td></tr>
-  <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#DEFINITE">DEFINITE</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#DEFINITE">DEFINITE</a></td></tr>
        <tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#VAR">VAR</a></td></tr>
          <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Structure_of_the_metaobject_system">Structure of the metaobject system</a></td></tr>
                                         <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#Bootstrapping_concerns">Bootstrapping concerns</a></td></tr>
@@ -117,7 +117,7 @@
 <p>Returns the metaclass object, as in &quot;Higher Order Workings&quot;.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="keyword other special-method perl6fe"><span>%</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>HOW</span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Perl6::Metamodel::ClassHOW+{&lt;anon&gt;}␤»</span></span></span></div></pre><p><code>HOW</code> returns an object of type <code>Perl6::Metamodel::ClassHOW</code> in this case; objects of this type are used to build classes. The same operation on the <code>&amp;</code> sigil will return <code>Perl6::Metamodel::ParametricRoleGroupHOW</code>. You will be calling this object whenever you use the <code>^</code> syntax to access metamethods. In fact, the code above is equivalent to <code>say (&amp;).HOW.HOW.name(&amp;)</code> which is much more unwieldy. <a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a> is part of the Rakudo implementation, so use with caution.</p>
 <h2 id="WHY"><a class="u" href="#___top" title="go to top of document"><a name="index-entry-syntax_WHY-WHY"><span class="index-entry">WHY</span></a></a></h2>
-<p>The attached Pod value.</p>
+<p>The attached <a href="/language/pod">Pod</a> value.</p>
 <h2 id="DEFINITE"><a class="u" href="#___top" title="go to top of document"><a name="index-entry-syntax_DEFINITE-DEFINITE"><span class="index-entry">DEFINITE</span></a></a></h2>
 <p>The object has a valid concrete representation. This is a pseudo-method that can be overloaded without producing error or warning, but will be ignored.</p>
 <p>Returns <code>True</code> for instances and <code>False</code> for type objects.</p>

@@ -3377,6 +3377,8 @@ $(function(){
 ,
 { category: "control flow", value: "gather take", url: "/syntax/gather take" }
 ,
+{ category: "control flow", value: "given", url: "/syntax/given" }
+,
 { category: "control flow", value: "given statement", url: "/syntax/given statement" }
 ,
 { category: "declarator", value: "has", url: "/syntax/has" }
@@ -5291,11 +5293,11 @@ $(function(){
 ,
 { category: "Reference", value: "supply emit (control flow)", url: "/language/control#index-entry-control_flow_supply_emit-supply$SOLIDUSemit" }
 ,
-{ category: "Reference", value: "given (control flow)", url: "/language/control#index-entry-control_flow__given-given" }
-,
 { category: "Reference", value: "switch (given)", url: "/language/control#index-entry-switch_(given)" }
 ,
 { category: "Reference", value: "case statements (given)", url: "/language/control#index-entry-case_statements_(given)" }
+,
+{ category: "Reference", value: "given (control flow)", url: "/language/control#index-entry-control_flow__given-given" }
 ,
 { category: "Reference", value: "default when (control flow)", url: "/language/control#index-entry-control_flow_default_when-default_and_when" }
 ,

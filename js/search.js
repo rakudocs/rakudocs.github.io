@@ -1183,6 +1183,8 @@ $(function(){
 ,
 { category: "Routine", value: "STORE", url: "/routine/STORE" }
 ,
+{ category: "method", value: "Seq", url: "/routine/Seq" }
+,
 { category: "Routine", value: "Set", url: "/routine/Set" }
 ,
 { category: "Routine", value: "SetHash", url: "/routine/SetHash" }
@@ -1914,8 +1916,6 @@ $(function(){
 { category: "sub", value: "infix:<\/>", url: "/routine/infix:<$SOLIDUS>" }
 ,
 { category: "Routine", value: "infix:<cmp>", url: "/routine/infix:<cmp>" }
-,
-{ category: "method", value: "infix:<eqv>", url: "/routine/infix:<eqv>" }
 ,
 { category: "sub", value: "infix:«!=»", url: "/routine/infix:«!=»" }
 ,

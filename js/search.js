@@ -1303,8 +1303,6 @@ $(function(){
 ,
 { category: "method", value: "allof", url: "/routine/allof" }
 ,
-{ category: "method", value: "allowed", url: "/routine/allowed" }
-,
 { category: "method", value: "alternative-names", url: "/routine/alternative-names" }
 ,
 { category: "infix", value: "and", url: "/routine/and" }
@@ -3722,8 +3720,6 @@ $(function(){
 { category: "Reference", value: "property", url: "/language/glossary#index-entry-property" }
 ,
 { category: "Reference", value: "pugs", url: "/language/glossary#index-entry-pugs" }
-,
-{ category: "Reference", value: "p6y", url: "/language/glossary#index-entry-p6y" }
 ,
 { category: "Reference", value: "QAST", url: "/language/glossary#index-entry-QAST" }
 ,

@@ -73,7 +73,16 @@
     
     <div class="pod-body no-toc">
     <p>Documenting a large language like Raku has to balance several contradictory goals, such as being brief whilst being comprehensive, catering to professional developers with wide experience whilst also being accessible to newcomers to the language.</p>
-<p>For a quick hands-on introduction, there is a short <a href="/language/101-basics"><code>annotated programming example</code></a>.</p>
+<p>Note the recent name change to Raku from Perl&nbsp;6 has resulted in some objects having changed names and their former names, while still available, are deprecated and their use is not recommended in new code. Those items are shown in the following table:</p>
+<table class="pod-table">
+<caption>Raku object names versus deprecated Perl&nbsp;6 names</caption>
+<thead><tr>
+<th>Raku</th> <th>Perl&nbsp;6</th> <th>Notes</th>
+</tr></thead>
+<tbody>
+<tr> <td>raku</td> <td>perl</td> <td>routine</td> </tr> <tr> <td>*RAKULIB</td> <td>PERL6LIB</td> <td>environment variable for module paths (*NYI)</td> </tr> <tr> <td>.raku</td> <td>.p6</td> <td>file extension for Raku scripts</td> </tr> <tr> <td>.rakumod</td> <td>.pm6</td> <td>file extension for Raku modules</td> </tr>
+</tbody>
+</table><p>For a quick hands-on introduction, there is a short <a href="/language/101-basics"><code>annotated programming example</code></a>.</p>
 <p>For programmers with experience in other languages, there are a number of <strong>Migration</strong> guides that compare and contrast the features of Raku with other languages.</p>
 <p>A number of <strong>Tutorials</strong> cover several areas in which Raku is particularly innovative. The section headers should help navigate the remaining documents.</p>
 <p>There are a number of <a href="https://raku.org/resources"><code>useful resources</code></a> listed elsewhere on the raku.org site. These include articles, books, slide presentations, and videos.</p>

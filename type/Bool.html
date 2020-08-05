@@ -69,7 +69,7 @@
       </div>
 
     <h1 class='title'>enum Bool</h1>
-    <p class='subtitle'>Logical boolean</p>
+    <p class='subtitle'>Logical Boolean</p>
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
@@ -199,7 +199,7 @@
 </nav>
 
     <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>enum</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Bool</span></span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>False&nbsp;True</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span></span></div></pre><p><a name="index-entry-True"></a> <a name="index-entry-False"></a> <a name="index-entry-Boolean"></a> An enum for boolean true/false decisions.</p>
+    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>enum</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Bool</span></span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>False&nbsp;True</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span></span></div></pre><p><a name="index-entry-True"></a> <a name="index-entry-False"></a> <a name="index-entry-Boolean"></a> An enum for Boolean true/false decisions.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_ACCEPTS"><a class="u" href="#___top" title="go to top of document">method ACCEPTS</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>ACCEPTS</span></span><span>(</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Used for smartmatch comparison. When the right side is <code>True</code> returns always <code>True</code>, when the right side of the match is <code>False</code> returns always <code>False</code>. In particular, <code>ACCEPTS</code> returns always the instance on which it is invoked, that is the right side of a smartmatch. As an example:</p>

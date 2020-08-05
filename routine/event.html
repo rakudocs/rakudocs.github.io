@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>infix xor</title>
+        <title>method event</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -55,25 +55,23 @@
 <div id="content" class="pretty-box yellow content_fragment">
   
 
-    <h1 class='title'>infix xor</h1>
+    <h1 class='title'>method event</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Operators">language documentation Operators</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Operators)_infix_xor">(Operators) infix xor</a></td></tr>
-                    
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_IO::Notification::Change">class IO::Notification::Change</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(IO::Notification::Change)_method_event">(IO::Notification::Change) method event</a></td></tr>
+     
 </table>
 </nav>
 
     <div class="pod-body">
-    <p>Documentation for infix <code>xor</code> assembled from the following types:</p>
-<h1 id="language_documentation_Operators"><a class="u" href="#___top" title="go to top of document">language documentation Operators</a></h1>
-<p>From <a href="/language/operators#infix_xor">Operators</a></p>
-<h2 id="(Operators)_infix_xor"><a href="/language/operators#infix_xor">(Operators) infix xor</a></h2>
-<p>Same as <a href="/routine/$CIRCUMFLEX_ACCENT$CIRCUMFLEX_ACCENT">infix <code>^^</code></a>, except with looser precedence.</p>
-<p>Returns the operand that evaluates to <code>True</code> in Boolean context, if and only if the other operand evaluates to <code>False</code> in Boolean context. If both operands evaluate to <code>False</code>, returns the last argument. If both operands evaluate to <code>True</code>, returns <code>Nil</code>.</p>
-<p>When chaining, returns the operand that evaluates to <code>True</code>, if and only if there is one such operand. If more than one operand is true, it short-circuits after evaluating the second and returns <code>Nil</code>. If all operands are false, returns the last one.</p>
+    <p>Documentation for method <code>event</code> assembled from the following types:</p>
+<h1 id="class_IO::Notification::Change"><a class="u" href="#___top" title="go to top of document">class IO::Notification::Change</a></h1>
+<p>From <a href="/type/IO::Notification::Change#method_event">IO::Notification::Change</a></p>
+<h2 id="(IO::Notification::Change)_method_event"><a href="/type/IO::Notification::Change#method_event">(IO::Notification::Change) method event</a></h2>
+<p>Returns the type of event: <code>FileChanged</code> or <code>FileRenamed</code>.</p>
 
     </div>
     

@@ -551,6 +551,8 @@ $(function(){
 ,
 { category: "class", value: "IO::Spec::Unix", url: "/type/IO::Spec::Unix" }
 ,
+{ category: "class", value: "IO::Notification::Change", url: "/type/IO::Notification::Change" }
+,
 { category: "class", value: "Pod::Block::Table", url: "/type/Pod::Block::Table" }
 ,
 { category: "class", value: "Pod::Block::Declarator", url: "/type/Pod::Block::Declarator" }
@@ -1728,6 +1730,8 @@ $(function(){
 { category: "sub", value: "eval-dies-ok", url: "/routine/eval-dies-ok" }
 ,
 { category: "sub", value: "eval-lives-ok", url: "/routine/eval-lives-ok" }
+,
+{ category: "method", value: "event", url: "/routine/event" }
 ,
 { category: "method", value: "exception", url: "/routine/exception" }
 ,
@@ -5521,7 +5525,7 @@ $(function(){
 ,
 { category: "Reference", value: "Boolean context operator", url: "/language/operators#index-entry-Boolean_context_operator" }
 ,
-{ category: "Reference", value: "Negated boolean context operator", url: "/language/operators#index-entry-Negated_boolean_context_operator" }
+{ category: "Reference", value: "Negated Boolean context operator", url: "/language/operators#index-entry-Negated_Boolean_context_operator" }
 ,
 { category: "Reference", value: "Numeric context operator", url: "/language/operators#index-entry-Numeric_context_operator" }
 ,
@@ -6224,8 +6228,6 @@ $(function(){
 { category: "Reference", value: "SeekFromEnd", url: "/type/IO::Handle#index-entry-SeekFromEnd" }
 ,
 { category: "Reference", value: "tty", url: "/type/IO::Handle#index-entry-tty" }
-,
-{ category: "Reference", value: "IO::Notification::Change", url: "/type/IO::Notification#index-entry-IO::Notification::Change" }
 ,
 { category: "Reference", value: "FileChangeEvent (enum)", url: "/type/IO::Notification#index-entry-FileChangeEvent_(enum)" }
 ,

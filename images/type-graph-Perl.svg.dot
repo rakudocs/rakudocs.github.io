@@ -7,11 +7,13 @@ digraph "perl6-type-graph" {
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
     "Any" [color="#000000", fontcolor="#000000", href="/type/Any", fontname="FreeSans"];
     "Systemic" [color="#6666FF", fontcolor="#6666FF", href="/type/Systemic", fontname="FreeSans"];
+    "Raku" [color="#000000", fontcolor="#000000", href="/type/Raku", fontname="FreeSans"];
 
     // Superclasses
-    "Perl" -> "Any" [color="#000000"];
+    "Perl" -> "Raku" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
+    "Raku" -> "Any" [color="#000000"];
 
     // Roles
-    "Perl" -> "Systemic" [color="#6666FF"];
+    "Raku" -> "Systemic" [color="#6666FF"];
 }

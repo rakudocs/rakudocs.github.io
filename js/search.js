@@ -2621,7 +2621,7 @@ $(function(){
 ,
 { category: "Routine", value: "serial", url: "/routine/serial" }
 ,
-{ category: "sub", value: "set", url: "/routine/set" }
+{ category: "Routine", value: "set", url: "/routine/set" }
 ,
 { category: "method", value: "set-instruments", url: "/routine/set-instruments" }
 ,

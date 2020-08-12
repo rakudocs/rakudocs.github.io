@@ -69,12 +69,12 @@
       </div>
 
     <h1 class='title'>class Collation</h1>
-    <p class='subtitle'>Encapsulates how strings are sorted</p>
+    <p class='subtitle'>Encapsulates instructions about how strings should be sorted</p>
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
           <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#Method_set">Method set</a></td></tr>
+ <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_set">method set</a></td></tr>
                      <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_primary">method primary</a></td></tr>
     <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_secondary">method secondary</a></td></tr>
     <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_tertiary">method tertiary</a></td></tr>
@@ -87,7 +87,7 @@
     <div class="pod-body">
     <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Collation</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><code>Collation</code> is the class that allows proper sorting, taking into account all Unicode characteristics. It&#39;s the class the object <a href="/language/variables#index-entry-%24*COLLATION"><code>$*COLLATION</code></a> is instantiated to, and thus includes <em>collation levels</em>, that is, what kind of features should be looked up when comparing two strings and in which order.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
-<h2 id="Method_set"><a class="u" href="#___top" title="go to top of document">Method set</a></h2>
+<h2 id="method_set"><a class="u" href="#___top" title="go to top of document">method set</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>set</span></span><span>&nbsp;(</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>primary</span></span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>secondary</span></span></span><span>&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>tertiary</span></span></span><span>&nbsp;&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>quaternary</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>)</span></span></div></pre><p>Sets if the different levels should be used in ascending or descending order, or if they are going to be ignored (when set to 0).</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>COLLATION</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Collation</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>a</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>coll</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>z</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Less»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>COLLATION</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>set</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>primary</span></span><span>(</span><span class="constant numeric perl6fe"><span>-1</span></span><span>));</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>a</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>coll</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>z</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«More»</span><span>&nbsp;</span></span></span></div></pre><h2 id="method_primary"><a class="u" href="#___top" title="go to top of document">method primary</a></h2>
@@ -104,12 +104,58 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>quaternary</span></span></span></div></pre><p>Returns the state of the quaternary collation level.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>404</code></figcaption>
-  <svg></svg>
+  <figcaption>Type relations for <code>Collation</code></figcaption>
+  <svg width="98pt" height="188pt"
+ viewBox="0.00 0.00 97.69 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-184 93.69,-184 93.69,4 -4,4"/>
+<!-- Collation -->
+<g id="node1" class="node">
+<title>Collation</title>
+<g id="a_node1"><a xlink:href="/type/Collation" xlink:title="Collation">
+<ellipse fill="none" stroke="#000000" cx="44.85" cy="-18" rx="44.69" ry="18"/>
+<text text-anchor="middle" x="44.85" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Collation</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node">
+<title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="44.85" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="44.85" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Collation&#45;&gt;Any -->
+<g id="edge1" class="edge">
+<title>Collation&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M44.85,-36.3C44.85,-44.02 44.85,-53.29 44.85,-61.89"/>
+<polygon fill="#000000" stroke="#000000" points="41.35,-61.9 44.85,-71.9 48.35,-61.9 41.35,-61.9"/>
+</g>
+<!-- Mu -->
+<g id="node2" class="node">
+<title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="44.85" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="44.85" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge2" class="edge">
+<title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M44.85,-108.3C44.85,-116.02 44.85,-125.29 44.85,-133.89"/>
+<polygon fill="#000000" stroke="#000000" points="41.35,-133.9 44.85,-143.9 48.35,-133.9 41.35,-133.9"/>
+</g>
+</g>
+</svg>
+
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-404.svg"
+      href="/images/type-graph-Collation.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >

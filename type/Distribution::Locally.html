@@ -94,12 +94,109 @@
 <p>Returns an <code>IO::Handle</code> to the file represented by <code>$name-path</code>. <code>$name-path</code> is a relative path as it would be found in the metadata such as <code>lib/Foo.rakumod</code> or <code>resources/foo.txt</code>, and these paths will be prefixed with <a href="/type/Distribution#method_prefix">Distribution#method_prefix</a>.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>404</code></figcaption>
-  <svg></svg>
+  <figcaption>Type relations for <code>Distribution::Locally</code></figcaption>
+  <svg width="340pt" height="188pt"
+ viewBox="0.00 0.00 340.29 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-184 336.29,-184 336.29,4 -4,4"/>
+<!-- Distribution::Locally -->
+<g id="node1" class="node">
+<title>Distribution::Locally</title>
+<g id="a_node1"><a xlink:href="/type/Distribution::Locally" xlink:title="Distribution::Locally">
+<ellipse fill="none" stroke="#6666ff" cx="100.94" cy="-90" rx="87.18" ry="18"/>
+<text text-anchor="middle" x="100.94" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Distribution::Locally</text>
+</a>
+</g>
+</g>
+<!-- Distribution -->
+<g id="node2" class="node">
+<title>Distribution</title>
+<g id="a_node2"><a xlink:href="/type/Distribution" xlink:title="Distribution">
+<ellipse fill="none" stroke="#6666ff" cx="100.94" cy="-162" rx="54.69" ry="18"/>
+<text text-anchor="middle" x="100.94" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Distribution</text>
+</a>
+</g>
+</g>
+<!-- Distribution::Locally&#45;&gt;Distribution -->
+<g id="edge4" class="edge">
+<title>Distribution::Locally&#45;&gt;Distribution</title>
+<path fill="none" stroke="#6666ff" d="M100.94,-108.3C100.94,-116.02 100.94,-125.29 100.94,-133.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="97.44,-133.9 100.94,-143.9 104.44,-133.9 97.44,-133.9"/>
+</g>
+<!-- Mu -->
+<g id="node3" class="node">
+<title>Mu</title>
+<g id="a_node3"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="243.94" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="243.94" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node4" class="node">
+<title>Any</title>
+<g id="a_node4"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="243.94" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="243.94" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge1" class="edge">
+<title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M243.94,-108.3C243.94,-116.02 243.94,-125.29 243.94,-133.89"/>
+<polygon fill="#000000" stroke="#000000" points="240.44,-133.9 243.94,-143.9 247.44,-133.9 240.44,-133.9"/>
+</g>
+<!-- Distribution::Hash -->
+<g id="node5" class="node">
+<title>Distribution::Hash</title>
+<g id="a_node5"><a xlink:href="/type/Distribution::Hash" xlink:title="Distribution::Hash">
+<ellipse fill="none" stroke="#000000" cx="79.94" cy="-18" rx="79.89" ry="18"/>
+<text text-anchor="middle" x="79.94" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Distribution::Hash</text>
+</a>
+</g>
+</g>
+<!-- Distribution::Hash&#45;&gt;Distribution::Locally -->
+<g id="edge5" class="edge">
+<title>Distribution::Hash&#45;&gt;Distribution::Locally</title>
+<path fill="none" stroke="#6666ff" d="M85.13,-36.3C87.47,-44.1 90.29,-53.49 92.89,-62.17"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="89.59,-63.32 95.81,-71.9 96.29,-61.31 89.59,-63.32"/>
+</g>
+<!-- Distribution::Hash&#45;&gt;Any -->
+<g id="edge2" class="edge">
+<title>Distribution::Hash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M115.53,-34.19C144.35,-46.49 184.58,-63.66 212.29,-75.49"/>
+<polygon fill="#000000" stroke="#000000" points="210.96,-78.73 221.53,-79.43 213.71,-72.29 210.96,-78.73"/>
+</g>
+<!-- Distribution::Path -->
+<g id="node6" class="node">
+<title>Distribution::Path</title>
+<g id="a_node6"><a xlink:href="/type/Distribution::Path" xlink:title="Distribution::Path">
+<ellipse fill="none" stroke="#000000" cx="254.94" cy="-18" rx="77.19" ry="18"/>
+<text text-anchor="middle" x="254.94" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Distribution::Path</text>
+</a>
+</g>
+</g>
+<!-- Distribution::Path&#45;&gt;Distribution::Locally -->
+<g id="edge6" class="edge">
+<title>Distribution::Path&#45;&gt;Distribution::Locally</title>
+<path fill="none" stroke="#6666ff" d="M221.15,-34.36C198.64,-44.59 168.84,-58.14 144.55,-69.18"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="142.85,-66.11 135.19,-73.43 145.74,-72.48 142.85,-66.11"/>
+</g>
+<!-- Distribution::Path&#45;&gt;Any -->
+<g id="edge3" class="edge">
+<title>Distribution::Path&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M252.22,-36.3C251.01,-44.02 249.55,-53.29 248.2,-61.89"/>
+<polygon fill="#000000" stroke="#000000" points="244.73,-61.47 246.63,-71.9 251.64,-62.56 244.73,-61.47"/>
+</g>
+</g>
+</svg>
+
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-404.svg"
+      href="/images/type-graph-Distribution%3A%3ALocally.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >

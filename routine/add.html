@@ -60,14 +60,21 @@
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_IO::Path">class IO::Path</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(IO::Path)_method_add">(IO::Path) method add</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_BagHash">class BagHash</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(BagHash)_method_add">(BagHash) method add</a></td></tr>
+                             <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_IO::Path">class IO::Path</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(IO::Path)_method_add">(IO::Path) method add</a></td></tr>
                     
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for method <code>add</code> assembled from the following types:</p>
+<h1 id="class_BagHash"><a class="u" href="#___top" title="go to top of document">class BagHash</a></h1>
+<p>From <a href="/type/BagHash#method_add">BagHash</a></p>
+<h2 id="(BagHash)_method_add"><a href="/type/BagHash#method_add">(BagHash) method add</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>add</span></span><span>(</span><span class="support type perl6fe"><span>BagHash</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>to-add</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Nil</span></span><span>)</span></span></div></pre><p>When <code>to-add</code> is a single item, <code>add</code> inserts it into the <code>BagHash</code> or, if it was already present, increases its weight by 1. When <code>to-add</code> is a <code>List</code>, <code>Array</code>, <code>Seq</code>, or any other type that <code>does</code> the <a href="/type/Iterator"><code>Iterator</code></a> Role, <code>add</code> inserts each element of the <code>Iterator</code> into the <code>SetHash</code> or increments the weight of each element by 1.</p>
+<p><em>Note:</em> Added in version 2020.02.</p>
 <h1 id="class_IO::Path"><a class="u" href="#___top" title="go to top of document">class IO::Path</a></h1>
 <p>From <a href="/type/IO::Path#method_add">IO::Path</a></p>
 <h2 id="(IO::Path)_method_add"><a href="/type/IO::Path#method_add">(IO::Path) method add</a></h2>

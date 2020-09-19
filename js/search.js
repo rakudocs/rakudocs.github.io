@@ -463,6 +463,8 @@ $(function(){
 ,
 { category: "class", value: "IO::CatHandle", url: "/type/IO::CatHandle" }
 ,
+{ category: "class", value: "Distribution::Resource", url: "/type/Distribution::Resource" }
+,
 { category: "class", value: "Distribution::Hash", url: "/type/Distribution::Hash" }
 ,
 { category: "class", value: "Distribution::Path", url: "/type/Distribution::Path" }
@@ -3141,8 +3143,6 @@ $(function(){
 ,
 { category: "syntax", value: "%", url: "/syntax/$PERCENT_SIGN" }
 ,
-{ category: "syntax", value: "%?RESOURCES", url: "/syntax/$PERCENT_SIGN%3FRESOURCES" }
-,
 { category: "regex", value: "&", url: "/syntax/&" }
 ,
 { category: "regex", value: "&&", url: "/syntax/&&" }
@@ -5018,8 +5018,6 @@ $(function(){
 { category: "Reference", value: "$?LINE", url: "/language/variables#index-entry-$%3FLINE" }
 ,
 { category: "Reference", value: "::?CLASS", url: "/language/variables#index-entry-::%3FCLASS" }
-,
-{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
 ,
 { category: "Reference", value: "Distribution", url: "/language/variables#index-entry-Distribution" }
 ,

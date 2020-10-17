@@ -96,6 +96,7 @@ digraph "perl6-type-graph" {
     "Distribution::Locally" [color="#6666FF", fontcolor="#6666FF", href="/type/Distribution::Locally", fontname="FreeSans"];
     "Distribution::Hash" [color="#000000", fontcolor="#000000", href="/type/Distribution::Hash", fontname="FreeSans"];
     "Distribution::Path" [color="#000000", fontcolor="#000000", href="/type/Distribution::Path", fontname="FreeSans"];
+    "Distribution::Resource" [color="#000000", fontcolor="#000000", href="/type/Distribution::Resource", fontname="FreeSans"];
     "Distro" [color="#000000", fontcolor="#000000", href="/type/Distro", fontname="FreeSans"];
     "Duration" [color="#000000", fontcolor="#000000", href="/type/Duration", fontname="FreeSans"];
     "Encoding" [color="#000000", fontcolor="#000000", href="/type/Encoding", fontname="FreeSans"];
@@ -319,6 +320,7 @@ digraph "perl6-type-graph" {
     "Deprecation" -> "Any" [color="#000000"];
     "Distribution::Hash" -> "Any" [color="#000000"];
     "Distribution::Path" -> "Any" [color="#000000"];
+    "Distribution::Resource" -> "Any" [color="#000000"];
     "Distro" -> "Any" [color="#000000"];
     "Duration" -> "Cool" [color="#000000"];
     "Encoding" -> "Any" [color="#000000"];

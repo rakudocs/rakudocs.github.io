@@ -97,7 +97,7 @@
 <p>It is supposed to return an <a href="/type/Iterator">Iterator</a>.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>iterator</span></span><span>;</span></span></div></pre><h2 id="method_flat"><a class="u" href="#___top" title="go to top of document">method flat</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>flat</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another <a href="/type/Iterable">Iterable</a> that flattens out all iterables that the first one returns.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>flat</span></span><span>(</span><span class="support type perl6fe"><span>Iterable</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another <a href="/type/Iterable">Iterable</a> that flattens out all iterables that the first one returns.</p>
 <p>For example</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>a&nbsp;b</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>a&nbsp;b</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>flat</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3␤»</span></span></span></div></pre><p>because <code>&lt;a b&gt; </code> is a <a href="/type/List">List</a> and thus iterable, so <code> (&lt;a b&gt;, &#39;c&#39;).flat </code> returns <code>(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;)</code>, which has three elems.</p>
 <p>Note that the flattening is recursive, so <code>(((&quot;a&quot;, &quot;b&quot;), &quot;c&quot;), &quot;d&quot;).flat</code> returns <code>(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;)</code>, but it does not flatten itemized sublists:</p>
@@ -124,17 +124,17 @@
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Iterable</code></figcaption>
-  <svg width="691pt" height="404pt"
- viewBox="0.00 0.00 691.09 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg width="662pt" height="404pt"
+ viewBox="0.00 0.00 662.49 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-400 687.09,-400 687.09,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-400 658.49,-400 658.49,4 -4,4"/>
 <!-- Iterable -->
 <g id="node1" class="node">
 <title>Iterable</title>
 <g id="a_node1"><a xlink:href="/type/Iterable" xlink:title="Iterable">
-<ellipse fill="none" stroke="#6666ff" cx="269.05" cy="-234" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="269.05" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
+<ellipse fill="none" stroke="#6666ff" cx="379" cy="-234" rx="40.09" ry="18"/>
+<text text-anchor="middle" x="379" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
 </a>
 </g>
 </g>
@@ -142,8 +142,8 @@
 <g id="node2" class="node">
 <title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="64.05" cy="-378" rx="27" ry="18"/>
-<text text-anchor="middle" x="64.05" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="415" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="415" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
@@ -151,310 +151,310 @@
 <g id="node3" class="node">
 <title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="64.05" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="64.05" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="415" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="415" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge1" class="edge">
 <title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M64.05,-324.3C64.05,-332.02 64.05,-341.29 64.05,-349.89"/>
-<polygon fill="#000000" stroke="#000000" points="60.55,-349.9 64.05,-359.9 67.55,-349.9 60.55,-349.9"/>
+<path fill="none" stroke="#000000" d="M415,-324.3C415,-332.02 415,-341.29 415,-349.89"/>
+<polygon fill="#000000" stroke="#000000" points="411.5,-349.9 415,-359.9 418.5,-349.9 411.5,-349.9"/>
 </g>
 <!-- Cool -->
 <g id="node4" class="node">
 <title>Cool</title>
 <g id="a_node4"><a xlink:href="/type/Cool" xlink:title="Cool">
-<ellipse fill="none" stroke="#000000" cx="471.05" cy="-234" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="471.05" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
+<ellipse fill="none" stroke="#000000" cx="163" cy="-234" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="163" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
 </a>
 </g>
 </g>
 <!-- Cool&#45;&gt;Any -->
 <g id="edge2" class="edge">
 <title>Cool&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M448.67,-245.28C440.88,-248.86 434.05,-252 434.05,-252 434.05,-252 100.05,-288 100.05,-288 100.05,-288 97.87,-289.03 94.58,-290.58"/>
-<polygon fill="#000000" stroke="#000000" points="92.95,-287.48 85.4,-294.91 95.94,-293.81 92.95,-287.48"/>
-</g>
-<!-- PositionalBindFailover -->
-<g id="node5" class="node">
-<title>PositionalBindFailover</title>
-<g id="a_node5"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
-<ellipse fill="none" stroke="#6666ff" cx="206.05" cy="-306" rx="97.48" ry="18"/>
-<text text-anchor="middle" x="206.05" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
-</a>
-</g>
-</g>
-<!-- Sequence -->
-<g id="node6" class="node">
-<title>Sequence</title>
-<g id="a_node6"><a xlink:href="/type/Sequence" xlink:title="Sequence">
-<ellipse fill="none" stroke="#6666ff" cx="161.05" cy="-234" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="161.05" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Sequence</text>
-</a>
-</g>
-</g>
-<!-- Sequence&#45;&gt;PositionalBindFailover -->
-<g id="edge14" class="edge">
-<title>Sequence&#45;&gt;PositionalBindFailover</title>
-<path fill="none" stroke="#6666ff" d="M171.71,-251.59C177.07,-259.92 183.68,-270.2 189.66,-279.51"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="186.79,-281.52 195.15,-288.04 192.68,-277.74 186.79,-281.52"/>
-</g>
-<!-- Seq -->
-<g id="node7" class="node">
-<title>Seq</title>
-<g id="a_node7"><a xlink:href="/type/Seq" xlink:title="Seq">
-<ellipse fill="none" stroke="#000000" cx="265.05" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="265.05" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Seq</text>
-</a>
-</g>
-</g>
-<!-- Seq&#45;&gt;Iterable -->
-<g id="edge15" class="edge">
-<title>Seq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M266.03,-180.3C266.48,-188.02 267,-197.29 267.5,-205.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="264,-206.11 268.07,-215.9 270.99,-205.71 264,-206.11"/>
-</g>
-<!-- Seq&#45;&gt;Cool -->
-<g id="edge3" class="edge">
-<title>Seq&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M286.4,-173.09C294.15,-176.75 301.05,-180 301.05,-180 301.05,-180 434.05,-216 434.05,-216 434.05,-216 436.21,-216.99 439.49,-218.5"/>
-<polygon fill="#000000" stroke="#000000" points="438.12,-221.72 448.67,-222.72 441.04,-215.36 438.12,-221.72"/>
-</g>
-<!-- Seq&#45;&gt;Sequence -->
-<g id="edge16" class="edge">
-<title>Seq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M246.45,-175.51C231.39,-185.65 209.84,-200.16 192.16,-212.06"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="190.17,-209.18 183.83,-217.66 194.08,-214.98 190.17,-209.18"/>
-</g>
-<!-- RaceSeq -->
-<g id="node8" class="node">
-<title>RaceSeq</title>
-<g id="a_node8"><a xlink:href="/type/RaceSeq" xlink:title="RaceSeq">
-<ellipse fill="none" stroke="#000000" cx="165.05" cy="-162" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="165.05" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">RaceSeq</text>
-</a>
-</g>
-</g>
-<!-- RaceSeq&#45;&gt;Iterable -->
-<g id="edge17" class="edge">
-<title>RaceSeq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M187.36,-178.02C202.36,-188.12 222.33,-201.56 238.77,-212.62"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="237.23,-215.81 247.48,-218.49 241.14,-210 237.23,-215.81"/>
-</g>
-<!-- RaceSeq&#45;&gt;Any -->
-<g id="edge4" class="edge">
-<title>RaceSeq&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M146.48,-178.62C127.9,-194.25 102.05,-216 102.05,-216 102.05,-216 86.44,-252.54 75.23,-278.8"/>
-<polygon fill="#000000" stroke="#000000" points="71.9,-277.69 71.19,-288.26 78.34,-280.44 71.9,-277.69"/>
-</g>
-<!-- RaceSeq&#45;&gt;Sequence -->
-<g id="edge18" class="edge">
-<title>RaceSeq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M164.06,-180.3C163.62,-188.02 163.09,-197.29 162.59,-205.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="159.1,-205.71 162.02,-215.9 166.09,-206.11 159.1,-205.71"/>
+<path fill="none" stroke="#000000" d="M185.54,-245.09C193.73,-248.75 201,-252 201,-252 201,-252 319.48,-281.34 380.12,-296.36"/>
+<polygon fill="#000000" stroke="#000000" points="379.48,-299.81 390.03,-298.82 381.17,-293.02 379.48,-299.81"/>
 </g>
 <!-- Positional -->
-<g id="node9" class="node">
+<g id="node5" class="node">
 <title>Positional</title>
-<g id="a_node9"><a xlink:href="/type/Positional" xlink:title="Positional">
-<ellipse fill="none" stroke="#6666ff" cx="376.05" cy="-234" rx="48.99" ry="18"/>
-<text text-anchor="middle" x="376.05" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
+<g id="a_node5"><a xlink:href="/type/Positional" xlink:title="Positional">
+<ellipse fill="none" stroke="#6666ff" cx="68" cy="-234" rx="48.99" ry="18"/>
+<text text-anchor="middle" x="68" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
 </a>
 </g>
-</g>
-<!-- Range -->
-<g id="node10" class="node">
-<title>Range</title>
-<g id="a_node10"><a xlink:href="/type/Range" xlink:title="Range">
-<ellipse fill="none" stroke="#000000" cx="346.05" cy="-162" rx="36.29" ry="18"/>
-<text text-anchor="middle" x="346.05" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
-</a>
-</g>
-</g>
-<!-- Range&#45;&gt;Iterable -->
-<g id="edge20" class="edge">
-<title>Range&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M329.34,-178.19C318.92,-187.66 305.32,-200.03 293.67,-210.61"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="291.03,-208.28 285.99,-217.6 295.74,-213.46 291.03,-208.28"/>
-</g>
-<!-- Range&#45;&gt;Cool -->
-<g id="edge5" class="edge">
-<title>Range&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M369.26,-176C389.65,-187.42 419.42,-204.09 441.5,-216.45"/>
-<polygon fill="#000000" stroke="#000000" points="440,-219.63 450.44,-221.46 443.42,-213.52 440,-219.63"/>
-</g>
-<!-- Range&#45;&gt;Positional -->
-<g id="edge19" class="edge">
-<title>Range&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M353.31,-179.95C356.72,-187.91 360.87,-197.59 364.68,-206.49"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="361.49,-207.91 368.64,-215.72 367.92,-205.15 361.49,-207.91"/>
 </g>
 <!-- List -->
-<g id="node11" class="node">
+<g id="node6" class="node">
 <title>List</title>
-<g id="a_node11"><a xlink:href="/type/List" xlink:title="List">
-<ellipse fill="none" stroke="#000000" cx="427.05" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="427.05" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
+<g id="a_node6"><a xlink:href="/type/List" xlink:title="List">
+<ellipse fill="none" stroke="#000000" cx="91" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="91" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
 </a>
 </g>
 </g>
 <!-- List&#45;&gt;Iterable -->
-<g id="edge22" class="edge">
+<g id="edge15" class="edge">
 <title>List&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M405.69,-173.09C397.94,-176.75 391.05,-180 391.05,-180 391.05,-180 342.18,-201.23 306.3,-216.82"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="304.81,-213.65 297.03,-220.84 307.6,-220.07 304.81,-213.65"/>
+<path fill="none" stroke="#6666ff" d="M112.36,-173.09C120.11,-176.75 127,-180 127,-180 127,-180 329,-216 329,-216 329,-216 332.76,-217.28 338.22,-219.14"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="337.31,-222.52 347.9,-222.43 339.56,-215.89 337.31,-222.52"/>
 </g>
 <!-- List&#45;&gt;Cool -->
-<g id="edge6" class="edge">
+<g id="edge3" class="edge">
 <title>List&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M437.03,-178.88C442.47,-187.53 449.31,-198.42 455.44,-208.17"/>
-<polygon fill="#000000" stroke="#000000" points="452.51,-210.09 460.8,-216.69 458.44,-206.36 452.51,-210.09"/>
+<path fill="none" stroke="#000000" d="M105.57,-177.17C115.59,-186.9 129.08,-200.02 140.47,-211.1"/>
+<polygon fill="#000000" stroke="#000000" points="138.35,-213.91 147.96,-218.37 143.23,-208.89 138.35,-213.91"/>
 </g>
 <!-- List&#45;&gt;Positional -->
-<g id="edge21" class="edge">
+<g id="edge14" class="edge">
 <title>List&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M415.73,-178.54C409.37,-187.26 401.29,-198.35 394.09,-208.24"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="391.1,-206.39 388.04,-216.53 396.76,-210.51 391.1,-206.39"/>
+<path fill="none" stroke="#6666ff" d="M85.43,-179.95C82.84,-187.82 79.7,-197.38 76.8,-206.21"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="73.47,-205.13 73.68,-215.72 80.12,-207.32 73.47,-205.13"/>
+</g>
+<!-- Range -->
+<g id="node7" class="node">
+<title>Range</title>
+<g id="a_node7"><a xlink:href="/type/Range" xlink:title="Range">
+<ellipse fill="none" stroke="#000000" cx="172" cy="-162" rx="36.29" ry="18"/>
+<text text-anchor="middle" x="172" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
+</a>
+</g>
+</g>
+<!-- Range&#45;&gt;Iterable -->
+<g id="edge17" class="edge">
+<title>Range&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M201.16,-172.84C246.57,-188.17 329,-216 329,-216 329,-216 332.76,-217.28 338.22,-219.14"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="337.31,-222.52 347.9,-222.43 339.56,-215.89 337.31,-222.52"/>
+</g>
+<!-- Range&#45;&gt;Cool -->
+<g id="edge4" class="edge">
+<title>Range&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M169.78,-180.3C168.78,-188.02 167.59,-197.29 166.49,-205.89"/>
+<polygon fill="#000000" stroke="#000000" points="163,-205.53 165.2,-215.9 169.95,-206.42 163,-205.53"/>
+</g>
+<!-- Range&#45;&gt;Positional -->
+<g id="edge16" class="edge">
+<title>Range&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M150.95,-177.17C135.99,-187.24 115.66,-200.92 98.87,-212.23"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="96.8,-209.4 90.45,-217.89 100.7,-215.21 96.8,-209.4"/>
+</g>
+<!-- PositionalBindFailover -->
+<g id="node8" class="node">
+<title>PositionalBindFailover</title>
+<g id="a_node8"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
+<ellipse fill="none" stroke="#6666ff" cx="557" cy="-306" rx="97.48" ry="18"/>
+<text text-anchor="middle" x="557" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
+</a>
+</g>
+</g>
+<!-- Sequence -->
+<g id="node9" class="node">
+<title>Sequence</title>
+<g id="a_node9"><a xlink:href="/type/Sequence" xlink:title="Sequence">
+<ellipse fill="none" stroke="#6666ff" cx="525" cy="-234" rx="50.09" ry="18"/>
+<text text-anchor="middle" x="525" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Sequence</text>
+</a>
+</g>
+</g>
+<!-- Sequence&#45;&gt;PositionalBindFailover -->
+<g id="edge18" class="edge">
+<title>Sequence&#45;&gt;PositionalBindFailover</title>
+<path fill="none" stroke="#6666ff" d="M532.75,-251.95C536.39,-259.91 540.81,-269.59 544.88,-278.49"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="541.76,-280.09 549.1,-287.72 548.13,-277.17 541.76,-280.09"/>
 </g>
 <!-- HyperSeq -->
-<g id="node12" class="node">
+<g id="node10" class="node">
 <title>HyperSeq</title>
-<g id="a_node12"><a xlink:href="/type/HyperSeq" xlink:title="HyperSeq">
-<ellipse fill="none" stroke="#000000" cx="50.05" cy="-162" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="50.05" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">HyperSeq</text>
+<g id="a_node10"><a xlink:href="/type/HyperSeq" xlink:title="HyperSeq">
+<ellipse fill="none" stroke="#000000" cx="447" cy="-162" rx="50.09" ry="18"/>
+<text text-anchor="middle" x="447" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">HyperSeq</text>
 </a>
 </g>
 </g>
 <!-- HyperSeq&#45;&gt;Iterable -->
-<g id="edge23" class="edge">
+<g id="edge19" class="edge">
 <title>HyperSeq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M86.51,-174.37C136.47,-189.94 220.05,-216 220.05,-216 220.05,-216 223.49,-217.2 228.56,-218.95"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="227.7,-222.36 238.29,-222.33 229.99,-215.75 227.7,-222.36"/>
+<path fill="none" stroke="#6666ff" d="M431.23,-179.24C422.47,-188.25 411.43,-199.61 401.76,-209.57"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="399.14,-207.24 394.69,-216.85 404.16,-212.12 399.14,-207.24"/>
 </g>
 <!-- HyperSeq&#45;&gt;Any -->
-<g id="edge7" class="edge">
+<g id="edge5" class="edge">
 <title>HyperSeq&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M51.73,-180.13C54.12,-204.33 58.5,-248.79 61.34,-277.61"/>
-<polygon fill="#000000" stroke="#000000" points="57.89,-278.2 62.35,-287.81 64.85,-277.52 57.89,-278.2"/>
+<path fill="none" stroke="#000000" d="M443.34,-180.16C437.82,-206.02 428,-252 428,-252 428,-252 424.82,-264.98 421.6,-278.1"/>
+<polygon fill="#000000" stroke="#000000" points="418.17,-277.39 419.18,-287.94 424.97,-279.06 418.17,-277.39"/>
 </g>
 <!-- HyperSeq&#45;&gt;Sequence -->
-<g id="edge24" class="edge">
+<g id="edge20" class="edge">
 <title>HyperSeq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M73.86,-178.02C89.81,-188.07 111,-201.44 128.51,-212.48"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="126.95,-215.63 137.27,-218.01 130.68,-209.71 126.95,-215.63"/>
+<path fill="none" stroke="#6666ff" d="M464.7,-178.88C475,-188.13 488.16,-199.93 499.55,-210.16"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="497.32,-212.86 507.1,-216.94 502,-207.65 497.32,-212.86"/>
+</g>
+<!-- Seq -->
+<g id="node11" class="node">
+<title>Seq</title>
+<g id="a_node11"><a xlink:href="/type/Seq" xlink:title="Seq">
+<ellipse fill="none" stroke="#000000" cx="352" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="352" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Seq</text>
+</a>
+</g>
+</g>
+<!-- Seq&#45;&gt;Iterable -->
+<g id="edge21" class="edge">
+<title>Seq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M358.4,-179.59C361.51,-187.66 365.33,-197.57 368.83,-206.65"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="365.6,-207.97 372.46,-216.04 372.13,-205.45 365.6,-207.97"/>
+</g>
+<!-- Seq&#45;&gt;Cool -->
+<g id="edge6" class="edge">
+<title>Seq&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M328.74,-171.17C286.38,-186.03 201,-216 201,-216 201,-216 198.57,-217.09 194.94,-218.71"/>
+<polygon fill="#000000" stroke="#000000" points="193.24,-215.64 185.54,-222.91 196.1,-222.03 193.24,-215.64"/>
+</g>
+<!-- Seq&#45;&gt;Sequence -->
+<g id="edge22" class="edge">
+<title>Seq&#45;&gt;Sequence</title>
+<path fill="none" stroke="#6666ff" d="M373.36,-173.09C381.11,-176.75 388,-180 388,-180 388,-180 442.56,-201.11 482.81,-216.68"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="481.6,-219.96 492.19,-220.31 484.12,-213.43 481.6,-219.96"/>
 </g>
 <!-- Associative -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>Associative</title>
-<g id="a_node13"><a xlink:href="/type/Associative" xlink:title="Associative">
-<ellipse fill="none" stroke="#6666ff" cx="573.05" cy="-234" rx="55.49" ry="18"/>
-<text text-anchor="middle" x="573.05" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
+<g id="a_node12"><a xlink:href="/type/Associative" xlink:title="Associative">
+<ellipse fill="none" stroke="#6666ff" cx="265" cy="-234" rx="55.49" ry="18"/>
+<text text-anchor="middle" x="265" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
 </a>
 </g>
 </g>
 <!-- Map -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>Map</title>
-<g id="a_node14"><a xlink:href="/type/Map" xlink:title="Map">
-<ellipse fill="none" stroke="#000000" cx="508.05" cy="-162" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="508.05" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
+<g id="a_node13"><a xlink:href="/type/Map" xlink:title="Map">
+<ellipse fill="none" stroke="#000000" cx="265" cy="-162" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="265" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
 </a>
 </g>
 </g>
 <!-- Map&#45;&gt;Iterable -->
-<g id="edge25" class="edge">
+<g id="edge23" class="edge">
 <title>Map&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M484.23,-172C473.43,-176.08 463.05,-180 463.05,-180 463.05,-180 318.05,-216 318.05,-216 318.05,-216 314.6,-217.2 309.53,-218.95"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="308.1,-215.75 299.8,-222.33 310.39,-222.36 308.1,-215.75"/>
+<path fill="none" stroke="#6666ff" d="M284.86,-175.19C302.12,-185.79 327.42,-201.33 347.45,-213.63"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="345.89,-216.77 356.24,-219.02 349.55,-210.81 345.89,-216.77"/>
 </g>
 <!-- Map&#45;&gt;Cool -->
-<g id="edge8" class="edge">
+<g id="edge7" class="edge">
 <title>Map&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M499.46,-179.24C495.04,-187.6 489.55,-197.98 484.58,-207.39"/>
-<polygon fill="#000000" stroke="#000000" points="481.42,-205.89 479.84,-216.37 487.6,-209.16 481.42,-205.89"/>
+<path fill="none" stroke="#000000" d="M246.29,-175.84C230.48,-186.69 207.62,-202.38 189.85,-214.57"/>
+<polygon fill="#000000" stroke="#000000" points="187.85,-211.7 181.59,-220.24 191.82,-217.47 187.85,-211.7"/>
 </g>
 <!-- Map&#45;&gt;Associative -->
-<g id="edge26" class="edge">
+<g id="edge24" class="edge">
 <title>Map&#45;&gt;Associative</title>
-<path fill="none" stroke="#6666ff" d="M521.83,-177.85C530.15,-186.8 540.94,-198.42 550.47,-208.69"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="548.09,-211.26 557.46,-216.21 553.22,-206.5 548.09,-211.26"/>
+<path fill="none" stroke="#6666ff" d="M265,-180.3C265,-188.02 265,-197.29 265,-205.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="261.5,-205.9 265,-215.9 268.5,-205.9 261.5,-205.9"/>
+</g>
+<!-- RaceSeq -->
+<g id="node14" class="node">
+<title>RaceSeq</title>
+<g id="a_node14"><a xlink:href="/type/RaceSeq" xlink:title="RaceSeq">
+<ellipse fill="none" stroke="#000000" cx="562" cy="-162" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="562" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">RaceSeq</text>
+</a>
+</g>
+</g>
+<!-- RaceSeq&#45;&gt;Iterable -->
+<g id="edge25" class="edge">
+<title>RaceSeq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M530.12,-175.19C498.99,-187.1 451.56,-205.25 418.15,-218.03"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="416.78,-214.8 408.69,-221.64 419.29,-221.34 416.78,-214.8"/>
+</g>
+<!-- RaceSeq&#45;&gt;Any -->
+<g id="edge8" class="edge">
+<title>RaceSeq&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M569.08,-180.06C575.51,-195.55 584,-216 584,-216 584,-216 584,-252 584,-252 584,-252 451,-288 451,-288 451,-288 448.82,-289.03 445.53,-290.58"/>
+<polygon fill="#000000" stroke="#000000" points="443.91,-287.48 436.36,-294.91 446.89,-293.81 443.91,-287.48"/>
+</g>
+<!-- RaceSeq&#45;&gt;Sequence -->
+<g id="edge26" class="edge">
+<title>RaceSeq&#45;&gt;Sequence</title>
+<path fill="none" stroke="#6666ff" d="M553.04,-179.95C548.73,-188.11 543.45,-198.09 538.65,-207.18"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="535.45,-205.73 533.87,-216.21 541.64,-209.01 535.45,-205.73"/>
 </g>
 <!-- Slip -->
 <g id="node15" class="node">
 <title>Slip</title>
 <g id="a_node15"><a xlink:href="/type/Slip" xlink:title="Slip">
-<ellipse fill="none" stroke="#000000" cx="350.05" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="350.05" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Slip</text>
+<ellipse fill="none" stroke="#000000" cx="27" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Slip</text>
 </a>
 </g>
 </g>
 <!-- Slip&#45;&gt;List -->
 <g id="edge9" class="edge">
 <title>Slip&#45;&gt;List</title>
-<path fill="none" stroke="#000000" d="M365.63,-105.17C376.66,-115.19 391.64,-128.81 404.04,-140.08"/>
-<polygon fill="#000000" stroke="#000000" points="402,-142.96 411.75,-147.09 406.7,-137.78 402,-142.96"/>
+<path fill="none" stroke="#000000" d="M40.57,-105.85C49.31,-115.4 60.83,-128.01 70.66,-138.75"/>
+<polygon fill="#000000" stroke="#000000" points="68.12,-141.16 77.45,-146.18 73.28,-136.43 68.12,-141.16"/>
 </g>
 <!-- Array -->
 <g id="node16" class="node">
 <title>Array</title>
 <g id="a_node16"><a xlink:href="/type/Array" xlink:title="Array">
-<ellipse fill="none" stroke="#000000" cx="427.05" cy="-90" rx="31.7" ry="18"/>
-<text text-anchor="middle" x="427.05" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Array</text>
+<ellipse fill="none" stroke="#000000" cx="104" cy="-90" rx="31.7" ry="18"/>
+<text text-anchor="middle" x="104" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Array</text>
 </a>
 </g>
 </g>
 <!-- Array&#45;&gt;List -->
 <g id="edge10" class="edge">
 <title>Array&#45;&gt;List</title>
-<path fill="none" stroke="#000000" d="M427.05,-108.3C427.05,-116.02 427.05,-125.29 427.05,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="423.55,-133.9 427.05,-143.9 430.55,-133.9 423.55,-133.9"/>
-</g>
-<!-- Hash -->
-<g id="node17" class="node">
-<title>Hash</title>
-<g id="a_node17"><a xlink:href="/type/Hash" xlink:title="Hash">
-<ellipse fill="none" stroke="#000000" cx="508.05" cy="-90" rx="31.4" ry="18"/>
-<text text-anchor="middle" x="508.05" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Hash</text>
-</a>
-</g>
-</g>
-<!-- Hash&#45;&gt;Map -->
-<g id="edge11" class="edge">
-<title>Hash&#45;&gt;Map</title>
-<path fill="none" stroke="#000000" d="M508.05,-108.3C508.05,-116.02 508.05,-125.29 508.05,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="504.55,-133.9 508.05,-143.9 511.55,-133.9 504.55,-133.9"/>
+<path fill="none" stroke="#000000" d="M100.85,-107.95C99.42,-115.65 97.69,-124.97 96.08,-133.64"/>
+<polygon fill="#000000" stroke="#000000" points="92.59,-133.25 94.21,-143.72 99.48,-134.53 92.59,-133.25"/>
 </g>
 <!-- PseudoStash -->
-<g id="node18" class="node">
+<g id="node17" class="node">
 <title>PseudoStash</title>
-<g id="a_node18"><a xlink:href="/type/PseudoStash" xlink:title="PseudoStash">
-<ellipse fill="none" stroke="#000000" cx="620.05" cy="-90" rx="63.09" ry="18"/>
-<text text-anchor="middle" x="620.05" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">PseudoStash</text>
+<g id="a_node17"><a xlink:href="/type/PseudoStash" xlink:title="PseudoStash">
+<ellipse fill="none" stroke="#000000" cx="252" cy="-90" rx="63.09" ry="18"/>
+<text text-anchor="middle" x="252" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">PseudoStash</text>
 </a>
 </g>
 </g>
 <!-- PseudoStash&#45;&gt;Map -->
-<g id="edge12" class="edge">
+<g id="edge11" class="edge">
 <title>PseudoStash&#45;&gt;Map</title>
-<path fill="none" stroke="#000000" d="M594.91,-106.71C577.56,-117.56 554.45,-132 536.43,-143.26"/>
-<polygon fill="#000000" stroke="#000000" points="534.15,-140.56 527.53,-148.82 537.86,-146.49 534.15,-140.56"/>
+<path fill="none" stroke="#000000" d="M255.21,-108.3C256.65,-116.02 258.37,-125.29 259.96,-133.89"/>
+<polygon fill="#000000" stroke="#000000" points="256.56,-134.7 261.82,-143.9 263.44,-133.42 256.56,-134.7"/>
+</g>
+<!-- Hash -->
+<g id="node18" class="node">
+<title>Hash</title>
+<g id="a_node18"><a xlink:href="/type/Hash" xlink:title="Hash">
+<ellipse fill="none" stroke="#000000" cx="364" cy="-90" rx="31.4" ry="18"/>
+<text text-anchor="middle" x="364" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Hash</text>
+</a>
+</g>
+</g>
+<!-- Hash&#45;&gt;Map -->
+<g id="edge12" class="edge">
+<title>Hash&#45;&gt;Map</title>
+<path fill="none" stroke="#000000" d="M344.91,-104.5C329.79,-115.19 308.49,-130.25 291.68,-142.13"/>
+<polygon fill="#000000" stroke="#000000" points="289.5,-139.39 283.36,-148.02 293.55,-145.1 289.5,-139.39"/>
 </g>
 <!-- Stash -->
 <g id="node19" class="node">
 <title>Stash</title>
 <g id="a_node19"><a xlink:href="/type/Stash" xlink:title="Stash">
-<ellipse fill="none" stroke="#000000" cx="508.05" cy="-18" rx="33.29" ry="18"/>
-<text text-anchor="middle" x="508.05" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Stash</text>
+<ellipse fill="none" stroke="#000000" cx="364" cy="-18" rx="33.29" ry="18"/>
+<text text-anchor="middle" x="364" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Stash</text>
 </a>
 </g>
 </g>
 <!-- Stash&#45;&gt;Hash -->
 <g id="edge13" class="edge">
 <title>Stash&#45;&gt;Hash</title>
-<path fill="none" stroke="#000000" d="M508.05,-36.3C508.05,-44.02 508.05,-53.29 508.05,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="504.55,-61.9 508.05,-71.9 511.55,-61.9 504.55,-61.9"/>
+<path fill="none" stroke="#000000" d="M364,-36.3C364,-44.02 364,-53.29 364,-61.89"/>
+<polygon fill="#000000" stroke="#000000" points="360.5,-61.9 364,-71.9 367.5,-61.9 360.5,-61.9"/>
 </g>
 </g>
 </svg>

@@ -48,19 +48,34 @@
 <path fill="none" stroke="#6666ff" d="M153.75,-108.3C153.75,-116.02 153.75,-125.29 153.75,-133.89"/>
 <polygon fill="#6666ff" stroke="#6666ff" points="150.25,-133.9 153.75,-143.9 157.25,-133.9 150.25,-133.9"/>
 </g>
-<!-- Mu -->
+<!-- Buf -->
 <g id="node4" class="node">
+<title>Buf</title>
+<g id="a_node4"><a xlink:href="/type/Buf" xlink:title="Buf">
+<ellipse fill="none" stroke="#6666ff" cx="153.75" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="153.75" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Buf</text>
+</a>
+</g>
+</g>
+<!-- Buf&#45;&gt;Blob -->
+<g id="edge5" class="edge">
+<title>Buf&#45;&gt;Blob</title>
+<path fill="none" stroke="#6666ff" d="M153.75,-36.3C153.75,-44.02 153.75,-53.29 153.75,-61.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="150.25,-61.9 153.75,-71.9 157.25,-61.9 150.25,-61.9"/>
+</g>
+<!-- Mu -->
+<g id="node5" class="node">
 <title>Mu</title>
-<g id="a_node4"><a xlink:href="/type/Mu" xlink:title="Mu">
+<g id="a_node5"><a xlink:href="/type/Mu" xlink:title="Mu">
 <ellipse fill="none" stroke="#000000" cx="236.75" cy="-162" rx="27" ry="18"/>
 <text text-anchor="middle" x="236.75" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node5" class="node">
+<g id="node6" class="node">
 <title>Any</title>
-<g id="a_node5"><a xlink:href="/type/Any" xlink:title="Any">
+<g id="a_node6"><a xlink:href="/type/Any" xlink:title="Any">
 <ellipse fill="none" stroke="#000000" cx="231.75" cy="-90" rx="27" ry="18"/>
 <text text-anchor="middle" x="231.75" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
@@ -73,16 +88,16 @@
 <polygon fill="#000000" stroke="#000000" points="231.32,-134.17 235.52,-143.9 238.3,-133.67 231.32,-134.17"/>
 </g>
 <!-- utf8 -->
-<g id="node6" class="node">
+<g id="node7" class="node">
 <title>utf8</title>
-<g id="a_node6"><a xlink:href="/type/utf8" xlink:title="utf8">
+<g id="a_node7"><a xlink:href="/type/utf8" xlink:title="utf8">
 <ellipse fill="none" stroke="#000000" cx="226.75" cy="-18" rx="27" ry="18"/>
 <text text-anchor="middle" x="226.75" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">utf8</text>
 </a>
 </g>
 </g>
 <!-- utf8&#45;&gt;Blob -->
-<g id="edge5" class="edge">
+<g id="edge6" class="edge">
 <title>utf8&#45;&gt;Blob</title>
 <path fill="none" stroke="#6666ff" d="M211.97,-33.17C201.65,-43.06 187.69,-56.45 176.02,-67.64"/>
 <polygon fill="#6666ff" stroke="#6666ff" points="173.54,-65.17 168.75,-74.62 178.39,-70.22 173.54,-65.17"/>
@@ -92,21 +107,6 @@
 <title>utf8&#45;&gt;Any</title>
 <path fill="none" stroke="#000000" d="M227.98,-36.3C228.53,-44.02 229.19,-53.29 229.81,-61.89"/>
 <polygon fill="#000000" stroke="#000000" points="226.32,-62.17 230.52,-71.9 233.3,-61.67 226.32,-62.17"/>
-</g>
-<!-- Buf -->
-<g id="node7" class="node">
-<title>Buf</title>
-<g id="a_node7"><a xlink:href="/type/Buf" xlink:title="Buf">
-<ellipse fill="none" stroke="#6666ff" cx="153.75" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="153.75" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Buf</text>
-</a>
-</g>
-</g>
-<!-- Buf&#45;&gt;Blob -->
-<g id="edge6" class="edge">
-<title>Buf&#45;&gt;Blob</title>
-<path fill="none" stroke="#6666ff" d="M153.75,-36.3C153.75,-44.02 153.75,-53.29 153.75,-61.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="150.25,-61.9 153.75,-71.9 157.25,-61.9 150.25,-61.9"/>
 </g>
 </g>
 </svg>

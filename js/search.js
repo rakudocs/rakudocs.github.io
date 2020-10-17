@@ -973,7 +973,7 @@ $(function(){
 ,
 { category: "Routine", value: "(|), infix ∪", url: "/routine/(|), infix ∪" }
 ,
-{ category: "Routine", value: "*", url: "/routine/*" }
+{ category: "infix", value: "*", url: "/routine/*" }
 ,
 { category: "infix", value: "**", url: "/routine/**" }
 ,
@@ -5715,9 +5715,17 @@ $(function(){
 ,
 { category: "Reference", value: "operators (...^)", url: "/language/operators#index-entry-...$CIRCUMFLEX_ACCENT_operators" }
 ,
+{ category: "Reference", value: "operators (^...)", url: "/language/operators#index-entry-$CIRCUMFLEX_ACCENT..._operators" }
+,
+{ category: "Reference", value: "operators (^...^)", url: "/language/operators#index-entry-$CIRCUMFLEX_ACCENT...$CIRCUMFLEX_ACCENT_operators" }
+,
 { category: "Reference", value: "operators (…)", url: "/language/operators#index-entry-…_operators" }
 ,
 { category: "Reference", value: "operators (…^)", url: "/language/operators#index-entry-…$CIRCUMFLEX_ACCENT_operators" }
+,
+{ category: "Reference", value: "operators (^…)", url: "/language/operators#index-entry-$CIRCUMFLEX_ACCENT…_operators" }
+,
+{ category: "Reference", value: "operators (^…^)", url: "/language/operators#index-entry-$CIRCUMFLEX_ACCENT…$CIRCUMFLEX_ACCENT_operators" }
 ,
 { category: "Reference", value: "… (lazy list)", url: "/language/operators#index-entry-lazy_list_…" }
 ,

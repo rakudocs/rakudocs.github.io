@@ -60,16 +60,24 @@
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_Collation">class Collation</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Collation)_method_set">(Collation) method set</a></td></tr>
-                     <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Set">class Set</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Set)_sub_set">(Set) sub set</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_SetHash">class SetHash</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(SetHash)_method_set">(SetHash) method set</a></td></tr>
+                          <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Collation">class Collation</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Collation)_method_set">(Collation) method set</a></td></tr>
+                     <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Set">class Set</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Set)_sub_set">(Set) sub set</a></td></tr>
      
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for routine <code>set</code> assembled from the following types:</p>
+<h1 id="class_SetHash"><a class="u" href="#___top" title="go to top of document">class SetHash</a></h1>
+<p>From <a href="/type/SetHash#method_set">SetHash</a></p>
+<h2 id="(SetHash)_method_set"><a href="/type/SetHash#method_set">(SetHash) method set</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>set</span></span><span>(</span><span class="support type perl6fe"><span>SetHash</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>to-set</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Nil</span></span><span>)</span></span></div></pre><p>When given single key, <code>set</code> adds it to the <code>SetHash</code>. When given a <code>List</code>, <code>Array</code>, <code>Seq</code>, or any other type that <code>does</code> the <a href="/type/Iterator"><code>Iterator</code></a> Role, <code>set</code> adds each element of the <code>Iterator</code> as key to the <code>SetHash</code>.</p>
+<p><em>Note:</em> since version 2020.02.</p>
 <h1 id="class_Collation"><a class="u" href="#___top" title="go to top of document">class Collation</a></h1>
 <p>From <a href="/type/Collation#method_set">Collation</a></p>
 <h2 id="(Collation)_method_set"><a href="/type/Collation#method_set">(Collation) method set</a></h2>

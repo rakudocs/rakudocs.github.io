@@ -102,67 +102,52 @@
 <path fill="none" stroke="#6666ff" d="M177.4,-243.5C189.65,-247.75 201.9,-252 201.9,-252 201.9,-252 274.05,-275.32 322.64,-291.02"/>
 <polygon fill="#6666ff" stroke="#6666ff" points="321.72,-294.4 332.31,-294.15 323.87,-287.74 321.72,-294.4"/>
 </g>
-<!-- Rational -->
+<!-- Int -->
 <g id="node8" class="node">
-<title>Rational</title>
-<g id="a_node8"><a xlink:href="/type/Rational" xlink:title="Rational">
-<ellipse fill="none" stroke="#6666ff" cx="42.9" cy="-162" rx="42.79" ry="18"/>
-<text text-anchor="middle" x="42.9" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Rational</text>
+<title>Int</title>
+<g id="a_node8"><a xlink:href="/type/Int" xlink:title="Int">
+<ellipse fill="none" stroke="#000000" cx="246.9" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="246.9" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Int</text>
 </a>
 </g>
 </g>
-<!-- Rational&#45;&gt;Real -->
-<g id="edge18" class="edge">
-<title>Rational&#45;&gt;Real</title>
-<path fill="none" stroke="#6666ff" d="M65.42,-177.33C82.6,-188.27 106.36,-203.39 124.78,-215.11"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="123.03,-218.14 133.35,-220.56 126.79,-212.24 123.03,-218.14"/>
-</g>
-<!-- Rat -->
-<g id="node9" class="node">
-<title>Rat</title>
-<g id="a_node9"><a xlink:href="/type/Rat" xlink:title="Rat">
-<ellipse fill="none" stroke="#000000" cx="81.9" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="81.9" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Rat</text>
-</a>
-</g>
-</g>
-<!-- Rat&#45;&gt;Cool -->
+<!-- Int&#45;&gt;Cool -->
 <g id="edge4" class="edge">
-<title>Rat&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M101.64,-102.5C128.41,-118.09 172.9,-144 172.9,-144 172.9,-144 202.32,-183.08 222.17,-209.45"/>
-<polygon fill="#000000" stroke="#000000" points="219.42,-211.61 228.23,-217.5 225.01,-207.4 219.42,-211.61"/>
+<title>Int&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M245.17,-180.3C244.39,-188.02 243.47,-197.29 242.61,-205.89"/>
+<polygon fill="#000000" stroke="#000000" points="239.12,-205.6 241.61,-215.9 246.08,-206.29 239.12,-205.6"/>
 </g>
-<!-- Rat&#45;&gt;Rational -->
-<g id="edge19" class="edge">
-<title>Rat&#45;&gt;Rational</title>
-<path fill="none" stroke="#6666ff" d="M72.85,-107.24C68.19,-115.6 62.41,-125.98 57.16,-135.39"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="53.97,-133.93 52.16,-144.37 60.09,-137.33 53.97,-133.93"/>
+<!-- Int&#45;&gt;Real -->
+<g id="edge18" class="edge">
+<title>Int&#45;&gt;Real</title>
+<path fill="none" stroke="#6666ff" d="M229.22,-176.17C215.13,-186.66 195.18,-201.51 179.22,-213.4"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="176.75,-210.87 170.82,-219.65 180.93,-216.49 176.75,-210.87"/>
 </g>
-<!-- RatStr -->
-<g id="node10" class="node">
-<title>RatStr</title>
-<g id="a_node10"><a xlink:href="/type/RatStr" xlink:title="RatStr">
-<ellipse fill="none" stroke="#000000" cx="199.9" cy="-18" rx="36" ry="18"/>
-<text text-anchor="middle" x="199.9" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">RatStr</text>
+<!-- IntStr -->
+<g id="node9" class="node">
+<title>IntStr</title>
+<g id="a_node9"><a xlink:href="/type/IntStr" xlink:title="IntStr">
+<ellipse fill="none" stroke="#000000" cx="258.9" cy="-90" rx="31.7" ry="18"/>
+<text text-anchor="middle" x="258.9" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IntStr</text>
 </a>
 </g>
 </g>
-<!-- RatStr&#45;&gt;Str -->
+<!-- IntStr&#45;&gt;Str -->
 <g id="edge6" class="edge">
-<title>RatStr&#45;&gt;Str</title>
-<path fill="none" stroke="#000000" d="M223.59,-31.56C253.17,-47.23 299.9,-72 299.9,-72 299.9,-72 307.55,-107.83 313.14,-134.03"/>
-<polygon fill="#000000" stroke="#000000" points="309.72,-134.79 315.23,-143.84 316.57,-133.33 309.72,-134.79"/>
+<title>IntStr&#45;&gt;Str</title>
+<path fill="none" stroke="#000000" d="M272.21,-106.54C280.17,-115.82 290.42,-127.77 299.28,-138.12"/>
+<polygon fill="#000000" stroke="#000000" points="296.86,-140.67 306.03,-145.99 302.18,-136.12 296.86,-140.67"/>
 </g>
-<!-- RatStr&#45;&gt;Rat -->
+<!-- IntStr&#45;&gt;Int -->
 <g id="edge5" class="edge">
-<title>RatStr&#45;&gt;Rat</title>
-<path fill="none" stroke="#000000" d="M177.7,-32.17C158.63,-43.48 131.01,-59.87 110.32,-72.14"/>
-<polygon fill="#000000" stroke="#000000" points="108.45,-69.18 101.64,-77.29 112.02,-75.2 108.45,-69.18"/>
+<title>IntStr&#45;&gt;Int</title>
+<path fill="none" stroke="#000000" d="M255.99,-107.95C254.67,-115.65 253.07,-124.97 251.59,-133.64"/>
+<polygon fill="#000000" stroke="#000000" points="248.1,-133.28 249.86,-143.72 255,-134.46 248.1,-133.28"/>
 </g>
 <!-- Num -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>Num</title>
-<g id="a_node11"><a xlink:href="/type/Num" xlink:title="Num">
+<g id="a_node10"><a xlink:href="/type/Num" xlink:title="Num">
 <ellipse fill="none" stroke="#000000" cx="133.9" cy="-162" rx="29.8" ry="18"/>
 <text text-anchor="middle" x="133.9" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Num</text>
 </a>
@@ -175,15 +160,15 @@
 <polygon fill="#000000" stroke="#000000" points="210.66,-217.89 220.93,-220.48 214.52,-212.05 210.66,-217.89"/>
 </g>
 <!-- Num&#45;&gt;Real -->
-<g id="edge20" class="edge">
+<g id="edge19" class="edge">
 <title>Num&#45;&gt;Real</title>
 <path fill="none" stroke="#6666ff" d="M138.5,-179.95C140.64,-187.86 143.25,-197.46 145.65,-206.31"/>
 <polygon fill="#6666ff" stroke="#6666ff" points="142.34,-207.48 148.34,-216.21 149.1,-205.64 142.34,-207.48"/>
 </g>
 <!-- NumStr -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>NumStr</title>
-<g id="a_node12"><a xlink:href="/type/NumStr" xlink:title="NumStr">
+<g id="a_node11"><a xlink:href="/type/NumStr" xlink:title="NumStr">
 <ellipse fill="none" stroke="#000000" cx="167.9" cy="-90" rx="40.89" ry="18"/>
 <text text-anchor="middle" x="167.9" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">NumStr</text>
 </a>
@@ -202,9 +187,9 @@
 <polygon fill="#000000" stroke="#000000" points="143.27,-133.69 142.05,-144.21 149.57,-136.75 143.27,-133.69"/>
 </g>
 <!-- Complex -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>Complex</title>
-<g id="a_node13"><a xlink:href="/type/Complex" xlink:title="Complex">
+<g id="a_node12"><a xlink:href="/type/Complex" xlink:title="Complex">
 <ellipse fill="none" stroke="#000000" cx="408.9" cy="-162" rx="45.49" ry="18"/>
 <text text-anchor="middle" x="408.9" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Complex</text>
 </a>
@@ -217,15 +202,15 @@
 <polygon fill="#000000" stroke="#000000" points="270.14,-215.64 262.44,-222.91 273,-222.03 270.14,-215.64"/>
 </g>
 <!-- Complex&#45;&gt;Numeric -->
-<g id="edge21" class="edge">
+<g id="edge20" class="edge">
 <title>Complex&#45;&gt;Numeric</title>
 <path fill="none" stroke="#6666ff" d="M403.71,-180.13C396.35,-204.44 382.8,-249.18 374.08,-277.99"/>
 <polygon fill="#6666ff" stroke="#6666ff" points="370.65,-277.23 371.1,-287.81 377.35,-279.25 370.65,-277.23"/>
 </g>
 <!-- ComplexStr -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>ComplexStr</title>
-<g id="a_node14"><a xlink:href="/type/ComplexStr" xlink:title="ComplexStr">
+<g id="a_node13"><a xlink:href="/type/ComplexStr" xlink:title="ComplexStr">
 <ellipse fill="none" stroke="#000000" cx="405.9" cy="-90" rx="56.59" ry="18"/>
 <text text-anchor="middle" x="405.9" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">ComplexStr</text>
 </a>
@@ -243,47 +228,62 @@
 <path fill="none" stroke="#000000" d="M406.64,-108.3C406.97,-116.02 407.37,-125.29 407.73,-133.89"/>
 <polygon fill="#000000" stroke="#000000" points="404.24,-134.05 408.16,-143.9 411.23,-133.75 404.24,-134.05"/>
 </g>
-<!-- Int -->
+<!-- Rational -->
+<g id="node14" class="node">
+<title>Rational</title>
+<g id="a_node14"><a xlink:href="/type/Rational" xlink:title="Rational">
+<ellipse fill="none" stroke="#6666ff" cx="42.9" cy="-162" rx="42.79" ry="18"/>
+<text text-anchor="middle" x="42.9" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Rational</text>
+</a>
+</g>
+</g>
+<!-- Rational&#45;&gt;Real -->
+<g id="edge21" class="edge">
+<title>Rational&#45;&gt;Real</title>
+<path fill="none" stroke="#6666ff" d="M65.42,-177.33C82.6,-188.27 106.36,-203.39 124.78,-215.11"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="123.03,-218.14 133.35,-220.56 126.79,-212.24 123.03,-218.14"/>
+</g>
+<!-- Rat -->
 <g id="node15" class="node">
-<title>Int</title>
-<g id="a_node15"><a xlink:href="/type/Int" xlink:title="Int">
-<ellipse fill="none" stroke="#000000" cx="246.9" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="246.9" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Int</text>
+<title>Rat</title>
+<g id="a_node15"><a xlink:href="/type/Rat" xlink:title="Rat">
+<ellipse fill="none" stroke="#000000" cx="81.9" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="81.9" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Rat</text>
 </a>
 </g>
 </g>
-<!-- Int&#45;&gt;Cool -->
+<!-- Rat&#45;&gt;Cool -->
 <g id="edge13" class="edge">
-<title>Int&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M245.17,-180.3C244.39,-188.02 243.47,-197.29 242.61,-205.89"/>
-<polygon fill="#000000" stroke="#000000" points="239.12,-205.6 241.61,-215.9 246.08,-206.29 239.12,-205.6"/>
+<title>Rat&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M101.64,-102.5C128.41,-118.09 172.9,-144 172.9,-144 172.9,-144 202.32,-183.08 222.17,-209.45"/>
+<polygon fill="#000000" stroke="#000000" points="219.42,-211.61 228.23,-217.5 225.01,-207.4 219.42,-211.61"/>
 </g>
-<!-- Int&#45;&gt;Real -->
+<!-- Rat&#45;&gt;Rational -->
 <g id="edge22" class="edge">
-<title>Int&#45;&gt;Real</title>
-<path fill="none" stroke="#6666ff" d="M229.22,-176.17C215.13,-186.66 195.18,-201.51 179.22,-213.4"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="176.75,-210.87 170.82,-219.65 180.93,-216.49 176.75,-210.87"/>
+<title>Rat&#45;&gt;Rational</title>
+<path fill="none" stroke="#6666ff" d="M72.85,-107.24C68.19,-115.6 62.41,-125.98 57.16,-135.39"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="53.97,-133.93 52.16,-144.37 60.09,-137.33 53.97,-133.93"/>
 </g>
-<!-- IntStr -->
+<!-- RatStr -->
 <g id="node16" class="node">
-<title>IntStr</title>
-<g id="a_node16"><a xlink:href="/type/IntStr" xlink:title="IntStr">
-<ellipse fill="none" stroke="#000000" cx="258.9" cy="-90" rx="31.7" ry="18"/>
-<text text-anchor="middle" x="258.9" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IntStr</text>
+<title>RatStr</title>
+<g id="a_node16"><a xlink:href="/type/RatStr" xlink:title="RatStr">
+<ellipse fill="none" stroke="#000000" cx="199.9" cy="-18" rx="36" ry="18"/>
+<text text-anchor="middle" x="199.9" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">RatStr</text>
 </a>
 </g>
 </g>
-<!-- IntStr&#45;&gt;Str -->
+<!-- RatStr&#45;&gt;Str -->
 <g id="edge15" class="edge">
-<title>IntStr&#45;&gt;Str</title>
-<path fill="none" stroke="#000000" d="M272.21,-106.54C280.17,-115.82 290.42,-127.77 299.28,-138.12"/>
-<polygon fill="#000000" stroke="#000000" points="296.86,-140.67 306.03,-145.99 302.18,-136.12 296.86,-140.67"/>
+<title>RatStr&#45;&gt;Str</title>
+<path fill="none" stroke="#000000" d="M223.59,-31.56C253.17,-47.23 299.9,-72 299.9,-72 299.9,-72 307.55,-107.83 313.14,-134.03"/>
+<polygon fill="#000000" stroke="#000000" points="309.72,-134.79 315.23,-143.84 316.57,-133.33 309.72,-134.79"/>
 </g>
-<!-- IntStr&#45;&gt;Int -->
+<!-- RatStr&#45;&gt;Rat -->
 <g id="edge14" class="edge">
-<title>IntStr&#45;&gt;Int</title>
-<path fill="none" stroke="#000000" d="M255.99,-107.95C254.67,-115.65 253.07,-124.97 251.59,-133.64"/>
-<polygon fill="#000000" stroke="#000000" points="248.1,-133.28 249.86,-143.72 255,-134.46 248.1,-133.28"/>
+<title>RatStr&#45;&gt;Rat</title>
+<path fill="none" stroke="#000000" d="M177.7,-32.17C158.63,-43.48 131.01,-59.87 110.32,-72.14"/>
+<polygon fill="#000000" stroke="#000000" points="108.45,-69.18 101.64,-77.29 112.02,-75.2 108.45,-69.18"/>
 </g>
 </g>
 </svg>

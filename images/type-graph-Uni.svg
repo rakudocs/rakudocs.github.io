@@ -78,18 +78,18 @@
 <path fill="none" stroke="#000000" d="M62.75,-180.3C62.75,-188.02 62.75,-197.29 62.75,-205.89"/>
 <polygon fill="#000000" stroke="#000000" points="59.25,-205.9 62.75,-215.9 66.25,-205.9 59.25,-205.9"/>
 </g>
-<!-- NFKD -->
+<!-- NFKC -->
 <g id="node6" class="node">
-<title>NFKD</title>
-<g id="a_node6"><a xlink:href="/type/NFKD" xlink:title="NFKD">
+<title>NFKC</title>
+<g id="a_node6"><a xlink:href="/type/NFKC" xlink:title="NFKC">
 <ellipse fill="none" stroke="#000000" cx="35.75" cy="-18" rx="36" ry="18"/>
-<text text-anchor="middle" x="35.75" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFKD</text>
+<text text-anchor="middle" x="35.75" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFKC</text>
 </a>
 </g>
 </g>
-<!-- NFKD&#45;&gt;Uni -->
+<!-- NFKC&#45;&gt;Uni -->
 <g id="edge3" class="edge">
-<title>NFKD&#45;&gt;Uni</title>
+<title>NFKC&#45;&gt;Uni</title>
 <path fill="none" stroke="#000000" d="M58.22,-32C77.96,-43.42 106.77,-60.09 128.14,-72.45"/>
 <polygon fill="#000000" stroke="#000000" points="126.39,-75.48 136.8,-77.46 129.9,-69.42 126.39,-75.48"/>
 </g>
@@ -123,18 +123,18 @@
 <path fill="none" stroke="#000000" d="M185.93,-35.24C181.33,-43.72 175.59,-54.29 170.43,-63.8"/>
 <polygon fill="#000000" stroke="#000000" points="167.21,-62.39 165.51,-72.85 173.36,-65.73 167.21,-62.39"/>
 </g>
-<!-- NFKC -->
+<!-- NFKD -->
 <g id="node9" class="node">
-<title>NFKC</title>
-<g id="a_node9"><a xlink:href="/type/NFKC" xlink:title="NFKC">
+<title>NFKD</title>
+<g id="a_node9"><a xlink:href="/type/NFKD" xlink:title="NFKD">
 <ellipse fill="none" stroke="#000000" cx="277.75" cy="-18" rx="36" ry="18"/>
-<text text-anchor="middle" x="277.75" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFKC</text>
+<text text-anchor="middle" x="277.75" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFKD</text>
 </a>
 </g>
 </g>
-<!-- NFKC&#45;&gt;Uni -->
+<!-- NFKD&#45;&gt;Uni -->
 <g id="edge6" class="edge">
-<title>NFKC&#45;&gt;Uni</title>
+<title>NFKD&#45;&gt;Uni</title>
 <path fill="none" stroke="#000000" d="M255.27,-32C235.54,-43.42 206.73,-60.09 185.35,-72.45"/>
 <polygon fill="#000000" stroke="#000000" points="183.6,-69.42 176.69,-77.46 187.1,-75.48 183.6,-69.42"/>
 </g>

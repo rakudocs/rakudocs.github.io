@@ -121,7 +121,7 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>fail</span></span><span>(</span><span class="support type perl6fe"><span>Channel</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>error</span></span></span><span>)</span></span></div></pre><p>Closes the <code>Channel</code> (that is, makes subsequent <code>send</code> calls die), and enqueues the error to be thrown as the final element in the channel. Method <code>receive</code> will throw that error as an exception. Does nothing if the channel has already been closed or <code>.fail</code> has already been called on it.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>c</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Channel</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>c</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="keyword control control-handlers perl6fe"><span>fail</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Bad&nbsp;error&nbsp;happens!</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>c</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>receive</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control closure trait perl6fe"><span>CATCH</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>default</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>put</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>:&nbsp;</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>Str</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«X::AdHoc:&nbsp;Bad&nbsp;error&nbsp;happens!␤»</span></span></span></div></pre><h2 id="method_Capture"><a class="u" href="#___top" title="go to top of document">method Capture</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Capture</span></span><span>(</span><span class="support type perl6fe"><span>Channel</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Capture</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Equivalent to calling <a href="/type/List#method_Capture"><code>.List.Capture</code></a> on the invocant.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Capture</span></span><span>(</span><span class="support type perl6fe"><span>Channel</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Capture</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Equivalent to calling <a href="/type/List#method_Capture"><code>.List.Capture</code></a> on the invocant.</p>
 <h2 id="method_Supply"><a class="u" href="#___top" title="go to top of document">method Supply</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Supply</span></span><span>(</span><span class="support type perl6fe"><span>Channel</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>This returns an <code>on-demand</code> <a href="/type/Supply">Supply</a> that emits a value for every value received on the Channel. <code>done</code> will be called on the <code>Supply</code> when the <a href="/type/Channel">Channel</a> is closed.</p>
@@ -137,45 +137,40 @@
  viewBox="0.00 0.00 95.09 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-184 91.09,-184 91.09,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 91.0923,-184 91.0923,4 -4,4"/>
 <!-- Channel -->
-<g id="node1" class="node">
-<title>Channel</title>
+<g id="node1" class="node"><title>Channel</title>
 <g id="a_node1"><a xlink:href="/type/Channel" xlink:title="Channel">
-<ellipse fill="none" stroke="#000000" cx="43.55" cy="-18" rx="43.59" ry="18"/>
-<text text-anchor="middle" x="43.55" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Channel</text>
+<ellipse fill="none" stroke="#000000" cx="43.5461" cy="-18" rx="43.5923" ry="18"/>
+<text text-anchor="middle" x="43.5461" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Channel</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="43.55" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="43.55" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="43.5461" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="43.5461" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Channel&#45;&gt;Any -->
-<g id="edge1" class="edge">
-<title>Channel&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M43.55,-36.3C43.55,-44.02 43.55,-53.29 43.55,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="40.05,-61.9 43.55,-71.9 47.05,-61.9 40.05,-61.9"/>
+<g id="edge1" class="edge"><title>Channel&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M43.5461,-36.3034C43.5461,-44.0173 43.5461,-53.2875 43.5461,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="40.0462,-61.8956 43.5461,-71.8957 47.0462,-61.8957 40.0462,-61.8956"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="43.55" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="43.55" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="43.5461" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="43.5461" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M43.55,-108.3C43.55,-116.02 43.55,-125.29 43.55,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="40.05,-133.9 43.55,-143.9 47.05,-133.9 40.05,-133.9"/>
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M43.5461,-108.303C43.5461,-116.017 43.5461,-125.288 43.5461,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="40.0462,-133.896 43.5461,-143.896 47.0462,-133.896 40.0462,-133.896"/>
 </g>
 </g>
 </svg>

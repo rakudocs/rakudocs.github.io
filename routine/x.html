@@ -66,7 +66,7 @@
    <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(IO::Special)_method_x">(IO::Special) method x</a></td></tr>
      <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_IO::Path">class IO::Path</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(IO::Path)_method_x">(IO::Path) method x</a></td></tr>
-                 
+         
 </table>
 </nav>
 
@@ -85,8 +85,7 @@
 <p>From <a href="/type/IO::Path#method_x">IO::Path</a></p>
 <h2 id="(IO::Path)_method_x"><a href="/type/IO::Path#method_x">(IO::Path) method x</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>x</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Path</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns <code>True</code> if the invocant is a path that exists and is executable. The method will <a href="/routine/fail"><code>fail</code></a> with <code>X::IO::DoesNotExist</code> if the path points to a non-existent filesystem entity.</p>
-<p><strong>NOTE:</strong> If the file is a script (an executable text file and not a native executable), and the file has <em>only</em> executable permissions and <em>no</em> read permissions, this method will return <code>True</code> but trying to execute will fail. That is a limitation of the operating system.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>x</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns <code>True</code> if the invocant is a path that exists and is executable. The method will <a href="/routine/fail"><code>fail</code></a> with <code>X::IO::DoesNotExist</code> if the path points to a non-existent filesystem entity.</p>
 
     </div>
     

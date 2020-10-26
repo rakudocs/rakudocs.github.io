@@ -9,7 +9,6 @@ digraph "perl6-type-graph" {
     "Cool" [color="#000000", fontcolor="#000000", href="/type/Cool", fontname="FreeSans"];
     "Iterable" [color="#6666FF", fontcolor="#6666FF", href="/type/Iterable", fontname="FreeSans"];
     "PositionalBindFailover" [color="#6666FF", fontcolor="#6666FF", href="/type/PositionalBindFailover", fontname="FreeSans"];
-    "Sequence" [color="#6666FF", fontcolor="#6666FF", href="/type/Sequence", fontname="FreeSans"];
 
     // Superclasses
     "Seq" -> "Cool" [color="#000000"];
@@ -18,6 +17,5 @@ digraph "perl6-type-graph" {
 
     // Roles
     "Seq" -> "Iterable" [color="#6666FF"];
-    "Seq" -> "Sequence" [color="#6666FF"];
-    "Sequence" -> "PositionalBindFailover" [color="#6666FF"];
+    "Seq" -> "PositionalBindFailover" [color="#6666FF"];
 }

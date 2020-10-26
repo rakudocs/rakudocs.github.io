@@ -25,13 +25,10 @@ digraph "perl6-type-graph" {
     "Metamodel::BUILDPLAN" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BUILDPLAN", fontname="FreeSans"];
     "Metamodel::BoolificationProtocol" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BoolificationProtocol", fontname="FreeSans"];
     "Metamodel::ClassHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ClassHOW", fontname="FreeSans"];
-    "Metamodel::BaseType" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BaseType", fontname="FreeSans"];
-    "Metamodel::EnumHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::EnumHOW", fontname="FreeSans"];
 
     // Superclasses
     "Any" -> "Mu" [color="#000000"];
     "Metamodel::ClassHOW" -> "Any" [color="#000000"];
-    "Metamodel::EnumHOW" -> "Any" [color="#000000"];
 
     // Roles
     "Metamodel::ClassHOW" -> "Metamodel::Naming" [color="#6666FF"];
@@ -53,16 +50,4 @@ digraph "perl6-type-graph" {
     "Metamodel::ClassHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::Mixins" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::Naming" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::Stashing" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::AttributeContainer" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::MethodContainer" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::MultiMethodContainer" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::RoleContainer" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::BaseType" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::MROBasedMethodDispatch" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::MROBasedTypeChecking" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::Mixins" [color="#6666FF"];
 }

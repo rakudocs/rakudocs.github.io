@@ -17,7 +17,6 @@ digraph "perl6-type-graph" {
     "Metamodel::MROBasedTypeChecking" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::MROBasedTypeChecking", fontname="FreeSans"];
     "Metamodel::BUILDPLAN" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BUILDPLAN", fontname="FreeSans"];
     "Metamodel::BoolificationProtocol" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BoolificationProtocol", fontname="FreeSans"];
-    "Metamodel::Mixins" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::Mixins", fontname="FreeSans"];
 
     // Superclasses
     "Metamodel::EnumHOW" -> "Any" [color="#000000"];
@@ -35,5 +34,4 @@ digraph "perl6-type-graph" {
     "Metamodel::EnumHOW" -> "Metamodel::MROBasedTypeChecking" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::Mixins" [color="#6666FF"];
 }

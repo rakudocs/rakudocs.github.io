@@ -66,7 +66,6 @@ digraph "perl6-type-graph" {
     "Metamodel::EnumHOW" -> "Metamodel::MROBasedTypeChecking" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
-    "Metamodel::EnumHOW" -> "Metamodel::Mixins" [color="#6666FF"];
     "Metamodel::NativeHOW" -> "Metamodel::Naming" [color="#6666FF"];
     "Metamodel::NativeHOW" -> "Metamodel::Documenting" [color="#6666FF"];
     "Metamodel::NativeHOW" -> "Metamodel::Versioning" [color="#6666FF"];

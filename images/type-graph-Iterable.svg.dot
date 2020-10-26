@@ -9,13 +9,13 @@ digraph "perl6-type-graph" {
     "Cool" [color="#000000", fontcolor="#000000", href="/type/Cool", fontname="FreeSans"];
     "Positional" [color="#6666FF", fontcolor="#6666FF", href="/type/Positional", fontname="FreeSans"];
     "List" [color="#000000", fontcolor="#000000", href="/type/List", fontname="FreeSans"];
-    "Range" [color="#000000", fontcolor="#000000", href="/type/Range", fontname="FreeSans"];
-    "PositionalBindFailover" [color="#6666FF", fontcolor="#6666FF", href="/type/PositionalBindFailover", fontname="FreeSans"];
     "Sequence" [color="#6666FF", fontcolor="#6666FF", href="/type/Sequence", fontname="FreeSans"];
     "HyperSeq" [color="#000000", fontcolor="#000000", href="/type/HyperSeq", fontname="FreeSans"];
-    "Seq" [color="#000000", fontcolor="#000000", href="/type/Seq", fontname="FreeSans"];
     "Associative" [color="#6666FF", fontcolor="#6666FF", href="/type/Associative", fontname="FreeSans"];
     "Map" [color="#000000", fontcolor="#000000", href="/type/Map", fontname="FreeSans"];
+    "PositionalBindFailover" [color="#6666FF", fontcolor="#6666FF", href="/type/PositionalBindFailover", fontname="FreeSans"];
+    "Seq" [color="#000000", fontcolor="#000000", href="/type/Seq", fontname="FreeSans"];
+    "Range" [color="#000000", fontcolor="#000000", href="/type/Range", fontname="FreeSans"];
     "RaceSeq" [color="#000000", fontcolor="#000000", href="/type/RaceSeq", fontname="FreeSans"];
     "Slip" [color="#000000", fontcolor="#000000", href="/type/Slip", fontname="FreeSans"];
     "Array" [color="#000000", fontcolor="#000000", href="/type/Array", fontname="FreeSans"];
@@ -27,10 +27,10 @@ digraph "perl6-type-graph" {
     "Any" -> "Mu" [color="#000000"];
     "Cool" -> "Any" [color="#000000"];
     "List" -> "Cool" [color="#000000"];
-    "Range" -> "Cool" [color="#000000"];
     "HyperSeq" -> "Any" [color="#000000"];
-    "Seq" -> "Cool" [color="#000000"];
     "Map" -> "Cool" [color="#000000"];
+    "Seq" -> "Cool" [color="#000000"];
+    "Range" -> "Cool" [color="#000000"];
     "RaceSeq" -> "Any" [color="#000000"];
     "Slip" -> "List" [color="#000000"];
     "Array" -> "List" [color="#000000"];
@@ -41,15 +41,14 @@ digraph "perl6-type-graph" {
     // Roles
     "List" -> "Positional" [color="#6666FF"];
     "List" -> "Iterable" [color="#6666FF"];
-    "Range" -> "Positional" [color="#6666FF"];
-    "Range" -> "Iterable" [color="#6666FF"];
-    "Sequence" -> "PositionalBindFailover" [color="#6666FF"];
     "HyperSeq" -> "Iterable" [color="#6666FF"];
     "HyperSeq" -> "Sequence" [color="#6666FF"];
-    "Seq" -> "Iterable" [color="#6666FF"];
-    "Seq" -> "Sequence" [color="#6666FF"];
     "Map" -> "Iterable" [color="#6666FF"];
     "Map" -> "Associative" [color="#6666FF"];
+    "Seq" -> "Iterable" [color="#6666FF"];
+    "Seq" -> "PositionalBindFailover" [color="#6666FF"];
+    "Range" -> "Positional" [color="#6666FF"];
+    "Range" -> "Iterable" [color="#6666FF"];
     "RaceSeq" -> "Iterable" [color="#6666FF"];
     "RaceSeq" -> "Sequence" [color="#6666FF"];
 }

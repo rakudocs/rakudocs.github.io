@@ -152,16 +152,17 @@
                    <tr class="toc-level-2"><td class="toc-number">1.76</td><td class="toc-text"><a href="#routine_rindex">routine rindex</a></td></tr>
                      <tr class="toc-level-2"><td class="toc-number">1.77</td><td class="toc-text"><a href="#method_match">method match</a></td></tr>
         <tr class="toc-level-2"><td class="toc-number">1.78</td><td class="toc-text"><a href="#routine_roots">routine roots</a></td></tr>
-                                           <tr class="toc-level-2"><td class="toc-number">1.79</td><td class="toc-text"><a href="#method_subst">method subst</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">1.80</td><td class="toc-text"><a href="#method_trans">method trans</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">1.81</td><td class="toc-text"><a href="#method_IO">method IO</a></td></tr>
+                                           <tr class="toc-level-2"><td class="toc-number">1.79</td><td class="toc-text"><a href="#method_match">method match</a></td></tr>
+        <tr class="toc-level-2"><td class="toc-number">1.80</td><td class="toc-text"><a href="#method_subst">method subst</a></td></tr>
+        <tr class="toc-level-2"><td class="toc-number">1.81</td><td class="toc-text"><a href="#method_trans">method trans</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.82</td><td class="toc-text"><a href="#method_IO">method IO</a></td></tr>
         <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
  
 </table>
 </nav>
 
     <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Cool</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Any</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><code>Cool</code>, also known as the <strong>C</strong>onvenient <strong>OO</strong> <strong>L</strong>oop, is a base class employed by a number of built-in classes whose instances can be meaningfully coerced to a string and a number. For example, an <a href="/type/Array">Array</a> can be used in mathematical operations, where its numerical representation is the number of elements it contains. At the same time, it can be concatenated to a string, where its stringy representation is all of its elements <a href="/routine/join">joined</a> by a space. Because <a href="/type/Array">Array</a> is <code>Cool</code>, the appropriate coercion happens automatically.</p>
+    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Cool</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Any</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><code>Cool</code>, also known as the <strong>C</strong>onvenient <strong>OO</strong> <strong>L</strong>oop, is a base class employed by a number of built-in classes whose instances can be meaningfully coerced to a string and a number. For example, an <a href="/type/Array">Array</a> can be used in mathematical operations, where its numerical representation is the number of elements it contains. At the same time, it can be concatenated to a string, where its stringy representation is all of its elements <a href="/routine/join">joined</a> by a space. Because <a href="/type/Array">Array</a> is <a href="/type/Cool">Cool</a>, the appropriate coercion happens automatically.</p>
 <p>Methods in <code>Cool</code> coerce the invocant to a more specific type, and then call the same method on that type. For example both <a href="/type/Int">Int</a> and <a href="/type/Str">Str</a> inherit from <code>Cool</code>, and calling method <code>substr</code> on an <code>Int</code> converts the integer to <code>Str</code> first.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>123</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>substr</span></span><span>(</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>);&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;&#39;2&#39;,&nbsp;same&nbsp;as&nbsp;123.Str.substr(1,&nbsp;1)</span></span></span></div></pre><p>The following built-in types inherit from <code>Cool</code>: <a href="/type/Array">Array</a> <a href="/type/Bool">Bool</a> <a href="/type/Complex">Complex</a> <a href="/type/Cool">Cool</a> <a href="/type/Duration">Duration</a> <a href="/type/Map">Map</a> <a href="/type/FatRat">FatRat</a> <a href="/type/Hash">Hash</a> <a href="/type/Instant">Instant</a> <a href="/type/Int">Int</a> <a href="/type/List">List</a> <a href="/type/Match">Match</a> <a href="/type/Nil">Nil</a> <a href="/type/Num">Num</a> <a href="/type/Range">Range</a> <a href="/type/Seq">Seq</a> <a href="/type/Stash">Stash</a> <a href="/type/Str">Str</a>.</p>
 <p>The following table summarizes the methods that <code>Cool</code> provides, and what type they coerce to:</p>
@@ -454,12 +455,15 @@
 <p>See <a href="/type/Str#routine_rindex">the documentation in type Str</a> for examples.</p>
 <h2 id="method_match"><a class="u" href="#___top" title="go to top of document">method match</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>match</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>target</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>adverbs</span></span></span><span>)</span></span></div></pre><p>Coerces the invocant to <a href="/type/Stringy">Stringy</a> and calls the method <a href="/type/Str#method_match">match</a> on it.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>match</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>target</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>adverbs</span></span></span><span>)</span></span></div></pre><p>Coerces the invocant to <a href="/type/Str">Str</a> and calls the method <a href="/type/Str#method_match">match</a> on it.</p>
 <h2 id="routine_roots"><a class="u" href="#___top" title="go to top of document">routine roots</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>roots</span></span><span>(</span><span class="support type perl6fe"><span>Numeric</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>n</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>roots</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>n</span></span></span><span>)</span></span></div></pre><p>Coerces the first argument (and in method form, the invocant) to <a href="/type/Numeric">Numeric</a> and the second (<code>$n</code>) to <a href="/type/Int">Int</a>, and produces a list of <code>$n</code> <a href="/type/Complex">Complex</a> <code>$n</code>-roots, which means numbers that, raised to the <code>$n</code>th power, approximately produce the original number.</p>
 <p>For example</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>16</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>roots</span></span><span>(</span><span class="constant numeric perl6fe"><span>4</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>r</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>abs</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>r</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>-</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span>);</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«2+0i&nbsp;1.22464679914735e-16+2i&nbsp;-2+2.44929359829471e-16i&nbsp;-3.67394039744206e-16-2i␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«1.77635683940025e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«4.30267170434156e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«8.03651692704705e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«1.04441561648202e-14␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="method_subst"><a class="u" href="#___top" title="go to top of document">method subst</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>16</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>roots</span></span><span>(</span><span class="constant numeric perl6fe"><span>4</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>r</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>abs</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>r</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>-</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span>);</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«2+0i&nbsp;1.22464679914735e-16+2i&nbsp;-2+2.44929359829471e-16i&nbsp;-3.67394039744206e-16-2i␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«1.77635683940025e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«4.30267170434156e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«8.03651692704705e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«1.04441561648202e-14␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="method_match"><a class="u" href="#___top" title="go to top of document">method match</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>match</span></span><span class="keyword operator setbagmix perl6fe"><span>(|)</span></span></span></div></pre><p>Coerces the invocant to <a href="/type/Stringy">Stringy</a> and calls <a href="/type/Str#method_match">Str.match</a>.</p>
+<h2 id="method_subst"><a class="u" href="#___top" title="go to top of document">method subst</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>subst</span></span><span class="keyword operator setbagmix perl6fe"><span>(|)</span></span></span></div></pre><p>Coerces the invocant to <a href="/type/Stringy">Stringy</a> and calls <a href="/type/Str#method_subst">Str.subst</a>.</p>
 <h2 id="method_trans"><a class="u" href="#___top" title="go to top of document">method trans</a></h2>
@@ -471,520 +475,424 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>.</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>dir</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;gives&nbsp;a&nbsp;directory&nbsp;listing</span><span>&nbsp;</span></span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Cool</code></figcaption>
-  <svg width="1554pt" height="332pt"
- viewBox="0.00 0.00 1553.99 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg width="1517pt" height="332pt"
+ viewBox="0.00 0.00 1516.99 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-328 1549.99,-328 1549.99,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 1512.99,-328 1512.99,4 -4,4"/>
 <!-- Cool -->
-<g id="node1" class="node">
-<title>Cool</title>
+<g id="node1" class="node"><title>Cool</title>
 <g id="a_node1"><a xlink:href="/type/Cool" xlink:title="Cool">
-<ellipse fill="none" stroke="#000000" cx="733.49" cy="-162" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="733.49" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
+<ellipse fill="none" stroke="#000000" cx="705.496" cy="-162" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="705.496" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="641.49" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="641.49" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="653.496" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="653.496" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Cool&#45;&gt;Any -->
-<g id="edge1" class="edge">
-<title>Cool&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M715.75,-176.5C701.83,-187.09 682.27,-201.97 666.72,-213.8"/>
-<polygon fill="#000000" stroke="#000000" points="664.39,-211.18 658.55,-220.02 668.63,-216.75 664.39,-211.18"/>
+<g id="edge1" class="edge"><title>Cool&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M693.955,-178.535C687.223,-187.598 678.594,-199.214 671.036,-209.388"/>
+<polygon fill="#000000" stroke="#000000" points="668.158,-207.394 665.004,-217.508 673.777,-211.568 668.158,-207.394"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="641.49" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="641.49" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="653.496" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="653.496" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M641.49,-252.3C641.49,-260.02 641.49,-269.29 641.49,-277.89"/>
-<polygon fill="#000000" stroke="#000000" points="637.99,-277.9 641.49,-287.9 644.99,-277.9 637.99,-277.9"/>
-</g>
-<!-- Nil -->
-<g id="node4" class="node">
-<title>Nil</title>
-<g id="a_node4"><a xlink:href="/type/Nil" xlink:title="Nil">
-<ellipse fill="none" stroke="#000000" cx="815.49" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="815.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Nil</text>
-</a>
-</g>
-</g>
-<!-- Nil&#45;&gt;Cool -->
-<g id="edge3" class="edge">
-<title>Nil&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M799.29,-104.83C787.46,-114.93 771.23,-128.79 757.84,-140.21"/>
-<polygon fill="#000000" stroke="#000000" points="755.27,-137.8 749.94,-146.96 759.82,-143.13 755.27,-137.8"/>
-</g>
-<!-- Positional -->
-<g id="node5" class="node">
-<title>Positional</title>
-<g id="a_node5"><a xlink:href="/type/Positional" xlink:title="Positional">
-<ellipse fill="none" stroke="#6666ff" cx="312.49" cy="-162" rx="48.99" ry="18"/>
-<text text-anchor="middle" x="312.49" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
-</a>
-</g>
-</g>
-<!-- Iterable -->
-<g id="node6" class="node">
-<title>Iterable</title>
-<g id="a_node6"><a xlink:href="/type/Iterable" xlink:title="Iterable">
-<ellipse fill="none" stroke="#6666ff" cx="205.49" cy="-162" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="205.49" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
-</a>
-</g>
-</g>
-<!-- List -->
-<g id="node7" class="node">
-<title>List</title>
-<g id="a_node7"><a xlink:href="/type/List" xlink:title="List">
-<ellipse fill="none" stroke="#000000" cx="249.49" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="249.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
-</a>
-</g>
-</g>
-<!-- List&#45;&gt;Cool -->
-<g id="edge4" class="edge">
-<title>List&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M270.85,-101.09C278.6,-104.75 285.49,-108 285.49,-108 285.49,-108 695.49,-144 695.49,-144 695.49,-144 697.92,-145.09 701.55,-146.71"/>
-<polygon fill="#000000" stroke="#000000" points="700.39,-150.03 710.95,-150.91 703.25,-143.64 700.39,-150.03"/>
-</g>
-<!-- List&#45;&gt;Positional -->
-<g id="edge21" class="edge">
-<title>List&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M262.85,-105.85C271.03,-114.93 281.67,-126.76 291.01,-137.13"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="288.54,-139.62 297.83,-144.71 293.74,-134.94 288.54,-139.62"/>
-</g>
-<!-- List&#45;&gt;Iterable -->
-<g id="edge22" class="edge">
-<title>List&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M239.51,-106.88C234.2,-115.32 227.56,-125.9 221.55,-135.45"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="218.41,-133.87 216.05,-144.2 224.33,-137.6 218.41,-133.87"/>
-</g>
-<!-- Stringy -->
-<g id="node8" class="node">
-<title>Stringy</title>
-<g id="a_node8"><a xlink:href="/type/Stringy" xlink:title="Stringy">
-<ellipse fill="none" stroke="#6666ff" cx="648.49" cy="-162" rx="38.19" ry="18"/>
-<text text-anchor="middle" x="648.49" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
-</a>
-</g>
-</g>
-<!-- Str -->
-<g id="node9" class="node">
-<title>Str</title>
-<g id="a_node9"><a xlink:href="/type/Str" xlink:title="Str">
-<ellipse fill="none" stroke="#000000" cx="575.49" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="575.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Str</text>
-</a>
-</g>
-</g>
-<!-- Str&#45;&gt;Cool -->
-<g id="edge5" class="edge">
-<title>Str&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M597.5,-100.72C632.14,-116.02 695.49,-144 695.49,-144 695.49,-144 697.92,-145.09 701.55,-146.71"/>
-<polygon fill="#000000" stroke="#000000" points="700.39,-150.03 710.95,-150.91 703.25,-143.64 700.39,-150.03"/>
-</g>
-<!-- Str&#45;&gt;Stringy -->
-<g id="edge23" class="edge">
-<title>Str&#45;&gt;Stringy</title>
-<path fill="none" stroke="#6666ff" d="M590.26,-105.17C600.22,-114.71 613.56,-127.5 624.96,-138.43"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="622.83,-141.25 632.47,-145.64 627.68,-136.19 622.83,-141.25"/>
-</g>
-<!-- IO -->
-<g id="node10" class="node">
-<title>IO</title>
-<g id="a_node10"><a xlink:href="/type/IO" xlink:title="IO">
-<ellipse fill="none" stroke="#6666ff" cx="942.49" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="942.49" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">IO</text>
-</a>
-</g>
-</g>
-<!-- IO::Path -->
-<g id="node11" class="node">
-<title>IO::Path</title>
-<g id="a_node11"><a xlink:href="/type/IO::Path" xlink:title="IO::Path">
-<ellipse fill="none" stroke="#000000" cx="942.49" cy="-90" rx="43.59" ry="18"/>
-<text text-anchor="middle" x="942.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path</text>
-</a>
-</g>
-</g>
-<!-- IO::Path&#45;&gt;Cool -->
-<g id="edge6" class="edge">
-<title>IO::Path&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M909.84,-101.94C871.18,-114.88 807.11,-136.34 767.76,-149.52"/>
-<polygon fill="#000000" stroke="#000000" points="766.45,-146.27 758.08,-152.76 768.67,-152.91 766.45,-146.27"/>
-</g>
-<!-- IO::Path&#45;&gt;IO -->
-<g id="edge24" class="edge">
-<title>IO::Path&#45;&gt;IO</title>
-<path fill="none" stroke="#6666ff" d="M942.49,-108.3C942.49,-116.02 942.49,-125.29 942.49,-133.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="938.99,-133.9 942.49,-143.9 945.99,-133.9 938.99,-133.9"/>
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M653.496,-252.303C653.496,-260.017 653.496,-269.288 653.496,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="649.996,-277.896 653.496,-287.896 656.996,-277.896 649.996,-277.896"/>
 </g>
 <!-- Numeric -->
-<g id="node12" class="node">
-<title>Numeric</title>
-<g id="a_node12"><a xlink:href="/type/Numeric" xlink:title="Numeric">
-<ellipse fill="none" stroke="#6666ff" cx="1348.49" cy="-234" rx="44.39" ry="18"/>
-<text text-anchor="middle" x="1348.49" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Numeric</text>
+<g id="node4" class="node"><title>Numeric</title>
+<g id="a_node4"><a xlink:href="/type/Numeric" xlink:title="Numeric">
+<ellipse fill="none" stroke="#6666ff" cx="252.496" cy="-234" rx="44.393" ry="18"/>
+<text text-anchor="middle" x="252.496" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Numeric</text>
 </a>
 </g>
 </g>
 <!-- Real -->
-<g id="node13" class="node">
-<title>Real</title>
-<g id="a_node13"><a xlink:href="/type/Real" xlink:title="Real">
-<ellipse fill="none" stroke="#6666ff" cx="1265.49" cy="-162" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="1265.49" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Real</text>
+<g id="node5" class="node"><title>Real</title>
+<g id="a_node5"><a xlink:href="/type/Real" xlink:title="Real">
+<ellipse fill="none" stroke="#6666ff" cx="280.496" cy="-162" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="280.496" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Real</text>
 </a>
 </g>
 </g>
 <!-- Real&#45;&gt;Numeric -->
-<g id="edge25" class="edge">
-<title>Real&#45;&gt;Numeric</title>
-<path fill="none" stroke="#6666ff" d="M1281.89,-176.83C1293.39,-186.53 1309.02,-199.71 1322.24,-210.86"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="1320.2,-213.72 1330.1,-217.49 1324.72,-208.37 1320.2,-213.72"/>
-</g>
-<!-- Rational -->
-<g id="node14" class="node">
-<title>Rational</title>
-<g id="a_node14"><a xlink:href="/type/Rational" xlink:title="Rational">
-<ellipse fill="none" stroke="#6666ff" cx="1394.49" cy="-90" rx="42.79" ry="18"/>
-<text text-anchor="middle" x="1394.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Rational</text>
-</a>
-</g>
-</g>
-<!-- Rational&#45;&gt;Real -->
-<g id="edge26" class="edge">
-<title>Rational&#45;&gt;Real</title>
-<path fill="none" stroke="#6666ff" d="M1369.31,-104.66C1348.14,-116.15 1317.83,-132.6 1295.42,-144.76"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="1293.47,-141.84 1286.35,-149.68 1296.81,-147.99 1293.47,-141.84"/>
-</g>
-<!-- Rat -->
-<g id="node15" class="node">
-<title>Rat</title>
-<g id="a_node15"><a xlink:href="/type/Rat" xlink:title="Rat">
-<ellipse fill="none" stroke="#000000" cx="971.49" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="971.49" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Rat</text>
-</a>
-</g>
-</g>
-<!-- Rat&#45;&gt;Cool -->
-<g id="edge7" class="edge">
-<title>Rat&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M945.41,-23.29C868.76,-35.91 649.49,-72 649.49,-72 649.49,-72 649.49,-108 649.49,-108 649.49,-108 680.98,-127.87 705.4,-143.28"/>
-<polygon fill="#000000" stroke="#000000" points="703.68,-146.33 714.01,-148.71 707.42,-140.41 703.68,-146.33"/>
-</g>
-<!-- Rat&#45;&gt;Rational -->
-<g id="edge27" class="edge">
-<title>Rat&#45;&gt;Rational</title>
-<path fill="none" stroke="#6666ff" d="M997.59,-22.86C1031.52,-27.87 1086.49,-36 1086.49,-36 1086.49,-36 1342.49,-72 1342.49,-72 1342.49,-72 1346.26,-73.23 1351.77,-75.03"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="1350.97,-78.45 1361.56,-78.23 1353.14,-71.8 1350.97,-78.45"/>
-</g>
-<!-- Duration -->
-<g id="node16" class="node">
-<title>Duration</title>
-<g id="a_node16"><a xlink:href="/type/Duration" xlink:title="Duration">
-<ellipse fill="none" stroke="#000000" cx="1125.49" cy="-90" rx="44.39" ry="18"/>
-<text text-anchor="middle" x="1125.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Duration</text>
-</a>
-</g>
-</g>
-<!-- Duration&#45;&gt;Cool -->
-<g id="edge8" class="edge">
-<title>Duration&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M1091.93,-101.77C1081.41,-105.14 1072.49,-108 1072.49,-108 1072.49,-108 859.33,-141.33 771.07,-155.13"/>
-<polygon fill="#000000" stroke="#000000" points="770.29,-151.7 760.95,-156.71 771.37,-158.62 770.29,-151.7"/>
-</g>
-<!-- Duration&#45;&gt;Real -->
-<g id="edge28" class="edge">
-<title>Duration&#45;&gt;Real</title>
-<path fill="none" stroke="#6666ff" d="M1152.48,-104.5C1175.91,-116.21 1209.84,-133.17 1234.4,-145.45"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="1233.13,-148.73 1243.64,-150.07 1236.26,-142.47 1233.13,-148.73"/>
-</g>
-<!-- Complex -->
-<g id="node17" class="node">
-<title>Complex</title>
-<g id="a_node17"><a xlink:href="/type/Complex" xlink:title="Complex">
-<ellipse fill="none" stroke="#000000" cx="1500.49" cy="-90" rx="45.49" ry="18"/>
-<text text-anchor="middle" x="1500.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Complex</text>
-</a>
-</g>
-</g>
-<!-- Complex&#45;&gt;Cool -->
-<g id="edge9" class="edge">
-<title>Complex&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M1465.99,-101.86C1455.4,-105.19 1446.49,-108 1446.49,-108 1446.49,-108 906.49,-144 906.49,-144 906.49,-144 822.64,-152.24 771.7,-157.25"/>
-<polygon fill="#000000" stroke="#000000" points="771.28,-153.77 761.67,-158.23 771.97,-160.74 771.28,-153.77"/>
-</g>
-<!-- Complex&#45;&gt;Numeric -->
-<g id="edge29" class="edge">
-<title>Complex&#45;&gt;Numeric</title>
-<path fill="none" stroke="#6666ff" d="M1483.64,-106.74C1456.71,-131.9 1403.83,-181.3 1372.8,-210.29"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="1370.33,-207.81 1365.41,-217.19 1375.11,-212.92 1370.33,-207.81"/>
-</g>
-<!-- FatRat -->
-<g id="node18" class="node">
-<title>FatRat</title>
-<g id="a_node18"><a xlink:href="/type/FatRat" xlink:title="FatRat">
-<ellipse fill="none" stroke="#000000" cx="1132.49" cy="-18" rx="37.09" ry="18"/>
-<text text-anchor="middle" x="1132.49" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">FatRat</text>
-</a>
-</g>
-</g>
-<!-- FatRat&#45;&gt;Cool -->
-<g id="edge10" class="edge">
-<title>FatRat&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M1099.47,-26.2C1033.03,-40.69 889.49,-72 889.49,-72 889.49,-72 851.49,-108 851.49,-108 851.49,-108 800.56,-130.88 765.62,-146.57"/>
-<polygon fill="#000000" stroke="#000000" points="763.93,-143.49 756.24,-150.78 766.8,-149.88 763.93,-143.49"/>
-</g>
-<!-- FatRat&#45;&gt;Rational -->
-<g id="edge30" class="edge">
-<title>FatRat&#45;&gt;Rational</title>
-<path fill="none" stroke="#6666ff" d="M1164.84,-27.17C1223.75,-42.03 1342.49,-72 1342.49,-72 1342.49,-72 1346.26,-73.23 1351.77,-75.03"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="1350.97,-78.45 1361.56,-78.23 1353.14,-71.8 1350.97,-78.45"/>
+<g id="edge20" class="edge"><title>Real&#45;&gt;Numeric</title>
+<path fill="none" stroke="#6666ff" d="M273.86,-179.589C270.63,-187.665 266.668,-197.569 263.038,-206.645"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="259.743,-205.459 259.278,-216.044 266.242,-208.059 259.743,-205.459"/>
 </g>
 <!-- Instant -->
-<g id="node19" class="node">
-<title>Instant</title>
-<g id="a_node19"><a xlink:href="/type/Instant" xlink:title="Instant">
-<ellipse fill="none" stroke="#000000" cx="1224.49" cy="-90" rx="37.09" ry="18"/>
-<text text-anchor="middle" x="1224.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Instant</text>
+<g id="node6" class="node"><title>Instant</title>
+<g id="a_node6"><a xlink:href="/type/Instant" xlink:title="Instant">
+<ellipse fill="none" stroke="#000000" cx="505.496" cy="-90" rx="37.0935" ry="18"/>
+<text text-anchor="middle" x="505.496" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Instant</text>
 </a>
 </g>
 </g>
 <!-- Instant&#45;&gt;Cool -->
-<g id="edge11" class="edge">
-<title>Instant&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M1195.88,-101.57C1186.53,-105.03 1178.49,-108 1178.49,-108 1178.49,-108 879.03,-143.67 771.42,-156.48"/>
-<polygon fill="#000000" stroke="#000000" points="770.84,-153.03 761.33,-157.68 771.67,-159.98 770.84,-153.03"/>
+<g id="edge3" class="edge"><title>Instant&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M534.105,-101.573C543.46,-105.03 551.496,-108 551.496,-108 551.496,-108 626.291,-133.741 671.631,-149.345"/>
+<polygon fill="#000000" stroke="#000000" points="670.5,-152.657 681.094,-152.602 672.778,-146.038 670.5,-152.657"/>
 </g>
 <!-- Instant&#45;&gt;Real -->
-<g id="edge31" class="edge">
-<title>Instant&#45;&gt;Real</title>
-<path fill="none" stroke="#6666ff" d="M1234.21,-107.59C1239.11,-115.96 1245.16,-126.29 1250.63,-135.63"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="1247.77,-137.67 1255.84,-144.53 1253.81,-134.13 1247.77,-137.67"/>
+<g id="edge21" class="edge"><title>Instant&#45;&gt;Real</title>
+<path fill="none" stroke="#6666ff" d="M476.887,-101.573C467.532,-105.03 459.496,-108 459.496,-108 459.496,-108 367.745,-135.166 315.62,-150.6"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="314.357,-147.324 305.763,-153.519 316.345,-154.036 314.357,-147.324"/>
+</g>
+<!-- IO -->
+<g id="node7" class="node"><title>IO</title>
+<g id="a_node7"><a xlink:href="/type/IO" xlink:title="IO">
+<ellipse fill="none" stroke="#6666ff" cx="831.496" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="831.496" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">IO</text>
+</a>
+</g>
+</g>
+<!-- IO::Path -->
+<g id="node8" class="node"><title>IO::Path</title>
+<g id="a_node8"><a xlink:href="/type/IO::Path" xlink:title="IO::Path">
+<ellipse fill="none" stroke="#000000" cx="840.496" cy="-90" rx="43.5923" ry="18"/>
+<text text-anchor="middle" x="840.496" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path</text>
+</a>
+</g>
+</g>
+<!-- IO::Path&#45;&gt;Cool -->
+<g id="edge4" class="edge"><title>IO::Path&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M814.467,-104.497C792.01,-116.141 759.554,-132.97 735.907,-145.231"/>
+<polygon fill="#000000" stroke="#000000" points="734.265,-142.14 726.999,-149.85 737.488,-148.354 734.265,-142.14"/>
+</g>
+<!-- IO::Path&#45;&gt;IO -->
+<g id="edge22" class="edge"><title>IO::Path&#45;&gt;IO</title>
+<path fill="none" stroke="#6666ff" d="M838.271,-108.303C837.279,-116.017 836.088,-125.288 834.982,-133.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="831.499,-133.531 833.695,-143.896 838.442,-134.424 831.499,-133.531"/>
+</g>
+<!-- Stringy -->
+<g id="node9" class="node"><title>Stringy</title>
+<g id="a_node9"><a xlink:href="/type/Stringy" xlink:title="Stringy">
+<ellipse fill="none" stroke="#6666ff" cx="914.496" cy="-162" rx="38.1938" ry="18"/>
+<text text-anchor="middle" x="914.496" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
+</a>
+</g>
+</g>
+<!-- Str -->
+<g id="node10" class="node"><title>Str</title>
+<g id="a_node10"><a xlink:href="/type/Str" xlink:title="Str">
+<ellipse fill="none" stroke="#000000" cx="929.496" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="929.496" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Str</text>
+</a>
+</g>
+</g>
+<!-- Str&#45;&gt;Cool -->
+<g id="edge5" class="edge"><title>Str&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M908.139,-101.085C900.387,-104.746 893.496,-108 893.496,-108 893.496,-108 795.331,-135.674 740.869,-151.028"/>
+<polygon fill="#000000" stroke="#000000" points="739.918,-147.66 731.242,-153.742 741.817,-154.397 739.918,-147.66"/>
+</g>
+<!-- Str&#45;&gt;Stringy -->
+<g id="edge23" class="edge"><title>Str&#45;&gt;Stringy</title>
+<path fill="none" stroke="#6666ff" d="M925.865,-107.945C924.195,-115.739 922.172,-125.178 920.299,-133.921"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="916.871,-133.213 918.198,-143.725 923.715,-134.68 916.871,-133.213"/>
+</g>
+<!-- Positional -->
+<g id="node11" class="node"><title>Positional</title>
+<g id="a_node11"><a xlink:href="/type/Positional" xlink:title="Positional">
+<ellipse fill="none" stroke="#6666ff" cx="1019.5" cy="-162" rx="48.9926" ry="18"/>
+<text text-anchor="middle" x="1019.5" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
+</a>
+</g>
+</g>
+<!-- Iterable -->
+<g id="node12" class="node"><title>Iterable</title>
+<g id="a_node12"><a xlink:href="/type/Iterable" xlink:title="Iterable">
+<ellipse fill="none" stroke="#6666ff" cx="1126.5" cy="-162" rx="40.0939" ry="18"/>
+<text text-anchor="middle" x="1126.5" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
+</a>
+</g>
+</g>
+<!-- List -->
+<g id="node13" class="node"><title>List</title>
+<g id="a_node13"><a xlink:href="/type/List" xlink:title="List">
+<ellipse fill="none" stroke="#000000" cx="1091.5" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="1091.5" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
+</a>
+</g>
+</g>
+<!-- List&#45;&gt;Cool -->
+<g id="edge6" class="edge"><title>List&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M1070.14,-101.085C1062.39,-104.746 1055.5,-108 1055.5,-108 1055.5,-108 795.496,-144 795.496,-144 795.496,-144 767.311,-149.324 742.486,-154.013"/>
+<polygon fill="#000000" stroke="#000000" points="741.676,-150.604 732.499,-155.899 742.975,-157.482 741.676,-150.604"/>
+</g>
+<!-- List&#45;&gt;Positional -->
+<g id="edge24" class="edge"><title>List&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M1076.93,-105.166C1067.31,-114.514 1054.49,-126.98 1043.4,-137.761"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="1040.79,-135.416 1036.06,-144.897 1045.67,-140.435 1040.79,-135.416"/>
+</g>
+<!-- List&#45;&gt;Iterable -->
+<g id="edge25" class="edge"><title>List&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M1099.61,-107.235C1103.79,-115.596 1108.99,-125.984 1113.69,-135.394"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="1110.58,-136.988 1118.18,-144.367 1116.84,-133.857 1110.58,-136.988"/>
 </g>
 <!-- Capture -->
-<g id="node20" class="node">
-<title>Capture</title>
-<g id="a_node20"><a xlink:href="/type/Capture" xlink:title="Capture">
-<ellipse fill="none" stroke="#000000" cx="549.49" cy="-162" rx="42.49" ry="18"/>
-<text text-anchor="middle" x="549.49" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Capture</text>
+<g id="node14" class="node"><title>Capture</title>
+<g id="a_node14"><a xlink:href="/type/Capture" xlink:title="Capture">
+<ellipse fill="none" stroke="#000000" cx="602.496" cy="-162" rx="42.4939" ry="18"/>
+<text text-anchor="middle" x="602.496" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Capture</text>
 </a>
 </g>
 </g>
 <!-- Capture&#45;&gt;Any -->
-<g id="edge12" class="edge">
-<title>Capture&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M569.45,-178.19C583.15,-188.61 601.43,-202.52 616.16,-213.72"/>
-<polygon fill="#000000" stroke="#000000" points="614.27,-216.69 624.35,-219.96 618.51,-211.12 614.27,-216.69"/>
+<g id="edge7" class="edge"><title>Capture&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M614.582,-179.589C621.052,-188.47 629.133,-199.561 636.252,-209.332"/>
+<polygon fill="#000000" stroke="#000000" points="633.478,-211.468 642.195,-217.489 639.135,-207.346 633.478,-211.468"/>
 </g>
 <!-- Match -->
-<g id="node21" class="node">
-<title>Match</title>
-<g id="a_node21"><a xlink:href="/type/Match" xlink:title="Match">
-<ellipse fill="none" stroke="#000000" cx="495.49" cy="-90" rx="35.19" ry="18"/>
-<text text-anchor="middle" x="495.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Match</text>
+<g id="node15" class="node"><title>Match</title>
+<g id="a_node15"><a xlink:href="/type/Match" xlink:title="Match">
+<ellipse fill="none" stroke="#000000" cx="595.496" cy="-90" rx="35.194" ry="18"/>
+<text text-anchor="middle" x="595.496" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Match</text>
 </a>
 </g>
 </g>
 <!-- Match&#45;&gt;Cool -->
-<g id="edge14" class="edge">
-<title>Match&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M522.61,-101.48C531.66,-104.97 539.49,-108 539.49,-108 539.49,-108 695.49,-144 695.49,-144 695.49,-144 697.92,-145.09 701.55,-146.71"/>
-<polygon fill="#000000" stroke="#000000" points="700.39,-150.03 710.95,-150.91 703.25,-143.64 700.39,-150.03"/>
+<g id="edge9" class="edge"><title>Match&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M616.705,-104.497C634.059,-115.54 658.742,-131.248 677.68,-143.299"/>
+<polygon fill="#000000" stroke="#000000" points="675.878,-146.301 686.194,-148.717 679.636,-140.395 675.878,-146.301"/>
 </g>
 <!-- Match&#45;&gt;Capture -->
-<g id="edge13" class="edge">
-<title>Match&#45;&gt;Capture</title>
-<path fill="none" stroke="#000000" d="M507.74,-106.88C514.55,-115.71 523.16,-126.87 530.79,-136.76"/>
-<polygon fill="#000000" stroke="#000000" points="528.03,-138.91 536.91,-144.69 533.57,-134.64 528.03,-138.91"/>
-</g>
-<!-- StrDistance -->
-<g id="node22" class="node">
-<title>StrDistance</title>
-<g id="a_node22"><a xlink:href="/type/StrDistance" xlink:title="StrDistance">
-<ellipse fill="none" stroke="#000000" cx="714.49" cy="-90" rx="55.79" ry="18"/>
-<text text-anchor="middle" x="714.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">StrDistance</text>
-</a>
-</g>
-</g>
-<!-- StrDistance&#45;&gt;Cool -->
-<g id="edge15" class="edge">
-<title>StrDistance&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M719.09,-107.95C721.24,-115.86 723.84,-125.46 726.25,-134.31"/>
-<polygon fill="#000000" stroke="#000000" points="722.94,-135.48 728.93,-144.21 729.69,-133.64 722.94,-135.48"/>
-</g>
-<!-- Range -->
-<g id="node23" class="node">
-<title>Range</title>
-<g id="a_node23"><a xlink:href="/type/Range" xlink:title="Range">
-<ellipse fill="none" stroke="#000000" cx="330.49" cy="-90" rx="36.29" ry="18"/>
-<text text-anchor="middle" x="330.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
-</a>
-</g>
-</g>
-<!-- Range&#45;&gt;Cool -->
-<g id="edge16" class="edge">
-<title>Range&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M358.48,-101.57C367.63,-105.03 375.49,-108 375.49,-108 375.49,-108 695.49,-144 695.49,-144 695.49,-144 697.92,-145.09 701.55,-146.71"/>
-<polygon fill="#000000" stroke="#000000" points="700.39,-150.03 710.95,-150.91 703.25,-143.64 700.39,-150.03"/>
-</g>
-<!-- Range&#45;&gt;Positional -->
-<g id="edge32" class="edge">
-<title>Range&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M326.13,-107.95C324.13,-115.74 321.7,-125.18 319.45,-133.92"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="316.03,-133.17 316.93,-143.72 322.81,-134.91 316.03,-133.17"/>
-</g>
-<!-- Range&#45;&gt;Iterable -->
-<g id="edge33" class="edge">
-<title>Range&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M307.27,-104C288,-114.8 260.34,-130.28 238.72,-142.39"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="236.88,-139.41 229.87,-147.35 240.3,-145.52 236.88,-139.41"/>
-</g>
-<!-- PositionalBindFailover -->
-<g id="node24" class="node">
-<title>PositionalBindFailover</title>
-<g id="a_node24"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
-<ellipse fill="none" stroke="#6666ff" cx="97.49" cy="-234" rx="97.48" ry="18"/>
-<text text-anchor="middle" x="97.49" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
-</a>
-</g>
-</g>
-<!-- Sequence -->
-<g id="node25" class="node">
-<title>Sequence</title>
-<g id="a_node25"><a xlink:href="/type/Sequence" xlink:title="Sequence">
-<ellipse fill="none" stroke="#6666ff" cx="97.49" cy="-162" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="97.49" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Sequence</text>
-</a>
-</g>
-</g>
-<!-- Sequence&#45;&gt;PositionalBindFailover -->
-<g id="edge34" class="edge">
-<title>Sequence&#45;&gt;PositionalBindFailover</title>
-<path fill="none" stroke="#6666ff" d="M97.49,-180.3C97.49,-188.02 97.49,-197.29 97.49,-205.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="93.99,-205.9 97.49,-215.9 100.99,-205.9 93.99,-205.9"/>
-</g>
-<!-- Seq -->
-<g id="node26" class="node">
-<title>Seq</title>
-<g id="a_node26"><a xlink:href="/type/Seq" xlink:title="Seq">
-<ellipse fill="none" stroke="#000000" cx="177.49" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="177.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Seq</text>
-</a>
-</g>
-</g>
-<!-- Seq&#45;&gt;Cool -->
-<g id="edge17" class="edge">
-<title>Seq&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M198.85,-101.09C206.6,-104.75 213.49,-108 213.49,-108 213.49,-108 695.49,-144 695.49,-144 695.49,-144 697.92,-145.09 701.55,-146.71"/>
-<polygon fill="#000000" stroke="#000000" points="700.39,-150.03 710.95,-150.91 703.25,-143.64 700.39,-150.03"/>
-</g>
-<!-- Seq&#45;&gt;Iterable -->
-<g id="edge35" class="edge">
-<title>Seq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M184.13,-107.59C187.36,-115.66 191.32,-125.57 194.95,-134.65"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="191.75,-136.06 198.71,-144.04 198.24,-133.46 191.75,-136.06"/>
-</g>
-<!-- Seq&#45;&gt;Sequence -->
-<g id="edge36" class="edge">
-<title>Seq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M161.69,-104.83C150.75,-114.4 135.95,-127.35 123.32,-138.4"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="121,-135.77 115.78,-144.99 125.61,-141.04 121,-135.77"/>
+<g id="edge8" class="edge"><title>Match&#45;&gt;Capture</title>
+<path fill="none" stroke="#000000" d="M597.226,-108.303C597.998,-116.017 598.925,-125.288 599.785,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="596.308,-134.294 600.786,-143.896 603.273,-133.597 596.308,-134.294"/>
 </g>
 <!-- Associative -->
-<g id="node27" class="node">
-<title>Associative</title>
-<g id="a_node27"><a xlink:href="/type/Associative" xlink:title="Associative">
-<ellipse fill="none" stroke="#6666ff" cx="434.49" cy="-162" rx="55.49" ry="18"/>
-<text text-anchor="middle" x="434.49" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
+<g id="node16" class="node"><title>Associative</title>
+<g id="a_node16"><a xlink:href="/type/Associative" xlink:title="Associative">
+<ellipse fill="none" stroke="#6666ff" cx="1240.5" cy="-162" rx="55.4913" ry="18"/>
+<text text-anchor="middle" x="1240.5" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
 </a>
 </g>
 </g>
 <!-- Map -->
-<g id="node28" class="node">
-<title>Map</title>
-<g id="a_node28"><a xlink:href="/type/Map" xlink:title="Map">
-<ellipse fill="none" stroke="#000000" cx="413.49" cy="-90" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="413.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
+<g id="node17" class="node"><title>Map</title>
+<g id="a_node17"><a xlink:href="/type/Map" xlink:title="Map">
+<ellipse fill="none" stroke="#000000" cx="1165.5" cy="-90" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="1165.5" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
 </a>
 </g>
 </g>
 <!-- Map&#45;&gt;Cool -->
-<g id="edge18" class="edge">
-<title>Map&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M436.04,-101.09C444.22,-104.75 451.49,-108 451.49,-108 451.49,-108 695.49,-144 695.49,-144 695.49,-144 697.92,-145.09 701.55,-146.71"/>
-<polygon fill="#000000" stroke="#000000" points="700.39,-150.03 710.95,-150.91 703.25,-143.64 700.39,-150.03"/>
+<g id="edge10" class="edge"><title>Map&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M1142.95,-101.085C1134.77,-104.746 1127.5,-108 1127.5,-108 1127.5,-108 795.496,-144 795.496,-144 795.496,-144 767.311,-149.324 742.486,-154.013"/>
+<polygon fill="#000000" stroke="#000000" points="741.676,-150.604 732.499,-155.899 742.975,-157.482 741.676,-150.604"/>
 </g>
 <!-- Map&#45;&gt;Iterable -->
-<g id="edge37" class="edge">
-<title>Map&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M390.95,-101.09C382.76,-104.75 375.49,-108 375.49,-108 375.49,-108 254.49,-144 254.49,-144 254.49,-144 251.04,-145.2 245.98,-146.95"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="244.55,-143.75 236.25,-150.33 246.84,-150.36 244.55,-143.75"/>
+<g id="edge26" class="edge"><title>Map&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M1156.45,-107.235C1151.79,-115.596 1146,-125.984 1140.76,-135.394"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="1137.57,-133.927 1135.76,-144.367 1143.69,-137.334 1137.57,-133.927"/>
 </g>
 <!-- Map&#45;&gt;Associative -->
-<g id="edge38" class="edge">
-<title>Map&#45;&gt;Associative</title>
-<path fill="none" stroke="#6666ff" d="M418.57,-107.95C420.91,-115.74 423.74,-125.18 426.37,-133.92"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="423.08,-135.15 429.31,-143.72 429.79,-133.14 423.08,-135.15"/>
+<g id="edge27" class="edge"><title>Map&#45;&gt;Associative</title>
+<path fill="none" stroke="#6666ff" d="M1181.04,-105.504C1191.01,-114.81 1204.17,-127.1 1215.58,-137.749"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="1213.44,-140.537 1223.14,-144.802 1218.22,-135.42 1213.44,-140.537"/>
 </g>
-<!-- Int -->
-<g id="node29" class="node">
-<title>Int</title>
-<g id="a_node29"><a xlink:href="/type/Int" xlink:title="Int">
-<ellipse fill="none" stroke="#000000" cx="1306.49" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="1306.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Int</text>
+<!-- Duration -->
+<g id="node18" class="node"><title>Duration</title>
+<g id="a_node18"><a xlink:href="/type/Duration" xlink:title="Duration">
+<ellipse fill="none" stroke="#000000" cx="406.496" cy="-90" rx="44.393" ry="18"/>
+<text text-anchor="middle" x="406.496" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Duration</text>
 </a>
 </g>
 </g>
-<!-- Int&#45;&gt;Cool -->
-<g id="edge19" class="edge">
-<title>Int&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M1285.13,-101.09C1277.38,-104.75 1270.49,-108 1270.49,-108 1270.49,-108 894.34,-145.12 771.67,-157.23"/>
-<polygon fill="#000000" stroke="#000000" points="771.21,-153.76 761.61,-158.23 771.9,-160.73 771.21,-153.76"/>
+<!-- Duration&#45;&gt;Cool -->
+<g id="edge11" class="edge"><title>Duration&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M440.062,-101.766C450.58,-105.14 459.496,-108 459.496,-108 459.496,-108 653.496,-144 653.496,-144 653.496,-144 661.435,-146.596 671.11,-149.758"/>
+<polygon fill="#000000" stroke="#000000" points="670.122,-153.118 680.714,-152.898 672.297,-146.464 670.122,-153.118"/>
 </g>
-<!-- Int&#45;&gt;Real -->
-<g id="edge39" class="edge">
-<title>Int&#45;&gt;Real</title>
-<path fill="none" stroke="#6666ff" d="M1296.98,-107.24C1291.96,-115.81 1285.69,-126.51 1280.08,-136.1"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="1276.98,-134.45 1274.95,-144.85 1283.02,-137.99 1276.98,-134.45"/>
+<!-- Duration&#45;&gt;Real -->
+<g id="edge28" class="edge"><title>Duration&#45;&gt;Real</title>
+<path fill="none" stroke="#6666ff" d="M381.301,-104.997C360.815,-116.378 331.867,-132.461 310.244,-144.473"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="308.513,-141.431 301.471,-149.347 311.913,-147.55 308.513,-141.431"/>
+</g>
+<!-- Nil -->
+<g id="node19" class="node"><title>Nil</title>
+<g id="a_node19"><a xlink:href="/type/Nil" xlink:title="Nil">
+<ellipse fill="none" stroke="#000000" cx="713.496" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="713.496" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Nil</text>
+</a>
+</g>
+</g>
+<!-- Nil&#45;&gt;Cool -->
+<g id="edge12" class="edge"><title>Nil&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M711.518,-108.303C710.637,-116.017 709.577,-125.288 708.595,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="705.109,-133.563 707.451,-143.896 712.064,-134.358 705.109,-133.563"/>
+</g>
+<!-- Rational -->
+<g id="node20" class="node"><title>Rational</title>
+<g id="a_node20"><a xlink:href="/type/Rational" xlink:title="Rational">
+<ellipse fill="none" stroke="#6666ff" cx="151.496" cy="-90" rx="42.7926" ry="18"/>
+<text text-anchor="middle" x="151.496" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Rational</text>
+</a>
+</g>
+</g>
+<!-- Rational&#45;&gt;Real -->
+<g id="edge29" class="edge"><title>Rational&#45;&gt;Real</title>
+<path fill="none" stroke="#6666ff" d="M176.675,-104.663C197.847,-116.152 228.159,-132.6 250.568,-144.76"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="249.18,-147.989 259.639,-149.682 252.519,-141.836 249.18,-147.989"/>
+</g>
+<!-- FatRat -->
+<g id="node21" class="node"><title>FatRat</title>
+<g id="a_node21"><a xlink:href="/type/FatRat" xlink:title="FatRat">
+<ellipse fill="none" stroke="#000000" cx="634.496" cy="-18" rx="37.0935" ry="18"/>
+<text text-anchor="middle" x="634.496" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">FatRat</text>
+</a>
+</g>
+</g>
+<!-- FatRat&#45;&gt;Cool -->
+<g id="edge13" class="edge"><title>FatRat&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M660.591,-31.0265C694.521,-46.6637 749.496,-72 749.496,-72 749.496,-72 749.496,-108 749.496,-108 749.496,-108 736.483,-123.674 724.611,-137.975"/>
+<polygon fill="#000000" stroke="#000000" points="721.917,-135.74 718.223,-145.67 727.303,-140.212 721.917,-135.74"/>
+</g>
+<!-- FatRat&#45;&gt;Rational -->
+<g id="edge30" class="edge"><title>FatRat&#45;&gt;Rational</title>
+<path fill="none" stroke="#6666ff" d="M598.859,-23.3823C495.597,-36.0804 203.496,-72 203.496,-72 203.496,-72 199.729,-73.2316 194.222,-75.0319"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="192.846,-71.7995 184.428,-78.2336 195.021,-78.4529 192.846,-71.7995"/>
+</g>
+<!-- PositionalBindFailover -->
+<g id="node22" class="node"><title>PositionalBindFailover</title>
+<g id="a_node22"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
+<ellipse fill="none" stroke="#6666ff" cx="1411.5" cy="-162" rx="97.4827" ry="18"/>
+<text text-anchor="middle" x="1411.5" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
+</a>
+</g>
+</g>
+<!-- Seq -->
+<g id="node23" class="node"><title>Seq</title>
+<g id="a_node23"><a xlink:href="/type/Seq" xlink:title="Seq">
+<ellipse fill="none" stroke="#000000" cx="1239.5" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="1239.5" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Seq</text>
+</a>
+</g>
+</g>
+<!-- Seq&#45;&gt;Cool -->
+<g id="edge14" class="edge"><title>Seq&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M1218.14,-101.085C1210.39,-104.746 1203.5,-108 1203.5,-108 1203.5,-108 795.496,-144 795.496,-144 795.496,-144 767.311,-149.324 742.486,-154.013"/>
+<polygon fill="#000000" stroke="#000000" points="741.676,-150.604 732.499,-155.899 742.975,-157.482 741.676,-150.604"/>
+</g>
+<!-- Seq&#45;&gt;Iterable -->
+<g id="edge31" class="edge"><title>Seq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M1220.33,-102.875C1203.21,-113.476 1177.83,-129.2 1157.78,-141.622"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="1155.93,-138.651 1149.27,-146.892 1159.61,-144.602 1155.93,-138.651"/>
+</g>
+<!-- Seq&#45;&gt;PositionalBindFailover -->
+<g id="edge32" class="edge"><title>Seq&#45;&gt;PositionalBindFailover</title>
+<path fill="none" stroke="#6666ff" d="M1261.98,-100.151C1287.67,-110.607 1330.45,-128.018 1363.69,-141.543"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="1362.64,-144.896 1373.22,-145.424 1365.28,-138.413 1362.64,-144.896"/>
+</g>
+<!-- Range -->
+<g id="node24" class="node"><title>Range</title>
+<g id="a_node24"><a xlink:href="/type/Range" xlink:title="Range">
+<ellipse fill="none" stroke="#000000" cx="1010.5" cy="-90" rx="36.2938" ry="18"/>
+<text text-anchor="middle" x="1010.5" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
+</a>
+</g>
+</g>
+<!-- Range&#45;&gt;Cool -->
+<g id="edge15" class="edge"><title>Range&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M982.509,-101.573C973.357,-105.03 965.496,-108 965.496,-108 965.496,-108 814.035,-138.875 742.317,-153.494"/>
+<polygon fill="#000000" stroke="#000000" points="741.441,-150.101 732.341,-155.528 742.839,-156.96 741.441,-150.101"/>
+</g>
+<!-- Range&#45;&gt;Positional -->
+<g id="edge33" class="edge"><title>Range&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M1012.72,-108.303C1013.71,-116.017 1014.9,-125.288 1016.01,-133.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="1012.55,-134.424 1017.3,-143.896 1019.49,-133.531 1012.55,-134.424"/>
+</g>
+<!-- Range&#45;&gt;Iterable -->
+<g id="edge34" class="edge"><title>Range&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M1032.59,-104.331C1050.15,-114.926 1074.94,-129.889 1094.64,-141.779"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="1092.92,-144.829 1103.29,-146.999 1096.54,-138.835 1092.92,-144.829"/>
+</g>
+<!-- Rat -->
+<g id="node25" class="node"><title>Rat</title>
+<g id="a_node25"><a xlink:href="/type/Rat" xlink:title="Rat">
+<ellipse fill="none" stroke="#000000" cx="285.496" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="285.496" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Rat</text>
+</a>
+</g>
+</g>
+<!-- Rat&#45;&gt;Cool -->
+<g id="edge16" class="edge"><title>Rat&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M311.526,-22.8972C393.278,-35.1369 639.496,-72 639.496,-72 639.496,-72 668.478,-111.081 688.031,-137.449"/>
+<polygon fill="#000000" stroke="#000000" points="685.232,-139.55 694,-145.497 690.854,-135.38 685.232,-139.55"/>
+</g>
+<!-- Rat&#45;&gt;Rational -->
+<g id="edge35" class="edge"><title>Rat&#45;&gt;Rational</title>
+<path fill="none" stroke="#6666ff" d="M264.852,-29.7841C244.021,-40.6661 211.463,-57.6739 186.574,-70.6754"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="184.695,-67.7086 177.452,-75.4411 187.936,-73.9131 184.695,-67.7086"/>
+</g>
+<!-- Complex -->
+<g id="node26" class="node"><title>Complex</title>
+<g id="a_node26"><a xlink:href="/type/Complex" xlink:title="Complex">
+<ellipse fill="none" stroke="#000000" cx="45.496" cy="-90" rx="45.4919" ry="18"/>
+<text text-anchor="middle" x="45.496" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Complex</text>
+</a>
+</g>
+</g>
+<!-- Complex&#45;&gt;Cool -->
+<g id="edge17" class="edge"><title>Complex&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M80.0007,-101.863C90.5839,-105.194 99.496,-108 99.496,-108 99.496,-108 653.496,-144 653.496,-144 653.496,-144 661.435,-146.596 671.11,-149.758"/>
+<polygon fill="#000000" stroke="#000000" points="670.122,-153.118 680.714,-152.898 672.297,-146.464 670.122,-153.118"/>
+</g>
+<!-- Complex&#45;&gt;Numeric -->
+<g id="edge36" class="edge"><title>Complex&#45;&gt;Numeric</title>
+<path fill="none" stroke="#6666ff" d="M67.2573,-105.928C104.373,-131.389 179.993,-183.264 222.234,-212.241"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="220.489,-215.288 230.716,-218.059 224.449,-209.516 220.489,-215.288"/>
 </g>
 <!-- Num -->
-<g id="node30" class="node">
-<title>Num</title>
-<g id="a_node30"><a xlink:href="/type/Num" xlink:title="Num">
-<ellipse fill="none" stroke="#000000" cx="1033.49" cy="-90" rx="29.8" ry="18"/>
-<text text-anchor="middle" x="1033.49" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Num</text>
+<g id="node27" class="node"><title>Num</title>
+<g id="a_node27"><a xlink:href="/type/Num" xlink:title="Num">
+<ellipse fill="none" stroke="#000000" cx="242.496" cy="-90" rx="29.795" ry="18"/>
+<text text-anchor="middle" x="242.496" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Num</text>
 </a>
 </g>
 </g>
 <!-- Num&#45;&gt;Cool -->
-<g id="edge20" class="edge">
-<title>Num&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M1010.07,-101.48C1002.25,-104.97 995.49,-108 995.49,-108 995.49,-108 842.87,-138.87 770.6,-153.49"/>
-<polygon fill="#000000" stroke="#000000" points="769.65,-150.11 760.54,-155.53 771.04,-156.98 769.65,-150.11"/>
+<g id="edge18" class="edge"><title>Num&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M266.082,-101.281C274.295,-104.861 281.496,-108 281.496,-108 281.496,-108 653.496,-144 653.496,-144 653.496,-144 661.435,-146.596 671.11,-149.758"/>
+<polygon fill="#000000" stroke="#000000" points="670.122,-153.118 680.714,-152.898 672.297,-146.464 670.122,-153.118"/>
 </g>
 <!-- Num&#45;&gt;Real -->
-<g id="edge40" class="edge">
-<title>Num&#45;&gt;Real</title>
-<path fill="none" stroke="#6666ff" d="M1057.08,-101.28C1065.29,-104.86 1072.49,-108 1072.49,-108 1072.49,-108 1174.3,-135.96 1230.03,-151.26"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="1229.29,-154.69 1239.86,-153.96 1231.15,-147.94 1229.29,-154.69"/>
+<g id="edge37" class="edge"><title>Num&#45;&gt;Real</title>
+<path fill="none" stroke="#6666ff" d="M251.309,-107.235C255.914,-115.717 261.651,-126.286 266.817,-135.803"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="263.883,-137.734 271.73,-144.853 270.035,-134.394 263.883,-137.734"/>
+</g>
+<!-- Int -->
+<g id="node28" class="node"><title>Int</title>
+<g id="a_node28"><a xlink:href="/type/Int" xlink:title="Int">
+<ellipse fill="none" stroke="#000000" cx="317.496" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="317.496" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Int</text>
+</a>
+</g>
+</g>
+<!-- Int&#45;&gt;Cool -->
+<g id="edge19" class="edge"><title>Int&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M338.853,-101.085C346.605,-104.746 353.496,-108 353.496,-108 353.496,-108 653.496,-144 653.496,-144 653.496,-144 661.435,-146.596 671.11,-149.758"/>
+<polygon fill="#000000" stroke="#000000" points="670.122,-153.118 680.714,-152.898 672.297,-146.464 670.122,-153.118"/>
+</g>
+<!-- Int&#45;&gt;Real -->
+<g id="edge38" class="edge"><title>Int&#45;&gt;Real</title>
+<path fill="none" stroke="#6666ff" d="M308.914,-107.235C304.495,-115.596 299.004,-125.984 294.031,-135.394"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="290.867,-133.89 289.288,-144.367 297.055,-137.161 290.867,-133.89"/>
 </g>
 </g>
 </svg>

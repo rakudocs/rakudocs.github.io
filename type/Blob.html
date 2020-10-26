@@ -136,7 +136,7 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Bool</span></span><span>(</span><span class="support type perl6fe"><span>Blob</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns <code>False</code> if and only if the buffer is empty.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>blob</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Blob</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>();</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>blob</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>Bool</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>blob</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Blob</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>([</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>]);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>blob</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>Bool</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span></span></span></div></pre><h2 id="method_Capture"><a class="u" href="#___top" title="go to top of document">method Capture</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Capture</span></span><span>(</span><span class="support type perl6fe"><span>Blob</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Equivalent to calling <a href="/type/List#method_Capture"><code>.List.Capture</code></a> on the invocant.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Capture</span></span><span>(</span><span class="support type perl6fe"><span>Blob</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Equivalent to calling <a href="/type/List#method_Capture"><code>.List.Capture</code></a> on the invocant.</p>
 <h2 id="method_elems"><a class="u" href="#___top" title="go to top of document">method elems</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>elems</span></span><span>(</span><span class="support type perl6fe"><span>Blob</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>elems</span></span><span>(</span><span class="support type perl6fe"><span>Blob</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>U</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>)</span></span></div></pre><p>Returns the number of elements of the buffer.</p>
@@ -247,105 +247,92 @@
  viewBox="0.00 0.00 271.75 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-184 267.75,-184 267.75,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 267.746,-184 267.746,4 -4,4"/>
 <!-- Blob -->
-<g id="node1" class="node">
-<title>Blob</title>
+<g id="node1" class="node"><title>Blob</title>
 <g id="a_node1"><a xlink:href="/type/Blob" xlink:title="Blob">
-<ellipse fill="none" stroke="#6666ff" cx="153.75" cy="-90" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="153.75" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Blob</text>
+<ellipse fill="none" stroke="#6666ff" cx="153.746" cy="-90" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="153.746" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Blob</text>
 </a>
 </g>
 </g>
 <!-- Positional -->
-<g id="node2" class="node">
-<title>Positional</title>
+<g id="node2" class="node"><title>Positional</title>
 <g id="a_node2"><a xlink:href="/type/Positional" xlink:title="Positional">
-<ellipse fill="none" stroke="#6666ff" cx="48.75" cy="-162" rx="48.99" ry="18"/>
-<text text-anchor="middle" x="48.75" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
+<ellipse fill="none" stroke="#6666ff" cx="48.7457" cy="-162" rx="48.9926" ry="18"/>
+<text text-anchor="middle" x="48.7457" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
 </a>
 </g>
 </g>
 <!-- Blob&#45;&gt;Positional -->
-<g id="edge3" class="edge">
-<title>Blob&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M134.49,-103.84C119.22,-114.01 97.59,-128.44 79.87,-140.25"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="77.92,-137.35 71.54,-145.81 81.8,-143.17 77.92,-137.35"/>
+<g id="edge3" class="edge"><title>Blob&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M134.487,-103.839C119.223,-114.015 97.5916,-128.436 79.8749,-140.247"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="77.9163,-137.346 71.5372,-145.806 81.7992,-143.171 77.9163,-137.346"/>
 </g>
 <!-- Stringy -->
-<g id="node3" class="node">
-<title>Stringy</title>
+<g id="node3" class="node"><title>Stringy</title>
 <g id="a_node3"><a xlink:href="/type/Stringy" xlink:title="Stringy">
-<ellipse fill="none" stroke="#6666ff" cx="153.75" cy="-162" rx="38.19" ry="18"/>
-<text text-anchor="middle" x="153.75" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
+<ellipse fill="none" stroke="#6666ff" cx="153.746" cy="-162" rx="38.1938" ry="18"/>
+<text text-anchor="middle" x="153.746" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
 </a>
 </g>
 </g>
 <!-- Blob&#45;&gt;Stringy -->
-<g id="edge4" class="edge">
-<title>Blob&#45;&gt;Stringy</title>
-<path fill="none" stroke="#6666ff" d="M153.75,-108.3C153.75,-116.02 153.75,-125.29 153.75,-133.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="150.25,-133.9 153.75,-143.9 157.25,-133.9 150.25,-133.9"/>
+<g id="edge4" class="edge"><title>Blob&#45;&gt;Stringy</title>
+<path fill="none" stroke="#6666ff" d="M153.746,-108.303C153.746,-116.017 153.746,-125.288 153.746,-133.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="150.246,-133.896 153.746,-143.896 157.246,-133.896 150.246,-133.896"/>
 </g>
 <!-- Buf -->
-<g id="node4" class="node">
-<title>Buf</title>
+<g id="node4" class="node"><title>Buf</title>
 <g id="a_node4"><a xlink:href="/type/Buf" xlink:title="Buf">
-<ellipse fill="none" stroke="#6666ff" cx="153.75" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="153.75" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Buf</text>
+<ellipse fill="none" stroke="#6666ff" cx="153.746" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="153.746" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Buf</text>
 </a>
 </g>
 </g>
 <!-- Buf&#45;&gt;Blob -->
-<g id="edge5" class="edge">
-<title>Buf&#45;&gt;Blob</title>
-<path fill="none" stroke="#6666ff" d="M153.75,-36.3C153.75,-44.02 153.75,-53.29 153.75,-61.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="150.25,-61.9 153.75,-71.9 157.25,-61.9 150.25,-61.9"/>
+<g id="edge5" class="edge"><title>Buf&#45;&gt;Blob</title>
+<path fill="none" stroke="#6666ff" d="M153.746,-36.3034C153.746,-44.0173 153.746,-53.2875 153.746,-61.8876"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="150.246,-61.8956 153.746,-71.8957 157.246,-61.8957 150.246,-61.8956"/>
 </g>
 <!-- Mu -->
-<g id="node5" class="node">
-<title>Mu</title>
+<g id="node5" class="node"><title>Mu</title>
 <g id="a_node5"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="236.75" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="236.75" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="236.746" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="236.746" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node6" class="node">
-<title>Any</title>
+<g id="node6" class="node"><title>Any</title>
 <g id="a_node6"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="231.75" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="231.75" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="231.746" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="231.746" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge1" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M232.98,-108.3C233.53,-116.02 234.19,-125.29 234.81,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="231.32,-134.17 235.52,-143.9 238.3,-133.67 231.32,-134.17"/>
+<g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M232.982,-108.303C233.533,-116.017 234.195,-125.288 234.809,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="231.32,-134.17 235.524,-143.896 238.302,-133.672 231.32,-134.17"/>
 </g>
 <!-- utf8 -->
-<g id="node7" class="node">
-<title>utf8</title>
+<g id="node7" class="node"><title>utf8</title>
 <g id="a_node7"><a xlink:href="/type/utf8" xlink:title="utf8">
-<ellipse fill="none" stroke="#000000" cx="226.75" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="226.75" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">utf8</text>
+<ellipse fill="none" stroke="#000000" cx="228.746" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="228.746" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">utf8</text>
 </a>
 </g>
 </g>
 <!-- utf8&#45;&gt;Blob -->
-<g id="edge6" class="edge">
-<title>utf8&#45;&gt;Blob</title>
-<path fill="none" stroke="#6666ff" d="M211.97,-33.17C201.65,-43.06 187.69,-56.45 176.02,-67.64"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="173.54,-65.17 168.75,-74.62 178.39,-70.22 173.54,-65.17"/>
+<g id="edge6" class="edge"><title>utf8&#45;&gt;Blob</title>
+<path fill="none" stroke="#6666ff" d="M213.568,-33.1655C202.964,-43.0624 188.617,-56.4538 176.63,-67.6409"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="174.08,-65.2333 169.158,-74.6153 178.857,-70.3508 174.08,-65.2333"/>
 </g>
 <!-- utf8&#45;&gt;Any -->
-<g id="edge2" class="edge">
-<title>utf8&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M227.98,-36.3C228.53,-44.02 229.19,-53.29 229.81,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="226.32,-62.17 230.52,-71.9 233.3,-61.67 226.32,-62.17"/>
+<g id="edge2" class="edge"><title>utf8&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M229.487,-36.3034C229.818,-44.0173 230.215,-53.2875 230.584,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="227.088,-62.0547 231.013,-71.8957 234.081,-61.7549 227.088,-62.0547"/>
 </g>
 </g>
 </svg>

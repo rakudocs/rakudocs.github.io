@@ -73,10 +73,10 @@
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-          <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+        <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
  <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_iterator">method iterator</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_grep">method grep</a></td></tr>
-                    <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_map">method map</a></td></tr>
+                  <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_map">method map</a></td></tr>
          <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_invert">method invert</a></td></tr>
          <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_race">method race</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_hyper">method hyper</a></td></tr>
@@ -109,13 +109,13 @@
 </nav>
 
     <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>RaceSeq</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Sequence</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>An <code>RaceSeq</code> is the intermediate object used when <a href="/routine/race"><code>race</code></a> is invoked on a <a href="/type/Seq"><code>Seq</code></a>. In general, it&#39;s not intended for direct consumption by the developer.</p>
+    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>RaceSeq</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Sequence</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>An RaceSeq is the intermediate object used when the operator <a href="/routine/race"><code>race</code></a> is invoked on a <a href="/type/Seq"><code>Seq</code></a>. In general, it&#39;s not intended for direct consumption by the developer.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_iterator"><a class="u" href="#___top" title="go to top of document">method iterator</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="routine name perl6fe"><span>RaceSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterator</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the underlying iterator.</p>
 <h2 id="method_grep"><a class="u" href="#___top" title="go to top of document">method grep</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>grep</span></span><span>(</span><span class="routine name perl6fe"><span>RaceSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>matcher</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>options</span></span></span><span>)</span></span></div></pre><p>Applies <code>grep</code> to the <code>RaceSeq</code> similarly to how it would do it on a <code>Seq</code>.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>raced</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;(</span><span class="keyword operator generic perl6fe"><span>^</span></span><span class="constant numeric perl6fe"><span>10000</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>map</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span>²)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>race</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>raced</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>grep</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>%%</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>&nbsp;)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(0&nbsp;9&nbsp;36&nbsp;81&nbsp;144&nbsp;...)»</span><span>&nbsp;</span></span></span></div></pre><p>When you use <code>race</code> on a <code>Seq</code>, this is the method that is actually called.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>grep</span></span><span>(</span><span class="routine name perl6fe"><span>RaceSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>matcher</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>options</span></span></span><span>)</span></span></div></pre><p>Applies <code>grep</code> to the <code>RaceSeq</code> similarly to how it would do it on a Seq.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>raced</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;(</span><span class="keyword operator generic perl6fe"><span>^</span></span><span class="constant numeric perl6fe"><span>10000</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>map</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span>²)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>race</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>raced</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>grep</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>%%</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>&nbsp;)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(0&nbsp;9&nbsp;36&nbsp;81&nbsp;144&nbsp;…»</span><span>&nbsp;</span></span></span></div></pre><p>When you use <code>race</code> on a <code>Seq</code>, this is the method that is actually called.</p>
 <h2 id="method_map"><a class="u" href="#___top" title="go to top of document">method map</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>map</span></span><span>(</span><span class="routine name perl6fe"><span>RaceSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>matcher</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>options</span></span></span><span>)</span></span></div></pre><p>Uses maps on the <code>RaceSeq</code>, generally created by application of <code>.race</code> to a preexisting <code>Seq</code>.</p>
 <h2 id="method_invert"><a class="u" href="#___top" title="go to top of document">method invert</a></h2>
@@ -134,23 +134,21 @@
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>RaceSeq</code></figcaption>
-  <svg width="325pt" height="188pt"
- viewBox="0.00 0.00 325.49 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg width="278pt" height="188pt"
+ viewBox="0.00 0.00 278.05 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-184 321.49,-184 321.49,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 274.046,-184 274.046,4 -4,4"/>
 <!-- RaceSeq -->
-<g id="node1" class="node">
-<title>RaceSeq</title>
+<g id="node1" class="node"><title>RaceSeq</title>
 <g id="a_node1"><a xlink:href="/type/RaceSeq" xlink:title="RaceSeq">
-<ellipse fill="none" stroke="#000000" cx="112" cy="-18" rx="46.59" ry="18"/>
+<ellipse fill="none" stroke="#000000" cx="112" cy="-18" rx="46.5926" ry="18"/>
 <text text-anchor="middle" x="112" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">RaceSeq</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
 <ellipse fill="none" stroke="#000000" cx="27" cy="-90" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
@@ -158,44 +156,38 @@
 </g>
 </g>
 <!-- RaceSeq&#45;&gt;Any -->
-<g id="edge1" class="edge">
-<title>RaceSeq&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M93.14,-34.54C80.82,-44.68 64.63,-58.01 51.35,-68.95"/>
-<polygon fill="#000000" stroke="#000000" points="49.01,-66.34 43.51,-75.4 53.46,-71.74 49.01,-66.34"/>
+<g id="edge1" class="edge"><title>RaceSeq&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M93.1357,-34.5353C80.8228,-44.6754 64.6288,-58.0115 51.3474,-68.9492"/>
+<polygon fill="#000000" stroke="#000000" points="49.0092,-66.3406 43.5149,-75.3995 53.4592,-71.7442 49.0092,-66.3406"/>
 </g>
 <!-- Iterable -->
-<g id="node4" class="node">
-<title>Iterable</title>
+<g id="node4" class="node"><title>Iterable</title>
 <g id="a_node4"><a xlink:href="/type/Iterable" xlink:title="Iterable">
-<ellipse fill="none" stroke="#6666ff" cx="112" cy="-90" rx="40.09" ry="18"/>
+<ellipse fill="none" stroke="#6666ff" cx="112" cy="-90" rx="40.0939" ry="18"/>
 <text text-anchor="middle" x="112" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
 </a>
 </g>
 </g>
 <!-- RaceSeq&#45;&gt;Iterable -->
-<g id="edge3" class="edge">
-<title>RaceSeq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M112,-36.3C112,-44.02 112,-53.29 112,-61.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="108.5,-61.9 112,-71.9 115.5,-61.9 108.5,-61.9"/>
+<g id="edge3" class="edge"><title>RaceSeq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M112,-36.3034C112,-44.0173 112,-53.2875 112,-61.8876"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="108.5,-61.8956 112,-71.8957 115.5,-61.8957 108.5,-61.8956"/>
 </g>
 <!-- Sequence -->
-<g id="node6" class="node">
-<title>Sequence</title>
-<g id="a_node6"><a xlink:href="/type/Sequence" xlink:title="Sequence">
-<ellipse fill="none" stroke="#6666ff" cx="220" cy="-90" rx="50.09" ry="18"/>
+<g id="node5" class="node"><title>Sequence</title>
+<g id="a_node5"><a xlink:href="/type/Sequence" xlink:title="Sequence">
+<ellipse fill="none" stroke="#6666ff" cx="220" cy="-90" rx="50.0912" ry="18"/>
 <text text-anchor="middle" x="220" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Sequence</text>
 </a>
 </g>
 </g>
 <!-- RaceSeq&#45;&gt;Sequence -->
-<g id="edge4" class="edge">
-<title>RaceSeq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M134.9,-33.85C150.41,-43.89 171.09,-57.3 188.19,-68.38"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="186.46,-71.43 196.76,-73.93 190.27,-65.56 186.46,-71.43"/>
+<g id="edge4" class="edge"><title>RaceSeq&#45;&gt;Sequence</title>
+<path fill="none" stroke="#6666ff" d="M134.904,-33.8452C150.406,-43.8928 171.094,-57.3019 188.19,-68.3827"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="186.461,-71.4329 196.757,-73.9349 190.269,-65.5588 186.461,-71.4329"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
 <ellipse fill="none" stroke="#000000" cx="27" cy="-162" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
@@ -203,25 +195,9 @@
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M27,-108.3C27,-116.02 27,-125.29 27,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="23.5,-133.9 27,-143.9 30.5,-133.9 23.5,-133.9"/>
-</g>
-<!-- PositionalBindFailover -->
-<g id="node5" class="node">
-<title>PositionalBindFailover</title>
-<g id="a_node5"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
-<ellipse fill="none" stroke="#6666ff" cx="220" cy="-162" rx="97.48" ry="18"/>
-<text text-anchor="middle" x="220" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
-</a>
-</g>
-</g>
-<!-- Sequence&#45;&gt;PositionalBindFailover -->
-<g id="edge5" class="edge">
-<title>Sequence&#45;&gt;PositionalBindFailover</title>
-<path fill="none" stroke="#6666ff" d="M220,-108.3C220,-116.02 220,-125.29 220,-133.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="216.5,-133.9 220,-143.9 223.5,-133.9 216.5,-133.9"/>
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M27,-108.303C27,-116.017 27,-125.288 27,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="23.5001,-133.896 27,-143.896 30.5001,-133.896 23.5001,-133.896"/>
 </g>
 </g>
 </svg>
@@ -243,7 +219,7 @@
 <p>It is supposed to return an <a href="/type/Iterator">Iterator</a>.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>iterator</span></span><span>;</span></span></div></pre><h2 id="(Iterable)_method_flat"><a href="/type/Iterable#method_flat">(Iterable) method flat</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>flat</span></span><span>(</span><span class="support type perl6fe"><span>Iterable</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another <a href="/type/Iterable">Iterable</a> that flattens out all iterables that the first one returns.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>flat</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another <a href="/type/Iterable">Iterable</a> that flattens out all iterables that the first one returns.</p>
 <p>For example</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>a&nbsp;b</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>a&nbsp;b</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>flat</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3␤»</span></span></span></div></pre><p>because <code>&lt;a b&gt; </code> is a <a href="/type/List">List</a> and thus iterable, so <code> (&lt;a b&gt;, &#39;c&#39;).flat </code> returns <code>(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;)</code>, which has three elems.</p>
 <p>Note that the flattening is recursive, so <code>(((&quot;a&quot;, &quot;b&quot;), &quot;c&quot;), &quot;d&quot;).flat</code> returns <code>(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;)</code>, but it does not flatten itemized sublists:</p>

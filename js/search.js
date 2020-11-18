@@ -541,6 +541,8 @@ $(function(){
 ,
 { category: "class", value: "IO::Path::Unix", url: "/type/IO::Path::Unix" }
 ,
+{ category: "class", value: "IO::Path::Parts", url: "/type/IO::Path::Parts" }
+,
 { category: "class", value: "IO::Path::Win32", url: "/type/IO::Path::Win32" }
 ,
 { category: "class", value: "IO::Path::Cygwin", url: "/type/IO::Path::Cygwin" }
@@ -973,7 +975,7 @@ $(function(){
 ,
 { category: "Routine", value: "(|), infix ∪", url: "/routine/(|), infix ∪" }
 ,
-{ category: "Routine", value: "*", url: "/routine/*" }
+{ category: "infix", value: "*", url: "/routine/*" }
 ,
 { category: "infix", value: "**", url: "/routine/**" }
 ,
@@ -1985,7 +1987,7 @@ $(function(){
 ,
 { category: "method", value: "is-hidden", url: "/routine/is-hidden" }
 ,
-{ category: "method", value: "is-implementation-detail", url: "/routine/is-implementation-detail" }
+{ category: "Routine", value: "is-implementation-detail", url: "/routine/is-implementation-detail" }
 ,
 { category: "method", value: "is-initial-thread", url: "/routine/is-initial-thread" }
 ,
@@ -3143,8 +3145,6 @@ $(function(){
 ,
 { category: "syntax", value: "%", url: "/syntax/$PERCENT_SIGN" }
 ,
-{ category: "syntax", value: "%?RESOURCES", url: "/syntax/$PERCENT_SIGN%3FRESOURCES" }
-,
 { category: "regex", value: "&", url: "/syntax/&" }
 ,
 { category: "regex", value: "&&", url: "/syntax/&&" }
@@ -3253,7 +3253,7 @@ $(function(){
 ,
 { category: "Phasers", value: "INIT", url: "/syntax/INIT" }
 ,
-{ category: "p6doc", value: "INTRODUCTION", url: "/syntax/INTRODUCTION" }
+{ category: "rakudoc", value: "INTRODUCTION", url: "/syntax/INTRODUCTION" }
 ,
 { category: "Phasers", value: "KEEP", url: "/syntax/KEEP" }
 ,
@@ -3456,6 +3456,8 @@ $(function(){
 { category: "quote", value: "qx", url: "/syntax/qx" }
 ,
 { category: "react (statement prefix)", value: "react", url: "/syntax/react" }
+,
+{ category: "regex", value: "recursive", url: "/syntax/recursive" }
 ,
 { category: "control flow", value: "redo", url: "/syntax/redo" }
 ,
@@ -3865,9 +3867,17 @@ $(function(){
 ,
 { category: "Reference", value: "operators (...^)", url: "/language/operators#index-entry-...$CIRCUMFLEX_ACCENT_operators" }
 ,
+{ category: "Reference", value: "operators (^...)", url: "/language/operators#index-entry-$CIRCUMFLEX_ACCENT..._operators" }
+,
+{ category: "Reference", value: "operators (^...^)", url: "/language/operators#index-entry-$CIRCUMFLEX_ACCENT...$CIRCUMFLEX_ACCENT_operators" }
+,
 { category: "Reference", value: "operators (…)", url: "/language/operators#index-entry-…_operators" }
 ,
 { category: "Reference", value: "operators (…^)", url: "/language/operators#index-entry-…$CIRCUMFLEX_ACCENT_operators" }
+,
+{ category: "Reference", value: "operators (^…)", url: "/language/operators#index-entry-$CIRCUMFLEX_ACCENT…_operators" }
+,
+{ category: "Reference", value: "operators (^…^)", url: "/language/operators#index-entry-$CIRCUMFLEX_ACCENT…$CIRCUMFLEX_ACCENT_operators" }
 ,
 { category: "Reference", value: "… (lazy list)", url: "/language/operators#index-entry-lazy_list_…" }
 ,
@@ -4042,6 +4052,14 @@ $(function(){
 { category: "Reference", value: "SETGOAL", url: "/language/regexes#index-entry-SETGOAL" }
 ,
 { category: "Reference", value: "FAILGOAL", url: "/language/regexes#index-entry-FAILGOAL" }
+,
+{ category: "Reference", value: "recursive (regex)", url: "/language/regexes#index-entry-regex_recursive-regex_tilde_tilde-regex_~~-regex_<~~>-Recursive_Regexes" }
+,
+{ category: "Reference", value: "tilde tilde (regex)", url: "/language/regexes#index-entry-regex_recursive-regex_tilde_tilde-regex_~~-regex_<~~>-Recursive_Regexes" }
+,
+{ category: "Reference", value: "~~ (regex)", url: "/language/regexes#index-entry-regex_recursive-regex_tilde_tilde-regex_~~-regex_<~~>-Recursive_Regexes" }
+,
+{ category: "Reference", value: "<~~> (regex)", url: "/language/regexes#index-entry-regex_recursive-regex_tilde_tilde-regex_~~-regex_<~~>-Recursive_Regexes" }
 ,
 { category: "Reference", value: "regex (declarator)", url: "/language/regexes#index-entry-declarator_regex-Subrules" }
 ,
@@ -4422,10 +4440,6 @@ $(function(){
 { category: "Reference", value: "$?LINE", url: "/language/variables#index-entry-$%3FLINE" }
 ,
 { category: "Reference", value: "::?CLASS", url: "/language/variables#index-entry-::%3FCLASS" }
-,
-{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
-,
-{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
 ,
 { category: "Reference", value: "Distribution", url: "/language/variables#index-entry-Distribution" }
 ,
@@ -5019,7 +5033,7 @@ $(function(){
 ,
 { category: "Reference", value: "heredocs :to (quote)", url: "/language/quoting#index-entry-quote_heredocs_:to-Heredocs:_:to" }
 ,
-{ category: "Reference", value: "statements (control flow)", url: "/language/control#index-entry-control_flow__statements-statements" }
+{ category: "Reference", value: "statements (control flow)", url: "/language/control#index-entry-control_flow__statements-Statements" }
 ,
 { category: "Reference", value: "blocks (control flow)", url: "/language/control#index-entry-control_flow__blocks-Blocks" }
 ,
@@ -5524,6 +5538,8 @@ $(function(){
 { category: "Reference", value: "%*SUB-MAIN-OPTS", url: "/language/create-cli#index-entry-$PERCENT_SIGN*SUB-MAIN-OPTS" }
 ,
 { category: "Reference", value: "named-anywhere", url: "/language/create-cli#index-entry-named-anywhere" }
+,
+{ category: "Reference", value: "command-line argument bundling", url: "/language/create-cli#index-entry-command-line_argument_bundling" }
 ,
 { category: "Reference", value: "hidden-from-USAGE", url: "/language/create-cli#index-entry-hidden-from-USAGE" }
 ,
@@ -6311,7 +6327,7 @@ $(function(){
 ,
 { category: "Reference", value: "RAKUDO_SNAPPER", url: "/programs/03-environment-variables#index-entry-RAKUDO__SNAPPER" }
 ,
-{ category: "Reference", value: "p6doc", url: "/programs/02-reading-docs#index-entry-p6doc-INTRODUCTION" }
+{ category: "Reference", value: "rakudoc", url: "/programs/02-reading-docs#index-entry-rakudoc-INTRODUCTION" }
  ];
           var results = $.ui.autocomplete.filter(items, request.term);
           function trim_results(results, term) {

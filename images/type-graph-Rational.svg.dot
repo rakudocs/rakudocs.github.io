@@ -2,6 +2,7 @@ digraph "perl6-type-graph" {
     rankdir=BT;
     splines=polyline;
     overlap=false; 
+    graph [truecolor=true bgcolor="#FFFFFF"];
     // Types
     "Rational" [color="#6666FF", fontcolor="#6666FF", href="/type/Rational", fontname="FreeSans"];
     "Numeric" [color="#6666FF", fontcolor="#6666FF", href="/type/Numeric", fontname="FreeSans"];
@@ -13,6 +14,7 @@ digraph "perl6-type-graph" {
     "Rat" [color="#000000", fontcolor="#000000", href="/type/Rat", fontname="FreeSans"];
     "Stringy" [color="#6666FF", fontcolor="#6666FF", href="/type/Stringy", fontname="FreeSans"];
     "Str" [color="#000000", fontcolor="#000000", href="/type/Str", fontname="FreeSans"];
+    "Allomorph" [color="#000000", fontcolor="#000000", href="/type/Allomorph", fontname="FreeSans"];
     "RatStr" [color="#000000", fontcolor="#000000", href="/type/RatStr", fontname="FreeSans"];
 
     // Superclasses
@@ -21,8 +23,9 @@ digraph "perl6-type-graph" {
     "FatRat" -> "Cool" [color="#000000"];
     "Rat" -> "Cool" [color="#000000"];
     "Str" -> "Cool" [color="#000000"];
+    "Allomorph" -> "Str" [color="#000000"];
+    "RatStr" -> "Allomorph" [color="#000000"];
     "RatStr" -> "Rat" [color="#000000"];
-    "RatStr" -> "Str" [color="#000000"];
 
     // Roles
     "Rational" -> "Real" [color="#6666FF"];

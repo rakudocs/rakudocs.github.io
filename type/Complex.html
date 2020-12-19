@@ -1,206 +1,203 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>class Complex</title>
-        <meta charset="UTF-8" />
-        <style>
-        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
-        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
-        u { text-decoration: none }
-        .nested {
-            margin-left: 3em;
-        }
-        aside, u { opacity: 0.7 }
-        a[id^="fn-"]:target { background: #ff0 }
-        </style>
-        
-        
-        <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
-<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+<head>
+    <title>class Complex</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
 
-    </head>
-    <body class="pod">
+<body class="pod">
+
     <div id="___top"></div>
+
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Raku Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+
+        <a href="/">
+            <img src="/images/Camelia.svg"alt="»ö«"id="logo"width="62"height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item " href="/language.html"> Language </a>
+                    <a class="menu-item selected darker-green" href="/type.html"> Types </a>
+                    <a class="menu-item " href="/routine.html"> Routines </a>
+                    <a class="menu-item " href="/programs.html"> Programs </a>
+                    <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a>
+            </div>
+
+            <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
+                    <a class="menu-item" href="/type.html"> All </a>
+                    <a class="menu-item" href="/type-basic.html"> Basic </a>
+                    <a class="menu-item" href="/type-composite.html"> Composite </a>
+                    <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a>
+                    <a class="menu-item" href="/type-exception.html"> Exceptions </a>
+            </div></div></div></div></div>
+
+        </div>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
-  </div>
-</div>
-<!-- please make sure these two CAPITALIZED variables stay there -->
 
-<div id="content" class="pretty-box yellow content__type_Complex">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Complex.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+    <div id="content" class="pretty-box yellow content_fragment">
 
-        </button>
-      </div>
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Complex.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
 
-    <h1 class='title'>class Complex</h1>
-    <p class='subtitle'>Complex number</p>
-    <nav class="indexgroup">
+        <h1 class="title">class Complex</h1>
+        <p class="subtitle">Complex number</p>
+
+        <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Operators">Operators</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#postfix_i">postfix i</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#method_new">method new</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#method_re">method re</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">2.3</td><td class="toc-text"><a href="#method_im">method im</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">2.4</td><td class="toc-text"><a href="#method_reals">method reals</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">2.5</td><td class="toc-text"><a href="#method_isNaN">method isNaN</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">2.6</td><td class="toc-text"><a href="#method_polar">method polar</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">2.7</td><td class="toc-text"><a href="#method_floor">method floor</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">2.8</td><td class="toc-text"><a href="#method_ceiling">method ceiling</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">2.9</td><td class="toc-text"><a href="#method_round">method round</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">2.10</td><td class="toc-text"><a href="#method_truncate">method truncate</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">2.11</td><td class="toc-text"><a href="#routine_abs">routine abs</a></td></tr>
-           <tr class="toc-level-2"><td class="toc-number">2.12</td><td class="toc-text"><a href="#method_conj">method conj</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">2.13</td><td class="toc-text"><a href="#method_sqrt">method sqrt</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">2.14</td><td class="toc-text"><a href="#method_gist">method gist</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">2.15</td><td class="toc-text"><a href="#method_perl">method perl</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">2.16</td><td class="toc-text"><a href="#method_Real">method Real</a></td></tr>
-                   <tr class="toc-level-2"><td class="toc-number">2.17</td><td class="toc-text"><a href="#sub_infix:&lt;**&gt;">sub infix:&lt;**&gt;</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Routines_supplied_by_role_Numeric">Routines supplied by role Numeric</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#(Numeric)_method_Numeric">(Numeric) method Numeric</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">5.2</td><td class="toc-text"><a href="#(Numeric)_method_Int">(Numeric) method Int</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">5.3</td><td class="toc-text"><a href="#(Numeric)_method_Rat">(Numeric) method Rat</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">5.4</td><td class="toc-text"><a href="#(Numeric)_method_Num">(Numeric) method Num</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">5.5</td><td class="toc-text"><a href="#(Numeric)_method_narrow">(Numeric) method narrow</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">5.6</td><td class="toc-text"><a href="#(Numeric)_method_ACCEPTS">(Numeric) method ACCEPTS</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">5.7</td><td class="toc-text"><a href="#(Numeric)_routine_log">(Numeric) routine log</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">5.8</td><td class="toc-text"><a href="#(Numeric)_routine_log10">(Numeric) routine log10</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.9</td><td class="toc-text"><a href="#(Numeric)_routine_log2">(Numeric) routine log2</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.10</td><td class="toc-text"><a href="#(Numeric)_routine_exp">(Numeric) routine exp</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.11</td><td class="toc-text"><a href="#(Numeric)_method_roots">(Numeric) method roots</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.12</td><td class="toc-text"><a href="#(Numeric)_routine_abs">(Numeric) routine abs</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">5.13</td><td class="toc-text"><a href="#(Numeric)_routine_sqrt">(Numeric) routine sqrt</a></td></tr>
-            <tr class="toc-level-2"><td class="toc-number">5.14</td><td class="toc-text"><a href="#(Numeric)_method_conj">(Numeric) method conj</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">5.15</td><td class="toc-text"><a href="#(Numeric)_method_Bool">(Numeric) method Bool</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.16</td><td class="toc-text"><a href="#(Numeric)_method_succ">(Numeric) method succ</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">5.17</td><td class="toc-text"><a href="#(Numeric)_method_pred">(Numeric) method pred</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Routines_supplied_by_class_Cool">Routines supplied by class Cool</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">5.18</td><td class="toc-text"><a href="#(Cool)_routine_abs">(Cool) routine abs</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.19</td><td class="toc-text"><a href="#(Cool)_method_conj">(Cool) method conj</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.20</td><td class="toc-text"><a href="#(Cool)_routine_EVAL">(Cool) routine EVAL</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.21</td><td class="toc-text"><a href="#(Cool)_routine_sqrt">(Cool) routine sqrt</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.22</td><td class="toc-text"><a href="#(Cool)_method_sign">(Cool) method sign</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.23</td><td class="toc-text"><a href="#(Cool)_method_rand">(Cool) method rand</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.24</td><td class="toc-text"><a href="#(Cool)_routine_sin">(Cool) routine sin</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">5.25</td><td class="toc-text"><a href="#(Cool)_routine_asin">(Cool) routine asin</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.26</td><td class="toc-text"><a href="#(Cool)_routine_cos">(Cool) routine cos</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.27</td><td class="toc-text"><a href="#(Cool)_routine_acos">(Cool) routine acos</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.28</td><td class="toc-text"><a href="#(Cool)_routine_tan">(Cool) routine tan</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.29</td><td class="toc-text"><a href="#(Cool)_routine_atan">(Cool) routine atan</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.30</td><td class="toc-text"><a href="#(Cool)_routine_atan2">(Cool) routine atan2</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">5.31</td><td class="toc-text"><a href="#(Cool)_routine_sec">(Cool) routine sec</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.32</td><td class="toc-text"><a href="#(Cool)_routine_asec">(Cool) routine asec</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.33</td><td class="toc-text"><a href="#(Cool)_routine_cosec">(Cool) routine cosec</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.34</td><td class="toc-text"><a href="#(Cool)_routine_acosec">(Cool) routine acosec</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.35</td><td class="toc-text"><a href="#(Cool)_routine_cotan">(Cool) routine cotan</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.36</td><td class="toc-text"><a href="#(Cool)_routine_acotan">(Cool) routine acotan</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.37</td><td class="toc-text"><a href="#(Cool)_routine_sinh">(Cool) routine sinh</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.38</td><td class="toc-text"><a href="#(Cool)_routine_asinh">(Cool) routine asinh</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.39</td><td class="toc-text"><a href="#(Cool)_routine_cosh">(Cool) routine cosh</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.40</td><td class="toc-text"><a href="#(Cool)_routine_acosh">(Cool) routine acosh</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.41</td><td class="toc-text"><a href="#(Cool)_routine_tanh">(Cool) routine tanh</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.42</td><td class="toc-text"><a href="#(Cool)_routine_atanh">(Cool) routine atanh</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.43</td><td class="toc-text"><a href="#(Cool)_routine_sech">(Cool) routine sech</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.44</td><td class="toc-text"><a href="#(Cool)_routine_asech">(Cool) routine asech</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.45</td><td class="toc-text"><a href="#(Cool)_routine_cosech">(Cool) routine cosech</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.46</td><td class="toc-text"><a href="#(Cool)_routine_acosech">(Cool) routine acosech</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.47</td><td class="toc-text"><a href="#(Cool)_routine_cotanh">(Cool) routine cotanh</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.48</td><td class="toc-text"><a href="#(Cool)_routine_acotanh">(Cool) routine acotanh</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.49</td><td class="toc-text"><a href="#(Cool)_routine_cis">(Cool) routine cis</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">5.50</td><td class="toc-text"><a href="#(Cool)_routine_log">(Cool) routine log</a></td></tr>
-                       <tr class="toc-level-2"><td class="toc-number">5.51</td><td class="toc-text"><a href="#(Cool)_routine_log10">(Cool) routine log10</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">5.52</td><td class="toc-text"><a href="#(Cool)_routine_log2">(Cool) routine log2</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">5.53</td><td class="toc-text"><a href="#(Cool)_routine_exp">(Cool) routine exp</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">5.54</td><td class="toc-text"><a href="#(Cool)_method_unpolar">(Cool) method unpolar</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.55</td><td class="toc-text"><a href="#(Cool)_routine_round">(Cool) routine round</a></td></tr>
-                              <tr class="toc-level-2"><td class="toc-number">5.56</td><td class="toc-text"><a href="#(Cool)_routine_floor">(Cool) routine floor</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.57</td><td class="toc-text"><a href="#(Cool)_method_fmt">(Cool) method fmt</a></td></tr>
-                    <tr class="toc-level-2"><td class="toc-number">5.58</td><td class="toc-text"><a href="#(Cool)_routine_ceiling">(Cool) routine ceiling</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.59</td><td class="toc-text"><a href="#(Cool)_routine_truncate">(Cool) routine truncate</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.60</td><td class="toc-text"><a href="#(Cool)_routine_ord">(Cool) routine ord</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">5.61</td><td class="toc-text"><a href="#(Cool)_method_path">(Cool) method path</a></td></tr>
-           <tr class="toc-level-2"><td class="toc-number">5.62</td><td class="toc-text"><a href="#(Cool)_routine_chr">(Cool) routine chr</a></td></tr>
-                 <tr class="toc-level-2"><td class="toc-number">5.63</td><td class="toc-text"><a href="#(Cool)_routine_chars">(Cool) routine chars</a></td></tr>
-                                <tr class="toc-level-2"><td class="toc-number">5.64</td><td class="toc-text"><a href="#(Cool)_routine_codes">(Cool) routine codes</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">5.65</td><td class="toc-text"><a href="#(Cool)_routine_flip">(Cool) routine flip</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.66</td><td class="toc-text"><a href="#(Cool)_routine_trim">(Cool) routine trim</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.67</td><td class="toc-text"><a href="#(Cool)_routine_trim-leading">(Cool) routine trim-leading</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.68</td><td class="toc-text"><a href="#(Cool)_routine_trim-trailing">(Cool) routine trim-trailing</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.69</td><td class="toc-text"><a href="#(Cool)_routine_lc">(Cool) routine lc</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.70</td><td class="toc-text"><a href="#(Cool)_routine_uc">(Cool) routine uc</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.71</td><td class="toc-text"><a href="#(Cool)_routine_fc">(Cool) routine fc</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.72</td><td class="toc-text"><a href="#(Cool)_routine_tc">(Cool) routine tc</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.73</td><td class="toc-text"><a href="#(Cool)_routine_tclc">(Cool) routine tclc</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.74</td><td class="toc-text"><a href="#(Cool)_routine_wordcase">(Cool) routine wordcase</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">5.75</td><td class="toc-text"><a href="#(Cool)_routine_samecase">(Cool) routine samecase</a></td></tr>
-                        <tr class="toc-level-2"><td class="toc-number">5.76</td><td class="toc-text"><a href="#(Cool)_routine_uniprop">(Cool) routine uniprop</a></td></tr>
-           <tr class="toc-level-2"><td class="toc-number">5.77</td><td class="toc-text"><a href="#(Cool)_sub_uniprops">(Cool) sub uniprops</a></td></tr>
-            <tr class="toc-level-2"><td class="toc-number">5.78</td><td class="toc-text"><a href="#(Cool)_routine_uniname">(Cool) routine uniname</a></td></tr>
-           <tr class="toc-level-2"><td class="toc-number">5.79</td><td class="toc-text"><a href="#(Cool)_routine_uninames">(Cool) routine uninames</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">5.80</td><td class="toc-text"><a href="#(Cool)_routine_unimatch">(Cool) routine unimatch</a></td></tr>
-      <tr class="toc-level-2"><td class="toc-number">5.81</td><td class="toc-text"><a href="#(Cool)_routine_chop">(Cool) routine chop</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.82</td><td class="toc-text"><a href="#(Cool)_routine_chomp">(Cool) routine chomp</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.83</td><td class="toc-text"><a href="#(Cool)_routine_substr">(Cool) routine substr</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">5.84</td><td class="toc-text"><a href="#(Cool)_routine_substr-rw">(Cool) routine substr-rw</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">5.85</td><td class="toc-text"><a href="#(Cool)_routine_ords">(Cool) routine ords</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">5.86</td><td class="toc-text"><a href="#(Cool)_routine_chrs">(Cool) routine chrs</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">5.87</td><td class="toc-text"><a href="#(Cool)_routine_split">(Cool) routine split</a></td></tr>
-                                                           <tr class="toc-level-2"><td class="toc-number">5.88</td><td class="toc-text"><a href="#(Cool)_routine_lines">(Cool) routine lines</a></td></tr>
-                                     <tr class="toc-level-2"><td class="toc-number">5.89</td><td class="toc-text"><a href="#(Cool)_method_words">(Cool) method words</a></td></tr>
-                                 <tr class="toc-level-2"><td class="toc-number">5.90</td><td class="toc-text"><a href="#(Cool)_routine_comb">(Cool) routine comb</a></td></tr>
-                                  <tr class="toc-level-2"><td class="toc-number">5.91</td><td class="toc-text"><a href="#(Cool)_method_contains">(Cool) method contains</a></td></tr>
-                               <tr class="toc-level-2"><td class="toc-number">5.92</td><td class="toc-text"><a href="#(Cool)_routine_index">(Cool) routine index</a></td></tr>
-                   <tr class="toc-level-2"><td class="toc-number">5.93</td><td class="toc-text"><a href="#(Cool)_routine_rindex">(Cool) routine rindex</a></td></tr>
-                     <tr class="toc-level-2"><td class="toc-number">5.94</td><td class="toc-text"><a href="#(Cool)_method_match">(Cool) method match</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">5.95</td><td class="toc-text"><a href="#(Cool)_routine_roots">(Cool) routine roots</a></td></tr>
-                                           <tr class="toc-level-2"><td class="toc-number">5.96</td><td class="toc-text"><a href="#(Cool)_method_match">(Cool) method match</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">5.97</td><td class="toc-text"><a href="#(Cool)_method_subst">(Cool) method subst</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">5.98</td><td class="toc-text"><a href="#(Cool)_method_trans">(Cool) method trans</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">5.99</td><td class="toc-text"><a href="#(Cool)_method_IO">(Cool) method IO</a></td></tr>
-       
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Operators">Operators</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#postfix_i">postfix i</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#method_new">method new</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#method_re">method re</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.3</td><td class="toc-text"><a href="#method_im">method im</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.4</td><td class="toc-text"><a href="#method_reals">method reals</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.5</td><td class="toc-text"><a href="#method_isNaN">method isNaN</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.6</td><td class="toc-text"><a href="#method_polar">method polar</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.7</td><td class="toc-text"><a href="#method_floor">method floor</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.8</td><td class="toc-text"><a href="#method_ceiling">method ceiling</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.9</td><td class="toc-text"><a href="#method_round">method round</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.10</td><td class="toc-text"><a href="#method_truncate">method truncate</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.11</td><td class="toc-text"><a href="#routine_abs">routine abs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.12</td><td class="toc-text"><a href="#method_conj">method conj</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.13</td><td class="toc-text"><a href="#method_sqrt">method sqrt</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.14</td><td class="toc-text"><a href="#method_gist">method gist</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.15</td><td class="toc-text"><a href="#method_raku">method raku</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.16</td><td class="toc-text"><a href="#method_Real">method Real</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.17</td><td class="toc-text"><a href="#sub_infix:&lt;**&gt;">sub infix:&lt;**&gt;</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Routines_supplied_by_role_Numeric">Routines supplied by role Numeric</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(Numeric)_method_Numeric">(Numeric) method Numeric</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#(Numeric)_method_Int">(Numeric) method Int</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.3</td><td class="toc-text"><a href="#(Numeric)_method_Rat">(Numeric) method Rat</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.4</td><td class="toc-text"><a href="#(Numeric)_method_Num">(Numeric) method Num</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.5</td><td class="toc-text"><a href="#(Numeric)_method_narrow">(Numeric) method narrow</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.6</td><td class="toc-text"><a href="#(Numeric)_method_ACCEPTS">(Numeric) method ACCEPTS</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.7</td><td class="toc-text"><a href="#(Numeric)_routine_log">(Numeric) routine log</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.8</td><td class="toc-text"><a href="#(Numeric)_routine_log10">(Numeric) routine log10</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.9</td><td class="toc-text"><a href="#(Numeric)_routine_log2">(Numeric) routine log2</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.10</td><td class="toc-text"><a href="#(Numeric)_routine_exp">(Numeric) routine exp</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.11</td><td class="toc-text"><a href="#(Numeric)_method_roots">(Numeric) method roots</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.12</td><td class="toc-text"><a href="#(Numeric)_routine_abs">(Numeric) routine abs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.13</td><td class="toc-text"><a href="#(Numeric)_routine_sqrt">(Numeric) routine sqrt</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.14</td><td class="toc-text"><a href="#(Numeric)_method_conj">(Numeric) method conj</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.15</td><td class="toc-text"><a href="#(Numeric)_method_Bool">(Numeric) method Bool</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.16</td><td class="toc-text"><a href="#(Numeric)_method_succ">(Numeric) method succ</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.17</td><td class="toc-text"><a href="#(Numeric)_method_pred">(Numeric) method pred</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Routines_supplied_by_class_Cool">Routines supplied by class Cool</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#(Cool)_routine_abs">(Cool) routine abs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.2</td><td class="toc-text"><a href="#(Cool)_method_conj">(Cool) method conj</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.3</td><td class="toc-text"><a href="#(Cool)_routine_EVAL">(Cool) routine EVAL</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.4</td><td class="toc-text"><a href="#(Cool)_routine_sqrt">(Cool) routine sqrt</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.5</td><td class="toc-text"><a href="#(Cool)_method_sign">(Cool) method sign</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.6</td><td class="toc-text"><a href="#(Cool)_method_rand">(Cool) method rand</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.7</td><td class="toc-text"><a href="#(Cool)_routine_sin">(Cool) routine sin</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.8</td><td class="toc-text"><a href="#(Cool)_routine_asin">(Cool) routine asin</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.9</td><td class="toc-text"><a href="#(Cool)_routine_cos">(Cool) routine cos</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.10</td><td class="toc-text"><a href="#(Cool)_routine_acos">(Cool) routine acos</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.11</td><td class="toc-text"><a href="#(Cool)_routine_tan">(Cool) routine tan</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.12</td><td class="toc-text"><a href="#(Cool)_routine_atan">(Cool) routine atan</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.13</td><td class="toc-text"><a href="#(Cool)_routine_atan2">(Cool) routine atan2</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.14</td><td class="toc-text"><a href="#(Cool)_routine_sec">(Cool) routine sec</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.15</td><td class="toc-text"><a href="#(Cool)_routine_asec">(Cool) routine asec</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.16</td><td class="toc-text"><a href="#(Cool)_routine_cosec">(Cool) routine cosec</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.17</td><td class="toc-text"><a href="#(Cool)_routine_acosec">(Cool) routine acosec</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.18</td><td class="toc-text"><a href="#(Cool)_routine_cotan">(Cool) routine cotan</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.19</td><td class="toc-text"><a href="#(Cool)_routine_acotan">(Cool) routine acotan</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.20</td><td class="toc-text"><a href="#(Cool)_routine_sinh">(Cool) routine sinh</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.21</td><td class="toc-text"><a href="#(Cool)_routine_asinh">(Cool) routine asinh</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.22</td><td class="toc-text"><a href="#(Cool)_routine_cosh">(Cool) routine cosh</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.23</td><td class="toc-text"><a href="#(Cool)_routine_acosh">(Cool) routine acosh</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.24</td><td class="toc-text"><a href="#(Cool)_routine_tanh">(Cool) routine tanh</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.25</td><td class="toc-text"><a href="#(Cool)_routine_atanh">(Cool) routine atanh</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.26</td><td class="toc-text"><a href="#(Cool)_routine_sech">(Cool) routine sech</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.27</td><td class="toc-text"><a href="#(Cool)_routine_asech">(Cool) routine asech</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.28</td><td class="toc-text"><a href="#(Cool)_routine_cosech">(Cool) routine cosech</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.29</td><td class="toc-text"><a href="#(Cool)_routine_acosech">(Cool) routine acosech</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.30</td><td class="toc-text"><a href="#(Cool)_routine_cotanh">(Cool) routine cotanh</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.31</td><td class="toc-text"><a href="#(Cool)_routine_acotanh">(Cool) routine acotanh</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.32</td><td class="toc-text"><a href="#(Cool)_routine_cis">(Cool) routine cis</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.33</td><td class="toc-text"><a href="#(Cool)_routine_log">(Cool) routine log</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.34</td><td class="toc-text"><a href="#(Cool)_routine_log10">(Cool) routine log10</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.35</td><td class="toc-text"><a href="#(Cool)_routine_log2">(Cool) routine log2</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.36</td><td class="toc-text"><a href="#(Cool)_routine_exp">(Cool) routine exp</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.37</td><td class="toc-text"><a href="#(Cool)_method_unpolar">(Cool) method unpolar</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.38</td><td class="toc-text"><a href="#(Cool)_routine_round">(Cool) routine round</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.39</td><td class="toc-text"><a href="#(Cool)_routine_floor">(Cool) routine floor</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.40</td><td class="toc-text"><a href="#(Cool)_method_fmt">(Cool) method fmt</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.41</td><td class="toc-text"><a href="#(Cool)_routine_ceiling">(Cool) routine ceiling</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.42</td><td class="toc-text"><a href="#(Cool)_routine_truncate">(Cool) routine truncate</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.43</td><td class="toc-text"><a href="#(Cool)_routine_ord">(Cool) routine ord</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.44</td><td class="toc-text"><a href="#(Cool)_method_path">(Cool) method path</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.45</td><td class="toc-text"><a href="#(Cool)_routine_chr">(Cool) routine chr</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.46</td><td class="toc-text"><a href="#(Cool)_routine_chars">(Cool) routine chars</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.47</td><td class="toc-text"><a href="#(Cool)_routine_codes">(Cool) routine codes</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.48</td><td class="toc-text"><a href="#(Cool)_routine_flip">(Cool) routine flip</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.49</td><td class="toc-text"><a href="#(Cool)_routine_trim">(Cool) routine trim</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.50</td><td class="toc-text"><a href="#(Cool)_routine_trim-leading">(Cool) routine trim-leading</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.51</td><td class="toc-text"><a href="#(Cool)_routine_trim-trailing">(Cool) routine trim-trailing</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.52</td><td class="toc-text"><a href="#(Cool)_routine_lc">(Cool) routine lc</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.53</td><td class="toc-text"><a href="#(Cool)_routine_uc">(Cool) routine uc</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.54</td><td class="toc-text"><a href="#(Cool)_routine_fc">(Cool) routine fc</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.55</td><td class="toc-text"><a href="#(Cool)_routine_tc">(Cool) routine tc</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.56</td><td class="toc-text"><a href="#(Cool)_routine_tclc">(Cool) routine tclc</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.57</td><td class="toc-text"><a href="#(Cool)_routine_wordcase">(Cool) routine wordcase</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.58</td><td class="toc-text"><a href="#(Cool)_routine_samecase">(Cool) routine samecase</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.59</td><td class="toc-text"><a href="#(Cool)_routine_uniprop">(Cool) routine uniprop</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.60</td><td class="toc-text"><a href="#(Cool)_sub_uniprops">(Cool) sub uniprops</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.61</td><td class="toc-text"><a href="#(Cool)_routine_uniname">(Cool) routine uniname</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.62</td><td class="toc-text"><a href="#(Cool)_routine_uninames">(Cool) routine uninames</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.63</td><td class="toc-text"><a href="#(Cool)_routine_unimatch">(Cool) routine unimatch</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.64</td><td class="toc-text"><a href="#(Cool)_routine_chop">(Cool) routine chop</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.65</td><td class="toc-text"><a href="#(Cool)_routine_chomp">(Cool) routine chomp</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.66</td><td class="toc-text"><a href="#(Cool)_routine_substr">(Cool) routine substr</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.67</td><td class="toc-text"><a href="#(Cool)_routine_substr-rw">(Cool) routine substr-rw</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.68</td><td class="toc-text"><a href="#(Cool)_routine_ords">(Cool) routine ords</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.69</td><td class="toc-text"><a href="#(Cool)_routine_chrs">(Cool) routine chrs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.70</td><td class="toc-text"><a href="#(Cool)_routine_split">(Cool) routine split</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.71</td><td class="toc-text"><a href="#(Cool)_routine_lines">(Cool) routine lines</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.72</td><td class="toc-text"><a href="#(Cool)_method_words">(Cool) method words</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.73</td><td class="toc-text"><a href="#(Cool)_routine_comb">(Cool) routine comb</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.74</td><td class="toc-text"><a href="#(Cool)_method_contains">(Cool) method contains</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.75</td><td class="toc-text"><a href="#(Cool)_routine_index">(Cool) routine index</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.76</td><td class="toc-text"><a href="#(Cool)_routine_rindex">(Cool) routine rindex</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.77</td><td class="toc-text"><a href="#(Cool)_method_match">(Cool) method match</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.78</td><td class="toc-text"><a href="#(Cool)_routine_roots">(Cool) routine roots</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.79</td><td class="toc-text"><a href="#(Cool)_method_subst">(Cool) method subst</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.80</td><td class="toc-text"><a href="#(Cool)_method_trans">(Cool) method trans</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.81</td><td class="toc-text"><a href="#(Cool)_method_IO">(Cool) method IO</a></td></tr>
+
 </table>
 </nav>
 
-    <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Complex</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Cool</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Numeric</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p>Represents a number in the complex plane.</p>
+        <div class="pod-body ">
+            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Complex</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Cool</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Numeric</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p>Represents a number in the complex plane.</p>
 <p>Complex objects are immutable.</p>
 <h1 id="Operators"><a class="u" href="#___top" title="go to top of document">Operators</a></h1>
 <h2 id="postfix_i"><a class="u" href="#___top" title="go to top of document">postfix i</a></h2>
@@ -249,9 +246,9 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>3</span></span><span>-4i)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>sqrt</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2-1i␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>-3</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>4i)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>sqrt</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«1+2i␤»</span></span></span></div></pre><h2 id="method_gist"><a class="u" href="#___top" title="go to top of document">method gist</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>gist</span></span><span>(</span><span class="support type perl6fe"><span>Complex</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a string representation of the form &quot;1+2i&quot;, without internal spaces. (Str coercion also returns this.)</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>-4i)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>gist</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«1-4i␤»</span></span></span></div></pre><h2 id="method_perl"><a class="u" href="#___top" title="go to top of document">method perl</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>-4i)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>gist</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«1-4i␤»</span></span></span></div></pre><h2 id="method_raku"><a class="u" href="#___top" title="go to top of document">method raku</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>perl</span></span><span>(</span><span class="support type perl6fe"><span>Complex</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns an implementation-specific string that produces an <a href="/routine/eqv">equivalent</a> object when given to <a href="/routine/EVAL">EVAL</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>raku</span></span><span>(</span><span class="support type perl6fe"><span>Complex</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns an implementation-specific string that produces an <a href="/routine/eqv">equivalent</a> object when given to <a href="/routine/EVAL">EVAL</a>.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>-3i)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>raku</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«&lt;1-3i&gt;␤»</span></span></span></div></pre><h2 id="method_Real"><a class="u" href="#___top" title="go to top of document">method Real</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Real</span></span><span>(</span><span class="support type perl6fe"><span>Complex</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Num</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Real</span></span><span>(</span><span class="support type perl6fe"><span>Complex</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>U</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Num</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Coerces the invocant to <a href="/type/Num">Num</a>. If the imaginary part isn&#39;t <a href="/routine/=~=">approximately</a> zero, coercion <a href="/routine/fail">fails</a> with <code>X::Numeric::Real</code>.</p>
@@ -262,114 +259,145 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>i</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>i</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0.20787957635076193+0i␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>i</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0.7692389013639721+0.6389612763136348i␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>i</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«-1+1.2246467991473532e-16i␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>i</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0+0i␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0</span></span><span>i&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0</span></span><span>i;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«1+0i␤»</span></span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Complex</code></figcaption>
-  <svg width="267pt" height="332pt"
- viewBox="0.00 0.00 266.54 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
+  <svg width="218pt" height="404pt"
+ viewBox="0.00 0.00 217.54 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 262.543,-328 262.543,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-400 213.54,-400 213.54,4 -4,4"/>
 <!-- Complex -->
-<g id="node1" class="node"><title>Complex</title>
+<g id="node1" class="node">
+<title>Complex</title>
 <g id="a_node1"><a xlink:href="/type/Complex" xlink:title="Complex">
-<ellipse fill="none" stroke="#000000" cx="87.1961" cy="-90" rx="45.4919" ry="18"/>
-<text text-anchor="middle" x="87.1961" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Complex</text>
+<ellipse fill="none" stroke="#000000" cx="45.5" cy="-90" rx="45.49" ry="18"/>
+<text text-anchor="middle" x="45.5" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Complex</text>
 </a>
 </g>
 </g>
 <!-- Cool -->
-<g id="node4" class="node"><title>Cool</title>
+<g id="node4" class="node">
+<title>Cool</title>
 <g id="a_node4"><a xlink:href="/type/Cool" xlink:title="Cool">
-<ellipse fill="none" stroke="#000000" cx="135.196" cy="-162" rx="28.6953" ry="18"/>
-<text text-anchor="middle" x="135.196" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
+<ellipse fill="none" stroke="#000000" cx="36.5" cy="-234" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="36.5" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
 </a>
 </g>
 </g>
 <!-- Complex&#45;&gt;Cool -->
-<g id="edge1" class="edge"><title>Complex&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M98.5714,-107.589C104.515,-116.256 111.902,-127.029 118.482,-136.625"/>
-<polygon fill="#000000" stroke="#000000" points="115.691,-138.744 124.233,-145.012 121.464,-134.785 115.691,-138.744"/>
+<g id="edge1" class="edge">
+<title>Complex&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M36.64,-107.77C28.43,-123.3 17.5,-144 17.5,-144 17.5,-144 17.5,-180 17.5,-180 17.5,-180 22.3,-193.41 27.08,-206.73"/>
+<polygon fill="#000000" stroke="#000000" points="23.81,-208 30.48,-216.23 30.4,-205.64 23.81,-208"/>
 </g>
 <!-- Numeric -->
-<g id="node5" class="node"><title>Numeric</title>
+<g id="node5" class="node">
+<title>Numeric</title>
 <g id="a_node5"><a xlink:href="/type/Numeric" xlink:title="Numeric">
-<ellipse fill="none" stroke="#6666ff" cx="44.1961" cy="-162" rx="44.393" ry="18"/>
-<text text-anchor="middle" x="44.1961" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Numeric</text>
+<ellipse fill="none" stroke="#6666ff" cx="70.5" cy="-162" rx="44.39" ry="18"/>
+<text text-anchor="middle" x="70.5" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Numeric</text>
 </a>
 </g>
 </g>
 <!-- Complex&#45;&gt;Numeric -->
-<g id="edge7" class="edge"><title>Complex&#45;&gt;Numeric</title>
-<path fill="none" stroke="#6666ff" d="M77.0057,-107.589C71.8865,-115.923 65.5715,-126.203 59.8532,-135.512"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="56.864,-133.691 54.612,-144.044 62.8285,-137.355 56.864,-133.691"/>
+<g id="edge8" class="edge">
+<title>Complex&#45;&gt;Numeric</title>
+<path fill="none" stroke="#6666ff" d="M51.55,-107.95C54.36,-115.82 57.78,-125.38 60.93,-134.21"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="57.67,-135.48 64.33,-143.72 64.26,-133.13 57.67,-135.48"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node"><title>Mu</title>
+<g id="node2" class="node">
+<title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="135.196" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="135.196" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="36.5" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="36.5" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node"><title>Any</title>
+<g id="node3" class="node">
+<title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="135.196" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="135.196" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="36.5" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="36.5" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M135.196,-252.303C135.196,-260.017 135.196,-269.288 135.196,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="131.696,-277.896 135.196,-287.896 138.696,-277.896 131.696,-277.896"/>
+<g id="edge2" class="edge">
+<title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M36.5,-324.3C36.5,-332.02 36.5,-341.29 36.5,-349.89"/>
+<polygon fill="#000000" stroke="#000000" points="33,-349.9 36.5,-359.9 40,-349.9 33,-349.9"/>
 </g>
 <!-- Cool&#45;&gt;Any -->
-<g id="edge3" class="edge"><title>Cool&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M135.196,-180.303C135.196,-188.017 135.196,-197.288 135.196,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="131.696,-205.896 135.196,-215.896 138.696,-205.896 131.696,-205.896"/>
+<g id="edge3" class="edge">
+<title>Cool&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M36.5,-252.3C36.5,-260.02 36.5,-269.29 36.5,-277.89"/>
+<polygon fill="#000000" stroke="#000000" points="33,-277.9 36.5,-287.9 40,-277.9 33,-277.9"/>
 </g>
 <!-- Stringy -->
-<g id="node6" class="node"><title>Stringy</title>
+<g id="node6" class="node">
+<title>Stringy</title>
 <g id="a_node6"><a xlink:href="/type/Stringy" xlink:title="Stringy">
-<ellipse fill="none" stroke="#6666ff" cx="220.196" cy="-162" rx="38.1938" ry="18"/>
-<text text-anchor="middle" x="220.196" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
+<ellipse fill="none" stroke="#6666ff" cx="159.5" cy="-234" rx="38.19" ry="18"/>
+<text text-anchor="middle" x="159.5" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
 </a>
 </g>
 </g>
 <!-- Str -->
-<g id="node7" class="node"><title>Str</title>
+<g id="node7" class="node">
+<title>Str</title>
 <g id="a_node7"><a xlink:href="/type/Str" xlink:title="Str">
-<ellipse fill="none" stroke="#000000" cx="177.196" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="177.196" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Str</text>
+<ellipse fill="none" stroke="#000000" cx="159.5" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="159.5" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Str</text>
 </a>
 </g>
 </g>
 <!-- Str&#45;&gt;Cool -->
-<g id="edge4" class="edge"><title>Str&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M167.666,-106.884C162.53,-115.443 156.075,-126.203 150.275,-135.868"/>
-<polygon fill="#000000" stroke="#000000" points="147.124,-134.317 144.98,-144.693 153.127,-137.919 147.124,-134.317"/>
+<g id="edge4" class="edge">
+<title>Str&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M139.46,-174.4C119.48,-185.78 88.56,-203.37 65.82,-216.31"/>
+<polygon fill="#000000" stroke="#000000" points="63.89,-213.38 56.93,-221.37 67.36,-219.46 63.89,-213.38"/>
 </g>
 <!-- Str&#45;&gt;Stringy -->
-<g id="edge8" class="edge"><title>Str&#45;&gt;Stringy</title>
-<path fill="none" stroke="#6666ff" d="M186.953,-106.884C192.136,-115.321 198.632,-125.896 204.503,-135.453"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="201.661,-137.514 209.878,-144.203 207.626,-133.85 201.661,-137.514"/>
+<g id="edge9" class="edge">
+<title>Str&#45;&gt;Stringy</title>
+<path fill="none" stroke="#6666ff" d="M159.5,-180.3C159.5,-188.02 159.5,-197.29 159.5,-205.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="156,-205.9 159.5,-215.9 163,-205.9 156,-205.9"/>
+</g>
+<!-- Allomorph -->
+<g id="node8" class="node">
+<title>Allomorph</title>
+<g id="a_node8"><a xlink:href="/type/Allomorph" xlink:title="Allomorph">
+<ellipse fill="none" stroke="#000000" cx="159.5" cy="-90" rx="50.09" ry="18"/>
+<text text-anchor="middle" x="159.5" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Allomorph</text>
+</a>
+</g>
+</g>
+<!-- Allomorph&#45;&gt;Str -->
+<g id="edge5" class="edge">
+<title>Allomorph&#45;&gt;Str</title>
+<path fill="none" stroke="#000000" d="M159.5,-108.3C159.5,-116.02 159.5,-125.29 159.5,-133.89"/>
+<polygon fill="#000000" stroke="#000000" points="156,-133.9 159.5,-143.9 163,-133.9 156,-133.9"/>
 </g>
 <!-- ComplexStr -->
-<g id="node8" class="node"><title>ComplexStr</title>
-<g id="a_node8"><a xlink:href="/type/ComplexStr" xlink:title="ComplexStr">
-<ellipse fill="none" stroke="#000000" cx="132.196" cy="-18" rx="56.59" ry="18"/>
-<text text-anchor="middle" x="132.196" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">ComplexStr</text>
+<g id="node9" class="node">
+<title>ComplexStr</title>
+<g id="a_node9"><a xlink:href="/type/ComplexStr" xlink:title="ComplexStr">
+<ellipse fill="none" stroke="#000000" cx="102.5" cy="-18" rx="56.59" ry="18"/>
+<text text-anchor="middle" x="102.5" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">ComplexStr</text>
 </a>
 </g>
 </g>
 <!-- ComplexStr&#45;&gt;Complex -->
-<g id="edge5" class="edge"><title>ComplexStr&#45;&gt;Complex</title>
-<path fill="none" stroke="#000000" d="M121.303,-35.945C115.941,-44.2853 109.369,-54.5092 103.429,-63.7483"/>
-<polygon fill="#000000" stroke="#000000" points="100.452,-61.9065 97.989,-72.211 106.341,-65.6919 100.452,-61.9065"/>
+<g id="edge7" class="edge">
+<title>ComplexStr&#45;&gt;Complex</title>
+<path fill="none" stroke="#000000" d="M88.99,-35.59C81.96,-44.22 73.23,-54.94 65.44,-64.5"/>
+<polygon fill="#000000" stroke="#000000" points="62.51,-62.57 58.91,-72.53 67.94,-66.99 62.51,-62.57"/>
 </g>
-<!-- ComplexStr&#45;&gt;Str -->
-<g id="edge6" class="edge"><title>ComplexStr&#45;&gt;Str</title>
-<path fill="none" stroke="#000000" d="M143.089,-35.945C148.609,-44.5306 155.411,-55.1123 161.485,-64.5609"/>
-<polygon fill="#000000" stroke="#000000" points="158.668,-66.6514 167.02,-73.1706 164.557,-62.8661 158.668,-66.6514"/>
+<!-- ComplexStr&#45;&gt;Allomorph -->
+<g id="edge6" class="edge">
+<title>ComplexStr&#45;&gt;Allomorph</title>
+<path fill="none" stroke="#000000" d="M116,-35.59C123.03,-44.22 131.76,-54.94 139.55,-64.5"/>
+<polygon fill="#000000" stroke="#000000" points="137.06,-66.99 146.08,-72.53 142.48,-62.57 137.06,-66.99"/>
 </g>
 </g>
 </svg>
@@ -614,8 +642,8 @@
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>wordcase</span></span><span>(</span><span class="support type perl6fe"><span>Str</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>input</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>filter</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>tclc</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Mu</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>where</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>True</span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>wordcase</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>filter</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>tclc</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Mu</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>where</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>True</span></span><span>)</span></span></div></pre><p>Coerces the invocant (or in sub form, the first argument) to <a href="/type/Str">Str</a>, and filters each word that smartmatches against <code>$where</code> through the <code>&amp;filter</code>. With the default filter (first character to upper case, rest to lower) and matcher (which accepts everything), this title-cases each word:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>raku&nbsp;programming</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>wordcase</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Raku&nbsp;Programming␤»</span></span></span></div></pre><p>With a matcher:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>have&nbsp;fun&nbsp;working&nbsp;on&nbsp;perl</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>wordcase</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>where</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chars</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>));</span></span></div><div class="line"><span class="source perl6fe"><span class="punctuation whitespace comment leading perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Have&nbsp;fun&nbsp;Working&nbsp;on&nbsp;Perl</span></span></span></div></pre><p>With a customer filter too:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>have&nbsp;fun&nbsp;working&nbsp;on&nbsp;perl</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>wordcase</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>filter</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>uc</span></span></span><span>),&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>where</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chars</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>));</span></span></div><div class="line"><span class="source perl6fe"><span class="punctuation whitespace comment leading perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;HAVE&nbsp;fun&nbsp;WORKING&nbsp;on&nbsp;PERL</span></span></span></div></pre><h2 id="(Cool)_routine_samecase"><a href="/type/Cool#routine_samecase">(Cool) routine samecase</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>have&nbsp;fun&nbsp;working&nbsp;on&nbsp;raku</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>wordcase</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>where</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chars</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>));</span></span></div><div class="line"><span class="source perl6fe"><span class="punctuation whitespace comment leading perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Have&nbsp;fun&nbsp;Working&nbsp;on&nbsp;Raku</span></span></span></div></pre><p>With a customer filter too:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>have&nbsp;fun&nbsp;working&nbsp;on&nbsp;raku</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>wordcase</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>filter</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>uc</span></span></span><span>),&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>where</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chars</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>));</span></span></div><div class="line"><span class="source perl6fe"><span class="punctuation whitespace comment leading perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;HAVE&nbsp;fun&nbsp;WORKING&nbsp;on&nbsp;RAKU</span></span></span></div></pre><h2 id="(Cool)_routine_samecase"><a href="/type/Cool#routine_samecase">(Cool) routine samecase</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>samecase</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>string</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Cool</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>pattern</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>samecase</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Cool</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>pattern</span></span></span><span>)</span></span></div></pre><p>Coerces the invocant (or in sub form, the first argument) to <a href="/type/Str">Str</a>, and returns a copy of <code>$string</code> with case information for each individual character changed according to <code>$pattern</code>.</p>
 <p><strong>Note</strong>: The pattern string can contain three types of characters, i.e. uppercase, lowercase and caseless. For a given character in <code>$pattern</code> its case information determines the case of the corresponding character in the result.</p>
@@ -641,7 +669,7 @@
 <h2 id="(Cool)_routine_chop"><a href="/type/Cool#routine_chop">(Cool) routine chop</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>chop</span></span><span>(</span><span class="support type perl6fe"><span>Str</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>))</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>chop</span></span><span>()</span></span></div></pre><p>Coerces the invocant (or in sub form, its argument) to <a href="/type/Str">Str</a>, and returns it with the last character removed.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>perl</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chop</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«per␤»</span></span></span></div></pre><h2 id="(Cool)_routine_chomp"><a href="/type/Cool#routine_chomp">(Cool) routine chomp</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>raku</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chop</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«rak␤»</span></span></span></div></pre><h2 id="(Cool)_routine_chomp"><a href="/type/Cool#routine_chomp">(Cool) routine chomp</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>chomp</span></span><span>(</span><span class="support type perl6fe"><span>Str</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>))</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>chomp</span></span><span>()</span></span></div></pre><p>Coerces the invocant (or in sub form, its argument) to <a href="/type/Str">Str</a>, and returns it with the last character removed, if it is a logical newline.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>ab</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chomp</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chars</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>a</span><span class="constant character escape perl6fe"><span>\n</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chomp</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chars</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«1␤»</span></span></span></div></pre><h2 id="(Cool)_routine_substr"><a href="/type/Cool#routine_substr">(Cool) routine substr</a></h2>
@@ -704,15 +732,12 @@
 <p>See <a href="/type/Str#routine_rindex">the documentation in type Str</a> for examples.</p>
 <h2 id="(Cool)_method_match"><a href="/type/Cool#method_match">(Cool) method match</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>match</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>target</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>adverbs</span></span></span><span>)</span></span></div></pre><p>Coerces the invocant to <a href="/type/Str">Str</a> and calls the method <a href="/type/Str#method_match">match</a> on it.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>match</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>target</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>adverbs</span></span></span><span>)</span></span></div></pre><p>Coerces the invocant to <a href="/type/Stringy">Stringy</a> and calls the method <a href="/type/Str#method_match">match</a> on it.</p>
 <h2 id="(Cool)_routine_roots"><a href="/type/Cool#routine_roots">(Cool) routine roots</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>roots</span></span><span>(</span><span class="support type perl6fe"><span>Numeric</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>n</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>roots</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>n</span></span></span><span>)</span></span></div></pre><p>Coerces the first argument (and in method form, the invocant) to <a href="/type/Numeric">Numeric</a> and the second (<code>$n</code>) to <a href="/type/Int">Int</a>, and produces a list of <code>$n</code> <a href="/type/Complex">Complex</a> <code>$n</code>-roots, which means numbers that, raised to the <code>$n</code>th power, approximately produce the original number.</p>
 <p>For example</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>16</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>roots</span></span><span>(</span><span class="constant numeric perl6fe"><span>4</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>r</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>abs</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>r</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>-</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span>);</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«2+0i&nbsp;1.22464679914735e-16+2i&nbsp;-2+2.44929359829471e-16i&nbsp;-3.67394039744206e-16-2i␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«1.77635683940025e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«4.30267170434156e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«8.03651692704705e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«1.04441561648202e-14␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="(Cool)_method_match"><a href="/type/Cool#method_match">(Cool) method match</a></h2>
-<p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>match</span></span><span class="keyword operator setbagmix perl6fe"><span>(|)</span></span></span></div></pre><p>Coerces the invocant to <a href="/type/Stringy">Stringy</a> and calls <a href="/type/Str#method_match">Str.match</a>.</p>
-<h2 id="(Cool)_method_subst"><a href="/type/Cool#method_subst">(Cool) method subst</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>16</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>roots</span></span><span>(</span><span class="constant numeric perl6fe"><span>4</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>roots</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>r</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>abs</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>r</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>-</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>original</span></span></span><span>);</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«2+0i&nbsp;1.22464679914735e-16+2i&nbsp;-2+2.44929359829471e-16i&nbsp;-3.67394039744206e-16-2i␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«1.77635683940025e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«4.30267170434156e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«8.03651692704705e-15␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:«1.04441561648202e-14␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="(Cool)_method_subst"><a href="/type/Cool#method_subst">(Cool) method subst</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>subst</span></span><span class="keyword operator setbagmix perl6fe"><span>(|)</span></span></span></div></pre><p>Coerces the invocant to <a href="/type/Stringy">Stringy</a> and calls <a href="/type/Str#method_subst">Str.subst</a>.</p>
 <h2 id="(Cool)_method_trans"><a href="/type/Cool#method_trans">(Cool) method trans</a></h2>
@@ -722,39 +747,41 @@
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>IO</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Path</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Coerces the invocant to <a href="/type/IO::Path">IO::Path</a>.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>.</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>dir</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;gives&nbsp;a&nbsp;directory&nbsp;listing</span><span>&nbsp;</span></span></span></div></pre>
+        </div>
     </div>
+
     <aside><ol start="1">
 <li><a href="#fn-ref-1" id="fn-1">[↑]</a> <em>the <a href="/routine/comb">comb</a> routine is a much better choice for many tasks that in other languages are handled by the <code>split</code>.</em> </li>
 </ol></aside>
 
-    </div>
-<footer class="pretty-box yellow">
-  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Complex.pod6">/type/Complex</a>.</p>
-  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
-      known to be incomplete.</p>
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Complex.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Complex.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
 
-  <p><a
-          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
-
-  <p> This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
-      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
-        >copyright © 2009 by Larry Wall.</a>
-      <!-- CREDITS -->
-      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
-
-  </p>
-</footer>
-
-<script type="text/javascript" src="/js/app.js?v=1"></script>
-<script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
-
-    </body>
+    <script type="text/javascript" src="/js/app.js?v=1"></script>
+    <script type="text/javascript" src="/js/search.js?v=3"></script>
+</body>
 </html>

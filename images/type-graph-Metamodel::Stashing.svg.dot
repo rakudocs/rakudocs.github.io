@@ -28,11 +28,11 @@ digraph "perl6-type-graph" {
     "Metamodel::Mixins" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::Mixins", fontname="FreeSans"];
     "Metamodel::BoolificationProtocol" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BoolificationProtocol", fontname="FreeSans"];
     "Metamodel::ClassHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ClassHOW", fontname="FreeSans"];
-    "Metamodel::ModuleHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ModuleHOW", fontname="FreeSans"];
     "Metamodel::BaseType" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BaseType", fontname="FreeSans"];
     "Metamodel::EnumHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::EnumHOW", fontname="FreeSans"];
     "Metamodel::RolePunning" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::RolePunning", fontname="FreeSans"];
     "Metamodel::ParametricRoleGroupHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ParametricRoleGroupHOW", fontname="FreeSans"];
+    "Metamodel::ModuleHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ModuleHOW", fontname="FreeSans"];
     "Metamodel::ParametricRoleHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ParametricRoleHOW", fontname="FreeSans"];
     "Metamodel::NativeHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::NativeHOW", fontname="FreeSans"];
 
@@ -40,9 +40,9 @@ digraph "perl6-type-graph" {
     "Any" -> "Mu" [color="#000000"];
     "Metamodel::PackageHOW" -> "Any" [color="#000000"];
     "Metamodel::ClassHOW" -> "Any" [color="#000000"];
-    "Metamodel::ModuleHOW" -> "Any" [color="#000000"];
     "Metamodel::EnumHOW" -> "Any" [color="#000000"];
     "Metamodel::ParametricRoleGroupHOW" -> "Any" [color="#000000"];
+    "Metamodel::ModuleHOW" -> "Any" [color="#000000"];
     "Metamodel::ParametricRoleHOW" -> "Any" [color="#000000"];
     "Metamodel::NativeHOW" -> "Any" [color="#000000"];
 
@@ -71,12 +71,6 @@ digraph "perl6-type-graph" {
     "Metamodel::ClassHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::Mixins" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
-    "Metamodel::ModuleHOW" -> "Metamodel::Naming" [color="#6666FF"];
-    "Metamodel::ModuleHOW" -> "Metamodel::Documenting" [color="#6666FF"];
-    "Metamodel::ModuleHOW" -> "Metamodel::Versioning" [color="#6666FF"];
-    "Metamodel::ModuleHOW" -> "Metamodel::Stashing" [color="#6666FF"];
-    "Metamodel::ModuleHOW" -> "Metamodel::TypePretense" [color="#6666FF"];
-    "Metamodel::ModuleHOW" -> "Metamodel::MethodDelegation" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::Naming" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::Stashing" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::AttributeContainer" [color="#6666FF"];
@@ -88,11 +82,18 @@ digraph "perl6-type-graph" {
     "Metamodel::EnumHOW" -> "Metamodel::MROBasedTypeChecking" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
+    "Metamodel::EnumHOW" -> "Metamodel::Mixins" [color="#6666FF"];
     "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::Naming" [color="#6666FF"];
     "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::Stashing" [color="#6666FF"];
     "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::TypePretense" [color="#6666FF"];
     "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::RolePunning" [color="#6666FF"];
     "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
+    "Metamodel::ModuleHOW" -> "Metamodel::Naming" [color="#6666FF"];
+    "Metamodel::ModuleHOW" -> "Metamodel::Documenting" [color="#6666FF"];
+    "Metamodel::ModuleHOW" -> "Metamodel::Versioning" [color="#6666FF"];
+    "Metamodel::ModuleHOW" -> "Metamodel::Stashing" [color="#6666FF"];
+    "Metamodel::ModuleHOW" -> "Metamodel::TypePretense" [color="#6666FF"];
+    "Metamodel::ModuleHOW" -> "Metamodel::MethodDelegation" [color="#6666FF"];
     "Metamodel::ParametricRoleHOW" -> "Metamodel::Naming" [color="#6666FF"];
     "Metamodel::ParametricRoleHOW" -> "Metamodel::Documenting" [color="#6666FF"];
     "Metamodel::ParametricRoleHOW" -> "Metamodel::Versioning" [color="#6666FF"];

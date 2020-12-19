@@ -2,11 +2,13 @@ digraph "perl6-type-graph" {
     rankdir=BT;
     splines=polyline;
     overlap=false; 
+    graph [truecolor=true bgcolor="#FFFFFF"];
     // Types
     "RaceSeq" [color="#000000", fontcolor="#000000", href="/type/RaceSeq", fontname="FreeSans"];
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
     "Any" [color="#000000", fontcolor="#000000", href="/type/Any", fontname="FreeSans"];
     "Iterable" [color="#6666FF", fontcolor="#6666FF", href="/type/Iterable", fontname="FreeSans"];
+    "PositionalBindFailover" [color="#6666FF", fontcolor="#6666FF", href="/type/PositionalBindFailover", fontname="FreeSans"];
     "Sequence" [color="#6666FF", fontcolor="#6666FF", href="/type/Sequence", fontname="FreeSans"];
 
     // Superclasses
@@ -16,4 +18,5 @@ digraph "perl6-type-graph" {
     // Roles
     "RaceSeq" -> "Iterable" [color="#6666FF"];
     "RaceSeq" -> "Sequence" [color="#6666FF"];
+    "Sequence" -> "PositionalBindFailover" [color="#6666FF"];
 }

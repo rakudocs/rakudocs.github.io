@@ -2,6 +2,7 @@ digraph "perl6-type-graph" {
     rankdir=BT;
     splines=polyline;
     overlap=false; 
+    graph [truecolor=true bgcolor="#FFFFFF"];
     // Types
     "Num" [color="#000000", fontcolor="#000000", href="/type/Num", fontname="FreeSans"];
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
@@ -11,6 +12,7 @@ digraph "perl6-type-graph" {
     "Real" [color="#6666FF", fontcolor="#6666FF", href="/type/Real", fontname="FreeSans"];
     "Stringy" [color="#6666FF", fontcolor="#6666FF", href="/type/Stringy", fontname="FreeSans"];
     "Str" [color="#000000", fontcolor="#000000", href="/type/Str", fontname="FreeSans"];
+    "Allomorph" [color="#000000", fontcolor="#000000", href="/type/Allomorph", fontname="FreeSans"];
     "NumStr" [color="#000000", fontcolor="#000000", href="/type/NumStr", fontname="FreeSans"];
 
     // Superclasses
@@ -18,8 +20,9 @@ digraph "perl6-type-graph" {
     "Any" -> "Mu" [color="#000000"];
     "Cool" -> "Any" [color="#000000"];
     "Str" -> "Cool" [color="#000000"];
+    "Allomorph" -> "Str" [color="#000000"];
+    "NumStr" -> "Allomorph" [color="#000000"];
     "NumStr" -> "Num" [color="#000000"];
-    "NumStr" -> "Str" [color="#000000"];
 
     // Roles
     "Num" -> "Real" [color="#6666FF"];

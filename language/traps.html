@@ -1,177 +1,170 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Traps to avoid</title>
-        <meta charset="UTF-8" />
-        <style>
-        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
-        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
-        u { text-decoration: none }
-        .nested {
-            margin-left: 3em;
-        }
-        aside, u { opacity: 0.7 }
-        a[id^="fn-"]:target { background: #ff0 }
-        </style>
-        
-        
-        <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
-<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+<head>
+    <title>Traps to avoid</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
 
-    </head>
-    <body class="pod">
+<body class="pod">
+
     <div id="___top"></div>
+
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Raku Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+
+        <a href="/">
+            <img src="/images/Camelia.svg"alt="»ö«"id="logo"width="62"height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item selected darker-green" href="/language.html"> Language </a>
+                    <a class="menu-item " href="/type.html"> Types </a>
+                    <a class="menu-item " href="/routine.html"> Routines </a>
+                    <a class="menu-item " href="/programs.html"> Programs </a>
+                    <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a>
+            </div>
+
+            
+            
+
+        </div>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
-  </div>
-</div>
-<!-- please make sure these two CAPITALIZED variables stay there -->
 
-<div id="content" class="pretty-box yellow content__language_traps">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/traps.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+    <div id="content" class="pretty-box yellow content_fragment">
 
-        </button>
-      </div>
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Language/traps.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
 
-    <h1 class='title'>Traps to avoid</h1>
-    <p class='subtitle'>Traps to avoid when getting started with Raku</p>
-    <nav class="indexgroup">
+        <h1 class="title">Traps to avoid</h1>
+        <p class="subtitle">Traps to avoid when getting started with Raku</p>
+
+        <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Variables_and_constants">Variables and constants</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#Constants_are_computed_at_compile_time">Constants are computed at compile time</a></td></tr>
-                        <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#Assigning_to_Nil_produces_a_different_value,_usually_Any">Assigning to <code class="pod-code-inline">Nil</code> produces a different value, usually <code class="pod-code-inline">Any</code></a></td></tr>
-                                               <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#Using_a_block_to_interpolate_anon_state_vars">Using a block to interpolate anon state vars</a></td></tr>
-                                                                            <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#Using_set_subroutines_on_Associative_when_the_value_is_falsy">Using set subroutines on <code class="pod-code-inline">Associative</code> when the value is falsy</a></td></tr>
-                                       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Blocks">Blocks</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#Beware_of_empty_&quot;blocks&quot;">Beware of empty &quot;blocks&quot;</a></td></tr>
-            <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Objects">Objects</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#Assigning_to_attributes">Assigning to attributes</a></td></tr>
-                                                            <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#BUILD_prevents_automatic_attribute_initialization_from_constructor_arguments"><code class="pod-code-inline">BUILD</code> prevents automatic attribute initialization from constructor arguments</a></td></tr>
-                                                    <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Whitespace">Whitespace</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#Whitespace_in_regexes_does_not_match_literally">Whitespace in regexes does not match literally</a></td></tr>
-                          <tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#Ambiguities_in_parsing">Ambiguities in parsing</a></td></tr>
-     <tr class="toc-level-3"><td class="toc-number">4.2.1</td><td class="toc-text"><a href="#Block_vs._Hash_slice_ambiguity">Block vs. Hash slice ambiguity</a></td></tr>
-              <tr class="toc-level-3"><td class="toc-number">4.2.2</td><td class="toc-text"><a href="#Reduction_vs._Array_constructor_ambiguity">Reduction vs. Array constructor ambiguity</a></td></tr>
-              <tr class="toc-level-3"><td class="toc-number">4.2.3</td><td class="toc-text"><a href="#Less_than_vs._Word_quoting/Associative_indexing">Less than vs. Word quoting/Associative indexing</a></td></tr>
-         <tr class="toc-level-3"><td class="toc-number">4.2.4</td><td class="toc-text"><a href="#Exclusive_sequences_vs._sequences_with_Ranges">Exclusive sequences vs. sequences with Ranges</a></td></tr>
-          <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Captures">Captures</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#Containers_versus_values_in_a_capture">Containers versus values in a capture</a></td></tr>
-                                                                              <tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#Cool_tricks"><code class="pod-code-inline">Cool</code> tricks</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">6.1</td><td class="toc-text"><a href="#Strings_are_not_Lists,_so_beware_indexing">Strings are not <code class="pod-code-inline">List</code> s, so beware indexing</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">6.2</td><td class="toc-text"><a href="#Lists_become_strings,_so_beware_.index()ing"><code class="pod-code-inline">List</code> s become strings, so beware <code class="pod-code-inline">.index()</code> ing</a></td></tr>
-                            <tr class="toc-level-2"><td class="toc-number">6.3</td><td class="toc-text"><a href="#Lists_become_strings,_so_beware_.contains()"><code class="pod-code-inline">List</code> s become strings, so beware <code class="pod-code-inline">.contains()</code></a></td></tr>
-                                    <tr class="toc-level-2"><td class="toc-number">6.4</td><td class="toc-text"><a href="#Numeric_literals_are_parsed_before_coercion"><code class="pod-code-inline">Numeric</code> literals are parsed before coercion</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">6.5</td><td class="toc-text"><a href="#Getting_a_random_item_from_a_List">Getting a random item from a <code class="pod-code-inline">List</code></a></td></tr>
-                          <tr class="toc-level-2"><td class="toc-number">6.6</td><td class="toc-text"><a href="#Lists_numify_to_their_number_of_elements_in_numeric_context"><code class="pod-code-inline">List</code> s numify to their number of elements in numeric context</a></td></tr>
-             <tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#Arrays">Arrays</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">7.1</td><td class="toc-text"><a href="#Referencing_the_last_element_of_an_array">Referencing the last element of an array</a></td></tr>
-                    <tr class="toc-level-2"><td class="toc-number">7.2</td><td class="toc-text"><a href="#Typed_array_parameters">Typed array parameters</a></td></tr>
-                            <tr class="toc-level-2"><td class="toc-number">7.3</td><td class="toc-text"><a href="#Using_«»_quoting_when_you_don't_need_it">Using <code class="pod-code-inline">«»</code> quoting when you don&#39;t need it</a></td></tr>
-                                     <tr class="toc-level-1"><td class="toc-number">8</td><td class="toc-text"><a href="#Strings">Strings</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">8.1</td><td class="toc-text"><a href="#Quotes_and_interpolation">Quotes and interpolation</a></td></tr>
-                                  <tr class="toc-level-2"><td class="toc-number">8.2</td><td class="toc-text"><a href="#Strings_are_not_iterable">Strings are not iterable</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">8.3</td><td class="toc-text"><a href="#.chars_gets_the_number_of_graphemes,_not_Codepoints"><code class="pod-code-inline">.chars</code> gets the number of graphemes, not Codepoints</a></td></tr>
-            <tr class="toc-level-2"><td class="toc-number">8.4</td><td class="toc-text"><a href="#All_text_is_normalized_by_default">All text is normalized by default</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">8.5</td><td class="toc-text"><a href="#Allomorphs_generally_follow_numeric_semantics">Allomorphs generally follow numeric semantics</a></td></tr>
-                                       <tr class="toc-level-2"><td class="toc-number">8.6</td><td class="toc-text"><a href="#Case-insensitive_comparison_of_strings">Case-insensitive comparison of strings</a></td></tr>
-                     <tr class="toc-level-1"><td class="toc-number">9</td><td class="toc-text"><a href="#Pairs">Pairs</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">9.1</td><td class="toc-text"><a href="#Constants_on_the_left-hand_side_of_pair_notation">Constants on the left-hand side of pair notation</a></td></tr>
-                         <tr class="toc-level-2"><td class="toc-number">9.2</td><td class="toc-text"><a href="#Scalar_values_within_Pair">Scalar values within <code class="pod-code-inline">Pair</code></a></td></tr>
-                              <tr class="toc-level-1"><td class="toc-number">10</td><td class="toc-text"><a href="#Sets,_bags_and_mixes">Sets, bags and mixes</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">10.1</td><td class="toc-text"><a href="#Sets,_bags_and_mixes_do_not_have_a_fixed_order">Sets, bags and mixes do not have a fixed order</a></td></tr>
-              <tr class="toc-level-1"><td class="toc-number">11</td><td class="toc-text"><a href="#Operators">Operators</a></td></tr>
-  <tr class="toc-level-2"><td class="toc-number">11.1</td><td class="toc-text"><a href="#Junctions">Junctions</a></td></tr>
-                          <tr class="toc-level-2"><td class="toc-number">11.2</td><td class="toc-text"><a href="#Exclusive_sequence_operator">Exclusive sequence operator</a></td></tr>
-                      <tr class="toc-level-2"><td class="toc-number">11.3</td><td class="toc-text"><a href="#String_ranges/Sequences">String ranges/Sequences</a></td></tr>
-                                <tr class="toc-level-2"><td class="toc-number">11.4</td><td class="toc-text"><a href="#Topicalizing_operators">Topicalizing operators</a></td></tr>
-                                 <tr class="toc-level-2"><td class="toc-number">11.5</td><td class="toc-text"><a href="#Fat_arrow_and_constants">Fat arrow and constants</a></td></tr>
-                <tr class="toc-level-2"><td class="toc-number">11.6</td><td class="toc-text"><a href="#Infix_operator_assignment">Infix operator assignment</a></td></tr>
-                                    <tr class="toc-level-1"><td class="toc-number">12</td><td class="toc-text"><a href="#Regexes">Regexes</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">12.1</td><td class="toc-text"><a href="#$x_vs_&lt;$x&gt;,_and_$(code)_vs_&lt;{code}&gt;"><code class="pod-code-inline">$x</code> vs <code class="pod-code-inline">&lt;$x&gt;</code> , and <code class="pod-code-inline">$(code)</code> vs <code class="pod-code-inline">&lt;{code}&gt;</code></a></td></tr>
-                                        <tr class="toc-level-2"><td class="toc-number">12.2</td><td class="toc-text"><a href="#|_vs_||:_which_branch_will_win"><code class="pod-code-inline">|</code> vs <code class="pod-code-inline">||</code> : which branch will win</a></td></tr>
-                                  <tr class="toc-level-2"><td class="toc-number">12.3</td><td class="toc-text"><a href="#$/_changes_each_time_a_regular_expression_is_matched"><code class="pod-code-inline">$/</code> changes each time a regular expression is matched</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">12.4</td><td class="toc-text"><a href="#&lt;foo&gt;_vs._&lt;_foo&gt;:_named_rules_vs._quoted_lists"><code class="pod-code-inline">&lt;foo&gt;</code> vs. <code class="pod-code-inline">&lt; foo&gt;</code> : named rules vs. quoted lists</a></td></tr>
-                    <tr class="toc-level-2"><td class="toc-number">12.5</td><td class="toc-text"><a href="#Non-capturing,_non-global_matching_in_list_context">Non-capturing, non-global matching in list context</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">13</td><td class="toc-text"><a href="#Common_precedence_mistakes">Common precedence mistakes</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">13.1</td><td class="toc-text"><a href="#Adverbs_and_precedence">Adverbs and precedence</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">13.2</td><td class="toc-text"><a href="#Ranges_and_precedence">Ranges and precedence</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">13.3</td><td class="toc-text"><a href="#Loose_Boolean_operators">Loose Boolean operators</a></td></tr>
-                      <tr class="toc-level-2"><td class="toc-number">13.4</td><td class="toc-text"><a href="#Exponentiation_operator_and_prefix_minus">Exponentiation operator and prefix minus</a></td></tr>
-                    <tr class="toc-level-2"><td class="toc-number">13.5</td><td class="toc-text"><a href="#Method_operator_calls_and_prefix_minus">Method operator calls and prefix minus</a></td></tr>
-      <tr class="toc-level-1"><td class="toc-number">14</td><td class="toc-text"><a href="#Subroutine_and_method_calls">Subroutine and method calls</a></td></tr>
-                                  <tr class="toc-level-2"><td class="toc-number">14.1</td><td class="toc-text"><a href="#Named_parameters">Named parameters</a></td></tr>
-                                                         <tr class="toc-level-2"><td class="toc-number">14.2</td><td class="toc-text"><a href="#Argument_count_limit">Argument count limit</a></td></tr>
-                             <tr class="toc-level-2"><td class="toc-number">14.3</td><td class="toc-text"><a href="#Phasers_and_implicit_return">Phasers and implicit return</a></td></tr>
-                                                            <tr class="toc-level-2"><td class="toc-number">14.4</td><td class="toc-text"><a href="#LEAVE_needs_explicit_return_from_a_sub_to_run"><code class="pod-code-inline">LEAVE</code> needs explicit return from a sub to run</a></td></tr>
-                      <tr class="toc-level-1"><td class="toc-number">15</td><td class="toc-text"><a href="#Input_and_output">Input and output</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">15.1</td><td class="toc-text"><a href="#Closing_open_filehandles_and_pipes">Closing open filehandles and pipes</a></td></tr>
-                            <tr class="toc-level-2"><td class="toc-number">15.2</td><td class="toc-text"><a href="#IO::Path_stringification">IO::Path stringification</a></td></tr>
-                                                          <tr class="toc-level-2"><td class="toc-number">15.3</td><td class="toc-text"><a href="#Splitting_the_input_data_into_lines">Splitting the input data into lines</a></td></tr>
-                                                                    <tr class="toc-level-2"><td class="toc-number">15.4</td><td class="toc-text"><a href="#Proc::Async_and_print">Proc::Async and <code class="pod-code-inline">print</code></a></td></tr>
-                                                           <tr class="toc-level-2"><td class="toc-number">15.5</td><td class="toc-text"><a href="#Using_.stdout_without_.lines">Using <code class="pod-code-inline">.stdout</code> without <code class="pod-code-inline">.lines</code></a></td></tr>
-                                                              <tr class="toc-level-1"><td class="toc-number">16</td><td class="toc-text"><a href="#Exception_handling">Exception handling</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">16.1</td><td class="toc-text"><a href="#Sunk_Proc">Sunk <code class="pod-code-inline">Proc</code></a></td></tr>
-                                          <tr class="toc-level-1"><td class="toc-number">17</td><td class="toc-text"><a href="#Using_shortcuts">Using shortcuts</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">17.1</td><td class="toc-text"><a href="#The_^_twigil">The ^ twigil</a></td></tr>
-                                      <tr class="toc-level-2"><td class="toc-number">17.2</td><td class="toc-text"><a href="#Using_»_and_map_interchangeably">Using <code class="pod-code-inline">»</code> and <code class="pod-code-inline">map</code> interchangeably</a></td></tr>
-                                    <tr class="toc-level-2"><td class="toc-number">17.3</td><td class="toc-text"><a href="#Word_splitting_in_«_»">Word splitting in <code class="pod-code-inline">« »</code></a></td></tr>
-              <tr class="toc-level-1"><td class="toc-number">18</td><td class="toc-text"><a href="#Scope">Scope</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">18.1</td><td class="toc-text"><a href="#Using_a_once_block">Using a <code class="pod-code-inline">once</code> block</a></td></tr>
-                                                                                                                              <tr class="toc-level-2"><td class="toc-number">18.2</td><td class="toc-text"><a href="#LEAVE_phaser_and_exit"><code class="pod-code-inline">LEAVE</code> phaser and <code class="pod-code-inline">exit</code></a></td></tr>
-                                                <tr class="toc-level-2"><td class="toc-number">18.3</td><td class="toc-text"><a href="#LEAVE_phaser_may_run_sooner_than_you_think"><code class="pod-code-inline">LEAVE</code> phaser may run sooner than you think</a></td></tr>
-                                                         <tr class="toc-level-1"><td class="toc-number">19</td><td class="toc-text"><a href="#Grammars">Grammars</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">19.1</td><td class="toc-text"><a href="#Using_regexes_within_grammar's_actions">Using regexes within grammar&#39;s actions</a></td></tr>
-                             <tr class="toc-level-2"><td class="toc-number">19.2</td><td class="toc-text"><a href="#Using_certain_names_for_rules/token/regexes">Using certain names for rules/token/regexes</a></td></tr>
-                                          <tr class="toc-level-1"><td class="toc-number">20</td><td class="toc-text"><a href="#Unfortunate_generalization">Unfortunate generalization</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">20.1</td><td class="toc-text"><a href="#:exists_with_more_than_one_key"><code class="pod-code-inline">:exists</code> with more than one key</a></td></tr>
-                                          <tr class="toc-level-2"><td class="toc-number">20.2</td><td class="toc-text"><a href="#Using_[…]_metaoperator_with_a_list_of_lists">Using <code class="pod-code-inline">[…]</code> metaoperator with a list of lists</a></td></tr>
-                      <tr class="toc-level-2"><td class="toc-number">20.3</td><td class="toc-text"><a href="#Using_[~]_for_concatenating_a_list_of_blobs">Using [~] for concatenating a list of blobs</a></td></tr>
-                                                          <tr class="toc-level-1"><td class="toc-number">21</td><td class="toc-text"><a href="#Maps">Maps</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">21.1</td><td class="toc-text"><a href="#Beware_of_nesting_Maps_in_sink_context">Beware of nesting <code class="pod-code-inline">Map</code> s in sink context</a></td></tr>
-                                            <tr class="toc-level-1"><td class="toc-number">22</td><td class="toc-text"><a href="#Smartmatching">Smartmatching</a></td></tr>
-      <tr class="toc-level-2"><td class="toc-number">22.1</td><td class="toc-text"><a href="#Smartmatch_and_WhateverCode">Smartmatch and <code class="pod-code-inline">WhateverCode</code></a></td></tr>
-                              
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Variables_and_constants">Variables and constants</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#Constants_are_computed_at_compile_time">Constants are computed at compile time</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#Assigning_to_Nil_produces_a_different_value,_usually_Any">Assigning to <code class="pod-code-inline">Nil</code> produces a different value, usually <code class="pod-code-inline">Any</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#Using_a_block_to_interpolate_anon_state_vars">Using a block to interpolate anon state vars</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#Using_set_subroutines_on_Associative_when_the_value_is_falsy">Using set subroutines on <code class="pod-code-inline">Associative</code> when the value is falsy</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Blocks">Blocks</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#Beware_of_empty_&quot;blocks&quot;">Beware of empty &quot;blocks&quot;</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Objects">Objects</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#Assigning_to_attributes">Assigning to attributes</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#BUILD_prevents_automatic_attribute_initialization_from_constructor_arguments"><code class="pod-code-inline">BUILD</code> prevents automatic attribute initialization from constructor arguments</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Whitespace">Whitespace</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#Whitespace_in_regexes_does_not_match_literally">Whitespace in regexes does not match literally</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#Ambiguities_in_parsing">Ambiguities in parsing</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">4.2.1</td><td class="toc-text"><a href="#Block_vs._Hash_slice_ambiguity">Block vs. Hash slice ambiguity</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">4.2.2</td><td class="toc-text"><a href="#Reduction_vs._Array_constructor_ambiguity">Reduction vs. Array constructor ambiguity</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">4.2.3</td><td class="toc-text"><a href="#Less_than_vs._Word_quoting/Associative_indexing">Less than vs. Word quoting/Associative indexing</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">4.2.4</td><td class="toc-text"><a href="#Exclusive_sequences_vs._sequences_with_Ranges">Exclusive sequences vs. sequences with Ranges</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Captures">Captures</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#Containers_versus_values_in_a_capture">Containers versus values in a capture</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#Cool_tricks"><code class="pod-code-inline">Cool</code> tricks</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">6.1</td><td class="toc-text"><a href="#Strings_are_not_Lists,_so_beware_indexing">Strings are not <code class="pod-code-inline">List</code>s, so beware indexing</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">6.2</td><td class="toc-text"><a href="#Lists_become_strings,_so_beware_.index()ing"><code class="pod-code-inline">List</code>s become strings, so beware <code class="pod-code-inline">.index()</code>ing</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">6.3</td><td class="toc-text"><a href="#Lists_become_strings,_so_beware_.contains()"><code class="pod-code-inline">List</code>s become strings, so beware <code class="pod-code-inline">.contains()</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">6.4</td><td class="toc-text"><a href="#Numeric_literals_are_parsed_before_coercion"><code class="pod-code-inline">Numeric</code> literals are parsed before coercion</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">6.5</td><td class="toc-text"><a href="#Getting_a_random_item_from_a_List">Getting a random item from a <code class="pod-code-inline">List</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">6.6</td><td class="toc-text"><a href="#Lists_numify_to_their_number_of_elements_in_numeric_context"><code class="pod-code-inline">List</code>s numify to their number of elements in numeric context</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#Arrays">Arrays</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">7.1</td><td class="toc-text"><a href="#Referencing_the_last_element_of_an_array">Referencing the last element of an array</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">7.2</td><td class="toc-text"><a href="#Typed_array_parameters">Typed array parameters</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">7.3</td><td class="toc-text"><a href="#Using_«»_quoting_when_you_don't_need_it">Using <code class="pod-code-inline">«»</code> quoting when you don&#39;t need it</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">8</td><td class="toc-text"><a href="#Strings">Strings</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.1</td><td class="toc-text"><a href="#Quotes_and_interpolation">Quotes and interpolation</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.2</td><td class="toc-text"><a href="#Strings_are_not_iterable">Strings are not iterable</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.3</td><td class="toc-text"><a href="#.chars_gets_the_number_of_graphemes,_not_Codepoints"><code class="pod-code-inline">.chars</code> gets the number of graphemes, not Codepoints</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.4</td><td class="toc-text"><a href="#All_text_is_normalized_by_default">All text is normalized by default</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.5</td><td class="toc-text"><a href="#Allomorphs_generally_follow_numeric_semantics">Allomorphs generally follow numeric semantics</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.6</td><td class="toc-text"><a href="#Case-insensitive_comparison_of_strings">Case-insensitive comparison of strings</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">9</td><td class="toc-text"><a href="#Pairs">Pairs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.1</td><td class="toc-text"><a href="#Constants_on_the_left-hand_side_of_pair_notation">Constants on the left-hand side of pair notation</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.2</td><td class="toc-text"><a href="#Scalar_values_within_Pair">Scalar values within <code class="pod-code-inline">Pair</code></a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">10</td><td class="toc-text"><a href="#Sets,_bags_and_mixes">Sets, bags and mixes</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">10.1</td><td class="toc-text"><a href="#Sets,_bags_and_mixes_do_not_have_a_fixed_order">Sets, bags and mixes do not have a fixed order</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">11</td><td class="toc-text"><a href="#Operators">Operators</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">11.1</td><td class="toc-text"><a href="#Junctions">Junctions</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">11.2</td><td class="toc-text"><a href="#Exclusive_sequence_operator">Exclusive sequence operator</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">11.3</td><td class="toc-text"><a href="#String_ranges/Sequences">String ranges/Sequences</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">11.4</td><td class="toc-text"><a href="#Topicalizing_operators">Topicalizing operators</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">11.5</td><td class="toc-text"><a href="#Fat_arrow_and_constants">Fat arrow and constants</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">11.6</td><td class="toc-text"><a href="#Infix_operator_assignment">Infix operator assignment</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">12</td><td class="toc-text"><a href="#Regexes">Regexes</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">12.1</td><td class="toc-text"><a href="#$x_vs_&lt;$x&gt;,_and_$(code)_vs_&lt;{code}&gt;"><code class="pod-code-inline">$x</code> vs <code class="pod-code-inline">&lt;$x&gt;</code>, and <code class="pod-code-inline">$(code)</code> vs <code class="pod-code-inline">&lt;{code}&gt;</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">12.2</td><td class="toc-text"><a href="#|_vs_||:_which_branch_will_win"><code class="pod-code-inline">|</code> vs <code class="pod-code-inline">||</code>: which branch will win</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">12.3</td><td class="toc-text"><a href="#$/_changes_each_time_a_regular_expression_is_matched"><code class="pod-code-inline">$/</code> changes each time a regular expression is matched</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">12.4</td><td class="toc-text"><a href="#&lt;foo&gt;_vs._&lt;_foo&gt;:_named_rules_vs._quoted_lists"><code class="pod-code-inline">&lt;foo&gt;</code> vs. <code class="pod-code-inline">&lt; foo&gt;</code>: named rules vs. quoted lists</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">12.5</td><td class="toc-text"><a href="#Non-capturing,_non-global_matching_in_list_context">Non-capturing, non-global matching in list context</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">13</td><td class="toc-text"><a href="#Common_precedence_mistakes">Common precedence mistakes</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">13.1</td><td class="toc-text"><a href="#Adverbs_and_precedence">Adverbs and precedence</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">13.2</td><td class="toc-text"><a href="#Ranges_and_precedence">Ranges and precedence</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">13.3</td><td class="toc-text"><a href="#Loose_Boolean_operators">Loose Boolean operators</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">13.4</td><td class="toc-text"><a href="#Exponentiation_operator_and_prefix_minus">Exponentiation operator and prefix minus</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">13.5</td><td class="toc-text"><a href="#Method_operator_calls_and_prefix_minus">Method operator calls and prefix minus</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">14</td><td class="toc-text"><a href="#Subroutine_and_method_calls">Subroutine and method calls</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">14.1</td><td class="toc-text"><a href="#Named_parameters">Named parameters</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">14.2</td><td class="toc-text"><a href="#Argument_count_limit">Argument count limit</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">14.3</td><td class="toc-text"><a href="#Phasers_and_implicit_return">Phasers and implicit return</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">14.4</td><td class="toc-text"><a href="#LEAVE_needs_explicit_return_from_a_sub_to_run"><code class="pod-code-inline">LEAVE</code> needs explicit return from a sub to run</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">15</td><td class="toc-text"><a href="#Input_and_output">Input and output</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">15.1</td><td class="toc-text"><a href="#Closing_open_filehandles_and_pipes">Closing open filehandles and pipes</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">15.2</td><td class="toc-text"><a href="#IO::Path_stringification">IO::Path stringification</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">15.3</td><td class="toc-text"><a href="#Splitting_the_input_data_into_lines">Splitting the input data into lines</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">15.4</td><td class="toc-text"><a href="#Proc::Async_and_print">Proc::Async and <code class="pod-code-inline">print</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">15.5</td><td class="toc-text"><a href="#Using_.stdout_without_.lines">Using <code class="pod-code-inline">.stdout</code> without <code class="pod-code-inline">.lines</code></a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">16</td><td class="toc-text"><a href="#Exception_handling">Exception handling</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">16.1</td><td class="toc-text"><a href="#Sunk_Proc">Sunk <code class="pod-code-inline">Proc</code></a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">17</td><td class="toc-text"><a href="#Using_shortcuts">Using shortcuts</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">17.1</td><td class="toc-text"><a href="#The_^_twigil">The ^ twigil</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">17.2</td><td class="toc-text"><a href="#Using_»_and_map_interchangeably">Using <code class="pod-code-inline">»</code> and <code class="pod-code-inline">map</code> interchangeably</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">17.3</td><td class="toc-text"><a href="#Word_splitting_in_«_»">Word splitting in <code class="pod-code-inline">« »</code></a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">18</td><td class="toc-text"><a href="#Scope">Scope</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">18.1</td><td class="toc-text"><a href="#Using_a_once_block">Using a <code class="pod-code-inline">once</code> block</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">18.2</td><td class="toc-text"><a href="#LEAVE_phaser_and_exit"><code class="pod-code-inline">LEAVE</code> phaser and <code class="pod-code-inline">exit</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">18.3</td><td class="toc-text"><a href="#LEAVE_phaser_may_run_sooner_than_you_think"><code class="pod-code-inline">LEAVE</code> phaser may run sooner than you think</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">19</td><td class="toc-text"><a href="#Grammars">Grammars</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">19.1</td><td class="toc-text"><a href="#Using_regexes_within_grammar's_actions">Using regexes within grammar&#39;s actions</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">19.2</td><td class="toc-text"><a href="#Using_certain_names_for_rules/token/regexes">Using certain names for rules/token/regexes</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">20</td><td class="toc-text"><a href="#Unfortunate_generalization">Unfortunate generalization</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">20.1</td><td class="toc-text"><a href="#:exists_with_more_than_one_key"><code class="pod-code-inline">:exists</code> with more than one key</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">20.2</td><td class="toc-text"><a href="#Using_[…]_metaoperator_with_a_list_of_lists">Using <code class="pod-code-inline">[…]</code> metaoperator with a list of lists</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">20.3</td><td class="toc-text"><a href="#Using_[~]_for_concatenating_a_list_of_blobs">Using [~] for concatenating a list of blobs</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">21</td><td class="toc-text"><a href="#Maps">Maps</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">21.1</td><td class="toc-text"><a href="#Beware_of_nesting_Maps_in_sink_context">Beware of nesting <code class="pod-code-inline">Map</code>s in sink context</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">22</td><td class="toc-text"><a href="#Smartmatching">Smartmatching</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">22.1</td><td class="toc-text"><a href="#Smartmatch_and_WhateverCode">Smartmatch and <code class="pod-code-inline">WhateverCode</code></a></td></tr>
+
 </table>
 </nav>
 
-    <div class="pod-body">
-    <p>When learning a programming language, possibly with the background of being familiar with another programming language, there are always some things that can surprise you and might cost valuable time in debugging and discovery.</p>
+        <div class="pod-body ">
+            <p>When learning a programming language, possibly with the background of being familiar with another programming language, there are always some things that can surprise you and might cost valuable time in debugging and discovery.</p>
 <p>This document aims to show common misconceptions in order to avoid them.</p>
 <p>During the making of Raku great pains were taken to get rid of warts in the syntax. When you whack one wart, though, sometimes another pops up. So a lot of time was spent finding the minimum number of warts or trying to put them where they would rarely be seen. Because of this, Raku&#39;s warts are in different places than you may expect them to be when coming from another language.</p>
 <h1 id="Variables_and_constants"><a class="u" href="#___top" title="go to top of document">Variables and constants</a></h1>
@@ -504,36 +497,39 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>1&nbsp;2&nbsp;3</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>grep</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span><span>.</span></span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>&nbsp;);</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Cannot&nbsp;use&nbsp;Bool&nbsp;as&nbsp;Matcher&nbsp;with&nbsp;&#39;.grep&#39;.&nbsp;&nbsp;Did&nbsp;you&nbsp;mean&nbsp;to</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;use&nbsp;$_&nbsp;inside&nbsp;a&nbsp;block?␤␤␤»</span><span>&nbsp;</span></span></span></div></pre><p>The error message does not make a lot of sense. It does, however, if you put it in terms of the <code>ACCEPTS</code> method: that code is equivalent to <code>2.ACCEPTS( *.Int )</code>, but <code>*.Int</code> cannot be <a href="/routine/ACCEPTS#(Numeric)_method_ACCEPTS">coerced to <code>Numeric</code></a>, being as it is a <code>Block</code>.</p>
 <p>Solution: don&#39;t use <code>WhateverCode</code> in the left hand side of a smartmatch:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>1&nbsp;2&nbsp;3</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>grep</span></span><span>(&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span><span>.</span></span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(2)␤»</span><span>&nbsp;</span></span></span></div></pre>
+        </div>
     </div>
+
     
-    </div>
-<footer class="pretty-box yellow">
-  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/traps.pod6">/language/traps</a>.</p>
-  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
-      known to be incomplete.</p>
 
-  <p><a
-          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Language/traps.pod6">https://github.com/Raku/Documentable/blob/master/docs/Language/traps.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
 
-  <p> This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
-      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
-        >copyright © 2009 by Larry Wall.</a>
-      <!-- CREDITS -->
-      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
-
-  </p>
-</footer>
-
-<script type="text/javascript" src="/js/app.js?v=1"></script>
-<script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
-
-    </body>
+    <script type="text/javascript" src="/js/app.js?v=1"></script>
+    <script type="text/javascript" src="/js/search.js?v=3"></script>
+</body>
 </html>

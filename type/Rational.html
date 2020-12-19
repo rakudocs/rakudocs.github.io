@@ -1,131 +1,129 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>role Rational</title>
-        <meta charset="UTF-8" />
-        <style>
-        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
-        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
-        u { text-decoration: none }
-        .nested {
-            margin-left: 3em;
-        }
-        aside, u { opacity: 0.7 }
-        a[id^="fn-"]:target { background: #ff0 }
-        </style>
-        
-        
-        <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
-<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+<head>
+    <title>role Rational</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
 
-    </head>
-    <body class="pod">
+<body class="pod">
+
     <div id="___top"></div>
+
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Raku Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+
+        <a href="/">
+            <img src="/images/Camelia.svg"alt="»ö«"id="logo"width="62"height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item " href="/language.html"> Language </a>
+                    <a class="menu-item selected darker-green" href="/type.html"> Types </a>
+                    <a class="menu-item " href="/routine.html"> Routines </a>
+                    <a class="menu-item " href="/programs.html"> Programs </a>
+                    <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a>
+            </div>
+
+            <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
+                    <a class="menu-item" href="/type.html"> All </a>
+                    <a class="menu-item" href="/type-basic.html"> Basic </a>
+                    <a class="menu-item" href="/type-composite.html"> Composite </a>
+                    <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a>
+                    <a class="menu-item" href="/type-exception.html"> Exceptions </a>
+            </div></div></div></div></div>
+
+        </div>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
-  </div>
-</div>
-<!-- please make sure these two CAPITALIZED variables stay there -->
 
-<div id="content" class="pretty-box yellow content__type_Rational">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Rational.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+    <div id="content" class="pretty-box yellow content_fragment">
 
-        </button>
-      </div>
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Rational.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
 
-    <h1 class='title'>role Rational</h1>
-    <p class='subtitle'>Number stored as numerator and denominator</p>
-    <nav class="indexgroup">
+        <h1 class="title">role Rational</h1>
+        <p class="subtitle">Number stored as numerator and denominator</p>
+
+        <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-                             <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_new">method new</a></td></tr>
-            <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_Bool">method Bool</a></td></tr>
-                    <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_Bridge">method Bridge</a></td></tr>
-      <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_Int">method Int</a></td></tr>
-            <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_Num">method Num</a></td></tr>
-                        <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_ceiling">method ceiling</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_floor">method floor</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_isNaN">method isNaN</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_numerator">method numerator</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">1.10</td><td class="toc-text"><a href="#method_denominator">method denominator</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">1.11</td><td class="toc-text"><a href="#method_nude">method nude</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.12</td><td class="toc-text"><a href="#method_norm">method norm</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">1.13</td><td class="toc-text"><a href="#method_base-repeating">method base-repeating</a></td></tr>
-                <tr class="toc-level-2"><td class="toc-number">1.14</td><td class="toc-text"><a href="#method_Range">method Range</a></td></tr>
-    <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Real">Routines supplied by role Real</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(Real)_method_Bridge">(Real) method Bridge</a></td></tr>
-                                             <tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#(Real)_method_Complex">(Real) method Complex</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">4.3</td><td class="toc-text"><a href="#(Real)_method_Rat">(Real) method Rat</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">4.4</td><td class="toc-text"><a href="#(Real)_method_Real">(Real) method Real</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">4.5</td><td class="toc-text"><a href="#(Real)_routine_rand">(Real) routine rand</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">4.6</td><td class="toc-text"><a href="#(Real)_method_sign">(Real) method sign</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">4.7</td><td class="toc-text"><a href="#(Real)_method_round">(Real) method round</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">4.8</td><td class="toc-text"><a href="#(Real)_method_floor">(Real) method floor</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">4.9</td><td class="toc-text"><a href="#(Real)_method_ceiling">(Real) method ceiling</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">4.10</td><td class="toc-text"><a href="#(Real)_method_truncate">(Real) method truncate</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">4.11</td><td class="toc-text"><a href="#(Real)_method_polymod">(Real) method polymod</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">4.12</td><td class="toc-text"><a href="#(Real)_method_base">(Real) method base</a></td></tr>
-                                    <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Routines_supplied_by_role_Numeric">Routines supplied by role Numeric</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">4.13</td><td class="toc-text"><a href="#(Numeric)_method_Numeric">(Numeric) method Numeric</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">4.14</td><td class="toc-text"><a href="#(Numeric)_method_Int">(Numeric) method Int</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">4.15</td><td class="toc-text"><a href="#(Numeric)_method_Rat">(Numeric) method Rat</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">4.16</td><td class="toc-text"><a href="#(Numeric)_method_Num">(Numeric) method Num</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">4.17</td><td class="toc-text"><a href="#(Numeric)_method_narrow">(Numeric) method narrow</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">4.18</td><td class="toc-text"><a href="#(Numeric)_method_ACCEPTS">(Numeric) method ACCEPTS</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">4.19</td><td class="toc-text"><a href="#(Numeric)_routine_log">(Numeric) routine log</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">4.20</td><td class="toc-text"><a href="#(Numeric)_routine_log10">(Numeric) routine log10</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">4.21</td><td class="toc-text"><a href="#(Numeric)_routine_log2">(Numeric) routine log2</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">4.22</td><td class="toc-text"><a href="#(Numeric)_routine_exp">(Numeric) routine exp</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">4.23</td><td class="toc-text"><a href="#(Numeric)_method_roots">(Numeric) method roots</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">4.24</td><td class="toc-text"><a href="#(Numeric)_routine_abs">(Numeric) routine abs</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">4.25</td><td class="toc-text"><a href="#(Numeric)_routine_sqrt">(Numeric) routine sqrt</a></td></tr>
-            <tr class="toc-level-2"><td class="toc-number">4.26</td><td class="toc-text"><a href="#(Numeric)_method_conj">(Numeric) method conj</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">4.27</td><td class="toc-text"><a href="#(Numeric)_method_Bool">(Numeric) method Bool</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">4.28</td><td class="toc-text"><a href="#(Numeric)_method_succ">(Numeric) method succ</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">4.29</td><td class="toc-text"><a href="#(Numeric)_method_pred">(Numeric) method pred</a></td></tr>
-  
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_new">method new</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_Bool">method Bool</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_Bridge">method Bridge</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_Int">method Int</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_Num">method Num</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_ceiling">method ceiling</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_floor">method floor</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_isNaN">method isNaN</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_numerator">method numerator</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.10</td><td class="toc-text"><a href="#method_denominator">method denominator</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.11</td><td class="toc-text"><a href="#method_nude">method nude</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.12</td><td class="toc-text"><a href="#method_norm">method norm</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.13</td><td class="toc-text"><a href="#method_base-repeating">method base-repeating</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.14</td><td class="toc-text"><a href="#method_Range">method Range</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Real">Routines supplied by role Real</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Real)_method_Bridge">(Real) method Bridge</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Real)_method_Complex">(Real) method Complex</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Real)_method_Rat">(Real) method Rat</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Real)_method_Real">(Real) method Real</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Real)_routine_rand">(Real) routine rand</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#(Real)_method_sign">(Real) method sign</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.7</td><td class="toc-text"><a href="#(Real)_method_round">(Real) method round</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.8</td><td class="toc-text"><a href="#(Real)_method_floor">(Real) method floor</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.9</td><td class="toc-text"><a href="#(Real)_method_ceiling">(Real) method ceiling</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.10</td><td class="toc-text"><a href="#(Real)_method_truncate">(Real) method truncate</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.11</td><td class="toc-text"><a href="#(Real)_method_polymod">(Real) method polymod</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.12</td><td class="toc-text"><a href="#(Real)_method_base">(Real) method base</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Routines_supplied_by_role_Numeric">Routines supplied by role Numeric</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(Numeric)_method_Numeric">(Numeric) method Numeric</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#(Numeric)_method_Int">(Numeric) method Int</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.3</td><td class="toc-text"><a href="#(Numeric)_method_Rat">(Numeric) method Rat</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.4</td><td class="toc-text"><a href="#(Numeric)_method_Num">(Numeric) method Num</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.5</td><td class="toc-text"><a href="#(Numeric)_method_narrow">(Numeric) method narrow</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.6</td><td class="toc-text"><a href="#(Numeric)_method_ACCEPTS">(Numeric) method ACCEPTS</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.7</td><td class="toc-text"><a href="#(Numeric)_routine_log">(Numeric) routine log</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.8</td><td class="toc-text"><a href="#(Numeric)_routine_log10">(Numeric) routine log10</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.9</td><td class="toc-text"><a href="#(Numeric)_routine_log2">(Numeric) routine log2</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.10</td><td class="toc-text"><a href="#(Numeric)_routine_exp">(Numeric) routine exp</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.11</td><td class="toc-text"><a href="#(Numeric)_method_roots">(Numeric) method roots</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.12</td><td class="toc-text"><a href="#(Numeric)_routine_abs">(Numeric) routine abs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.13</td><td class="toc-text"><a href="#(Numeric)_routine_sqrt">(Numeric) routine sqrt</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.14</td><td class="toc-text"><a href="#(Numeric)_method_conj">(Numeric) method conj</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.15</td><td class="toc-text"><a href="#(Numeric)_method_Bool">(Numeric) method Bool</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.16</td><td class="toc-text"><a href="#(Numeric)_method_succ">(Numeric) method succ</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.17</td><td class="toc-text"><a href="#(Numeric)_method_pred">(Numeric) method pred</a></td></tr>
+
 </table>
 </nav>
 
-    <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Rational</span></span></span><span>[::</span><span class="routine name perl6fe"><span>NuT</span></span><span>,&nbsp;::</span><span class="routine name perl6fe"><span>DeT</span></span><span>]&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Real</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><code>Rational</code> is the common role for numbers that are stored as pairs of numerator and denominator. It is parameterized by the types of the numerator (<code>NuT</code>) and denominator (<code>DeT</code>). By default, these are <code>Int</code>, but other types of <code>Rational</code> are possible by using a different parameterization. In addition, <code>Rational</code> objects are immutable throughout their life.</p>
+        <div class="pod-body ">
+            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Rational</span></span></span><span>[::</span><span class="routine name perl6fe"><span>NuT</span></span><span>,&nbsp;::</span><span class="routine name perl6fe"><span>DeT</span></span><span>]&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Real</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><code>Rational</code> is the common role for numbers that are stored as pairs of numerator and denominator. It is parameterized by the types of the numerator (<code>NuT</code>) and denominator (<code>DeT</code>). By default, these are <code>Int</code>, but other types of <code>Rational</code> are possible by using a different parameterization. In addition, <code>Rational</code> objects are immutable throughout their life.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Positive</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Rational</span></span><span>[</span><span class="support type perl6fe"><span>UInt</span></span><span>]&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Positive</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>one-third</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Positive</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="constant numeric perl6fe"><span>1</span></span><span>,</span><span class="constant numeric perl6fe"><span>3</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>one-third</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0.333333␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Positive</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fail</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span class="routine name perl6fe"><span>Positive</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="constant numeric perl6fe"><span>-2</span></span><span>,</span><span class="constant numeric perl6fe"><span>3</span></span><span>);&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Type&nbsp;check&nbsp;failed&nbsp;in&nbsp;binding&nbsp;to&nbsp;parameter&nbsp;&#39;nu&#39;;&nbsp;expected&nbsp;UInt&nbsp;but&nbsp;got&nbsp;Int&nbsp;(-2)␤»</span></span></span></div></pre><p>Please note that, since <code>DeT</code> is by default equal to <code>NuT</code>, in this case both are instantiated to <code>UInt</code>. Built into Raku are <a href="/type/Rat">Rat</a> and <a href="/type/FatRat">FatRat</a>, which both do the <code>Rational</code> role.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_new"><a class="u" href="#___top" title="go to top of document">method new</a></h2>
@@ -170,158 +168,196 @@
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Rational</code></figcaption>
-  <svg width="265pt" height="332pt"
- viewBox="0.00 0.00 264.54 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
+  <svg width="265pt" height="404pt"
+ viewBox="0.00 0.00 264.54 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 260.543,-328 260.543,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-400 260.54,-400 260.54,4 -4,4"/>
 <!-- Rational -->
-<g id="node1" class="node"><title>Rational</title>
+<g id="node1" class="node">
+<title>Rational</title>
 <g id="a_node1"><a xlink:href="/type/Rational" xlink:title="Rational">
-<ellipse fill="none" stroke="#6666ff" cx="212.347" cy="-162" rx="42.7926" ry="18"/>
-<text text-anchor="middle" x="212.347" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Rational</text>
+<ellipse fill="none" stroke="#6666ff" cx="44.2" cy="-234" rx="42.79" ry="18"/>
+<text text-anchor="middle" x="44.2" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Rational</text>
 </a>
 </g>
 </g>
 <!-- Real -->
-<g id="node3" class="node"><title>Real</title>
+<g id="node3" class="node">
+<title>Real</title>
 <g id="a_node3"><a xlink:href="/type/Real" xlink:title="Real">
-<ellipse fill="none" stroke="#6666ff" cx="212.347" cy="-234" rx="28.6953" ry="18"/>
-<text text-anchor="middle" x="212.347" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Real</text>
+<ellipse fill="none" stroke="#6666ff" cx="44.2" cy="-306" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="44.2" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Real</text>
 </a>
 </g>
 </g>
 <!-- Rational&#45;&gt;Real -->
-<g id="edge8" class="edge"><title>Rational&#45;&gt;Real</title>
-<path fill="none" stroke="#6666ff" d="M212.347,-180.303C212.347,-188.017 212.347,-197.288 212.347,-205.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="208.847,-205.896 212.347,-215.896 215.847,-205.896 208.847,-205.896"/>
+<g id="edge9" class="edge">
+<title>Rational&#45;&gt;Real</title>
+<path fill="none" stroke="#6666ff" d="M44.2,-252.3C44.2,-260.02 44.2,-269.29 44.2,-277.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="40.7,-277.9 44.2,-287.9 47.7,-277.9 40.7,-277.9"/>
 </g>
 <!-- Numeric -->
-<g id="node2" class="node"><title>Numeric</title>
+<g id="node2" class="node">
+<title>Numeric</title>
 <g id="a_node2"><a xlink:href="/type/Numeric" xlink:title="Numeric">
-<ellipse fill="none" stroke="#6666ff" cx="212.347" cy="-306" rx="44.393" ry="18"/>
-<text text-anchor="middle" x="212.347" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Numeric</text>
+<ellipse fill="none" stroke="#6666ff" cx="44.2" cy="-378" rx="44.39" ry="18"/>
+<text text-anchor="middle" x="44.2" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Numeric</text>
 </a>
 </g>
 </g>
 <!-- Real&#45;&gt;Numeric -->
-<g id="edge9" class="edge"><title>Real&#45;&gt;Numeric</title>
-<path fill="none" stroke="#6666ff" d="M212.347,-252.303C212.347,-260.017 212.347,-269.288 212.347,-277.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="208.847,-277.896 212.347,-287.896 215.847,-277.896 208.847,-277.896"/>
+<g id="edge10" class="edge">
+<title>Real&#45;&gt;Numeric</title>
+<path fill="none" stroke="#6666ff" d="M44.2,-324.3C44.2,-332.02 44.2,-341.29 44.2,-349.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="40.7,-349.9 44.2,-359.9 47.7,-349.9 40.7,-349.9"/>
 </g>
 <!-- Mu -->
-<g id="node4" class="node"><title>Mu</title>
+<g id="node4" class="node">
+<title>Mu</title>
 <g id="a_node4"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="123.347" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="123.347" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="133.2" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="133.2" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node5" class="node"><title>Any</title>
+<g id="node5" class="node">
+<title>Any</title>
 <g id="a_node5"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="123.347" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="123.347" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="133.2" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="133.2" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M123.347,-252.303C123.347,-260.017 123.347,-269.288 123.347,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="119.847,-277.896 123.347,-287.896 126.847,-277.896 119.847,-277.896"/>
+<g id="edge1" class="edge">
+<title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M133.2,-324.3C133.2,-332.02 133.2,-341.29 133.2,-349.89"/>
+<polygon fill="#000000" stroke="#000000" points="129.7,-349.9 133.2,-359.9 136.7,-349.9 129.7,-349.9"/>
 </g>
 <!-- Cool -->
-<g id="node6" class="node"><title>Cool</title>
+<g id="node6" class="node">
+<title>Cool</title>
 <g id="a_node6"><a xlink:href="/type/Cool" xlink:title="Cool">
-<ellipse fill="none" stroke="#000000" cx="123.347" cy="-162" rx="28.6953" ry="18"/>
-<text text-anchor="middle" x="123.347" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
+<ellipse fill="none" stroke="#000000" cx="133.2" cy="-234" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="133.2" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
 </a>
 </g>
 </g>
 <!-- Cool&#45;&gt;Any -->
-<g id="edge2" class="edge"><title>Cool&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M123.347,-180.303C123.347,-188.017 123.347,-197.288 123.347,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="119.847,-205.896 123.347,-215.896 126.847,-205.896 119.847,-205.896"/>
+<g id="edge2" class="edge">
+<title>Cool&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M133.2,-252.3C133.2,-260.02 133.2,-269.29 133.2,-277.89"/>
+<polygon fill="#000000" stroke="#000000" points="129.7,-277.9 133.2,-287.9 136.7,-277.9 129.7,-277.9"/>
 </g>
 <!-- FatRat -->
-<g id="node7" class="node"><title>FatRat</title>
+<g id="node7" class="node">
+<title>FatRat</title>
 <g id="a_node7"><a xlink:href="/type/FatRat" xlink:title="FatRat">
-<ellipse fill="none" stroke="#000000" cx="126.347" cy="-90" rx="37.0935" ry="18"/>
-<text text-anchor="middle" x="126.347" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">FatRat</text>
+<ellipse fill="none" stroke="#000000" cx="129.2" cy="-162" rx="37.09" ry="18"/>
+<text text-anchor="middle" x="129.2" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">FatRat</text>
 </a>
 </g>
 </g>
 <!-- FatRat&#45;&gt;Rational -->
-<g id="edge10" class="edge"><title>FatRat&#45;&gt;Rational</title>
-<path fill="none" stroke="#6666ff" d="M144.585,-105.845C156.508,-115.55 172.283,-128.39 185.613,-139.24"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="183.575,-142.094 193.54,-145.692 187.994,-136.665 183.575,-142.094"/>
+<g id="edge11" class="edge">
+<title>FatRat&#45;&gt;Rational</title>
+<path fill="none" stroke="#6666ff" d="M111.17,-177.85C99.39,-187.55 83.79,-200.39 70.62,-211.24"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="68.28,-208.63 62.78,-217.69 72.73,-214.04 68.28,-208.63"/>
 </g>
 <!-- FatRat&#45;&gt;Cool -->
-<g id="edge3" class="edge"><title>FatRat&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M125.605,-108.303C125.274,-116.017 124.877,-125.288 124.509,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="121.011,-133.755 124.08,-143.896 128.005,-134.055 121.011,-133.755"/>
+<g id="edge3" class="edge">
+<title>FatRat&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M130.18,-180.3C130.63,-188.02 131.16,-197.29 131.65,-205.89"/>
+<polygon fill="#000000" stroke="#000000" points="128.15,-206.11 132.22,-215.9 135.14,-205.71 128.15,-206.11"/>
 </g>
 <!-- Rat -->
-<g id="node8" class="node"><title>Rat</title>
+<g id="node8" class="node">
+<title>Rat</title>
 <g id="a_node8"><a xlink:href="/type/Rat" xlink:title="Rat">
-<ellipse fill="none" stroke="#000000" cx="208.347" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="208.347" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Rat</text>
+<ellipse fill="none" stroke="#000000" cx="47.2" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="47.2" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Rat</text>
 </a>
 </g>
 </g>
 <!-- Rat&#45;&gt;Rational -->
-<g id="edge11" class="edge"><title>Rat&#45;&gt;Rational</title>
-<path fill="none" stroke="#6666ff" d="M209.335,-108.303C209.776,-116.017 210.306,-125.288 210.797,-133.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="207.304,-134.112 211.369,-143.896 214.293,-133.712 207.304,-134.112"/>
+<g id="edge12" class="edge">
+<title>Rat&#45;&gt;Rational</title>
+<path fill="none" stroke="#6666ff" d="M46.45,-180.3C46.12,-188.02 45.73,-197.29 45.36,-205.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="41.86,-205.75 44.93,-215.9 48.85,-206.05 41.86,-205.75"/>
 </g>
 <!-- Rat&#45;&gt;Cool -->
-<g id="edge4" class="edge"><title>Rat&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M191.958,-104.497C179.456,-114.792 162.033,-129.14 147.873,-140.801"/>
-<polygon fill="#000000" stroke="#000000" points="145.47,-138.247 139.975,-147.306 149.919,-143.651 145.47,-138.247"/>
+<g id="edge4" class="edge">
+<title>Rat&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M63.78,-176.5C76.43,-186.79 94.05,-201.14 108.38,-212.8"/>
+<polygon fill="#000000" stroke="#000000" points="106.41,-215.71 116.37,-219.31 110.83,-210.28 106.41,-215.71"/>
 </g>
 <!-- Stringy -->
-<g id="node9" class="node"><title>Stringy</title>
+<g id="node9" class="node">
+<title>Stringy</title>
 <g id="a_node9"><a xlink:href="/type/Stringy" xlink:title="Stringy">
-<ellipse fill="none" stroke="#6666ff" cx="38.3466" cy="-162" rx="38.1938" ry="18"/>
-<text text-anchor="middle" x="38.3466" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
+<ellipse fill="none" stroke="#6666ff" cx="218.2" cy="-234" rx="38.19" ry="18"/>
+<text text-anchor="middle" x="218.2" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
 </a>
 </g>
 </g>
 <!-- Str -->
-<g id="node10" class="node"><title>Str</title>
+<g id="node10" class="node">
+<title>Str</title>
 <g id="a_node10"><a xlink:href="/type/Str" xlink:title="Str">
-<ellipse fill="none" stroke="#000000" cx="44.3466" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="44.3466" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Str</text>
+<ellipse fill="none" stroke="#000000" cx="211.2" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="211.2" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Str</text>
 </a>
 </g>
 </g>
 <!-- Str&#45;&gt;Cool -->
-<g id="edge5" class="edge"><title>Str&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M59.9545,-104.83C71.3493,-114.926 86.9933,-128.788 99.889,-140.215"/>
-<polygon fill="#000000" stroke="#000000" points="97.695,-142.947 107.501,-146.959 102.337,-137.708 97.695,-142.947"/>
+<g id="edge5" class="edge">
+<title>Str&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M195.79,-176.83C184.61,-186.86 169.29,-200.61 156.61,-211.99"/>
+<polygon fill="#000000" stroke="#000000" points="154.21,-209.43 149.11,-218.72 158.89,-214.64 154.21,-209.43"/>
 </g>
 <!-- Str&#45;&gt;Stringy -->
-<g id="edge12" class="edge"><title>Str&#45;&gt;Stringy</title>
-<path fill="none" stroke="#6666ff" d="M42.8635,-108.303C42.2023,-116.017 41.4077,-125.288 40.6705,-133.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="37.1796,-133.633 39.8127,-143.896 44.154,-134.231 37.1796,-133.633"/>
+<g id="edge13" class="edge">
+<title>Str&#45;&gt;Stringy</title>
+<path fill="none" stroke="#6666ff" d="M212.93,-180.3C213.7,-188.02 214.62,-197.29 215.48,-205.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="212.01,-206.29 216.49,-215.9 218.97,-205.6 212.01,-206.29"/>
+</g>
+<!-- Allomorph -->
+<g id="node11" class="node">
+<title>Allomorph</title>
+<g id="a_node11"><a xlink:href="/type/Allomorph" xlink:title="Allomorph">
+<ellipse fill="none" stroke="#000000" cx="189.2" cy="-90" rx="50.09" ry="18"/>
+<text text-anchor="middle" x="189.2" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Allomorph</text>
+</a>
+</g>
+</g>
+<!-- Allomorph&#45;&gt;Str -->
+<g id="edge6" class="edge">
+<title>Allomorph&#45;&gt;Str</title>
+<path fill="none" stroke="#000000" d="M194.52,-107.95C197.03,-115.94 200.09,-125.67 202.9,-134.6"/>
+<polygon fill="#000000" stroke="#000000" points="199.58,-135.72 205.92,-144.21 206.26,-133.62 199.58,-135.72"/>
 </g>
 <!-- RatStr -->
-<g id="node11" class="node"><title>RatStr</title>
-<g id="a_node11"><a xlink:href="/type/RatStr" xlink:title="RatStr">
-<ellipse fill="none" stroke="#000000" cx="126.347" cy="-18" rx="35.9954" ry="18"/>
-<text text-anchor="middle" x="126.347" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">RatStr</text>
+<g id="node12" class="node">
+<title>RatStr</title>
+<g id="a_node12"><a xlink:href="/type/RatStr" xlink:title="RatStr">
+<ellipse fill="none" stroke="#000000" cx="129.2" cy="-18" rx="36" ry="18"/>
+<text text-anchor="middle" x="129.2" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">RatStr</text>
 </a>
 </g>
 </g>
 <!-- RatStr&#45;&gt;Rat -->
-<g id="edge6" class="edge"><title>RatStr&#45;&gt;Rat</title>
-<path fill="none" stroke="#000000" d="M143.737,-33.8452C155.65,-44.015 171.597,-57.6288 184.668,-68.7862"/>
-<polygon fill="#000000" stroke="#000000" points="182.494,-71.5325 192.372,-75.3631 187.039,-66.2085 182.494,-71.5325"/>
+<g id="edge8" class="edge">
+<title>RatStr&#45;&gt;Rat</title>
+<path fill="none" stroke="#000000" d="M119.63,-35.57C105.3,-60.39 78.15,-107.39 61.47,-136.28"/>
+<polygon fill="#000000" stroke="#000000" points="58.42,-134.56 56.45,-144.97 64.48,-138.06 58.42,-134.56"/>
 </g>
-<!-- RatStr&#45;&gt;Str -->
-<g id="edge7" class="edge"><title>RatStr&#45;&gt;Str</title>
-<path fill="none" stroke="#000000" d="M108.957,-33.8452C97.0433,-44.015 81.0957,-57.6288 68.0256,-68.7862"/>
-<polygon fill="#000000" stroke="#000000" points="65.6545,-66.2085 60.3212,-75.3631 70.1993,-71.5325 65.6545,-66.2085"/>
+<!-- RatStr&#45;&gt;Allomorph -->
+<g id="edge7" class="edge">
+<title>RatStr&#45;&gt;Allomorph</title>
+<path fill="none" stroke="#000000" d="M142.81,-34.88C150.45,-43.8 160.13,-55.09 168.67,-65.06"/>
+<polygon fill="#000000" stroke="#000000" points="166.05,-67.38 175.22,-72.69 171.37,-62.82 166.05,-67.38"/>
 </g>
 </g>
 </svg>
@@ -357,11 +393,11 @@
 <h2 id="(Real)_method_round"><a href="/type/Real#method_round">(Real) method round</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>round</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>scale</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>)</span></span></div></pre><p>Rounds the number to scale <code>$scale</code>. If <code>$scale</code> is 1, rounds to an integer. If scale is <code>0.1</code>, rounds to one digit after the radix point (period or comma), etc.</p>
 <h2 id="(Real)_method_floor"><a href="/type/Real#method_floor">(Real) method floor</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>floor</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Return the largest integer not greater than the number.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>floor</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Return the largest integer not greater than the number.</p>
 <h2 id="(Real)_method_ceiling"><a href="/type/Real#method_ceiling">(Real) method ceiling</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>ceiling</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the smallest integer not less than the number.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>ceiling</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the smallest integer not less than the number.</p>
 <h2 id="(Real)_method_truncate"><a href="/type/Real#method_truncate">(Real) method truncate</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>truncate</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Rounds the number towards zero.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>truncate</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Rounds the number towards zero.</p>
 <h2 id="(Real)_method_polymod"><a href="/type/Real#method_polymod">(Real) method polymod</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>polymod</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>+</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>mods</span></span></span><span>)</span></span></div></pre><p>Returns the remainders after applying sequentially all divisors in the <code>@mods</code> argument; the last element of the array will be the last remainder.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1e8</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>1)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>polymod</span></span><span>(</span><span class="constant numeric perl6fe"><span>10</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>xx</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>8</span></span><span>);&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(1&nbsp;0&nbsp;0&nbsp;0&nbsp;0&nbsp;0&nbsp;0&nbsp;0&nbsp;1)␤»</span></span></span></div></pre><p><code>10 xx 8</code> is simply an array with eight number 10s; the first division by 10 will return <code>1</code> as a remainder, while the rest, up to the last, will return 0. With 8 divisors, as above, the result will have one more elements, in this case for the last remainder.</p>
@@ -410,36 +446,39 @@
 <h2 id="(Numeric)_method_pred"><a href="/type/Numeric#method_pred">(Numeric) method pred</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>pred</span></span><span>(</span><span class="support type perl6fe"><span>Numeric</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns the number decremented by one (predecessor).</p>
 
+        </div>
     </div>
+
     
-    </div>
-<footer class="pretty-box yellow">
-  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Rational.pod6">/type/Rational</a>.</p>
-  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
-      known to be incomplete.</p>
 
-  <p><a
-          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Rational.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Rational.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
 
-  <p> This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
-      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
-        >copyright © 2009 by Larry Wall.</a>
-      <!-- CREDITS -->
-      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
-
-  </p>
-</footer>
-
-<script type="text/javascript" src="/js/app.js?v=1"></script>
-<script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
-
-    </body>
+    <script type="text/javascript" src="/js/app.js?v=1"></script>
+    <script type="text/javascript" src="/js/search.js?v=3"></script>
+</body>
 </html>

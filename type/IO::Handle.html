@@ -1,134 +1,132 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>class IO::Handle</title>
-        <meta charset="UTF-8" />
-        <style>
-        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
-        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
-        u { text-decoration: none }
-        .nested {
-            margin-left: 3em;
-        }
-        aside, u { opacity: 0.7 }
-        a[id^="fn-"]:target { background: #ff0 }
-        </style>
-        
-        
-        <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
-<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+<head>
+    <title>class IO::Handle</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
 
-    </head>
-    <body class="pod">
+<body class="pod">
+
     <div id="___top"></div>
+
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Raku Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+
+        <a href="/">
+            <img src="/images/Camelia.svg"alt="»ö«"id="logo"width="62"height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item " href="/language.html"> Language </a>
+                    <a class="menu-item selected darker-green" href="/type.html"> Types </a>
+                    <a class="menu-item " href="/routine.html"> Routines </a>
+                    <a class="menu-item " href="/programs.html"> Programs </a>
+                    <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a>
+            </div>
+
+            <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
+                    <a class="menu-item" href="/type.html"> All </a>
+                    <a class="menu-item" href="/type-basic.html"> Basic </a>
+                    <a class="menu-item" href="/type-composite.html"> Composite </a>
+                    <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a>
+                    <a class="menu-item" href="/type-exception.html"> Exceptions </a>
+            </div></div></div></div></div>
+
+        </div>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
-  </div>
-</div>
-<!-- please make sure these two CAPITALIZED variables stay there -->
 
-<div id="content" class="pretty-box yellow content__type_IO__Handle">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/IO::Handle.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+    <div id="content" class="pretty-box yellow content_fragment">
 
-        </button>
-      </div>
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/IO/Handle.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
 
-    <h1 class='title'>class IO::Handle</h1>
-    <p class='subtitle'>Opened file or stream</p>
-    <nav class="indexgroup">
+        <h1 class="title">class IO::Handle</h1>
+        <p class="subtitle">Opened file or stream</p>
+
+        <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-                   <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_open">method open</a></td></tr>
-                                                                                                                                                            <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_comb">method comb</a></td></tr>
-                 <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_chomp">method chomp</a></td></tr>
-                  <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#routine_get">routine get</a></td></tr>
-                               <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#routine_getc">routine getc</a></td></tr>
-            <tr class="toc-level-3"><td class="toc-number">1.5.1</td><td class="toc-text"><a href="#Buffering_terminals">Buffering terminals</a></td></tr>
-  <tr class="toc-level-3"><td class="toc-number">1.5.2</td><td class="toc-text"><a href="#Waiting_for_potential_combiners">Waiting for potential combiners</a></td></tr>
-  <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#submethod_DESTROY">submethod DESTROY</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_gist">method gist</a></td></tr>
-            <tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_eof">method eof</a></td></tr>
-                             <tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_encoding">method encoding</a></td></tr>
-                                                                   <tr class="toc-level-3"><td class="toc-number">1.9.1</td><td class="toc-text"><a href="#utf16,_utf16le_and_utf16be">utf16, utf16le and utf16be</a></td></tr>
-                    <tr class="toc-level-3"><td class="toc-number">1.9.2</td><td class="toc-text"><a href="#Examples">Examples</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">1.10</td><td class="toc-text"><a href="#routine_lines">routine lines</a></td></tr>
-                                                                  <tr class="toc-level-2"><td class="toc-number">1.11</td><td class="toc-text"><a href="#method_lock">method lock</a></td></tr>
-                                                           <tr class="toc-level-2"><td class="toc-number">1.12</td><td class="toc-text"><a href="#method_unlock">method unlock</a></td></tr>
-      <tr class="toc-level-2"><td class="toc-number">1.13</td><td class="toc-text"><a href="#routine_words">routine words</a></td></tr>
-                                                 <tr class="toc-level-2"><td class="toc-number">1.14</td><td class="toc-text"><a href="#method_split">method split</a></td></tr>
-                      <tr class="toc-level-2"><td class="toc-number">1.15</td><td class="toc-text"><a href="#method_spurt">method spurt</a></td></tr>
-                       <tr class="toc-level-2"><td class="toc-number">1.16</td><td class="toc-text"><a href="#method_print">method print</a></td></tr>
-                             <tr class="toc-level-2"><td class="toc-number">1.17</td><td class="toc-text"><a href="#method_print-nl">method print-nl</a></td></tr>
-                       <tr class="toc-level-2"><td class="toc-number">1.18</td><td class="toc-text"><a href="#method_printf">method printf</a></td></tr>
-                   <tr class="toc-level-2"><td class="toc-number">1.19</td><td class="toc-text"><a href="#method_out-buffer">method out-buffer</a></td></tr>
-                                    <tr class="toc-level-2"><td class="toc-number">1.20</td><td class="toc-text"><a href="#method_put">method put</a></td></tr>
-                             <tr class="toc-level-2"><td class="toc-number">1.21</td><td class="toc-text"><a href="#method_say">method say</a></td></tr>
-                     <tr class="toc-level-2"><td class="toc-number">1.22</td><td class="toc-text"><a href="#method_read">method read</a></td></tr>
-                        <tr class="toc-level-2"><td class="toc-number">1.23</td><td class="toc-text"><a href="#method_readchars">method readchars</a></td></tr>
-                          <tr class="toc-level-2"><td class="toc-number">1.24</td><td class="toc-text"><a href="#method_write">method write</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">1.25</td><td class="toc-text"><a href="#method_seek">method seek</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">1.26</td><td class="toc-text"><a href="#method_tell">method tell</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">1.27</td><td class="toc-text"><a href="#method_slurp-rest">method slurp-rest</a></td></tr>
-                     <tr class="toc-level-2"><td class="toc-number">1.28</td><td class="toc-text"><a href="#method_slurp">method slurp</a></td></tr>
-                         <tr class="toc-level-2"><td class="toc-number">1.29</td><td class="toc-text"><a href="#method_Supply">method Supply</a></td></tr>
-                                    <tr class="toc-level-2"><td class="toc-number">1.30</td><td class="toc-text"><a href="#method_path">method path</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">1.31</td><td class="toc-text"><a href="#method_IO">method IO</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">1.32</td><td class="toc-text"><a href="#method_Str">method Str</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">1.33</td><td class="toc-text"><a href="#routine_close">routine close</a></td></tr>
-                                                                            <tr class="toc-level-2"><td class="toc-number">1.34</td><td class="toc-text"><a href="#method_flush">method flush</a></td></tr>
-                        <tr class="toc-level-2"><td class="toc-number">1.35</td><td class="toc-text"><a href="#method_native-descriptor">method native-descriptor</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">1.36</td><td class="toc-text"><a href="#method_nl-in">method nl-in</a></td></tr>
-                                      <tr class="toc-level-2"><td class="toc-number">1.37</td><td class="toc-text"><a href="#method_nl-out">method nl-out</a></td></tr>
-                                  <tr class="toc-level-2"><td class="toc-number">1.38</td><td class="toc-text"><a href="#method_opened">method opened</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">1.39</td><td class="toc-text"><a href="#method_t">method t </a></td></tr>
-          <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Creating_Custom_Handles">Creating Custom Handles</a></td></tr>
-                                                                                        <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#method_WRITE">method WRITE</a></td></tr>
-                                                                  <tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#method_READ">method READ</a></td></tr>
-                                                                                                          <tr class="toc-level-2"><td class="toc-number">2.3</td><td class="toc-text"><a href="#method_EOF">method EOF</a></td></tr>
-                      <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Related_roles_and_classes">Related roles and classes</a></td></tr>
-      <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
- 
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_open">method open</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_comb">method comb</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_chomp">method chomp</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#routine_get">routine get</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#routine_getc">routine getc</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">1.5.1</td><td class="toc-text"><a href="#Buffering_terminals">Buffering terminals</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">1.5.2</td><td class="toc-text"><a href="#Waiting_for_potential_combiners">Waiting for potential combiners</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#submethod_DESTROY">submethod DESTROY</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_gist">method gist</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_eof">method eof</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_encoding">method encoding</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">1.9.1</td><td class="toc-text"><a href="#utf16,_utf16le_and_utf16be">utf16, utf16le and utf16be</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">1.9.2</td><td class="toc-text"><a href="#Examples">Examples</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.10</td><td class="toc-text"><a href="#routine_lines">routine lines</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.11</td><td class="toc-text"><a href="#method_lock">method lock</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.12</td><td class="toc-text"><a href="#method_unlock">method unlock</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.13</td><td class="toc-text"><a href="#routine_words">routine words</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.14</td><td class="toc-text"><a href="#method_split">method split</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.15</td><td class="toc-text"><a href="#method_spurt">method spurt</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.16</td><td class="toc-text"><a href="#method_print">method print</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.17</td><td class="toc-text"><a href="#method_print-nl">method print-nl</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.18</td><td class="toc-text"><a href="#method_printf">method printf</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.19</td><td class="toc-text"><a href="#method_out-buffer">method out-buffer</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.20</td><td class="toc-text"><a href="#method_put">method put</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.21</td><td class="toc-text"><a href="#method_say">method say</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.22</td><td class="toc-text"><a href="#method_read">method read</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.23</td><td class="toc-text"><a href="#method_readchars">method readchars</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.24</td><td class="toc-text"><a href="#method_write">method write</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.25</td><td class="toc-text"><a href="#method_seek">method seek</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.26</td><td class="toc-text"><a href="#method_tell">method tell</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.27</td><td class="toc-text"><a href="#method_slurp-rest">method slurp-rest</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.28</td><td class="toc-text"><a href="#method_slurp">method slurp</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.29</td><td class="toc-text"><a href="#method_Supply">method Supply</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.30</td><td class="toc-text"><a href="#method_path">method path</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.31</td><td class="toc-text"><a href="#method_IO">method IO</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.32</td><td class="toc-text"><a href="#method_Str">method Str</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.33</td><td class="toc-text"><a href="#routine_close">routine close</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.34</td><td class="toc-text"><a href="#method_flush">method flush</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.35</td><td class="toc-text"><a href="#method_native-descriptor">method native-descriptor</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.36</td><td class="toc-text"><a href="#method_nl-in">method nl-in</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.37</td><td class="toc-text"><a href="#method_nl-out">method nl-out</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.38</td><td class="toc-text"><a href="#method_opened">method opened</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.39</td><td class="toc-text"><a href="#method_t">method t </a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Creating_Custom_Handles">Creating Custom Handles</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#method_WRITE">method WRITE</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#method_READ">method READ</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.3</td><td class="toc-text"><a href="#method_EOF">method EOF</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Related_roles_and_classes">Related roles and classes</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+
 </table>
 </nav>
 
-    <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>IO::Handle</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Instances of <code>IO::Handle</code> encapsulate a <em>handle</em> to manipulate input/output resources. Usually there is no need to create directly an <code>IO::Handle</code> instance, since it will be done by other roles and methods. For instance, an <a href="/type/IO::Path">IO::Path</a> object provides an <a href="/routine/open">open</a> method that returns an <code>IO::Handle</code>:</p>
+        <div class="pod-body ">
+            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>IO::Handle</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Instances of <code>IO::Handle</code> encapsulate a <em>handle</em> to manipulate input/output resources. Usually there is no need to create directly an <code>IO::Handle</code> instance, since it will be done by other roles and methods. For instance, an <a href="/type/IO::Path">IO::Path</a> object provides an <a href="/routine/open">open</a> method that returns an <code>IO::Handle</code>:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>/tmp/log.txt</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;IO::Handle</span></span></span></div></pre><p>The first line is pretty much equivalent to the following piece of code:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Handle</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>path</span></span><span>(&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>/tmp/log.txt</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>path</span></span><span>&nbsp;)&nbsp;)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span>;</span></span></div></pre><h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_open"><a class="u" href="#___top" title="go to top of document">method open</a></h2>
@@ -161,7 +159,7 @@
 <h3 id="Buffering_terminals"><a class="u" href="#___top" title="go to top of document">Buffering terminals</a></h3>
 <p>Using getc to get a single keypress from a terminal will only work properly if you&#39;ve set the terminal to &quot;unbuffered&quot;. Otherwise the terminal will wait for the return key to be struck or the buffer to be filled up before perl6 gets even a single byte of data.</p>
 <h3 id="Waiting_for_potential_combiners"><a class="u" href="#___top" title="go to top of document">Waiting for potential combiners</a></h3>
-<p>If your handle&#39;s encoding allows combining characters to be read, perl6 will wait for more data to be available before it provides a character. This means that inputting an &quot;e&quot; followed by a combining acute will give you an e with an acute rather than giving an &quot;e&quot; and letting the next reading function give you a dangling combiner. However, it also means that when the user inputs just an &quot;e&quot; and has no intention to also input a combining acute, your program will be waiting for another keypress before the initial &quot;e&quot; is returned.</p>
+<p>If your handle&#39;s encoding allows combining characters to be read, raku will wait for more data to be available before it provides a character. This means that inputting an &quot;e&quot; followed by a combining acute will give you an e with an acute rather than giving an &quot;e&quot; and letting the next reading function give you a dangling combiner. However, it also means that when the user inputs just an &quot;e&quot; and has no intention to also input a combining acute, your program will be waiting for another keypress before the initial &quot;e&quot; is returned.</p>
 <h2 id="submethod_DESTROY"><a class="u" href="#___top" title="go to top of document">submethod DESTROY</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>submethod</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>DESTROY</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Handle</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Closes the filehandle, unless its <a href="/routine/native-descriptor">native-descriptor</a> is <code>2</code> or lower. This ensures the standard filehandles do not get inadvertently closed.</p>
@@ -196,7 +194,7 @@
 <p>Reads up to <code>$limit</code> lines, where <code>$limit</code> can be a non-negative <a href="/type/Int">Int</a>, <code>Inf</code>, or <a href="/type/Whatever">Whatever</a> (which is interpreted to mean <code>Inf</code>). If <code>:$close</code> is set to <code>True</code>, will close the handle when the file ends or <code>$limit</code> is reached. Subroutine form defaults to <a href="/language/variables#index-entry-%24%2AARGFILES"><code>$*ARGFILES</code></a>, if no handle is provided.</p>
 <p>Attempting to call this method when the handle is <a href="/type/IO::Handle#method_encoding">in binary mode</a> will result in <code>X::IO::BinaryMode</code> exception being thrown.</p>
 <p><strong>NOTE:</strong> the lines are read lazily, so ensure the returned <a href="/type/Seq">Seq</a> is either <a href="/language/glossary#index-entry-Reify">fully reified</a> or is no longer needed when you close the handle or attempt to use any other method that changes the file position.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>The&nbsp;file&nbsp;contains&nbsp;</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>50GB-file</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>lines</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>grep</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span><span>.</span></span><span class="support function perl6fe"><span>contains</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Perl</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>&nbsp;lines&nbsp;that&nbsp;mention&nbsp;Perl</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«The&nbsp;file&nbsp;contains&nbsp;72&nbsp;lines&nbsp;that&nbsp;mention&nbsp;Perl␤»</span><span>&nbsp;</span></span></span></div></pre><p>You can use <code>lines</code> in <code>/proc/*</code> files (from the 6.d version):</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>The&nbsp;file&nbsp;contains&nbsp;</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>50GB-file</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>lines</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>grep</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span><span>.</span></span><span class="support function perl6fe"><span>contains</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Raku</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>&nbsp;lines&nbsp;that&nbsp;mention&nbsp;Raku</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«The&nbsp;file&nbsp;contains&nbsp;72&nbsp;lines&nbsp;that&nbsp;mention&nbsp;Raku␤»</span><span>&nbsp;</span></span></span></div></pre><p>You can use <code>lines</code> in <code>/proc/*</code> files (from the 6.d version):</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>lines</span></span><span>(&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>/proc/</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil interpolated perl6fe"><span>*</span></span><span>PID</span></span><span>/statm</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span>&nbsp;);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(58455&nbsp;31863&nbsp;8304&nbsp;2&nbsp;0&nbsp;29705&nbsp;0)␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="method_lock"><a class="u" href="#___top" title="go to top of document">method lock</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>lock</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Handle</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>non-blocking</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>False</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>shared</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>False</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>True</span></span><span>)</span></span></div></pre><p>Places an advisory lock on the filehandle. If <code>:$non-blocking</code> is <code>True</code> will <a href="/routine/fail"><code>fail</code></a> with <code>X::IO::Lock</code> if lock could not be obtained, otherwise will block until the lock can be placed. If <code>:$shared</code> is <code>True</code> will place a shared (read) lock, otherwise will place an exclusive (write) lock. On success, returns <code>True</code>; <a href="/routine/fail">fails</a> with <code>X::IO::Lock</code> if lock cannot be placed (e.g. when trying to place a shared lock on a filehandle opened in write mode or trying to place an exclusive lock on a filehandle opened in read mode).</p>
@@ -245,10 +243,10 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>open</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>path/to/file</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>w</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>(</span><span class="support type perl6fe"><span>Complex</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="constant numeric perl6fe"><span>3</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3+4i␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>close</span></span><span>;</span></span></div></pre><h2 id="method_read"><a class="u" href="#___top" title="go to top of document">method read</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>read</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Handle</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>bytes</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>65536</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Buf</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Binary reading; reads and returns up to <code>$bytes</code> bytes from the filehandle. <code>$bytes</code> defaults to an implementation-specific value (in Rakudo, the value of <code>$*DEFAULT-READ-ELEMS</code>, which by default is set to <code>65536</code>). This method can be called even when the handle is not <a href="/type/IO::Handle#method_encoding">in binary mode</a>.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span>(</span><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>spurt</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>I&nbsp;♥&nbsp;Perl</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>given</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>read</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>6</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Buf[uint8]:0x&lt;49&nbsp;20&nbsp;e2&nbsp;99&nbsp;a5&nbsp;20&gt;␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>close</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><h2 id="method_readchars"><a class="u" href="#___top" title="go to top of document">method readchars</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span>(</span><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>spurt</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>I&nbsp;♥&nbsp;Raku</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>given</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>read</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>6</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Buf[uint8]:0x&lt;49&nbsp;20&nbsp;e2&nbsp;99&nbsp;a5&nbsp;20&gt;␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>close</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><h2 id="method_readchars"><a class="u" href="#___top" title="go to top of document">method readchars</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>readchars</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Handle</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>chars</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>65536</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Reading chars; reads and returns up to <code>$chars</code> chars (graphemes) from the filehandle. <code>$chars</code> defaults to an implementation-specific value (in Rakudo, the value of <code>$*DEFAULT-READ-ELEMS</code>, which by default is set to <code>65536</code>). Attempting to call this method when the handle is <a href="/type/IO::Handle#method_encoding">in binary mode</a> will result in <code>X::IO::BinaryMode</code> exception being thrown.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span>(</span><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>spurt</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>I&nbsp;♥&nbsp;Perl</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>given</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>readchars</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>5</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«I&nbsp;♥&nbsp;P␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>close</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><h2 id="method_write"><a class="u" href="#___top" title="go to top of document">method write</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span>(</span><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>spurt</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>I&nbsp;♥&nbsp;Raku</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>given</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>readchars</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>5</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«I&nbsp;♥&nbsp;R␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>close</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><h2 id="method_write"><a class="u" href="#___top" title="go to top of document">method write</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>write</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Handle</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Blob</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>buf</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>True</span></span><span>)</span></span></div></pre><p>Writes <code>$buf</code> to the filehandle. This method can be called even when the handle is not <a href="/type/IO::Handle#method_encoding">in binary mode</a>.</p>
 <p><a name="index-entry-SeekFromBeginning"></a> <a name="index-entry-SeekFromCurrent"></a> <a name="index-entry-SeekFromEnd"></a></p>
@@ -297,7 +295,7 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>flush</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Handle</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>True</span></span><span>)</span></span></div></pre><p>Will flush the handle, writing any of the buffered data. Returns <code>True</code> on success; otherwise, <a href="/routine/fail">fails</a> with <code>X::IO::Flush</code>.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>given</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>w</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control closure trait perl6fe"><span>LEAVE</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>close</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>print</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>something</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>slurp</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;(if&nbsp;the&nbsp;data&nbsp;got&nbsp;buffered)&nbsp;OUTPUT:&nbsp;«␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>flush</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;flush&nbsp;the&nbsp;handle</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>slurp</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«something␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><h2 id="method_native-descriptor"><a class="u" href="#___top" title="go to top of document">method native-descriptor</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>native-descriptor</span></span><span>()</span></span></div></pre><p>This returns a value that the operating system would understand as a &quot;file descriptor&quot; and is suitable for passing to a native function that requires a file descriptor as an argument such as <code>fcntl</code> or <code>ioctl</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>native-descriptor</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Handle</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>This returns a value that the operating system would understand as a &quot;file descriptor&quot; and is suitable for passing to a native function that requires a file descriptor as an argument such as <code>fcntl</code> or <code>ioctl</code>.</p>
 <h2 id="method_nl-in"><a class="u" href="#___top" title="go to top of document">method nl-in</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>nl-in</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>rw</span></span></span></div></pre><p>One of the attributes that can be set via <code>.new</code> or <a href="/routine/open">open</a>. Defaults to <code>[&quot;\x0A&quot;, &quot;\r\n&quot;]</code>. Takes either a <a href="/type/Str">Str</a> or <a href="/type/Array">Array</a> of <code>Str</code> specifying input line ending(s) for this handle. If <code>.chomp</code> attribute is set to <code>True</code>, will strip these endings in routines that <code>chomp</code>, such as <a href="/routine/get"><code>get</code></a> and <a href="/routine/lines"><code>lines</code></a>.</p>
@@ -334,79 +332,90 @@
  viewBox="0.00 0.00 245.84 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 241.84,-328 241.84,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-328 241.84,-328 241.84,4 -4,4"/>
 <!-- IO::Handle -->
-<g id="node1" class="node"><title>IO::Handle</title>
+<g id="node1" class="node">
+<title>IO::Handle</title>
 <g id="a_node1"><a xlink:href="/type/IO::Handle" xlink:title="IO::Handle">
-<ellipse fill="none" stroke="#000000" cx="130.944" cy="-162" rx="53.0913" ry="18"/>
-<text text-anchor="middle" x="130.944" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Handle</text>
+<ellipse fill="none" stroke="#000000" cx="130.94" cy="-162" rx="53.09" ry="18"/>
+<text text-anchor="middle" x="130.94" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Handle</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node"><title>Any</title>
+<g id="node3" class="node">
+<title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="130.944" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="130.944" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="130.94" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="130.94" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- IO::Handle&#45;&gt;Any -->
-<g id="edge1" class="edge"><title>IO::Handle&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M130.944,-180.303C130.944,-188.017 130.944,-197.288 130.944,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="127.444,-205.896 130.944,-215.896 134.444,-205.896 127.444,-205.896"/>
+<g id="edge1" class="edge">
+<title>IO::Handle&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M130.94,-180.3C130.94,-188.02 130.94,-197.29 130.94,-205.89"/>
+<polygon fill="#000000" stroke="#000000" points="127.44,-205.9 130.94,-215.9 134.44,-205.9 127.44,-205.9"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node"><title>Mu</title>
+<g id="node2" class="node">
+<title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="130.944" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="130.944" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="130.94" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="130.94" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M130.944,-252.303C130.944,-260.017 130.944,-269.288 130.944,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="127.444,-277.896 130.944,-287.896 134.444,-277.896 127.444,-277.896"/>
+<g id="edge2" class="edge">
+<title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M130.94,-252.3C130.94,-260.02 130.94,-269.29 130.94,-277.89"/>
+<polygon fill="#000000" stroke="#000000" points="127.44,-277.9 130.94,-287.9 134.44,-277.9 127.44,-277.9"/>
 </g>
 <!-- IO::CatHandle -->
-<g id="node4" class="node"><title>IO::CatHandle</title>
+<g id="node4" class="node">
+<title>IO::CatHandle</title>
 <g id="a_node4"><a xlink:href="/type/IO::CatHandle" xlink:title="IO::CatHandle">
-<ellipse fill="none" stroke="#000000" cx="66.9441" cy="-90" rx="66.8882" ry="18"/>
-<text text-anchor="middle" x="66.9441" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::CatHandle</text>
+<ellipse fill="none" stroke="#000000" cx="66.94" cy="-90" rx="66.89" ry="18"/>
+<text text-anchor="middle" x="66.94" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::CatHandle</text>
 </a>
 </g>
 </g>
 <!-- IO::CatHandle&#45;&gt;IO::Handle -->
-<g id="edge3" class="edge"><title>IO::CatHandle&#45;&gt;IO::Handle</title>
-<path fill="none" stroke="#000000" d="M82.1112,-107.589C90.1613,-116.394 100.198,-127.372 109.075,-137.081"/>
-<polygon fill="#000000" stroke="#000000" points="106.555,-139.511 115.886,-144.53 111.721,-134.788 106.555,-139.511"/>
+<g id="edge3" class="edge">
+<title>IO::CatHandle&#45;&gt;IO::Handle</title>
+<path fill="none" stroke="#000000" d="M82.11,-107.59C90.16,-116.39 100.2,-127.37 109.08,-137.08"/>
+<polygon fill="#000000" stroke="#000000" points="106.55,-139.51 115.89,-144.53 111.72,-134.79 106.55,-139.51"/>
 </g>
 <!-- IO::Pipe -->
-<g id="node5" class="node"><title>IO::Pipe</title>
+<g id="node5" class="node">
+<title>IO::Pipe</title>
 <g id="a_node5"><a xlink:href="/type/IO::Pipe" xlink:title="IO::Pipe">
-<ellipse fill="none" stroke="#000000" cx="194.944" cy="-90" rx="42.7926" ry="18"/>
-<text text-anchor="middle" x="194.944" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Pipe</text>
+<ellipse fill="none" stroke="#000000" cx="194.94" cy="-90" rx="42.79" ry="18"/>
+<text text-anchor="middle" x="194.94" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Pipe</text>
 </a>
 </g>
 </g>
 <!-- IO::Pipe&#45;&gt;IO::Handle -->
-<g id="edge4" class="edge"><title>IO::Pipe&#45;&gt;IO::Handle</title>
-<path fill="none" stroke="#000000" d="M180.1,-107.235C172.058,-116.031 161.964,-127.072 153.019,-136.856"/>
-<polygon fill="#000000" stroke="#000000" points="150.316,-134.625 146.152,-144.367 155.483,-139.348 150.316,-134.625"/>
+<g id="edge4" class="edge">
+<title>IO::Pipe&#45;&gt;IO::Handle</title>
+<path fill="none" stroke="#000000" d="M180.1,-107.24C172.06,-116.03 161.96,-127.07 153.02,-136.86"/>
+<polygon fill="#000000" stroke="#000000" points="150.32,-134.62 146.15,-144.37 155.48,-139.35 150.32,-134.62"/>
 </g>
 <!-- IO::ArgFiles -->
-<g id="node6" class="node"><title>IO::ArgFiles</title>
+<g id="node6" class="node">
+<title>IO::ArgFiles</title>
 <g id="a_node6"><a xlink:href="/type/IO::ArgFiles" xlink:title="IO::ArgFiles">
-<ellipse fill="none" stroke="#000000" cx="66.9441" cy="-18" rx="57.6901" ry="18"/>
-<text text-anchor="middle" x="66.9441" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::ArgFiles</text>
+<ellipse fill="none" stroke="#000000" cx="66.94" cy="-18" rx="57.69" ry="18"/>
+<text text-anchor="middle" x="66.94" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::ArgFiles</text>
 </a>
 </g>
 </g>
 <!-- IO::ArgFiles&#45;&gt;IO::CatHandle -->
-<g id="edge5" class="edge"><title>IO::ArgFiles&#45;&gt;IO::CatHandle</title>
-<path fill="none" stroke="#000000" d="M66.9441,-36.3034C66.9441,-44.0173 66.9441,-53.2875 66.9441,-61.8876"/>
-<polygon fill="#000000" stroke="#000000" points="63.4442,-61.8956 66.9441,-71.8957 70.4442,-61.8957 63.4442,-61.8956"/>
+<g id="edge5" class="edge">
+<title>IO::ArgFiles&#45;&gt;IO::CatHandle</title>
+<path fill="none" stroke="#000000" d="M66.94,-36.3C66.94,-44.02 66.94,-53.29 66.94,-61.89"/>
+<polygon fill="#000000" stroke="#000000" points="63.44,-61.9 66.94,-71.9 70.44,-61.9 63.44,-61.9"/>
 </g>
 </g>
 </svg>
@@ -421,36 +430,39 @@
   </p>
 </figure>
 
+        </div>
     </div>
+
     
-    </div>
-<footer class="pretty-box yellow">
-  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/IO::Handle.pod6">/type/IO::Handle</a>.</p>
-  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
-      known to be incomplete.</p>
 
-  <p><a
-          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/IO/Handle.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/IO/Handle.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
 
-  <p> This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
-      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
-        >copyright © 2009 by Larry Wall.</a>
-      <!-- CREDITS -->
-      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
-
-  </p>
-</footer>
-
-<script type="text/javascript" src="/js/app.js?v=1"></script>
-<script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
-
-    </body>
+    <script type="text/javascript" src="/js/app.js?v=1"></script>
+    <script type="text/javascript" src="/js/search.js?v=3"></script>
+</body>
 </html>

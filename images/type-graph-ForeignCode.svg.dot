@@ -2,6 +2,7 @@ digraph "perl6-type-graph" {
     rankdir=BT;
     splines=polyline;
     overlap=false; 
+    graph [truecolor=true bgcolor="#FFFFFF"];
     // Types
     "ForeignCode" [color="#000000", fontcolor="#000000", href="/type/ForeignCode", fontname="FreeSans"];
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];

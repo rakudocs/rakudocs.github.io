@@ -1,91 +1,89 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>class Telemetry</title>
-        <meta charset="UTF-8" />
-        <style>
-        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
-        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
-        u { text-decoration: none }
-        .nested {
-            margin-left: 3em;
-        }
-        aside, u { opacity: 0.7 }
-        a[id^="fn-"]:target { background: #ff0 }
-        </style>
-        
-        
-        <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
-<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+<head>
+    <title>class Telemetry</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
 
-    </head>
-    <body class="pod">
+<body class="pod">
+
     <div id="___top"></div>
+
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Raku Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+
+        <a href="/">
+            <img src="/images/Camelia.svg"alt="»ö«"id="logo"width="62"height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item " href="/language.html"> Language </a>
+                    <a class="menu-item selected darker-green" href="/type.html"> Types </a>
+                    <a class="menu-item " href="/routine.html"> Routines </a>
+                    <a class="menu-item " href="/programs.html"> Programs </a>
+                    <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a>
+            </div>
+
+            <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
+                    <a class="menu-item" href="/type.html"> All </a>
+                    <a class="menu-item" href="/type-basic.html"> Basic </a>
+                    <a class="menu-item" href="/type-composite.html"> Composite </a>
+                    <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a>
+                    <a class="menu-item" href="/type-exception.html"> Exceptions </a>
+            </div></div></div></div></div>
+
+        </div>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
-  </div>
-</div>
-<!-- please make sure these two CAPITALIZED variables stay there -->
 
-<div id="content" class="pretty-box yellow content__type_Telemetry">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Telemetry.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+    <div id="content" class="pretty-box yellow content_fragment">
 
-        </button>
-      </div>
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Telemetry.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
 
-    <h1 class='title'>class Telemetry</h1>
-    <p class='subtitle'>Collect performance state for analysis</p>
-    <nav class="indexgroup">
+        <h1 class="title">class Telemetry</h1>
+        <p class="subtitle">Collect performance state for analysis</p>
+
+        <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-                                                                                                                    <tr class="toc-level-2"><td class="toc-number">0.1</td><td class="toc-text"><a href="#routine_T">routine T</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">0.2</td><td class="toc-text"><a href="#routine_snap">routine snap</a></td></tr>
-                      <tr class="toc-level-2"><td class="toc-number">0.3</td><td class="toc-text"><a href="#routine_snapper">routine snapper</a></td></tr>
-                   <tr class="toc-level-2"><td class="toc-number">0.4</td><td class="toc-text"><a href="#routine_periods">routine periods</a></td></tr>
-                                                                     <tr class="toc-level-2"><td class="toc-number">0.5</td><td class="toc-text"><a href="#routine_report">routine report</a></td></tr>
-                                       <tr class="toc-level-2"><td class="toc-number">0.6</td><td class="toc-text"><a href="#module_snapper">module snapper</a></td></tr>
-              <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
- 
+<tr class="toc-level-2"><td class="toc-number">0.1</td><td class="toc-text"><a href="#routine_T">routine T</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">0.2</td><td class="toc-text"><a href="#routine_snap">routine snap</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">0.3</td><td class="toc-text"><a href="#routine_snapper">routine snapper</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">0.4</td><td class="toc-text"><a href="#routine_periods">routine periods</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">0.5</td><td class="toc-text"><a href="#routine_report">routine report</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">0.6</td><td class="toc-text"><a href="#module_snapper">module snapper</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+
 </table>
 </nav>
 
-    <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Telemetry</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><strong>Note: </strong> This class is a Rakudo-specific feature and not standard Raku.</p>
+        <div class="pod-body ">
+            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Telemetry</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><strong>Note: </strong> This class is a Rakudo-specific feature and not standard Raku.</p>
 <p>On creation, a <code>Telemetry</code> object contains a snapshot of various aspects of the current state of the virtual machine. This is in itself useful, but generally one needs two snapshots for the difference (which is a <a href="/type/Telemetry::Period">Telemetry::Period</a> object).</p>
 <p>The Telemetry object is really a collection of snapshots taken by different &quot;instruments&quot;. By default, the <a href="/type/Telemetry::Instrument::Usage">Telemetry::Instrument::Usage</a> and <a href="/type/ThreadPoolScheduler">Telemetry::Instrument::ThreadPool</a> instruments are activated.</p>
 <p>The Telemetry (and Telemetry::Period) object also <code>Associative</code>. This means that you can treat a Telemetry object as a read-only <code>Hash</code>, with all of the data values of the instruments as keys.</p>
@@ -142,48 +140,127 @@
 <p>The <code>RAKUDO_SNAPPER</code> environment variable can be set to indicate the time between snapshots. If not specified, it will default to <strong>0.1</strong> seconds.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>404</code></figcaption>
-  <svg></svg>
+  <figcaption>Type relations for <code>Telemetry</code></figcaption>
+  <svg width="236pt" height="260pt"
+ viewBox="0.00 0.00 236.29 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-256 232.29,-256 232.29,4 -4,4"/>
+<!-- Telemetry -->
+<g id="node1" class="node">
+<title>Telemetry</title>
+<g id="a_node1"><a xlink:href="/type/Telemetry" xlink:title="Telemetry">
+<ellipse fill="none" stroke="#000000" cx="50.05" cy="-90" rx="50.09" ry="18"/>
+<text text-anchor="middle" x="50.05" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Telemetry</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node">
+<title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="50.05" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="50.05" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Telemetry&#45;&gt;Any -->
+<g id="edge1" class="edge">
+<title>Telemetry&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M50.05,-108.3C50.05,-116.02 50.05,-125.29 50.05,-133.89"/>
+<polygon fill="#000000" stroke="#000000" points="46.55,-133.9 50.05,-143.9 53.55,-133.9 46.55,-133.9"/>
+</g>
+<!-- Mu -->
+<g id="node2" class="node">
+<title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="50.05" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="50.05" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge2" class="edge">
+<title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M50.05,-180.3C50.05,-188.02 50.05,-197.29 50.05,-205.89"/>
+<polygon fill="#000000" stroke="#000000" points="46.55,-205.9 50.05,-215.9 53.55,-205.9 46.55,-205.9"/>
+</g>
+<!-- Associative -->
+<g id="node4" class="node">
+<title>Associative</title>
+<g id="a_node4"><a xlink:href="/type/Associative" xlink:title="Associative">
+<ellipse fill="none" stroke="#6666ff" cx="173.05" cy="-90" rx="55.49" ry="18"/>
+<text text-anchor="middle" x="173.05" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
+</a>
+</g>
+</g>
+<!-- Telemetry::Period -->
+<g id="node5" class="node">
+<title>Telemetry::Period</title>
+<g id="a_node5"><a xlink:href="/type/Telemetry::Period" xlink:title="Telemetry::Period">
+<ellipse fill="none" stroke="#000000" cx="111.05" cy="-18" rx="80.69" ry="18"/>
+<text text-anchor="middle" x="111.05" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Telemetry::Period</text>
+</a>
+</g>
+</g>
+<!-- Telemetry::Period&#45;&gt;Telemetry -->
+<g id="edge3" class="edge">
+<title>Telemetry::Period&#45;&gt;Telemetry</title>
+<path fill="none" stroke="#000000" d="M96.28,-35.95C88.68,-44.67 79.28,-55.46 70.94,-65.02"/>
+<polygon fill="#000000" stroke="#000000" points="68.19,-62.85 64.26,-72.69 73.46,-67.45 68.19,-62.85"/>
+</g>
+<!-- Telemetry::Period&#45;&gt;Associative -->
+<g id="edge4" class="edge">
+<title>Telemetry::Period&#45;&gt;Associative</title>
+<path fill="none" stroke="#6666ff" d="M126.05,-35.95C133.67,-44.54 143.06,-55.14 151.44,-64.6"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="148.92,-67.05 158.18,-72.21 154.16,-62.4 148.92,-67.05"/>
+</g>
+</g>
+</svg>
+
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-404.svg"
+      href="/images/type-graph-Telemetry.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >
   </p>
 </figure>
 
+        </div>
     </div>
+
     
-    </div>
-<footer class="pretty-box yellow">
-  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Telemetry.pod6">/type/Telemetry</a>.</p>
-  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
-      known to be incomplete.</p>
 
-  <p><a
-          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Telemetry.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Telemetry.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
 
-  <p> This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
-      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
-        >copyright © 2009 by Larry Wall.</a>
-      <!-- CREDITS -->
-      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
-
-  </p>
-</footer>
-
-<script type="text/javascript" src="/js/app.js?v=1"></script>
-<script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
-
-    </body>
+    <script type="text/javascript" src="/js/app.js?v=1"></script>
+    <script type="text/javascript" src="/js/search.js?v=3"></script>
+</body>
 </html>

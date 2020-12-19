@@ -1,89 +1,82 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Pod6 tables</title>
-        <meta charset="UTF-8" />
-        <style>
-        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
-        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
-        u { text-decoration: none }
-        .nested {
-            margin-left: 3em;
-        }
-        aside, u { opacity: 0.7 }
-        a[id^="fn-"]:target { background: #ff0 }
-        </style>
-        
-        
-        <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
-<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+<head>
+    <title>Pod6 tables</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
 
-    </head>
-    <body class="pod">
+<body class="pod">
+
     <div id="___top"></div>
+
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Raku Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+
+        <a href="/">
+            <img src="/images/Camelia.svg"alt="»ö«"id="logo"width="62"height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item selected darker-green" href="/language.html"> Language </a>
+                    <a class="menu-item " href="/type.html"> Types </a>
+                    <a class="menu-item " href="/routine.html"> Routines </a>
+                    <a class="menu-item " href="/programs.html"> Programs </a>
+                    <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a>
+            </div>
+
+            
+            
+
+        </div>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
-  </div>
-</div>
-<!-- please make sure these two CAPITALIZED variables stay there -->
 
-<div id="content" class="pretty-box yellow content__language_tables">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/tables.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+    <div id="content" class="pretty-box yellow content_fragment">
 
-        </button>
-      </div>
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Language/tables.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
 
-    <h1 class='title'>Pod6 tables</h1>
-    <p class='subtitle'>The good, the bad and the ugly</p>
-    <nav class="indexgroup">
+        <h1 class="title">Pod6 tables</h1>
+        <p class="subtitle">The good, the bad and the ugly</p>
+
+        <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-      <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Restrictions">Restrictions</a></td></tr>
-                <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Best_practices">Best practices</a></td></tr>
-                                                                                      <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Good_tables">Good tables</a></td></tr>
-                                                                                                                           <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Bad_tables">Bad tables</a></td></tr>
-                               <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Ugly_tables">Ugly tables</a></td></tr>
-                           
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Restrictions">Restrictions</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Best_practices">Best practices</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Good_tables">Good tables</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Bad_tables">Bad tables</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Ugly_tables">Ugly tables</a></td></tr>
+
 </table>
 </nav>
 
-    <div class="pod-body">
-    <p>The official specification for Pod6 tables is located in the Documentation specification here: <a href="https://raw.githubusercontent.com/perl6/specs/master/S26-documentation.pod">Tables</a>. Although Pod6 specifications are not completely and properly handled yet, several projects are ongoing to correct the situation; one such project is ensuring the proper handling of Pod6 tables.</p>
+        <div class="pod-body ">
+            <p>The official specification for Pod6 tables is located in the Documentation specification here: <a href="https://raw.githubusercontent.com/perl6/specs/master/S26-documentation.pod">Tables</a>. Although Pod6 specifications are not completely and properly handled yet, several projects are ongoing to correct the situation; one such project is ensuring the proper handling of Pod6 tables.</p>
 <p>As part of that effort, this document explains the current state of Pod6 tables by example: valid tables, invalid tables, and ugly tables (i.e., valid tables that, because of sloppy construction, may result in something different than the user expects).</p>
 <h1 id="Restrictions"><a class="u" href="#___top" title="go to top of document">Restrictions</a></h1>
 <p>1. The only valid column separators are either visible (&#39;&nbsp;|&nbsp;&#39; or &#39;&nbsp;+&nbsp;&#39;) (note at least one space is required before and after the visible column separators) or invisible [two or more contiguous whitespace (WS) characters (e.g., &#39;&nbsp;&nbsp;&#39;)]. Column separators are not normally recognized as such at the left or right side of a table, but one on the right side may result in one or more empty cells depending upon the number of the cells in other rows. (Note that a pipe or plus character meant as part of cell data will result in an unintended extra column unless the character is escaped with a backslash, e.g., &#39;\|&#39; or &#39;\+&#39;.)</p>
@@ -135,36 +128,39 @@
 </ul>
 <p>Notice the second row has the two words separated by a visible character (&#39;|&#39;) but the character is not recognized as a column separator because it doesn&#39;t have an adjacent WS character on both sides of it. Although this is a legal table, the result will not be what the user intended because the first row has two columns while the second row has only one column, and it will thus have an empty second column.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>begin</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>table</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>r0c0&nbsp;&nbsp;|&nbsp;&nbsp;r0c1</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;r1c0&nbsp;|r0c1</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>end</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>table</span></span></span></div></pre>
+        </div>
     </div>
+
     
-    </div>
-<footer class="pretty-box yellow">
-  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/tables.pod6">/language/tables</a>.</p>
-  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
-      known to be incomplete.</p>
 
-  <p><a
-          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Language/tables.pod6">https://github.com/Raku/Documentable/blob/master/docs/Language/tables.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
 
-  <p> This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
-      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
-        >copyright © 2009 by Larry Wall.</a>
-      <!-- CREDITS -->
-      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
-
-  </p>
-</footer>
-
-<script type="text/javascript" src="/js/app.js?v=1"></script>
-<script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
-
-    </body>
+    <script type="text/javascript" src="/js/app.js?v=1"></script>
+    <script type="text/javascript" src="/js/search.js?v=3"></script>
+</body>
 </html>

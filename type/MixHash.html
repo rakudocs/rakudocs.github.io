@@ -1,134 +1,131 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>class MixHash</title>
-        <meta charset="UTF-8" />
-        <style>
-        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
-        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
-        u { text-decoration: none }
-        .nested {
-            margin-left: 3em;
-        }
-        aside, u { opacity: 0.7 }
-        a[id^="fn-"]:target { background: #ff0 }
-        </style>
-        
-        
-        <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
-<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+<head>
+    <title>class MixHash</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
 
-    </head>
-    <body class="pod">
+<body class="pod">
+
     <div id="___top"></div>
+
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Raku Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+
+        <a href="/">
+            <img src="/images/Camelia.svg"alt="»ö«"id="logo"width="62"height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item " href="/language.html"> Language </a>
+                    <a class="menu-item selected darker-green" href="/type.html"> Types </a>
+                    <a class="menu-item " href="/routine.html"> Routines </a>
+                    <a class="menu-item " href="/programs.html"> Programs </a>
+                    <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a>
+            </div>
+
+            <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
+                    <a class="menu-item" href="/type.html"> All </a>
+                    <a class="menu-item" href="/type-basic.html"> Basic </a>
+                    <a class="menu-item" href="/type-composite.html"> Composite </a>
+                    <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a>
+                    <a class="menu-item" href="/type-exception.html"> Exceptions </a>
+            </div></div></div></div></div>
+
+        </div>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
-  </div>
-</div>
-<!-- please make sure these two CAPITALIZED variables stay there -->
 
-<div id="content" class="pretty-box yellow content__type_MixHash">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/MixHash.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+    <div id="content" class="pretty-box yellow content_fragment">
 
-        </button>
-      </div>
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/MixHash.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
 
-    <h1 class='title'>class MixHash</h1>
-    <p class='subtitle'>Mutable collection of distinct objects with Real weights</p>
-    <nav class="indexgroup">
+        <h1 class="title">class MixHash</h1>
+        <p class="subtitle">Mutable collection of distinct objects with Real weights</p>
+
+        <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-                                                          <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Creating_MixHash_objects">Creating <code class="pod-code-inline">MixHash</code> objects</a></td></tr>
-                        <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Operators">Operators</a></td></tr>
-                             <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Note_on_reverse_and_ordering.">Note on <code class="pod-code-inline">reverse</code> and ordering.</a></td></tr>
-                    <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#method_Bag">method Bag</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#method_BagHash">method BagHash</a></td></tr>
-              <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Note_on_reverse_and_ordering">Note on <code class="pod-code-inline">reverse</code> and ordering</a></td></tr>
-      <tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#See_Also">See Also</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">8</td><td class="toc-text"><a href="#Routines_supplied_by_role_Mixy">Routines supplied by role Mixy</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">11.1</td><td class="toc-text"><a href="#(Mixy)_method_total">(Mixy) method total</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">11.2</td><td class="toc-text"><a href="#(Mixy)_method_roll">(Mixy) method roll</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">9</td><td class="toc-text"><a href="#Routines_supplied_by_role_Baggy">Routines supplied by role Baggy</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">11.3</td><td class="toc-text"><a href="#(Baggy)_method_new-from-pairs">(Baggy) method new-from-pairs</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">11.4</td><td class="toc-text"><a href="#(Baggy)_method_grab">(Baggy) method grab</a></td></tr>
-                                <tr class="toc-level-2"><td class="toc-number">11.5</td><td class="toc-text"><a href="#(Baggy)_method_grabpairs">(Baggy) method grabpairs</a></td></tr>
-                                    <tr class="toc-level-2"><td class="toc-number">11.6</td><td class="toc-text"><a href="#(Baggy)_method_pick">(Baggy) method pick</a></td></tr>
-                        <tr class="toc-level-2"><td class="toc-number">11.7</td><td class="toc-text"><a href="#(Baggy)_method_pickpairs">(Baggy) method pickpairs</a></td></tr>
-                            <tr class="toc-level-2"><td class="toc-number">11.8</td><td class="toc-text"><a href="#(Baggy)_method_roll">(Baggy) method roll</a></td></tr>
-                  <tr class="toc-level-2"><td class="toc-number">11.9</td><td class="toc-text"><a href="#(Baggy)_method_pairs">(Baggy) method pairs</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">11.10</td><td class="toc-text"><a href="#(Baggy)_method_antipairs">(Baggy) method antipairs</a></td></tr>
-           <tr class="toc-level-2"><td class="toc-number">11.11</td><td class="toc-text"><a href="#(Baggy)_method_invert">(Baggy) method invert</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">11.12</td><td class="toc-text"><a href="#(Baggy)_method_classify-list">(Baggy) method classify-list</a></td></tr>
-                                                       <tr class="toc-level-2"><td class="toc-number">11.13</td><td class="toc-text"><a href="#(Baggy)_method_categorize-list">(Baggy) method categorize-list</a></td></tr>
-                                                     <tr class="toc-level-2"><td class="toc-number">11.14</td><td class="toc-text"><a href="#(Baggy)_method_keys">(Baggy) method keys</a></td></tr>
-           <tr class="toc-level-2"><td class="toc-number">11.15</td><td class="toc-text"><a href="#(Baggy)_method_values">(Baggy) method values</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">11.16</td><td class="toc-text"><a href="#(Baggy)_method_kv">(Baggy) method kv</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">11.17</td><td class="toc-text"><a href="#(Baggy)_method_kxxv">(Baggy) method kxxv</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">11.18</td><td class="toc-text"><a href="#(Baggy)_method_elems">(Baggy) method elems</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">11.19</td><td class="toc-text"><a href="#(Baggy)_method_total">(Baggy) method total</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">11.20</td><td class="toc-text"><a href="#(Baggy)_method_default">(Baggy) method default</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">11.21</td><td class="toc-text"><a href="#(Baggy)_method_hash">(Baggy) method hash</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">11.22</td><td class="toc-text"><a href="#(Baggy)_method_Bool">(Baggy) method Bool</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">11.23</td><td class="toc-text"><a href="#(Baggy)_method_Set">(Baggy) method Set</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">11.24</td><td class="toc-text"><a href="#(Baggy)_method_SetHash">(Baggy) method SetHash</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">11.25</td><td class="toc-text"><a href="#(Baggy)_method_ACCEPTS">(Baggy) method ACCEPTS</a></td></tr>
-                           <tr class="toc-level-1"><td class="toc-number">10</td><td class="toc-text"><a href="#Routines_supplied_by_role_QuantHash">Routines supplied by role QuantHash</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">11.26</td><td class="toc-text"><a href="#(QuantHash)_method_hash">(QuantHash) method hash</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">11.27</td><td class="toc-text"><a href="#(QuantHash)_method_Hash">(QuantHash) method Hash</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">11.28</td><td class="toc-text"><a href="#(QuantHash)_method_of">(QuantHash) method of</a></td></tr>
-                 <tr class="toc-level-2"><td class="toc-number">11.29</td><td class="toc-text"><a href="#(QuantHash)_method_keyof">(QuantHash) method keyof</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">11.30</td><td class="toc-text"><a href="#(QuantHash)_method_Setty">(QuantHash) method Setty</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">11.31</td><td class="toc-text"><a href="#(QuantHash)_method_Baggy">(QuantHash) method Baggy</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">11.32</td><td class="toc-text"><a href="#(QuantHash)_method_Mixy">(QuantHash) method Mixy</a></td></tr>
-        <tr class="toc-level-1"><td class="toc-number">11</td><td class="toc-text"><a href="#Routines_supplied_by_role_Associative">Routines supplied by role Associative</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">11.33</td><td class="toc-text"><a href="#(Associative)_method_of">(Associative) method of</a></td></tr>
-                <tr class="toc-level-2"><td class="toc-number">11.34</td><td class="toc-text"><a href="#(Associative)_method_keyof">(Associative) method keyof</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">11.35</td><td class="toc-text"><a href="#(Associative)_method_AT-KEY">(Associative) method AT-KEY</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">11.36</td><td class="toc-text"><a href="#(Associative)_method_EXISTS-KEY">(Associative) method EXISTS-KEY</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">11.37</td><td class="toc-text"><a href="#(Associative)_method_STORE">(Associative) method STORE</a></td></tr>
-            
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Creating_MixHash_objects">Creating <code class="pod-code-inline">MixHash</code> objects</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Operators">Operators</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Note_on_reverse_and_ordering.">Note on <code class="pod-code-inline">reverse</code> and ordering.</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#method_Bag">method Bag</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#method_BagHash">method BagHash</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#See_Also">See Also</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#Routines_supplied_by_role_Mixy">Routines supplied by role Mixy</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">7.1</td><td class="toc-text"><a href="#(Mixy)_method_total">(Mixy) method total</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">7.2</td><td class="toc-text"><a href="#(Mixy)_method_roll">(Mixy) method roll</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">8</td><td class="toc-text"><a href="#Routines_supplied_by_role_Baggy">Routines supplied by role Baggy</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.1</td><td class="toc-text"><a href="#(Baggy)_method_new-from-pairs">(Baggy) method new-from-pairs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.2</td><td class="toc-text"><a href="#(Baggy)_method_grab">(Baggy) method grab</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.3</td><td class="toc-text"><a href="#(Baggy)_method_grabpairs">(Baggy) method grabpairs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.4</td><td class="toc-text"><a href="#(Baggy)_method_pick">(Baggy) method pick</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.5</td><td class="toc-text"><a href="#(Baggy)_method_pickpairs">(Baggy) method pickpairs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.6</td><td class="toc-text"><a href="#(Baggy)_method_roll">(Baggy) method roll</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.7</td><td class="toc-text"><a href="#(Baggy)_method_pairs">(Baggy) method pairs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.8</td><td class="toc-text"><a href="#(Baggy)_method_antipairs">(Baggy) method antipairs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.9</td><td class="toc-text"><a href="#(Baggy)_method_invert">(Baggy) method invert</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.10</td><td class="toc-text"><a href="#(Baggy)_method_classify-list">(Baggy) method classify-list</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.11</td><td class="toc-text"><a href="#(Baggy)_method_categorize-list">(Baggy) method categorize-list</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.12</td><td class="toc-text"><a href="#(Baggy)_method_keys">(Baggy) method keys</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.13</td><td class="toc-text"><a href="#(Baggy)_method_values">(Baggy) method values</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.14</td><td class="toc-text"><a href="#(Baggy)_method_kv">(Baggy) method kv</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.15</td><td class="toc-text"><a href="#(Baggy)_method_kxxv">(Baggy) method kxxv</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.16</td><td class="toc-text"><a href="#(Baggy)_method_elems">(Baggy) method elems</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.17</td><td class="toc-text"><a href="#(Baggy)_method_total">(Baggy) method total</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.18</td><td class="toc-text"><a href="#(Baggy)_method_default">(Baggy) method default</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.19</td><td class="toc-text"><a href="#(Baggy)_method_hash">(Baggy) method hash</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.20</td><td class="toc-text"><a href="#(Baggy)_method_Bool">(Baggy) method Bool</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.21</td><td class="toc-text"><a href="#(Baggy)_method_Set">(Baggy) method Set</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.22</td><td class="toc-text"><a href="#(Baggy)_method_SetHash">(Baggy) method SetHash</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">8.23</td><td class="toc-text"><a href="#(Baggy)_method_ACCEPTS">(Baggy) method ACCEPTS</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">9</td><td class="toc-text"><a href="#Routines_supplied_by_role_QuantHash">Routines supplied by role QuantHash</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.1</td><td class="toc-text"><a href="#(QuantHash)_method_hash">(QuantHash) method hash</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.2</td><td class="toc-text"><a href="#(QuantHash)_method_Hash">(QuantHash) method Hash</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.3</td><td class="toc-text"><a href="#(QuantHash)_method_of">(QuantHash) method of</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.4</td><td class="toc-text"><a href="#(QuantHash)_method_keyof">(QuantHash) method keyof</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.5</td><td class="toc-text"><a href="#(QuantHash)_method_Setty">(QuantHash) method Setty</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.6</td><td class="toc-text"><a href="#(QuantHash)_method_Baggy">(QuantHash) method Baggy</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.7</td><td class="toc-text"><a href="#(QuantHash)_method_Mixy">(QuantHash) method Mixy</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">10</td><td class="toc-text"><a href="#Routines_supplied_by_role_Associative">Routines supplied by role Associative</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">10.1</td><td class="toc-text"><a href="#(Associative)_method_of">(Associative) method of</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">10.2</td><td class="toc-text"><a href="#(Associative)_method_keyof">(Associative) method keyof</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">10.3</td><td class="toc-text"><a href="#(Associative)_method_AT-KEY">(Associative) method AT-KEY</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">10.4</td><td class="toc-text"><a href="#(Associative)_method_EXISTS-KEY">(Associative) method EXISTS-KEY</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">10.5</td><td class="toc-text"><a href="#(Associative)_method_STORE">(Associative) method STORE</a></td></tr>
+
 </table>
 </nav>
 
-    <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>MixHash</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Mixy</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>A <code>MixHash</code> is a mutable mix, meaning a collection of distinct elements in no particular order that each have a real-number weight assigned to them. (For <em>immutable</em> mixes, see <a href="/type/Mix">Mix</a> instead.)</p>
+        <div class="pod-body ">
+            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>MixHash</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Mixy</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>A <code>MixHash</code> is a mutable mix, meaning a collection of distinct elements in no particular order that each have a real-number weight assigned to them. (For <em>immutable</em> mixes, see <a href="/type/Mix">Mix</a> instead.)</p>
 <p>Objects/values of any type are allowed as mix elements. Within a <code>MixHash</code>, items that would compare positively with the <a href="/routine/===">===</a> operator are considered the same element, with a combined weight.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;(</span><span class="string pair key perl6fe"><span>butter&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.22</span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>sugar&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.1</span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string pair key perl6fe"><span>flour&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.275</span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>sugar&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.02</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>MixHash</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>keys</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>sort</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«butter&nbsp;flour&nbsp;sugar␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>pairs</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>sort</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«&quot;butter&quot;&nbsp;=&gt;&nbsp;0.22&nbsp;&quot;flour&quot;&nbsp;=&gt;&nbsp;0.275&nbsp;&quot;sugar&quot;&nbsp;=&gt;&nbsp;0.12␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>total</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0.615␤»</span><span>&nbsp;</span></span></span></div></pre><p><code>MixHash</code>es can be treated as object hashes using the <a href="/language/operators#postcircumfix_{_}"><code>{ }</code> postcircumfix operator</a>, or the <a href="/language/operators#postcircumfix_<_>"><code>&lt; &gt; </code> postcircumfix operator</a> for literal string keys, which returns the corresponding numeric weight for keys that are elements of the mix, and <code>0</code> for keys that aren&#39;t. It can also be used to modify weights; Setting a weight to <code>0</code> automatically removes that element from the mix, and setting a weight to a non-zero number adds that element if it didn&#39;t already exist:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;(</span><span class="string pair key perl6fe"><span>butter&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.22</span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>sugar&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.1</span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string pair key perl6fe"><span>flour&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.275</span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>sugar&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.02</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>MixHash</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>butter</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0.22␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>sugar</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0.12␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>chocolate</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>butter</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>chocolate</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.30</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>recipe</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>pairs</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«&quot;sugar&quot;&nbsp;=&gt;&nbsp;0.12&nbsp;&quot;flour&quot;&nbsp;=&gt;&nbsp;0.275&nbsp;&quot;chocolate&quot;&nbsp;=&gt;&nbsp;0.3␤»</span><span>&nbsp;</span></span></span></div></pre><h1 id="Creating_MixHash_objects"><a class="u" href="#___top" title="go to top of document">Creating <code>MixHash</code> objects</a></h1>
@@ -149,8 +146,6 @@
 <h2 id="method_BagHash"><a class="u" href="#___top" title="go to top of document">method BagHash</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>BagHash</span></span><span>&nbsp;(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>BagHash</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Coerces the <code>MixHash</code> to a <a href="/type/BagHash"><code>BagHash</code></a>. The weights are converted to <a href="/type/Int"><code>Int</code></a>, which means the number of keys in the resulting <code>BagHash</code> can be fewer than in the original <code>MixHash</code>, if any of the weights are negative or truncate to zero.</p>
-<h1 id="Note_on_reverse_and_ordering"><a class="u" href="#___top" title="go to top of document">Note on <code>reverse</code> and ordering</a></h1>
-<p>This method is inherited from <a href="/type/Any#routine_reverse">Any</a>, however, <code>Mix</code>es do not have an inherent order and you should not trust it returning a consistent output.</p>
 <h1 id="See_Also"><a class="u" href="#___top" title="go to top of document">See Also</a></h1>
 <p><a href="/language/setbagmix">Sets, Bags, and Mixes</a></p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
@@ -160,17 +155,19 @@
  viewBox="0.00 0.00 171.90 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 167.895,-328 167.895,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-328 167.9,-328 167.9,4 -4,4"/>
 <!-- MixHash -->
-<g id="node1" class="node"><title>MixHash</title>
+<g id="node1" class="node">
+<title>MixHash</title>
 <g id="a_node1"><a xlink:href="/type/MixHash" xlink:title="MixHash">
-<ellipse fill="none" stroke="#000000" cx="68" cy="-18" rx="45.4919" ry="18"/>
-<text text-anchor="middle" x="68" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">MixHash</text>
+<ellipse fill="none" stroke="#000000" cx="67" cy="-18" rx="45.49" ry="18"/>
+<text text-anchor="middle" x="67" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">MixHash</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node"><title>Any</title>
+<g id="node3" class="node">
+<title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
 <ellipse fill="none" stroke="#000000" cx="30" cy="-90" rx="27" ry="18"/>
 <text text-anchor="middle" x="30" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
@@ -178,25 +175,29 @@
 </g>
 </g>
 <!-- MixHash&#45;&gt;Any -->
-<g id="edge1" class="edge"><title>MixHash&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M58.8013,-35.945C54.2545,-44.3207 48.6764,-54.5961 43.6442,-63.8659"/>
-<polygon fill="#000000" stroke="#000000" points="40.5473,-62.2346 38.8524,-72.693 46.6993,-65.5743 40.5473,-62.2346"/>
+<g id="edge1" class="edge">
+<title>MixHash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M58.04,-35.95C53.66,-44.23 48.3,-54.38 43.44,-63.58"/>
+<polygon fill="#000000" stroke="#000000" points="40.2,-62.22 38.62,-72.69 46.39,-65.49 40.2,-62.22"/>
 </g>
 <!-- Mixy -->
-<g id="node7" class="node"><title>Mixy</title>
+<g id="node7" class="node">
+<title>Mixy</title>
 <g id="a_node7"><a xlink:href="/type/Mixy" xlink:title="Mixy">
-<ellipse fill="none" stroke="#6666ff" cx="106" cy="-90" rx="29.4969" ry="18"/>
+<ellipse fill="none" stroke="#6666ff" cx="106" cy="-90" rx="29.5" ry="18"/>
 <text text-anchor="middle" x="106" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Mixy</text>
 </a>
 </g>
 </g>
 <!-- MixHash&#45;&gt;Mixy -->
-<g id="edge3" class="edge"><title>MixHash&#45;&gt;Mixy</title>
-<path fill="none" stroke="#6666ff" d="M77.1987,-35.945C81.7455,-44.3207 87.3236,-54.5961 92.3558,-63.8659"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="89.3007,-65.5743 97.1476,-72.693 95.4527,-62.2346 89.3007,-65.5743"/>
+<g id="edge3" class="edge">
+<title>MixHash&#45;&gt;Mixy</title>
+<path fill="none" stroke="#6666ff" d="M76.44,-35.95C81.11,-44.32 86.83,-54.6 92,-63.87"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="88.99,-65.66 96.91,-72.69 95.11,-62.25 88.99,-65.66"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node"><title>Mu</title>
+<g id="node2" class="node">
+<title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
 <ellipse fill="none" stroke="#000000" cx="27" cy="-162" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
@@ -204,48 +205,55 @@
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M29.2584,-108.303C28.9278,-116.017 28.5305,-125.288 28.162,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="24.6645,-133.755 27.733,-143.896 31.6581,-134.055 24.6645,-133.755"/>
+<g id="edge2" class="edge">
+<title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M29.26,-108.3C28.93,-116.02 28.53,-125.29 28.16,-133.89"/>
+<polygon fill="#000000" stroke="#000000" points="24.66,-133.75 27.73,-143.9 31.66,-134.05 24.66,-133.75"/>
 </g>
 <!-- Associative -->
-<g id="node4" class="node"><title>Associative</title>
+<g id="node4" class="node">
+<title>Associative</title>
 <g id="a_node4"><a xlink:href="/type/Associative" xlink:title="Associative">
-<ellipse fill="none" stroke="#6666ff" cx="108" cy="-306" rx="55.4913" ry="18"/>
+<ellipse fill="none" stroke="#6666ff" cx="108" cy="-306" rx="55.49" ry="18"/>
 <text text-anchor="middle" x="108" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
 </a>
 </g>
 </g>
 <!-- QuantHash -->
-<g id="node5" class="node"><title>QuantHash</title>
+<g id="node5" class="node">
+<title>QuantHash</title>
 <g id="a_node5"><a xlink:href="/type/QuantHash" xlink:title="QuantHash">
-<ellipse fill="none" stroke="#6666ff" cx="108" cy="-234" rx="55.7903" ry="18"/>
+<ellipse fill="none" stroke="#6666ff" cx="108" cy="-234" rx="55.79" ry="18"/>
 <text text-anchor="middle" x="108" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">QuantHash</text>
 </a>
 </g>
 </g>
 <!-- QuantHash&#45;&gt;Associative -->
-<g id="edge4" class="edge"><title>QuantHash&#45;&gt;Associative</title>
-<path fill="none" stroke="#6666ff" d="M108,-252.303C108,-260.017 108,-269.288 108,-277.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="104.5,-277.896 108,-287.896 111.5,-277.896 104.5,-277.896"/>
+<g id="edge4" class="edge">
+<title>QuantHash&#45;&gt;Associative</title>
+<path fill="none" stroke="#6666ff" d="M108,-252.3C108,-260.02 108,-269.29 108,-277.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="104.5,-277.9 108,-287.9 111.5,-277.9 104.5,-277.9"/>
 </g>
 <!-- Baggy -->
-<g id="node6" class="node"><title>Baggy</title>
+<g id="node6" class="node">
+<title>Baggy</title>
 <g id="a_node6"><a xlink:href="/type/Baggy" xlink:title="Baggy">
-<ellipse fill="none" stroke="#6666ff" cx="108" cy="-162" rx="35.9954" ry="18"/>
+<ellipse fill="none" stroke="#6666ff" cx="108" cy="-162" rx="36" ry="18"/>
 <text text-anchor="middle" x="108" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Baggy</text>
 </a>
 </g>
 </g>
 <!-- Baggy&#45;&gt;QuantHash -->
-<g id="edge5" class="edge"><title>Baggy&#45;&gt;QuantHash</title>
-<path fill="none" stroke="#6666ff" d="M108,-180.303C108,-188.017 108,-197.288 108,-205.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="104.5,-205.896 108,-215.896 111.5,-205.896 104.5,-205.896"/>
+<g id="edge5" class="edge">
+<title>Baggy&#45;&gt;QuantHash</title>
+<path fill="none" stroke="#6666ff" d="M108,-180.3C108,-188.02 108,-197.29 108,-205.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="104.5,-205.9 108,-215.9 111.5,-205.9 104.5,-205.9"/>
 </g>
 <!-- Mixy&#45;&gt;Baggy -->
-<g id="edge6" class="edge"><title>Mixy&#45;&gt;Baggy</title>
-<path fill="none" stroke="#6666ff" d="M106.494,-108.303C106.715,-116.017 106.98,-125.288 107.225,-133.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="103.727,-134 107.511,-143.896 110.724,-133.8 103.727,-134"/>
+<g id="edge6" class="edge">
+<title>Mixy&#45;&gt;Baggy</title>
+<path fill="none" stroke="#6666ff" d="M106.49,-108.3C106.71,-116.02 106.98,-125.29 107.23,-133.89"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="103.73,-134 107.51,-143.9 110.72,-133.8 103.73,-134"/>
 </g>
 </g>
 </svg>
@@ -269,7 +277,7 @@
 <p>MixHash does role <a href="/type/Baggy">Baggy</a>, which provides the following routines:</p>
 <h2 id="(Baggy)_method_new-from-pairs"><a href="/type/Baggy#method_new-from-pairs">(Baggy) method new-from-pairs</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>new-from-pairs</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>pairs</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Baggy</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Constructs a Baggy objects from a list of <a href="/type/Pair"><code>Pair</code> objects</a> given as positional arguments:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>new-from-pairs</span></span><span>(</span><span class="support type perl6fe"><span>Baggy</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>pairs</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Baggy</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Constructs a Baggy objects from a list of <a href="/type/Pair"><code>Pair</code> objects</a> given as positional arguments:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Mix</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new-from-pairs</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>butter</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.22</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>sugar</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.1</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>sugar</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.02</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Mix(butter(0.22)&nbsp;sugar(0.12))␤»</span></span></span></div></pre><p><strong>Note:</strong> be sure you aren&#39;t accidentally passing the Pairs as positional arguments; the quotes around the keys in the above example are significant.</p>
 <h2 id="(Baggy)_method_grab"><a href="/type/Baggy#method_grab">(Baggy) method grab</a></h2>
 <p>Defined as:</p>
@@ -384,36 +392,39 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>h</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Foo</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string pair key perl6fe"><span>a&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>b&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>666</span></span><span>;</span></span></div></pre><p>syntax for binding your implementation of the <code>Associative</code> role.</p>
 <p>Should accept the values to (re-)initialize the object with, which either could consist of <code>Pair</code>s, or separate key/value pairs. The optional named parameter will contain a <code>True</code> value when the method is called on the object for the first time. Should return the invocant.</p>
 
+        </div>
     </div>
+
     
-    </div>
-<footer class="pretty-box yellow">
-  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/MixHash.pod6">/type/MixHash</a>.</p>
-  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
-      known to be incomplete.</p>
 
-  <p><a
-          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/MixHash.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/MixHash.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
 
-  <p> This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
-      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
-        >copyright © 2009 by Larry Wall.</a>
-      <!-- CREDITS -->
-      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
-
-  </p>
-</footer>
-
-<script type="text/javascript" src="/js/app.js?v=1"></script>
-<script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
-
-    </body>
+    <script type="text/javascript" src="/js/app.js?v=1"></script>
+    <script type="text/javascript" src="/js/search.js?v=3"></script>
+</body>
 </html>

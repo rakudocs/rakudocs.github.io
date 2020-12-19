@@ -1,244 +1,285 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>role X::Proc::Async</title>
-        <meta charset="UTF-8" />
-        <style>
-        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
-        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
-        u { text-decoration: none }
-        .nested {
-            margin-left: 3em;
-        }
-        aside, u { opacity: 0.7 }
-        a[id^="fn-"]:target { background: #ff0 }
-        </style>
-        
-        
-        <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
-<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+<head>
+    <title>role X::Proc::Async</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
 
-    </head>
-    <body class="pod">
+<body class="pod">
+
     <div id="___top"></div>
+
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Raku Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+
+        <a href="/">
+            <img src="/images/Camelia.svg"alt="»ö«"id="logo"width="62"height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item " href="/language.html"> Language </a>
+                    <a class="menu-item selected darker-green" href="/type.html"> Types </a>
+                    <a class="menu-item " href="/routine.html"> Routines </a>
+                    <a class="menu-item " href="/programs.html"> Programs </a>
+                    <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a>
+            </div>
+
+            <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
+                    <a class="menu-item" href="/type.html"> All </a>
+                    <a class="menu-item" href="/type-basic.html"> Basic </a>
+                    <a class="menu-item" href="/type-composite.html"> Composite </a>
+                    <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a>
+                    <a class="menu-item" href="/type-exception.html"> Exceptions </a>
+            </div></div></div></div></div>
+
+        </div>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
-  </div>
-</div>
-<!-- please make sure these two CAPITALIZED variables stay there -->
 
-<div id="content" class="pretty-box yellow content__type_X__Proc__Async">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/X::Proc::Async.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+    <div id="content" class="pretty-box yellow content_fragment">
 
-        </button>
-      </div>
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/X/Proc/Async.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
 
-    <h1 class='title'>role X::Proc::Async</h1>
-    <p class='subtitle'>Exception thrown by Proc::Async</p>
-    <nav class="indexgroup">
+        <h1 class="title">role X::Proc::Async</h1>
+        <p class="subtitle">Exception thrown by Proc::Async</p>
+
+        <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-      <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_proc">method proc</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_class_Exception">Routines supplied by class Exception</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Exception)_method_message">(Exception) method message</a></td></tr>
-      <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Exception)_method_backtrace">(Exception) method backtrace</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Exception)_method_throw">(Exception) method throw</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Exception)_method_resume">(Exception) method resume</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Exception)_method_rethrow">(Exception) method rethrow</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#(Exception)_routine_fail">(Exception) routine fail</a></td></tr>
-                                   <tr class="toc-level-2"><td class="toc-number">3.7</td><td class="toc-text"><a href="#(Exception)_method_gist">(Exception) method gist</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">3.8</td><td class="toc-text"><a href="#(Exception)_routine_die">(Exception) routine die</a></td></tr>
-                                                       <tr class="toc-level-2"><td class="toc-number">3.9</td><td class="toc-text"><a href="#(Exception)_sub_warn">(Exception) sub warn</a></td></tr>
-                   
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_proc">method proc</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_class_Exception">Routines supplied by class Exception</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Exception)_method_message">(Exception) method message</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Exception)_method_backtrace">(Exception) method backtrace</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Exception)_method_throw">(Exception) method throw</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Exception)_method_resume">(Exception) method resume</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Exception)_method_rethrow">(Exception) method rethrow</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#(Exception)_routine_fail">(Exception) routine fail</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.7</td><td class="toc-text"><a href="#(Exception)_method_gist">(Exception) method gist</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.8</td><td class="toc-text"><a href="#(Exception)_routine_die">(Exception) routine die</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.9</td><td class="toc-text"><a href="#(Exception)_sub_warn">(Exception) sub warn</a></td></tr>
+
 </table>
 </nav>
 
-    <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>X::Proc::Async</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="support type exception perl6fe"><span>Exception</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>All exceptions thrown by <a href="/type/Proc::Async">Proc::Async</a> do this common role.</p>
+        <div class="pod-body ">
+            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>X::Proc::Async</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="support type exception perl6fe"><span>Exception</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>All exceptions thrown by <a href="/type/Proc::Async">Proc::Async</a> do this common role.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_proc"><a class="u" href="#___top" title="go to top of document">method proc</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>proc</span></span><span>(</span><span class="support type exception perl6fe"><span>X::Proc::Async</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Proc</span></span><span>::</span><span class="routine name perl6fe"><span>Async</span></span><span>)</span></span></div></pre><p>Returns the object that threw the exception.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>X::Proc::Async</code></figcaption>
-  <svg width="1420pt" height="332pt"
- viewBox="0.00 0.00 1419.98 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg width="1671pt" height="332pt"
+ viewBox="0.00 0.00 1670.98 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 1415.98,-328 1415.98,4 -4,4"/>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-328 1666.98,-328 1666.98,4 -4,4"/>
 <!-- X::Proc::Async -->
-<g id="node1" class="node"><title>X::Proc::Async</title>
+<g id="node1" class="node">
+<title>X::Proc::Async</title>
 <g id="a_node1"><a xlink:href="/type/X::Proc::Async" xlink:title="X::Proc::Async">
-<ellipse fill="none" stroke="#6666ff" cx="671.687" cy="-90" rx="68.4888" ry="18"/>
-<text text-anchor="middle" x="671.687" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Proc::Async</text>
+<ellipse fill="none" stroke="#6666ff" cx="871.69" cy="-90" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="871.69" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Proc::Async</text>
 </a>
 </g>
 </g>
 <!-- Exception -->
-<g id="node4" class="node"><title>Exception</title>
+<g id="node4" class="node">
+<title>Exception</title>
 <g id="a_node4"><a xlink:href="/type/Exception" xlink:title="Exception">
-<ellipse fill="none" stroke="#000000" cx="719.687" cy="-162" rx="49.2915" ry="18"/>
-<text text-anchor="middle" x="719.687" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
+<ellipse fill="none" stroke="#000000" cx="871.69" cy="-162" rx="49.29" ry="18"/>
+<text text-anchor="middle" x="871.69" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
 </a>
 </g>
 </g>
 <!-- X::Proc::Async&#45;&gt;Exception -->
-<g id="edge1" class="edge"><title>X::Proc::Async&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M683.307,-107.945C689.026,-116.285 696.037,-126.509 702.372,-135.748"/>
-<polygon fill="#000000" stroke="#000000" points="699.633,-137.943 708.175,-144.211 705.406,-133.984 699.633,-137.943"/>
+<g id="edge1" class="edge">
+<title>X::Proc::Async&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M871.69,-108.3C871.69,-116.02 871.69,-125.29 871.69,-133.89"/>
+<polygon fill="#000000" stroke="#000000" points="868.19,-133.9 871.69,-143.9 875.19,-133.9 868.19,-133.9"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node"><title>Mu</title>
+<g id="node2" class="node">
+<title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="719.687" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="719.687" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="871.69" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="871.69" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node"><title>Any</title>
+<g id="node3" class="node">
+<title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="719.687" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="719.687" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="871.69" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="871.69" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M719.687,-252.303C719.687,-260.017 719.687,-269.288 719.687,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="716.188,-277.896 719.687,-287.896 723.188,-277.896 716.188,-277.896"/>
+<g id="edge2" class="edge">
+<title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M871.69,-252.3C871.69,-260.02 871.69,-269.29 871.69,-277.89"/>
+<polygon fill="#000000" stroke="#000000" points="868.19,-277.9 871.69,-287.9 875.19,-277.9 868.19,-277.9"/>
 </g>
 <!-- Exception&#45;&gt;Any -->
-<g id="edge3" class="edge"><title>Exception&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M719.687,-180.303C719.687,-188.017 719.687,-197.288 719.687,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="716.188,-205.896 719.687,-215.896 723.188,-205.896 716.188,-205.896"/>
+<g id="edge3" class="edge">
+<title>Exception&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M871.69,-180.3C871.69,-188.02 871.69,-197.29 871.69,-205.89"/>
+<polygon fill="#000000" stroke="#000000" points="868.19,-205.9 871.69,-215.9 875.19,-205.9 868.19,-205.9"/>
 </g>
 <!-- X::Proc::Async::TapBeforeSpawn -->
-<g id="node5" class="node"><title>X::Proc::Async::TapBeforeSpawn</title>
+<g id="node5" class="node">
+<title>X::Proc::Async::TapBeforeSpawn</title>
 <g id="a_node5"><a xlink:href="/type/X::Proc::Async::TapBeforeSpawn" xlink:title="X::Proc::Async::TapBeforeSpawn">
-<ellipse fill="none" stroke="#000000" cx="141.687" cy="-18" rx="141.875" ry="18"/>
-<text text-anchor="middle" x="141.687" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::TapBeforeSpawn</text>
+<ellipse fill="none" stroke="#000000" cx="141.69" cy="-18" rx="141.88" ry="18"/>
+<text text-anchor="middle" x="141.69" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::TapBeforeSpawn</text>
 </a>
 </g>
 </g>
 <!-- X::Proc::Async::TapBeforeSpawn&#45;&gt;X::Proc::Async -->
-<g id="edge9" class="edge"><title>X::Proc::Async::TapBeforeSpawn&#45;&gt;X::Proc::Async</title>
-<path fill="none" stroke="#6666ff" d="M236.135,-31.4742C341.23,-45.3546 508.548,-67.4533 602.263,-79.8307"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="601.835,-83.3045 612.207,-81.1442 602.752,-76.3648 601.835,-83.3045"/>
+<g id="edge10" class="edge">
+<title>X::Proc::Async::TapBeforeSpawn&#45;&gt;X::Proc::Async</title>
+<path fill="none" stroke="#6666ff" d="M244.08,-30.53C271.01,-33.56 292.69,-36 292.69,-36 292.69,-36 642.58,-68.03 798.37,-82.29"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="798.07,-85.78 808.35,-83.2 798.71,-78.8 798.07,-85.78"/>
 </g>
 <!-- X::Proc::Async::TapBeforeSpawn&#45;&gt;Exception -->
-<g id="edge4" class="edge"><title>X::Proc::Async::TapBeforeSpawn&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M203.544,-34.1965C318.933,-62.5448 564.832,-122.956 670.144,-148.829"/>
-<polygon fill="#000000" stroke="#000000" points="669.342,-152.235 679.888,-151.222 671.012,-145.437 669.342,-152.235"/>
+<g id="edge4" class="edge">
+<title>X::Proc::Async::TapBeforeSpawn&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M215.3,-33.4C344.07,-58.59 596.69,-108 596.69,-108 596.69,-108 739.32,-135.49 819.14,-150.87"/>
+<polygon fill="#000000" stroke="#000000" points="818.54,-154.32 829.02,-152.78 819.86,-147.45 818.54,-154.32"/>
 </g>
 <!-- X::Proc::Async::MustBeStarted -->
-<g id="node6" class="node"><title>X::Proc::Async::MustBeStarted</title>
+<g id="node6" class="node">
+<title>X::Proc::Async::MustBeStarted</title>
 <g id="a_node6"><a xlink:href="/type/X::Proc::Async::MustBeStarted" xlink:title="X::Proc::Async::MustBeStarted">
-<ellipse fill="none" stroke="#000000" cx="433.687" cy="-18" rx="131.877" ry="18"/>
-<text text-anchor="middle" x="433.687" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::MustBeStarted</text>
+<ellipse fill="none" stroke="#000000" cx="433.69" cy="-18" rx="131.88" ry="18"/>
+<text text-anchor="middle" x="433.69" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::MustBeStarted</text>
 </a>
 </g>
 </g>
 <!-- X::Proc::Async::MustBeStarted&#45;&gt;X::Proc::Async -->
-<g id="edge10" class="edge"><title>X::Proc::Async::MustBeStarted&#45;&gt;X::Proc::Async</title>
-<path fill="none" stroke="#6666ff" d="M486.507,-34.5353C525.644,-46.0461 578.784,-61.6755 618.102,-73.2396"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="617.202,-76.623 627.783,-76.087 619.177,-69.9075 617.202,-76.623"/>
+<g id="edge11" class="edge">
+<title>X::Proc::Async::MustBeStarted&#45;&gt;X::Proc::Async</title>
+<path fill="none" stroke="#6666ff" d="M515.81,-32.13C599.38,-45.48 727.32,-65.93 804.88,-78.32"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="804.59,-81.82 815.02,-79.94 805.7,-74.91 804.59,-81.82"/>
 </g>
 <!-- X::Proc::Async::MustBeStarted&#45;&gt;Exception -->
-<g id="edge5" class="edge"><title>X::Proc::Async::MustBeStarted&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M463.593,-35.5316C510.153,-61.2698 594.687,-108 594.687,-108 594.687,-108 642.791,-128.396 679.317,-143.883"/>
-<polygon fill="#000000" stroke="#000000" points="678.216,-147.218 688.789,-147.899 680.948,-140.773 678.216,-147.218"/>
+<g id="edge5" class="edge">
+<title>X::Proc::Async::MustBeStarted&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M482.23,-34.74C567.63,-62.43 743.53,-119.45 826.49,-146.35"/>
+<polygon fill="#000000" stroke="#000000" points="825.54,-149.72 836.14,-149.47 827.7,-143.06 825.54,-149.72"/>
 </g>
 <!-- X::Proc::Async::OpenForWriting -->
-<g id="node7" class="node"><title>X::Proc::Async::OpenForWriting</title>
+<g id="node7" class="node">
+<title>X::Proc::Async::OpenForWriting</title>
 <g id="a_node7"><a xlink:href="/type/X::Proc::Async::OpenForWriting" xlink:title="X::Proc::Async::OpenForWriting">
-<ellipse fill="none" stroke="#000000" cx="719.687" cy="-18" rx="135.676" ry="18"/>
-<text text-anchor="middle" x="719.687" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::OpenForWriting</text>
+<ellipse fill="none" stroke="#000000" cx="719.69" cy="-18" rx="135.68" ry="18"/>
+<text text-anchor="middle" x="719.69" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::OpenForWriting</text>
 </a>
 </g>
 </g>
 <!-- X::Proc::Async::OpenForWriting&#45;&gt;X::Proc::Async -->
-<g id="edge11" class="edge"><title>X::Proc::Async::OpenForWriting&#45;&gt;X::Proc::Async</title>
-<path fill="none" stroke="#6666ff" d="M708.068,-35.945C702.349,-44.2853 695.338,-54.5092 689.003,-63.7483"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="685.969,-61.9843 683.2,-72.211 691.742,-65.9431 685.969,-61.9843"/>
+<g id="edge12" class="edge">
+<title>X::Proc::Async::OpenForWriting&#45;&gt;X::Proc::Async</title>
+<path fill="none" stroke="#6666ff" d="M755.32,-35.41C777.69,-45.71 806.62,-59.04 830.05,-69.82"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="828.83,-73.12 839.38,-74.12 831.76,-66.76 828.83,-73.12"/>
 </g>
 <!-- X::Proc::Async::OpenForWriting&#45;&gt;Exception -->
-<g id="edge6" class="edge"><title>X::Proc::Async::OpenForWriting&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M729.023,-36.0613C737.5,-51.5549 748.687,-72 748.687,-72 748.687,-72 748.687,-108 748.687,-108 748.687,-108 741.209,-121.667 733.848,-135.121"/>
-<polygon fill="#000000" stroke="#000000" points="730.593,-133.778 728.863,-144.23 736.734,-137.138 730.593,-133.778"/>
+<g id="edge6" class="edge">
+<title>X::Proc::Async::OpenForWriting&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M734.15,-36.16C755.94,-62.02 794.69,-108 794.69,-108 794.69,-108 819.62,-125.16 841.11,-139.95"/>
+<polygon fill="#000000" stroke="#000000" points="839.19,-142.88 849.42,-145.67 843.16,-137.12 839.19,-142.88"/>
 </g>
 <!-- X::Proc::Async::CharsOrBytes -->
-<g id="node8" class="node"><title>X::Proc::Async::CharsOrBytes</title>
+<g id="node8" class="node">
+<title>X::Proc::Async::CharsOrBytes</title>
 <g id="a_node8"><a xlink:href="/type/X::Proc::Async::CharsOrBytes" xlink:title="X::Proc::Async::CharsOrBytes">
-<ellipse fill="none" stroke="#000000" cx="1002.69" cy="-18" rx="128.877" ry="18"/>
+<ellipse fill="none" stroke="#000000" cx="1002.69" cy="-18" rx="128.88" ry="18"/>
 <text text-anchor="middle" x="1002.69" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::CharsOrBytes</text>
 </a>
 </g>
 </g>
 <!-- X::Proc::Async::CharsOrBytes&#45;&gt;X::Proc::Async -->
-<g id="edge12" class="edge"><title>X::Proc::Async::CharsOrBytes&#45;&gt;X::Proc::Async</title>
-<path fill="none" stroke="#6666ff" d="M934.906,-33.3345C875.669,-45.8619 790.41,-63.8925 733.131,-76.0059"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="732.187,-72.6279 723.128,-78.1213 733.636,-79.4765 732.187,-72.6279"/>
+<g id="edge13" class="edge">
+<title>X::Proc::Async::CharsOrBytes&#45;&gt;X::Proc::Async</title>
+<path fill="none" stroke="#6666ff" d="M971.64,-35.59C953.09,-45.5 929.39,-58.17 909.72,-68.68"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="907.89,-65.69 900.71,-73.49 911.18,-71.86 907.89,-65.69"/>
 </g>
 <!-- X::Proc::Async::CharsOrBytes&#45;&gt;Exception -->
-<g id="edge7" class="edge"><title>X::Proc::Async::CharsOrBytes&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M969.947,-35.4279C916.857,-62.0669 812.33,-114.515 756.647,-142.455"/>
-<polygon fill="#000000" stroke="#000000" points="754.861,-139.435 747.493,-147.048 758,-145.692 754.861,-139.435"/>
+<g id="edge7" class="edge">
+<title>X::Proc::Async::CharsOrBytes&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M992.28,-36.16C976.58,-62.02 948.69,-108 948.69,-108 948.69,-108 923.76,-125.16 902.27,-139.95"/>
+<polygon fill="#000000" stroke="#000000" points="900.21,-137.12 893.96,-145.67 904.18,-142.88 900.21,-137.12"/>
+</g>
+<!-- X::Proc::Async::BindOrUse -->
+<g id="node9" class="node">
+<title>X::Proc::Async::BindOrUse</title>
+<g id="a_node9"><a xlink:href="/type/X::Proc::Async::BindOrUse" xlink:title="X::Proc::Async::BindOrUse">
+<ellipse fill="none" stroke="#000000" cx="1265.69" cy="-18" rx="116.18" ry="18"/>
+<text text-anchor="middle" x="1265.69" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::BindOrUse</text>
+</a>
+</g>
+</g>
+<!-- X::Proc::Async::BindOrUse&#45;&gt;X::Proc::Async -->
+<g id="edge14" class="edge">
+<title>X::Proc::Async::BindOrUse&#45;&gt;X::Proc::Async</title>
+<path fill="none" stroke="#6666ff" d="M1192.5,-32C1119.11,-45.04 1007.17,-64.93 936.78,-77.44"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="935.94,-74.03 926.71,-79.22 937.17,-80.92 935.94,-74.03"/>
+</g>
+<!-- X::Proc::Async::BindOrUse&#45;&gt;Exception -->
+<g id="edge8" class="edge">
+<title>X::Proc::Async::BindOrUse&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1222.02,-34.74C1146.18,-62.07 991.01,-118 915.25,-145.3"/>
+<polygon fill="#000000" stroke="#000000" points="913.76,-142.12 905.54,-148.8 916.13,-148.7 913.76,-142.12"/>
 </g>
 <!-- X::Proc::Async::AlreadyStarted -->
-<g id="node9" class="node"><title>X::Proc::Async::AlreadyStarted</title>
-<g id="a_node9"><a xlink:href="/type/X::Proc::Async::AlreadyStarted" xlink:title="X::Proc::Async::AlreadyStarted">
-<ellipse fill="none" stroke="#000000" cx="1280.69" cy="-18" rx="131.077" ry="18"/>
-<text text-anchor="middle" x="1280.69" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::AlreadyStarted</text>
+<g id="node10" class="node">
+<title>X::Proc::Async::AlreadyStarted</title>
+<g id="a_node10"><a xlink:href="/type/X::Proc::Async::AlreadyStarted" xlink:title="X::Proc::Async::AlreadyStarted">
+<ellipse fill="none" stroke="#000000" cx="1531.69" cy="-18" rx="131.08" ry="18"/>
+<text text-anchor="middle" x="1531.69" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::AlreadyStarted</text>
 </a>
 </g>
 </g>
 <!-- X::Proc::Async::AlreadyStarted&#45;&gt;X::Proc::Async -->
-<g id="edge13" class="edge"><title>X::Proc::Async::AlreadyStarted&#45;&gt;X::Proc::Async</title>
-<path fill="none" stroke="#6666ff" d="M1185.75,-30.5275C1160.79,-33.5593 1140.69,-36 1140.69,-36 1140.69,-36 874.195,-66.1153 742.974,-80.9441"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="742.545,-77.4703 733.001,-82.0712 743.331,-84.426 742.545,-77.4703"/>
+<g id="edge15" class="edge">
+<title>X::Proc::Async::AlreadyStarted&#45;&gt;X::Proc::Async</title>
+<path fill="none" stroke="#6666ff" d="M1436.47,-30.48C1411.14,-33.53 1390.69,-36 1390.69,-36 1390.69,-36 1086.7,-67.04 944.02,-81.61"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="943.63,-78.14 934.03,-82.63 944.34,-85.1 943.63,-78.14"/>
 </g>
 <!-- X::Proc::Async::AlreadyStarted&#45;&gt;Exception -->
-<g id="edge8" class="edge"><title>X::Proc::Async::AlreadyStarted&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1221.18,-34.0621C1109.84,-62.2457 871.97,-122.454 768.948,-148.531"/>
-<polygon fill="#000000" stroke="#000000" points="767.95,-145.173 759.115,-151.02 769.668,-151.959 767.95,-145.173"/>
+<g id="edge9" class="edge">
+<title>X::Proc::Async::AlreadyStarted&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1464.46,-33.46C1332.31,-61.9 1041.26,-124.52 923.08,-149.94"/>
+<polygon fill="#000000" stroke="#000000" points="922.23,-146.54 913.19,-152.07 923.7,-153.39 922.23,-146.54"/>
 </g>
 </g>
 </svg>
@@ -270,7 +311,7 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;For&nbsp;example,&nbsp;resume&nbsp;control&nbsp;flow&nbsp;for&nbsp;any&nbsp;exception</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control closure trait perl6fe"><span>CATCH</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>default</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>resume</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><h2 id="(Exception)_method_rethrow"><a href="/type/Exception#method_rethrow">(Exception) method rethrow</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>rethrow</span></span><span>(</span><span class="support type exception perl6fe"><span>Exception</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Rethrows an exception that has already been thrown at least once. This is different from <code>throw</code> in that it preserves the original backtrace.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>f</span></span><span>()&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control control-handlers perl6fe"><span>die</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Bad</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>g</span></span><span>()&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control control-handlers perl6fe"><span>try</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>f</span></span><span>;&nbsp;</span><span class="keyword control closure trait perl6fe"><span>CATCH</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>default</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>rethrow</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>g</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control closure trait perl6fe"><span>CATCH</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>default</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>backtrace</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>full</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div></pre><h2 id="(Exception)_routine_fail"><a href="/type/Exception#routine_fail">(Exception) routine fail</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>f</span></span><span>()&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control control-handlers perl6fe"><span>die</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Bad</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>g</span></span><span>()&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>f</span></span><span>;&nbsp;</span><span class="keyword control closure trait perl6fe"><span>CATCH</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>default</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>rethrow</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>g</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control closure trait perl6fe"><span>CATCH</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>default</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>backtrace</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>full</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div></pre><h2 id="(Exception)_routine_fail"><a href="/type/Exception#routine_fail">(Exception) routine fail</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="entity name function perl6fe"><span>fail</span></span><span>(</span><span class="support type exception perl6fe"><span>Exception</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>e</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="entity name function perl6fe"><span>fail</span></span><span>(</span><span class="support type exception perl6fe"><span>Exception</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Exits the calling <code>Routine</code> and returns a <a href="/type/Failure">Failure</a> object wrapping the exception.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;A&nbsp;custom&nbsp;exception&nbsp;defined</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>ForbiddenWord</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="support type exception perl6fe"><span>Exception</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>has</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>.</span></span><span class="variable other identifier perl6fe"><span>word</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>This&nbsp;word&nbsp;is&nbsp;forbidden:&nbsp;«</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil interpolated perl6fe"><span>!</span></span><span>word</span></span><span>»</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>say-word</span></span><span>&nbsp;(&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>word</span></span></span><span>&nbsp;)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ForbiddenWord</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>word</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>word</span></span></span><span>))</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="keyword control control-handlers perl6fe"><span>fail</span></span><span>&nbsp;</span><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>word</span></span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>eq</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>word</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>result</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>say-word</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>foo</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>result</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>exception</span></span><span>;</span></span></div></pre><p>The routine form works in the same way, with an alternative syntax: <code>fail ForbiddenWord.new(:word($word))</code>.</p>
@@ -288,36 +329,39 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>warn</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>message</span></span></span><span>)</span></span></div></pre><p>Throws a resumable warning exception, which is considered a control exception, and hence is invisible to most normal exception handlers. The outermost control handler will print the warning to <code>$*ERR</code>. After printing the warning, the exception is resumed where it was thrown. To override this behavior, catch the exception in a <code>CONTROL</code> block. A <code>quietly {...}</code> block is the opposite of a <code>try {...}</code> block in that it will suppress any warnings but pass fatal exceptions through.</p>
 <p>To simply print to <code>$*ERR</code>, please use <code>note</code> instead. <code>warn</code> should be reserved for use in threatening situations when you don&#39;t quite want to throw an exception.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control control-handlers perl6fe"><span>warn</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Warning&nbsp;message</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div></pre>
+        </div>
     </div>
+
     
-    </div>
-<footer class="pretty-box yellow">
-  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/X::Proc::Async.pod6">/type/X::Proc::Async</a>.</p>
-  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
-      known to be incomplete.</p>
 
-  <p><a
-          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/X/Proc/Async.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/X/Proc/Async.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
 
-  <p> This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
-      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
-        >copyright © 2009 by Larry Wall.</a>
-      <!-- CREDITS -->
-      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
-
-  </p>
-</footer>
-
-<script type="text/javascript" src="/js/app.js?v=1"></script>
-<script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
-
-    </body>
+    <script type="text/javascript" src="/js/app.js?v=1"></script>
+    <script type="text/javascript" src="/js/search.js?v=3"></script>
+</body>
 </html>

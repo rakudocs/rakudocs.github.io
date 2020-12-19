@@ -2,6 +2,7 @@ digraph "perl6-type-graph" {
     rankdir=BT;
     splines=polyline;
     overlap=false; 
+    graph [truecolor=true bgcolor="#FFFFFF"];
     // Types
     "Complex" [color="#000000", fontcolor="#000000", href="/type/Complex", fontname="FreeSans"];
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
@@ -10,6 +11,7 @@ digraph "perl6-type-graph" {
     "Numeric" [color="#6666FF", fontcolor="#6666FF", href="/type/Numeric", fontname="FreeSans"];
     "Stringy" [color="#6666FF", fontcolor="#6666FF", href="/type/Stringy", fontname="FreeSans"];
     "Str" [color="#000000", fontcolor="#000000", href="/type/Str", fontname="FreeSans"];
+    "Allomorph" [color="#000000", fontcolor="#000000", href="/type/Allomorph", fontname="FreeSans"];
     "ComplexStr" [color="#000000", fontcolor="#000000", href="/type/ComplexStr", fontname="FreeSans"];
 
     // Superclasses
@@ -17,8 +19,9 @@ digraph "perl6-type-graph" {
     "Any" -> "Mu" [color="#000000"];
     "Cool" -> "Any" [color="#000000"];
     "Str" -> "Cool" [color="#000000"];
+    "Allomorph" -> "Str" [color="#000000"];
+    "ComplexStr" -> "Allomorph" [color="#000000"];
     "ComplexStr" -> "Complex" [color="#000000"];
-    "ComplexStr" -> "Str" [color="#000000"];
 
     // Roles
     "Complex" -> "Numeric" [color="#6666FF"];

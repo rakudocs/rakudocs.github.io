@@ -1,217 +1,210 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Glossary</title>
-        <meta charset="UTF-8" />
-        <style>
-        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
-        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
-        u { text-decoration: none }
-        .nested {
-            margin-left: 3em;
-        }
-        aside, u { opacity: 0.7 }
-        a[id^="fn-"]:target { background: #ff0 }
-        </style>
-        
-        
-        <meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
-<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+<head>
+    <title>Glossary</title>
+    <meta charset="UTF-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/app.css" media="screen" title="default" />
+    <noscript> <style> #search { visibility: hidden; } </style> </noscript>
+</head>
 
-    </head>
-    <body class="pod">
+<body class="pod">
+
     <div id="___top"></div>
+
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Raku Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+
+        <a href="/">
+            <img src="/images/Camelia.svg"alt="»ö«"id="logo"width="62"height="48"/> &nbsp;Raku Documentation
+        </a>
+
+        <div id="search" class="ui-widget">
+            <div class="green">
+                <input placeholder="Loading..." id="query" accesskey="f" title="Enter term to search for (hit Esc to focus)"/>
+            </div>
+            <p id="not-found-message">
+                Not in Index (<a href="" id="try-web-search">try site search</a>)
+            </p>
+        </div>
+
+        <div class="menu">
+
+            <div class="menu-items dark-green">
+                <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
+                    <a class="menu-item selected darker-green" href="/language.html"> Language </a>
+                    <a class="menu-item " href="/type.html"> Types </a>
+                    <a class="menu-item " href="/routine.html"> Routines </a>
+                    <a class="menu-item " href="/programs.html"> Programs </a>
+                    <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a>
+            </div>
+
+            
+            
+
+        </div>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#raku"> Chat with us </a></div>
-  </div>
-</div>
-<!-- please make sure these two CAPITALIZED variables stay there -->
 
-<div id="content" class="pretty-box yellow content__language_glossary">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/glossary.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+    <div id="content" class="pretty-box yellow content_fragment">
 
-        </button>
-      </div>
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Language/glossary.pod6'">
+                <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="pencil" fill="#000000">
+                            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
 
-    <h1 class='title'>Glossary</h1>
-    <p class='subtitle'>Glossary of Raku terminology</p>
-    <nav class="indexgroup">
+        <h1 class="title">Glossary</h1>
+        <p class="subtitle">Glossary of Raku terminology</p>
+
+        <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-   <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Abstract_class">Abstract class</a></td></tr>
-            <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Advent_calendar">Advent calendar</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Adverb">Adverb</a></td></tr>
-                <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Adverbial_pair">Adverbial pair</a></td></tr>
-                      <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Allomorph">Allomorph</a></td></tr>
-                                                          <tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#Anonymous">Anonymous</a></td></tr>
-               <tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#API">API</a></td></tr>
-      <tr class="toc-level-1"><td class="toc-number">8</td><td class="toc-text"><a href="#Apocalypse">Apocalypse</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">9</td><td class="toc-text"><a href="#Arity">Arity</a></td></tr>
-                    <tr class="toc-level-1"><td class="toc-number">10</td><td class="toc-text"><a href="#ASCII_operator">ASCII operator </a></td></tr>
-              <tr class="toc-level-1"><td class="toc-number">11</td><td class="toc-text"><a href="#Autothreading">Autothreading</a></td></tr>
-                                        <tr class="toc-level-1"><td class="toc-number">12</td><td class="toc-text"><a href="#Backtracking">Backtracking</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">13</td><td class="toc-text"><a href="#binder">binder</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">14</td><td class="toc-text"><a href="#block">block</a></td></tr>
-    <tr class="toc-level-1"><td class="toc-number">15</td><td class="toc-text"><a href="#bytecode">bytecode</a></td></tr>
-           <tr class="toc-level-1"><td class="toc-number">16</td><td class="toc-text"><a href="#Camelia">Camelia</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">17</td><td class="toc-text"><a href="#Colon_pair_and_colon_list">Colon pair and colon list</a></td></tr>
-                           <tr class="toc-level-1"><td class="toc-number">18</td><td class="toc-text"><a href="#Community">Community</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">19</td><td class="toc-text"><a href="#Damian_Conway">Damian Conway</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">20</td><td class="toc-text"><a href="#decont">decont</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">21</td><td class="toc-text"><a href="#diffy">diffy</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">22</td><td class="toc-text"><a href="#Exegesis">Exegesis</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">23</td><td class="toc-text"><a href="#fiddly">fiddly</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">24</td><td class="toc-text"><a href="#Handle">Handle</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">25</td><td class="toc-text"><a href="#Huffmanize">Huffmanize</a></td></tr>
-              <tr class="toc-level-1"><td class="toc-number">26</td><td class="toc-text"><a href="#iffy">iffy</a></td></tr>
-        <tr class="toc-level-1"><td class="toc-number">27</td><td class="toc-text"><a href="#import">import</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">28</td><td class="toc-text"><a href="#Instance">Instance</a></td></tr>
-                  <tr class="toc-level-1"><td class="toc-number">29</td><td class="toc-text"><a href="#Interface">Interface</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">30</td><td class="toc-text"><a href="#Invocant">Invocant</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">31</td><td class="toc-text"><a href="#IRC">IRC</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">32</td><td class="toc-text"><a href="#IRC_lingo">IRC lingo</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">32.1</td><td class="toc-text"><a href="#ALAP">ALAP</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.2</td><td class="toc-text"><a href="#autopun">autopun</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.3</td><td class="toc-text"><a href="#backlog">backlog</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">32.4</td><td class="toc-text"><a href="#Bot">Bot</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">32.5</td><td class="toc-text"><a href="#Compilation_unit_or_compunit">Compilation unit or compunit</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">32.6</td><td class="toc-text"><a href="#DWIM">DWIM</a></td></tr>
-      <tr class="toc-level-2"><td class="toc-number">32.7</td><td class="toc-text"><a href="#flap">flap</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.8</td><td class="toc-text"><a href="#fossil">fossil</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.9</td><td class="toc-text"><a href="#FSVO">FSVO</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.10</td><td class="toc-text"><a href="#FTFY">FTFY</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.11</td><td class="toc-text"><a href="#gradual_typing">gradual typing</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">32.12</td><td class="toc-text"><a href="#IIRC">IIRC</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.13</td><td class="toc-text"><a href="#IMHO">IMHO</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.14</td><td class="toc-text"><a href="#IWBN">IWBN</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.15</td><td class="toc-text"><a href="#LHF">LHF</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.16</td><td class="toc-text"><a href="#LGTM">LGTM</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.17</td><td class="toc-text"><a href="#LTA">LTA</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.18</td><td class="toc-text"><a href="#NST">NST</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.19</td><td class="toc-text"><a href="#Opt">Opt</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">32.20</td><td class="toc-text"><a href="#PB">PB</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.21</td><td class="toc-text"><a href="#PR">PR</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">32.22</td><td class="toc-text"><a href="#P5">P5</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.23</td><td class="toc-text"><a href="#P6">P6</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.24</td><td class="toc-text"><a href="#RSN">RSN</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.25</td><td class="toc-text"><a href="#RT">RT</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">32.26</td><td class="toc-text"><a href="#TIMTOWTDI">TIMTOWTDI</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">32.27</td><td class="toc-text"><a href="#TMI">TMI</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.28</td><td class="toc-text"><a href="#TMTOWTDI">TMTOWTDI</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.29</td><td class="toc-text"><a href="#UGT">UGT</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.30</td><td class="toc-text"><a href="#WFM">WFM</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.31</td><td class="toc-text"><a href="#WIP">WIP</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.32</td><td class="toc-text"><a href="#WP">WP</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">32.33</td><td class="toc-text"><a href="#WW">WW</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">33</td><td class="toc-text"><a href="#Larry_Wall">Larry Wall</a></td></tr>
-      <tr class="toc-level-1"><td class="toc-number">34</td><td class="toc-text"><a href="#Lexing">Lexing</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">35</td><td class="toc-text"><a href="#Literal">Literal</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">36</td><td class="toc-text"><a href="#LHS">LHS</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">37</td><td class="toc-text"><a href="#lvalue">lvalue</a></td></tr>
-                                          <tr class="toc-level-1"><td class="toc-number">38</td><td class="toc-text"><a href="#Mainline">Mainline</a></td></tr>
-                    <tr class="toc-level-1"><td class="toc-number">39</td><td class="toc-text"><a href="#Mayspec">Mayspec</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">40</td><td class="toc-text"><a href="#MoarVM">MoarVM</a></td></tr>
-               <tr class="toc-level-1"><td class="toc-number">41</td><td class="toc-text"><a href="#Multi-dispatch">Multi-dispatch</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">42</td><td class="toc-text"><a href="#multi-method">multi-method</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">43</td><td class="toc-text"><a href="#Née">Née</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">44</td><td class="toc-text"><a href="#NFG">NFG</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">45</td><td class="toc-text"><a href="#Niecza">Niecza</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">46</td><td class="toc-text"><a href="#Not_Quite_Perl">Not Quite Perl</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">47</td><td class="toc-text"><a href="#NQP">NQP</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">48</td><td class="toc-text"><a href="#NYI">NYI</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">49</td><td class="toc-text"><a href="#opcode">opcode</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">50</td><td class="toc-text"><a href="#Operator">Operator</a></td></tr>
-                                       <tr class="toc-level-1"><td class="toc-number">51</td><td class="toc-text"><a href="#Parse_tree">Parse tree</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">52</td><td class="toc-text"><a href="#Parameter">Parameter</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">53</td><td class="toc-text"><a href="#Parrot">Parrot</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">54</td><td class="toc-text"><a href="#PAST">PAST</a></td></tr>
-    <tr class="toc-level-1"><td class="toc-number">55</td><td class="toc-text"><a href="#Perl">Perl</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">56</td><td class="toc-text"><a href="#Perl_6">Perl&nbsp;6</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">57</td><td class="toc-text"><a href="#PERL">PERL</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">58</td><td class="toc-text"><a href="#POD">POD</a></td></tr>
-          <tr class="toc-level-1"><td class="toc-number">59</td><td class="toc-text"><a href="#POV">POV</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">60</td><td class="toc-text"><a href="#Propspec">Propspec</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">61</td><td class="toc-text"><a href="#Pull_request">Pull request</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">62</td><td class="toc-text"><a href="#property">property</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">63</td><td class="toc-text"><a href="#pugs">pugs</a></td></tr>
-    <tr class="toc-level-1"><td class="toc-number">64</td><td class="toc-text"><a href="#QAST">QAST</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">65</td><td class="toc-text"><a href="#Rakudo">Rakudo</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">66</td><td class="toc-text"><a href="#Reify">Reify</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">67</td><td class="toc-text"><a href="#Repository">Repository</a></td></tr>
-          <tr class="toc-level-1"><td class="toc-number">68</td><td class="toc-text"><a href="#RHS">RHS</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">69</td><td class="toc-text"><a href="#roast">roast</a></td></tr>
-                   <tr class="toc-level-1"><td class="toc-number">70</td><td class="toc-text"><a href="#Roles">Roles</a></td></tr>
-            <tr class="toc-level-1"><td class="toc-number">71</td><td class="toc-text"><a href="#rule">rule</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">72</td><td class="toc-text"><a href="#rvalue">rvalue</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">73</td><td class="toc-text"><a href="#SAP">SAP</a></td></tr>
-        <tr class="toc-level-1"><td class="toc-number">74</td><td class="toc-text"><a href="#Semilist">Semilist</a></td></tr>
-           <tr class="toc-level-1"><td class="toc-number">75</td><td class="toc-text"><a href="#Sigil">Sigil</a></td></tr>
-             <tr class="toc-level-1"><td class="toc-number">76</td><td class="toc-text"><a href="#Sigilless_variable">Sigilless variable</a></td></tr>
-      <tr class="toc-level-1"><td class="toc-number">77</td><td class="toc-text"><a href="#Spesh">Spesh</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">78</td><td class="toc-text"><a href="#STD">STD</a></td></tr>
-      <tr class="toc-level-1"><td class="toc-number">79</td><td class="toc-text"><a href="#Stub">Stub</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">80</td><td class="toc-text"><a href="#Symbol">Symbol</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">81</td><td class="toc-text"><a href="#Synopsis">Synopsis</a></td></tr>
-           <tr class="toc-level-1"><td class="toc-number">82</td><td class="toc-text"><a href="#Syntax_analysis">Syntax analysis</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">83</td><td class="toc-text"><a href="#Test_suite">Test suite</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">84</td><td class="toc-text"><a href="#TheDamian">TheDamian</a></td></tr>
-        <tr class="toc-level-1"><td class="toc-number">85</td><td class="toc-text"><a href="#TimToady">TimToady</a></td></tr>
-        <tr class="toc-level-1"><td class="toc-number">86</td><td class="toc-text"><a href="#token">token</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">87</td><td class="toc-text"><a href="#Thunk">Thunk</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">88</td><td class="toc-text"><a href="#Tight_and_loose_precedence">Tight and loose precedence</a></td></tr>
-             <tr class="toc-level-1"><td class="toc-number">89</td><td class="toc-text"><a href="#twine">twine</a></td></tr>
-                   <tr class="toc-level-1"><td class="toc-number">90</td><td class="toc-text"><a href="#Type_objects">Type objects</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">91</td><td class="toc-text"><a href="#Type_smiley">Type smiley</a></td></tr>
-           <tr class="toc-level-1"><td class="toc-number">92</td><td class="toc-text"><a href="#value">value</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">93</td><td class="toc-text"><a href="#UB">UB</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">94</td><td class="toc-text"><a href="#Value_type">Value type</a></td></tr>
-                                    <tr class="toc-level-1"><td class="toc-number">95</td><td class="toc-text"><a href="#Variable">Variable</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">96</td><td class="toc-text"><a href="#Variable_interpolation">Variable interpolation</a></td></tr>
-           <tr class="toc-level-1"><td class="toc-number">97</td><td class="toc-text"><a href="#Virtual_machine">Virtual machine</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">97.1</td><td class="toc-text"><a href="#WAT">WAT</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">98</td><td class="toc-text"><a href="#whitespace">whitespace</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">99</td><td class="toc-text"><a href="#6model">6model</a></td></tr>
-        
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Abstract_class">Abstract class</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Advent_calendar">Advent calendar</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Adverb">Adverb</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Adverbial_pair">Adverbial pair</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Allomorph">Allomorph</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#Anonymous">Anonymous</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#API">API</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">8</td><td class="toc-text"><a href="#Apocalypse">Apocalypse</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">9</td><td class="toc-text"><a href="#Arity">Arity</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">10</td><td class="toc-text"><a href="#ASCII_operator">ASCII operator </a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">11</td><td class="toc-text"><a href="#Autothreading">Autothreading</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">12</td><td class="toc-text"><a href="#Backtracking">Backtracking</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">13</td><td class="toc-text"><a href="#binder">binder</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">14</td><td class="toc-text"><a href="#block">block</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">15</td><td class="toc-text"><a href="#bytecode">bytecode</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">16</td><td class="toc-text"><a href="#Camelia">Camelia</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">17</td><td class="toc-text"><a href="#Colon_pair_and_colon_list">Colon pair and colon list</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">18</td><td class="toc-text"><a href="#Community">Community</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">19</td><td class="toc-text"><a href="#Damian_Conway">Damian Conway</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">20</td><td class="toc-text"><a href="#decont">decont</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">21</td><td class="toc-text"><a href="#diffy">diffy</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">22</td><td class="toc-text"><a href="#Exegesis">Exegesis</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">23</td><td class="toc-text"><a href="#fiddly">fiddly</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">24</td><td class="toc-text"><a href="#Handle">Handle</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">25</td><td class="toc-text"><a href="#Huffmanize">Huffmanize</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">26</td><td class="toc-text"><a href="#iffy">iffy</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">27</td><td class="toc-text"><a href="#import">import</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">28</td><td class="toc-text"><a href="#Instance">Instance</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">29</td><td class="toc-text"><a href="#Interface">Interface</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">30</td><td class="toc-text"><a href="#Invocant">Invocant</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">31</td><td class="toc-text"><a href="#IRC">IRC</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">32</td><td class="toc-text"><a href="#IRC_lingo">IRC lingo</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.1</td><td class="toc-text"><a href="#ALAP">ALAP</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.2</td><td class="toc-text"><a href="#autopun">autopun</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.3</td><td class="toc-text"><a href="#backlog">backlog</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.4</td><td class="toc-text"><a href="#Bot">Bot</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.5</td><td class="toc-text"><a href="#Compilation_unit_or_compunit">Compilation unit or compunit</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.6</td><td class="toc-text"><a href="#DWIM">DWIM</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.7</td><td class="toc-text"><a href="#flap">flap</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.8</td><td class="toc-text"><a href="#fossil">fossil</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.9</td><td class="toc-text"><a href="#FSVO">FSVO</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.10</td><td class="toc-text"><a href="#FTFY">FTFY</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.11</td><td class="toc-text"><a href="#gradual_typing">gradual typing</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.12</td><td class="toc-text"><a href="#IIRC">IIRC</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.13</td><td class="toc-text"><a href="#IMHO">IMHO</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.14</td><td class="toc-text"><a href="#IWBN">IWBN</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.15</td><td class="toc-text"><a href="#LHF">LHF</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.16</td><td class="toc-text"><a href="#LGTM">LGTM</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.17</td><td class="toc-text"><a href="#LTA">LTA</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.18</td><td class="toc-text"><a href="#NST">NST</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.19</td><td class="toc-text"><a href="#Opt">Opt</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.20</td><td class="toc-text"><a href="#PB">PB</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.21</td><td class="toc-text"><a href="#PR">PR</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.22</td><td class="toc-text"><a href="#P5">P5</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.23</td><td class="toc-text"><a href="#P6">P6</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.24</td><td class="toc-text"><a href="#RSN">RSN</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.25</td><td class="toc-text"><a href="#RT">RT</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.26</td><td class="toc-text"><a href="#TIMTOWTDI">TIMTOWTDI</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.27</td><td class="toc-text"><a href="#TMI">TMI</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.28</td><td class="toc-text"><a href="#TMTOWTDI">TMTOWTDI</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.29</td><td class="toc-text"><a href="#UGT">UGT</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.30</td><td class="toc-text"><a href="#WFM">WFM</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.31</td><td class="toc-text"><a href="#WIP">WIP</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.32</td><td class="toc-text"><a href="#WP">WP</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">32.33</td><td class="toc-text"><a href="#WW">WW</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">33</td><td class="toc-text"><a href="#Larry_Wall">Larry Wall</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">34</td><td class="toc-text"><a href="#Lexing">Lexing</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">35</td><td class="toc-text"><a href="#Literal">Literal</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">36</td><td class="toc-text"><a href="#LHS">LHS</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">37</td><td class="toc-text"><a href="#lvalue">lvalue</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">38</td><td class="toc-text"><a href="#Mainline">Mainline</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">39</td><td class="toc-text"><a href="#Mayspec">Mayspec</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">40</td><td class="toc-text"><a href="#MoarVM">MoarVM</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">41</td><td class="toc-text"><a href="#Multi-dispatch">Multi-dispatch</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">42</td><td class="toc-text"><a href="#multi-method">multi-method</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">43</td><td class="toc-text"><a href="#Née">Née</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">44</td><td class="toc-text"><a href="#NFG">NFG</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">45</td><td class="toc-text"><a href="#Niecza">Niecza</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">46</td><td class="toc-text"><a href="#Not_Quite_Perl">Not Quite Perl</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">47</td><td class="toc-text"><a href="#NQP">NQP</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">48</td><td class="toc-text"><a href="#NYI">NYI</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">49</td><td class="toc-text"><a href="#opcode">opcode</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">50</td><td class="toc-text"><a href="#Operator">Operator</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">51</td><td class="toc-text"><a href="#Parse_tree">Parse tree</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">52</td><td class="toc-text"><a href="#Parameter">Parameter</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">53</td><td class="toc-text"><a href="#Parrot">Parrot</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">54</td><td class="toc-text"><a href="#PAST">PAST</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">55</td><td class="toc-text"><a href="#Perl">Perl</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">56</td><td class="toc-text"><a href="#Perl_6">Perl&nbsp;6</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">57</td><td class="toc-text"><a href="#PERL">PERL</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">58</td><td class="toc-text"><a href="#POD">POD</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">59</td><td class="toc-text"><a href="#POV">POV</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">60</td><td class="toc-text"><a href="#Propspec">Propspec</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">61</td><td class="toc-text"><a href="#Pull_request">Pull request</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">62</td><td class="toc-text"><a href="#property">property</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">63</td><td class="toc-text"><a href="#pugs">pugs</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">64</td><td class="toc-text"><a href="#QAST">QAST</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">65</td><td class="toc-text"><a href="#Rakudo">Rakudo</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">66</td><td class="toc-text"><a href="#Reify">Reify</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">67</td><td class="toc-text"><a href="#Repository">Repository</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">68</td><td class="toc-text"><a href="#RHS">RHS</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">69</td><td class="toc-text"><a href="#roast">roast</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">70</td><td class="toc-text"><a href="#Roles">Roles</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">71</td><td class="toc-text"><a href="#rule">rule</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">72</td><td class="toc-text"><a href="#rvalue">rvalue</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">73</td><td class="toc-text"><a href="#SAP">SAP</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">74</td><td class="toc-text"><a href="#Semilist">Semilist</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">75</td><td class="toc-text"><a href="#Sigil">Sigil</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">76</td><td class="toc-text"><a href="#Sigilless_variable">Sigilless variable</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">77</td><td class="toc-text"><a href="#Spesh">Spesh</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">78</td><td class="toc-text"><a href="#STD">STD</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">79</td><td class="toc-text"><a href="#Stub">Stub</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">80</td><td class="toc-text"><a href="#Symbol">Symbol</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">81</td><td class="toc-text"><a href="#Synopsis">Synopsis</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">82</td><td class="toc-text"><a href="#Syntax_analysis">Syntax analysis</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">83</td><td class="toc-text"><a href="#Test_suite">Test suite</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">84</td><td class="toc-text"><a href="#TheDamian">TheDamian</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">85</td><td class="toc-text"><a href="#TimToady">TimToady</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">86</td><td class="toc-text"><a href="#token">token</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">87</td><td class="toc-text"><a href="#Thunk">Thunk</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">88</td><td class="toc-text"><a href="#Tight_and_loose_precedence">Tight and loose precedence</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">89</td><td class="toc-text"><a href="#twine">twine</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">90</td><td class="toc-text"><a href="#Type_objects">Type objects</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">91</td><td class="toc-text"><a href="#Type_smiley">Type smiley</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">92</td><td class="toc-text"><a href="#value">value</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">93</td><td class="toc-text"><a href="#UB">UB</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">94</td><td class="toc-text"><a href="#Value_type">Value type</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">95</td><td class="toc-text"><a href="#Variable">Variable</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">96</td><td class="toc-text"><a href="#Variable_interpolation">Variable interpolation</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">97</td><td class="toc-text"><a href="#Virtual_machine">Virtual machine</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">97.1</td><td class="toc-text"><a href="#WAT">WAT</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">98</td><td class="toc-text"><a href="#whitespace">whitespace</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">99</td><td class="toc-text"><a href="#6model">6model</a></td></tr>
+
 </table>
 </nav>
 
-    <div class="pod-body">
-    <p><a name="index-entry-Abstract_Class"></a></p>
+        <div class="pod-body ">
+            <p><a name="index-entry-Abstract_Class"></a></p>
 <h1 id="Abstract_class"><a class="u" href="#___top" title="go to top of document">Abstract class</a></h1>
 <p>The generic Computer Science term &quot;abstract class&quot; defines the <a href="#Interface">interface</a> or <a href="#API">API</a> of a class. In Raku, this is implemented using <a href="#Roles">roles</a> with <a href="#Stub">stubbed</a> methods.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Canine</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>bark</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;the&nbsp;...&nbsp;indicates&nbsp;a&nbsp;stub</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Dog</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Canine</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>bark</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>woof</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;*MUST*&nbsp;be&nbsp;implemented&nbsp;by&nbsp;class</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><a name="index-entry-Advent_Calendar"></a></p>
@@ -455,7 +448,7 @@
 <p><a name="index-entry-LHS"></a></p>
 <h1 id="LHS"><a class="u" href="#___top" title="go to top of document">LHS</a></h1>
 <p>As an acronym left-hand side, it usually refers to the left hand side of an expression, and more specifically to the left-hand side of expressions such as <code>$lhs = &quot;this would be the right-hand side&quot;</code>. Since the left hand side of these expressions modify their value, when something behaves as a LHS it means that it can be read and written to.</p>
-<p><a name="index-entry-Value"></a></p>
+<p><a name="index-entry-lvalue"></a></p>
 <h1 id="lvalue"><a class="u" href="#___top" title="go to top of document">lvalue</a></h1>
 <p>An <em>lvalue</em>, or a <em>left value</em>, is anything that can appear on the left-hand side of the assignment operator <code>=</code>. It is anything you can assign to.</p>
 <p>Typical lvalues are variables, private and <code>is rw</code> attributes, lists of variables and lvalue subroutines.</p>
@@ -678,39 +671,41 @@
 <h1 id="6model"><a class="u" href="#___top" title="go to top of document">6model</a></h1>
 <p><code>6model</code> is used in the <a href="/language/glossary#MoarVM">MoarVM</a>, and provides primitives used to create an object system. It is described in <a href="https://jnthn.net/papers/2013-yapceu-moarvm.pdf">this presentation by Jonathan Worthington</a> and implemented <a href="https://github.com/MoarVM/MoarVM/tree/master/src/6model">here in MoarVM</a>.</p>
 
+        </div>
     </div>
+
     <aside><ol start="1">
 <li><a href="#fn-ref-1" id="fn-1">[↑]</a> The <code>twine</code> is an array with an odd number of elements beginning with a simple string, alternating with formatting code objects and simple strings, and ending with a simple string; the formatting code objects are inter<code>twine</code>d with the strings. The strings may be empty (as shown in the example). A twine with no formatting code will contain one simple string. </li>
 </ol></aside>
 
-    </div>
-<footer class="pretty-box yellow">
-  <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/glossary.pod6">/language/glossary</a>.</p>
-  <p>This is a work in progress to document Raku (formerly known as Perl 6), and
-      known to be incomplete.</p>
+    <footer class="pretty-box yellow">
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Language/glossary.pod6">https://github.com/Raku/Documentable/blob/master/docs/Language/glossary.pod6</a>.
+        </p>
+        <p>
+            This is a work in progress to document Raku (formerly known as Perl 6), and
+            known to be incomplete.
+        </p>
+        <p>
+            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+                Please report any issues
+            </a>
+            Your contribution is appreciated.
+        </p>
+        <p>
+            This documentation is provided under the terms of the
+            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+                Artistic License 2.0
+            </a>. The Camelia image is
+            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+                copyright © 2009 by Larry Wall.
+            </a>
+            <!-- CREDITS -->
+            <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+        </p>
+    </footer>
 
-  <p><a
-          href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.Your contribution is appreciated.</p>
-
-  <p> This documentation is provided under the terms of the
-      <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">Artistic License 2.0</a>.
-      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
-        >copyright © 2009 by Larry Wall.</a>
-      <!-- CREDITS -->
-      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
-
-  </p>
-</footer>
-
-<script type="text/javascript" src="/js/app.js?v=1"></script>
-<script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
-
-    </body>
+    <script type="text/javascript" src="/js/app.js?v=1"></script>
+    <script type="text/javascript" src="/js/search.js?v=3"></script>
+</body>
 </html>

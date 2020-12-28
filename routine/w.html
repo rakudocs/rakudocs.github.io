@@ -73,31 +73,31 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_Proc::Async">class Proc::Async</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Proc::Async)_method_w">(Proc::Async) method w</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_IO::Path">class IO::Path</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(IO::Path)_method_w">(IO::Path) method w</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_IO::Special">class IO::Special</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(IO::Special)_method_w">(IO::Special) method w</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_IO::Path">class IO::Path</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(IO::Path)_method_w">(IO::Path) method w</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_IO::Special">class IO::Special</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(IO::Special)_method_w">(IO::Special) method w</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Proc::Async">class Proc::Async</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Proc::Async)_method_w">(Proc::Async) method w</a></td></tr>
 
 </table>
 </nav>
 
         <div class="pod-body ">
             <p>Documentation for method <code>w</code> assembled from the following types:</p>
-<h1 id="class_Proc::Async"><a class="u" href="#___top" title="go to top of document">class Proc::Async</a></h1>
-<p>From <a href="/type/Proc::Async#method_w">Proc::Async</a></p>
-<h2 id="(Proc::Async)_method_w"><a href="/type/Proc::Async#method_w">(Proc::Async) method w</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>w</span></span><span>(</span><span class="support type perl6fe"><span>Proc</span></span><span>::</span><span class="routine name perl6fe"><span>Async</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns a true value if <code>:w</code> was passed to the constructor, that is, if the external program is started with its input stream made available to output to the program through the <code>.print</code>, <code>.say</code> and <code>.write</code> methods.</p>
 <h1 id="class_IO::Path"><a class="u" href="#___top" title="go to top of document">class IO::Path</a></h1>
 <p>From <a href="/type/IO::Path#method_w">IO::Path</a></p>
 <h2 id="(IO::Path)_method_w"><a href="/type/IO::Path#method_w">(IO::Path) method w</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>w</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Path</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns <code>True</code> if the invocant is a path that exists and is writable. The method will <a href="/routine/fail"><code>fail</code></a> with <code>X::IO::DoesNotExist</code> if the path points to a non-existent filesystem entity.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>w</span></span><span>(</span><span class="support type raku"><span>IO</span></span><span>::</span><span class="routine name raku"><span>Path</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Bool</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns <code>True</code> if the invocant is a path that exists and is writable. The method will <a href="/routine/fail"><code>fail</code></a> with <code>X::IO::DoesNotExist</code> if the path points to a non-existent filesystem entity.</p>
 <h1 id="class_IO::Special"><a class="u" href="#___top" title="go to top of document">class IO::Special</a></h1>
 <p>From <a href="/type/IO::Special#method_w">IO::Special</a></p>
 <h2 id="(IO::Special)_method_w"><a href="/type/IO::Special#method_w">(IO::Special) method w</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>w</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Special</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span>)</span></span></div></pre><p>The &#39;write access&#39; file test operator, returns <code>True</code> only if this instance represents either the standard output (<code>&lt;STOUT&gt;</code>) or the standard error (<code>&lt;STDERR&gt;</code>) handle.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>w</span></span><span>(</span><span class="support type raku"><span>IO</span></span><span>::</span><span class="routine name raku"><span>Special</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Bool</span></span><span>)</span></span></div></pre><p>The &#39;write access&#39; file test operator, returns <code>True</code> only if this instance represents either the standard output (<code>&lt;STOUT&gt;</code>) or the standard error (<code>&lt;STDERR&gt;</code>) handle.</p>
+<h1 id="class_Proc::Async"><a class="u" href="#___top" title="go to top of document">class Proc::Async</a></h1>
+<p>From <a href="/type/Proc::Async#method_w">Proc::Async</a></p>
+<h2 id="(Proc::Async)_method_w"><a href="/type/Proc::Async#method_w">(Proc::Async) method w</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>w</span></span><span>(</span><span class="support type raku"><span>Proc</span></span><span>::</span><span class="routine name raku"><span>Async</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>)</span></span></div></pre><p>Returns a true value if <code>:w</code> was passed to the constructor, that is, if the external program is started with its input stream made available to output to the program through the <code>.print</code>, <code>.say</code> and <code>.write</code> methods.</p>
 
         </div>
     </div>
@@ -106,7 +106,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:none;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/">https://github.com/Raku/Documentable/blob/master/docs/</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/">https://github.com/Raku/doc/tree/master/doc/</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

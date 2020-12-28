@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Distribution/Hash.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/Distribution/Hash.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -87,99 +87,23 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Distribution::Hash</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Distribution</span></span><span>::</span><span class="routine name perl6fe"><span>Locally</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>A <a href="/type/Distribution">Distribution</a> implementation backed by the filesystem. It does not require a <code>META6.json</code> file, essentially providing a lower level <a href="/type/Distribution::Path"><code>Distribution::Path</code></a>.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta class raku"><span class="storage type class raku"><span>class</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>Distribution::Hash</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints raku"><span>does</span></span><span>&nbsp;</span><span class="routine name raku"><span>Distribution</span></span><span>::</span><span class="routine name raku"><span>Locally</span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p>A <a href="/type/Distribution">Distribution</a> implementation backed by the filesystem. It does not require a <code>META6.json</code> file, essentially providing a lower level <a href="/type/Distribution::Path"><code>Distribution::Path</code></a>.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_new"><a class="u" href="#___top" title="go to top of document">method new</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>new</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>hash</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>prefix</span></span></span><span>)</span></span></div></pre><p>Creates a new <code>Distribution::Hash</code> instance from the metadata contained in <code>$hash</code>. All paths in the metadata will be prefixed with <code>:$prefix</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>new</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>hash</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>prefix</span></span></span><span>)</span></span></div></pre><p>Creates a new <code>Distribution::Hash</code> instance from the metadata contained in <code>$hash</code>. All paths in the metadata will be prefixed with <code>:$prefix</code>.</p>
 <h2 id="method_meta"><a class="u" href="#___top" title="go to top of document">method meta</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>meta</span></span><span>()</span></span></div></pre><p>Returns a Hash with the representation of the metadata.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>meta</span></span><span>()</span></span></div></pre><p>Returns a Hash with the representation of the metadata.</p>
 <h2 id="method_content"><a class="u" href="#___top" title="go to top of document">method content</a></h2>
 <p>Please check <a href="/type/Distribution::Locally#method_content">the <code>content</code> method in Distribution::Locally</a>.</p>
 <p>Returns an <code>IO::Handle</code> to the file represented by <code>$name-path</code>. <code>$name-path</code> is a relative path as it would be found in the metadata such as <code>lib/Foo.rakumod</code> or <code>resources/foo.txt</code>.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>Distribution::Hash</code></figcaption>
-  <svg width="254pt" height="188pt"
- viewBox="0.00 0.00 254.09 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
-<title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-184 250.09,-184 250.09,4 -4,4"/>
-<!-- Distribution::Hash -->
-<g id="node1" class="node">
-<title>Distribution::Hash</title>
-<g id="a_node1"><a xlink:href="/type/Distribution::Hash" xlink:title="Distribution::Hash">
-<ellipse fill="none" stroke="#000000" cx="93" cy="-18" rx="79.89" ry="18"/>
-<text text-anchor="middle" x="93" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Distribution::Hash</text>
-</a>
-</g>
-</g>
-<!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
-<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="27" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="27" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
-</a>
-</g>
-</g>
-<!-- Distribution::Hash&#45;&gt;Any -->
-<g id="edge1" class="edge">
-<title>Distribution::Hash&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M77.02,-35.95C68.35,-45.14 57.53,-56.62 48.16,-66.55"/>
-<polygon fill="#000000" stroke="#000000" points="45.35,-64.43 41.04,-74.11 50.44,-69.24 45.35,-64.43"/>
-</g>
-<!-- Distribution::Locally -->
-<g id="node5" class="node">
-<title>Distribution::Locally</title>
-<g id="a_node5"><a xlink:href="/type/Distribution::Locally" xlink:title="Distribution::Locally">
-<ellipse fill="none" stroke="#6666ff" cx="159" cy="-90" rx="87.18" ry="18"/>
-<text text-anchor="middle" x="159" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Distribution::Locally</text>
-</a>
-</g>
-</g>
-<!-- Distribution::Hash&#45;&gt;Distribution::Locally -->
-<g id="edge3" class="edge">
-<title>Distribution::Hash&#45;&gt;Distribution::Locally</title>
-<path fill="none" stroke="#6666ff" d="M108.98,-35.95C117.16,-44.63 127.28,-55.36 136.26,-64.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="133.76,-67.34 143.17,-72.21 138.86,-62.53 133.76,-67.34"/>
-</g>
-<!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
-<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="27" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="27" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
-</a>
-</g>
-</g>
-<!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M27,-108.3C27,-116.02 27,-125.29 27,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="23.5,-133.9 27,-143.9 30.5,-133.9 23.5,-133.9"/>
-</g>
-<!-- Distribution -->
-<g id="node4" class="node">
-<title>Distribution</title>
-<g id="a_node4"><a xlink:href="/type/Distribution" xlink:title="Distribution">
-<ellipse fill="none" stroke="#6666ff" cx="159" cy="-162" rx="54.69" ry="18"/>
-<text text-anchor="middle" x="159" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Distribution</text>
-</a>
-</g>
-</g>
-<!-- Distribution::Locally&#45;&gt;Distribution -->
-<g id="edge4" class="edge">
-<title>Distribution::Locally&#45;&gt;Distribution</title>
-<path fill="none" stroke="#6666ff" d="M159,-108.3C159,-116.02 159,-125.29 159,-133.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="155.5,-133.9 159,-143.9 162.5,-133.9 155.5,-133.9"/>
-</g>
-</g>
-</svg>
-
+  <figcaption>Type relations for <code>404</code></figcaption>
+  <svg></svg>
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-Distribution%3A%3AHash.svg"
+      href="/images/type-graph-404.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >
@@ -195,9 +119,9 @@
 <h1 id="Routines_supplied_by_role_Distribution"><a class="u" href="#___top" title="go to top of document">Routines supplied by role Distribution</a></h1>
 <p>Distribution::Hash does role <a href="/type/Distribution">Distribution</a>, which provides the following routines:</p>
 <h2 id="(Distribution)_method_meta"><a href="/type/Distribution#method_meta">(Distribution) method meta</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>meta</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Hash</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Returns a Hash with the representation of the metadata. Please note that an actual <code>META6.json</code> file does not need to exist, just a representation in that format.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>meta</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Hash</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p>Returns a Hash with the representation of the metadata. Please note that an actual <code>META6.json</code> file does not need to exist, just a representation in that format.</p>
 <h2 id="(Distribution)_method_content"><a href="/type/Distribution#method_content">(Distribution) method content</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>content</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>name-path</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Handle</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Returns an <code>IO::Handle</code> to the file represented by <code>$name-path</code>. <code>$name-path</code> is a relative path as it would be found in the metadata such as <code>lib/Foo.rakumod</code> or <code>resources/foo.txt</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>content</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>name-path</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>IO</span></span><span>::</span><span class="routine name raku"><span>Handle</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p>Returns an <code>IO::Handle</code> to the file represented by <code>$name-path</code>. <code>$name-path</code> is a relative path as it would be found in the metadata such as <code>lib/Foo.rakumod</code> or <code>resources/foo.txt</code>.</p>
 
         </div>
     </div>
@@ -206,7 +130,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Distribution/Hash.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Distribution/Hash.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/Distribution/Hash.pod6">https://github.com/Raku/doc/tree/master/doc/Type/Distribution/Hash.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

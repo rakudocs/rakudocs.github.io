@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Scheduler.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/Scheduler.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -80,13 +80,13 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Scheduler</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>has</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="support class twigil perl6fe"><span>.</span></span><span class="variable other identifier perl6fe"><span>uncaught_handler</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>rw</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Common role for schedulers. A scheduler is a piece of code that determines which resources to use to run which task, and when.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>role</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>Scheduler</span></span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator raku"><span>has</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>&amp;</span></span><span class="support class twigil raku"><span>.</span></span><span class="variable other identifier raku"><span>uncaught_handler</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints raku"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait raku"><span>rw</span></span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p>Common role for schedulers. A scheduler is a piece of code that determines which resources to use to run which task, and when.</p>
 <p>Some operations for example on <a href="/type/Proc::Async">Proc::Async</a>, <a href="/type/Promise">Promise</a>, <a href="/type/Supply">Supply</a> allow you to specify a scheduler explicitly; they generally expect those schedulers to follow the interface defined by <code>Scheduler</code></p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_uncaught_handler"><a class="u" href="#___top" title="go to top of document">method uncaught_handler</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>uncaught_handler</span></span><span>()&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>rw</span></span></span></div></pre><p>RW-Accessor for the handler that is caught for uncaught exceptions from the code that is being scheduled and run.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>uncaught_handler</span></span><span>()&nbsp;</span><span class="storage modifier type constraints raku"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait raku"><span>rw</span></span></span></div></pre><p>RW-Accessor for the handler that is caught for uncaught exceptions from the code that is being scheduled and run.</p>
 <h2 id="method_cue"><a class="u" href="#___top" title="go to top of document">method cue</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>cue</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>code</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Instant</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>at</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>in</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>every</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>times</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>;&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>catch</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Cancellation</span></span><span>)</span></span></div></pre><p>Schedules a callable (<code>&amp;code</code>) for execution and returns an instantiated <code>Cancellation</code> object to cancel the scheduling of the code for execution (which is especially important if you specify the <code>every =</code> time&gt; named parameter. The adverbs control when and how the code is run:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>cue</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>&amp;</span></span><span class="variable other identifier raku"><span>code</span></span></span><span>,&nbsp;</span><span class="support type raku"><span>Instant</span></span><span>&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>at</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>in</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>every</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>times</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>1</span></span><span>;&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>&amp;</span></span><span class="variable other identifier raku"><span>catch</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>Cancellation</span></span><span>)</span></span></div></pre><p>Schedules a callable (<code>&amp;code</code>) for execution and returns an instantiated <code>Cancellation</code> object to cancel the scheduling of the code for execution (which is especially important if you specify the <code>every =</code> time&gt; named parameter. The adverbs control when and how the code is run:</p>
 <p><code>$at</code> can be an <a href="/type/Instant">Instant</a> before which the code won&#39;t be run. Alternatively <code>$in</code> is the number of seconds (possibly fractional) to wait before running the code. If <code>$at</code> is in the past or <code>$in</code> is negative, the delay is treated as zero. Implementations may equate to zero very small values (e.g. lower than 0.001s) of <code>$in</code> or result of <code>$at</code> - <a href="/routine/now">now</a>.</p>
 <p>If <code>$every</code> is specified, it is interpreted as the number of seconds (possibly fractional) to wait before re-executing the code. Implementations may treat too-small values as lowest resolution they support, possibly warning in such situations; e.g. treating <code>0.0001</code> as <code>0.001</code>.</p>
 <p><code>$times</code> tells the scheduler how many times to run the code.</p>
@@ -100,81 +100,71 @@
  viewBox="0.00 0.00 434.08 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-184 430.08,-184 430.08,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 430.082,-184 430.082,4 -4,4"/>
 <!-- Scheduler -->
-<g id="node1" class="node">
-<title>Scheduler</title>
+<g id="node1" class="node"><title>Scheduler</title>
 <g id="a_node1"><a xlink:href="/type/Scheduler" xlink:title="Scheduler">
-<ellipse fill="none" stroke="#6666ff" cx="139.89" cy="-90" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="139.89" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Scheduler</text>
+<ellipse fill="none" stroke="#6666ff" cx="128.191" cy="-90" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="128.191" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Scheduler</text>
 </a>
 </g>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="297.89" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="297.89" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="286.191" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="286.191" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="297.89" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="297.89" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="286.191" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="286.191" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge1" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M297.89,-108.3C297.89,-116.02 297.89,-125.29 297.89,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="294.39,-133.9 297.89,-143.9 301.39,-133.9 294.39,-133.9"/>
-</g>
-<!-- CurrentThreadScheduler -->
-<g id="node4" class="node">
-<title>CurrentThreadScheduler</title>
-<g id="a_node4"><a xlink:href="/type/CurrentThreadScheduler" xlink:title="CurrentThreadScheduler">
-<ellipse fill="none" stroke="#000000" cx="107.89" cy="-18" rx="107.78" ry="18"/>
-<text text-anchor="middle" x="107.89" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CurrentThreadScheduler</text>
-</a>
-</g>
-</g>
-<!-- CurrentThreadScheduler&#45;&gt;Scheduler -->
-<g id="edge4" class="edge">
-<title>CurrentThreadScheduler&#45;&gt;Scheduler</title>
-<path fill="none" stroke="#6666ff" d="M115.8,-36.3C119.44,-44.27 123.84,-53.9 127.88,-62.74"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="124.73,-64.26 132.07,-71.9 131.1,-61.35 124.73,-64.26"/>
-</g>
-<!-- CurrentThreadScheduler&#45;&gt;Any -->
-<g id="edge2" class="edge">
-<title>CurrentThreadScheduler&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M150.53,-34.71C185.18,-47.48 233.35,-65.22 265.06,-76.9"/>
-<polygon fill="#000000" stroke="#000000" points="264.14,-80.3 274.73,-80.47 266.56,-73.73 264.14,-80.3"/>
+<g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M286.191,-108.303C286.191,-116.017 286.191,-125.288 286.191,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="282.692,-133.896 286.191,-143.896 289.692,-133.896 282.692,-133.896"/>
 </g>
 <!-- ThreadPoolScheduler -->
-<g id="node5" class="node">
-<title>ThreadPoolScheduler</title>
-<g id="a_node5"><a xlink:href="/type/ThreadPoolScheduler" xlink:title="ThreadPoolScheduler">
-<ellipse fill="none" stroke="#000000" cx="329.89" cy="-18" rx="96.38" ry="18"/>
-<text text-anchor="middle" x="329.89" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">ThreadPoolScheduler</text>
+<g id="node4" class="node"><title>ThreadPoolScheduler</title>
+<g id="a_node4"><a xlink:href="/type/ThreadPoolScheduler" xlink:title="ThreadPoolScheduler">
+<ellipse fill="none" stroke="#000000" cx="96.1915" cy="-18" rx="96.3833" ry="18"/>
+<text text-anchor="middle" x="96.1915" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">ThreadPoolScheduler</text>
 </a>
 </g>
 </g>
 <!-- ThreadPoolScheduler&#45;&gt;Scheduler -->
-<g id="edge5" class="edge">
-<title>ThreadPoolScheduler&#45;&gt;Scheduler</title>
-<path fill="none" stroke="#6666ff" d="M288.19,-34.36C257.01,-45.85 214.5,-61.51 182.98,-73.12"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="181.75,-69.85 173.58,-76.59 184.17,-76.42 181.75,-69.85"/>
+<g id="edge4" class="edge"><title>ThreadPoolScheduler&#45;&gt;Scheduler</title>
+<path fill="none" stroke="#6666ff" d="M103.938,-35.945C107.633,-44.0274 112.136,-53.8786 116.255,-62.8883"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="113.176,-64.5714 120.516,-72.211 119.542,-61.6611 113.176,-64.5714"/>
 </g>
 <!-- ThreadPoolScheduler&#45;&gt;Any -->
-<g id="edge3" class="edge">
-<title>ThreadPoolScheduler&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M322.14,-35.95C318.36,-44.23 313.72,-54.38 309.51,-63.58"/>
-<polygon fill="#000000" stroke="#000000" points="306.32,-62.14 305.35,-72.69 312.69,-65.05 306.32,-62.14"/>
+<g id="edge2" class="edge"><title>ThreadPoolScheduler&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M137.888,-34.3618C172.584,-47.1447 221.306,-65.095 253.299,-76.8819"/>
+<polygon fill="#000000" stroke="#000000" points="252.467,-80.305 263.06,-80.4779 254.887,-73.7366 252.467,-80.305"/>
+</g>
+<!-- CurrentThreadScheduler -->
+<g id="node5" class="node"><title>CurrentThreadScheduler</title>
+<g id="a_node5"><a xlink:href="/type/CurrentThreadScheduler" xlink:title="CurrentThreadScheduler">
+<ellipse fill="none" stroke="#000000" cx="318.191" cy="-18" rx="107.781" ry="18"/>
+<text text-anchor="middle" x="318.191" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CurrentThreadScheduler</text>
+</a>
+</g>
+</g>
+<!-- CurrentThreadScheduler&#45;&gt;Scheduler -->
+<g id="edge5" class="edge"><title>CurrentThreadScheduler&#45;&gt;Scheduler</title>
+<path fill="none" stroke="#6666ff" d="M275.552,-34.7094C244.552,-46.1304 202.734,-61.5369 171.565,-73.0202"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="170.02,-69.8593 161.847,-76.6007 172.44,-76.4278 170.02,-69.8593"/>
+</g>
+<!-- CurrentThreadScheduler&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>CurrentThreadScheduler&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M310.281,-36.3034C306.584,-44.3905 302.105,-54.1883 298.017,-63.1309"/>
+<polygon fill="#000000" stroke="#000000" points="294.765,-61.8278 293.79,-72.3777 301.131,-64.7381 294.765,-61.8278"/>
 </g>
 </g>
 </svg>
@@ -196,7 +186,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Scheduler.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Scheduler.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/Scheduler.pod6">https://github.com/Raku/doc/tree/master/doc/Type/Scheduler.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

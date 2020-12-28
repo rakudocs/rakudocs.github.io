@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/NFC.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/NFC.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -91,7 +91,7 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>NFC</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Uni</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p>A Codepoint string in Unicode Normalization Form C. It is created by Canonical Decomposition, followed by Canonical Composition. For more information on what this means, see <a href="https://www.unicode.org/reports/tr15/">Unicode TR15</a>.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>class</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>NFC</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints raku"><span>is</span></span><span>&nbsp;</span><span class="routine name raku"><span>Uni</span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span><span>}</span></span></span></span></div></pre><p>A Codepoint string in Unicode Normalization Form C. It is created by Canonical Decomposition, followed by Canonical Composition. For more information on what this means, see <a href="https://www.unicode.org/reports/tr15/">Unicode TR15</a>.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>NFC</code></figcaption>
@@ -99,19 +99,17 @@
  viewBox="0.00 0.00 272.35 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-256 268.35,-256 268.35,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-256 268.347,-256 268.347,4 -4,4"/>
 <!-- NFC -->
-<g id="node1" class="node">
-<title>NFC</title>
+<g id="node1" class="node"><title>NFC</title>
 <g id="a_node1"><a xlink:href="/type/NFC" xlink:title="NFC">
-<ellipse fill="none" stroke="#000000" cx="121" cy="-18" rx="29.5" ry="18"/>
+<ellipse fill="none" stroke="#000000" cx="121" cy="-18" rx="29.4969" ry="18"/>
 <text text-anchor="middle" x="121" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFC</text>
 </a>
 </g>
 </g>
 <!-- Uni -->
-<g id="node6" class="node">
-<title>Uni</title>
+<g id="node6" class="node"><title>Uni</title>
 <g id="a_node6"><a xlink:href="/type/Uni" xlink:title="Uni">
 <ellipse fill="none" stroke="#000000" cx="121" cy="-90" rx="27" ry="18"/>
 <text text-anchor="middle" x="121" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Uni</text>
@@ -119,14 +117,12 @@
 </g>
 </g>
 <!-- NFC&#45;&gt;Uni -->
-<g id="edge1" class="edge">
-<title>NFC&#45;&gt;Uni</title>
-<path fill="none" stroke="#000000" d="M121,-36.3C121,-44.02 121,-53.29 121,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="117.5,-61.9 121,-71.9 124.5,-61.9 117.5,-61.9"/>
+<g id="edge1" class="edge"><title>NFC&#45;&gt;Uni</title>
+<path fill="none" stroke="#000000" d="M121,-36.3034C121,-44.0173 121,-53.2875 121,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="117.5,-61.8956 121,-71.8957 124.5,-61.8957 117.5,-61.8956"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
 <ellipse fill="none" stroke="#000000" cx="27" cy="-234" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
@@ -134,8 +130,7 @@
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
 <ellipse fill="none" stroke="#000000" cx="27" cy="-162" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
@@ -143,46 +138,40 @@
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M27,-180.3C27,-188.02 27,-197.29 27,-205.89"/>
-<polygon fill="#000000" stroke="#000000" points="23.5,-205.9 27,-215.9 30.5,-205.9 23.5,-205.9"/>
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M27,-180.303C27,-188.017 27,-197.288 27,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="23.5001,-205.896 27,-215.896 30.5001,-205.896 23.5001,-205.896"/>
 </g>
 <!-- Positional -->
-<g id="node4" class="node">
-<title>Positional</title>
+<g id="node4" class="node"><title>Positional</title>
 <g id="a_node4"><a xlink:href="/type/Positional" xlink:title="Positional">
-<ellipse fill="none" stroke="#6666ff" cx="121" cy="-162" rx="48.99" ry="18"/>
+<ellipse fill="none" stroke="#6666ff" cx="121" cy="-162" rx="48.9926" ry="18"/>
 <text text-anchor="middle" x="121" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
 </a>
 </g>
 </g>
 <!-- Stringy -->
-<g id="node5" class="node">
-<title>Stringy</title>
+<g id="node5" class="node"><title>Stringy</title>
 <g id="a_node5"><a xlink:href="/type/Stringy" xlink:title="Stringy">
-<ellipse fill="none" stroke="#6666ff" cx="226" cy="-162" rx="38.19" ry="18"/>
+<ellipse fill="none" stroke="#6666ff" cx="226" cy="-162" rx="38.1938" ry="18"/>
 <text text-anchor="middle" x="226" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
 </a>
 </g>
 </g>
 <!-- Uni&#45;&gt;Any -->
-<g id="edge3" class="edge">
-<title>Uni&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M103.32,-104.17C89.05,-114.79 68.78,-129.89 52.71,-141.85"/>
-<polygon fill="#000000" stroke="#000000" points="50.21,-139.35 44.28,-148.13 54.39,-144.96 50.21,-139.35"/>
+<g id="edge3" class="edge"><title>Uni&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M103.319,-104.166C89.0498,-114.793 68.7768,-129.89 52.7113,-141.853"/>
+<polygon fill="#000000" stroke="#000000" points="50.2138,-139.349 44.2838,-148.129 54.3947,-144.964 50.2138,-139.349"/>
 </g>
 <!-- Uni&#45;&gt;Positional -->
-<g id="edge4" class="edge">
-<title>Uni&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M121,-108.3C121,-116.02 121,-125.29 121,-133.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="117.5,-133.9 121,-143.9 124.5,-133.9 117.5,-133.9"/>
+<g id="edge4" class="edge"><title>Uni&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M121,-108.303C121,-116.017 121,-125.288 121,-133.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="117.5,-133.896 121,-143.896 124.5,-133.896 117.5,-133.896"/>
 </g>
 <!-- Uni&#45;&gt;Stringy -->
-<g id="edge5" class="edge">
-<title>Uni&#45;&gt;Stringy</title>
-<path fill="none" stroke="#6666ff" d="M139.77,-103.51C155.49,-113.99 178.19,-129.13 196.36,-141.24"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="194.6,-144.27 204.86,-146.91 198.49,-138.45 194.6,-144.27"/>
+<g id="edge5" class="edge"><title>Uni&#45;&gt;Stringy</title>
+<path fill="none" stroke="#6666ff" d="M139.772,-103.515C155.487,-113.991 178.193,-129.129 196.361,-141.24"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="194.602,-144.275 204.864,-146.909 198.485,-138.45 194.602,-144.275"/>
 </g>
 </g>
 </svg>
@@ -199,32 +188,32 @@
 <h1 id="Routines_supplied_by_class_Uni"><a class="u" href="#___top" title="go to top of document">Routines supplied by class Uni</a></h1>
 <p>NFC inherits from class <a href="/type/Uni">Uni</a>, which provides the following routines:</p>
 <h2 id="(Uni)_method_new"><a href="/type/Uni#method_new">(Uni) method new</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>new</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>codes</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Creates a new <code>Uni</code> instance from the given codepoint numbers.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>new</span></span><span>(</span><span class="keyword operator generic raku"><span>*</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>@</span></span><span class="variable other identifier raku"><span>codes</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>Uni</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Creates a new <code>Uni</code> instance from the given codepoint numbers.</p>
 <h2 id="(Uni)_method_NFC"><a href="/type/Uni#method_NFC">(Uni) method NFC</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>NFC</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>NFC</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFC (Normal Form Composed)-converted version of the invocant.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>NFC</span></span><span>(</span><span class="routine name raku"><span>Uni</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>NFC</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFC (Normal Form Composed)-converted version of the invocant.</p>
 <h2 id="(Uni)_method_NFD"><a href="/type/Uni#method_NFD">(Uni) method NFD</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>NFD</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>NFD</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFD (Normal Form Decomposed)-converted version of the invocant.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>NFD</span></span><span>(</span><span class="routine name raku"><span>Uni</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>NFD</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFD (Normal Form Decomposed)-converted version of the invocant.</p>
 <h2 id="(Uni)_method_NFKC"><a href="/type/Uni#method_NFKC">(Uni) method NFKC</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>NFKC</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>NFKC</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFKC (Normal Form Compatibility Composed)-converted version of the invocant.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>NFKC</span></span><span>(</span><span class="routine name raku"><span>Uni</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>NFKC</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFKC (Normal Form Compatibility Composed)-converted version of the invocant.</p>
 <h2 id="(Uni)_method_NFKD"><a href="/type/Uni#method_NFKD">(Uni) method NFKD</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>NFKD</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>NFKD</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFKD (Normal Form Compatibility Decomposed)-converted version of the invocant.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>NFKD</span></span><span>(</span><span class="routine name raku"><span>Uni</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>NFKD</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFKD (Normal Form Compatibility Decomposed)-converted version of the invocant.</p>
 <h2 id="(Uni)_method_codes"><a href="/type/Uni#method_codes">(Uni) method codes</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>codes</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the number of codepoints in the invocant.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>codes</span></span><span>(</span><span class="routine name raku"><span>Uni</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Int</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the number of codepoints in the invocant.</p>
 <h2 id="(Uni)_method_elems"><a href="/type/Uni#method_elems">(Uni) method elems</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>elems</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the number of codepoints in the invocant.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>elems</span></span><span>(</span><span class="routine name raku"><span>Uni</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Int</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the number of codepoints in the invocant.</p>
 <h1 id="Routines_supplied_by_role_Positional"><a class="u" href="#___top" title="go to top of document">Routines supplied by role Positional</a></h1>
 <p>NFC inherits from class <a href="/type/Uni">Uni</a>, which does role <a href="/type/Positional">Positional</a>, which provides the following routines:</p>
 <h2 id="(Positional)_method_of"><a href="/type/Positional#method_of">(Positional) method of</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>of</span></span><span>()</span></span></div></pre><p>Returns the type constraint for elements of the positional container. Defaults to <a href="/type/Mu">Mu</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>of</span></span><span>()</span></span></div></pre><p>Returns the type constraint for elements of the positional container. Defaults to <a href="/type/Mu">Mu</a>.</p>
 <h2 id="(Positional)_method_elems"><a href="/type/Positional#method_elems">(Positional) method elems</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>elems</span></span><span>()</span></span></div></pre><p>Should return the number of available elements in the instantiated object.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>elems</span></span><span>()</span></span></div></pre><p>Should return the number of available elements in the instantiated object.</p>
 <h2 id="(Positional)_method_AT-POS"><a href="/type/Positional#method_AT-POS">(Positional) method AT-POS</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>AT-POS</span></span><span>(\</span><span class="routine name perl6fe"><span>position</span></span><span>)</span></span></div></pre><p>Should return the value / container at the given position.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>AT-POS</span></span><span>(\</span><span class="routine name raku"><span>position</span></span><span>)</span></span></div></pre><p>Should return the value / container at the given position.</p>
 <h2 id="(Positional)_method_EXISTS-POS"><a href="/type/Positional#method_EXISTS-POS">(Positional) method EXISTS-POS</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-POS</span></span><span>(\</span><span class="routine name perl6fe"><span>position</span></span><span>)</span></span></div></pre><p>Should return a <code>Bool</code> indicating whether the given position actually has a value.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>EXISTS-POS</span></span><span>(\</span><span class="routine name raku"><span>position</span></span><span>)</span></span></div></pre><p>Should return a <code>Bool</code> indicating whether the given position actually has a value.</p>
 <h2 id="(Positional)_method_STORE"><a href="/type/Positional#method_STORE">(Positional) method STORE</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>STORE</span></span><span>(\</span><span class="routine name perl6fe"><span>values</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>INITIALIZE</span></span></span><span>)</span></span></div></pre><p>This method should only be supplied if you want to support the:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Foo</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,</span><span class="constant numeric perl6fe"><span>2</span></span><span>,</span><span class="constant numeric perl6fe"><span>3</span></span><span>;</span></span></div></pre><p>syntax for binding your implementation of the <code>Positional</code> role.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>STORE</span></span><span>(\</span><span class="routine name raku"><span>values</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>INITIALIZE</span></span></span><span>)</span></span></div></pre><p>This method should only be supplied if you want to support the:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>@</span></span><span class="variable other identifier raku"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints raku"><span>is</span></span><span>&nbsp;</span><span class="routine name raku"><span>Foo</span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>1</span></span><span>,</span><span class="constant numeric raku"><span>2</span></span><span>,</span><span class="constant numeric raku"><span>3</span></span><span>;</span></span></div></pre><p>syntax for binding your implementation of the <code>Positional</code> role.</p>
 <p>Should accept the values to (re-)initialize the object with. The optional named parameter will contain a <code>True</code> value when the method is called on the object for the first time. Should return the invocant.</p>
 
         </div>
@@ -234,7 +223,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/NFC.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/NFC.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/NFC.pod6">https://github.com/Raku/doc/tree/master/doc/Type/NFC.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

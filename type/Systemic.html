@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Systemic.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/Systemic.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -101,128 +101,100 @@
 <h2 id="method_version"><a class="u" href="#___top" title="go to top of document">method version</a></h2>
 <p>Instance method returning the version of the object as a <a href="/type/Version">Version</a> object. Returns a <code>Version</code> object &quot;unknown&quot; if the version could not be established.</p>
 <h2 id="method_gist"><a class="u" href="#___top" title="go to top of document">method gist</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>gist</span></span><span>(&nbsp;</span><span class="routine name perl6fe"><span>Systemic</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;)</span></span></div></pre><p>Instance method returning the name and version of the object.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>RAKU</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>gist</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Raku&nbsp;(6.d)␤»</span></span></span></div></pre><p><code>$*RAKU</code> is an object of the <a href="/type/Raku">Raku</a> type, which mixes in this role and thus implements this method.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>gist</span></span><span>(&nbsp;</span><span class="routine name raku"><span>Systemic</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;)</span></span></div></pre><p>Instance method returning the name and version of the object.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="support class twigil raku"><span>*</span></span><span class="variable other identifier raku"><span>RAKU</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>gist</span></span><span>;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Raku&nbsp;(6.d)␤»</span></span></span></div></pre><p><code>$*RAKU</code> is an object of the <a href="/type/Raku">Raku</a> type, which mixes in this role and thus implements this method.</p>
 <h2 id="method_Str"><a class="u" href="#___top" title="go to top of document">method Str</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Str</span></span></span></div></pre><p>Instance method returning the name of the object.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>RAKU</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>Str</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Raku␤»</span></span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>Str</span></span></span></div></pre><p>Instance method returning the name of the object.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="support class twigil raku"><span>*</span></span><span class="variable other identifier raku"><span>RAKU</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support type raku"><span>Str</span></span><span>;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Raku␤»</span></span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Systemic</code></figcaption>
-  <svg width="254pt" height="260pt"
- viewBox="0.00 0.00 254.15 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+  <svg width="244pt" height="188pt"
+ viewBox="0.00 0.00 244.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-256 250.15,-256 250.15,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 240,-184 240,4 -4,4"/>
 <!-- Systemic -->
-<g id="node1" class="node">
-<title>Systemic</title>
+<g id="node1" class="node"><title>Systemic</title>
 <g id="a_node1"><a xlink:href="/type/Systemic" xlink:title="Systemic">
-<ellipse fill="none" stroke="#6666ff" cx="65" cy="-162" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="65" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Systemic</text>
+<ellipse fill="none" stroke="#6666ff" cx="72" cy="-90" rx="46.2923" ry="18"/>
+<text text-anchor="middle" x="72" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Systemic</text>
 </a>
 </g>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="156" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="156" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="163" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="163" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="156" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="156" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="163" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="163" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge1" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M156,-180.3C156,-188.02 156,-197.29 156,-205.89"/>
-<polygon fill="#000000" stroke="#000000" points="152.5,-205.9 156,-215.9 159.5,-205.9 152.5,-205.9"/>
+<g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M163,-108.303C163,-116.017 163,-125.288 163,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="159.5,-133.896 163,-143.896 166.5,-133.896 159.5,-133.896"/>
 </g>
 <!-- VM -->
-<g id="node4" class="node">
-<title>VM</title>
+<g id="node4" class="node"><title>VM</title>
 <g id="a_node4"><a xlink:href="/type/VM" xlink:title="VM">
-<ellipse fill="none" stroke="#000000" cx="27" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="27" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">VM</text>
+<ellipse fill="none" stroke="#000000" cx="27" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">VM</text>
 </a>
 </g>
 </g>
 <!-- VM&#45;&gt;Systemic -->
-<g id="edge6" class="edge">
-<title>VM&#45;&gt;Systemic</title>
-<path fill="none" stroke="#6666ff" d="M35.81,-107.24C40.29,-115.47 45.83,-125.68 50.88,-134.98"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="47.86,-136.76 55.7,-143.88 54.01,-133.42 47.86,-136.76"/>
+<g id="edge5" class="edge"><title>VM&#45;&gt;Systemic</title>
+<path fill="none" stroke="#6666ff" d="M37.2112,-34.8841C42.6908,-43.408 49.5732,-54.1139 55.767,-63.7487"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="52.85,-65.6835 61.2017,-72.2027 58.7382,-61.8982 52.85,-65.6835"/>
 </g>
 <!-- VM&#45;&gt;Any -->
-<g id="edge2" class="edge">
-<title>VM&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M47.44,-102.09C68.76,-113.66 102.4,-131.91 126.58,-145.03"/>
-<polygon fill="#000000" stroke="#000000" points="125.2,-148.27 135.66,-149.96 128.54,-142.11 125.2,-148.27"/>
-</g>
-<!-- Raku -->
-<g id="node5" class="node">
-<title>Raku</title>
-<g id="a_node5"><a xlink:href="/type/Raku" xlink:title="Raku">
-<ellipse fill="none" stroke="#000000" cx="104" cy="-90" rx="31.7" ry="18"/>
-<text text-anchor="middle" x="104" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Raku</text>
-</a>
-</g>
-</g>
-<!-- Raku&#45;&gt;Systemic -->
-<g id="edge7" class="edge">
-<title>Raku&#45;&gt;Systemic</title>
-<path fill="none" stroke="#6666ff" d="M94.76,-107.59C90.16,-115.84 84.5,-125.99 79.36,-135.22"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="76.26,-133.6 74.45,-144.04 82.37,-137.01 76.26,-133.6"/>
-</g>
-<!-- Raku&#45;&gt;Any -->
-<g id="edge3" class="edge">
-<title>Raku&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M115.8,-106.88C122.54,-115.96 131.12,-127.51 138.62,-137.61"/>
-<polygon fill="#000000" stroke="#000000" points="135.83,-139.72 144.6,-145.66 141.45,-135.55 135.83,-139.72"/>
+<g id="edge2" class="edge"><title>VM&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M47.6555,-29.6315C70.4215,-41.3493 107.243,-60.3015 133.147,-73.6344"/>
+<polygon fill="#000000" stroke="#000000" points="131.657,-76.8039 142.15,-78.2685 134.861,-70.58 131.657,-76.8039"/>
 </g>
 <!-- Compiler -->
-<g id="node6" class="node">
-<title>Compiler</title>
-<g id="a_node6"><a xlink:href="/type/Compiler" xlink:title="Compiler">
-<ellipse fill="none" stroke="#000000" cx="200" cy="-90" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="200" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Compiler</text>
+<g id="node5" class="node"><title>Compiler</title>
+<g id="a_node5"><a xlink:href="/type/Compiler" xlink:title="Compiler">
+<ellipse fill="none" stroke="#000000" cx="118" cy="-18" rx="46.2923" ry="18"/>
+<text text-anchor="middle" x="118" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Compiler</text>
 </a>
 </g>
 </g>
 <!-- Compiler&#45;&gt;Systemic -->
-<g id="edge8" class="edge">
-<title>Compiler&#45;&gt;Systemic</title>
-<path fill="none" stroke="#6666ff" d="M173.33,-104.83C152.53,-115.62 123.44,-130.7 100.64,-142.52"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="98.88,-139.49 91.62,-147.2 102.1,-145.7 98.88,-139.49"/>
+<g id="edge6" class="edge"><title>Compiler&#45;&gt;Systemic</title>
+<path fill="none" stroke="#6666ff" d="M107.099,-35.589C101.622,-43.9226 94.8667,-54.2028 88.7495,-63.5117"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="85.7095,-61.7646 83.1427,-72.0438 91.5595,-65.6089 85.7095,-61.7646"/>
 </g>
 <!-- Compiler&#45;&gt;Any -->
-<g id="edge4" class="edge">
-<title>Compiler&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M189.57,-107.59C184.18,-116.17 177.49,-126.81 171.51,-136.33"/>
-<polygon fill="#000000" stroke="#000000" points="168.41,-134.68 166.05,-145.01 174.33,-138.41 168.41,-134.68"/>
+<g id="edge3" class="edge"><title>Compiler&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M128.664,-35.589C134.179,-44.1677 141.02,-54.8092 147.141,-64.3305"/>
+<polygon fill="#000000" stroke="#000000" points="144.37,-66.4928 152.722,-73.0119 150.258,-62.7074 144.37,-66.4928"/>
 </g>
 <!-- Perl -->
-<g id="node7" class="node">
-<title>Perl</title>
-<g id="a_node7"><a xlink:href="/type/Perl" xlink:title="Perl">
-<ellipse fill="none" stroke="#000000" cx="104" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="104" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Perl</text>
+<g id="node6" class="node"><title>Perl</title>
+<g id="a_node6"><a xlink:href="/type/Perl" xlink:title="Perl">
+<ellipse fill="none" stroke="#000000" cx="209" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="209" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Perl</text>
 </a>
 </g>
 </g>
-<!-- Perl&#45;&gt;Raku -->
-<g id="edge5" class="edge">
-<title>Perl&#45;&gt;Raku</title>
-<path fill="none" stroke="#000000" d="M104,-36.3C104,-44.02 104,-53.29 104,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="100.5,-61.9 104,-71.9 107.5,-61.9 100.5,-61.9"/>
+<!-- Perl&#45;&gt;Systemic -->
+<g id="edge7" class="edge"><title>Perl&#45;&gt;Systemic</title>
+<path fill="none" stroke="#6666ff" d="M188.193,-29.6315C166.993,-40.4637 133.693,-57.478 108.167,-70.5205"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="106.464,-67.4604 99.1512,-75.1271 109.649,-73.6938 106.464,-67.4604"/>
+</g>
+<!-- Perl&#45;&gt;Any -->
+<g id="edge4" class="edge"><title>Perl&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M198.562,-34.8841C192.798,-43.655 185.516,-54.7363 179.045,-64.5838"/>
+<polygon fill="#000000" stroke="#000000" points="175.964,-62.8996 173.397,-73.1788 181.814,-66.7438 175.964,-62.8996"/>
 </g>
 </g>
 </svg>
@@ -244,7 +216,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Systemic.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Systemic.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/Systemic.pod6">https://github.com/Raku/doc/tree/master/doc/Type/Systemic.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Telemetry/Instrument/Usage.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/Telemetry/Instrument/Usage.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -78,7 +78,7 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Telemetry::Instrument::Usage</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><strong>Note: </strong> This class is a Rakudo-specific feature and not standard Raku.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>class</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>Telemetry::Instrument::Usage</span></span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p><strong>Note: </strong> This class is a Rakudo-specific feature and not standard Raku.</p>
 <p>Objects of this class are generally not created by themselves, but rather through making a <a href="/type/Telemetry">snap</a>shot.</p>
 <h2 id="Useful_readings"><a class="u" href="#___top" title="go to top of document">Useful readings</a></h2>
 <p>This class provides the following generally usable readings (in alphabetical order):</p>
@@ -114,60 +114,14 @@
 <p>Less useful readings</p>
 </section>
 <p>The following readings may or may not contain sensible information, mostly depending on hardware and OS being used. Please check your local <code>getrusage</code> documentation for their exact meaning:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>name</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>getrusage</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>struct</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>name</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator multi-symbol perl6fe"><span>===</span></span><span>=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>max-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_maxrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>ix-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_ixress</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>id-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_idrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>is-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_isrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>minf</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_minflt</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>majf</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_majflt</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>nswp</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nswap</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>inb</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_inblock</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>outb</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_oublock</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>msnd</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_msgsnd</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>mrcv</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_msgrcv</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>nsig</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nsignals</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>volcsw</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nvcsw</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>invcsw</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nivcsw</span></span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>name</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>getrusage</span></span><span>&nbsp;</span><span class="routine name raku"><span>struct</span></span><span>&nbsp;</span><span class="support function raku"><span>name</span></span></span></div><div class="line"><span class="source raku"><span class="keyword operator multi-symbol raku"><span>===</span></span><span>=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator multi-symbol raku"><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>max-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_maxrss</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>ix-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_ixress</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>id-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_idrss</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>is-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_isrss</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>minf</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_minflt</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>majf</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_majflt</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>nswp</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_nswap</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>inb</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_inblock</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>outb</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_oublock</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>msnd</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_msgsnd</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>mrcv</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_msgrcv</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>nsig</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_nsignals</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>volcsw</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_nvcsw</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>invcsw</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name raku"><span>ru_nivcsw</span></span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>Telemetry::Instrument::Usage</code></figcaption>
-  <svg width="261pt" height="188pt"
- viewBox="0.00 0.00 261.48 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
-<title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-184 257.48,-184 257.48,4 -4,4"/>
-<!-- Telemetry::Instrument::Usage -->
-<g id="node1" class="node">
-<title>Telemetry::Instrument::Usage</title>
-<g id="a_node1"><a xlink:href="/type/Telemetry::Instrument::Usage" xlink:title="Telemetry::Instrument::Usage">
-<ellipse fill="none" stroke="#000000" cx="126.74" cy="-18" rx="126.98" ry="18"/>
-<text text-anchor="middle" x="126.74" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Telemetry::Instrument::Usage</text>
-</a>
-</g>
-</g>
-<!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
-<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="126.74" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="126.74" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
-</a>
-</g>
-</g>
-<!-- Telemetry::Instrument::Usage&#45;&gt;Any -->
-<g id="edge1" class="edge">
-<title>Telemetry::Instrument::Usage&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M126.74,-36.3C126.74,-44.02 126.74,-53.29 126.74,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="123.24,-61.9 126.74,-71.9 130.24,-61.9 123.24,-61.9"/>
-</g>
-<!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
-<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="126.74" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="126.74" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
-</a>
-</g>
-</g>
-<!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M126.74,-108.3C126.74,-116.02 126.74,-125.29 126.74,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="123.24,-133.9 126.74,-143.9 130.24,-133.9 123.24,-133.9"/>
-</g>
-</g>
-</svg>
-
+  <figcaption>Type relations for <code>404</code></figcaption>
+  <svg></svg>
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-Telemetry%3A%3AInstrument%3A%3AUsage.svg"
+      href="/images/type-graph-404.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >
@@ -181,7 +135,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Telemetry/Instrument/Usage.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Telemetry/Instrument/Usage.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/Telemetry/Instrument/Usage.pod6">https://github.com/Raku/doc/tree/master/doc/Type/Telemetry/Instrument/Usage.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

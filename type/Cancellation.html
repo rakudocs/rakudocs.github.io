@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Cancellation.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/Cancellation.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -79,12 +79,12 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Cancellation</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p>A low level part of the Raku <a href="/language/concurrency#Schedulers">concurrency</a> system. Some <a href="/type/Scheduler">Scheduler</a> objects return a <code>Cancellation</code> with the <a href="/type/Scheduler#method_cue">.cue</a> method which can be used to cancel the scheduled execution before normal completion. <code>Cancellation.cancelled</code> is a Boolean that is true after <a href="#cancel">cancel</a> is called.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta class raku"><span class="storage type class raku"><span>class</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>Cancellation</span></span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span><span>}</span></span></span></span></div></pre><p>A low level part of the Raku <a href="/language/concurrency#Schedulers">concurrency</a> system. Some <a href="/type/Scheduler">Scheduler</a> objects return a <code>Cancellation</code> with the <a href="/type/Scheduler#method_cue">.cue</a> method which can be used to cancel the scheduled execution before normal completion. <code>Cancellation.cancelled</code> is a Boolean that is true after <a href="#cancel">cancel</a> is called.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_cancel"><a class="u" href="#___top" title="go to top of document">method cancel</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>cancel</span></span><span>()</span></span></div></pre><p>Usage:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>Cancellation</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>cancel</span></span></span></div></pre><p>Cancels the scheduled execution of a task before normal completion.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>cancel</span></span><span>()</span></span></div></pre><p>Usage:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="routine name raku"><span>Cancellation</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>cancel</span></span></span></div></pre><p>Cancels the scheduled execution of a task before normal completion.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Cancellation</code></figcaption>
@@ -92,45 +92,40 @@
  viewBox="0.00 0.00 126.29 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-184 122.29,-184 122.29,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 122.29,-184 122.29,4 -4,4"/>
 <!-- Cancellation -->
-<g id="node1" class="node">
-<title>Cancellation</title>
+<g id="node1" class="node"><title>Cancellation</title>
 <g id="a_node1"><a xlink:href="/type/Cancellation" xlink:title="Cancellation">
-<ellipse fill="none" stroke="#000000" cx="59.14" cy="-18" rx="59.29" ry="18"/>
-<text text-anchor="middle" x="59.14" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cancellation</text>
+<ellipse fill="none" stroke="#000000" cx="59.1448" cy="-18" rx="59.2899" ry="18"/>
+<text text-anchor="middle" x="59.1448" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cancellation</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="59.14" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="59.14" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="59.1448" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="59.1448" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Cancellation&#45;&gt;Any -->
-<g id="edge1" class="edge">
-<title>Cancellation&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M59.14,-36.3C59.14,-44.02 59.14,-53.29 59.14,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="55.64,-61.9 59.14,-71.9 62.64,-61.9 55.64,-61.9"/>
+<g id="edge1" class="edge"><title>Cancellation&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M59.1448,-36.3034C59.1448,-44.0173 59.1448,-53.2875 59.1448,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="55.6449,-61.8956 59.1448,-71.8957 62.6449,-61.8957 55.6449,-61.8956"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="59.14" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="59.14" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="59.1448" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="59.1448" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M59.14,-108.3C59.14,-116.02 59.14,-125.29 59.14,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="55.64,-133.9 59.14,-143.9 62.64,-133.9 55.64,-133.9"/>
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M59.1448,-108.303C59.1448,-116.017 59.1448,-125.288 59.1448,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="55.6449,-133.896 59.1448,-143.896 62.6449,-133.896 55.6449,-133.896"/>
 </g>
 </g>
 </svg>
@@ -152,7 +147,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Cancellation.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Cancellation.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/Cancellation.pod6">https://github.com/Raku/doc/tree/master/doc/Type/Cancellation.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/CompUnit.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/CompUnit.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -86,24 +86,24 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>CompUnit</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p>The <code>CompUnit</code> represents the metainformation about a compilation unit. This usually relates to source code that resides in a file on a filesystem, rather than code that is executed using an <code>EVAL</code> statement.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>class</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>CompUnit</span></span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span><span>}</span></span></span></span></div></pre><p>The <code>CompUnit</code> represents the metainformation about a compilation unit. This usually relates to source code that resides in a file on a filesystem, rather than code that is executed using an <code>EVAL</code> statement.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_auth"><a class="u" href="#___top" title="go to top of document">method auth</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>auth</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the authority information with which the <code>CompUnit</code> object was created (if any).</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>auth</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Str</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the authority information with which the <code>CompUnit</code> object was created (if any).</p>
 <h2 id="method_distribution"><a class="u" href="#___top" title="go to top of document">method distribution</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>distribution</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Distribution</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the <a href="/type/Distribution">Distribution</a> object with which the <code>CompUnit</code> object was created (if any).</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>distribution</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>Distribution</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the <a href="/type/Distribution">Distribution</a> object with which the <code>CompUnit</code> object was created (if any).</p>
 <h2 id="method_from"><a class="u" href="#___top" title="go to top of document">method from</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>from</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the name of the language with which the <code>CompUnit</code> object was created (if any). It will be <code>Raku</code> by default.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>from</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Str</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the name of the language with which the <code>CompUnit</code> object was created (if any). It will be <code>Raku</code> by default.</p>
 <h2 id="method_precompiled"><a class="u" href="#___top" title="go to top of document">method precompiled</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>precompiled</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns whether the <code>CompUnit</code> object originated from a precompiled source.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>precompiled</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Bool</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns whether the <code>CompUnit</code> object originated from a precompiled source.</p>
 <h2 id="method_repo"><a class="u" href="#___top" title="go to top of document">method repo</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>repo</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>CompUnit</span></span><span>::</span><span class="routine name perl6fe"><span>Repository</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the <a href="/type/CompUnit::Repository">CompUnit::Repository</a> object with which the <code>CompUnit</code> object was created.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>repo</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>CompUnit</span></span><span>::</span><span class="routine name raku"><span>Repository</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the <a href="/type/CompUnit::Repository">CompUnit::Repository</a> object with which the <code>CompUnit</code> object was created.</p>
 <h2 id="method_repo-id"><a class="u" href="#___top" title="go to top of document">method repo-id</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>repo-id</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the identification string with which the <code>CompUnit</code> object can be identified in the associated <a href="#method_repo">repo</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>repo-id</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Str</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the identification string with which the <code>CompUnit</code> object can be identified in the associated <a href="#method_repo">repo</a>.</p>
 <h2 id="method_short-name"><a class="u" href="#___top" title="go to top of document">method short-name</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>short-name</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns The short name with which the <code>CompUnit</code> object was created (if any).</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>short-name</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Str</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns The short name with which the <code>CompUnit</code> object was created (if any).</p>
 <h2 id="method_version"><a class="u" href="#___top" title="go to top of document">method version</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>version</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Version</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the version information with which the <code>CompUnit</code> object was created (if any).</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>version</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Version</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the version information with which the <code>CompUnit</code> object was created (if any).</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>CompUnit</code></figcaption>
@@ -111,45 +111,40 @@
  viewBox="0.00 0.00 108.09 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-184 104.09,-184 104.09,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 104.091,-184 104.091,4 -4,4"/>
 <!-- CompUnit -->
-<g id="node1" class="node">
-<title>CompUnit</title>
+<g id="node1" class="node"><title>CompUnit</title>
 <g id="a_node1"><a xlink:href="/type/CompUnit" xlink:title="CompUnit">
-<ellipse fill="none" stroke="#000000" cx="50.05" cy="-18" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="50.05" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CompUnit</text>
+<ellipse fill="none" stroke="#000000" cx="50.0456" cy="-18" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="50.0456" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CompUnit</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="50.05" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="50.05" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="50.0456" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="50.0456" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- CompUnit&#45;&gt;Any -->
-<g id="edge1" class="edge">
-<title>CompUnit&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M50.05,-36.3C50.05,-44.02 50.05,-53.29 50.05,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="46.55,-61.9 50.05,-71.9 53.55,-61.9 46.55,-61.9"/>
+<g id="edge1" class="edge"><title>CompUnit&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M50.0456,-36.3034C50.0456,-44.0173 50.0456,-53.2875 50.0456,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="46.5457,-61.8956 50.0456,-71.8957 53.5457,-61.8957 46.5457,-61.8956"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="50.05" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="50.05" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="50.0456" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="50.0456" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M50.05,-108.3C50.05,-116.02 50.05,-125.29 50.05,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="46.55,-133.9 50.05,-143.9 53.55,-133.9 46.55,-133.9"/>
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M50.0456,-108.303C50.0456,-116.017 50.0456,-125.288 50.0456,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="46.5457,-133.896 50.0456,-143.896 53.5457,-133.896 46.5457,-133.896"/>
 </g>
 </g>
 </svg>
@@ -171,7 +166,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/CompUnit.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/CompUnit.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/CompUnit.pod6">https://github.com/Raku/doc/tree/master/doc/Type/CompUnit.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

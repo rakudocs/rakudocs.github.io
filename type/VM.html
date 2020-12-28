@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/VM.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/VM.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -91,11 +91,11 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>VM</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Systemic</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Built-in class for providing information about the virtual machine in which Raku is running. Usually accessed through the <a href="/language/variables#index-entry-%24*VM">$*VM</a> dynamic variable.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>class</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>VM</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints raku"><span>does</span></span><span>&nbsp;</span><span class="routine name raku"><span>Systemic</span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p>Built-in class for providing information about the virtual machine in which Raku is running. Usually accessed through the <a href="/language/variables#index-entry-%24*VM">$*VM</a> dynamic variable.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_osname"><a class="u" href="#___top" title="go to top of document">method osname</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>osname</span></span><span>(</span><span class="routine name perl6fe"><span>VM</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>U</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>osname</span></span><span>(</span><span class="routine name perl6fe"><span>VM</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Instance / Class method returning the name of the Operating System, as known by the configuration of the VM object / currently running virtual machine.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator multi raku"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>osname</span></span><span>(</span><span class="routine name raku"><span>VM</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>U</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>)</span></span></div><div class="line"><span class="source raku"><span class="storage type declarator multi raku"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>osname</span></span><span>(</span><span class="routine name raku"><span>VM</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>)</span></span></div></pre><p>Instance / Class method returning the name of the Operating System, as known by the configuration of the VM object / currently running virtual machine.</p>
 <h2 id="method_precomp-ext"><a class="u" href="#___top" title="go to top of document">method precomp-ext</a></h2>
 <p>Instance method returning a string of the extension that should be used for precompiled files of the VM object.</p>
 <h2 id="method_precomp-target"><a class="u" href="#___top" title="go to top of document">method precomp-target</a></h2>
@@ -109,10 +109,9 @@
  viewBox="0.00 0.00 172.15 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-184 168.15,-184 168.15,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 168.146,-184 168.146,4 -4,4"/>
 <!-- VM -->
-<g id="node1" class="node">
-<title>VM</title>
+<g id="node1" class="node"><title>VM</title>
 <g id="a_node1"><a xlink:href="/type/VM" xlink:title="VM">
 <ellipse fill="none" stroke="#000000" cx="72" cy="-18" rx="27" ry="18"/>
 <text text-anchor="middle" x="72" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">VM</text>
@@ -120,8 +119,7 @@
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
 <ellipse fill="none" stroke="#000000" cx="27" cy="-90" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
@@ -129,29 +127,25 @@
 </g>
 </g>
 <!-- VM&#45;&gt;Any -->
-<g id="edge1" class="edge">
-<title>VM&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M61.79,-34.88C56.15,-43.66 49.03,-54.74 42.7,-64.58"/>
-<polygon fill="#000000" stroke="#000000" points="39.63,-62.87 37.17,-73.18 45.52,-66.66 39.63,-62.87"/>
+<g id="edge1" class="edge"><title>VM&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M61.7888,-34.8841C56.1503,-43.655 49.0266,-54.7363 42.6962,-64.5838"/>
+<polygon fill="#000000" stroke="#000000" points="39.6343,-62.8743 37.1708,-73.1788 45.5225,-66.6596 39.6343,-62.8743"/>
 </g>
 <!-- Systemic -->
-<g id="node4" class="node">
-<title>Systemic</title>
+<g id="node4" class="node"><title>Systemic</title>
 <g id="a_node4"><a xlink:href="/type/Systemic" xlink:title="Systemic">
-<ellipse fill="none" stroke="#6666ff" cx="118" cy="-90" rx="46.29" ry="18"/>
+<ellipse fill="none" stroke="#6666ff" cx="118" cy="-90" rx="46.2923" ry="18"/>
 <text text-anchor="middle" x="118" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Systemic</text>
 </a>
 </g>
 </g>
 <!-- VM&#45;&gt;Systemic -->
-<g id="edge3" class="edge">
-<title>VM&#45;&gt;Systemic</title>
-<path fill="none" stroke="#6666ff" d="M82.44,-34.88C88.04,-43.41 95.07,-54.11 101.41,-63.75"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="98.54,-65.77 106.96,-72.2 104.39,-61.92 98.54,-65.77"/>
+<g id="edge3" class="edge"><title>VM&#45;&gt;Systemic</title>
+<path fill="none" stroke="#6666ff" d="M82.4381,-34.8841C88.0395,-43.408 95.0748,-54.1139 101.406,-63.7487"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="98.5449,-65.7677 106.962,-72.2027 104.395,-61.9234 98.5449,-65.7677"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
 <ellipse fill="none" stroke="#000000" cx="27" cy="-162" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
@@ -159,10 +153,9 @@
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M27,-108.3C27,-116.02 27,-125.29 27,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="23.5,-133.9 27,-143.9 30.5,-133.9 23.5,-133.9"/>
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M27,-108.303C27,-116.017 27,-125.288 27,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="23.5001,-133.896 27,-143.896 30.5001,-133.896 23.5001,-133.896"/>
 </g>
 </g>
 </svg>
@@ -191,11 +184,11 @@
 <h2 id="(Systemic)_method_version"><a href="/type/Systemic#method_version">(Systemic) method version</a></h2>
 <p>Instance method returning the version of the object as a <a href="/type/Version">Version</a> object. Returns a <code>Version</code> object &quot;unknown&quot; if the version could not be established.</p>
 <h2 id="(Systemic)_method_gist"><a href="/type/Systemic#method_gist">(Systemic) method gist</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>gist</span></span><span>(&nbsp;</span><span class="routine name perl6fe"><span>Systemic</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;)</span></span></div></pre><p>Instance method returning the name and version of the object.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>RAKU</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>gist</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Raku&nbsp;(6.d)␤»</span></span></span></div></pre><p><code>$*RAKU</code> is an object of the <a href="/type/Raku">Raku</a> type, which mixes in this role and thus implements this method.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>gist</span></span><span>(&nbsp;</span><span class="routine name raku"><span>Systemic</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;)</span></span></div></pre><p>Instance method returning the name and version of the object.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="support class twigil raku"><span>*</span></span><span class="variable other identifier raku"><span>RAKU</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>gist</span></span><span>;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Raku&nbsp;(6.d)␤»</span></span></span></div></pre><p><code>$*RAKU</code> is an object of the <a href="/type/Raku">Raku</a> type, which mixes in this role and thus implements this method.</p>
 <h2 id="(Systemic)_method_Str"><a href="/type/Systemic#method_Str">(Systemic) method Str</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Str</span></span></span></div></pre><p>Instance method returning the name of the object.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>RAKU</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>Str</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Raku␤»</span></span></span></div></pre>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>Str</span></span></span></div></pre><p>Instance method returning the name of the object.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="support class twigil raku"><span>*</span></span><span class="variable other identifier raku"><span>RAKU</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support type raku"><span>Str</span></span><span>;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Raku␤»</span></span></span></div></pre>
         </div>
     </div>
 
@@ -203,7 +196,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/VM.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/VM.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/VM.pod6">https://github.com/Raku/doc/tree/master/doc/Type/VM.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

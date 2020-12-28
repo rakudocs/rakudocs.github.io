@@ -2,7 +2,6 @@ digraph "perl6-type-graph" {
     rankdir=BT;
     splines=polyline;
     overlap=false; 
-    graph [truecolor=true bgcolor="#FFFFFF"];
     // Types
     "Dateish" [color="#6666FF", fontcolor="#6666FF", href="/type/Dateish", fontname="FreeSans"];
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];

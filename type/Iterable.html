@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Iterable.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/Iterable.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -84,408 +84,325 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Iterable</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><code>Iterable</code> serves as an API for objects that can be iterated with <code>for</code> and related iteration constructs, like assignment to a <code>Positional</code> variable.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>role</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>Iterable</span></span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p><code>Iterable</code> serves as an API for objects that can be iterated with <code>for</code> and related iteration constructs, like assignment to a <code>Positional</code> variable.</p>
 <p><code>Iterable</code> objects nested in other <code>Iterable</code> objects (but not within scalar containers) flatten in certain contexts, for example when passed to a slurpy parameter (<code>*@a</code>), or on explicit calls to <code>flat</code>.</p>
 <p>Its most important aspect is a method stub for <code>iterator</code>.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>DNA</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>has</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>.</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>new</span></span><span>&nbsp;(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>where</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="entity name section boundary regexp perl6fe"><span>^^</span></span><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="keyword operator charclass open regexp perl6fe"><span>[</span></span><span class="constant character custom property regexp perl6fe"><span>ACGT</span></span><span class="keyword operator charclass close regexp perl6fe"><span>]</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>$$</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language perl6fe"><span>self</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>bless</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>&nbsp;);</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="routine name perl6fe"><span>DNA</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>!</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>comb</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>rotor</span></span><span>(</span><span class="constant numeric perl6fe"><span>3</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>iterator</span></span><span>;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>DNA</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>GAATCC</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(G&nbsp;A&nbsp;A)␤(T&nbsp;C&nbsp;C)␤»</span><span>&nbsp;</span></span></span></div></pre><p>This example mixes in the Iterable role to offer a new way of iterating over what is essentially a string (constrained by <a href="/type/Signature#index-entry-where_clause_(Signature)"><code>where</code></a> to just the four DNA letters). In the last statement, <code>for</code> actually hooks to the <code>iterator</code> role printing the letters in groups of 3.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>class</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>DNA</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints raku"><span>does</span></span><span>&nbsp;</span><span class="support type raku"><span>Iterable</span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator raku"><span>has</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="support class twigil raku"><span>.</span></span><span class="variable other identifier raku"><span>chain</span></span></span><span>;</span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>new</span></span><span>&nbsp;(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>chain</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints raku"><span>where</span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>chain</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp raku"><span>/</span></span><span class="string regexp raku"><span class="entity name section boundary regexp raku"><span>^^</span></span><span>&nbsp;</span><span class="meta property regexp raku"><span class="punctuation delimiter property regexp raku"><span>&lt;</span></span><span class="keyword operator charclass open regexp raku"><span>[</span></span><span class="constant character custom property regexp raku"><span>ACGT</span></span><span class="keyword operator charclass close regexp raku"><span>]</span></span><span class="punctuation delimiter property regexp raku"><span>&gt;</span></span></span><span class="keyword operator quantifiers regexp raku"><span>+</span></span><span>&nbsp;</span><span class="entity name section boundary regexp raku"><span>$$</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp raku"><span>/</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span><span>&nbsp;)&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span></span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span class="meta block raku"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language raku"><span>self</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>bless</span></span><span>(&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>chain</span></span></span><span>&nbsp;);</span></span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span class="meta block raku"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>iterator</span></span><span>(</span><span class="routine name raku"><span>DNA</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>)&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span></span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span class="meta block raku"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="support class twigil raku"><span>!</span></span><span class="variable other identifier raku"><span>chain</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>comb</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>rotor</span></span><span>(</span><span class="constant numeric raku"><span>3</span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>iterator</span></span><span>;</span></span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span class="meta block raku"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></span></div><div class="line"><span class="source raku"><span class="meta block raku"><span class="punctuation definition block raku"><span>}</span></span></span></span></div><div class="line"><span class="source raku"><span>&nbsp;</span></span></div><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>:=</span></span><span>&nbsp;</span><span class="routine name raku"><span>DNA</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>new</span></span><span>(</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>GAATCC</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>);</span></span></div><div class="line"><span class="source raku"><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="keyword control repeat raku"><span>for</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>a</span></span></span><span>;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(G&nbsp;A&nbsp;A)␤(T&nbsp;C&nbsp;C)␤»</span><span>&nbsp;</span></span></span></div></pre><p>This example mixes in the Iterable role to offer a new way of iterating over what is essentially a string (constrained by <a href="/type/Signature#index-entry-where_clause_(Signature)"><code>where</code></a> to just the four DNA letters). In the last statement, <code>for</code> actually hooks to the <code>iterator</code> role printing the letters in groups of 3.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_iterator"><a class="u" href="#___top" title="go to top of document">method iterator</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterator</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Method stub that ensures all classes doing the <code>Iterable</code> role have a method <code>iterator</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>iterator</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Iterator</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Method stub that ensures all classes doing the <code>Iterable</code> role have a method <code>iterator</code>.</p>
 <p>It is supposed to return an <a href="/type/Iterator">Iterator</a>.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>iterator</span></span><span>;</span></span></div></pre><h2 id="method_flat"><a class="u" href="#___top" title="go to top of document">method flat</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric raku"><span>1</span></span><span class="keyword operator multi-symbol raku"><span>..</span></span><span class="constant numeric raku"><span>10</span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>iterator</span></span><span>;</span></span></div></pre><h2 id="method_flat"><a class="u" href="#___top" title="go to top of document">method flat</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>flat</span></span><span>(</span><span class="support type perl6fe"><span>Iterable</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another <a href="/type/Iterable">Iterable</a> that flattens out all iterables that the first one returns.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>flat</span></span><span>(</span><span class="support type raku"><span>Iterable</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another <a href="/type/Iterable">Iterable</a> that flattens out all iterables that the first one returns.</p>
 <p>For example</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>a&nbsp;b</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>a&nbsp;b</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>flat</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3␤»</span></span></span></div></pre><p>because <code>&lt;a b&gt; </code> is a <a href="/type/List">List</a> and thus iterable, so <code> (&lt;a b&gt;, &#39;c&#39;).flat </code> returns <code>(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;)</code>, which has three elems.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;(</span><span class="span keyword operator array words raku"><span>&lt;</span></span><span class="string array words raku"><span>a&nbsp;b</span></span><span class="span keyword operator array words raku"><span>&gt;</span></span><span>,&nbsp;</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;(</span><span class="span keyword operator array words raku"><span>&lt;</span></span><span class="string array words raku"><span>a&nbsp;b</span></span><span class="span keyword operator array words raku"><span>&gt;</span></span><span>,&nbsp;</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>flat</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3␤»</span></span></span></div></pre><p>because <code>&lt;a b&gt; </code> is a <a href="/type/List">List</a> and thus iterable, so <code> (&lt;a b&gt;, &#39;c&#39;).flat </code> returns <code>(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;)</code>, which has three elems.</p>
 <p>Note that the flattening is recursive, so <code>(((&quot;a&quot;, &quot;b&quot;), &quot;c&quot;), &quot;d&quot;).flat</code> returns <code>(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;)</code>, but it does not flatten itemized sublists:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="keyword other special-method perl6fe"><span>$</span></span><span>(</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>a</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>b</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>),&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>raku</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«($(&quot;a&quot;,&nbsp;&quot;b&quot;),&nbsp;&quot;c&quot;)␤»</span></span></span></div></pre><p>You can use the <a href="/language/operators#index-entry-postfix_».">hyper method call</a> to call the <a href="/routine/List"><code>.List</code></a> method on all the inner itemized sublists and so de-containerize them, so that <code>flat</code> can flatten them:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="keyword other special-method perl6fe"><span>$</span></span><span>(</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>a</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>b</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>),&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>&gt;</span><span>&gt;</span><span>.</span></span><span class="support type perl6fe"><span>List</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>flat</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3␤»</span></span></span></div></pre><h2 id="method_lazy"><a class="u" href="#___top" title="go to top of document">method lazy</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;(</span><span class="keyword other special-method raku"><span>$</span></span><span>(</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>a</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>b</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>),&nbsp;</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>raku</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«($(&quot;a&quot;,&nbsp;&quot;b&quot;),&nbsp;&quot;c&quot;)␤»</span></span></span></div></pre><p>You can use the <a href="/language/operators#index-entry-postfix_».">hyper method call</a> to call the <a href="/routine/List"><code>.List</code></a> method on all the inner itemized sublists and so de-containerize them, so that <code>flat</code> can flatten them:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;(</span><span class="keyword other special-method raku"><span>$</span></span><span>(</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>a</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>b</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>),&nbsp;</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic raku"><span>&gt;</span><span>&gt;</span><span>.</span></span><span class="support type raku"><span>List</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>flat</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3␤»</span></span></span></div></pre><h2 id="method_lazy"><a class="u" href="#___top" title="go to top of document">method lazy</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>lazy</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns a lazy iterable wrapping the invocant.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1000</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>is-lazy</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1000</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>lazy</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>is-lazy</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span></span></span></div></pre><h2 id="method_hyper"><a class="u" href="#___top" title="go to top of document">method hyper</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>lazy</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns a lazy iterable wrapping the invocant.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric raku"><span>1</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>...</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>1000</span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>is-lazy</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric raku"><span>1</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>...</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>1000</span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>lazy</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>is-lazy</span></span><span>;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span></span></span></div></pre><h2 id="method_hyper"><a class="u" href="#___top" title="go to top of document">method hyper</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hyper</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>64</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>hyper</span></span><span>(</span><span class="support type raku"><span>Int</span></span><span>(</span><span class="support type raku"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>64</span></span><span>,&nbsp;</span><span class="support type raku"><span>Int</span></span><span>(</span><span class="support type raku"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>4</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism.</p>
 <p>The order of elements is preserved.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;([</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>100</span></span><span>]</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>hyper</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>map</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>+1</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span>);</span></span></div></pre><p>Use <code>hyper</code> in situations where it is OK to do the processing of items in parallel, and the output order should be kept relative to the input order. See <a href="/routine/race"><code>race</code></a> for situations where items are processed in parallel and the output order does not matter.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;([</span><span class="constant numeric raku"><span>1</span></span><span class="keyword operator multi-symbol raku"><span>..</span></span><span class="constant numeric raku"><span>100</span></span><span>]</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>hyper</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>map</span></span><span>(</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>_</span></span></span><span>&nbsp;</span><span class="constant numeric raku"><span>+1</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>list</span></span><span>);</span></span></div></pre><p>Use <code>hyper</code> in situations where it is OK to do the processing of items in parallel, and the output order should be kept relative to the input order. See <a href="/routine/race"><code>race</code></a> for situations where items are processed in parallel and the output order does not matter.</p>
 <h3 id="Options_degree_and_batch"><a class="u" href="#___top" title="go to top of document">Options degree and batch</a></h3>
 <p>The <code>degree</code> option (short for &quot;degree of parallelism&quot;) configures how many parallel workers should be started. To start 4 workers (e.g. to use at most 4 cores), pass <code>:4degree</code> to the <code>hyper</code> or <code>race</code> method. Note that in some cases, choosing a degree higher than the available CPU cores can make sense, for example I/O bound work or latency-heavy tasks like web crawling. For CPU-bound work, however, it makes no sense to pick a number higher than the CPU core count.</p>
 <p>The <code>batch</code> size option configures the number of items sent to a given parallel worker at once. It allows for making a throughput/latency trade-off. If, for example, an operation is long-running per item, and you need the first results as soon as possible, set it to 1. That means every parallel worker gets 1 item to process at a time, and reports the result as soon as possible. In consequence, the overhead for inter-thread communication is maximized. In the other extreme, if you have 1000 items to process and 10 workers, and you give every worker a batch of 100 items, you will incur minimal overhead for dispatching the items, but you will only get the first results when 100 items are processed by the fastest worker (or, for <code>hyper</code>, when the worker getting the first batch returns.) Also, if not all items take the same amount of time to process, you might run into the situation where some workers are already done and sit around without being able to help with the remaining work. In situations where not all items take the same time to process, and you don&#39;t want too much inter-thread communication overhead, picking a number somewhere in the middle makes sense. Your aim might be to keep all workers about evenly busy to make best use of the resources available.</p>
 <p>You can also check out this <strong><a href="https://6guts.wordpress.com/2017/03/16/considering-hyperrace-semantics/">blog post on the semantics of hyper and race</a></strong></p>
 <h2 id="method_race"><a class="u" href="#___top" title="go to top of document">method race</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>race</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>64</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism (number of parallel workers).</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>race</span></span><span>(</span><span class="support type raku"><span>Int</span></span><span>(</span><span class="support type raku"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>64</span></span><span>,&nbsp;</span><span class="support type raku"><span>Int</span></span><span>(</span><span class="support type raku"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>4</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism (number of parallel workers).</p>
 <p>Unlike <a href="/routine/hyper"><code>hyper</code></a>, <code>race</code> does not preserve the order of elements.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;([</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>100</span></span><span>]</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>race</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>map</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>+1</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span>);</span></span></div></pre><p>Use race in situations where it is OK to do the processing of items in parallel, and the output order does not matter. See <a href="/routine/hyper"><code>hyper</code></a> for situations where you want items processed in parallel and the output order should be kept relative to the input order.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;([</span><span class="constant numeric raku"><span>1</span></span><span class="keyword operator multi-symbol raku"><span>..</span></span><span class="constant numeric raku"><span>100</span></span><span>]</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>race</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>map</span></span><span>(</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>_</span></span></span><span>&nbsp;</span><span class="constant numeric raku"><span>+1</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>list</span></span><span>);</span></span></div></pre><p>Use race in situations where it is OK to do the processing of items in parallel, and the output order does not matter. See <a href="/routine/hyper"><code>hyper</code></a> for situations where you want items processed in parallel and the output order should be kept relative to the input order.</p>
 <p><strong><a href="https://6guts.wordpress.com/2017/03/16/considering-hyperrace-semantics/">Blog post on the semantics of hyper and race</a></strong></p>
 <p>See <a href="/routine/hyper"><code>hyper</code></a> for an explanation of <code>:$batch</code> and <code>:$degree</code>.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Iterable</code></figcaption>
-  <svg width="685pt" height="404pt"
- viewBox="0.00 0.00 684.94 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg width="814pt" height="404pt"
+ viewBox="0.00 0.00 813.64 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-400 680.94,-400 680.94,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-400 809.643,-400 809.643,4 -4,4"/>
 <!-- Iterable -->
-<g id="node1" class="node">
-<title>Iterable</title>
+<g id="node1" class="node"><title>Iterable</title>
 <g id="a_node1"><a xlink:href="/type/Iterable" xlink:title="Iterable">
-<ellipse fill="none" stroke="#6666ff" cx="411.89" cy="-234" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="411.89" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
+<ellipse fill="none" stroke="#6666ff" cx="381.847" cy="-234" rx="40.0939" ry="18"/>
+<text text-anchor="middle" x="381.847" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
 </a>
 </g>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="370.89" cy="-378" rx="27" ry="18"/>
-<text text-anchor="middle" x="370.89" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="662.847" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="662.847" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="370.89" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="370.89" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="662.847" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="662.847" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge1" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M370.89,-324.3C370.89,-332.02 370.89,-341.29 370.89,-349.89"/>
-<polygon fill="#000000" stroke="#000000" points="367.39,-349.9 370.89,-359.9 374.39,-349.9 367.39,-349.9"/>
-</g>
-<!-- Positional -->
-<g id="node4" class="node">
-<title>Positional</title>
-<g id="a_node4"><a xlink:href="/type/Positional" xlink:title="Positional">
-<ellipse fill="none" stroke="#6666ff" cx="229.89" cy="-234" rx="48.99" ry="18"/>
-<text text-anchor="middle" x="229.89" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
-</a>
-</g>
-</g>
-<!-- Associative -->
-<g id="node5" class="node">
-<title>Associative</title>
-<g id="a_node5"><a xlink:href="/type/Associative" xlink:title="Associative">
-<ellipse fill="none" stroke="#6666ff" cx="107.89" cy="-234" rx="55.49" ry="18"/>
-<text text-anchor="middle" x="107.89" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
-</a>
-</g>
-</g>
-<!-- IO::Path::Parts -->
-<g id="node6" class="node">
-<title>IO::Path::Parts</title>
-<g id="a_node6"><a xlink:href="/type/IO::Path::Parts" xlink:title="IO::Path::Parts">
-<ellipse fill="none" stroke="#000000" cx="68.89" cy="-162" rx="68.79" ry="18"/>
-<text text-anchor="middle" x="68.89" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Parts</text>
-</a>
-</g>
-</g>
-<!-- IO::Path::Parts&#45;&gt;Iterable -->
-<g id="edge17" class="edge">
-<title>IO::Path::Parts&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M119.83,-174.24C134.14,-177.41 145.89,-180 145.89,-180 145.89,-180 362.89,-216 362.89,-216 362.89,-216 366.34,-217.2 371.41,-218.95"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="370.54,-222.36 381.14,-222.33 372.84,-215.75 370.54,-222.36"/>
-</g>
-<!-- IO::Path::Parts&#45;&gt;Any -->
-<g id="edge2" class="edge">
-<title>IO::Path::Parts&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M60.85,-180.06C53.54,-195.55 43.89,-216 43.89,-216 43.89,-216 43.89,-252 43.89,-252 43.89,-252 250.06,-285.42 334.99,-299.18"/>
-<polygon fill="#000000" stroke="#000000" points="334.53,-302.65 344.96,-300.8 335.65,-295.74 334.53,-302.65"/>
-</g>
-<!-- IO::Path::Parts&#45;&gt;Positional -->
-<g id="edge15" class="edge">
-<title>IO::Path::Parts&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M103.04,-177.85C128.52,-188.93 163.41,-204.09 190.15,-215.72"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="189.03,-219.05 199.6,-219.83 191.82,-212.63 189.03,-219.05"/>
-</g>
-<!-- IO::Path::Parts&#45;&gt;Associative -->
-<g id="edge16" class="edge">
-<title>IO::Path::Parts&#45;&gt;Associative</title>
-<path fill="none" stroke="#6666ff" d="M78.33,-179.95C82.93,-188.2 88.56,-198.3 93.67,-207.46"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="90.62,-209.18 98.54,-216.21 96.73,-205.77 90.62,-209.18"/>
-</g>
-<!-- Cool -->
-<g id="node7" class="node">
-<title>Cool</title>
-<g id="a_node7"><a xlink:href="/type/Cool" xlink:title="Cool">
-<ellipse fill="none" stroke="#000000" cx="324.89" cy="-234" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="324.89" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
-</a>
-</g>
-</g>
-<!-- Cool&#45;&gt;Any -->
-<g id="edge3" class="edge">
-<title>Cool&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M335.33,-250.88C341.1,-259.66 348.38,-270.74 354.85,-280.58"/>
-<polygon fill="#000000" stroke="#000000" points="352.08,-282.74 360.5,-289.18 357.93,-278.9 352.08,-282.74"/>
-</g>
-<!-- Map -->
-<g id="node8" class="node">
-<title>Map</title>
-<g id="a_node8"><a xlink:href="/type/Map" xlink:title="Map">
-<ellipse fill="none" stroke="#000000" cx="183.89" cy="-162" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="183.89" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
-</a>
-</g>
-</g>
-<!-- Map&#45;&gt;Iterable -->
-<g id="edge18" class="edge">
-<title>Map&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M206.44,-173.09C214.62,-176.75 221.89,-180 221.89,-180 221.89,-180 362.89,-216 362.89,-216 362.89,-216 366.34,-217.2 371.41,-218.95"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="370.54,-222.36 381.14,-222.33 372.84,-215.75 370.54,-222.36"/>
-</g>
-<!-- Map&#45;&gt;Associative -->
-<g id="edge19" class="edge">
-<title>Map&#45;&gt;Associative</title>
-<path fill="none" stroke="#6666ff" d="M168.15,-177.5C158.04,-186.81 144.7,-199.1 133.14,-209.75"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="130.46,-207.45 125.48,-216.8 135.21,-212.6 130.46,-207.45"/>
-</g>
-<!-- Map&#45;&gt;Cool -->
-<g id="edge4" class="edge">
-<title>Map&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M205.62,-173.78C229.15,-185.47 266.89,-204.21 293.62,-217.47"/>
-<polygon fill="#000000" stroke="#000000" points="292.4,-220.78 302.91,-222.09 295.51,-214.51 292.4,-220.78"/>
-</g>
-<!-- Range -->
-<g id="node9" class="node">
-<title>Range</title>
-<g id="a_node9"><a xlink:href="/type/Range" xlink:title="Range">
-<ellipse fill="none" stroke="#000000" cx="266.89" cy="-162" rx="36.29" ry="18"/>
-<text text-anchor="middle" x="266.89" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
-</a>
-</g>
-</g>
-<!-- Range&#45;&gt;Iterable -->
-<g id="edge21" class="edge">
-<title>Range&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M292.15,-175.19C315.42,-186.43 350.19,-203.21 376.28,-215.81"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="374.93,-219.04 385.46,-220.24 377.97,-212.74 374.93,-219.04"/>
-</g>
-<!-- Range&#45;&gt;Positional -->
-<g id="edge20" class="edge">
-<title>Range&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M258.13,-179.59C253.81,-187.75 248.51,-197.78 243.67,-206.93"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="240.44,-205.57 238.86,-216.04 246.62,-208.84 240.44,-205.57"/>
-</g>
-<!-- Range&#45;&gt;Cool -->
-<g id="edge5" class="edge">
-<title>Range&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M280.05,-178.88C287.65,-188.05 297.34,-199.74 305.76,-209.91"/>
-<polygon fill="#000000" stroke="#000000" points="303.11,-212.19 312.18,-217.66 308.5,-207.73 303.11,-212.19"/>
-</g>
-<!-- PositionalBindFailover -->
-<g id="node10" class="node">
-<title>PositionalBindFailover</title>
-<g id="a_node10"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
-<ellipse fill="none" stroke="#6666ff" cx="557.89" cy="-306" rx="97.48" ry="18"/>
-<text text-anchor="middle" x="557.89" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
-</a>
-</g>
+<g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M662.847,-324.303C662.847,-332.017 662.847,-341.288 662.847,-349.888"/>
+<polygon fill="#000000" stroke="#000000" points="659.347,-349.896 662.847,-359.896 666.347,-349.896 659.347,-349.896"/>
 </g>
 <!-- Sequence -->
-<g id="node11" class="node">
-<title>Sequence</title>
-<g id="a_node11"><a xlink:href="/type/Sequence" xlink:title="Sequence">
-<ellipse fill="none" stroke="#6666ff" cx="557.89" cy="-234" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="557.89" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Sequence</text>
+<g id="node4" class="node"><title>Sequence</title>
+<g id="a_node4"><a xlink:href="/type/Sequence" xlink:title="Sequence">
+<ellipse fill="none" stroke="#6666ff" cx="740.847" cy="-234" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="740.847" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Sequence</text>
 </a>
 </g>
-</g>
-<!-- Sequence&#45;&gt;PositionalBindFailover -->
-<g id="edge22" class="edge">
-<title>Sequence&#45;&gt;PositionalBindFailover</title>
-<path fill="none" stroke="#6666ff" d="M557.89,-252.3C557.89,-260.02 557.89,-269.29 557.89,-277.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="554.39,-277.9 557.89,-287.9 561.39,-277.9 554.39,-277.9"/>
-</g>
-<!-- Seq -->
-<g id="node12" class="node">
-<title>Seq</title>
-<g id="a_node12"><a xlink:href="/type/Seq" xlink:title="Seq">
-<ellipse fill="none" stroke="#000000" cx="419.89" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="419.89" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Seq</text>
-</a>
-</g>
-</g>
-<!-- Seq&#45;&gt;Iterable -->
-<g id="edge23" class="edge">
-<title>Seq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M417.92,-180.3C417.03,-188.02 415.98,-197.29 414.99,-205.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="411.51,-205.56 413.85,-215.9 418.46,-206.36 411.51,-205.56"/>
-</g>
-<!-- Seq&#45;&gt;Cool -->
-<g id="edge6" class="edge">
-<title>Seq&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M402.47,-175.84C388.06,-186.46 367.36,-201.71 350.98,-213.78"/>
-<polygon fill="#000000" stroke="#000000" points="348.83,-211.02 342.85,-219.77 352.98,-216.65 348.83,-211.02"/>
-</g>
-<!-- Seq&#45;&gt;Sequence -->
-<g id="edge24" class="edge">
-<title>Seq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M440.85,-173.63C462.07,-184.4 495.33,-201.26 520.98,-214.27"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="519.54,-217.47 530.05,-218.87 522.71,-211.23 519.54,-217.47"/>
-</g>
-<!-- List -->
-<g id="node13" class="node">
-<title>List</title>
-<g id="a_node13"><a xlink:href="/type/List" xlink:title="List">
-<ellipse fill="none" stroke="#000000" cx="347.89" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="347.89" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
-</a>
-</g>
-</g>
-<!-- List&#45;&gt;Iterable -->
-<g id="edge26" class="edge">
-<title>List&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M361.47,-177.85C369.77,-186.93 380.59,-198.76 390.07,-209.13"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="387.67,-211.69 397,-216.71 392.84,-206.97 387.67,-211.69"/>
-</g>
-<!-- List&#45;&gt;Positional -->
-<g id="edge25" class="edge">
-<title>List&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M328.41,-174.56C310.77,-185.02 284.4,-200.66 263.39,-213.13"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="261.56,-210.14 254.75,-218.26 265.13,-216.16 261.56,-210.14"/>
-</g>
-<!-- List&#45;&gt;Cool -->
-<g id="edge7" class="edge">
-<title>List&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M342.33,-179.95C339.7,-187.94 336.5,-197.67 333.57,-206.6"/>
-<polygon fill="#000000" stroke="#000000" points="330.21,-205.62 330.41,-216.21 336.86,-207.8 330.21,-205.62"/>
 </g>
 <!-- RaceSeq -->
-<g id="node14" class="node">
-<title>RaceSeq</title>
-<g id="a_node14"><a xlink:href="/type/RaceSeq" xlink:title="RaceSeq">
-<ellipse fill="none" stroke="#000000" cx="511.89" cy="-162" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="511.89" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">RaceSeq</text>
+<g id="node5" class="node"><title>RaceSeq</title>
+<g id="a_node5"><a xlink:href="/type/RaceSeq" xlink:title="RaceSeq">
+<ellipse fill="none" stroke="#000000" cx="758.847" cy="-162" rx="46.5926" ry="18"/>
+<text text-anchor="middle" x="758.847" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">RaceSeq</text>
 </a>
 </g>
 </g>
 <!-- RaceSeq&#45;&gt;Iterable -->
-<g id="edge27" class="edge">
-<title>RaceSeq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M490.2,-178.19C475.85,-188.23 456.87,-201.52 441.19,-212.5"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="439.05,-209.72 432.86,-218.32 443.06,-215.45 439.05,-209.72"/>
+<g id="edge14" class="edge"><title>RaceSeq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M723.382,-173.766C712.268,-177.14 702.847,-180 702.847,-180 702.847,-180 431.847,-216 431.847,-216 431.847,-216 428.085,-217.279 422.625,-219.135"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="421.285,-215.894 412.944,-222.427 423.539,-222.522 421.285,-215.894"/>
 </g>
 <!-- RaceSeq&#45;&gt;Any -->
-<g id="edge8" class="edge">
-<title>RaceSeq&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M502.3,-179.74C487.53,-205.52 460.89,-252 460.89,-252 460.89,-252 425.68,-272.73 399.31,-288.27"/>
-<polygon fill="#000000" stroke="#000000" points="397.26,-285.41 390.42,-293.5 400.82,-291.44 397.26,-285.41"/>
+<g id="edge2" class="edge"><title>RaceSeq&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M771.595,-179.479C783.631,-195.037 799.847,-216 799.847,-216 799.847,-216 799.847,-252 799.847,-252 799.847,-252 735.779,-276.785 695.269,-292.457"/>
+<polygon fill="#000000" stroke="#000000" points="693.841,-289.257 685.778,-296.129 696.367,-295.785 693.841,-289.257"/>
 </g>
 <!-- RaceSeq&#45;&gt;Sequence -->
-<g id="edge28" class="edge">
-<title>RaceSeq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M522.8,-179.59C528.27,-187.92 535.03,-198.2 541.14,-207.51"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="538.33,-209.61 546.75,-216.04 544.18,-205.76 538.33,-209.61"/>
+<g id="edge15" class="edge"><title>RaceSeq&#45;&gt;Sequence</title>
+<path fill="none" stroke="#6666ff" d="M754.49,-179.945C752.486,-187.739 750.059,-197.178 747.81,-205.921"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="744.39,-205.168 745.289,-215.725 751.17,-206.911 744.39,-205.168"/>
+</g>
+<!-- Cool -->
+<g id="node6" class="node"><title>Cool</title>
+<g id="a_node6"><a xlink:href="/type/Cool" xlink:title="Cool">
+<ellipse fill="none" stroke="#000000" cx="165.847" cy="-234" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="165.847" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
+</a>
+</g>
+</g>
+<!-- Cool&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>Cool&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M188.391,-245.085C196.574,-248.746 203.847,-252 203.847,-252 203.847,-252 517.736,-288.244 626.37,-300.788"/>
+<polygon fill="#000000" stroke="#000000" points="626.185,-304.29 636.521,-301.96 626.988,-297.336 626.185,-304.29"/>
+</g>
+<!-- Positional -->
+<g id="node7" class="node"><title>Positional</title>
+<g id="a_node7"><a xlink:href="/type/Positional" xlink:title="Positional">
+<ellipse fill="none" stroke="#6666ff" cx="70.8472" cy="-234" rx="48.9926" ry="18"/>
+<text text-anchor="middle" x="70.8472" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
+</a>
+</g>
+</g>
+<!-- List -->
+<g id="node8" class="node"><title>List</title>
+<g id="a_node8"><a xlink:href="/type/List" xlink:title="List">
+<ellipse fill="none" stroke="#000000" cx="93.8472" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="93.8472" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
+</a>
+</g>
+</g>
+<!-- List&#45;&gt;Iterable -->
+<g id="edge17" class="edge"><title>List&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M115.205,-173.085C122.957,-176.746 129.847,-180 129.847,-180 129.847,-180 331.847,-216 331.847,-216 331.847,-216 335.609,-217.279 341.069,-219.135"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="340.156,-222.522 350.75,-222.427 342.409,-215.894 340.156,-222.522"/>
+</g>
+<!-- List&#45;&gt;Cool -->
+<g id="edge4" class="edge"><title>List&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M108.417,-177.166C118.433,-186.903 131.929,-200.024 143.321,-211.099"/>
+<polygon fill="#000000" stroke="#000000" points="141.193,-213.912 150.803,-218.374 146.073,-208.893 141.193,-213.912"/>
+</g>
+<!-- List&#45;&gt;Positional -->
+<g id="edge16" class="edge"><title>List&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M88.2795,-179.945C85.6908,-187.824 82.5497,-197.383 79.6509,-206.206"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="76.3198,-205.132 76.5233,-215.725 82.9701,-207.317 76.3198,-205.132"/>
+</g>
+<!-- Associative -->
+<g id="node9" class="node"><title>Associative</title>
+<g id="a_node9"><a xlink:href="/type/Associative" xlink:title="Associative">
+<ellipse fill="none" stroke="#6666ff" cx="267.847" cy="-234" rx="55.4913" ry="18"/>
+<text text-anchor="middle" x="267.847" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
+</a>
+</g>
+</g>
+<!-- Map -->
+<g id="node10" class="node"><title>Map</title>
+<g id="a_node10"><a xlink:href="/type/Map" xlink:title="Map">
+<ellipse fill="none" stroke="#000000" cx="267.847" cy="-162" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="267.847" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
+</a>
+</g>
+</g>
+<!-- Map&#45;&gt;Iterable -->
+<g id="edge18" class="edge"><title>Map&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M287.704,-175.193C304.964,-185.791 330.272,-201.331 350.302,-213.63"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="348.733,-216.774 359.086,-219.024 352.395,-210.808 348.733,-216.774"/>
+</g>
+<!-- Map&#45;&gt;Cool -->
+<g id="edge5" class="edge"><title>Map&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M249.139,-175.839C233.323,-186.693 210.468,-202.378 192.699,-214.573"/>
+<polygon fill="#000000" stroke="#000000" points="190.702,-211.698 184.437,-220.242 194.663,-217.47 190.702,-211.698"/>
+</g>
+<!-- Map&#45;&gt;Associative -->
+<g id="edge19" class="edge"><title>Map&#45;&gt;Associative</title>
+<path fill="none" stroke="#6666ff" d="M267.847,-180.303C267.847,-188.017 267.847,-197.288 267.847,-205.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="264.347,-205.896 267.847,-215.896 271.347,-205.896 264.347,-205.896"/>
 </g>
 <!-- HyperSeq -->
-<g id="node15" class="node">
-<title>HyperSeq</title>
-<g id="a_node15"><a xlink:href="/type/HyperSeq" xlink:title="HyperSeq">
-<ellipse fill="none" stroke="#000000" cx="626.89" cy="-162" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="626.89" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">HyperSeq</text>
+<g id="node11" class="node"><title>HyperSeq</title>
+<g id="a_node11"><a xlink:href="/type/HyperSeq" xlink:title="HyperSeq">
+<ellipse fill="none" stroke="#000000" cx="643.847" cy="-162" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="643.847" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">HyperSeq</text>
 </a>
 </g>
 </g>
 <!-- HyperSeq&#45;&gt;Iterable -->
-<g id="edge29" class="edge">
-<title>HyperSeq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M590.91,-174.72C552.89,-187.09 493.03,-206.58 453.13,-219.57"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="451.87,-216.3 443.44,-222.73 454.03,-222.96 451.87,-216.3"/>
+<g id="edge20" class="edge"><title>HyperSeq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M603.972,-172.969C542.56,-188.322 431.847,-216 431.847,-216 431.847,-216 428.085,-217.279 422.625,-219.135"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="421.285,-215.894 412.944,-222.427 423.539,-222.522 421.285,-215.894"/>
 </g>
 <!-- HyperSeq&#45;&gt;Any -->
-<g id="edge9" class="edge">
-<title>HyperSeq&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M624.97,-180.16C622.06,-206.02 616.89,-252 616.89,-252 616.89,-252 474.18,-282.75 406.15,-297.4"/>
-<polygon fill="#000000" stroke="#000000" points="405.33,-294 396.29,-299.53 406.81,-300.84 405.33,-294"/>
+<g id="edge6" class="edge"><title>HyperSeq&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M646.139,-180.129C649.377,-204.33 655.326,-248.789 659.182,-277.607"/>
+<polygon fill="#000000" stroke="#000000" points="655.752,-278.363 660.547,-287.811 662.69,-277.435 655.752,-278.363"/>
 </g>
 <!-- HyperSeq&#45;&gt;Sequence -->
-<g id="edge30" class="edge">
-<title>HyperSeq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M610.89,-179.24C602.01,-188.25 590.8,-199.61 580.99,-209.57"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="578.34,-207.27 573.81,-216.85 583.32,-212.19 578.34,-207.27"/>
+<g id="edge21" class="edge"><title>HyperSeq&#45;&gt;Sequence</title>
+<path fill="none" stroke="#6666ff" d="M665.375,-178.535C678.812,-188.232 696.3,-200.852 711.057,-211.502"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="709.223,-214.494 719.38,-217.508 713.319,-208.818 709.223,-214.494"/>
 </g>
-<!-- PseudoStash -->
-<g id="node16" class="node">
-<title>PseudoStash</title>
-<g id="a_node16"><a xlink:href="/type/PseudoStash" xlink:title="PseudoStash">
-<ellipse fill="none" stroke="#000000" cx="93.89" cy="-90" rx="63.09" ry="18"/>
-<text text-anchor="middle" x="93.89" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">PseudoStash</text>
+<!-- PositionalBindFailover -->
+<g id="node12" class="node"><title>PositionalBindFailover</title>
+<g id="a_node12"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
+<ellipse fill="none" stroke="#6666ff" cx="537.847" cy="-234" rx="97.4827" ry="18"/>
+<text text-anchor="middle" x="537.847" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
 </a>
 </g>
 </g>
-<!-- PseudoStash&#45;&gt;Map -->
-<g id="edge10" class="edge">
-<title>PseudoStash&#45;&gt;Map</title>
-<path fill="none" stroke="#000000" d="M114.77,-107.24C127.75,-117.34 144.55,-130.4 158.33,-141.12"/>
-<polygon fill="#000000" stroke="#000000" points="156.42,-144.06 166.46,-147.44 160.72,-138.54 156.42,-144.06"/>
-</g>
-<!-- Hash -->
-<g id="node17" class="node">
-<title>Hash</title>
-<g id="a_node17"><a xlink:href="/type/Hash" xlink:title="Hash">
-<ellipse fill="none" stroke="#000000" cx="205.89" cy="-90" rx="31.4" ry="18"/>
-<text text-anchor="middle" x="205.89" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Hash</text>
+<!-- Seq -->
+<g id="node13" class="node"><title>Seq</title>
+<g id="a_node13"><a xlink:href="/type/Seq" xlink:title="Seq">
+<ellipse fill="none" stroke="#000000" cx="381.847" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="381.847" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Seq</text>
 </a>
 </g>
 </g>
-<!-- Hash&#45;&gt;Map -->
-<g id="edge11" class="edge">
-<title>Hash&#45;&gt;Map</title>
-<path fill="none" stroke="#000000" d="M200.57,-107.95C198.06,-115.94 195,-125.67 192.19,-134.6"/>
-<polygon fill="#000000" stroke="#000000" points="188.83,-133.62 189.17,-144.21 195.51,-135.72 188.83,-133.62"/>
+<!-- Seq&#45;&gt;Iterable -->
+<g id="edge22" class="edge"><title>Seq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M381.847,-180.303C381.847,-188.017 381.847,-197.288 381.847,-205.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="378.347,-205.896 381.847,-215.896 385.347,-205.896 378.347,-205.896"/>
 </g>
-<!-- Slip -->
-<g id="node18" class="node">
-<title>Slip</title>
-<g id="a_node18"><a xlink:href="/type/Slip" xlink:title="Slip">
-<ellipse fill="none" stroke="#000000" cx="325.89" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="325.89" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Slip</text>
+<!-- Seq&#45;&gt;Cool -->
+<g id="edge7" class="edge"><title>Seq&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M357.47,-170.258C308.721,-184.774 203.847,-216 203.847,-216 203.847,-216 201.416,-217.088 197.784,-218.712"/>
+<polygon fill="#000000" stroke="#000000" points="196.09,-215.636 188.391,-222.915 198.949,-222.026 196.09,-215.636"/>
+</g>
+<!-- Seq&#45;&gt;PositionalBindFailover -->
+<g id="edge23" class="edge"><title>Seq&#45;&gt;PositionalBindFailover</title>
+<path fill="none" stroke="#6666ff" d="M403.538,-172.733C426.655,-183.106 463.9,-199.819 493.312,-213.016"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="492.002,-216.264 502.558,-217.165 494.867,-209.878 492.002,-216.264"/>
+</g>
+<!-- Range -->
+<g id="node14" class="node"><title>Range</title>
+<g id="a_node14"><a xlink:href="/type/Range" xlink:title="Range">
+<ellipse fill="none" stroke="#000000" cx="174.847" cy="-162" rx="36.2938" ry="18"/>
+<text text-anchor="middle" x="174.847" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
 </a>
 </g>
 </g>
-<!-- Slip&#45;&gt;List -->
-<g id="edge12" class="edge">
-<title>Slip&#45;&gt;List</title>
-<path fill="none" stroke="#000000" d="M331.22,-107.95C333.73,-115.94 336.79,-125.67 339.6,-134.6"/>
-<polygon fill="#000000" stroke="#000000" points="336.28,-135.72 342.62,-144.21 342.96,-133.62 336.28,-135.72"/>
+<!-- Range&#45;&gt;Iterable -->
+<g id="edge25" class="edge"><title>Range&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M204.01,-172.845C249.413,-188.172 331.847,-216 331.847,-216 331.847,-216 335.609,-217.279 341.069,-219.135"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="340.156,-222.522 350.75,-222.427 342.409,-215.894 340.156,-222.522"/>
+</g>
+<!-- Range&#45;&gt;Cool -->
+<g id="edge8" class="edge"><title>Range&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M172.622,-180.303C171.631,-188.017 170.439,-197.288 169.333,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="165.85,-205.531 168.046,-215.896 172.793,-206.424 165.85,-205.531"/>
+</g>
+<!-- Range&#45;&gt;Positional -->
+<g id="edge24" class="edge"><title>Range&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M153.801,-177.166C138.84,-187.235 118.505,-200.923 101.713,-212.225"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="99.6431,-209.399 93.3016,-217.886 103.552,-215.206 99.6431,-209.399"/>
 </g>
 <!-- Array -->
-<g id="node19" class="node">
-<title>Array</title>
-<g id="a_node19"><a xlink:href="/type/Array" xlink:title="Array">
-<ellipse fill="none" stroke="#000000" cx="402.89" cy="-90" rx="31.7" ry="18"/>
-<text text-anchor="middle" x="402.89" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Array</text>
+<g id="node15" class="node"><title>Array</title>
+<g id="a_node15"><a xlink:href="/type/Array" xlink:title="Array">
+<ellipse fill="none" stroke="#000000" cx="31.8472" cy="-90" rx="31.6951" ry="18"/>
+<text text-anchor="middle" x="31.8472" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Array</text>
 </a>
 </g>
 </g>
 <!-- Array&#45;&gt;List -->
-<g id="edge13" class="edge">
-<title>Array&#45;&gt;List</title>
-<path fill="none" stroke="#000000" d="M390.41,-106.88C383.28,-115.96 374.21,-127.51 366.27,-137.61"/>
-<polygon fill="#000000" stroke="#000000" points="363.37,-135.63 359.95,-145.66 368.88,-139.96 363.37,-135.63"/>
+<g id="edge9" class="edge"><title>Array&#45;&gt;List</title>
+<path fill="none" stroke="#000000" d="M45.607,-106.535C53.9082,-115.908 64.6277,-128.01 73.8529,-138.426"/>
+<polygon fill="#000000" stroke="#000000" points="71.3009,-140.823 80.5514,-145.989 76.5411,-136.182 71.3009,-140.823"/>
+</g>
+<!-- Slip -->
+<g id="node16" class="node"><title>Slip</title>
+<g id="a_node16"><a xlink:href="/type/Slip" xlink:title="Slip">
+<ellipse fill="none" stroke="#000000" cx="108.847" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="108.847" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Slip</text>
+</a>
+</g>
+</g>
+<!-- Slip&#45;&gt;List -->
+<g id="edge10" class="edge"><title>Slip&#45;&gt;List</title>
+<path fill="none" stroke="#000000" d="M105.216,-107.945C103.546,-115.739 101.523,-125.178 99.6498,-133.921"/>
+<polygon fill="#000000" stroke="#000000" points="96.2221,-133.213 97.549,-143.725 103.067,-134.68 96.2221,-133.213"/>
+</g>
+<!-- PseudoStash -->
+<g id="node17" class="node"><title>PseudoStash</title>
+<g id="a_node17"><a xlink:href="/type/PseudoStash" xlink:title="PseudoStash">
+<ellipse fill="none" stroke="#000000" cx="253.847" cy="-90" rx="63.0888" ry="18"/>
+<text text-anchor="middle" x="253.847" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">PseudoStash</text>
+</a>
+</g>
+</g>
+<!-- PseudoStash&#45;&gt;Map -->
+<g id="edge11" class="edge"><title>PseudoStash&#45;&gt;Map</title>
+<path fill="none" stroke="#000000" d="M257.308,-108.303C258.851,-116.017 260.705,-125.288 262.425,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="259.033,-134.776 264.426,-143.896 265.897,-133.403 259.033,-134.776"/>
+</g>
+<!-- Hash -->
+<g id="node18" class="node"><title>Hash</title>
+<g id="a_node18"><a xlink:href="/type/Hash" xlink:title="Hash">
+<ellipse fill="none" stroke="#000000" cx="365.847" cy="-90" rx="31.3957" ry="18"/>
+<text text-anchor="middle" x="365.847" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Hash</text>
+</a>
+</g>
+</g>
+<!-- Hash&#45;&gt;Map -->
+<g id="edge12" class="edge"><title>Hash&#45;&gt;Map</title>
+<path fill="none" stroke="#000000" d="M346.952,-104.497C331.985,-115.187 310.899,-130.248 294.261,-142.133"/>
+<polygon fill="#000000" stroke="#000000" points="292.125,-139.358 286.022,-148.018 296.194,-145.054 292.125,-139.358"/>
 </g>
 <!-- Stash -->
-<g id="node20" class="node">
-<title>Stash</title>
-<g id="a_node20"><a xlink:href="/type/Stash" xlink:title="Stash">
-<ellipse fill="none" stroke="#000000" cx="205.89" cy="-18" rx="33.29" ry="18"/>
-<text text-anchor="middle" x="205.89" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Stash</text>
+<g id="node19" class="node"><title>Stash</title>
+<g id="a_node19"><a xlink:href="/type/Stash" xlink:title="Stash">
+<ellipse fill="none" stroke="#000000" cx="365.847" cy="-18" rx="33.2948" ry="18"/>
+<text text-anchor="middle" x="365.847" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Stash</text>
 </a>
 </g>
 </g>
 <!-- Stash&#45;&gt;Hash -->
-<g id="edge14" class="edge">
-<title>Stash&#45;&gt;Hash</title>
-<path fill="none" stroke="#000000" d="M205.89,-36.3C205.89,-44.02 205.89,-53.29 205.89,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="202.39,-61.9 205.89,-71.9 209.39,-61.9 202.39,-61.9"/>
+<g id="edge13" class="edge"><title>Stash&#45;&gt;Hash</title>
+<path fill="none" stroke="#000000" d="M365.847,-36.3034C365.847,-44.0173 365.847,-53.2875 365.847,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="362.347,-61.8956 365.847,-71.8957 369.347,-61.8957 362.347,-61.8956"/>
 </g>
 </g>
 </svg>
@@ -507,7 +424,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Iterable.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Iterable.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/Iterable.pod6">https://github.com/Raku/doc/tree/master/doc/Type/Iterable.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

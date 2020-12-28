@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Encoding.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/Encoding.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -82,18 +82,18 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Encoding</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The <code>Encoding</code> role is implemented by classes that provide a character encoding, such as ASCII or UTF-8. Besides being used by the built-in character encodings, it may also be implemented by users to provide new encodings. Instances of objects doing this role are typically obtained using <a href="/type/Encoding::Registry">Encoding::Registry</a>. For a list of supported encodings, see <a href="/type/IO::Handle#method_encoding">IO::Handle</a>.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>role</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>Encoding</span></span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p>The <code>Encoding</code> role is implemented by classes that provide a character encoding, such as ASCII or UTF-8. Besides being used by the built-in character encodings, it may also be implemented by users to provide new encodings. Instances of objects doing this role are typically obtained using <a href="/type/Encoding::Registry">Encoding::Registry</a>. For a list of supported encodings, see <a href="/type/IO::Handle#method_encoding">IO::Handle</a>.</p>
 <p>All methods provided by this role are stubs; they should be implemented by consumers of the role.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_name"><a class="u" href="#___top" title="go to top of document">method name</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>name</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>)</span></span></div></pre><p>Abstract method that would return the primary name of the encoding.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>name</span></span><span>(</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Str</span></span><span>)</span></span></div></pre><p>Abstract method that would return the primary name of the encoding.</p>
 <h2 id="method_alternative-names"><a class="u" href="#___top" title="go to top of document">method alternative-names</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>alternative-names</span></span><span>()</span></span></div></pre><p>Abstract methods that should get a list of alternative names for the encoding.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>alternative-names</span></span><span>()</span></span></div></pre><p>Abstract methods that should get a list of alternative names for the encoding.</p>
 <h2 id="method_decoder"><a class="u" href="#___top" title="go to top of document">method decoder</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>decoder</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>options</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Encoding</span></span><span>::</span><span class="routine name perl6fe"><span>Decoder</span></span><span>)</span></span></div></pre><p>Should get a character decoder instance for this encoding, configured with the provided options. Options vary by encoding. The built-in encodings all support <code>translate-nl</code>, which if <code>True</code> will translate <code>\r\n</code> into <code>\n</code> while decoding.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>decoder</span></span><span>(</span><span class="keyword operator generic raku"><span>*</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>%</span></span><span class="variable other identifier raku"><span>options</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>Encoding</span></span><span>::</span><span class="routine name raku"><span>Decoder</span></span><span>)</span></span></div></pre><p>Should get a character decoder instance for this encoding, configured with the provided options. Options vary by encoding. The built-in encodings all support <code>translate-nl</code>, which if <code>True</code> will translate <code>\r\n</code> into <code>\n</code> while decoding.</p>
 <h2 id="method_encoder"><a class="u" href="#___top" title="go to top of document">method encoder</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>encoder</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>options</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Encoding</span></span><span>::</span><span class="routine name perl6fe"><span>Encoder</span></span><span>)</span></span></div></pre><p>Gets a character encoder instance for this encoding, configured with the provided options. Options vary by encoding. The built-in encodings all support both <code>replacement</code> (either a <code>Str</code> replacement sequence or <code>True</code> to use a default replacement sequence for unencodable characters) and <code>translate-nl</code> (when set to <code>True</code>, turns <code>\n</code> into <code>\r\n</code> if the current platform is Windows).</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>encoder</span></span><span>(</span><span class="keyword operator generic raku"><span>*</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>%</span></span><span class="variable other identifier raku"><span>options</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>Encoding</span></span><span>::</span><span class="routine name raku"><span>Encoder</span></span><span>)</span></span></div></pre><p>Gets a character encoder instance for this encoding, configured with the provided options. Options vary by encoding. The built-in encodings all support both <code>replacement</code> (either a <code>Str</code> replacement sequence or <code>True</code> to use a default replacement sequence for unencodable characters) and <code>translate-nl</code> (when set to <code>True</code>, turns <code>\n</code> into <code>\r\n</code> if the current platform is Windows).</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Encoding</code></figcaption>
@@ -101,45 +101,40 @@
  viewBox="0.00 0.00 102.89 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-184 98.89,-184 98.89,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 98.8916,-184 98.8916,4 -4,4"/>
 <!-- Encoding -->
-<g id="node1" class="node">
-<title>Encoding</title>
+<g id="node1" class="node"><title>Encoding</title>
 <g id="a_node1"><a xlink:href="/type/Encoding" xlink:title="Encoding">
-<ellipse fill="none" stroke="#000000" cx="47.45" cy="-18" rx="47.39" ry="18"/>
-<text text-anchor="middle" x="47.45" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Encoding</text>
+<ellipse fill="none" stroke="#000000" cx="47.4458" cy="-18" rx="47.3916" ry="18"/>
+<text text-anchor="middle" x="47.4458" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Encoding</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="47.45" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="47.45" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="47.4458" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="47.4458" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Encoding&#45;&gt;Any -->
-<g id="edge1" class="edge">
-<title>Encoding&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M47.45,-36.3C47.45,-44.02 47.45,-53.29 47.45,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="43.95,-61.9 47.45,-71.9 50.95,-61.9 43.95,-61.9"/>
+<g id="edge1" class="edge"><title>Encoding&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M47.4458,-36.3034C47.4458,-44.0173 47.4458,-53.2875 47.4458,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="43.9459,-61.8956 47.4458,-71.8957 50.9459,-61.8957 43.9459,-61.8956"/>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="47.45" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="47.45" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="47.4458" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="47.4458" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge2" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M47.45,-108.3C47.45,-116.02 47.45,-125.29 47.45,-133.89"/>
-<polygon fill="#000000" stroke="#000000" points="43.95,-133.9 47.45,-143.9 50.95,-133.9 43.95,-133.9"/>
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M47.4458,-108.303C47.4458,-116.017 47.4458,-125.288 47.4458,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="43.9459,-133.896 47.4458,-143.896 50.9459,-133.896 43.9459,-133.896"/>
 </g>
 </g>
 </svg>
@@ -161,7 +156,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Encoding.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Encoding.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/Encoding.pod6">https://github.com/Raku/doc/tree/master/doc/Type/Encoding.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

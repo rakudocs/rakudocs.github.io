@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/X/Pod.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/X/Pod.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -77,166 +77,15 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>X::Pod</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Common role for Pod related errors.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>role</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>X::Pod</span></span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p>Common role for Pod related errors.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>X::Pod</code></figcaption>
-  <svg width="628pt" height="404pt"
- viewBox="0.00 0.00 627.92 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
-<title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-400 623.92,-400 623.92,4 -4,4"/>
-<!-- X::Pod -->
-<g id="node1" class="node">
-<title>X::Pod</title>
-<g id="a_node1"><a xlink:href="/type/X::Pod" xlink:title="X::Pod">
-<ellipse fill="none" stroke="#6666ff" cx="266.24" cy="-90" rx="37.09" ry="18"/>
-<text text-anchor="middle" x="266.24" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Pod</text>
-</a>
-</g>
-</g>
-<!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
-<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="431.24" cy="-378" rx="27" ry="18"/>
-<text text-anchor="middle" x="431.24" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
-</a>
-</g>
-</g>
-<!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
-<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="431.24" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="431.24" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
-</a>
-</g>
-</g>
-<!-- Any&#45;&gt;Mu -->
-<g id="edge1" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M431.24,-324.3C431.24,-332.02 431.24,-341.29 431.24,-349.89"/>
-<polygon fill="#000000" stroke="#000000" points="427.74,-349.9 431.24,-359.9 434.74,-349.9 427.74,-349.9"/>
-</g>
-<!-- Exception -->
-<g id="node4" class="node">
-<title>Exception</title>
-<g id="a_node4"><a xlink:href="/type/Exception" xlink:title="Exception">
-<ellipse fill="none" stroke="#000000" cx="431.24" cy="-234" rx="49.29" ry="18"/>
-<text text-anchor="middle" x="431.24" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
-</a>
-</g>
-</g>
-<!-- Exception&#45;&gt;Any -->
-<g id="edge2" class="edge">
-<title>Exception&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M431.24,-252.3C431.24,-260.02 431.24,-269.29 431.24,-277.89"/>
-<polygon fill="#000000" stroke="#000000" points="427.74,-277.9 431.24,-287.9 434.74,-277.9 427.74,-277.9"/>
-</g>
-<!-- X::Comp -->
-<g id="node5" class="node">
-<title>X::Comp</title>
-<g id="a_node5"><a xlink:href="/type/X::Comp" xlink:title="X::Comp">
-<ellipse fill="none" stroke="#6666ff" cx="358.24" cy="-162" rx="44.69" ry="18"/>
-<text text-anchor="middle" x="358.24" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Comp</text>
-</a>
-</g>
-</g>
-<!-- X::Comp&#45;&gt;Exception -->
-<g id="edge3" class="edge">
-<title>X::Comp&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M374.8,-178.88C384.35,-188.04 396.52,-199.71 407.11,-209.87"/>
-<polygon fill="#000000" stroke="#000000" points="404.84,-212.54 414.48,-216.94 409.69,-207.49 404.84,-212.54"/>
-</g>
-<!-- X::Syntax -->
-<g id="node6" class="node">
-<title>X::Syntax</title>
-<g id="a_node6"><a xlink:href="/type/X::Syntax" xlink:title="X::Syntax">
-<ellipse fill="none" stroke="#6666ff" cx="385.24" cy="-90" rx="48.19" ry="18"/>
-<text text-anchor="middle" x="385.24" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Syntax</text>
-</a>
-</g>
-</g>
-<!-- X::Syntax&#45;&gt;Exception -->
-<g id="edge4" class="edge">
-<title>X::Syntax&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M393.78,-107.77C401.69,-123.3 412.24,-144 412.24,-144 412.24,-144 419.89,-179.83 425.48,-206.03"/>
-<polygon fill="#000000" stroke="#000000" points="422.06,-206.79 427.57,-215.84 428.91,-205.33 422.06,-206.79"/>
-</g>
-<!-- X::Syntax&#45;&gt;X::Comp -->
-<g id="edge8" class="edge">
-<title>X::Syntax&#45;&gt;X::Comp</title>
-<path fill="none" stroke="#6666ff" d="M378.7,-107.95C375.66,-115.82 371.97,-125.38 368.57,-134.21"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="365.23,-133.14 364.9,-143.72 371.76,-135.65 365.23,-133.14"/>
-</g>
-<!-- X::Syntax::Pod::BeginWithoutIdentifier -->
-<g id="node7" class="node">
-<title>X::Syntax::Pod::BeginWithoutIdentifier</title>
-<g id="a_node7"><a xlink:href="/type/X::Syntax::Pod::BeginWithoutIdentifier" xlink:title="X::Syntax::Pod::BeginWithoutIdentifier">
-<ellipse fill="none" stroke="#000000" cx="159.24" cy="-18" rx="159.47" ry="18"/>
-<text text-anchor="middle" x="159.24" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Syntax::Pod::BeginWithoutIdentifier</text>
-</a>
-</g>
-</g>
-<!-- X::Syntax::Pod::BeginWithoutIdentifier&#45;&gt;X::Pod -->
-<g id="edge10" class="edge">
-<title>X::Syntax::Pod::BeginWithoutIdentifier&#45;&gt;X::Pod</title>
-<path fill="none" stroke="#6666ff" d="M184.87,-35.77C200.41,-45.94 220.31,-58.96 236.54,-69.57"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="234.84,-72.65 245.13,-75.19 238.68,-66.79 234.84,-72.65"/>
-</g>
-<!-- X::Syntax::Pod::BeginWithoutIdentifier&#45;&gt;Exception -->
-<g id="edge5" class="edge">
-<title>X::Syntax::Pod::BeginWithoutIdentifier&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M171,-36.16C188.72,-62.02 220.24,-108 220.24,-108 220.24,-108 304.24,-180 304.24,-180 304.24,-180 353.11,-200.4 390.22,-215.88"/>
-<polygon fill="#000000" stroke="#000000" points="389.27,-219.28 399.84,-219.9 391.96,-212.82 389.27,-219.28"/>
-</g>
-<!-- X::Syntax::Pod::BeginWithoutIdentifier&#45;&gt;X::Syntax -->
-<g id="edge9" class="edge">
-<title>X::Syntax::Pod::BeginWithoutIdentifier&#45;&gt;X::Syntax</title>
-<path fill="none" stroke="#6666ff" d="M211.08,-35.06C249.96,-47.1 302.66,-63.42 339.88,-74.95"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="338.87,-78.3 349.46,-77.92 340.94,-71.62 338.87,-78.3"/>
-</g>
-<!-- X::Syntax::Pod::BeginWithoutEnd -->
-<g id="node8" class="node">
-<title>X::Syntax::Pod::BeginWithoutEnd</title>
-<g id="a_node8"><a xlink:href="/type/X::Syntax::Pod::BeginWithoutEnd" xlink:title="X::Syntax::Pod::BeginWithoutEnd">
-<ellipse fill="none" stroke="#000000" cx="478.24" cy="-18" rx="141.88" ry="18"/>
-<text text-anchor="middle" x="478.24" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Syntax::Pod::BeginWithoutEnd</text>
-</a>
-</g>
-</g>
-<!-- X::Syntax::Pod::BeginWithoutEnd&#45;&gt;X::Pod -->
-<g id="edge12" class="edge">
-<title>X::Syntax::Pod::BeginWithoutEnd&#45;&gt;X::Pod</title>
-<path fill="none" stroke="#6666ff" d="M429.86,-34.97C392.38,-47.35 341.08,-64.29 305.98,-75.88"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="304.48,-72.69 296.08,-79.15 306.68,-79.33 304.48,-72.69"/>
-</g>
-<!-- X::Syntax::Pod::BeginWithoutEnd&#45;&gt;Exception -->
-<g id="edge6" class="edge">
-<title>X::Syntax::Pod::BeginWithoutEnd&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M470.59,-36.15C458.93,-73.17 439.4,-160.82 432.56,-205.61"/>
-<polygon fill="#000000" stroke="#000000" points="429.06,-205.38 431.14,-215.77 435.99,-206.35 429.06,-205.38"/>
-</g>
-<!-- X::Syntax::Pod::BeginWithoutEnd&#45;&gt;Exception -->
-<g id="edge7" class="edge">
-<title>X::Syntax::Pod::BeginWithoutEnd&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M478.35,-36.15C473.73,-73.34 454.6,-161.63 441.77,-206.23"/>
-<polygon fill="#000000" stroke="#000000" points="438.34,-205.48 438.81,-216.06 445.04,-207.49 438.34,-205.48"/>
-</g>
-<!-- X::Syntax::Pod::BeginWithoutEnd&#45;&gt;X::Syntax -->
-<g id="edge11" class="edge">
-<title>X::Syntax::Pod::BeginWithoutEnd&#45;&gt;X::Syntax</title>
-<path fill="none" stroke="#6666ff" d="M455.72,-35.95C443.08,-45.46 427.18,-57.43 413.68,-67.59"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="411.52,-64.83 405.64,-73.64 415.73,-70.43 411.52,-64.83"/>
-</g>
-</g>
-</svg>
-
+  <figcaption>Type relations for <code>404</code></figcaption>
+  <svg></svg>
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-X%3A%3APod.svg"
+      href="/images/type-graph-404.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >
@@ -250,7 +99,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/X/Pod.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/X/Pod.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/X/Pod.pod6">https://github.com/Raku/doc/tree/master/doc/Type/X/Pod.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

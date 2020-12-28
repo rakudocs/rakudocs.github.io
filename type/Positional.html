@@ -53,7 +53,7 @@
     <div id="content" class="pretty-box yellow content_fragment">
 
         <div align="right" style="display:;">
-            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/Documentable/edit/master/docs/Type/Positional.pod6'">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/tree/master/doc/Type/Positional.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -85,366 +85,284 @@
 </nav>
 
         <div class="pod-body ">
-            <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Positional</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Role for objects which support indexing them using <code>postcircumfix:«[ ]»</code> (usually list-like objects). Example types with Positional role include <a href="/type/List">List</a>, <a href="/type/Array">Array</a>, <a href="/type/Range">Range</a>, and <a href="/type/Buf">Buf</a>.</p>
+            <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>role</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>Positional</span></span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p>Role for objects which support indexing them using <code>postcircumfix:«[ ]»</code> (usually list-like objects). Example types with Positional role include <a href="/type/List">List</a>, <a href="/type/Array">Array</a>, <a href="/type/Range">Range</a>, and <a href="/type/Buf">Buf</a>.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_of"><a class="u" href="#___top" title="go to top of document">method of</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>of</span></span><span>()</span></span></div></pre><p>Returns the type constraint for elements of the positional container. Defaults to <a href="/type/Mu">Mu</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>of</span></span><span>()</span></span></div></pre><p>Returns the type constraint for elements of the positional container. Defaults to <a href="/type/Mu">Mu</a>.</p>
 <h1 id="Methods_that_should_be_provided"><a class="u" href="#___top" title="go to top of document">Methods that should be provided</a></h1>
 <h2 id="method_elems"><a class="u" href="#___top" title="go to top of document">method elems</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>elems</span></span><span>()</span></span></div></pre><p>Should return the number of available elements in the instantiated object.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>elems</span></span><span>()</span></span></div></pre><p>Should return the number of available elements in the instantiated object.</p>
 <h2 id="method_AT-POS"><a class="u" href="#___top" title="go to top of document">method AT-POS</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>AT-POS</span></span><span>(\</span><span class="routine name perl6fe"><span>position</span></span><span>)</span></span></div></pre><p>Should return the value / container at the given position.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>AT-POS</span></span><span>(\</span><span class="routine name raku"><span>position</span></span><span>)</span></span></div></pre><p>Should return the value / container at the given position.</p>
 <h2 id="method_EXISTS-POS"><a class="u" href="#___top" title="go to top of document">method EXISTS-POS</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-POS</span></span><span>(\</span><span class="routine name perl6fe"><span>position</span></span><span>)</span></span></div></pre><p>Should return a <code>Bool</code> indicating whether the given position actually has a value.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>EXISTS-POS</span></span><span>(\</span><span class="routine name raku"><span>position</span></span><span>)</span></span></div></pre><p>Should return a <code>Bool</code> indicating whether the given position actually has a value.</p>
 <h2 id="method_STORE"><a class="u" href="#___top" title="go to top of document">method STORE</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>STORE</span></span><span>(\</span><span class="routine name perl6fe"><span>values</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>INITIALIZE</span></span></span><span>)</span></span></div></pre><p>This method should only be supplied if you want to support the:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Foo</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,</span><span class="constant numeric perl6fe"><span>2</span></span><span>,</span><span class="constant numeric perl6fe"><span>3</span></span><span>;</span></span></div></pre><p>syntax for binding your implementation of the <code>Positional</code> role.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>STORE</span></span><span>(\</span><span class="routine name raku"><span>values</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>INITIALIZE</span></span></span><span>)</span></span></div></pre><p>This method should only be supplied if you want to support the:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>@</span></span><span class="variable other identifier raku"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints raku"><span>is</span></span><span>&nbsp;</span><span class="routine name raku"><span>Foo</span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>1</span></span><span>,</span><span class="constant numeric raku"><span>2</span></span><span>,</span><span class="constant numeric raku"><span>3</span></span><span>;</span></span></div></pre><p>syntax for binding your implementation of the <code>Positional</code> role.</p>
 <p>Should accept the values to (re-)initialize the object with. The optional named parameter will contain a <code>True</code> value when the method is called on the object for the first time. Should return the invocant.</p>
 <h1 id="See_also"><a class="u" href="#___top" title="go to top of document">See also</a></h1>
 <p>See <a href="/language/subscripts#Methods_to_implement_for_positional_subscripting">Methods to implement for positional subscripting</a> for information about additional methods that can be implemented for the <code>Positional</code> role.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>Positional</code></figcaption>
-  <svg width="860pt" height="332pt"
- viewBox="0.00 0.00 860.25 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg width="669pt" height="332pt"
+ viewBox="0.00 0.00 669.09 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-328 856.25,-328 856.25,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 665.095,-328 665.095,4 -4,4"/>
 <!-- Positional -->
-<g id="node1" class="node">
-<title>Positional</title>
+<g id="node1" class="node"><title>Positional</title>
 <g id="a_node1"><a xlink:href="/type/Positional" xlink:title="Positional">
-<ellipse fill="none" stroke="#6666ff" cx="360" cy="-162" rx="48.99" ry="18"/>
-<text text-anchor="middle" x="360" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
+<ellipse fill="none" stroke="#6666ff" cx="329.247" cy="-162" rx="48.9926" ry="18"/>
+<text text-anchor="middle" x="329.247" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
 </a>
 </g>
 </g>
 <!-- Mu -->
-<g id="node2" class="node">
-<title>Mu</title>
+<g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="351" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="351" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="523.247" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="523.247" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node3" class="node">
-<title>Any</title>
+<g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="351" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="351" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="523.247" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="523.247" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge1" class="edge">
-<title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M351,-252.3C351,-260.02 351,-269.29 351,-277.89"/>
-<polygon fill="#000000" stroke="#000000" points="347.5,-277.9 351,-287.9 354.5,-277.9 347.5,-277.9"/>
-</g>
-<!-- Associative -->
-<g id="node4" class="node">
-<title>Associative</title>
-<g id="a_node4"><a xlink:href="/type/Associative" xlink:title="Associative">
-<ellipse fill="none" stroke="#6666ff" cx="64" cy="-162" rx="55.49" ry="18"/>
-<text text-anchor="middle" x="64" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
-</a>
-</g>
-</g>
-<!-- Iterable -->
-<g id="node5" class="node">
-<title>Iterable</title>
-<g id="a_node5"><a xlink:href="/type/Iterable" xlink:title="Iterable">
-<ellipse fill="none" stroke="#6666ff" cx="178" cy="-162" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="178" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
-</a>
-</g>
-</g>
-<!-- IO::Path::Parts -->
-<g id="node6" class="node">
-<title>IO::Path::Parts</title>
-<g id="a_node6"><a xlink:href="/type/IO::Path::Parts" xlink:title="IO::Path::Parts">
-<ellipse fill="none" stroke="#000000" cx="75" cy="-90" rx="68.79" ry="18"/>
-<text text-anchor="middle" x="75" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Parts</text>
-</a>
-</g>
-</g>
-<!-- IO::Path::Parts&#45;&gt;Positional -->
-<g id="edge14" class="edge">
-<title>IO::Path::Parts&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M124.75,-102.57C191.84,-118.16 303,-144 303,-144 303,-144 307.36,-145.3 313.67,-147.18"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="312.67,-150.54 323.26,-150.04 314.67,-143.83 312.67,-150.54"/>
-</g>
-<!-- IO::Path::Parts&#45;&gt;Any -->
-<g id="edge2" class="edge">
-<title>IO::Path::Parts&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M52.09,-107.19C30.03,-122.78 0,-144 0,-144 0,-144 0,-180 0,-180 0,-180 225.36,-214.03 314.93,-227.55"/>
-<polygon fill="#000000" stroke="#000000" points="314.49,-231.03 324.9,-229.06 315.54,-224.11 314.49,-231.03"/>
-</g>
-<!-- IO::Path::Parts&#45;&gt;Associative -->
-<g id="edge15" class="edge">
-<title>IO::Path::Parts&#45;&gt;Associative</title>
-<path fill="none" stroke="#6666ff" d="M72.28,-108.3C71.07,-116.02 69.61,-125.29 68.26,-133.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="64.78,-133.47 66.69,-143.9 71.7,-134.56 64.78,-133.47"/>
-</g>
-<!-- IO::Path::Parts&#45;&gt;Iterable -->
-<g id="edge16" class="edge">
-<title>IO::Path::Parts&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M98.63,-107.06C113.36,-117.07 132.45,-130.04 148.22,-140.76"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="146.34,-143.72 156.58,-146.44 150.28,-137.93 146.34,-143.72"/>
-</g>
-<!-- Cool -->
-<g id="node7" class="node">
-<title>Cool</title>
-<g id="a_node7"><a xlink:href="/type/Cool" xlink:title="Cool">
-<ellipse fill="none" stroke="#000000" cx="265" cy="-162" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="265" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
-</a>
-</g>
-</g>
-<!-- Cool&#45;&gt;Any -->
-<g id="edge3" class="edge">
-<title>Cool&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M281.99,-176.83C294.76,-187.22 312.42,-201.6 326.69,-213.21"/>
-<polygon fill="#000000" stroke="#000000" points="324.66,-216.08 334.63,-219.67 329.08,-210.65 324.66,-216.08"/>
-</g>
-<!-- Range -->
-<g id="node8" class="node">
-<title>Range</title>
-<g id="a_node8"><a xlink:href="/type/Range" xlink:title="Range">
-<ellipse fill="none" stroke="#000000" cx="233" cy="-90" rx="36.29" ry="18"/>
-<text text-anchor="middle" x="233" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
-</a>
-</g>
-</g>
-<!-- Range&#45;&gt;Positional -->
-<g id="edge17" class="edge">
-<title>Range&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M256.29,-103.84C275.47,-114.41 302.95,-129.55 324.8,-141.6"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="323.34,-144.79 333.79,-146.55 326.72,-138.66 323.34,-144.79"/>
-</g>
-<!-- Range&#45;&gt;Iterable -->
-<g id="edge18" class="edge">
-<title>Range&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M220.24,-107.24C213.3,-116.07 204.58,-127.17 196.87,-136.99"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="194.11,-134.83 190.69,-144.85 199.62,-139.15 194.11,-134.83"/>
-</g>
-<!-- Range&#45;&gt;Cool -->
-<g id="edge4" class="edge">
-<title>Range&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M240.75,-107.95C244.44,-116.03 248.94,-125.88 253.06,-134.89"/>
-<polygon fill="#000000" stroke="#000000" points="249.98,-136.57 257.33,-144.21 256.35,-133.66 249.98,-136.57"/>
+<g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M523.247,-252.303C523.247,-260.017 523.247,-269.288 523.247,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="519.748,-277.896 523.247,-287.896 526.748,-277.896 519.748,-277.896"/>
 </g>
 <!-- Stringy -->
-<g id="node9" class="node">
-<title>Stringy</title>
-<g id="a_node9"><a xlink:href="/type/Stringy" xlink:title="Stringy">
-<ellipse fill="none" stroke="#6666ff" cx="506" cy="-162" rx="38.19" ry="18"/>
-<text text-anchor="middle" x="506" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
+<g id="node4" class="node"><title>Stringy</title>
+<g id="a_node4"><a xlink:href="/type/Stringy" xlink:title="Stringy">
+<ellipse fill="none" stroke="#6666ff" cx="224.247" cy="-162" rx="38.1938" ry="18"/>
+<text text-anchor="middle" x="224.247" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
 </a>
 </g>
-</g>
-<!-- Blob -->
-<g id="node10" class="node">
-<title>Blob</title>
-<g id="a_node10"><a xlink:href="/type/Blob" xlink:title="Blob">
-<ellipse fill="none" stroke="#6666ff" cx="494" cy="-90" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="494" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Blob</text>
-</a>
-</g>
-</g>
-<!-- Blob&#45;&gt;Positional -->
-<g id="edge19" class="edge">
-<title>Blob&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M472.77,-102.09C452.22,-112.83 420.67,-129.31 396.16,-142.11"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="394.4,-139.08 387.15,-146.82 397.64,-145.29 394.4,-139.08"/>
-</g>
-<!-- Blob&#45;&gt;Stringy -->
-<g id="edge20" class="edge">
-<title>Blob&#45;&gt;Stringy</title>
-<path fill="none" stroke="#6666ff" d="M496.9,-107.95C498.23,-115.65 499.82,-124.97 501.31,-133.64"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="497.9,-134.46 503.04,-143.72 504.8,-133.28 497.9,-134.46"/>
-</g>
-<!-- List -->
-<g id="node11" class="node">
-<title>List</title>
-<g id="a_node11"><a xlink:href="/type/List" xlink:title="List">
-<ellipse fill="none" stroke="#000000" cx="314" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="314" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
-</a>
-</g>
-</g>
-<!-- List&#45;&gt;Positional -->
-<g id="edge21" class="edge">
-<title>List&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M324.44,-106.88C330.04,-115.41 337.07,-126.11 343.41,-135.75"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="340.54,-137.77 348.96,-144.2 346.39,-133.92 340.54,-137.77"/>
-</g>
-<!-- List&#45;&gt;Iterable -->
-<g id="edge22" class="edge">
-<title>List&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M293.34,-101.63C271.9,-112.67 237.99,-130.12 212.48,-143.25"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="210.79,-140.19 203.5,-147.88 213.99,-146.41 210.79,-140.19"/>
-</g>
-<!-- List&#45;&gt;Cool -->
-<g id="edge5" class="edge">
-<title>List&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M303.13,-106.54C296.93,-115.38 289.04,-126.66 282.04,-136.66"/>
-<polygon fill="#000000" stroke="#000000" points="279.05,-134.82 276.18,-145.02 284.79,-138.84 279.05,-134.82"/>
 </g>
 <!-- Uni -->
-<g id="node12" class="node">
-<title>Uni</title>
-<g id="a_node12"><a xlink:href="/type/Uni" xlink:title="Uni">
-<ellipse fill="none" stroke="#000000" cx="574" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="574" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Uni</text>
+<g id="node5" class="node"><title>Uni</title>
+<g id="a_node5"><a xlink:href="/type/Uni" xlink:title="Uni">
+<ellipse fill="none" stroke="#000000" cx="201.247" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="201.247" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Uni</text>
 </a>
 </g>
 </g>
 <!-- Uni&#45;&gt;Positional -->
-<g id="edge23" class="edge">
-<title>Uni&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M551.52,-100.1C541.54,-104.14 532,-108 532,-108 532,-108 457.26,-131.03 406.32,-146.73"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="405,-143.47 396.48,-149.76 407.06,-150.16 405,-143.47"/>
+<g id="edge13" class="edge"><title>Uni&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M221.529,-102.092C240.946,-112.71 270.646,-128.952 293.946,-141.694"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="292.394,-144.835 302.847,-146.562 295.753,-138.693 292.394,-144.835"/>
 </g>
 <!-- Uni&#45;&gt;Any -->
-<g id="edge6" class="edge">
-<title>Uni&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M569.95,-108.16C563.85,-134.02 553,-180 553,-180 553,-180 443.28,-208.79 385.57,-223.93"/>
-<polygon fill="#000000" stroke="#000000" points="384.55,-220.58 375.77,-226.5 386.33,-227.35 384.55,-220.58"/>
+<g id="edge2" class="edge"><title>Uni&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M193.785,-107.479C186.74,-123.037 177.247,-144 177.247,-144 177.247,-144 177.247,-180 177.247,-180 177.247,-180 398.427,-213.88 487.107,-227.464"/>
+<polygon fill="#000000" stroke="#000000" points="486.826,-230.962 497.241,-229.016 487.886,-224.043 486.826,-230.962"/>
 </g>
 <!-- Uni&#45;&gt;Stringy -->
-<g id="edge24" class="edge">
-<title>Uni&#45;&gt;Stringy</title>
-<path fill="none" stroke="#6666ff" d="M559.91,-105.5C550.89,-114.78 539,-127.03 528.67,-137.66"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="525.95,-135.44 521.49,-145.05 530.97,-140.32 525.95,-135.44"/>
+<g id="edge14" class="edge"><title>Uni&#45;&gt;Stringy</title>
+<path fill="none" stroke="#6666ff" d="M206.815,-107.945C209.404,-115.824 212.545,-125.383 215.444,-134.206"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="212.125,-135.317 218.571,-143.725 218.775,-133.132 212.125,-135.317"/>
 </g>
-<!-- Slip -->
-<g id="node13" class="node">
-<title>Slip</title>
-<g id="a_node13"><a xlink:href="/type/Slip" xlink:title="Slip">
-<ellipse fill="none" stroke="#000000" cx="247" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="247" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Slip</text>
+<!-- Cool -->
+<g id="node6" class="node"><title>Cool</title>
+<g id="a_node6"><a xlink:href="/type/Cool" xlink:title="Cool">
+<ellipse fill="none" stroke="#000000" cx="523.247" cy="-162" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="523.247" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
 </a>
 </g>
 </g>
-<!-- Slip&#45;&gt;List -->
-<g id="edge7" class="edge">
-<title>Slip&#45;&gt;List</title>
-<path fill="none" stroke="#000000" d="M260.88,-33.5C270.14,-43.17 282.47,-56.06 292.93,-66.98"/>
-<polygon fill="#000000" stroke="#000000" points="290.69,-69.71 300.14,-74.51 295.75,-64.87 290.69,-69.71"/>
+<!-- Cool&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>Cool&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M523.247,-180.303C523.247,-188.017 523.247,-197.288 523.247,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="519.748,-205.896 523.247,-215.896 526.748,-205.896 519.748,-205.896"/>
 </g>
-<!-- Array -->
-<g id="node14" class="node">
-<title>Array</title>
-<g id="a_node14"><a xlink:href="/type/Array" xlink:title="Array">
-<ellipse fill="none" stroke="#000000" cx="324" cy="-18" rx="31.7" ry="18"/>
-<text text-anchor="middle" x="324" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Array</text>
+<!-- Iterable -->
+<g id="node7" class="node"><title>Iterable</title>
+<g id="a_node7"><a xlink:href="/type/Iterable" xlink:title="Iterable">
+<ellipse fill="none" stroke="#6666ff" cx="436.247" cy="-162" rx="40.0939" ry="18"/>
+<text text-anchor="middle" x="436.247" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
 </a>
 </g>
 </g>
-<!-- Array&#45;&gt;List -->
-<g id="edge8" class="edge">
-<title>Array&#45;&gt;List</title>
-<path fill="none" stroke="#000000" d="M321.53,-36.3C320.43,-44.02 319.1,-53.29 317.87,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="314.39,-61.5 316.44,-71.9 321.32,-62.49 314.39,-61.5"/>
-</g>
-<!-- NFKC -->
-<g id="node15" class="node">
-<title>NFKC</title>
-<g id="a_node15"><a xlink:href="/type/NFKC" xlink:title="NFKC">
-<ellipse fill="none" stroke="#000000" cx="574" cy="-18" rx="36" ry="18"/>
-<text text-anchor="middle" x="574" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFKC</text>
+<!-- List -->
+<g id="node8" class="node"><title>List</title>
+<g id="a_node8"><a xlink:href="/type/List" xlink:title="List">
+<ellipse fill="none" stroke="#000000" cx="511.247" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="511.247" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
 </a>
 </g>
 </g>
-<!-- NFKC&#45;&gt;Uni -->
-<g id="edge9" class="edge">
-<title>NFKC&#45;&gt;Uni</title>
-<path fill="none" stroke="#000000" d="M574,-36.3C574,-44.02 574,-53.29 574,-61.89"/>
-<polygon fill="#000000" stroke="#000000" points="570.5,-61.9 574,-71.9 577.5,-61.9 570.5,-61.9"/>
+<!-- List&#45;&gt;Positional -->
+<g id="edge15" class="edge"><title>List&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M489.89,-101.085C482.138,-104.746 475.247,-108 475.247,-108 475.247,-108 415.263,-129.775 372.192,-145.411"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="370.948,-142.138 362.743,-148.841 373.337,-148.718 370.948,-142.138"/>
+</g>
+<!-- List&#45;&gt;Cool -->
+<g id="edge4" class="edge"><title>List&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M514.152,-107.945C515.474,-115.654 517.071,-124.973 518.556,-133.636"/>
+<polygon fill="#000000" stroke="#000000" points="515.147,-134.46 520.286,-143.725 522.046,-133.277 515.147,-134.46"/>
+</g>
+<!-- List&#45;&gt;Iterable -->
+<g id="edge16" class="edge"><title>List&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M496.07,-105.166C485.817,-114.735 472.064,-127.571 460.33,-138.523"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="457.89,-136.012 452.968,-145.394 462.667,-141.13 457.89,-136.012"/>
+</g>
+<!-- Blob -->
+<g id="node9" class="node"><title>Blob</title>
+<g id="a_node9"><a xlink:href="/type/Blob" xlink:title="Blob">
+<ellipse fill="none" stroke="#6666ff" cx="335.247" cy="-90" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="335.247" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Blob</text>
+</a>
+</g>
+</g>
+<!-- Blob&#45;&gt;Positional -->
+<g id="edge17" class="edge"><title>Blob&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M333.764,-108.303C333.103,-116.017 332.308,-125.288 331.571,-133.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="328.08,-133.633 330.713,-143.896 335.055,-134.231 328.08,-133.633"/>
+</g>
+<!-- Blob&#45;&gt;Stringy -->
+<g id="edge18" class="edge"><title>Blob&#45;&gt;Stringy</title>
+<path fill="none" stroke="#6666ff" d="M315.658,-103.353C298.819,-113.973 274.25,-129.467 254.824,-141.718"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="252.898,-138.794 246.306,-147.089 256.632,-144.715 252.898,-138.794"/>
+</g>
+<!-- Range -->
+<g id="node10" class="node"><title>Range</title>
+<g id="a_node10"><a xlink:href="/type/Range" xlink:title="Range">
+<ellipse fill="none" stroke="#000000" cx="430.247" cy="-90" rx="36.2938" ry="18"/>
+<text text-anchor="middle" x="430.247" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
+</a>
+</g>
+</g>
+<!-- Range&#45;&gt;Positional -->
+<g id="edge19" class="edge"><title>Range&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M409.809,-105.166C395.413,-115.143 375.892,-128.672 359.672,-139.914"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="357.279,-137.313 351.054,-145.886 361.267,-143.067 357.279,-137.313"/>
+</g>
+<!-- Range&#45;&gt;Cool -->
+<g id="edge5" class="edge"><title>Range&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M449.517,-105.504C463.433,-115.979 482.373,-130.234 497.572,-141.674"/>
+<polygon fill="#000000" stroke="#000000" points="495.481,-144.481 505.575,-147.698 499.69,-138.888 495.481,-144.481"/>
+</g>
+<!-- Range&#45;&gt;Iterable -->
+<g id="edge20" class="edge"><title>Range&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M431.731,-108.303C432.392,-116.017 433.186,-125.288 433.923,-133.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="430.44,-134.231 434.781,-143.896 437.414,-133.633 430.44,-134.231"/>
 </g>
 <!-- NFD -->
-<g id="node16" class="node">
-<title>NFD</title>
-<g id="a_node16"><a xlink:href="/type/NFD" xlink:title="NFD">
-<ellipse fill="none" stroke="#000000" cx="657" cy="-18" rx="29.5" ry="18"/>
-<text text-anchor="middle" x="657" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFD</text>
+<g id="node11" class="node"><title>NFD</title>
+<g id="a_node11"><a xlink:href="/type/NFD" xlink:title="NFD">
+<ellipse fill="none" stroke="#000000" cx="29.2474" cy="-18" rx="29.4969" ry="18"/>
+<text text-anchor="middle" x="29.2474" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFD</text>
 </a>
 </g>
 </g>
 <!-- NFD&#45;&gt;Uni -->
-<g id="edge10" class="edge">
-<title>NFD&#45;&gt;Uni</title>
-<path fill="none" stroke="#000000" d="M640.2,-33.17C628.12,-43.36 611.65,-57.25 598.16,-68.63"/>
-<polygon fill="#000000" stroke="#000000" points="595.59,-66.21 590.21,-75.33 600.11,-71.56 595.59,-66.21"/>
+<g id="edge6" class="edge"><title>NFD&#45;&gt;Uni</title>
+<path fill="none" stroke="#000000" d="M52.2288,-29.2811C60.2314,-32.8613 67.2474,-36 67.2474,-36 67.2474,-36 129.319,-60.5507 168.97,-76.2335"/>
+<polygon fill="#000000" stroke="#000000" points="167.93,-79.5859 178.516,-80.0093 170.504,-73.0766 167.93,-79.5859"/>
 </g>
 <!-- NFKD -->
-<g id="node17" class="node">
-<title>NFKD</title>
-<g id="a_node17"><a xlink:href="/type/NFKD" xlink:title="NFKD">
-<ellipse fill="none" stroke="#000000" cx="740" cy="-18" rx="36" ry="18"/>
-<text text-anchor="middle" x="740" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFKD</text>
+<g id="node12" class="node"><title>NFKD</title>
+<g id="a_node12"><a xlink:href="/type/NFKD" xlink:title="NFKD">
+<ellipse fill="none" stroke="#000000" cx="112.247" cy="-18" rx="35.9954" ry="18"/>
+<text text-anchor="middle" x="112.247" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFKD</text>
 </a>
 </g>
 </g>
 <!-- NFKD&#45;&gt;Uni -->
-<g id="edge11" class="edge">
-<title>NFKD&#45;&gt;Uni</title>
-<path fill="none" stroke="#000000" d="M713.33,-30.25C684.05,-42.59 637.08,-62.4 605.88,-75.56"/>
-<polygon fill="#000000" stroke="#000000" points="604.2,-72.47 596.35,-79.58 606.92,-78.92 604.2,-72.47"/>
+<g id="edge7" class="edge"><title>NFKD&#45;&gt;Uni</title>
+<path fill="none" stroke="#000000" d="M130.688,-33.504C143.882,-43.8815 161.796,-57.9707 176.271,-69.3559"/>
+<polygon fill="#000000" stroke="#000000" points="174.312,-72.2673 184.335,-75.6984 178.639,-66.7652 174.312,-72.2673"/>
+</g>
+<!-- NFKC -->
+<g id="node13" class="node"><title>NFKC</title>
+<g id="a_node13"><a xlink:href="/type/NFKC" xlink:title="NFKC">
+<ellipse fill="none" stroke="#000000" cx="201.247" cy="-18" rx="35.9954" ry="18"/>
+<text text-anchor="middle" x="201.247" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFKC</text>
+</a>
+</g>
+</g>
+<!-- NFKC&#45;&gt;Uni -->
+<g id="edge8" class="edge"><title>NFKC&#45;&gt;Uni</title>
+<path fill="none" stroke="#000000" d="M201.247,-36.3034C201.247,-44.0173 201.247,-53.2875 201.247,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="197.748,-61.8956 201.247,-71.8957 204.748,-61.8957 197.748,-61.8956"/>
 </g>
 <!-- NFC -->
-<g id="node18" class="node">
-<title>NFC</title>
-<g id="a_node18"><a xlink:href="/type/NFC" xlink:title="NFC">
-<ellipse fill="none" stroke="#000000" cx="823" cy="-18" rx="29.5" ry="18"/>
-<text text-anchor="middle" x="823" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFC</text>
+<g id="node14" class="node"><title>NFC</title>
+<g id="a_node14"><a xlink:href="/type/NFC" xlink:title="NFC">
+<ellipse fill="none" stroke="#000000" cx="284.247" cy="-18" rx="29.4969" ry="18"/>
+<text text-anchor="middle" x="284.247" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFC</text>
 </a>
 </g>
 </g>
 <!-- NFC&#45;&gt;Uni -->
-<g id="edge12" class="edge">
-<title>NFC&#45;&gt;Uni</title>
-<path fill="none" stroke="#000000" d="M800.02,-29.28C792.02,-32.86 785,-36 785,-36 785,-36 668.76,-65.2 608.83,-80.25"/>
-<polygon fill="#000000" stroke="#000000" points="607.88,-76.88 599.03,-82.71 609.58,-83.67 607.88,-76.88"/>
+<g id="edge9" class="edge"><title>NFC&#45;&gt;Uni</title>
+<path fill="none" stroke="#000000" d="M267.451,-33.1655C255.369,-43.3552 238.895,-57.2491 225.403,-68.6277"/>
+<polygon fill="#000000" stroke="#000000" points="222.842,-66.2093 217.454,-75.3319 227.355,-71.5604 222.842,-66.2093"/>
+</g>
+<!-- Array -->
+<g id="node15" class="node"><title>Array</title>
+<g id="a_node15"><a xlink:href="/type/Array" xlink:title="Array">
+<ellipse fill="none" stroke="#000000" cx="629.247" cy="-18" rx="31.6951" ry="18"/>
+<text text-anchor="middle" x="629.247" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Array</text>
+</a>
+</g>
+</g>
+<!-- Array&#45;&gt;List -->
+<g id="edge10" class="edge"><title>Array&#45;&gt;List</title>
+<path fill="none" stroke="#000000" d="M608.151,-31.5146C589.095,-42.819 560.891,-59.5505 539.818,-72.0516"/>
+<polygon fill="#000000" stroke="#000000" points="537.798,-69.1799 530.983,-77.2922 541.37,-75.2003 537.798,-69.1799"/>
+</g>
+<!-- Slip -->
+<g id="node16" class="node"><title>Slip</title>
+<g id="a_node16"><a xlink:href="/type/Slip" xlink:title="Slip">
+<ellipse fill="none" stroke="#000000" cx="480.247" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="480.247" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Slip</text>
+</a>
+</g>
+</g>
+<!-- Slip&#45;&gt;List -->
+<g id="edge11" class="edge"><title>Slip&#45;&gt;List</title>
+<path fill="none" stroke="#000000" d="M487.594,-35.589C491.262,-43.8708 495.781,-54.0751 499.883,-63.338"/>
+<polygon fill="#000000" stroke="#000000" points="496.704,-64.8038 503.954,-72.5301 503.104,-61.9693 496.704,-64.8038"/>
 </g>
 <!-- utf8 -->
-<g id="node19" class="node">
-<title>utf8</title>
-<g id="a_node19"><a xlink:href="/type/utf8" xlink:title="utf8">
-<ellipse fill="none" stroke="#000000" cx="421" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="421" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">utf8</text>
+<g id="node17" class="node"><title>utf8</title>
+<g id="a_node17"><a xlink:href="/type/utf8" xlink:title="utf8">
+<ellipse fill="none" stroke="#000000" cx="552.247" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="552.247" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">utf8</text>
 </a>
 </g>
 </g>
 <!-- utf8&#45;&gt;Any -->
-<g id="edge13" class="edge">
-<title>utf8&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M420.68,-36.23C419.91,-77.76 418,-180 418,-180 418,-180 394.84,-198.32 375.76,-213.42"/>
-<polygon fill="#000000" stroke="#000000" points="373.58,-210.68 367.91,-219.63 377.92,-216.17 373.58,-210.68"/>
+<g id="edge12" class="edge"><title>utf8&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M553.48,-36.1186C555.945,-70.353 561.247,-144 561.247,-144 561.247,-144 561.247,-180 561.247,-180 561.247,-180 550.552,-194.917 540.51,-208.923"/>
+<polygon fill="#000000" stroke="#000000" points="537.426,-207.219 534.443,-217.385 543.114,-211.297 537.426,-207.219"/>
 </g>
 <!-- utf8&#45;&gt;Blob -->
-<g id="edge25" class="edge">
-<title>utf8&#45;&gt;Blob</title>
-<path fill="none" stroke="#6666ff" d="M435.77,-33.17C446.09,-43.06 460.06,-56.45 471.73,-67.64"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="469.36,-70.22 479,-74.62 474.2,-65.17 469.36,-70.22"/>
+<g id="edge21" class="edge"><title>utf8&#45;&gt;Blob</title>
+<path fill="none" stroke="#6666ff" d="M530.89,-29.0854C523.138,-32.7461 516.247,-36 516.247,-36 516.247,-36 385.247,-72 385.247,-72 385.247,-72 378.254,-74.3778 369.498,-77.3548"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="368.295,-74.0668 359.954,-80.5996 370.549,-80.6942 368.295,-74.0668"/>
 </g>
 <!-- Buf -->
-<g id="node20" class="node">
-<title>Buf</title>
-<g id="a_node20"><a xlink:href="/type/Buf" xlink:title="Buf">
-<ellipse fill="none" stroke="#6666ff" cx="493" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="493" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Buf</text>
+<g id="node18" class="node"><title>Buf</title>
+<g id="a_node18"><a xlink:href="/type/Buf" xlink:title="Buf">
+<ellipse fill="none" stroke="#6666ff" cx="358.247" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="358.247" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Buf</text>
 </a>
 </g>
 </g>
 <!-- Buf&#45;&gt;Blob -->
-<g id="edge26" class="edge">
-<title>Buf&#45;&gt;Blob</title>
-<path fill="none" stroke="#6666ff" d="M493.25,-36.3C493.36,-44.02 493.49,-53.29 493.61,-61.89"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="490.11,-61.95 493.76,-71.9 497.11,-61.85 490.11,-61.95"/>
+<g id="edge22" class="edge"><title>Buf&#45;&gt;Blob</title>
+<path fill="none" stroke="#6666ff" d="M352.68,-35.945C350.052,-43.9414 346.856,-53.6692 343.922,-62.6005"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="340.56,-61.6181 340.764,-72.211 347.211,-63.8032 340.56,-61.6181"/>
 </g>
 </g>
 </svg>
@@ -466,7 +384,7 @@
 
     <footer class="pretty-box yellow">
         <p style="display:;">
-            Generated from <a href="https://github.com/Raku/Documentable/blob/master/docs/Type/Positional.pod6">https://github.com/Raku/Documentable/blob/master/docs/Type/Positional.pod6</a>.
+            Generated from <a href="https://github.com/Raku/doc/tree/master/doc/Type/Positional.pod6">https://github.com/Raku/doc/tree/master/doc/Type/Positional.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

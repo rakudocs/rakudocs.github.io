@@ -3649,6 +3649,8 @@ $(function(){
 ,
 { category: "Reference", value: "Unspace (syntax)", url: "/language/syntax#index-entry-syntax_Unspace" }
 ,
+{ category: "Reference", value: "Embedded comments", url: "/language/syntax#index-entry-Embedded_comments" }
+,
 { category: "Reference", value: "identifiers (identifier)", url: "/language/syntax#index-entry-identifier_identifiers-Identifiers" }
 ,
 { category: "Reference", value: "String (literals)", url: "/language/syntax#index-entry-String_(literals)" }
@@ -6078,6 +6080,8 @@ $(function(){
 { category: "Reference", value: "utf16le", url: "/type/IO::Handle#index-entry-utf16le" }
 ,
 { category: "Reference", value: "utf16be", url: "/type/IO::Handle#index-entry-utf16be" }
+,
+{ category: "Reference", value: "File locking", url: "/type/IO::Handle#index-entry-File_locking" }
 ,
 { category: "Reference", value: "SeekFromBeginning", url: "/type/IO::Handle#index-entry-SeekFromBeginning" }
 ,

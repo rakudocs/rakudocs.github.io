@@ -5875,8 +5875,6 @@ $(function(){
 ,
 { category: "Reference", value: "native array", url: "/language/nativetypes#index-entry-native_array" }
 ,
-{ category: "Reference", value: "array", url: "/language/nativetypes#index-entry-array" }
-,
 { category: "Reference", value: "int8", url: "/language/nativetypes#index-entry-int8" }
 ,
 { category: "Reference", value: "int16", url: "/language/nativetypes#index-entry-int16" }

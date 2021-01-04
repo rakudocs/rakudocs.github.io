@@ -5707,6 +5707,10 @@ $(function(){
 ,
 { category: "Reference", value: "nativecall", url: "/language/nativecall#index-entry-nativecall" }
 ,
+{ category: "Reference", value: "is native", url: "/language/nativecall#index-entry-is_native" }
+,
+{ category: "Reference", value: "native (trait)", url: "/language/nativecall#index-entry-native_(trait)" }
+,
 { category: "Reference", value: "repr", url: "/language/nativecall#index-entry-repr" }
 ,
 { category: "Reference", value: "is repr", url: "/language/nativecall#index-entry-is_repr" }

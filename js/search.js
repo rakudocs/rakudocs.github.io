@@ -5147,6 +5147,8 @@ $(function(){
 ,
 { category: "Reference", value: "Distribution", url: "/language/variables#index-entry-Distribution" }
 ,
+{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
+,
 { category: "Reference", value: "$?PACKAGE", url: "/language/variables#index-entry-$%3FPACKAGE" }
 ,
 { category: "Reference", value: "$?MODULE", url: "/language/variables#index-entry-$%3FMODULE" }
@@ -6126,6 +6128,12 @@ $(function(){
 { category: "Reference", value: "NaN (definition)", url: "/type/Num#index-entry-NaN_(definition)-NaN" }
 ,
 { category: "Reference", value: "Signal", url: "/type/Supply#index-entry-Signal" }
+,
+{ category: "Reference", value: "* literal", url: "/type/Whatever#index-entry-*_literal" }
+,
+{ category: "Reference", value: "Whatever literal", url: "/type/Whatever#index-entry-Whatever_literal" }
+,
+{ category: "Reference", value: "Whatever-currying", url: "/type/Whatever#index-entry-Whatever-currying" }
 ,
 { category: "Reference", value: "is default (Attribute)", url: "/type/Attribute#index-entry-is_default_(Attribute)" }
 ,

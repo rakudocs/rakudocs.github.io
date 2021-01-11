@@ -4137,6 +4137,8 @@ $(function(){
 ,
 { category: "Reference", value: "heredocs :to (quote)", url: "/language/quoting#index-entry-quote_heredocs_:to-Heredocs:_:to" }
 ,
+{ category: "Reference", value: "Unquoting", url: "/language/quoting#index-entry-Unquoting" }
+,
 { category: "Reference", value: "pack", url: "/language/experimental#index-entry-pack-pack" }
 ,
 { category: "Reference", value: "macros", url: "/language/experimental#index-entry-macros-macros" }

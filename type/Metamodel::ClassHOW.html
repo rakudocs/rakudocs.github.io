@@ -71,79 +71,79 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_add_fallback">method add_fallback</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_can">method can</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_lookup">method lookup</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_compose">method compose</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_new_type">method new_type</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Naming">Routines supplied by role Metamodel::Naming</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Metamodel::Naming)_method_name">(Metamodel::Naming) method name</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Metamodel::Naming)_method_set_name">(Metamodel::Naming) method set_name</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Documenting">Routines supplied by role Metamodel::Documenting</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(Metamodel::Documenting)_method_set_why">(Metamodel::Documenting) method set_why</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#(Metamodel::Documenting)_method_WHY">(Metamodel::Documenting) method WHY</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Versioning">Routines supplied by role Metamodel::Versioning</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_ver">(Metamodel::Versioning) method ver</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">5.2</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_auth">(Metamodel::Versioning) method auth</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">5.3</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_api">(Metamodel::Versioning) method api</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">5.4</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_set_ver">(Metamodel::Versioning) method set_ver</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">5.5</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_set_auth">(Metamodel::Versioning) method set_auth</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">5.6</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_set_api">(Metamodel::Versioning) method set_api</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Stashing">Routines supplied by role Metamodel::Stashing</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">6.1</td><td class="toc-text"><a href="#(Metamodel::Stashing)_method_add_stash">(Metamodel::Stashing) method add_stash</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::AttributeContainer">Routines supplied by role Metamodel::AttributeContainer</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">7.1</td><td class="toc-text"><a href="#(Metamodel::AttributeContainer)_method_add_attribute">(Metamodel::AttributeContainer) method add_attribute</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">7.2</td><td class="toc-text"><a href="#(Metamodel::AttributeContainer)_method_attributes">(Metamodel::AttributeContainer) method attributes</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">7.3</td><td class="toc-text"><a href="#(Metamodel::AttributeContainer)_method_set_rw">(Metamodel::AttributeContainer) method set_rw</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">7.4</td><td class="toc-text"><a href="#(Metamodel::AttributeContainer)_method_rw">(Metamodel::AttributeContainer) method rw</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">8</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Finalization">Routines supplied by role Metamodel::Finalization</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">8.1</td><td class="toc-text"><a href="#(Metamodel::Finalization)_method_setup_finalization">(Metamodel::Finalization) method setup_finalization</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">8.2</td><td class="toc-text"><a href="#(Metamodel::Finalization)_method_destroyers">(Metamodel::Finalization) method destroyers</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">9</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::MethodContainer">Routines supplied by role Metamodel::MethodContainer</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">9.1</td><td class="toc-text"><a href="#(Metamodel::MethodContainer)_method_add_method">(Metamodel::MethodContainer) method add_method</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">9.2</td><td class="toc-text"><a href="#(Metamodel::MethodContainer)_method_methods">(Metamodel::MethodContainer) method methods</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">9.3</td><td class="toc-text"><a href="#(Metamodel::MethodContainer)_method_method_table">(Metamodel::MethodContainer) method method_table</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">9.4</td><td class="toc-text"><a href="#(Metamodel::MethodContainer)_method_lookup">(Metamodel::MethodContainer) method lookup</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">10</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::PrivateMethodContainer">Routines supplied by role Metamodel::PrivateMethodContainer</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">10.1</td><td class="toc-text"><a href="#(Metamodel::PrivateMethodContainer)_method_add_private_method">(Metamodel::PrivateMethodContainer) method add_private_method</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">10.2</td><td class="toc-text"><a href="#(Metamodel::PrivateMethodContainer)_method_private_method_table">(Metamodel::PrivateMethodContainer) method private_method_table</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">10.3</td><td class="toc-text"><a href="#(Metamodel::PrivateMethodContainer)_method_private_methods">(Metamodel::PrivateMethodContainer) method private_methods</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">10.4</td><td class="toc-text"><a href="#(Metamodel::PrivateMethodContainer)_method_private_method_names">(Metamodel::PrivateMethodContainer) method private_method_names</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">10.5</td><td class="toc-text"><a href="#(Metamodel::PrivateMethodContainer)_method_find_private_method">(Metamodel::PrivateMethodContainer) method find_private_method</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">11</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::RoleContainer">Routines supplied by role Metamodel::RoleContainer</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">11.1</td><td class="toc-text"><a href="#(Metamodel::RoleContainer)_method_add_role">(Metamodel::RoleContainer) method add_role</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">11.2</td><td class="toc-text"><a href="#(Metamodel::RoleContainer)_method_roles_to_compose">(Metamodel::RoleContainer) method roles_to_compose</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">12</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::MultipleInheritance">Routines supplied by role Metamodel::MultipleInheritance</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">12.1</td><td class="toc-text"><a href="#(Metamodel::MultipleInheritance)_method_add_parent">(Metamodel::MultipleInheritance) method add_parent</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">12.2</td><td class="toc-text"><a href="#(Metamodel::MultipleInheritance)_method_parents">(Metamodel::MultipleInheritance) method parents</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">12.3</td><td class="toc-text"><a href="#(Metamodel::MultipleInheritance)_method_hides">(Metamodel::MultipleInheritance) method hides</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">12.4</td><td class="toc-text"><a href="#(Metamodel::MultipleInheritance)_method_hidden">(Metamodel::MultipleInheritance) method hidden</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">12.5</td><td class="toc-text"><a href="#(Metamodel::MultipleInheritance)_method_set_hidden">(Metamodel::MultipleInheritance) method set_hidden</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">13</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::C3MRO">Routines supplied by role Metamodel::C3MRO</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">13.1</td><td class="toc-text"><a href="#(Metamodel::C3MRO)_method_compute_mro">(Metamodel::C3MRO) method compute_mro</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">13.2</td><td class="toc-text"><a href="#(Metamodel::C3MRO)_method_mro">(Metamodel::C3MRO) method mro</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">13.3</td><td class="toc-text"><a href="#(Metamodel::C3MRO)_method_mro_unhidden">(Metamodel::C3MRO) method mro_unhidden</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">14</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::MROBasedMethodDispatch">Routines supplied by role Metamodel::MROBasedMethodDispatch</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">14.1</td><td class="toc-text"><a href="#(Metamodel::MROBasedMethodDispatch)_method_find_method">(Metamodel::MROBasedMethodDispatch) method find_method</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">14.2</td><td class="toc-text"><a href="#(Metamodel::MROBasedMethodDispatch)_method_find_method_qualified">(Metamodel::MROBasedMethodDispatch) method find_method_qualified</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">14.3</td><td class="toc-text"><a href="#(Metamodel::MROBasedMethodDispatch)_method_can">(Metamodel::MROBasedMethodDispatch) method can</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">14.4</td><td class="toc-text"><a href="#(Metamodel::MROBasedMethodDispatch)_method_publish_method_cache">(Metamodel::MROBasedMethodDispatch) method publish_method_cache</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">15</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Trusting">Routines supplied by role Metamodel::Trusting</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">15.1</td><td class="toc-text"><a href="#(Metamodel::Trusting)_method_add_trustee">(Metamodel::Trusting) method add_trustee</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">15.2</td><td class="toc-text"><a href="#(Metamodel::Trusting)_method_trusts">(Metamodel::Trusting) method trusts</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">15.3</td><td class="toc-text"><a href="#(Metamodel::Trusting)_method_is_trusted">(Metamodel::Trusting) method is_trusted</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">16</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Mixins">Routines supplied by role Metamodel::Mixins</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">16.1</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_set_is_mixin">(Metamodel::Mixins) method set_is_mixin</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">16.2</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_is_mixin">(Metamodel::Mixins) method is_mixin</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">16.3</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_set_mixin_attribute">(Metamodel::Mixins) method set_mixin_attribute</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">16.4</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_mixin_attribute">(Metamodel::Mixins) method mixin_attribute</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">16.5</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_setup_mixin_cache">(Metamodel::Mixins) method setup_mixin_cache</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">16.6</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_flush_cache">(Metamodel::Mixins) method flush_cache</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">16.7</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_generate_mixin">(Metamodel::Mixins) method generate_mixin</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">16.8</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_mixin">(Metamodel::Mixins) method mixin</a></td></tr>
-
+          <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+ <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_add_fallback">method add_fallback</a></td></tr>
+                     <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_can">method can</a></td></tr>
+                       <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_lookup">method lookup</a></td></tr>
+          <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_compose">method compose</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_new_type">method new_type</a></td></tr>
+         <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Naming">Routines supplied by role Metamodel::Naming</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.1</td><td class="toc-text"><a href="#(Metamodel::Naming)_method_name">(Metamodel::Naming) method name</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.2</td><td class="toc-text"><a href="#(Metamodel::Naming)_method_set_name">(Metamodel::Naming) method set_name</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Documenting">Routines supplied by role Metamodel::Documenting</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.3</td><td class="toc-text"><a href="#(Metamodel::Documenting)_method_set_why">(Metamodel::Documenting) method set_why</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">16.4</td><td class="toc-text"><a href="#(Metamodel::Documenting)_method_WHY">(Metamodel::Documenting) method WHY</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Versioning">Routines supplied by role Metamodel::Versioning</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.5</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_ver">(Metamodel::Versioning) method ver</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">16.6</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_auth">(Metamodel::Versioning) method auth</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">16.7</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_api">(Metamodel::Versioning) method api</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">16.8</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_set_ver">(Metamodel::Versioning) method set_ver</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">16.9</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_set_auth">(Metamodel::Versioning) method set_auth</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">16.10</td><td class="toc-text"><a href="#(Metamodel::Versioning)_method_set_api">(Metamodel::Versioning) method set_api</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Stashing">Routines supplied by role Metamodel::Stashing</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.11</td><td class="toc-text"><a href="#(Metamodel::Stashing)_method_add_stash">(Metamodel::Stashing) method add_stash</a></td></tr>
+                                 <tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::AttributeContainer">Routines supplied by role Metamodel::AttributeContainer</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.12</td><td class="toc-text"><a href="#(Metamodel::AttributeContainer)_method_add_attribute">(Metamodel::AttributeContainer) method add_attribute</a></td></tr>
+             <tr class="toc-level-2"><td class="toc-number">16.13</td><td class="toc-text"><a href="#(Metamodel::AttributeContainer)_method_attributes">(Metamodel::AttributeContainer) method attributes</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">16.14</td><td class="toc-text"><a href="#(Metamodel::AttributeContainer)_method_set_rw">(Metamodel::AttributeContainer) method set_rw</a></td></tr>
+             <tr class="toc-level-2"><td class="toc-number">16.15</td><td class="toc-text"><a href="#(Metamodel::AttributeContainer)_method_rw">(Metamodel::AttributeContainer) method rw</a></td></tr>
+      <tr class="toc-level-1"><td class="toc-number">8</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Finalization">Routines supplied by role Metamodel::Finalization</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.16</td><td class="toc-text"><a href="#(Metamodel::Finalization)_method_setup_finalization">(Metamodel::Finalization) method setup_finalization</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">16.17</td><td class="toc-text"><a href="#(Metamodel::Finalization)_method_destroyers">(Metamodel::Finalization) method destroyers</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">9</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::MethodContainer">Routines supplied by role Metamodel::MethodContainer</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.18</td><td class="toc-text"><a href="#(Metamodel::MethodContainer)_method_add_method">(Metamodel::MethodContainer) method add_method</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">16.19</td><td class="toc-text"><a href="#(Metamodel::MethodContainer)_method_methods">(Metamodel::MethodContainer) method methods</a></td></tr>
+                    <tr class="toc-level-2"><td class="toc-number">16.20</td><td class="toc-text"><a href="#(Metamodel::MethodContainer)_method_method_table">(Metamodel::MethodContainer) method method_table</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">16.21</td><td class="toc-text"><a href="#(Metamodel::MethodContainer)_method_lookup">(Metamodel::MethodContainer) method lookup</a></td></tr>
+                                  <tr class="toc-level-1"><td class="toc-number">10</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::PrivateMethodContainer">Routines supplied by role Metamodel::PrivateMethodContainer</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.22</td><td class="toc-text"><a href="#(Metamodel::PrivateMethodContainer)_method_add_private_method">(Metamodel::PrivateMethodContainer) method add_private_method</a></td></tr>
+        <tr class="toc-level-2"><td class="toc-number">16.23</td><td class="toc-text"><a href="#(Metamodel::PrivateMethodContainer)_method_private_method_table">(Metamodel::PrivateMethodContainer) method private_method_table</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">16.24</td><td class="toc-text"><a href="#(Metamodel::PrivateMethodContainer)_method_private_methods">(Metamodel::PrivateMethodContainer) method private_methods</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.25</td><td class="toc-text"><a href="#(Metamodel::PrivateMethodContainer)_method_private_method_names">(Metamodel::PrivateMethodContainer) method private_method_names</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">16.26</td><td class="toc-text"><a href="#(Metamodel::PrivateMethodContainer)_method_find_private_method">(Metamodel::PrivateMethodContainer) method find_private_method</a></td></tr>
+      <tr class="toc-level-1"><td class="toc-number">11</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::RoleContainer">Routines supplied by role Metamodel::RoleContainer</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.27</td><td class="toc-text"><a href="#(Metamodel::RoleContainer)_method_add_role">(Metamodel::RoleContainer) method add_role</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">16.28</td><td class="toc-text"><a href="#(Metamodel::RoleContainer)_method_roles_to_compose">(Metamodel::RoleContainer) method roles_to_compose</a></td></tr>
+     <tr class="toc-level-1"><td class="toc-number">12</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::MultipleInheritance">Routines supplied by role Metamodel::MultipleInheritance</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.29</td><td class="toc-text"><a href="#(Metamodel::MultipleInheritance)_method_add_parent">(Metamodel::MultipleInheritance) method add_parent</a></td></tr>
+             <tr class="toc-level-2"><td class="toc-number">16.30</td><td class="toc-text"><a href="#(Metamodel::MultipleInheritance)_method_parents">(Metamodel::MultipleInheritance) method parents</a></td></tr>
+              <tr class="toc-level-2"><td class="toc-number">16.31</td><td class="toc-text"><a href="#(Metamodel::MultipleInheritance)_method_hides">(Metamodel::MultipleInheritance) method hides</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">16.32</td><td class="toc-text"><a href="#(Metamodel::MultipleInheritance)_method_hidden">(Metamodel::MultipleInheritance) method hidden</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">16.33</td><td class="toc-text"><a href="#(Metamodel::MultipleInheritance)_method_set_hidden">(Metamodel::MultipleInheritance) method set_hidden</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">13</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::C3MRO">Routines supplied by role Metamodel::C3MRO</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.34</td><td class="toc-text"><a href="#(Metamodel::C3MRO)_method_compute_mro">(Metamodel::C3MRO) method compute_mro</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">16.35</td><td class="toc-text"><a href="#(Metamodel::C3MRO)_method_mro">(Metamodel::C3MRO) method mro</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">16.36</td><td class="toc-text"><a href="#(Metamodel::C3MRO)_method_mro_unhidden">(Metamodel::C3MRO) method mro_unhidden</a></td></tr>
+     <tr class="toc-level-1"><td class="toc-number">14</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::MROBasedMethodDispatch">Routines supplied by role Metamodel::MROBasedMethodDispatch</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.37</td><td class="toc-text"><a href="#(Metamodel::MROBasedMethodDispatch)_method_find_method">(Metamodel::MROBasedMethodDispatch) method find_method</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">16.38</td><td class="toc-text"><a href="#(Metamodel::MROBasedMethodDispatch)_method_find_method_qualified">(Metamodel::MROBasedMethodDispatch) method find_method_qualified</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">16.39</td><td class="toc-text"><a href="#(Metamodel::MROBasedMethodDispatch)_method_can">(Metamodel::MROBasedMethodDispatch) method can</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">16.40</td><td class="toc-text"><a href="#(Metamodel::MROBasedMethodDispatch)_method_publish_method_cache">(Metamodel::MROBasedMethodDispatch) method publish_method_cache</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">15</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Trusting">Routines supplied by role Metamodel::Trusting</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.41</td><td class="toc-text"><a href="#(Metamodel::Trusting)_method_add_trustee">(Metamodel::Trusting) method add_trustee</a></td></tr>
+             <tr class="toc-level-2"><td class="toc-number">16.42</td><td class="toc-text"><a href="#(Metamodel::Trusting)_method_trusts">(Metamodel::Trusting) method trusts</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.43</td><td class="toc-text"><a href="#(Metamodel::Trusting)_method_is_trusted">(Metamodel::Trusting) method is_trusted</a></td></tr>
+       <tr class="toc-level-1"><td class="toc-number">16</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Mixins">Routines supplied by role Metamodel::Mixins</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">16.44</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_set_is_mixin">(Metamodel::Mixins) method set_is_mixin</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">16.45</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_is_mixin">(Metamodel::Mixins) method is_mixin</a></td></tr>
+           <tr class="toc-level-2"><td class="toc-number">16.46</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_set_mixin_attribute">(Metamodel::Mixins) method set_mixin_attribute</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">16.47</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_mixin_attribute">(Metamodel::Mixins) method mixin_attribute</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">16.48</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_setup_mixin_cache">(Metamodel::Mixins) method setup_mixin_cache</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">16.49</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_flush_cache">(Metamodel::Mixins) method flush_cache</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">16.50</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_generate_mixin">(Metamodel::Mixins) method generate_mixin</a></td></tr>
+            <tr class="toc-level-2"><td class="toc-number">16.51</td><td class="toc-text"><a href="#(Metamodel::Mixins)_method_mixin">(Metamodel::Mixins) method mixin</a></td></tr>
+                     
 </table>
 </nav>
 
@@ -337,17 +337,17 @@
             known to be incomplete.
         </p>
         <p>
-            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+            <a href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
                 Please report any issues
             </a>
             Your contribution is appreciated.
         </p>
         <p>
             This documentation is provided under the terms of the
-            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+            <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">
                 Artistic License 2.0
             </a>. The Camelia image is
-            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+            <a href="https://raw.githubusercontent.com/Raku/mu/master/misc/camelia.txt">
                 copyright © 2009 by Larry Wall.
             </a>
             <!-- CREDITS -->

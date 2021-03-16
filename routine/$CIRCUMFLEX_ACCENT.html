@@ -73,24 +73,24 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Operators">language documentation Operators</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Operators)_prefix_^">(Operators) prefix ^</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#language_documentation_Operators">language documentation Operators</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Operators)_infix_^">(Operators) infix ^</a></td></tr>
-
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Operators">language documentation Operators</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Operators)_prefix_^">(Operators) prefix ^</a></td></tr>
+         <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#language_documentation_Operators">language documentation Operators</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Operators)_infix_^">(Operators) infix ^</a></td></tr>
+          
 </table>
 </nav>
 
         <div class="pod-body ">
             <p>Documentation for routine <code>^</code> assembled from the following types:</p>
 <h1 id="language_documentation_Operators"><a class="u" href="#___top" title="go to top of document">language documentation Operators</a></h1>
-<p>From <a href="/language/operators#prefix_^">Operators</a></p>
-<h2 id="(Operators)_prefix_^"><a href="/language/operators#prefix_^">(Operators) prefix ^</a></h2>
+<p>From <a href="/language/operators#prefix_$CIRCUMFLEX_ACCENT">Operators</a></p>
+<h2 id="(Operators)_prefix_^"><a href="/language/operators#prefix_$CIRCUMFLEX_ACCENT">(Operators) prefix ^</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator multi raku"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type raku"><span>sub</span></span><span>&nbsp;</span><span class="entity name function raku"><span>prefix</span></span><span class="punctuation definition function adverb raku"><span>:</span></span><span class="span keyword operator array words raku"><span>&lt;</span></span><span class="string array words raku"><span>^</span></span><span class="span keyword operator array words raku"><span>&gt;</span></span><span>(</span><span class="support type raku"><span>Any</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Range</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p><em>upto</em> operator.<a name="index-entry-upto_operator"></a></p>
 <p>Coerces the argument to <a href="/type/Numeric">Numeric</a>, and generates a range from 0 up to (but excluding) the argument.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic raku"><span>^</span></span><span class="constant numeric raku"><span>5</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0..^5␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="keyword control repeat raku"><span>for</span></span><span>&nbsp;</span><span class="keyword operator generic raku"><span>^</span></span><span class="constant numeric raku"><span>5</span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;5&nbsp;iterations</span></span></span></div></pre><h1 id="language_documentation_Operators"><a class="u" href="#___top" title="go to top of document">language documentation Operators</a></h1>
-<p>From <a href="/language/operators#infix_^">Operators</a></p>
-<h2 id="(Operators)_infix_^"><a href="/language/operators#infix_^">(Operators) infix ^</a></h2>
+<p>From <a href="/language/operators#infix_$CIRCUMFLEX_ACCENT">Operators</a></p>
+<h2 id="(Operators)_infix_^"><a href="/language/operators#infix_$CIRCUMFLEX_ACCENT">(Operators) infix ^</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator multi raku"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type raku"><span>sub</span></span><span>&nbsp;</span><span class="entity name function raku"><span>infix</span></span><span class="punctuation definition function adverb raku"><span>:</span></span><span class="span keyword operator array words raku"><span>&lt;</span></span><span class="string array words raku"><span>^</span></span><span class="span keyword operator array words raku"><span>&gt;</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>a</span></span></span><span>,&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>b</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Junction</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)&nbsp;</span><span class="storage modifier type constraints raku"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait raku"><span>assoc</span></span><span class="span keyword operator array words raku"><span>&lt;</span></span><span class="string array words raku"><span>list</span></span><span class="span keyword operator array words raku"><span>&gt;</span></span></span></div></pre><p><a name="index-entry-One_junction_operator"><span class="index-entry">One junction operator</span></a>.</p>
 <p>Creates a <em>one</em> <a href="/type/Junction">Junction</a> from its arguments. See <a href="/type/Junction">Junction</a> for more details.</p>
 
@@ -108,17 +108,17 @@
             known to be incomplete.
         </p>
         <p>
-            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+            <a href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
                 Please report any issues
             </a>
             Your contribution is appreciated.
         </p>
         <p>
             This documentation is provided under the terms of the
-            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+            <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">
                 Artistic License 2.0
             </a>. The Camelia image is
-            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+            <a href="https://raw.githubusercontent.com/Raku/mu/master/misc/camelia.txt">
                 copyright © 2009 by Larry Wall.
             </a>
             <!-- CREDITS -->

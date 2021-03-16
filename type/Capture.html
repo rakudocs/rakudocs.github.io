@@ -71,27 +71,27 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_list">method list</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_hash">method hash</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_elems">method elems</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_keys">method keys</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_values">method values</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_kv">method kv</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_pairs">method pairs</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_antipairs">method antipairs</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_Bool">method Bool</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.10</td><td class="toc-text"><a href="#method_Capture">method Capture</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.11</td><td class="toc-text"><a href="#method_Numeric">method Numeric</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
-
+                                                                                                     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+ <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_list">method list</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_hash">method hash</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_elems">method elems</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_keys">method keys</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_values">method values</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_kv">method kv</a></td></tr>
+           <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_pairs">method pairs</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_antipairs">method antipairs</a></td></tr>
+           <tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_Bool">method Bool</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">1.10</td><td class="toc-text"><a href="#method_Capture">method Capture</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.11</td><td class="toc-text"><a href="#method_Numeric">method Numeric</a></td></tr>
+       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+ 
 </table>
 </nav>
 
         <div class="pod-body ">
             <p><a name="index-entry-capture_literal_(Capture)"></a> <a name="index-entry-\()_(Capture)"></a></p>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="meta class raku"><span class="storage type class raku"><span>class</span></span><span>&nbsp;</span><span class="entity name type class raku"><span>Capture</span></span></span><span>&nbsp;</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span></span></div></pre><p>A <code>Capture</code> is a container for passing arguments to a code object. Captures are the flip-side of <a href="/type/Signature">Signature</a>s. Thus, captures are the caller-defined arguments, while signatures are the callee-defined parameters. For example when you call <code>print $a, $b</code>, the <code>$a, $b</code> part is a capture.</p>
-<p>Captures contain a list-like part for positional arguments and a hash-like part for named arguments, thus behaving as <a href="/type/Positional">Positional</a> and <a href="/type/Associative">Associative</a>, although it does not actually mixes in those roles. Like any other data structure, a stand-alone capture can be created, stored, and used later.</p>
+<p>Captures contain a list-like part for positional arguments and a hash-like part for named arguments, thus behaving as <a href="/type/Positional">Positional</a> and <a href="/type/Associative">Associative</a>, although it does not actually mix in those roles. Like any other data structure, a stand-alone capture can be created, stored, and used later.</p>
 <p>A literal <code>Capture</code> can be created by prefixing a term with a backslash <code>\</code>. Commonly, this term will be a <a href="/type/List">List</a> of terms, from which the forms <code>key =&gt; value</code> and <code>:key&lt;value&gt;</code> of a <a href="/type/Pair"><code>Pair</code></a> literal will be placed in the named part, and all other terms will be placed in the positional part (including <code>Pair</code>s of the form <code>&#39;key&#39; =&gt; value</code>).</p>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;\(</span><span class="constant numeric raku"><span>42</span></span><span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;Capture&nbsp;with&nbsp;one&nbsp;positional&nbsp;arg</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>b</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;\(</span><span class="constant numeric raku"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric raku"><span>2</span></span><span>,&nbsp;</span><span class="string pair key raku"><span>verbose&nbsp;</span></span><span class="keyword operator multi-symbol raku"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant language boolean raku"><span>True</span></span><span>);&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;Capture&nbsp;with&nbsp;two&nbsp;positional&nbsp;args&nbsp;and&nbsp;one&nbsp;named&nbsp;arg</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>c</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;\(</span><span class="constant numeric raku"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric raku"><span>2</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="routine name raku"><span>verbose</span></span><span>(</span><span class="constant language boolean raku"><span>True</span></span><span>));&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;same&nbsp;as&nbsp;before</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>c</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;\(</span><span class="constant numeric raku"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric raku"><span>2</span></span><span>,&nbsp;</span><span class="string quoted single single raku"><span class="punctuation definition string begin raku"><span>&#39;</span></span><span>verbose</span><span class="punctuation definition string end raku"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant language boolean raku"><span>True</span></span><span>);&nbsp;</span><span class="comment line number-sign raku"><span class="punctuation definition comment raku"><span>#</span></span><span>&nbsp;Capture&nbsp;with&nbsp;three&nbsp;positional&nbsp;args</span></span></span></div></pre><p>To reiterate, named arguments in a capture must be created using one of two ways:</p>
 <ul><li><p>Use an <em>unquoted</em> key naming a parameter, followed by <code>=&gt;</code>, followed by the argument. For example, <code>as =&gt; by =&gt; {1/$_}</code>.</p>
@@ -251,17 +251,17 @@
             known to be incomplete.
         </p>
         <p>
-            <a href="https://github.com/raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
+            <a href="https://github.com/Raku/doc/blob/master/CONTRIBUTING.md#reporting-bugs">
                 Please report any issues
             </a>
             Your contribution is appreciated.
         </p>
         <p>
             This documentation is provided under the terms of the
-            <a href="https://raw.githubusercontent.com/raku/doc/master/LICENSE">
+            <a href="https://raw.githubusercontent.com/Raku/doc/master/LICENSE">
                 Artistic License 2.0
             </a>. The Camelia image is
-            <a href="https://raw.githubusercontent.com/raku/mu/master/misc/camelia.txt">
+            <a href="https://raw.githubusercontent.com/Raku/mu/master/misc/camelia.txt">
                 copyright © 2009 by Larry Wall.
             </a>
             <!-- CREDITS -->

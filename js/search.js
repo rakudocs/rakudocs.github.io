@@ -935,7 +935,7 @@ $(function(){
 ,
 { category: "listop", value: "!!!", url: "/routine/!!!" }
 ,
-{ category: "infix", value: "!=", url: "/routine/!=" }
+{ category: "infix", value: "!=, infix ≠", url: "/routine/!=, infix ≠" }
 ,
 { category: "infix", value: "%", url: "/routine/$PERCENT_SIGN" }
 ,
@@ -961,7 +961,7 @@ $(function(){
 ,
 { category: "Routine", value: "(<=), infix ⊆", url: "/routine/(<=), infix ⊆" }
 ,
-{ category: "infix", value: "(==), infix ≡", url: "/routine/(==), infix ≡" }
+{ category: "Routine", value: "(==), infix ≡", url: "/routine/(==), infix ≡" }
 ,
 { category: "Routine", value: "(>), infix ⊃", url: "/routine/(>), infix ⊃" }
 ,
@@ -1031,7 +1031,7 @@ $(function(){
 ,
 { category: "Routine", value: "< >", url: "/routine/< >" }
 ,
-{ category: "infix", value: "<=", url: "/routine/<=" }
+{ category: "infix", value: "<=, infix ≤", url: "/routine/<=, infix ≤" }
 ,
 { category: "infix", value: "<==", url: "/routine/<==" }
 ,
@@ -1057,7 +1057,7 @@ $(function(){
 ,
 { category: "infix", value: ">", url: "/routine/>" }
 ,
-{ category: "infix", value: ">=", url: "/routine/>=" }
+{ category: "infix", value: ">=, infix ≥", url: "/routine/>=, infix ≥" }
 ,
 { category: "Routine", value: "?", url: "/routine/%3F" }
 ,
@@ -2259,6 +2259,8 @@ $(function(){
 ,
 { category: "method", value: "numerator", url: "/routine/numerator" }
 ,
+{ category: "infix", value: "o, infix ∘", url: "/routine/o, infix ∘" }
+,
 { category: "Routine", value: "of", url: "/routine/of" }
 ,
 { category: "method", value: "offset", url: "/routine/offset" }
@@ -2753,7 +2755,7 @@ $(function(){
 ,
 { category: "Routine", value: "splitpath", url: "/routine/splitpath" }
 ,
-{ category: "routine", value: "sprintf", url: "/routine/sprintf" }
+{ category: "Routine", value: "sprintf", url: "/routine/sprintf" }
 ,
 { category: "Routine", value: "spurt", url: "/routine/spurt" }
 ,
@@ -3103,17 +3105,7 @@ $(function(){
 ,
 { category: "Routine", value: "∌", url: "/routine/∌" }
 ,
-{ category: "infix", value: "∘", url: "/routine/∘" }
-,
-{ category: "infix", value: "≠", url: "/routine/≠" }
-,
-{ category: "infix", value: "≡", url: "/routine/≡" }
-,
 { category: "Routine", value: "≢", url: "/routine/≢" }
-,
-{ category: "infix", value: "≤", url: "/routine/≤" }
-,
-{ category: "infix", value: "≥", url: "/routine/≥" }
 ,
 { category: "Routine", value: "⊄", url: "/routine/⊄" }
 ,
@@ -4429,7 +4421,7 @@ $(function(){
 ,
 { category: "Reference", value: "Set equality operator", url: "/language/operators#index-entry-Set_equality_operator" }
 ,
-{ category: "Reference", value: "Set equality operator", url: "/language/operators#index-entry-Set_equality_operator" }
+{ category: "Reference", value: "Set inequality operator", url: "/language/operators#index-entry-Set_inequality_operator" }
 ,
 { category: "Reference", value: "Membership operator", url: "/language/operators#index-entry-Membership_operator" }
 ,

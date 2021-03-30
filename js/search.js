@@ -5947,6 +5947,8 @@ $(function(){
 ,
 { category: "Reference", value: "ibus", url: "/language/unicode_entry#index-entry-ibus" }
 ,
+{ category: "Reference", value: "Xkb", url: "/language/unicode_entry#index-entry-Xkb" }
+,
 { category: "Reference", value: "WinCompose", url: "/language/unicode_entry#index-entry-WinCompose" }
 ,
 { category: "Reference", value: "Vim", url: "/language/unicode_entry#index-entry-Vim" }

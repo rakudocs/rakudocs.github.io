@@ -489,6 +489,8 @@ $(function(){
 ,
 { category: "class", value: "Lock::Async", url: "/type/Lock::Async" }
 ,
+{ category: "class", value: "Lock::ConditionVariable", url: "/type/Lock::ConditionVariable" }
+,
 { category: "class", value: "Routine::WrapHandle", url: "/type/Routine::WrapHandle" }
 ,
 { category: "class", value: "Mix", url: "/type/Mix" }
@@ -1699,7 +1701,7 @@ $(function(){
 ,
 { category: "Routine", value: "eager", url: "/routine/eager" }
 ,
-{ category: "Routine", value: "earlier", url: "/routine/earlier" }
+{ category: "method", value: "earlier", url: "/routine/earlier" }
 ,
 { category: "Routine", value: "elems", url: "/routine/elems" }
 ,
@@ -2061,7 +2063,7 @@ $(function(){
 ,
 { category: "sub", value: "lastcall", url: "/routine/lastcall" }
 ,
-{ category: "Routine", value: "later", url: "/routine/later" }
+{ category: "method", value: "later", url: "/routine/later" }
 ,
 { category: "method", value: "lazy", url: "/routine/lazy" }
 ,
@@ -2987,7 +2989,7 @@ $(function(){
 ,
 { category: "Routine", value: "w", url: "/routine/w" }
 ,
-{ category: "method", value: "wait", url: "/routine/wait" }
+{ category: "Routine", value: "wait", url: "/routine/wait" }
 ,
 { category: "sub", value: "warn", url: "/routine/warn" }
 ,

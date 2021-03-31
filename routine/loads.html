@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>method cue</title>
+    <title>method loads</title>
     <meta charset="UTF-8"/>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -67,36 +67,25 @@
             </button>
         </div>
 
-        <h1 class="title">method cue</h1>
+        <h1 class="title">method loads</h1>
         <p class="subtitle"></p>
 
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#role_Scheduler">role Scheduler</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Scheduler)_method_cue">(Scheduler) method cue</a></td></tr>
-                                                                   
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Scheduler)_method_loads">(Scheduler) method loads</a></td></tr>
+   
 </table>
 </nav>
 
         <div class="pod-body ">
-            <p>Documentation for method <code>cue</code> assembled from the following types:</p>
+            <p>Documentation for method <code>loads</code> assembled from the following types:</p>
 <h1 id="role_Scheduler"><a class="u" href="#___top" title="go to top of document">role Scheduler</a></h1>
-<p>From <a href="/type/Scheduler#method_cue">Scheduler</a></p>
-<h2 id="(Scheduler)_method_cue"><a href="/type/Scheduler#method_cue">(Scheduler) method cue</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>cue</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>&amp;</span></span><span class="variable other identifier raku"><span>code</span></span></span><span>,&nbsp;</span><span class="support type raku"><span>Instant</span></span><span>&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>at</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>in</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>every</span></span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>times</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>1</span></span><span>;&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>&amp;</span></span><span class="variable other identifier raku"><span>catch</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>Cancellation</span></span><span>)</span></span></div></pre><p>Schedules a callable (<code>&amp;code</code>) for execution and returns an instantiated <a href="/type/Cancellation"><code>Cancellation</code></a> object to cancel the scheduling of the code for execution (which is especially important if you specify the <code>:every ( time )</code> named parameter). The adverbs control when and how the code is run:</p>
-<ul><li><p><code>$at</code> can be an <a href="/type/Instant">Instant</a> before which the code won&#39;t be run. Alternatively <code>$in</code> is the number of seconds (possibly fractional) to wait before running the code. If <code>$at</code> is in the past or <code>$in</code> is negative, the delay is treated as zero. Implementations may equate to zero very small values (e.g. lower than 0.001s) of <code>$in</code> or result of <code>$at</code> - <a href="/routine/now">now</a>.</p>
-</li>
-<li><p>If <code>$every</code> is specified, it is interpreted as the number of seconds (possibly fractional) to wait before re-executing the code. Implementations may treat too-small values as lowest resolution they support, possibly warning in such situations; e.g. treating <code>0.0001</code> as <code>0.001</code>.</p>
-</li>
-<li><p><code>$times</code> tells the scheduler how many times to run the code.</p>
-</li>
-<li><p><code>&amp;catch</code> is called with the <a href="/type/Exception">Exception</a> as its sole argument if <code>&amp;code</code> dies.</p>
-</li>
-<li><p>If <code>$at</code> or <code>$in</code> are <code>Inf</code>, <code>&amp;code</code> will never be run; if <code>$every</code> is <code>Inf</code>, <code>&amp;code</code> will only be run once. If any of the three are <code>-Inf</code>, <code>&amp;code</code> will be run immediately. If any of the three are <code>NaN</code>, an <a href="/type/X::Scheduler::CueInNaNSeconds">X::Scheduler::CueInNaNSeconds</a> exception will be thrown. This only applies to releases 2019.05 and later.</p>
-</li>
-</ul>
-<p>One should call the <code>cancel</code> method on the returned <code>Cancellation</code> object to cancel the (possibly repeated) cueing of the code.</p>
+<p>From <a href="/type/Scheduler#method_loads">Scheduler</a></p>
+<h2 id="(Scheduler)_method_loads"><a href="/type/Scheduler#method_loads">(Scheduler) method loads</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>loads</span></span><span>()</span></span></div></pre><p>This is a method stub, should be re-implemented when subclassing.</p>
 
         </div>
     </div>

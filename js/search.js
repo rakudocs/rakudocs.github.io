@@ -2105,6 +2105,8 @@ $(function(){
 ,
 { category: "Routine", value: "loaded", url: "/routine/loaded" }
 ,
+{ category: "method", value: "loads", url: "/routine/loads" }
+,
 { category: "method", value: "local", url: "/routine/local" }
 ,
 { category: "Routine", value: "lock", url: "/routine/lock" }

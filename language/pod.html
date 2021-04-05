@@ -91,7 +91,7 @@
        <tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#Underlined">Underlined</a></td></tr>
       <tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#Code">Code</a></td></tr>
       <tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#Links">Links</a></td></tr>
-                                  <tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#Placement_links">Placement links</a></td></tr>
+                                <tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#Placement_links">Placement links</a></td></tr>
                                             <tr class="toc-level-2"><td class="toc-number">3.7</td><td class="toc-text"><a href="#Comments">Comments</a></td></tr>
         <tr class="toc-level-2"><td class="toc-number">3.8</td><td class="toc-text"><a href="#Notes">Notes</a></td></tr>
          <tr class="toc-level-2"><td class="toc-number">3.9</td><td class="toc-text"><a href="#Keyboard_input">Keyboard input</a></td></tr>
@@ -261,7 +261,7 @@
 <p>To create a link to a section in the same document:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="routine name raku"><span>Comments</span></span><span>&nbsp;</span><span class="routine name raku"><span>L</span></span><span class="span keyword operator array words raku"><span>&lt;</span></span><span class="string array words raku"><span>#Comments</span></span><span class="span keyword operator array words raku"><span>&gt;</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>L</span></span><span class="span keyword operator array words raku"><span>&lt;</span></span><span class="string array words raku"><span>Comments|#Comments</span></span><span class="span keyword operator array words raku"><span>&gt;</span></span></span></div></pre><p>Comments <a href="#Comments">Comments</a></p>
 <p><a href="#Comments">Comments</a></p>
-<p>Alongside the normal way of describing a path, viz. <code>L&lt;Some reference|path/to/filename&gt; </code>, it is also possible to use the <em>Perlish</em> &quot;module&quot; notation, eg., <code>L&lt;Some reference|path::to::filename&gt; </code>.</p>
+<p>Alongside the normal way of describing a path, viz. <code>L&lt;Some reference|path/to/filename&gt; </code>, it is also possible to use the module-style notation, e.g., <code>L&lt;Some reference|path::to::filename&gt; </code>.</p>
 <h2 id="Placement_links"><a class="u" href="#___top" title="go to top of document">Placement links</a></h2>
 <p>This code is not implemented in <code>Pod::To::HTML</code>, but is partially implemented in <code>Pod::To::BigPage</code>.</p>
 <p>A second kind of link &mdash; the <code>P&lt;&gt;</code> or <strong>placement link</strong> &mdash; works in the opposite direction. Instead of directing focus out to another document, it allows you to assimilate the contents of another document into your own.</p>

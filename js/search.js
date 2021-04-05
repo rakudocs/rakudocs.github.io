@@ -1193,7 +1193,7 @@ $(function(){
 ,
 { category: "Routine", value: "STORE", url: "/routine/STORE" }
 ,
-{ category: "method", value: "Seq", url: "/routine/Seq" }
+{ category: "Routine", value: "Seq", url: "/routine/Seq" }
 ,
 { category: "Routine", value: "Set", url: "/routine/Set" }
 ,
@@ -6112,8 +6112,6 @@ $(function(){
 { category: "Reference", value: "@ list contextualizer", url: "/type/Any#index-entry-@_list_contextualizer" }
 ,
 { category: "Reference", value: "$ (item contextualizer)", url: "/type/Any#index-entry-$_(item_contextualizer)" }
-,
-{ category: "Reference", value: "$*COLLATION", url: "/type/Any#index-entry-$*COLLATION-$*COLLATION" }
 ,
 { category: "Reference", value: "collation levels", url: "/type/Any#index-entry-collation_levels" }
 ,

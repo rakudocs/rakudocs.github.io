@@ -1210,7 +1210,7 @@
 </li>
 </ul>
 <p>Not supported in Raku.</p>
-<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5opendir"><code>P5openddir</code></a> which exports a <code>rewinddir</code> function that mimics the original Perl behavior as much as possible.</p>
+<p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5opendir"><code>P5opendir</code></a> which exports a <code>rewinddir</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-rindex_-_perlfunc"></a></p>
 <h2 id="rindex"><a class="u" href="#___top" title="go to top of document">rindex</a></h2>
 <ul><li><p>rindex STR, SUBSTR, POSITION</p>
@@ -1653,7 +1653,7 @@
 <li><p>unshift EXPR, LIST</p>
 </li>
 </ul>
-<p>Works as in Perl, as well as being available as a method: <code>@a.unshift(&quot;foo&quot;);</code>. <em>Note:</em> the flattening behavior is different in Raku: <code>@b.unshift: @a</code> will unshift <code>@a</code> into <code>@b</code> as a single element. See also the <a href="/type/Array#method_prepend">prepend method</a>.</p>
+<p>Works as in Perl, as well as being available as a method: <code>@a.unshift(&quot;foo&quot;);</code>. <em>Note:</em> the flattening behavior is different in Raku: <code>@b.unshift: @a</code> will unshift <code>@a</code> into <code>@b</code> as a single element. See also the <a href="/type/Array#routine_prepend">prepend method</a>.</p>
 <p>Also note that <code>unshift</code> in Raku returns the array to which was pushed, contrary to Perl where it returns the new number of elements.</p>
 <p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5shift"><code>P5shift</code></a> which exports an <code>unshift</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-untie_-_perlfunc"></a></p>

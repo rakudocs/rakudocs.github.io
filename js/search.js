@@ -687,6 +687,8 @@ $(function(){
 ,
 { category: "class", value: "Macro", url: "/type/Macro" }
 ,
+{ category: "class", value: "Allomorph", url: "/type/Allomorph" }
+,
 { category: "class", value: "ObjAt", url: "/type/ObjAt" }
 ,
 { category: "class", value: "MixHash", url: "/type/MixHash" }
@@ -2613,9 +2615,9 @@ $(function(){
 ,
 { category: "Routine", value: "s", url: "/routine/s" }
 ,
-{ category: "routine", value: "samecase", url: "/routine/samecase" }
+{ category: "Routine", value: "samecase", url: "/routine/samecase" }
 ,
-{ category: "routine", value: "samemark", url: "/routine/samemark" }
+{ category: "Routine", value: "samemark", url: "/routine/samemark" }
 ,
 { category: "sub", value: "samewith", url: "/routine/samewith" }
 ,
@@ -2803,7 +2805,7 @@ $(function(){
 ,
 { category: "Routine", value: "subst", url: "/routine/subst" }
 ,
-{ category: "method", value: "subst-mutate", url: "/routine/subst-mutate" }
+{ category: "Routine", value: "subst-mutate", url: "/routine/subst-mutate" }
 ,
 { category: "Routine", value: "substr", url: "/routine/substr" }
 ,

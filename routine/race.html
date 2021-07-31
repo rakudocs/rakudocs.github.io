@@ -73,13 +73,13 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_RaceSeq">class RaceSeq</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(RaceSeq)_method_race">(RaceSeq) method race</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_HyperSeq">class HyperSeq</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(HyperSeq)_method_race">(HyperSeq) method race</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#role_Iterable">role Iterable</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Iterable)_method_race">(Iterable) method race</a></td></tr>
-                    
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_RaceSeq">class RaceSeq</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(RaceSeq)_method_race">(RaceSeq) method race</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_HyperSeq">class HyperSeq</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(HyperSeq)_method_race">(HyperSeq) method race</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#role_Iterable">role Iterable</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Iterable)_method_race">(Iterable) method race</a></td></tr>
+
 </table>
 </nav>
 
@@ -98,7 +98,7 @@
 <h2 id="(Iterable)_method_race"><a href="/type/Iterable#method_race">(Iterable) method race</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>race</span></span><span>(</span><span class="support type raku"><span>Int</span></span><span>(</span><span class="support type raku"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>64</span></span><span>,&nbsp;</span><span class="support type raku"><span>Int</span></span><span>(</span><span class="support type raku"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic raku"><span>:</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="constant numeric raku"><span>4</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism (number of parallel workers).</p>
-<p>Unlike <a href="/routine/hyper"><code>hyper</code></a>, <code>race</code> does not preserve the order of elements.</p>
+<p>Unlike <a href="/routine/hyper"><code>hyper</code></a>, <code>race</code> does not preserve the order of elements (mnemonic: in a race, you never know who will arrive first).</p>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="support function raku"><span>say</span></span><span>&nbsp;([</span><span class="constant numeric raku"><span>1</span></span><span class="keyword operator multi-symbol raku"><span>..</span></span><span class="constant numeric raku"><span>100</span></span><span>]</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>race</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>map</span></span><span>(</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>_</span></span></span><span>&nbsp;</span><span class="constant numeric raku"><span>+1</span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>list</span></span><span>);</span></span></div></pre><p>Use race in situations where it is OK to do the processing of items in parallel, and the output order does not matter. See <a href="/routine/hyper"><code>hyper</code></a> for situations where you want items processed in parallel and the output order should be kept relative to the input order.</p>
 <p><strong><a href="https://6guts.wordpress.com/2017/03/16/considering-hyperrace-semantics/">Blog post on the semantics of hyper and race</a></strong></p>
 <p>See <a href="/routine/hyper"><code>hyper</code></a> for an explanation of <code>:$batch</code> and <code>:$degree</code>.</p>

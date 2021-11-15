@@ -36,7 +36,7 @@
                     <a class="menu-item " href="/type.html"> Types </a>
                     <a class="menu-item " href="/routine.html"> Routines </a>
                     <a class="menu-item " href="/programs.html"> Programs </a>
-                    <a class="menu-item " href="https://kiwiirc.com/client/irc.libera.chat/#raku"> Chat with us </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
             </div>
 
             
@@ -61,7 +61,7 @@
         </div>
 
         <h1 class="title">Glossary</h1>
-        <p class="subtitle">Glossary of Raku terminology</p>
+        <p class="subtitle">Glossary of Raku™ terminology</p>
 
         <nav class="indexgroup">
 <table id="TOC">
@@ -140,7 +140,7 @@
                     <tr class="toc-level-1"><td class="toc-number">39</td><td class="toc-text"><a href="#Mayspec">Mayspec</a></td></tr>
      <tr class="toc-level-1"><td class="toc-number">40</td><td class="toc-text"><a href="#MoarVM">MoarVM</a></td></tr>
                <tr class="toc-level-1"><td class="toc-number">41</td><td class="toc-text"><a href="#Multi-dispatch">Multi-dispatch</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">42</td><td class="toc-text"><a href="#multi-method">multi-method</a></td></tr>
+              <tr class="toc-level-1"><td class="toc-number">42</td><td class="toc-text"><a href="#multi-method">multi-method</a></td></tr>
        <tr class="toc-level-1"><td class="toc-number">43</td><td class="toc-text"><a href="#Née">Née</a></td></tr>
    <tr class="toc-level-1"><td class="toc-number">44</td><td class="toc-text"><a href="#NFG">NFG</a></td></tr>
        <tr class="toc-level-1"><td class="toc-number">45</td><td class="toc-text"><a href="#Niecza">Niecza</a></td></tr>
@@ -478,7 +478,8 @@
 <p>MoarVM is short for Metamodel On A Runtime Virtual Machine. It&#39;s a virtual machine designed specifically for <a href="#NQP">NQP</a> and its <a href="/language/mop">MOP</a>: <a href="#6model">6model</a>. A document about <a href="https://github.com/MoarVM/MoarVM/blob/master/docs/reveal.md">the purpose of MoarVM</a>. MoarVM has some similarities with the Hotspot VM so you may peruse its <a href="http://openjdk.java.net/groups/hotspot/docs/HotSpotGlossary.html">glossary</a> for entries missing from the present one.</p>
 <p><a name="index-entry-Multi-Dispatch"></a> <a name="index-entry-MMD"></a></p>
 <h1 id="Multi-dispatch"><a class="u" href="#___top" title="go to top of document">Multi-dispatch</a></h1>
-<p>The process of picking a candidate for calling of a set of <a href="/type/Method">methods</a> or <a href="/type/Sub">subs</a> that come by the same name but with different arguments. The most narrow candidate wins. In case of an ambiguity, a routine with <code>is default</code> trait will be chosen if one exists, otherwise an exception is thrown.</p>
+<p>The mechanism used to invoke different routines (<a href="/type/Method">methods</a> or <a href="/type/Sub">subs</a>) of the same name, selecting the correct one based on the <a href="/type/Parameter">parameter</a> prototype and the arguments it was called with.</p>
+<p>The selection process is primarily based on types and number of arguments (<a href="/type/Arity">arity</a>), where the narrowest, most specific candidate wins, typically without regard to the order of declaration. The <code>is default</code> trait may be used as a tie breaker in this first phase. There is also a secondary phase where some different tie breakers may be evaluated in order of declaration of the methods or subs.</p>
 <p><a name="index-entry-multi-method"></a></p>
 <h1 id="multi-method"><a class="u" href="#___top" title="go to top of document">multi-method</a></h1>
 <p>A <a href="/type/Method">method</a> that has multiple candidates going by the same name and are subject to <a href="#Multi-dispatch">Multi-Dispatch</a>.</p>

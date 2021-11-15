@@ -36,7 +36,7 @@
                     <a class="menu-item selected darker-green" href="/type.html"> Types </a>
                     <a class="menu-item " href="/routine.html"> Routines </a>
                     <a class="menu-item " href="/programs.html"> Programs </a>
-                    <a class="menu-item " href="https://kiwiirc.com/client/irc.libera.chat/#raku"> Chat with us </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
             </div>
 
             <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
@@ -88,7 +88,7 @@
          <tr class="toc-level-2"><td class="toc-number">1.14</td><td class="toc-text"><a href="#method_command">method command</a></td></tr>
        <tr class="toc-level-2"><td class="toc-number">1.15</td><td class="toc-text"><a href="#method_write">method write</a></td></tr>
                    <tr class="toc-level-2"><td class="toc-number">1.16</td><td class="toc-text"><a href="#method_print">method print</a></td></tr>
-                   <tr class="toc-level-2"><td class="toc-number">1.17</td><td class="toc-text"><a href="#method_method_put">method method put</a></td></tr>
+                   <tr class="toc-level-2"><td class="toc-number">1.17</td><td class="toc-text"><a href="#method_put">method put</a></td></tr>
         <tr class="toc-level-2"><td class="toc-number">1.18</td><td class="toc-text"><a href="#method_say">method say</a></td></tr>
                      <tr class="toc-level-2"><td class="toc-number">1.19</td><td class="toc-text"><a href="#method_Supply">method Supply</a></td></tr>
                                               <tr class="toc-level-2"><td class="toc-number">1.20</td><td class="toc-text"><a href="#method_close-stdin">method close-stdin</a></td></tr>
@@ -170,7 +170,7 @@
 <p>Returns a <a href="/type/Promise">Promise</a> that will be kept once the data has fully landed in the input buffer of the external program.</p>
 <p>The <code>Proc::Async</code> object must be created for writing (with <code>Proc::Async.new(:w, $path, @args)</code>). Otherwise an <a href="/type/X::Proc::Async::OpenForWriting">X::Proc::Async::OpenForWriting</a> exception will the thrown.</p>
 <p><code>start</code> must have been called before calling method print, otherwise an <a href="/type/X::Proc::Async::MustBeStarted">X::Proc::Async::MustBeStarted</a> exception is thrown.</p>
-<h2 id="method_method_put"><a class="u" href="#___top" title="go to top of document">method method put</a></h2>
+<h2 id="method_put"><a class="u" href="#___top" title="go to top of document">method put</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>put</span></span><span>(</span><span class="support type raku"><span>Proc</span></span><span>::</span><span class="routine name raku"><span>Async</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;\</span><span class="keyword operator word raku"><span>x</span></span><span>,&nbsp;</span><span class="keyword operator generic raku"><span>|</span></span><span class="routine name raku"><span>c</span></span><span>)</span></span></div></pre><p>Does a <code>.join</code> on the output, adds a newline, and calls <code>.print</code> on it. Will throw if it&#39;s not started, or not open for writing.</p>
 <h2 id="method_say"><a class="u" href="#___top" title="go to top of document">method say</a></h2>

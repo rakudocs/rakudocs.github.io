@@ -36,7 +36,7 @@
                     <a class="menu-item " href="/type.html"> Types </a>
                     <a class="menu-item " href="/routine.html"> Routines </a>
                     <a class="menu-item " href="/programs.html"> Programs </a>
-                    <a class="menu-item " href="https://kiwiirc.com/client/irc.libera.chat/#raku"> Chat with us </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
             </div>
 
             
@@ -66,9 +66,9 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Variables">language documentation Variables</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Variables)_variable_$!">(Variables) variable $!</a></td></tr>
-
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Variables">language documentation Variables</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Variables)_variable_$!">(Variables) variable $!</a></td></tr>
+                             
 </table>
 </nav>
 
@@ -77,8 +77,9 @@
 <h1 id="language_documentation_Variables"><a class="u" href="#___top" title="go to top of document">language documentation Variables</a></h1>
 <p>From <a href="/language/variables#The_$!_variable">Variables</a></p>
 <h2 id="(Variables)_variable_$!"><a href="/language/variables#The_$!_variable">(Variables) variable $!</a></h2>
-<p><code>$!</code> is the error variable. If a <code>try</code> block or statement prefix catches an exception, that exception is stored in <code>$!</code>. If no exception was caught, <code>$!</code> is set to the <code>Any</code> type object.</p>
+<p><code>$!</code> is the error variable. A fresh one is created in every <strong>routine</strong>. If a <code>try</code> block or statement prefix catches an exception, that exception is stored in <code>$!</code>. If no exception was caught, <code>$!</code> is set to <code>Nil</code>.</p>
 <p>Note that <code>CATCH</code> blocks <em>do not</em> set <code>$!</code>. Rather, they set <code>$_</code> inside the block to the caught exception.</p>
+<p>Also note that the same thread-safety issues apply to the use of <code>$!</code> as they do to <code>$/</code>.</p>
 <p><a name="index-entry-$?FILE"></a><a name="index-entry-$?LINE"></a><a name="index-entry-::?CLASS"></a></p>
 
         </div>

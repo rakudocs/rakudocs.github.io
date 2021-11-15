@@ -36,7 +36,7 @@
                     <a class="menu-item " href="/type.html"> Types </a>
                     <a class="menu-item selected darker-green" href="/routine.html"> Routines </a>
                     <a class="menu-item " href="/programs.html"> Programs </a>
-                    <a class="menu-item " href="https://kiwiirc.com/client/irc.libera.chat/#raku"> Chat with us </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
             </div>
 
             <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
@@ -75,7 +75,7 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Independent_routines">language documentation Independent routines</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Independent_routines)_sub_pop">(Independent routines) sub pop</a></td></tr>
-          <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Array">class Array</a></td></tr>
+              <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Array">class Array</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Array)_method_pop">(Array) method pop</a></td></tr>
             <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#role_Buf">role Buf</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Buf)_method_pop">(Buf) method pop</a></td></tr>
@@ -89,8 +89,8 @@
 <p>From <a href="/language/independent-routines#sub_pop">Independent routines</a></p>
 <h2 id="(Independent_routines)_sub_pop"><a href="/language/independent-routines#sub_pop">(Independent routines) sub pop</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator multi raku"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type raku"><span>sub</span></span><span>&nbsp;</span><span class="entity name function raku"><span>pop</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>@</span></span><span class="variable other identifier raku"><span>a</span></span></span><span>)</span></span></div></pre><p>Calls method <a href="/routine/pop"><code>pop</code></a> on the container, which is supposed to remove and return the last element, or fail if the container is empty.</p>
-<p>See the documentation of the <a href="/type/Array#method_pop"><code>Array</code> method</a> for an example.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator multi raku"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type raku"><span>sub</span></span><span>&nbsp;</span><span class="entity name function raku"><span>pop</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>@</span></span><span class="variable other identifier raku"><span>a</span></span></span><span>)&nbsp;</span><span class="storage modifier type constraints raku"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait raku"><span>raw</span></span></span></div></pre><p>Calls method <code>pop</code> on the <code>Positional</code> argument. That method is supposed to remove and return the last element, or return a <a href="/type/Failure"><code>Failure</code></a> if the collection is empty.</p>
+<p>See the documentation of the <a href="/routine/pop#(Array)_method_pop"><code>Array</code> method</a> for an example.</p>
 <h1 id="class_Array"><a class="u" href="#___top" title="go to top of document">class Array</a></h1>
 <p>From <a href="/type/Array#method_pop">Array</a></p>
 <h2 id="(Array)_method_pop"><a href="/type/Array#method_pop">(Array) method pop</a></h2>

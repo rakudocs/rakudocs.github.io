@@ -36,7 +36,7 @@
                     <a class="menu-item selected darker-green" href="/type.html"> Types </a>
                     <a class="menu-item " href="/routine.html"> Routines </a>
                     <a class="menu-item " href="/programs.html"> Programs </a>
-                    <a class="menu-item " href="https://kiwiirc.com/client/irc.libera.chat/#raku"> Chat with us </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
             </div>
 
             <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
@@ -71,64 +71,64 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_new">method new</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_now">method now</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_clone">method clone</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_hh-mm-ss">method hh-mm-ss</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_hour">method hour</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_minute">method minute</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_second">method second</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_whole-second">method whole-second</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_timezone">method timezone</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.10</td><td class="toc-text"><a href="#method_offset">method offset</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.11</td><td class="toc-text"><a href="#method_offset-in-minutes">method offset-in-minutes</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.12</td><td class="toc-text"><a href="#method_offset-in-hours">method offset-in-hours</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.13</td><td class="toc-text"><a href="#method_Str">method Str</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.14</td><td class="toc-text"><a href="#method_Instant">method Instant</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.15</td><td class="toc-text"><a href="#method_day-fraction">method day-fraction</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.16</td><td class="toc-text"><a href="#method_julian-date">method julian-date</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.17</td><td class="toc-text"><a href="#method_modified-julian-date">method modified-julian-date</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.18</td><td class="toc-text"><a href="#method_posix">method posix</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.19</td><td class="toc-text"><a href="#method_truncated-to">method truncated-to</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.20</td><td class="toc-text"><a href="#method_Date">method Date</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.21</td><td class="toc-text"><a href="#method_DateTime">method DateTime</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.22</td><td class="toc-text"><a href="#method_utc">method utc</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.23</td><td class="toc-text"><a href="#method_in-timezone">method in-timezone</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.24</td><td class="toc-text"><a href="#method_local">method local</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.25</td><td class="toc-text"><a href="#sub_infix:&lt;-&gt;">sub infix:&lt;-&gt;</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.26</td><td class="toc-text"><a href="#sub_infix:&lt;+&gt;">sub infix:&lt;+&gt;</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.27</td><td class="toc-text"><a href="#sub_infix:«&lt;=&gt;»">sub infix:«&lt;=&gt;»</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.28</td><td class="toc-text"><a href="#sub_infix:&lt;cmp&gt;">sub infix:&lt;cmp&gt;</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.29</td><td class="toc-text"><a href="#sub_infix:«&lt;»">sub infix:«&lt;»</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.30</td><td class="toc-text"><a href="#sub_infix:«&gt;»">sub infix:«&gt;»</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.31</td><td class="toc-text"><a href="#sub_infix:«&lt;=»">sub infix:«&lt;=»</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.32</td><td class="toc-text"><a href="#sub_infix:«&gt;=»">sub infix:«&gt;=»</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.33</td><td class="toc-text"><a href="#sub_infix:«==»">sub infix:«==»</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.34</td><td class="toc-text"><a href="#sub_infix:«!=»">sub infix:«!=»</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
-<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Dateish">Routines supplied by role Dateish</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Dateish)_method_year">(Dateish) method year</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Dateish)_method_month">(Dateish) method month</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Dateish)_method_day">(Dateish) method day</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Dateish)_method_formatter">(Dateish) method formatter</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Dateish)_method_is-leap-year">(Dateish) method is-leap-year</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#(Dateish)_method_day-of-month">(Dateish) method day-of-month</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.7</td><td class="toc-text"><a href="#(Dateish)_method_day-of-week">(Dateish) method day-of-week</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.8</td><td class="toc-text"><a href="#(Dateish)_method_day-of-year">(Dateish) method day-of-year</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.9</td><td class="toc-text"><a href="#(Dateish)_method_days-in-month">(Dateish) method days-in-month</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.10</td><td class="toc-text"><a href="#(Dateish)_method_week">(Dateish) method week</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.11</td><td class="toc-text"><a href="#(Dateish)_method_week-number">(Dateish) method week-number</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.12</td><td class="toc-text"><a href="#(Dateish)_method_week-year">(Dateish) method week-year</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.13</td><td class="toc-text"><a href="#(Dateish)_method_weekday-of-month">(Dateish) method weekday-of-month</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.14</td><td class="toc-text"><a href="#(Dateish)_method_yyyy-mm-dd">(Dateish) method yyyy-mm-dd</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.15</td><td class="toc-text"><a href="#(Dateish)_method_mm-dd-yyyy">(Dateish) method mm-dd-yyyy</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.16</td><td class="toc-text"><a href="#(Dateish)_method_dd-mm-yyyy">(Dateish) method dd-mm-yyyy</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.17</td><td class="toc-text"><a href="#(Dateish)_method_daycount">(Dateish) method daycount</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.18</td><td class="toc-text"><a href="#(Dateish)_method_IO">(Dateish) method IO</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.19</td><td class="toc-text"><a href="#(Dateish)_method_earlier">(Dateish) method earlier</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">3.20</td><td class="toc-text"><a href="#(Dateish)_method_later">(Dateish) method later</a></td></tr>
-
+                                             <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+ <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_new">method new</a></td></tr>
+                                                    <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_now">method now</a></td></tr>
+                        <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_clone">method clone</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_hh-mm-ss">method hh-mm-ss</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_hour">method hour</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_minute">method minute</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_second">method second</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_whole-second">method whole-second</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_timezone">method timezone</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.10</td><td class="toc-text"><a href="#method_offset">method offset</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">1.11</td><td class="toc-text"><a href="#method_offset-in-minutes">method offset-in-minutes</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.12</td><td class="toc-text"><a href="#method_offset-in-hours">method offset-in-hours</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">1.13</td><td class="toc-text"><a href="#method_Str">method Str</a></td></tr>
+          <tr class="toc-level-2"><td class="toc-number">1.14</td><td class="toc-text"><a href="#method_Instant">method Instant</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.15</td><td class="toc-text"><a href="#method_day-fraction">method day-fraction</a></td></tr>
+          <tr class="toc-level-2"><td class="toc-number">1.16</td><td class="toc-text"><a href="#method_julian-date">method julian-date</a></td></tr>
+              <tr class="toc-level-2"><td class="toc-number">1.17</td><td class="toc-text"><a href="#method_modified-julian-date">method modified-julian-date</a></td></tr>
+                    <tr class="toc-level-2"><td class="toc-number">1.18</td><td class="toc-text"><a href="#method_posix">method posix</a></td></tr>
+             <tr class="toc-level-2"><td class="toc-number">1.19</td><td class="toc-text"><a href="#method_truncated-to">method truncated-to</a></td></tr>
+        <tr class="toc-level-2"><td class="toc-number">1.20</td><td class="toc-text"><a href="#method_Date">method Date</a></td></tr>
+          <tr class="toc-level-2"><td class="toc-number">1.21</td><td class="toc-text"><a href="#method_DateTime">method DateTime</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.22</td><td class="toc-text"><a href="#method_utc">method utc</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.23</td><td class="toc-text"><a href="#method_in-timezone">method in-timezone</a></td></tr>
+                 <tr class="toc-level-2"><td class="toc-number">1.24</td><td class="toc-text"><a href="#method_local">method local</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.25</td><td class="toc-text"><a href="#sub_infix:&lt;-&gt;">sub infix:&lt;-&gt;</a></td></tr>
+                    <tr class="toc-level-2"><td class="toc-number">1.26</td><td class="toc-text"><a href="#sub_infix:&lt;+&gt;">sub infix:&lt;+&gt;</a></td></tr>
+        <tr class="toc-level-2"><td class="toc-number">1.27</td><td class="toc-text"><a href="#sub_infix:«&lt;=&gt;»">sub infix:«&lt;=&gt;»</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">1.28</td><td class="toc-text"><a href="#sub_infix:&lt;cmp&gt;">sub infix:&lt;cmp&gt;</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.29</td><td class="toc-text"><a href="#sub_infix:«&lt;»">sub infix:«&lt;»</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">1.30</td><td class="toc-text"><a href="#sub_infix:«&gt;»">sub infix:«&gt;»</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">1.31</td><td class="toc-text"><a href="#sub_infix:«&lt;=»">sub infix:«&lt;=»</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">1.32</td><td class="toc-text"><a href="#sub_infix:«&gt;=»">sub infix:«&gt;=»</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">1.33</td><td class="toc-text"><a href="#sub_infix:«==»">sub infix:«==»</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">1.34</td><td class="toc-text"><a href="#sub_infix:«!=»">sub infix:«!=»</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Dateish">Routines supplied by role Dateish</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Dateish)_method_year">(Dateish) method year</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Dateish)_method_month">(Dateish) method month</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Dateish)_method_day">(Dateish) method day</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Dateish)_method_formatter">(Dateish) method formatter</a></td></tr>
+          <tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Dateish)_method_is-leap-year">(Dateish) method is-leap-year</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#(Dateish)_method_day-of-month">(Dateish) method day-of-month</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">3.7</td><td class="toc-text"><a href="#(Dateish)_method_day-of-week">(Dateish) method day-of-week</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.8</td><td class="toc-text"><a href="#(Dateish)_method_day-of-year">(Dateish) method day-of-year</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.9</td><td class="toc-text"><a href="#(Dateish)_method_days-in-month">(Dateish) method days-in-month</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.10</td><td class="toc-text"><a href="#(Dateish)_method_week">(Dateish) method week</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.11</td><td class="toc-text"><a href="#(Dateish)_method_week-number">(Dateish) method week-number</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.12</td><td class="toc-text"><a href="#(Dateish)_method_week-year">(Dateish) method week-year</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">3.13</td><td class="toc-text"><a href="#(Dateish)_method_weekday-of-month">(Dateish) method weekday-of-month</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.14</td><td class="toc-text"><a href="#(Dateish)_method_yyyy-mm-dd">(Dateish) method yyyy-mm-dd</a></td></tr>
+                   <tr class="toc-level-2"><td class="toc-number">3.15</td><td class="toc-text"><a href="#(Dateish)_method_mm-dd-yyyy">(Dateish) method mm-dd-yyyy</a></td></tr>
+                   <tr class="toc-level-2"><td class="toc-number">3.16</td><td class="toc-text"><a href="#(Dateish)_method_dd-mm-yyyy">(Dateish) method dd-mm-yyyy</a></td></tr>
+                   <tr class="toc-level-2"><td class="toc-number">3.17</td><td class="toc-text"><a href="#(Dateish)_method_daycount">(Dateish) method daycount</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">3.18</td><td class="toc-text"><a href="#(Dateish)_method_IO">(Dateish) method IO</a></td></tr>
+               <tr class="toc-level-2"><td class="toc-number">3.19</td><td class="toc-text"><a href="#(Dateish)_method_earlier">(Dateish) method earlier</a></td></tr>
+                                 <tr class="toc-level-2"><td class="toc-number">3.20</td><td class="toc-text"><a href="#(Dateish)_method_later">(Dateish) method later</a></td></tr>
+                                                                            
 </table>
 </nav>
 

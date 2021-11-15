@@ -36,7 +36,7 @@
                     <a class="menu-item selected darker-green" href="/type.html"> Types </a>
                     <a class="menu-item " href="/routine.html"> Routines </a>
                     <a class="menu-item " href="/programs.html"> Programs </a>
-                    <a class="menu-item " href="https://kiwiirc.com/client/irc.libera.chat/#raku"> Chat with us </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
             </div>
 
             <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
@@ -74,18 +74,19 @@
       <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
   <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Routines_supplied_by_class_Uni">Routines supplied by class Uni</a></td></tr>
     <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Uni)_method_new">(Uni) method new</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Uni)_method_NFC">(Uni) method NFC</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Uni)_method_NFD">(Uni) method NFD</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Uni)_method_NFKC">(Uni) method NFKC</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Uni)_method_NFKD">(Uni) method NFKD</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#(Uni)_method_codes">(Uni) method codes</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.7</td><td class="toc-text"><a href="#(Uni)_method_elems">(Uni) method elems</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Uni)_method_list">(Uni) method list</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Uni)_method_NFC">(Uni) method NFC</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Uni)_method_NFD">(Uni) method NFD</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Uni)_method_NFKC">(Uni) method NFKC</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#(Uni)_method_NFKD">(Uni) method NFKD</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.7</td><td class="toc-text"><a href="#(Uni)_method_codes">(Uni) method codes</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.8</td><td class="toc-text"><a href="#(Uni)_method_elems">(Uni) method elems</a></td></tr>
    <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Positional">Routines supplied by role Positional</a></td></tr>
-      <tr class="toc-level-2"><td class="toc-number">3.8</td><td class="toc-text"><a href="#(Positional)_method_of">(Positional) method of</a></td></tr>
-                 <tr class="toc-level-2"><td class="toc-number">3.9</td><td class="toc-text"><a href="#(Positional)_method_elems">(Positional) method elems</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.10</td><td class="toc-text"><a href="#(Positional)_method_AT-POS">(Positional) method AT-POS</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.11</td><td class="toc-text"><a href="#(Positional)_method_EXISTS-POS">(Positional) method EXISTS-POS</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">3.12</td><td class="toc-text"><a href="#(Positional)_method_STORE">(Positional) method STORE</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">3.9</td><td class="toc-text"><a href="#(Positional)_method_of">(Positional) method of</a></td></tr>
+                 <tr class="toc-level-2"><td class="toc-number">3.10</td><td class="toc-text"><a href="#(Positional)_method_elems">(Positional) method elems</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.11</td><td class="toc-text"><a href="#(Positional)_method_AT-POS">(Positional) method AT-POS</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.12</td><td class="toc-text"><a href="#(Positional)_method_EXISTS-POS">(Positional) method EXISTS-POS</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.13</td><td class="toc-text"><a href="#(Positional)_method_STORE">(Positional) method STORE</a></td></tr>
           
 </table>
 </nav>
@@ -189,6 +190,9 @@
 <p>NFC inherits from class <a href="/type/Uni">Uni</a>, which provides the following routines:</p>
 <h2 id="(Uni)_method_new"><a href="/type/Uni#method_new">(Uni) method new</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>new</span></span><span>(</span><span class="keyword operator generic raku"><span>*</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>@</span></span><span class="variable other identifier raku"><span>codes</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>Uni</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Creates a new <code>Uni</code> instance from the given codepoint numbers.</p>
+<h2 id="(Uni)_method_list"><a href="/type/Uni#method_list">(Uni) method list</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>list</span></span><span>(</span><span class="routine name raku"><span>Uni</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>)</span></span></div></pre><p>Returns a <code>Seq</code> of integer codepoints.</p>
 <h2 id="(Uni)_method_NFC"><a href="/type/Uni#method_NFC">(Uni) method NFC</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>NFC</span></span><span>(</span><span class="routine name raku"><span>Uni</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>NFC</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFC (Normal Form Composed)-converted version of the invocant.</p>
 <h2 id="(Uni)_method_NFD"><a href="/type/Uni#method_NFD">(Uni) method NFD</a></h2>

@@ -36,7 +36,7 @@
                     <a class="menu-item " href="/type.html"> Types </a>
                     <a class="menu-item " href="/routine.html"> Routines </a>
                     <a class="menu-item " href="/programs.html"> Programs </a>
-                    <a class="menu-item " href="https://kiwiirc.com/client/irc.libera.chat/#raku"> Chat with us </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
             </div>
 
             
@@ -66,19 +66,19 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Raku_by_example_101">language documentation Raku by example 101</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Raku_by_example_101)_topic_variable_(Basics)_Topic_variable">(Raku by example 101) topic variable (Basics) Topic variable</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#Blocks">Blocks</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#Stable_sort">Stable sort</a></td></tr>
-
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Raku™_by_example_101">language documentation Raku™ by example 101</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Raku™_by_example_101)_topic_variable_(Basics)_Topic_variable">(Raku™ by example 101) topic variable (Basics) Topic variable</a></td></tr>
+                <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#Blocks">Blocks</a></td></tr>
+             <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#Stable_sort">Stable sort</a></td></tr>
+                
 </table>
 </nav>
 
         <div class="pod-body ">
             <p>Documentation for topic variable (Basics) <code>Topic variable</code> assembled from the following types:</p>
-<h1 id="language_documentation_Raku_by_example_101"><a class="u" href="#___top" title="go to top of document">language documentation Raku by example 101</a></h1>
-<p>From <a href="/language/101-basics#Topic_variable">Raku by example 101</a></p>
-<h2 id="(Raku_by_example_101)_topic_variable_(Basics)_Topic_variable"><a href="/language/101-basics#Topic_variable">(Raku by example 101) topic variable (Basics) Topic variable</a></h2>
+<h1 id="language_documentation_Raku™_by_example_101"><a class="u" href="#___top" title="go to top of document">language documentation Raku™ by example 101</a></h1>
+<p>From <a href="/language/101-basics#Topic_variable">Raku™ by example 101</a></p>
+<h2 id="(Raku™_by_example_101)_topic_variable_(Basics)_Topic_variable"><a href="/language/101-basics#Topic_variable">(Raku™ by example 101) topic variable (Basics) Topic variable</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage modifier declarator raku"><span>my</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>@</span></span><span class="variable other identifier raku"><span>sorted</span></span></span><span>&nbsp;</span><span class="storage modifier assignment raku"><span>=</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>@</span></span><span class="variable other identifier raku"><span>names</span></span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>sort</span></span><span>(</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>%</span></span><span class="variable other identifier raku"><span>sets</span></span></span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>_</span></span></span><span class="punctuation definition block raku"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>sort</span></span><span>(</span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span>&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>%</span></span><span class="variable other identifier raku"><span>matches</span></span></span><span class="meta block raku"><span class="punctuation definition block raku"><span>{</span></span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>_</span></span></span><span class="punctuation definition block raku"><span>}</span></span></span><span>&nbsp;</span><span class="punctuation definition block raku"><span>}</span></span></span><span>)</span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>reverse</span></span><span>;</span></span></div></pre><p>This line consists of three individually simple steps. An array&#39;s <code>sort</code> method returns a sorted version of the array&#39;s contents. However, the default sort on an array sorts by its contents. To print player names in winner-first order, the code must sort the array by the <em>scores</em> of the players, not their names. The <code>sort</code> method&#39;s argument is a <em>block</em> used to transform the array elements (the names of players) to the data by which to sort. The array items are passed in through the <em>topic variable</em> <code>$_</code>.</p>
 <h2 id="Blocks"><a class="u" href="#___top" title="go to top of document">Blocks</a></h2>
 <p>You have seen blocks before: both the <code>for</code> loop <code>-&gt; $line { ... } </code> and the <code>if</code> statement worked on blocks. A block is a self-contained piece of Raku code with an optional signature (the <code>-&gt; $line </code> part).</p>

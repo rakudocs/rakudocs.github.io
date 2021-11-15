@@ -36,7 +36,7 @@
                     <a class="menu-item " href="/type.html"> Types </a>
                     <a class="menu-item " href="/routine.html"> Routines </a>
                     <a class="menu-item " href="/programs.html"> Programs </a>
-                    <a class="menu-item " href="https://kiwiirc.com/client/irc.libera.chat/#raku"> Chat with us </a>
+                    <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
             </div>
 
             
@@ -222,13 +222,13 @@
           <tr class="toc-level-2"><td class="toc-number">3.151</td><td class="toc-text"><a href="#tell">tell</a></td></tr>
       <tr class="toc-level-2"><td class="toc-number">3.152</td><td class="toc-text"><a href="#telldir">telldir</a></td></tr>
          <tr class="toc-level-2"><td class="toc-number">3.153</td><td class="toc-text"><a href="#tie">tie</a></td></tr>
-                               <tr class="toc-level-2"><td class="toc-number">3.154</td><td class="toc-text"><a href="#time">time</a></td></tr>
+                                          <tr class="toc-level-2"><td class="toc-number">3.154</td><td class="toc-text"><a href="#time">time</a></td></tr>
       <tr class="toc-level-2"><td class="toc-number">3.155</td><td class="toc-text"><a href="#times">times</a></td></tr>
          <tr class="toc-level-2"><td class="toc-number">3.156</td><td class="toc-text"><a href="#tr///">tr///</a></td></tr>
                <tr class="toc-level-2"><td class="toc-number">3.157</td><td class="toc-text"><a href="#truncate">truncate</a></td></tr>
      <tr class="toc-level-2"><td class="toc-number">3.158</td><td class="toc-text"><a href="#uc">uc</a></td></tr>
              <tr class="toc-level-2"><td class="toc-number">3.159</td><td class="toc-text"><a href="#ucfirst">ucfirst</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">3.160</td><td class="toc-text"><a href="#undef">undef</a></td></tr>
+                    <tr class="toc-level-2"><td class="toc-number">3.160</td><td class="toc-text"><a href="#undef">undef</a></td></tr>
                         <tr class="toc-level-2"><td class="toc-number">3.161</td><td class="toc-text"><a href="#unlink">unlink</a></td></tr>
          <tr class="toc-level-2"><td class="toc-number">3.162</td><td class="toc-text"><a href="#unpack">unpack</a></td></tr>
                 <tr class="toc-level-2"><td class="toc-number">3.163</td><td class="toc-text"><a href="#unshift">unshift</a></td></tr>
@@ -1617,7 +1617,7 @@
 <li><p>ucfirst</p>
 </li>
 </ul>
-<p>Raku has done away with <code>ucfirst</code>. The title case function <a href="/routine/tc"><code>tc</code></a> probably does what you need.</p>
+<p>Raku has done away with <code>ucfirst</code>. The title case function <a href="/routine/tc"><code>tc</code></a> or <a href="/routine/tclc"><code>tclc</code></a> probably does what you need; in the first case, it does &quot;title case&quot;, which might correspond to different characters in different alphabets; it defaults to upper case if there&#39;s no title case mapping. On the other hand, <code>tclc</code> applies <code>tc</code> and then puts the rest of the characters in lower case.</p>
 <p>The Raku ecosystem has a module <a href="https://modules.raku.org/dist/P5lcfirst"><code>P5lcfirst</code></a> which exports a <code>ucfirst</code> function that mimics the original Perl behavior as much as possible.</p>
 <p><a name="index-entry-undef_-_perlfunc"></a></p>
 <h2 id="undef"><a class="u" href="#___top" title="go to top of document">undef</a></h2>

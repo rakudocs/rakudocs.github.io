@@ -205,7 +205,7 @@
        <tr class="toc-level-2"><td class="toc-number">3.134</td><td class="toc-text"><a href="#sort">sort</a></td></tr>
                        <tr class="toc-level-2"><td class="toc-number">3.135</td><td class="toc-text"><a href="#splice">splice</a></td></tr>
               <tr class="toc-level-2"><td class="toc-number">3.136</td><td class="toc-text"><a href="#split">split</a></td></tr>
-                       <tr class="toc-level-2"><td class="toc-number">3.137</td><td class="toc-text"><a href="#sprintf">sprintf</a></td></tr>
+                                <tr class="toc-level-2"><td class="toc-number">3.137</td><td class="toc-text"><a href="#sprintf">sprintf</a></td></tr>
                                                          <tr class="toc-level-2"><td class="toc-number">3.138</td><td class="toc-text"><a href="#sqrt">sqrt</a></td></tr>
                  <tr class="toc-level-2"><td class="toc-number">3.139</td><td class="toc-text"><a href="#srand">srand</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">3.140</td><td class="toc-text"><a href="#stat">stat</a></td></tr>
@@ -1404,7 +1404,7 @@
 <ul><li><p>split</p>
 </li>
 </ul>
-<p>The zero argument version must now be called with an explicit empty string, as described above.</p>
+<p><code>split</code> now requires a pattern. For the equivalent of Perl&#39;s behaviour of splitting on whitespace when no pattern is specified, use <a href="/routine/words">words</a> (or use <code>split</code> with <code>/\s+/</code> as the pattern and <code>:skip-empty</code> as a named argument).</p>
 <p><a name="index-entry-sprintf_-_perlfunc"></a></p>
 <h2 id="sprintf"><a class="u" href="#___top" title="go to top of document">sprintf</a></h2>
 <ul><li><p>sprintf FORMAT, LIST</p>

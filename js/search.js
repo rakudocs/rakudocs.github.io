@@ -3691,7 +3691,7 @@ $(function(){
 ,
 { category: "Reference", value: "package (declarator)", url: "/language/syntax#index-entry-declarator_unit-declarator_module-declarator_package-Package,_Module,_Class,_Role,_and_Grammar_declaration" }
 ,
-{ category: "Reference", value: "PERL6LIB", url: "/language/5to6-nutshell#index-entry-PERL6LIB-PERL6LIB" }
+{ category: "Reference", value: "RAKULIB", url: "/language/5to6-nutshell#index-entry-RAKULIB-RAKULIB" }
 ,
 { category: "Reference", value: "Regular Expressions", url: "/language/regexes#index-entry-Regular_Expressions" }
 ,

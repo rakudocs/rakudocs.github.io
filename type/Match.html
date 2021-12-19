@@ -79,7 +79,7 @@
       <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_orig">method orig</a></td></tr>
         <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_from">method from</a></td></tr>
     <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_to">method to</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_made">method made</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_made">method made</a></td></tr>
      <tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#routine_make">routine make</a></td></tr>
                           <tr class="toc-level-2"><td class="toc-number">1.10</td><td class="toc-text"><a href="#method_actions">method actions</a></td></tr>
      <tr class="toc-level-2"><td class="toc-number">1.11</td><td class="toc-text"><a href="#method_ast">method ast</a></td></tr>
@@ -233,7 +233,7 @@
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>from</span></span><span>()</span></span></div></pre><p>Returns the index of the starting position of the match.</p>
 <h2 id="method_to"><a class="u" href="#___top" title="go to top of document">method to</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>to</span></span><span>()</span></span></div></pre><p>Returns the index of the end position of the match.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>to</span></span><span>()</span></span></div></pre><p>Returns the index of the position next to the end of the match. It will return the match position if the end of the match is negative, and <code>Nil</code> if there has been no match.</p>
 <h2 id="method_made"><a class="u" href="#___top" title="go to top of document">method made</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>made</span></span><span>()</span></span></div></pre><p>Returns the payload that was set with <a href="/routine/make"><code>make</code></a>.</p>
 <h2 id="routine_make"><a class="u" href="#___top" title="go to top of document">routine make</a></h2>

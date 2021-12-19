@@ -4719,6 +4719,12 @@ $(function(){
 ,
 { category: "Reference", value: "^methods", url: "/language/classtut#index-entry-$CIRCUMFLEX_ACCENTmethods" }
 ,
+{ category: "Reference", value: "find_method (classes)", url: "/language/classtut#index-entry-classes_find__method" }
+,
+{ category: "Reference", value: "private_methods (classes)", url: "/language/classtut#index-entry-classes_private__methods" }
+,
+{ category: "Reference", value: "find_private_methods (classes)", url: "/language/classtut#index-entry-classes_find__private__methods" }
+,
 { category: "Reference", value: "Overriding default gist method", url: "/language/classtut#index-entry-Overriding_default_gist_method" }
 ,
 { category: "Reference", value: "Abstract Class", url: "/language/glossary#index-entry-Abstract_Class" }
@@ -6032,6 +6038,8 @@ $(function(){
 { category: "Reference", value: "Vim", url: "/language/unicode_entry#index-entry-Vim" }
 ,
 { category: "Reference", value: "Emacs", url: "/language/unicode_entry#index-entry-Emacs" }
+,
+{ category: "Reference", value: "hash slice", url: "/language/hashmap#index-entry-hash_slice" }
 ,
 { category: "Reference", value: "non-string keys", url: "/language/hashmap#index-entry-non-string_keys" }
 ,

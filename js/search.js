@@ -2025,6 +2025,8 @@ $(function(){
 ,
 { category: "method", value: "is-win", url: "/routine/is-win" }
 ,
+{ category: "method", value: "is-wrapped", url: "/routine/is-wrapped" }
+,
 { category: "Routine", value: "isNaN", url: "/routine/isNaN" }
 ,
 { category: "sub", value: "is_approx", url: "/routine/is_approx" }

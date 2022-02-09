@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>method params</title>
+    <title>Filename extensions</title>
     <meta charset="UTF-8"/>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -32,30 +32,23 @@
 
             <div class="menu-items dark-green">
                 <a class='menu-item darker-green' href='https://raku.org'><strong>Raku homepage</strong></a>
-                    <a class="menu-item " href="/language.html"> Language </a>
+                    <a class="menu-item selected darker-green" href="/language.html"> Language </a>
                     <a class="menu-item " href="/type.html"> Types </a>
-                    <a class="menu-item selected darker-green" href="/routine.html"> Routines </a>
+                    <a class="menu-item " href="/routine.html"> Routines </a>
                     <a class="menu-item " href="/programs.html"> Programs </a>
                     <a class="menu-item " href="https://web.libera.chat/?channel=#raku"> Chat with us </a>
             </div>
 
-            <div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green"><div class="menu-items darker-green">
-                    <a class="menu-item" href="/routine.html"> All </a>
-                    <a class="menu-item" href="/routine-sub.html"> Sub </a>
-                    <a class="menu-item" href="/routine-method.html"> Method </a>
-                    <a class="menu-item" href="/routine-term.html"> Term </a>
-                    <a class="menu-item" href="/routine-operator.html"> Operator </a>
-                    <a class="menu-item" href="/routine-trait.html"> Trait </a>
-                    <a class="menu-item" href="/routine-submethod.html"> Submethod </a>
-            </div></div></div></div></div></div></div>
+            
+            
 
         </div>
     </div>
 
     <div id="content" class="pretty-box yellow content_fragment">
 
-        <div align="right" style="display:none;">
-            <button title="Edit this page"  class="pencil" onclick="location=''">
+        <div align="right" style="display:;">
+            <button title="Edit this page"  class="pencil" onclick="location='https://github.com/Raku/doc/edit/master/doc//Language/filename-extensions.pod6'">
                 <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs></defs>
                     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -67,24 +60,35 @@
             </button>
         </div>
 
-        <h1 class="title">method params</h1>
-        <p class="subtitle"></p>
+        <h1 class="title">Filename extensions</h1>
+        <p class="subtitle">The extensions recommended for files with Raku content.</p>
 
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_Signature">class Signature</a></td></tr>
-<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Signature)_method_params">(Signature) method params</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Introduction">Introduction</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#History_and_extensions">History and extensions</a></td></tr>
 
 </table>
 </nav>
 
         <div class="pod-body ">
-            <p>Documentation for method <code>params</code> assembled from the following types:</p>
-<h1 id="class_Signature"><a class="u" href="#___top" title="go to top of document">class Signature</a></h1>
-<p>From <a href="/type/Signature#method_params">Signature</a></p>
-<h2 id="(Signature)_method_params"><a href="/type/Signature#method_params">(Signature) method params</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>params</span></span><span>(</span><span class="support type raku"><span>Signature</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type raku"><span>Positional</span></span><span>)</span></span></div></pre><p>Returns the list of <a href="/type/Parameter"><code>Parameter</code></a> objects that make up the signature.</p>
+            <table class="pod-table">
+<thead><tr>
+<th>File contents</th> <th>Extensions recommended or used at one time</th> <th>Current recommendation</th>
+</tr></thead>
+<tbody>
+<tr> <td>B&lt;Language files&gt;</td> <td></td> <td></td> </tr> <tr> <td>Raku script</td> <td>.pl, .p6</td> <td>.raku</td> </tr> <tr> <td>Raku module</td> <td>.pm, .pm6</td> <td>.rakumod</td> </tr> <tr> <td>Raku documentation</td> <td>.pm, pm6, pod, pod6</td> <td>.rakudoc</td> </tr> <tr> <td>Test files in raku</td> <td>.t</td> <td>.rakutest</td> </tr> <tr> <td>Not Quite Perl or NQP</td> <td></td> <td>.nqp</td> </tr> <tr> <td>B&lt;Module specific files&gt;</td> <td></td> <td></td> </tr> <tr> <td>Cro templates</td> <td></td> <td>.crotmp</td> </tr>
+</tbody>
+</table><h1 id="Introduction"><a class="u" href="#___top" title="go to top of document">Introduction</a></h1>
+<p>A filename extension is defined, at least for this page, as the remaining letters after and including the final &#39;.&#39;. A filename without a &#39;.&#39; in the filename does not have a filename extension.</p>
+<p>Filename extensions can be used to associate behavior with the file content, such as opening a specialized reader or editor, running a program with the file content as input, etc. On some operating systems, this is almost the required behavior. Even when it is not required by the operating system, filename extensions provide a useful mnemonic, or reminder, about the contents of the file.</p>
+<p>Early filesystems, the part of the operating system handling filenames, constrained filename extensions to three characters after the &#39;.&#39;. This is no longer a constraint.</p>
+<h1 id="History_and_extensions"><a class="u" href="#___top" title="go to top of document">History and extensions</a></h1>
+<p>The Raku language was for many years known as Perl&nbsp;6, and filename extensions were adopted accordingly. Consequently, there is a best current practice and a previous best practice. The following table is an attempt to list all the filename extensions, starting with the earliest on the left.</p>
+<p>The most recent best practice is shown in the last column.</p>
+<p>Some modules will become widely used, and will have filename extensions associated with them.</p>
+<p>A module developer / maintainer may add to the table and create a PR with the change in the same way as making other changes to the documentation.</p>
 
         </div>
     </div>
@@ -92,8 +96,8 @@
     
 
     <footer class="pretty-box yellow">
-        <p style="display:none;">
-            Generated from <a href="https://github.com/Raku/doc/edit/master/doc//">https://github.com/Raku/doc/edit/master/doc//</a>.
+        <p style="display:;">
+            Generated from <a href="https://github.com/Raku/doc/edit/master/doc//Language/filename-extensions.pod6">https://github.com/Raku/doc/edit/master/doc//Language/filename-extensions.pod6</a>.
         </p>
         <p>
             This is a work in progress to document Raku (formerly known as Perl 6), and

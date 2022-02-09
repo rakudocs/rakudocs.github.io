@@ -913,6 +913,8 @@ $(function(){
 ,
 { category: "Language", value: "Unicode", url: "/language/unicode" }
 ,
+{ category: "Language", value: "Filename extensions", url: "/language/filename-extensions" }
+,
 { category: "Language", value: "Contexts and contextualizers", url: "/language/contexts" }
 ,
 { category: "Language", value: "Enumeration", url: "/language/enumeration" }

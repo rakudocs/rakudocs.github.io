@@ -5989,6 +5989,8 @@ $(function(){
 ,
 { category: "Reference", value: "void type (NativeCall)", url: "/language/nativetypes#index-entry-void_type_(NativeCall)" }
 ,
+{ category: "Reference", value: "Pointer", url: "/language/nativetypes#index-entry-Pointer" }
+,
 { category: "Reference", value: "will trait (Phasers)", url: "/language/phasers#index-entry-Phasers__will_trait" }
 ,
 { category: "Reference", value: "BEGIN (Phasers)", url: "/language/phasers#index-entry-Phasers__BEGIN-BEGIN" }

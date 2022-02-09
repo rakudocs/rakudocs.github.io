@@ -5801,6 +5801,8 @@ $(function(){
 ,
 { category: "Reference", value: "CStruct (native representation)", url: "/language/nativecall#index-entry-CStruct_(native_representation)" }
 ,
+{ category: "Reference", value: "Pointer", url: "/language/nativecall#index-entry-Pointer" }
+,
 { category: "Reference", value: "CArray", url: "/language/nativecall#index-entry-CArray" }
 ,
 { category: "Reference", value: "CArray methods", url: "/language/nativecall#index-entry-CArray_methods" }
@@ -5988,8 +5990,6 @@ $(function(){
 { category: "Reference", value: "is nativesize", url: "/language/nativetypes#index-entry-is_nativesize" }
 ,
 { category: "Reference", value: "void type (NativeCall)", url: "/language/nativetypes#index-entry-void_type_(NativeCall)" }
-,
-{ category: "Reference", value: "Pointer", url: "/language/nativetypes#index-entry-Pointer" }
 ,
 { category: "Reference", value: "will trait (Phasers)", url: "/language/phasers#index-entry-Phasers__will_trait" }
 ,

@@ -1,7 +1,8 @@
-digraph "perl6-type-graph" {
+digraph "raku-type-graph" {
     rankdir=BT;
     splines=polyline;
-    overlap=false; 
+    overlap=false;
+
     graph [truecolor=true bgcolor="#FFFFFF"];
     // Types
     "IO::Socket::Async::ListenSocket" [color="#000000", fontcolor="#000000", href="/type/IO::Socket::Async::ListenSocket", fontname="FreeSans"];

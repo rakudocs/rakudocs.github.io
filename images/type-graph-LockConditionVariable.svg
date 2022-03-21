@@ -9,12 +9,12 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>raku&#45;type&#45;graph</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-184 213.28,-184 213.28,4 -4,4"/>
-<!-- IO::Notification::Change -->
+<!-- Lock::ConditionVariable -->
 <g id="node1" class="node">
-<title>IO::Notification::Change</title>
-<g id="a_node1"><a xlink:href="/type/IO::Notification::Change" xlink:title="IO::Notification::Change">
+<title>Lock::ConditionVariable</title>
+<g id="a_node1"><a xlink:href="/type/Lock::ConditionVariable" xlink:title="Lock::ConditionVariable">
 <ellipse fill="none" stroke="#000000" cx="104.64" cy="-18" rx="104.78" ry="18"/>
-<text text-anchor="middle" x="104.64" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Notification::Change</text>
+<text text-anchor="middle" x="104.64" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Lock::ConditionVariable</text>
 </a>
 </g>
 </g>
@@ -27,9 +27,9 @@
 </a>
 </g>
 </g>
-<!-- IO::Notification::Change&#45;&gt;Any -->
+<!-- Lock::ConditionVariable&#45;&gt;Any -->
 <g id="edge1" class="edge">
-<title>IO::Notification::Change&#45;&gt;Any</title>
+<title>Lock::ConditionVariable&#45;&gt;Any</title>
 <path fill="none" stroke="#000000" d="M104.64,-36.3C104.64,-44.02 104.64,-53.29 104.64,-61.89"/>
 <polygon fill="#000000" stroke="#000000" points="101.14,-61.9 104.64,-71.9 108.14,-61.9 101.14,-61.9"/>
 </g>

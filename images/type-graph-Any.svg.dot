@@ -1,7 +1,8 @@
-digraph "perl6-type-graph" {
+digraph "raku-type-graph" {
     rankdir=LR;
     splines=polyline;
-    overlap=false; 
+    overlap=false;
+
     // Layout hints
 
     subgraph "cluster: Mu children" {
@@ -31,11 +32,15 @@ digraph "perl6-type-graph" {
         "Baggy";
     }
 
+    graph [truecolor=true bgcolor="#FFFFFF"];
     // Types
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
     "Any" [color="#000000", fontcolor="#000000", href="/type/Any", fontname="FreeSans"];
     "AST" [color="#000000", fontcolor="#000000", href="/type/AST", fontname="FreeSans"];
     "Cool" [color="#000000", fontcolor="#000000", href="/type/Cool", fontname="FreeSans"];
+    "Stringy" [color="#6666FF", fontcolor="#6666FF", href="/type/Stringy", fontname="FreeSans"];
+    "Str" [color="#000000", fontcolor="#000000", href="/type/Str", fontname="FreeSans"];
+    "Allomorph" [color="#000000", fontcolor="#000000", href="/type/Allomorph", fontname="FreeSans"];
     "Positional" [color="#6666FF", fontcolor="#6666FF", href="/type/Positional", fontname="FreeSans"];
     "Iterable" [color="#6666FF", fontcolor="#6666FF", href="/type/Iterable", fontname="FreeSans"];
     "List" [color="#000000", fontcolor="#000000", href="/type/List", fontname="FreeSans"];
@@ -48,7 +53,6 @@ digraph "perl6-type-graph" {
     "Baggy" [color="#6666FF", fontcolor="#6666FF", href="/type/Baggy", fontname="FreeSans"];
     "Bag" [color="#000000", fontcolor="#000000", href="/type/Bag", fontname="FreeSans"];
     "BagHash" [color="#000000", fontcolor="#000000", href="/type/BagHash", fontname="FreeSans"];
-    "Stringy" [color="#6666FF", fontcolor="#6666FF", href="/type/Stringy", fontname="FreeSans"];
     "Blob" [color="#6666FF", fontcolor="#6666FF", href="/type/Blob", fontname="FreeSans"];
     "Callable" [color="#6666FF", fontcolor="#6666FF", href="/type/Callable", fontname="FreeSans"];
     "Code" [color="#000000", fontcolor="#000000", href="/type/Code", fontname="FreeSans"];
@@ -75,6 +79,7 @@ digraph "perl6-type-graph" {
     "Channel" [color="#000000", fontcolor="#000000", href="/type/Channel", fontname="FreeSans"];
     "Collation" [color="#000000", fontcolor="#000000", href="/type/Collation", fontname="FreeSans"];
     "CompUnit" [color="#000000", fontcolor="#000000", href="/type/CompUnit", fontname="FreeSans"];
+    "CompUnit::PrecompilationRepository" [color="#6666FF", fontcolor="#6666FF", href="/type/CompUnit::PrecompilationRepository", fontname="FreeSans"];
     "CompUnit::Repository" [color="#6666FF", fontcolor="#6666FF", href="/type/CompUnit::Repository", fontname="FreeSans"];
     "CompUnit::Repository::Locally" [color="#6666FF", fontcolor="#6666FF", href="/type/CompUnit::Repository::Locally", fontname="FreeSans"];
     "CompUnit::Repository::FileSystem" [color="#000000", fontcolor="#000000", href="/type/CompUnit::Repository::FileSystem", fontname="FreeSans"];
@@ -83,7 +88,6 @@ digraph "perl6-type-graph" {
     "Systemic" [color="#6666FF", fontcolor="#6666FF", href="/type/Systemic", fontname="FreeSans"];
     "Compiler" [color="#000000", fontcolor="#000000", href="/type/Compiler", fontname="FreeSans"];
     "Complex" [color="#000000", fontcolor="#000000", href="/type/Complex", fontname="FreeSans"];
-    "Str" [color="#000000", fontcolor="#000000", href="/type/Str", fontname="FreeSans"];
     "ComplexStr" [color="#000000", fontcolor="#000000", href="/type/ComplexStr", fontname="FreeSans"];
     "Scheduler" [color="#6666FF", fontcolor="#6666FF", href="/type/Scheduler", fontname="FreeSans"];
     "CurrentThreadScheduler" [color="#000000", fontcolor="#000000", href="/type/CurrentThreadScheduler", fontname="FreeSans"];
@@ -95,6 +99,7 @@ digraph "perl6-type-graph" {
     "Distribution::Locally" [color="#6666FF", fontcolor="#6666FF", href="/type/Distribution::Locally", fontname="FreeSans"];
     "Distribution::Hash" [color="#000000", fontcolor="#000000", href="/type/Distribution::Hash", fontname="FreeSans"];
     "Distribution::Path" [color="#000000", fontcolor="#000000", href="/type/Distribution::Path", fontname="FreeSans"];
+    "Distribution::Resource" [color="#000000", fontcolor="#000000", href="/type/Distribution::Resource", fontname="FreeSans"];
     "Distro" [color="#000000", fontcolor="#000000", href="/type/Distro", fontname="FreeSans"];
     "Duration" [color="#000000", fontcolor="#000000", href="/type/Duration", fontname="FreeSans"];
     "Encoding" [color="#000000", fontcolor="#000000", href="/type/Encoding", fontname="FreeSans"];
@@ -110,6 +115,7 @@ digraph "perl6-type-graph" {
     "Grammar" [color="#000000", fontcolor="#000000", href="/type/Grammar", fontname="FreeSans"];
     "Map" [color="#000000", fontcolor="#000000", href="/type/Map", fontname="FreeSans"];
     "Hash" [color="#000000", fontcolor="#000000", href="/type/Hash", fontname="FreeSans"];
+    "PositionalBindFailover" [color="#6666FF", fontcolor="#6666FF", href="/type/PositionalBindFailover", fontname="FreeSans"];
     "Sequence" [color="#6666FF", fontcolor="#6666FF", href="/type/Sequence", fontname="FreeSans"];
     "HyperSeq" [color="#000000", fontcolor="#000000", href="/type/HyperSeq", fontname="FreeSans"];
     "HyperWhatever" [color="#000000", fontcolor="#000000", href="/type/HyperWhatever", fontname="FreeSans"];
@@ -118,14 +124,18 @@ digraph "perl6-type-graph" {
     "IO::CatHandle" [color="#000000", fontcolor="#000000", href="/type/IO::CatHandle", fontname="FreeSans"];
     "IO::ArgFiles" [color="#000000", fontcolor="#000000", href="/type/IO::ArgFiles", fontname="FreeSans"];
     "IO::Notification" [color="#000000", fontcolor="#000000", href="/type/IO::Notification", fontname="FreeSans"];
+    "IO::Notification::Change" [color="#000000", fontcolor="#000000", href="/type/IO::Notification::Change", fontname="FreeSans"];
     "IO::Path" [color="#000000", fontcolor="#000000", href="/type/IO::Path", fontname="FreeSans"];
     "IO::Path::Cygwin" [color="#000000", fontcolor="#000000", href="/type/IO::Path::Cygwin", fontname="FreeSans"];
+    "IO::Path::Parts" [color="#000000", fontcolor="#000000", href="/type/IO::Path::Parts", fontname="FreeSans"];
     "IO::Path::QNX" [color="#000000", fontcolor="#000000", href="/type/IO::Path::QNX", fontname="FreeSans"];
     "IO::Path::Unix" [color="#000000", fontcolor="#000000", href="/type/IO::Path::Unix", fontname="FreeSans"];
     "IO::Path::Win32" [color="#000000", fontcolor="#000000", href="/type/IO::Path::Win32", fontname="FreeSans"];
     "IO::Pipe" [color="#000000", fontcolor="#000000", href="/type/IO::Pipe", fontname="FreeSans"];
     "IO::Socket" [color="#6666FF", fontcolor="#6666FF", href="/type/IO::Socket", fontname="FreeSans"];
     "IO::Socket::Async" [color="#000000", fontcolor="#000000", href="/type/IO::Socket::Async", fontname="FreeSans"];
+    "Tap" [color="#000000", fontcolor="#000000", href="/type/Tap", fontname="FreeSans"];
+    "IO::Socket::Async::ListenSocket" [color="#000000", fontcolor="#000000", href="/type/IO::Socket::Async::ListenSocket", fontname="FreeSans"];
     "IO::Socket::INET" [color="#000000", fontcolor="#000000", href="/type/IO::Socket::INET", fontname="FreeSans"];
     "IO::Spec" [color="#000000", fontcolor="#000000", href="/type/IO::Spec", fontname="FreeSans"];
     "IO::Spec::Unix" [color="#000000", fontcolor="#000000", href="/type/IO::Spec::Unix", fontname="FreeSans"];
@@ -141,6 +151,7 @@ digraph "perl6-type-graph" {
     "Label" [color="#000000", fontcolor="#000000", href="/type/Label", fontname="FreeSans"];
     "Lock" [color="#000000", fontcolor="#000000", href="/type/Lock", fontname="FreeSans"];
     "Lock::Async" [color="#000000", fontcolor="#000000", href="/type/Lock::Async", fontname="FreeSans"];
+    "Lock::ConditionVariable" [color="#000000", fontcolor="#000000", href="/type/Lock::ConditionVariable", fontname="FreeSans"];
     "MOP" [color="#000000", fontcolor="#000000", href="/type/MOP", fontname="FreeSans"];
     "Routine" [color="#000000", fontcolor="#000000", href="/type/Routine", fontname="FreeSans"];
     "Macro" [color="#000000", fontcolor="#000000", href="/type/Macro", fontname="FreeSans"];
@@ -172,6 +183,7 @@ digraph "perl6-type-graph" {
     "Metamodel::RolePunning" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::RolePunning", fontname="FreeSans"];
     "Metamodel::TypePretense" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::TypePretense", fontname="FreeSans"];
     "Metamodel::CurriedRoleHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::CurriedRoleHOW", fontname="FreeSans"];
+    "Metamodel::DefiniteHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::DefiniteHOW", fontname="FreeSans"];
     "Metamodel::EnumHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::EnumHOW", fontname="FreeSans"];
     "Metamodel::GenericHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::GenericHOW", fontname="FreeSans"];
     "Metamodel::GrammarHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::GrammarHOW", fontname="FreeSans"];
@@ -203,6 +215,7 @@ digraph "perl6-type-graph" {
     "Order" [color="#33BB33", fontcolor="#33BB33", href="/type/Order", fontname="FreeSans"];
     "Pair" [color="#000000", fontcolor="#000000", href="/type/Pair", fontname="FreeSans"];
     "Parameter" [color="#000000", fontcolor="#000000", href="/type/Parameter", fontname="FreeSans"];
+    "Raku" [color="#000000", fontcolor="#000000", href="/type/Raku", fontname="FreeSans"];
     "Perl" [color="#000000", fontcolor="#000000", href="/type/Perl", fontname="FreeSans"];
     "Pod::Block" [color="#000000", fontcolor="#000000", href="/type/Pod::Block", fontname="FreeSans"];
     "Pod::Block::Code" [color="#000000", fontcolor="#000000", href="/type/Pod::Block::Code", fontname="FreeSans"];
@@ -216,7 +229,6 @@ digraph "perl6-type-graph" {
     "Pod::FormattingCode" [color="#000000", fontcolor="#000000", href="/type/Pod::FormattingCode", fontname="FreeSans"];
     "Pod::Heading" [color="#000000", fontcolor="#000000", href="/type/Pod::Heading", fontname="FreeSans"];
     "Pod::Item" [color="#000000", fontcolor="#000000", href="/type/Pod::Item", fontname="FreeSans"];
-    "PositionalBindFailover" [color="#6666FF", fontcolor="#6666FF", href="/type/PositionalBindFailover", fontname="FreeSans"];
     "PredictiveIterator" [color="#6666FF", fontcolor="#6666FF", href="/type/PredictiveIterator", fontname="FreeSans"];
     "Proc" [color="#000000", fontcolor="#000000", href="/type/Proc", fontname="FreeSans"];
     "Proc::Async" [color="#000000", fontcolor="#000000", href="/type/Proc::Async", fontname="FreeSans"];
@@ -247,7 +259,6 @@ digraph "perl6-type-graph" {
     "Supplier" [color="#000000", fontcolor="#000000", href="/type/Supplier", fontname="FreeSans"];
     "Supplier::Preserving" [color="#000000", fontcolor="#000000", href="/type/Supplier::Preserving", fontname="FreeSans"];
     "Supply" [color="#000000", fontcolor="#000000", href="/type/Supply", fontname="FreeSans"];
-    "Tap" [color="#000000", fontcolor="#000000", href="/type/Tap", fontname="FreeSans"];
     "Telemetry" [color="#000000", fontcolor="#000000", href="/type/Telemetry", fontname="FreeSans"];
     "Telemetry::Instrument::Thread" [color="#000000", fontcolor="#000000", href="/type/Telemetry::Instrument::Thread", fontname="FreeSans"];
     "Telemetry::Instrument::ThreadPool" [color="#000000", fontcolor="#000000", href="/type/Telemetry::Instrument::ThreadPool", fontname="FreeSans"];
@@ -257,6 +268,7 @@ digraph "perl6-type-graph" {
     "Test" [color="#000000", fontcolor="#000000", href="/type/Test", fontname="FreeSans"];
     "Thread" [color="#000000", fontcolor="#000000", href="/type/Thread", fontname="FreeSans"];
     "ThreadPoolScheduler" [color="#000000", fontcolor="#000000", href="/type/ThreadPoolScheduler", fontname="FreeSans"];
+    "UInt" [color="#000000", fontcolor="#000000", href="/type/UInt", fontname="FreeSans"];
     "VM" [color="#000000", fontcolor="#000000", href="/type/VM", fontname="FreeSans"];
     "ValueObjAt" [color="#000000", fontcolor="#000000", href="/type/ValueObjAt", fontname="FreeSans"];
     "Variable" [color="#000000", fontcolor="#000000", href="/type/Variable", fontname="FreeSans"];
@@ -271,6 +283,8 @@ digraph "perl6-type-graph" {
     "Any" -> "Mu" [color="#000000"];
     "AST" -> "Any" [color="#000000"];
     "Cool" -> "Any" [color="#000000"];
+    "Str" -> "Cool" [color="#000000"];
+    "Allomorph" -> "Str" [color="#000000"];
     "List" -> "Cool" [color="#000000"];
     "Array" -> "List" [color="#000000"];
     "Attribute" -> "Any" [color="#000000"];
@@ -304,15 +318,15 @@ digraph "perl6-type-graph" {
     "CompUnit::Repository::Installation" -> "Any" [color="#000000"];
     "Compiler" -> "Any" [color="#000000"];
     "Complex" -> "Cool" [color="#000000"];
-    "Str" -> "Cool" [color="#000000"];
+    "ComplexStr" -> "Allomorph" [color="#000000"];
     "ComplexStr" -> "Complex" [color="#000000"];
-    "ComplexStr" -> "Str" [color="#000000"];
     "CurrentThreadScheduler" -> "Any" [color="#000000"];
     "Date" -> "Any" [color="#000000"];
     "DateTime" -> "Any" [color="#000000"];
     "Deprecation" -> "Any" [color="#000000"];
     "Distribution::Hash" -> "Any" [color="#000000"];
     "Distribution::Path" -> "Any" [color="#000000"];
+    "Distribution::Resource" -> "Any" [color="#000000"];
     "Distro" -> "Any" [color="#000000"];
     "Duration" -> "Cool" [color="#000000"];
     "Encoding" -> "Any" [color="#000000"];
@@ -333,13 +347,17 @@ digraph "perl6-type-graph" {
     "IO::CatHandle" -> "IO::Handle" [color="#000000"];
     "IO::ArgFiles" -> "IO::CatHandle" [color="#000000"];
     "IO::Notification" -> "Any" [color="#000000"];
+    "IO::Notification::Change" -> "Any" [color="#000000"];
     "IO::Path" -> "Cool" [color="#000000"];
     "IO::Path::Cygwin" -> "IO::Path" [color="#000000"];
+    "IO::Path::Parts" -> "Any" [color="#000000"];
     "IO::Path::QNX" -> "IO::Path" [color="#000000"];
     "IO::Path::Unix" -> "IO::Path" [color="#000000"];
     "IO::Path::Win32" -> "IO::Path" [color="#000000"];
     "IO::Pipe" -> "IO::Handle" [color="#000000"];
     "IO::Socket::Async" -> "Any" [color="#000000"];
+    "Tap" -> "Any" [color="#000000"];
+    "IO::Socket::Async::ListenSocket" -> "Tap" [color="#000000"];
     "IO::Socket::INET" -> "Any" [color="#000000"];
     "IO::Spec" -> "Any" [color="#000000"];
     "IO::Spec::Unix" -> "IO::Spec" [color="#000000"];
@@ -348,13 +366,14 @@ digraph "perl6-type-graph" {
     "IO::Spec::Win32" -> "IO::Spec::Unix" [color="#000000"];
     "IO::Special" -> "Any" [color="#000000"];
     "Instant" -> "Cool" [color="#000000"];
+    "IntStr" -> "Allomorph" [color="#000000"];
     "IntStr" -> "Int" [color="#000000"];
-    "IntStr" -> "Str" [color="#000000"];
     "Junction" -> "Mu" [color="#000000"];
     "Kernel" -> "Any" [color="#000000"];
     "Label" -> "Any" [color="#000000"];
     "Lock" -> "Any" [color="#000000"];
     "Lock::Async" -> "Any" [color="#000000"];
+    "Lock::ConditionVariable" -> "Any" [color="#000000"];
     "MOP" -> "Any" [color="#000000"];
     "Routine" -> "Block" [color="#000000"];
     "Macro" -> "Routine" [color="#000000"];
@@ -364,6 +383,7 @@ digraph "perl6-type-graph" {
     "Metamodel::ConcreteRoleHOW" -> "Any" [color="#000000"];
     "Metamodel::ContainerDescriptor" -> "Any" [color="#000000"];
     "Metamodel::CurriedRoleHOW" -> "Any" [color="#000000"];
+    "Metamodel::DefiniteHOW" -> "Any" [color="#000000"];
     "Metamodel::EnumHOW" -> "Any" [color="#000000"];
     "Metamodel::GenericHOW" -> "Any" [color="#000000"];
     "Metamodel::GrammarHOW" -> "Metamodel::ClassHOW" [color="#000000"];
@@ -387,13 +407,14 @@ digraph "perl6-type-graph" {
     "NFKC" -> "Uni" [color="#000000"];
     "NFKD" -> "Uni" [color="#000000"];
     "Num" -> "Cool" [color="#000000"];
+    "NumStr" -> "Allomorph" [color="#000000"];
     "NumStr" -> "Num" [color="#000000"];
-    "NumStr" -> "Str" [color="#000000"];
     "ObjAt" -> "Any" [color="#000000"];
     "Order" -> "Int" [color="#000000"];
     "Pair" -> "Any" [color="#000000"];
     "Parameter" -> "Any" [color="#000000"];
-    "Perl" -> "Any" [color="#000000"];
+    "Raku" -> "Any" [color="#000000"];
+    "Perl" -> "Raku" [color="#000000"];
     "Pod::Block" -> "Any" [color="#000000"];
     "Pod::Block::Code" -> "Pod::Block" [color="#000000"];
     "Pod::Block::Comment" -> "Pod::Block" [color="#000000"];
@@ -415,8 +436,8 @@ digraph "perl6-type-graph" {
     "RaceSeq" -> "Any" [color="#000000"];
     "Range" -> "Cool" [color="#000000"];
     "Rat" -> "Cool" [color="#000000"];
+    "RatStr" -> "Allomorph" [color="#000000"];
     "RatStr" -> "Rat" [color="#000000"];
-    "RatStr" -> "Str" [color="#000000"];
     "Regex" -> "Method" [color="#000000"];
     "Routine::WrapHandle" -> "Any" [color="#000000"];
     "Scalar" -> "Any" [color="#000000"];
@@ -434,7 +455,6 @@ digraph "perl6-type-graph" {
     "Supplier" -> "Any" [color="#000000"];
     "Supplier::Preserving" -> "Supplier" [color="#000000"];
     "Supply" -> "Any" [color="#000000"];
-    "Tap" -> "Any" [color="#000000"];
     "Telemetry" -> "Any" [color="#000000"];
     "Telemetry::Instrument::Thread" -> "Any" [color="#000000"];
     "Telemetry::Instrument::ThreadPool" -> "Any" [color="#000000"];
@@ -444,6 +464,7 @@ digraph "perl6-type-graph" {
     "Test" -> "Any" [color="#000000"];
     "Thread" -> "Any" [color="#000000"];
     "ThreadPoolScheduler" -> "Any" [color="#000000"];
+    "UInt" -> "Any" [color="#000000"];
     "VM" -> "Any" [color="#000000"];
     "ValueObjAt" -> "ObjAt" [color="#000000"];
     "Variable" -> "Any" [color="#000000"];
@@ -455,6 +476,7 @@ digraph "perl6-type-graph" {
     "utf8" -> "Any" [color="#000000"];
 
     // Roles
+    "Str" -> "Stringy" [color="#6666FF"];
     "List" -> "Positional" [color="#6666FF"];
     "List" -> "Iterable" [color="#6666FF"];
     "QuantHash" -> "Associative" [color="#6666FF"];
@@ -484,7 +506,6 @@ digraph "perl6-type-graph" {
     "CompUnit::Repository::Installation" -> "CompUnit::Repository::Installable" [color="#6666FF"];
     "Compiler" -> "Systemic" [color="#6666FF"];
     "Complex" -> "Numeric" [color="#6666FF"];
-    "Str" -> "Stringy" [color="#6666FF"];
     "CurrentThreadScheduler" -> "Scheduler" [color="#6666FF"];
     "Date" -> "Dateish" [color="#6666FF"];
     "DateTime" -> "Dateish" [color="#6666FF"];
@@ -497,9 +518,13 @@ digraph "perl6-type-graph" {
     "ForeignCode" -> "Callable" [color="#6666FF"];
     "Map" -> "Iterable" [color="#6666FF"];
     "Map" -> "Associative" [color="#6666FF"];
+    "Sequence" -> "PositionalBindFailover" [color="#6666FF"];
     "HyperSeq" -> "Iterable" [color="#6666FF"];
     "HyperSeq" -> "Sequence" [color="#6666FF"];
     "IO::Path" -> "IO" [color="#6666FF"];
+    "IO::Path::Parts" -> "Positional" [color="#6666FF"];
+    "IO::Path::Parts" -> "Associative" [color="#6666FF"];
+    "IO::Path::Parts" -> "Iterable" [color="#6666FF"];
     "IO::Socket::INET" -> "IO::Socket" [color="#6666FF"];
     "IO::Special" -> "IO" [color="#6666FF"];
     "Instant" -> "Real" [color="#6666FF"];
@@ -532,6 +557,7 @@ digraph "perl6-type-graph" {
     "Metamodel::ConcreteRoleHOW" -> "Metamodel::MultipleInheritance" [color="#6666FF"];
     "Metamodel::CurriedRoleHOW" -> "Metamodel::RolePunning" [color="#6666FF"];
     "Metamodel::CurriedRoleHOW" -> "Metamodel::TypePretense" [color="#6666FF"];
+    "Metamodel::DefiniteHOW" -> "Metamodel::Documenting" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::Naming" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::Stashing" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::AttributeContainer" [color="#6666FF"];
@@ -543,6 +569,7 @@ digraph "perl6-type-graph" {
     "Metamodel::EnumHOW" -> "Metamodel::MROBasedTypeChecking" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
+    "Metamodel::EnumHOW" -> "Metamodel::Mixins" [color="#6666FF"];
     "Metamodel::GenericHOW" -> "Metamodel::Naming" [color="#6666FF"];
     "Metamodel::GrammarHOW" -> "Metamodel::DefaultParent" [color="#6666FF"];
     "Metamodel::ModuleHOW" -> "Metamodel::Naming" [color="#6666FF"];
@@ -590,7 +617,7 @@ digraph "perl6-type-graph" {
     "Uni" -> "Stringy" [color="#6666FF"];
     "Num" -> "Real" [color="#6666FF"];
     "Pair" -> "Associative" [color="#6666FF"];
-    "Perl" -> "Systemic" [color="#6666FF"];
+    "Raku" -> "Systemic" [color="#6666FF"];
     "PredictiveIterator" -> "Iterator" [color="#6666FF"];
     "RaceSeq" -> "Iterable" [color="#6666FF"];
     "RaceSeq" -> "Sequence" [color="#6666FF"];
@@ -598,7 +625,7 @@ digraph "perl6-type-graph" {
     "Range" -> "Iterable" [color="#6666FF"];
     "Rat" -> "Rational" [color="#6666FF"];
     "Seq" -> "Iterable" [color="#6666FF"];
-    "Seq" -> "PositionalBindFailover" [color="#6666FF"];
+    "Seq" -> "Sequence" [color="#6666FF"];
     "Setty" -> "QuantHash" [color="#6666FF"];
     "Set" -> "Setty" [color="#6666FF"];
     "SetHash" -> "Setty" [color="#6666FF"];

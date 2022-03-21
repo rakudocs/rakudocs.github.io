@@ -5,12 +5,12 @@ digraph "raku-type-graph" {
 
     graph [truecolor=true bgcolor="#FFFFFF"];
     // Types
-    "Distribution::Resource" [color="#000000", fontcolor="#000000", href="/type/Distribution::Resource", fontname="FreeSans"];
+    "Lock::ConditionVariable" [color="#000000", fontcolor="#000000", href="/type/Lock::ConditionVariable", fontname="FreeSans"];
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
     "Any" [color="#000000", fontcolor="#000000", href="/type/Any", fontname="FreeSans"];
 
     // Superclasses
-    "Distribution::Resource" -> "Any" [color="#000000"];
+    "Lock::ConditionVariable" -> "Any" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
 
     // Roles

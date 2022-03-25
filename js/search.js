@@ -6355,6 +6355,8 @@ $(function(){
 ,
 { category: "Reference", value: "extra named arguments", url: "/type/Method#index-entry-extra_named_arguments" }
 ,
+{ category: "Reference", value: "*%_ (extra named arguments)", url: "/type/Method#index-entry-*$PERCENT_SIGN___(extra_named_arguments)" }
+,
 { category: "Reference", value: "NativeEndian", url: "/type/Endian#index-entry-NativeEndian" }
 ,
 { category: "Reference", value: "LittleEndian", url: "/type/Endian#index-entry-LittleEndian" }

@@ -71,13 +71,13 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-                                   <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_path">method path</a></td></tr>
-  <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_event">method event</a></td></tr>
-      <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_IO">method IO</a></td></tr>
-  <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_gist">method gist</a></td></tr>
-    <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
- 
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_path">method path</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_event">method event</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_IO">method IO</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_gist">method gist</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+
 </table>
 </nav>
 
@@ -97,12 +97,58 @@
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator multi raku"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>gist</span></span><span>(</span><span class="support type raku"><span>IO</span></span><span>::</span><span class="routine name raku"><span>Notification</span></span><span>::</span><span class="routine name raku"><span>Change</span></span><span class="meta adverb definedness raku"><span class="keyword operator adverb raku"><span>:</span></span><span class="keyword other special-method definedness raku"><span>D</span></span></span><span class="keyword operator generic raku"><span>:</span></span><span>)</span></span></div></pre><p>Returns the path and event attributes, separated by semicolon.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>404</code></figcaption>
-  <svg></svg>
+  <figcaption>Type relations for <code>IO::Notification::Change</code></figcaption>
+  <svg width="217pt" height="188pt"
+ viewBox="0.00 0.00 217.28 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>raku&#45;type&#45;graph</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-184 213.28,-184 213.28,4 -4,4"/>
+<!-- IO::Notification::Change -->
+<g id="node1" class="node">
+<title>IO::Notification::Change</title>
+<g id="a_node1"><a xlink:href="/type/IO::Notification::Change" xlink:title="IO::Notification::Change">
+<ellipse fill="none" stroke="#000000" cx="104.64" cy="-18" rx="104.78" ry="18"/>
+<text text-anchor="middle" x="104.64" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Notification::Change</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node">
+<title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="104.64" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="104.64" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- IO::Notification::Change&#45;&gt;Any -->
+<g id="edge1" class="edge">
+<title>IO::Notification::Change&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M104.64,-36.3C104.64,-44.02 104.64,-53.29 104.64,-61.89"/>
+<polygon fill="#000000" stroke="#000000" points="101.14,-61.9 104.64,-71.9 108.14,-61.9 101.14,-61.9"/>
+</g>
+<!-- Mu -->
+<g id="node2" class="node">
+<title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="104.64" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="104.64" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge2" class="edge">
+<title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M104.64,-108.3C104.64,-116.02 104.64,-125.29 104.64,-133.89"/>
+<polygon fill="#000000" stroke="#000000" points="101.14,-133.9 104.64,-143.9 108.14,-133.9 101.14,-133.9"/>
+</g>
+</g>
+</svg>
+
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-404.svg"
+      href="/images/type-graph-IO%3A%3ANotification%3A%3AChange.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >

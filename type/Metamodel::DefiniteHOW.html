@@ -71,21 +71,21 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-                                                         <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
- <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_new_type">method new_type</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_name">method name</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_shortname">method shortname</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_base_type">method base_type</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_definite">method definite</a></td></tr>
-           <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_nominalize">method nominalize</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_find_method">method find_method</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_type_check">method type_check</a></td></tr>
-           <tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_accepts_type">method accepts_type</a></td></tr>
-           <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Documenting">Routines supplied by role Metamodel::Documenting</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Metamodel::Documenting)_method_set_why">(Metamodel::Documenting) method set_why</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Metamodel::Documenting)_method_WHY">(Metamodel::Documenting) method WHY</a></td></tr>
-  
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_new_type">method new_type</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_name">method name</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_shortname">method shortname</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_base_type">method base_type</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_definite">method definite</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_nominalize">method nominalize</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_find_method">method find_method</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_type_check">method type_check</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_accepts_type">method accepts_type</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Metamodel::Documenting">Routines supplied by role Metamodel::Documenting</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Metamodel::Documenting)_method_set_why">(Metamodel::Documenting) method set_why</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Metamodel::Documenting)_method_WHY">(Metamodel::Documenting) method WHY</a></td></tr>
+
 </table>
 </nav>
 
@@ -117,12 +117,73 @@
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="storage type declarator type raku"><span>method</span></span><span>&nbsp;</span><span class="entity name function raku"><span>accepts_type</span></span><span>(</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>definite_type</span></span></span><span>,&nbsp;</span><span class="meta variable container raku"><span class="variable other identifier sigil raku"><span>$</span></span><span class="variable other identifier raku"><span>checkee</span></span></span><span>)</span></span></div></pre><p>Performs a type-check of <code>$checkee</code> against a definite type. This will check if <code>$checkee</code> is of its base type and matches its definiteness, returning <code>True</code> if they match or <code>False</code> otherwise. This metamethod can get called when the definite type is on the right-hand side of a smartmatch, for instance.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>404</code></figcaption>
-  <svg></svg>
+  <figcaption>Type relations for <code>Metamodel::DefiniteHOW</code></figcaption>
+  <svg width="327pt" height="174pt"
+ viewBox="0.00 0.00 327.47 173.64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 169.64)">
+<title>raku&#45;type&#45;graph</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-169.64 323.47,-169.64 323.47,4 -4,4"/>
+<!-- Metamodel::DefiniteHOW -->
+<g id="node1" class="node">
+<title>Metamodel::DefiniteHOW</title>
+<g id="a_node1"><a xlink:href="/type/Metamodel::DefiniteHOW" xlink:title="Metamodel::DefiniteHOW">
+<ellipse fill="none" stroke="#000000" cx="161.43" cy="-91.32" rx="111.28" ry="18"/>
+<text text-anchor="middle" x="161.43" y="-87.62" font-family="FreeSans" font-size="14.00" fill="#000000">Metamodel::DefiniteHOW</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node">
+<title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="222.87" cy="-47.32" rx="27" ry="18"/>
+<text text-anchor="middle" x="222.87" y="-43.62" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Metamodel::DefiniteHOW&#45;&gt;Any -->
+<g id="edge1" class="edge">
+<title>Metamodel::DefiniteHOW&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M186.06,-73.68C189.42,-71.27 192.88,-68.79 196.27,-66.36"/>
+<polygon fill="#000000" stroke="#000000" points="198.38,-69.16 204.47,-60.49 194.3,-63.47 198.38,-69.16"/>
+</g>
+<!-- Metamodel::Documenting -->
+<g id="node4" class="node">
+<title>Metamodel::Documenting</title>
+<g id="a_node4"><a xlink:href="/type/Metamodel::Documenting" xlink:title="Metamodel::Documenting">
+<ellipse fill="none" stroke="#6666ff" cx="111.14" cy="-147.64" rx="111.28" ry="18"/>
+<text text-anchor="middle" x="111.14" y="-143.94" font-family="FreeSans" font-size="14.00" fill="#6666ff">Metamodel::Documenting</text>
+</a>
+</g>
+</g>
+<!-- Metamodel::DefiniteHOW&#45;&gt;Metamodel::Documenting -->
+<g id="edge3" class="edge">
+<title>Metamodel::DefiniteHOW&#45;&gt;Metamodel::Documenting</title>
+<path fill="none" stroke="#6666ff" d="M145.52,-109.14C141.85,-113.25 137.87,-117.7 133.98,-122.07"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="131.17,-119.95 127.12,-129.74 136.39,-124.62 131.17,-119.95"/>
+</g>
+<!-- Mu -->
+<g id="node2" class="node">
+<title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="292.47" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="292.47" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge2" class="edge">
+<title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M246.04,-37.55C250.55,-35.66 255.35,-33.63 260.1,-31.64"/>
+<polygon fill="#000000" stroke="#000000" points="261.77,-34.73 269.63,-27.62 259.06,-28.28 261.77,-34.73"/>
+</g>
+</g>
+</svg>
+
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-404.svg"
+      href="/images/type-graph-Metamodel%3A%3ADefiniteHOW.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >

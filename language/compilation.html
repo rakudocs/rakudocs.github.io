@@ -66,17 +66,17 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-  <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Overview">Overview</a></td></tr>
-                                                <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Introduction">Introduction</a></td></tr>
-                                                      <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#Why_change?">Why change?</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#Long_names">Long names</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">2.3</td><td class="toc-text"><a href="#$*REPO">$*REPO</a></td></tr>
-                                                                   <tr class="toc-level-2"><td class="toc-number">2.4</td><td class="toc-text"><a href="#Repositories">Repositories</a></td></tr>
-                            <tr class="toc-level-2"><td class="toc-number">2.5</td><td class="toc-text"><a href="#Resources">Resources</a></td></tr>
-                                        <tr class="toc-level-2"><td class="toc-number">2.6</td><td class="toc-text"><a href="#Dependencies">Dependencies</a></td></tr>
-              <tr class="toc-level-2"><td class="toc-number">2.7</td><td class="toc-text"><a href="#Precomp_stores">Precomp stores</a></td></tr>
-           <tr class="toc-level-2"><td class="toc-number">2.8</td><td class="toc-text"><a href="#Credit">Credit</a></td></tr>
-     
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Overview">Overview</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Introduction">Introduction</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#Why_change?">Why change?</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#Long_names">Long names</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.3</td><td class="toc-text"><a href="#$*REPO">$*REPO</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.4</td><td class="toc-text"><a href="#Repositories">Repositories</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.5</td><td class="toc-text"><a href="#Resources">Resources</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.6</td><td class="toc-text"><a href="#Dependencies">Dependencies</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.7</td><td class="toc-text"><a href="#Precomp_stores">Precomp stores</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">2.8</td><td class="toc-text"><a href="#Credit">Credit</a></td></tr>
+
 </table>
 </nav>
 
@@ -97,7 +97,7 @@
 <li><p>when developing a new program a developer may want to have the modules written by both Alice and Bob installed locally. So it is not possible simply to have only one version of a module with a single name installed.</p>
 </li>
 </ul>
-<p><code>Raku</code> enables all of these possibilities, allowing for multiple versions, multiple authorities, and multiple APIs to be present, installed, and available locally. The way classes and modules can be accessed with specific attributes is explained <a href="/language/typesystem#Versioning,_authorship,_and_API_version..html">elsewhere</a>. This tutorial is about how <code>Raku</code> handles these possibilities.</p>
+<p><code>Raku</code> enables all of these possibilities, allowing for multiple versions, multiple authorities, and multiple APIs to be present, installed, and available locally. The way classes and modules can be accessed with specific attributes is explained <a href="/language/typesystem#Versioning,_authorship,_and_API_version.">elsewhere</a>. This tutorial is about how <code>Raku</code> handles these possibilities.</p>
 <h1 id="Introduction"><a class="u" href="#___top" title="go to top of document">Introduction</a></h1>
 <p>Before considering the <code>Raku</code> framework, let&#39;s have a look at how languages like <code>Perl</code> or <code>Python</code> handle module installation and loading.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source raku"><span class="routine name raku"><span>ACME</span></span><span>::</span><span class="routine name raku"><span>Foo</span></span><span>::</span><span class="routine name raku"><span>Bar</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>-&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>ACME</span></span><span class="keyword operator generic raku"><span>/</span></span><span class="routine name raku"><span>Foo</span></span><span class="keyword operator generic raku"><span>/</span></span><span class="routine name raku"><span>Bar</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>pm</span></span></span></div><div class="line"><span class="source raku"><span class="routine name raku"><span>os</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="support function raku"><span>path</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol raku"><span>-&gt;</span></span><span>&nbsp;</span><span class="routine name raku"><span>os</span></span><span class="keyword operator generic raku"><span>/</span></span><span class="routine name raku"><span>path</span></span><span class="keyword operator generic raku"><span>.</span></span><span class="routine name raku"><span>py</span></span></span></div></pre><p>In those languages, module names have a 1:1 relation with filesystem paths. We simply replace the double colons or periods with slashes and add a <code>.pm</code> or <code>.py</code>.</p>

@@ -66,44 +66,44 @@
         <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-       <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Basics">Basics</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#Positional_subscripting">Positional subscripting</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#Associative_subscripting">Associative subscripting</a></td></tr>
-                                                                  <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#Applying_subscripts">Applying subscripts</a></td></tr>
-            <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Nonexistent_elements">Nonexistent elements</a></td></tr>
-                      <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#From_the_end">From the end</a></td></tr>
-                                 <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Slices">Slices</a></td></tr>
-                                                                               <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#Truncating_slices">Truncating slices</a></td></tr>
-                                      <tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#Zen_slices">Zen slices</a></td></tr>
-                    <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Multiple_dimensions">Multiple dimensions</a></td></tr>
-                   <tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#Modifying_elements">Modifying elements</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#Autovivification">Autovivification</a></td></tr>
-                          <tr class="toc-level-1"><td class="toc-number">8</td><td class="toc-text"><a href="#Binding">Binding</a></td></tr>
-                                      <tr class="toc-level-1"><td class="toc-number">9</td><td class="toc-text"><a href="#Adverbs">Adverbs</a></td></tr>
-             <tr class="toc-level-2"><td class="toc-number">9.1</td><td class="toc-text"><a href="#:exists"><code class="pod-code-inline">:exists</code></a></td></tr>
-                                   <tr class="toc-level-2"><td class="toc-number">9.2</td><td class="toc-text"><a href="#:delete"><code class="pod-code-inline">:delete</code></a></td></tr>
-                                        <tr class="toc-level-2"><td class="toc-number">9.3</td><td class="toc-text"><a href="#:p"><code class="pod-code-inline">:p</code></a></td></tr>
-                   <tr class="toc-level-2"><td class="toc-number">9.4</td><td class="toc-text"><a href="#:kv"><code class="pod-code-inline">:kv</code></a></td></tr>
-                            <tr class="toc-level-2"><td class="toc-number">9.5</td><td class="toc-text"><a href="#:k"><code class="pod-code-inline">:k</code></a></td></tr>
-            <tr class="toc-level-2"><td class="toc-number">9.6</td><td class="toc-text"><a href="#:v"><code class="pod-code-inline">:v</code></a></td></tr>
-                           <tr class="toc-level-1"><td class="toc-number">10</td><td class="toc-text"><a href="#Custom_types">Custom types</a></td></tr>
-                       <tr class="toc-level-2"><td class="toc-number">10.1</td><td class="toc-text"><a href="#Custom_type_example">Custom type example</a></td></tr>
-                                                                                                         <tr class="toc-level-2"><td class="toc-number">10.2</td><td class="toc-text"><a href="#Methods_to_implement_for_positional_subscripting">Methods to implement for positional subscripting</a></td></tr>
-          <tr class="toc-level-3"><td class="toc-number">10.2.1</td><td class="toc-text"><a href="#method_elems">method elems</a></td></tr>
-                <tr class="toc-level-3"><td class="toc-number">10.2.2</td><td class="toc-text"><a href="#method_AT-POS">method AT-POS</a></td></tr>
-                  <tr class="toc-level-3"><td class="toc-number">10.2.3</td><td class="toc-text"><a href="#method_EXISTS-POS">method EXISTS-POS</a></td></tr>
-                  <tr class="toc-level-3"><td class="toc-number">10.2.4</td><td class="toc-text"><a href="#method_DELETE-POS">method DELETE-POS</a></td></tr>
-            <tr class="toc-level-3"><td class="toc-number">10.2.5</td><td class="toc-text"><a href="#method_ASSIGN-POS">method ASSIGN-POS</a></td></tr>
-                            <tr class="toc-level-3"><td class="toc-number">10.2.6</td><td class="toc-text"><a href="#method_BIND-POS">method BIND-POS</a></td></tr>
-               <tr class="toc-level-3"><td class="toc-number">10.2.7</td><td class="toc-text"><a href="#method_STORE">method STORE</a></td></tr>
-                                                                                                      <tr class="toc-level-2"><td class="toc-number">10.3</td><td class="toc-text"><a href="#Methods_to_implement_for_associative_subscripting">Methods to implement for associative subscripting</a></td></tr>
-        <tr class="toc-level-3"><td class="toc-number">10.3.1</td><td class="toc-text"><a href="#method_AT-KEY">method AT-KEY</a></td></tr>
-                  <tr class="toc-level-3"><td class="toc-number">10.3.2</td><td class="toc-text"><a href="#method_EXISTS-KEY">method EXISTS-KEY</a></td></tr>
-                  <tr class="toc-level-3"><td class="toc-number">10.3.3</td><td class="toc-text"><a href="#method_DELETE-KEY">method DELETE-KEY</a></td></tr>
-                <tr class="toc-level-3"><td class="toc-number">10.3.4</td><td class="toc-text"><a href="#method_ASSIGN-KEY">method ASSIGN-KEY</a></td></tr>
-                            <tr class="toc-level-3"><td class="toc-number">10.3.5</td><td class="toc-text"><a href="#method_BIND-KEY">method BIND-KEY</a></td></tr>
-               <tr class="toc-level-3"><td class="toc-number">10.3.6</td><td class="toc-text"><a href="#method_STORE">method STORE</a></td></tr>
-             
+<tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Basics">Basics</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#Positional_subscripting">Positional subscripting</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#Associative_subscripting">Associative subscripting</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#Applying_subscripts">Applying subscripts</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Nonexistent_elements">Nonexistent elements</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#From_the_end">From the end</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Slices">Slices</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#Truncating_slices">Truncating slices</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#Zen_slices">Zen slices</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Multiple_dimensions">Multiple dimensions</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#Modifying_elements">Modifying elements</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#Autovivification">Autovivification</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">8</td><td class="toc-text"><a href="#Binding">Binding</a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">9</td><td class="toc-text"><a href="#Adverbs">Adverbs</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.1</td><td class="toc-text"><a href="#:exists"><code class="pod-code-inline">:exists</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.2</td><td class="toc-text"><a href="#:delete"><code class="pod-code-inline">:delete</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.3</td><td class="toc-text"><a href="#:p"><code class="pod-code-inline">:p</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.4</td><td class="toc-text"><a href="#:kv"><code class="pod-code-inline">:kv</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.5</td><td class="toc-text"><a href="#:k"><code class="pod-code-inline">:k</code></a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">9.6</td><td class="toc-text"><a href="#:v"><code class="pod-code-inline">:v</code></a></td></tr>
+<tr class="toc-level-1"><td class="toc-number">10</td><td class="toc-text"><a href="#Custom_types">Custom types</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">10.1</td><td class="toc-text"><a href="#Custom_type_example">Custom type example</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">10.2</td><td class="toc-text"><a href="#Methods_to_implement_for_positional_subscripting">Methods to implement for positional subscripting</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.2.1</td><td class="toc-text"><a href="#method_elems">method elems</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.2.2</td><td class="toc-text"><a href="#method_AT-POS">method AT-POS</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.2.3</td><td class="toc-text"><a href="#method_EXISTS-POS">method EXISTS-POS</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.2.4</td><td class="toc-text"><a href="#method_DELETE-POS">method DELETE-POS</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.2.5</td><td class="toc-text"><a href="#method_ASSIGN-POS">method ASSIGN-POS</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.2.6</td><td class="toc-text"><a href="#method_BIND-POS">method BIND-POS</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.2.7</td><td class="toc-text"><a href="#method_STORE">method STORE</a></td></tr>
+<tr class="toc-level-2"><td class="toc-number">10.3</td><td class="toc-text"><a href="#Methods_to_implement_for_associative_subscripting">Methods to implement for associative subscripting</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.3.1</td><td class="toc-text"><a href="#method_AT-KEY">method AT-KEY</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.3.2</td><td class="toc-text"><a href="#method_EXISTS-KEY">method EXISTS-KEY</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.3.3</td><td class="toc-text"><a href="#method_DELETE-KEY">method DELETE-KEY</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.3.4</td><td class="toc-text"><a href="#method_ASSIGN-KEY">method ASSIGN-KEY</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.3.5</td><td class="toc-text"><a href="#method_BIND-KEY">method BIND-KEY</a></td></tr>
+<tr class="toc-level-3"><td class="toc-number">10.3.6</td><td class="toc-text"><a href="#method_STORE">method STORE</a></td></tr>
+
 </table>
 </nav>
 

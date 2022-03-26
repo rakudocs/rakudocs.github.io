@@ -4591,9 +4591,7 @@ $(function(){
 ,
 { category: "Reference", value: "resume (Exceptions)", url: "/language/exceptions#index-entry-resume_(Exceptions)" }
 ,
-{ category: "Reference", value: "... (forward declaration)", url: "/language/typesystem#index-entry-..._(forward_declaration)" }
-,
-{ category: "Reference", value: "Forward declarations", url: "/language/typesystem#index-entry-Forward_declarations" }
+{ category: "Reference", value: "Forward type declarations", url: "/language/typesystem#index-entry-Forward_type_declarations" }
 ,
 { category: "Reference", value: "method (declarator)", url: "/language/typesystem#index-entry-method_(declarator)" }
 ,
@@ -4778,6 +4776,8 @@ $(function(){
 { category: "Reference", value: "diffy", url: "/language/glossary#index-entry-diffy" }
 ,
 { category: "Reference", value: "Exegesis", url: "/language/glossary#index-entry-Exegesis" }
+,
+{ category: "Reference", value: "forward declaration", url: "/language/glossary#index-entry-forward_declaration" }
 ,
 { category: "Reference", value: "fiddly", url: "/language/glossary#index-entry-fiddly" }
 ,

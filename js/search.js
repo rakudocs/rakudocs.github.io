@@ -5321,11 +5321,13 @@ $(function(){
 ,
 { category: "Reference", value: "$*USAGE", url: "/language/variables#index-entry-$*USAGE" }
 ,
+{ category: "Reference", value: "$*DEFAULT-READ-ELEMS", url: "/language/variables#index-entry-$*DEFAULT-READ-ELEMS" }
+,
 { category: "Reference", value: "$*COLLATION", url: "/language/variables#index-entry-$*COLLATION" }
 ,
-{ category: "Reference", value: "$*TOLERANCE", url: "/language/variables#index-entry-$*TOLERANCE" }
+{ category: "Reference", value: "$*RAT-OVERFLOW", url: "/language/variables#index-entry-$*RAT-OVERFLOW" }
 ,
-{ category: "Reference", value: "$*DEFAULT-READ-ELEMS", url: "/language/variables#index-entry-$*DEFAULT-READ-ELEMS" }
+{ category: "Reference", value: "$*TOLERANCE", url: "/language/variables#index-entry-$*TOLERANCE" }
 ,
 { category: "Reference", value: "Type objects", url: "/language/objects#index-entry-Type_objects" }
 ,
